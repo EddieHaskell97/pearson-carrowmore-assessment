@@ -1,6 +1,6 @@
 {
   "assessment_brief": {
-    "path_at_build_time": "../brief-PE-carrowmore.docx",
+    "path_at_build_time": "../../brief-PE-carrowmore.docx",
     "sha256": "93dea408967cc43fb273a09ff613a801f195f126a51bfa80a9991687914626d2"
   },
   "source_archive": {
