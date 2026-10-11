@@ -12,12 +12,12 @@ The bounded run produced:
 
 | Result | Profiles |
 |---|---:|
-| Recommend interview | 38 |
-| Consider interview | 0 |
-| Insufficient relevant evidence in this subset | 0 |
+| Supported technical interview | 22 |
+| Targeted screening first | 16 |
+| Insufficient evidence | 0 |
 | Leaver outside the current cohort | 2 |
 
-The result is deliberately generous at the interview stage because the posting says the employer would rather train suitable people than screen only for existing certificates. It is deliberately conservative about eligibility and mobilisation: **no profile is declared competent, authorised, fully eligible, or mobilisation-ready.** Medical fitness, current safety coverage, willingness to work at height/on vessels, and employer practical assessment remain explicit checks.
+The result is not a ranking and no target count was used. A supported result means the records justify a structured technical interview. A targeted-screening result means relevant evidence exists, but sparse/repetitive logs or a recent explicit role-related appraisal concern must be tested before deciding on a full technical interview. It remains deliberately conservative about eligibility and mobilisation: **no profile is declared competent, authorised, fully eligible, or mobilisation-ready.** Medical fitness, current safety coverage, willingness to work at height/on vessels, and employer practical assessment remain explicit checks.
 
 The readable answer is [output/recommendations.md](output/recommendations.md). The machine-readable answer, including exact cited text, source references, dated credential claims, conflicts, future evidence and next actions, is [output/recommendations.json](output/recommendations.json). The independent test result is [output/qa_report.json](output/qa_report.json).
 
@@ -57,7 +57,7 @@ Run independent QA separately after generation:
   --report output\qa_report.json
 ```
 
-The submitted correction-pass QA run passed **2,844/2,844 checks**, including the ten cases defined before implementation and direct checks for the seven bounded corrections. The QA program reads the ZIP and output directly and never imports the evaluator or recomputes its recommendation score.
+The submitted decision-quality QA run passed **3,931/3,931 checks**, including the ten cases defined before implementation, the earlier seven correction areas, and direct checks of appraisal attribution, full-log review, year precision, named decision cases and the comparison table. The QA program reads the ZIP and output directly and never imports the evaluator or recomputes its recommendation policy.
 
 ## What the output means
 
@@ -65,15 +65,22 @@ Each profile keeps these concepts separate:
 
 - `interview_recommendation`: whether the bounded records justify a conversation;
 - `recommendation_reason` and `recommendation_criteria`: person-specific cited reasons and the non-ranking rule result;
+- `work_history_review`: proof that the complete clean history was reviewed, with row counts, cutoff handling and template-collapsed diversity;
 - `relevant_experience`: exact clean log text, date, entry ID, raw source reference, identity provenance, raw corroboration and measurement warnings;
+- `appraisal_review`: every exact keeper-code-keyed appraisal ID reviewed, role-relevant exact excerpts and source-text hashes, with null-key/name-only rows deliberately unattached;
 - `application_eligibility`: whether the supplied evidence establishes the posting's application position;
 - `mobilisation_readiness`: whether every safety, medical and employer gate is established;
 - `credential_claims`: dated LearnHub rows with Pass, Attended and Not achieved preserved exactly;
 - `credential_conflicts`: claims that need evidence, without converting missing records into accusations;
 - `future_evidence_not_used`: records later than the scenario cutoff;
-- `remaining_requirements` and `next_actions`: what to verify, renew, train or assess first.
+- `initial_selection_actions`: the interview or screening step now;
+- `later_qualification_and_mobilisation_actions`: credential, medical and employer gates only if selection supports progression.
 
-The evidence rule requires an explicit maintenance action plus an electrical or mechanical plant term. Up to five de-duplicated examples are shown. Counts, hours, grade and tags are never treated as competence. A stronger interview recommendation requires at least three examples plus diagnostic or electrical-and-mechanical evidence; it remains a shortlist rule, not a ranking or employment decision. K1200 now meets that same rule because CL005994 records work on motor brushes and a commutator, which is consistently categorized as electro-mechanical wherever that wording appears.
+The evaluator reviews every clean log row for every profile. The normal evidence rule requires an explicit maintenance action plus an electrical or mechanical plant term. Superficial numeric and template variants are collapsed, and up to five strong examples are shown (with all four named K1200 material entries retained). Counts, hours, grade and tags are never treated as competence. Five or more distinct patterns with no explicit role-related concern in the previous ten years support a technical interview; sparse evidence or such a concern routes to targeted screening. Fewer than three distinct patterns without strong keyed manager testimony is insufficient. These are transparent gates, not a score or ranking.
+
+The previously omitted `raw/appraisals/appraisals.jsonl` is now part of the verified input contract (SHA-256 `c19ba6216619c0c4d103b5dd7d99edb49f9722fba94a6eb9de824adfba1488d1`). It contains 4,422 rows: 2,694 have a keeper code, 1,728 do not, and 305 are exactly keyed to 37 current profiles. Only exact `keeper_code` joins are allowed; null-key/name-only records are not guessed. All 305 are reviewed, while only role-relevant testimony is repeated. Full source-text hashes make excerpts checkable without reproducing irrelevant narrative. Appraisal years remain year precision: 2026 records are context-only because their position relative to 2026-10-11 is unknown.
+
+K1200 illustrates the corrected decision contract. CL005994, CL007505, CL009097 and CL009921 record hands-on activity, but AP003496 explicitly disputes the depth behind the course/log record. Neither source silently wins, so the immediate disposition is `targeted_screening_first`. The same concern policy is applied across all profiles. K0371 and K0847 also illustrate the distinction between repetitive activity records and stronger keeper-code-keyed manager testimony; that testimony supports interview questions but is not competence or authorisation.
 
 Credential status preserves each supplied LearnHub outcome and expiry. The output separately calculates the nominal date implied by the scheme's stated renewal years. If those two dates produce different status at the cutoff, the claim is marked unresolved and issuer verification is required; neither date silently wins. `Pass`, `Attended`, and `Not achieved` remain different. WAHS-1 is mapped to the posting's height requirement as an explicit prototype interpretation because the supplied OSSC definition does not include height.
 
@@ -81,7 +88,7 @@ Identity provenance distinguishes raw keeper codes, payroll references, names an
 
 Quoted measurement anomalies are retained verbatim and flagged. Megger readings in `psi`/`bar`, pump delivery in volts and AVR voltage settings in ohms support only that an activity was recorded; their numerical measurements are not treated as reliable and no repair is invented.
 
-For current profiles, next actions are ordered: issuer/source verification, willingness and working-condition confirmation, medical clearance, OSSC work, dependent WAHS work, then technical/practical assessment. The posting's promise to fund renewals is reported only for renewals. The two leavers receive no training or mobilisation pathway.
+For current profiles, selection happens first. Only after a positive selection outcome do later actions proceed through issuer/source verification, willingness and working-condition confirmation, medical clearance, module-specific OSSC work, dependent WAHS work, and employer permit/practical assessment. Each module action distinguishes a current Pass, expired Pass, Attended, Not achieved, conflict or missing evidence. The posting's promise to fund renewals is reported only for renewals. The two leavers receive no training or mobilisation pathway.
 
 ## Repository layout
 
@@ -104,6 +111,7 @@ The source archive is not duplicated inside this repository. Supply its path wit
 - Older name-only training is not guessed into identities. Clean aggregate certification summaries remain claims rather than independent issuer verification.
 - Exact course availability, duration, price and fastest completion route are not in the sources and remain unknown.
 - Work narratives support interview questions. They do not establish assessed competence, an appointment, current authorisation, or qualifying experience duration.
+- Appraisals are manager testimony, sometimes internally conflicting and sometimes templated. They can define screening questions but do not establish competence or current authorisation.
 - Oileann/K1538's manager testimony remains an interview lead, but its claimed eleven-year Nevisbeg tenure conflicts with the recorded 1998 joining date and Nevisbeg posting beginning in 2009.
 - Unicode is preserved from the source. Where the supplied pack itself contains a replacement character, the JSON retains it and the readable report uses the supplied ASCII name where available.
 

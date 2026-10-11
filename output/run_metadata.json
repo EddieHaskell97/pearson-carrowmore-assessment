@@ -1,11 +1,12 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "dataset_context": "Entirely synthetic data supplied for a Pearson job-application assessment",
   "scenario_as_of": "2026-10-11",
   "interpreter": "C:\\Users\\George\\.conda\\envs\\carrowmore-ml\\python.exe",
   "python_version": "3.12.13",
   "third_party_dependencies": [],
   "source_archive_sha256": "59f12ea4dfb43d311429fdd34c207517c2ffefbf917e4cdfe9737ca5776270f5",
+  "appraisals_member_sha256": "c19ba6216619c0c4d103b5dd7d99edb49f9722fba94a6eb9de824adfba1488d1",
   "evaluator_command": "python src/array_om_evaluator.py --source-zip ../data/carrowmore-data-pack.zip --as-of 2026-10-11 --output-dir output",
   "qa_command": "python qa/independent_qa.py --source-zip ../data/carrowmore-data-pack.zip --results output/recommendations.json --report output/qa_report.json",
   "determinism_check": {
@@ -19,16 +20,37 @@
   },
   "qa": {
     "status": "PASS",
-    "passed": 2844,
+    "passed": 3931,
     "failed": 0,
     "prepared_cases": 10,
-    "bounded_correction_areas": 7
+    "earlier_bounded_correction_areas": 7,
+    "decision_quality_correction_areas": [
+      "complete clean-log review",
+      "exact keeper-code appraisal attribution",
+      "year-precision handling",
+      "non-ranking decision gates",
+      "two-stage actions",
+      "named-case appraisal fidelity"
+    ]
+  },
+  "decision_quality_correction_effort": {
+    "measurement_scope": "Active correction work from first repository inspection through final regenerated-output, QA and repeatability verification; metadata and local Git bookkeeping followed and are excluded.",
+    "started_at": "2026-10-11T14:01:00.9688827-04:00",
+    "finished_at": "2026-10-11T14:15:44.2307190-04:00",
+    "elapsed_seconds": 883,
+    "elapsed_hms": "00:14:43",
+    "initial_build_elapsed_seconds": 1118,
+    "first_bounded_correction_elapsed": "not_measured",
+    "preparation_accounting": "Source audits, ML work and SQL reconciliation remain separate and are not included."
   },
   "sha256": {
-    "src/array_om_evaluator.py": "1f85a8456fd65f7256dd473b84c07948cf7ab3a3fdd9560bcd5fa73420b3eba1",
-    "qa/independent_qa.py": "0b97318891f90dc7763b2a3063b845912b581cbaae9979e957b7523a7a387672",
-    "output/recommendations.json": "71f601e27876b2658c81eb8d99bf2d45f0fea0ec1b59cdad2e9d04729803a912",
-    "output/recommendations.md": "9930e6cc27c5ed0f4f2b516d82d071f7fd8e6d7d1b3dc8e9d15725231b0f0e80",
-    "output/qa_report.json": "cf775e27616e1231a1f93aa34252431d4ebda640ee1e518cbd60d97c4a6c2bd3"
+    "README.md": "9cfbc58c1adc23237c8db406fd0a7ecab3aa640e0412ea43d4787cca8fb38f6b",
+    "WRITTEN_EXPLANATION.md": "735f5b12268a9e3598e63767e160d9f62f272e85f183a47bfa60d8be258301c0",
+    "SOURCE_FINGERPRINTS.json": "60ace608a598cc98db0c1b33fdbd709cb35a1524a16a266562ea1aa61a9fade2",
+    "src/array_om_evaluator.py": "24305c42c576786abb69c2b1461baf207c9c2cafe5f9431ae481c30a08c906be",
+    "qa/independent_qa.py": "8b2539053dc3027ed98c057c3cfce25d54bce62414afa6f5389aa76f3768d7d5",
+    "output/recommendations.json": "67f111e627280d50f6590705bdb850c1cfcd10895b84b191090a9841c9df9cb6",
+    "output/recommendations.md": "939c4dddc7520f46e55333ef295d17b3a430990ef64260f59d1e6a11c17bdb2e",
+    "output/qa_report.json": "2eae53d553a2e4d676d0e91eaf0a67cceec6356d1c5a426ce832fe3db62d5b54"
   }
 }

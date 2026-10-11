@@ -31,6 +31,7 @@ EXPECTED = {
     ROOT + "raw/personnel/cla_personnel_export.csv": "14ba3653d9ab29b86b273cb7016dba574d840729de85d5b0eac367ed3170b4c7",
     ROOT + "raw/personnel/cla_personnel_leavers.csv": "920f7a76d3710ac08a56d7bf9ac0de83cf65f5525e8c7a1dfc905b517d2d9a0a",
     ROOT + "raw/appraisals/station_manager_notes/2011-nevisbeg-keeper-note.txt": "767fa1decaafb6e56556ca7416b069e07cebf85a2cbd5d3c2d661df85d08adc4",
+    ROOT + "raw/appraisals/appraisals.jsonl": "c19ba6216619c0c4d103b5dd7d99edb49f9722fba94a6eb9de824adfba1488d1",
 }
 ARCHIVE_HASH = "59f12ea4dfb43d311429fdd34c207517c2ffefbf917e4cdfe9737ca5776270f5"
 
@@ -135,12 +136,18 @@ def run(zip_path: Path, results_path: Path) -> dict:
 
         keepers = load_json(zf, ROOT + "clean/keepers.json")
         logs = load_json(zf, ROOT + "clean/logbook_entries.json")
+        appraisals = [
+            json.loads(line)
+            for line in zf.read(ROOT + "raw/appraisals/appraisals.jsonl").decode("utf-8").splitlines()
+            if line.strip()
+        ]
         learnhub = load_json(zf, ROOT + "raw/training/vendor-c-learnhub-2017-2026.json")["records"]
         schemes = load_json(zf, ROOT + "employers/certification_schemes.json")["schemes"]
         posting_text = zf.read(ROOT + "employers/carrowmore-array-om-technician.md").decode("utf-8", errors="replace")
         current_rows = list(csv.DictReader(io.StringIO(zf.read(ROOT + "raw/personnel/cla_personnel_export.csv").decode("utf-8-sig"))))
         leaver_rows = list(csv.DictReader(io.StringIO(zf.read(ROOT + "raw/personnel/cla_personnel_leavers.csv").decode("utf-8-sig"))))
         logs_by_id = {r["entry_id"]: r for r in logs}
+        appraisals_by_id = {r["record_id"]: r for r in appraisals}
         training_by_id = {r["id"]: r for r in learnhub}
         candidates = {r["keeper_code"]: r for r in output["candidates"]}
         keepers_by_id = {r["keeper_code"]: r for r in keepers}
@@ -267,7 +274,7 @@ def run(zip_path: Path, results_path: Path) -> dict:
         checks.equal("Correction 1 CL005994 exact text", cl005994["text"], "Drive motor brushes and commutator dressed, rotation back to time.")
         checks.check("Correction 1 CL005994 emitted for K1200", "CL005994" in k1200_evidence)
         checks.check("Correction 1 CL005994 is electro-mechanical", {"electrical", "mechanical"} <= set(k1200_evidence["CL005994"]["categories"]))
-        checks.equal("Correction 1 K1200 recommendation", candidates["K1200"]["interview_recommendation"], "recommend_interview")
+        checks.equal("Correction 1 K1200 recommendation after appraisal reconciliation", candidates["K1200"]["interview_recommendation"], "targeted_screening_first")
         checks.check("Correction 1 K1200 reason cites own evidence", "CL005994" in candidates["K1200"]["recommendation_reason"])
         for candidate in candidates.values():
             if candidate["cohort_status"] == "current_redeployment_cohort":
@@ -292,7 +299,7 @@ def run(zip_path: Path, results_path: Path) -> dict:
             checks.equal(f"Correction 2 nominal date {record_id}", comparison["nominal_scheme_rule_date"], nominal)
             checks.equal(f"Correction 2 unresolved cutoff status {record_id}", claim["status_at_cutoff"], "pass_expiry_conflict_at_cutoff")
             checks.check(f"Correction 2 conflict emitted {record_id}", any(c["code"] == "expiry_rule_conflict" and c.get("record_id") == record_id for c in candidates[keeper_code]["credential_conflicts"]))
-            checks.check(f"Correction 2 issuer action {record_id}", record_id in candidates[keeper_code]["next_actions"][0] and "issuer" in candidates[keeper_code]["next_actions"][0].lower())
+            checks.check(f"Correction 2 issuer action {record_id}", any(record_id in action and "issuer" in action.lower() for action in candidates[keeper_code]["later_qualification_and_mobilisation_actions"]))
 
         independently_conflicting = set()
         for candidate in candidates.values():
@@ -358,15 +365,111 @@ def run(zip_path: Path, results_path: Path) -> dict:
         for candidate in candidates.values():
             if candidate["cohort_status"] != "current_redeployment_cohort":
                 continue
-            actions = candidate["next_actions"]
-            checks.equal(f"Correction 7 ordered action count {candidate['keeper_code']}", len(actions), 6)
-            checks.check(f"Correction 7 verification first {candidate['keeper_code']}", actions[0].startswith("First,"))
-            checks.check(f"Correction 7 willingness before courses {candidate['keeper_code']}", actions[1].startswith("Before arranging courses"))
-            checks.check(f"Correction 7 medical third {candidate['keeper_code']}", actions[2].startswith("Then obtain a current offshore medical"))
-            checks.check(f"Correction 7 medical precedes OSSC {candidate['keeper_code']}", actions[3].startswith("After medical clearance"))
-            checks.check(f"Correction 7 OSSC precedes WAHS {candidate['keeper_code']}", actions[4].startswith("After OSSC-SS is verified current"))
-            checks.check(f"Correction 7 employer renewal funding {candidate['keeper_code']}", "employer will pay for renewals" in actions[3] or "present original current" in actions[3])
-            checks.check(f"Correction 7 assessment last {candidate['keeper_code']}", actions[5].startswith("Finally,"))
+            initial = candidate["initial_selection_actions"]
+            actions = candidate["later_qualification_and_mobilisation_actions"]
+            checks.equal(f"Correction 7 initial action count {candidate['keeper_code']}", len(initial), 1)
+            checks.equal(f"Correction 7 later action count {candidate['keeper_code']}", len(actions), 7)
+            checks.check(f"Correction 7 qualification conditional {candidate['keeper_code']}", actions[0].startswith("Only if the initial selection outcome"))
+            checks.check(f"Correction 7 verification before courses {candidate['keeper_code']}", actions[1].startswith("First,"))
+            checks.check(f"Correction 7 willingness before courses {candidate['keeper_code']}", actions[2].startswith("Confirm directly"))
+            checks.check(f"Correction 7 medical before OSSC {candidate['keeper_code']}", actions[3].startswith("Obtain a current offshore medical"))
+            checks.check(f"Correction 7 module-specific OSSC {candidate['keeper_code']}", actions[4].startswith("After medical clearance") and all(module in actions[4] for module in ("OSSC-SS", "OSSC-FF", "OSSC-FA")))
+            checks.check(f"Correction 7 OSSC precedes WAHS {candidate['keeper_code']}", actions[5].startswith("After OSSC-SS is issuer-verified current") and "WAHS-1" in actions[5])
+            checks.check(f"Correction 7 funding limits {candidate['keeper_code']}", "first-time funding is not promised" in (actions[4] + actions[5]) or "employer funds renewals" in (actions[4] + actions[5]) or "present and issuer-verify" in (actions[4] + actions[5]))
+            checks.check(f"Correction 7 assessment last {candidate['keeper_code']}", actions[6].startswith("Finally,"))
+
+        # Decision-quality correction: appraisal attribution and full-history review.
+        clean_current_ids = {row["keeper_code"] for row in keepers if row["status"] == "current"}
+        keyed_appraisals = [row for row in appraisals if row.get("keeper_code")]
+        current_appraisals = [row for row in keyed_appraisals if row["keeper_code"] in clean_current_ids]
+        checks.equal("appraisal source row count", len(appraisals), 4422)
+        checks.equal("appraisal keyed row count", len(keyed_appraisals), 2694)
+        checks.equal("appraisal null-key rows left unattached", sum(not row.get("keeper_code") for row in appraisals), 1728)
+        checks.equal("current-cohort keyed appraisal rows reviewed", len(current_appraisals), 305)
+        checks.equal("current profiles with keyed appraisals", len({row["keeper_code"] for row in current_appraisals}), 37)
+        checks.equal("output current appraisal reviewed count", output["summary"]["appraisal_rows_reviewed_for_current_cohort"], 305)
+        checks.equal("K0310 has no keyed appraisal", candidates["K0310"]["appraisal_review"]["reviewed_record_ids"], [])
+
+        logs_by_keeper = {}
+        for row in logs:
+            logs_by_keeper.setdefault(row["keeper_code"], []).append(row)
+        appraisals_by_keeper = {}
+        for row in current_appraisals:
+            appraisals_by_keeper.setdefault(row["keeper_code"], []).append(row)
+        for keeper_code in sorted(clean_current_ids):
+            candidate = candidates[keeper_code]
+            source_logs = logs_by_keeper.get(keeper_code, [])
+            review = candidate["work_history_review"]
+            checks.equal(f"full log row count reviewed: {keeper_code}", review["source_entry_count"], len(source_logs))
+            checks.equal(f"cutoff log row count reviewed: {keeper_code}", review["entries_at_or_before_cutoff"], sum(date.fromisoformat(row["date"]) <= date(2026, 10, 11) for row in source_logs))
+            checks.equal(f"full history flag: {keeper_code}", review["full_clean_history_reviewed"], True)
+
+            source_rows = sorted(appraisals_by_keeper.get(keeper_code, []), key=lambda row: (row["year"], row["record_id"]))
+            appraisal_review = candidate["appraisal_review"]
+            checks.equal(f"exact keyed appraisal IDs reviewed: {keeper_code}", appraisal_review["reviewed_record_ids"], [row["record_id"] for row in source_rows])
+            checks.equal(f"keyed appraisal count reviewed: {keeper_code}", appraisal_review["keyed_rows_reviewed"], len(source_rows))
+            checks.equal(f"same-year appraisal IDs: {keeper_code}", appraisal_review["same_year_record_ids_timing_uncertain"], [row["record_id"] for row in source_rows if row["year"] == 2026])
+            checks.equal(f"future-year appraisal IDs: {keeper_code}", appraisal_review["future_year_record_ids_not_used"], [row["record_id"] for row in source_rows if row["year"] > 2026])
+            for item in appraisal_review["role_relevant_testimony"]:
+                source = appraisals_by_id[item["record_id"]]
+                checks.equal(f"appraisal exact keeper key: {item['record_id']}", source["keeper_code"], keeper_code)
+                checks.equal(f"appraisal exact year: {item['record_id']}", item["year"], source["year"])
+                checks.equal(f"appraisal year precision: {item['record_id']}", item["date_precision"], "year")
+                checks.equal(f"appraisal exact station: {item['record_id']}", item["station_code"], source["station"])
+                checks.equal(f"appraisal source reference: {item['record_id']}", item["source_reference"], f"raw/appraisals/appraisals.jsonl#{item['record_id']}")
+                checks.equal(f"appraisal full-text hash: {item['record_id']}", item["source_text_sha256"], digest(source["text"].encode("utf-8")))
+                checks.check(f"appraisal excerpts exact: {item['record_id']}", bool(item["role_relevant_excerpt"]) and all(excerpt in source["text"] for excerpt in item["role_relevant_excerpt"]))
+                checks.check(f"appraisal omits irrelevant identity fields: {item['record_id']}", "manager" not in item and "keeper_name" not in item)
+                if source["year"] == 2026:
+                    checks.equal(f"same-year appraisal context only: {item['record_id']}", item["decision_time_treatment"], "same_year_timing_uncertain_context_only")
+
+        allowed_decisions = {
+            "supported_technical_interview",
+            "targeted_screening_first",
+            "insufficient_evidence",
+            "outside_current_redeployment_cohort",
+        }
+        checks.check("only bounded non-ranking decisions emitted", all(row["interview_recommendation"] in allowed_decisions for row in candidates.values()))
+        checks.equal("decision summary matches profiles", Counter(row["interview_recommendation"] for row in candidates.values()), Counter({
+            "supported_technical_interview": output["summary"]["supported_technical_interview"],
+            "targeted_screening_first": output["summary"]["targeted_screening_first"],
+            "insufficient_evidence": output["summary"]["insufficient_evidence"],
+            "outside_current_redeployment_cohort": output["summary"]["outside_current_cohort"],
+        }))
+
+        named_appraisal_cases = {
+            "AP003496": ("K1200", "has not, to my knowledge, carried out any of the plant work"),
+            "AP001433": ("K0561", "Needs supervision on pumped systems."),
+            "AP003571": ("K1231", "switchgear work has to be checked behind her."),
+            "AP004150": ("K1446", "Needs supervision on the standby banks."),
+            "AP004147": ("K1446", "The standard achieved in height work falls below that expected of the grade."),
+        }
+        for record_id, (keeper_code, exact_fragment) in named_appraisal_cases.items():
+            source = appraisals_by_id[record_id]
+            checks.equal(f"named appraisal keeper: {record_id}", source["keeper_code"], keeper_code)
+            checks.check(f"named appraisal exact text: {record_id}", exact_fragment in source["text"])
+            checks.check(f"named appraisal surfaced as concern: {record_id}", record_id in candidates[keeper_code]["appraisal_review"]["material_pre_cutoff_concern_ids"])
+            checks.equal(f"named appraisal drives targeted screen: {record_id}", candidates[keeper_code]["interview_recommendation"], "targeted_screening_first")
+
+        k1200_material = {"CL005994", "CL007505", "CL009097", "CL009921"}
+        checks.check("K1200 all named material logs shown", k1200_material <= {row["entry_id"] for row in candidates["K1200"]["relevant_experience"]})
+        checks.check("K1200 reason reconciles log and appraisal", "CL005994" in candidates["K1200"]["recommendation_reason"] and "AP003496" in candidates["K1200"]["recommendation_reason"])
+        checks.equal("K0586 cautious targeted screen", candidates["K0586"]["interview_recommendation"], "targeted_screening_first")
+        checks.equal("K0586 distinct evidence independently visible", candidates["K0586"]["work_history_review"]["distinct_qualifying_examples"], 3)
+
+        mixed = next(item for item in candidates["K1231"]["appraisal_review"]["role_relevant_testimony"] if item["record_id"] == "AP003571")
+        checks.check("K1231 mixed support and concern preserved", bool(mixed["support_signals"]) and bool(mixed["concern_signals"]))
+        for keeper_code, record_id in (("K0371", "AP000798"), ("K0847", "AP002309")):
+            candidate = candidates[keeper_code]
+            checks.equal(f"{keeper_code} supported technical interview", candidate["interview_recommendation"], "supported_technical_interview")
+            checks.check(f"{keeper_code} manager testimony distinguished", record_id in candidate["appraisal_review"]["strong_manager_support_ids"] and record_id in candidate["recommendation_reason"])
+
+        markdown_path = results_path.with_suffix(".md")
+        checks.check("readable recommendations exist", markdown_path.is_file())
+        if markdown_path.is_file():
+            markdown = markdown_path.read_text(encoding="utf-8")
+            checks.check("comparison table precedes details", markdown.find("## Current-keeper comparison") < markdown.find("## Detailed evidence"))
+            checks.equal("comparison table has 38 current rows", sum(line.startswith("| K") for line in markdown.splitlines()), 38)
 
         # Definitions must retain the source conflict: height is WAHS, not an invented OSSC module.
         checks.check("OSSC definition has no height module", all("height" not in m["name"].lower() for m in scheme_map["OSSC"]["modules"]))
@@ -374,8 +477,8 @@ def run(zip_path: Path, results_path: Path) -> dict:
 
     failed = [item for item in checks.items if not item["passed"]]
     return {
-        "schema_version": 2,
-        "independence": "Reads the ZIP and generated JSON directly; does not import evaluator code or recompute its recommendation score.",
+        "schema_version": 3,
+        "independence": "Reads the ZIP, appraisal JSONL and generated outputs directly; does not import evaluator code or recompute its recommendation policy.",
         "source_archive_sha256": digest(zip_path.read_bytes()),
         "recommendations_sha256": digest(results_bytes),
         "checks": len(checks.items),

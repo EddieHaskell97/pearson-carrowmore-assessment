@@ -32,12 +32,32 @@ The bounded correction pass then made the evidence contract stricter:
 
 These corrections are why the QA program is separate from the evaluator and why the ten representative cases were specified before the build.
 
+## Decision-quality correction
+
+The next review found a material omission: the evaluator had not read `raw/appraisals/appraisals.jsonl`. I added that member to the enforced source manifest rather than treating the already curated Oileann note as representative of all appraisals. The file has SHA-256 `c19ba6216619c0c4d103b5dd7d99edb49f9722fba94a6eb9de824adfba1488d1` and contains 4,422 JSONL rows. Of those, 2,694 carry a keeper code, 1,728 do not, and 305 are exactly keyed to 37 of the 38 current profiles. K0310 has no keyed appraisal. The join is deliberately exact: I did not attach null-key or name-only records, even where a name looked plausible.
+
+Every clean log row and every exactly keyed current-person appraisal is now reviewed. Repeated log templates and superficial numeric variants are collapsed before judging evidence diversity; the readable output shows the strongest records while the structured output records the full-history counts. Appraisal processing keeps the source year as year precision, uses 2026 records only as context because their timing relative to 2026-10-11 is unknown, and excludes future years from current conclusions. It retains only exact role-relevant excerpts plus a hash of the complete source text, avoiding repetition of irrelevant narrative while remaining independently checkable.
+
+The decision policy is a set of gates rather than a score. `supported_technical_interview` requires at least five distinct relevant log patterns and no explicit role-related appraisal concern in the ten years before the cutoff. `targeted_screening_first` means relevant evidence exists but is sparse/repetitive or a recent explicit concern requires a focused evidence screen first. `insufficient_evidence` is reserved for fewer than three distinct patterns without strong keyed manager support. Leavers remain outside the current cohort. No category creates a rank, competence finding, eligibility decision or mobilisation decision.
+
+That policy changed the old blanket 38-interview output to 22 supported technical interviews and 16 targeted screens. No current profile fell into insufficient evidence. The 16 targeted screens are K0147, K0184, K0303, K0354, K0394, K0478, K0561, K0586, K0589, K0897, K1200, K1231, K1345, K1446, K1483 and K1538. This count is an outcome, not a target.
+
+The named hand checks explain the judgement:
+
+- K1200's CL005994, CL007505, CL009097 and CL009921 are retained as hands-on work evidence, while AP003496 says the course record exceeds the manager's observed plant experience and records avoidance of two requests to assist. The contradiction produces targeted screening; neither source is erased.
+- K0561/AP001433, K1231/AP003571 and K1446/AP004147/AP004150 retain specific supervision, checked-work and height/staging concerns alongside their positive evidence.
+- K0586 is routed cautiously because only three distinct technical log patterns survive template collapse and no strong directly technical keyed appraisal supplies the missing breadth.
+- K0371/AP000798 and K0847/AP002309 retain stronger manager testimony alongside their logs. It is a useful interview lead, not proof of competence or authorisation.
+- Oileann/K1538 retains the curated chronology warning, exact keyed positive appraisal AP004418 and later gap AP004422. The result remains a targeted screen, not a current HV authorisation.
+
+Selection and mobilisation are now explicitly two stages. The immediate action is either a structured technical interview, a targeted evidence screen or a request for verifiable evidence. Course, medical and mobilisation instructions appear only under a conditional later stage. Each essential module action now says whether the record is a current Pass, expired Pass, Attended, Not achieved, conflicted or absent; employer funding is stated only for renewals.
+
 ## If this became a real product
 
-I would throw away the regex shortlist score first. It is intentionally transparent and useful for this small synthetic slice, but it has no measured relationship to job performance and will miss unfamiliar phrasing. I would replace it only after agreeing a human review policy, gathering lawful and representative evidence, measuring subgroup impact, and defining appeal and correction routes.
+I would replace the regex evidence gates first. They are intentionally transparent and useful for this small synthetic slice, but they have no measured relationship to job performance, can miss unfamiliar phrasing and cannot resolve contradictory manager testimony. I would replace them only after agreeing a human review policy, gathering lawful and representative evidence, measuring subgroup impact, and defining appeal and correction routes.
 
 I would keep the evidence contract: immutable source fingerprints, explicit scenario time, exact citations, outcome/expiry semantics, clean-versus-raw attribution, conflict preservation, and independent hand checks. I would also keep the separation between an interview lead, verified credential, assessed competence, employer appointment and mobilisation gate. Those boundaries matter more than the ranking mechanism.
 
 ## Effort
 
-The initial build's completion timer recorded 1,118 seconds (18 minutes 38 seconds) of active agent execution; the earlier “approximately 15 minutes” wording was a provisional documentation-checkpoint figure and is superseded. This correction pass was not instrumented by that same timer, so its exact elapsed time is recorded as **not measured** rather than estimated or added to the initial figure. Earlier source audits, ML work and SQL reconciliation were preparation and remain separate; their elapsed time is not invented or folded into assessment-build time.
+The initial build's completion timer recorded 1,118 seconds (18 minutes 38 seconds) of active agent execution; the earlier “approximately 15 minutes” wording was a provisional documentation-checkpoint figure and is superseded. The first bounded correction was not instrumented and therefore remains recorded as **not measured**. This decision-quality correction was separately measured from 2026-10-11 14:01:00.968 -04:00 through final output/QA/repeatability verification at 14:15:44.230 -04:00: **883 seconds (14 minutes 43 seconds)**. Metadata and local Git bookkeeping followed and are excluded. The exact timestamps and scope are preserved in `output/run_metadata.json`; this interval is not added to the earlier build. Earlier source audits, ML work and SQL reconciliation were preparation and remain separately accounted; their elapsed time is not invented or folded into assessment-build time.
