@@ -2,9 +2,9 @@
   "schema_version": 3,
   "independence": "Reads the ZIP, appraisal JSONL and generated outputs directly; does not import evaluator code or recompute its recommendation policy.",
   "source_archive_sha256": "59f12ea4dfb43d311429fdd34c207517c2ffefbf917e4cdfe9737ca5776270f5",
-  "recommendations_sha256": "67f111e627280d50f6590705bdb850c1cfcd10895b84b191090a9841c9df9cb6",
-  "checks": 3931,
-  "passed": 3931,
+  "recommendations_sha256": "2455e61c4169beb0b1928cda747e495ea5f656fd29b55adc9fe4cabc2747aa7e",
+  "checks": 4777,
+  "passed": 4777,
   "failed": 0,
   "status": "PASS",
   "failures": [],
@@ -1061,126 +1061,6 @@
       "detail": "expected='conflicts'; actual='conflicts'"
     },
     {
-      "check": "evidence ID exists: CL009113",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL009113",
-      "passed": true,
-      "detail": "expected='K0303'; actual='K0303'"
-    },
-    {
-      "check": "evidence exact text: CL009113",
-      "passed": true,
-      "detail": "expected='Megger test on the no 2 feeder, 232 V, condemned the cable and ran a temporary.'; actual='Megger test on the no 2 feeder, 232 V, condemned the cable and ran a temporary.'"
-    },
-    {
-      "check": "evidence exact date: CL009113",
-      "passed": true,
-      "detail": "expected='2021-09-06'; actual='2021-09-06'"
-    },
-    {
-      "check": "evidence source ref: CL009113",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#48457'; actual='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#48457'"
-    },
-    {
-      "check": "evidence not future: CL009113",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL009113",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "identity type preserved: CL009113",
-      "passed": true,
-      "detail": "expected='payroll_reference'; actual='payroll_reference'"
-    },
-    {
-      "check": "raw identifier preserved: CL009113",
-      "passed": true,
-      "detail": "expected='0012781'; actual='0012781'"
-    },
-    {
-      "check": "payroll normalization: CL009113",
-      "passed": true,
-      "detail": "expected='12781'; actual='12781'"
-    },
-    {
-      "check": "clean payroll preserved: CL009113",
-      "passed": true,
-      "detail": "expected='0012781'; actual='0012781'"
-    },
-    {
-      "check": "payroll corroboration status: CL009113",
-      "passed": true,
-      "detail": "expected='corroborates'; actual='corroborates'"
-    },
-    {
-      "check": "evidence ID exists: CL009081",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL009081",
-      "passed": true,
-      "detail": "expected='K0303'; actual='K0303'"
-    },
-    {
-      "check": "evidence exact text: CL009081",
-      "passed": true,
-      "detail": "expected='Megger test on the no.1 feeder, 48 psi, condemned the cable and ran a temporary.'; actual='Megger test on the no.1 feeder, 48 psi, condemned the cable and ran a temporary.'"
-    },
-    {
-      "check": "evidence exact date: CL009081",
-      "passed": true,
-      "detail": "expected='2021-08-01'; actual='2021-08-01'"
-    },
-    {
-      "check": "evidence source ref: CL009081",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#47171'; actual='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#47171'"
-    },
-    {
-      "check": "evidence not future: CL009081",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL009081",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "identity type preserved: CL009081",
-      "passed": true,
-      "detail": "expected='payroll_reference'; actual='payroll_reference'"
-    },
-    {
-      "check": "raw identifier preserved: CL009081",
-      "passed": true,
-      "detail": "expected='1.2781E+04'; actual='1.2781E+04'"
-    },
-    {
-      "check": "payroll normalization: CL009081",
-      "passed": true,
-      "detail": "expected='12781'; actual='12781'"
-    },
-    {
-      "check": "clean payroll preserved: CL009081",
-      "passed": true,
-      "detail": "expected='0012781'; actual='0012781'"
-    },
-    {
-      "check": "payroll corroboration status: CL009081",
-      "passed": true,
-      "detail": "expected='corroborates'; actual='corroborates'"
-    },
-    {
       "check": "evidence ID exists: CL008870",
       "passed": true,
       "detail": ""
@@ -1297,6 +1177,126 @@
     },
     {
       "check": "payroll corroboration status: CL008115",
+      "passed": true,
+      "detail": "expected='corroborates'; actual='corroborates'"
+    },
+    {
+      "check": "evidence ID exists: CL009744",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL009744",
+      "passed": true,
+      "detail": "expected='K0303'; actual='K0303'"
+    },
+    {
+      "check": "evidence exact text: CL009744",
+      "passed": true,
+      "detail": "expected='Rebuilt the clockwork drive, cleaned forty years of gum out of the train.'; actual='Rebuilt the clockwork drive, cleaned forty years of gum out of the train.'"
+    },
+    {
+      "check": "evidence exact date: CL009744",
+      "passed": true,
+      "detail": "expected='2023-11-06'; actual='2023-11-06'"
+    },
+    {
+      "check": "evidence source ref: CL009744",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#24746'; actual='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#24746'"
+    },
+    {
+      "check": "evidence not future: CL009744",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL009744",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "identity type preserved: CL009744",
+      "passed": true,
+      "detail": "expected='payroll_reference'; actual='payroll_reference'"
+    },
+    {
+      "check": "raw identifier preserved: CL009744",
+      "passed": true,
+      "detail": "expected='0012781'; actual='0012781'"
+    },
+    {
+      "check": "payroll normalization: CL009744",
+      "passed": true,
+      "detail": "expected='12781'; actual='12781'"
+    },
+    {
+      "check": "clean payroll preserved: CL009744",
+      "passed": true,
+      "detail": "expected='0012781'; actual='0012781'"
+    },
+    {
+      "check": "payroll corroboration status: CL009744",
+      "passed": true,
+      "detail": "expected='corroborates'; actual='corroborates'"
+    },
+    {
+      "check": "evidence ID exists: CL009608",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL009608",
+      "passed": true,
+      "detail": "expected='K0303'; actual='K0303'"
+    },
+    {
+      "check": "evidence exact text: CL009608",
+      "passed": true,
+      "detail": "expected='Lamp changer stepping twice, dismantled the ratchet and dressed the pawl faces.'; actual='Lamp changer stepping twice, dismantled the ratchet and dressed the pawl faces.'"
+    },
+    {
+      "check": "evidence exact date: CL009608",
+      "passed": true,
+      "detail": "expected='2023-05-20'; actual='2023-05-20'"
+    },
+    {
+      "check": "evidence source ref: CL009608",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#18589'; actual='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#18589'"
+    },
+    {
+      "check": "evidence not future: CL009608",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL009608",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "identity type preserved: CL009608",
+      "passed": true,
+      "detail": "expected='payroll_reference'; actual='payroll_reference'"
+    },
+    {
+      "check": "raw identifier preserved: CL009608",
+      "passed": true,
+      "detail": "expected='0012781'; actual='0012781'"
+    },
+    {
+      "check": "payroll normalization: CL009608",
+      "passed": true,
+      "detail": "expected='12781'; actual='12781'"
+    },
+    {
+      "check": "clean payroll preserved: CL009608",
+      "passed": true,
+      "detail": "expected='0012781'; actual='0012781'"
+    },
+    {
+      "check": "payroll corroboration status: CL009608",
       "passed": true,
       "detail": "expected='corroborates'; actual='corroborates'"
     },
@@ -1876,152 +1876,162 @@
       "detail": "expected='corroborates'; actual='corroborates'"
     },
     {
-      "check": "evidence ID exists: CL006447",
+      "check": "evidence ID exists: CL010201",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "evidence keeper: CL006447",
+      "check": "evidence keeper: CL010201",
       "passed": true,
       "detail": "expected='K0371'; actual='K0371'"
     },
     {
-      "check": "evidence exact text: CL006447",
+      "check": "evidence exact text: CL010201",
       "passed": true,
-      "detail": "expected='Megger test on the no.3 feeder, 48 psi, condemned the cable and ran a temporary.'; actual='Megger test on the no.3 feeder, 48 psi, condemned the cable and ran a temporary.'"
+      "detail": "expected='Changed oil and filters on no.3.'; actual='Changed oil and filters on no.3.'"
     },
     {
-      "check": "evidence exact date: CL006447",
+      "check": "evidence exact date: CL010201",
       "passed": true,
-      "detail": "expected='2013-05-03'; actual='2013-05-03'"
+      "detail": "expected='2025-05-24'; actual='2025-05-24'"
     },
     {
-      "check": "evidence source ref: CL006447",
+      "check": "evidence source ref: CL010201",
       "passed": true,
-      "detail": "expected='raw/logbooks/era2-keeperlog/KLOG2013.DAT#004314'; actual='raw/logbooks/era2-keeperlog/KLOG2013.DAT#004314'"
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#44788'; actual='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#44788'"
     },
     {
-      "check": "evidence not future: CL006447",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL006447",
+      "check": "evidence not future: CL010201",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "identity type preserved: CL006447",
+      "check": "raw citation resolves: CL010201",
       "passed": true,
-      "detail": "expected='keeper_code'; actual='keeper_code'"
+      "detail": ""
     },
     {
-      "check": "raw identifier preserved: CL006447",
+      "check": "identity type preserved: CL010201",
       "passed": true,
-      "detail": "expected='K0371'; actual='K0371'"
+      "detail": "expected='payroll_reference'; actual='payroll_reference'"
     },
     {
-      "check": "DAT attribution status preserved: CL006447",
+      "check": "raw identifier preserved: CL010201",
+      "passed": true,
+      "detail": "expected='0011092'; actual='0011092'"
+    },
+    {
+      "check": "payroll normalization: CL010201",
+      "passed": true,
+      "detail": "expected='11092'; actual='11092'"
+    },
+    {
+      "check": "clean payroll preserved: CL010201",
+      "passed": true,
+      "detail": "expected='0011092'; actual='0011092'"
+    },
+    {
+      "check": "payroll corroboration status: CL010201",
       "passed": true,
       "detail": "expected='corroborates'; actual='corroborates'"
     },
     {
-      "check": "evidence ID exists: CL003246",
+      "check": "evidence ID exists: CL006471",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "evidence keeper: CL003246",
+      "check": "evidence keeper: CL006471",
       "passed": true,
       "detail": "expected='K0371'; actual='K0371'"
     },
     {
-      "check": "evidence exact text: CL003246",
+      "check": "evidence exact text: CL006471",
       "passed": true,
-      "detail": "expected='Megger test on the NO.2 feeder, 418 V, condemned the cable and ran a temporary.'; actual='Megger test on the NO.2 feeder, 418 V, condemned the cable and ran a temporary.'"
+      "detail": "expected='Gearbox stripped on the winch, 4 teeth found broken. Replaced the wheel.'; actual='Gearbox stripped on the winch, 4 teeth found broken. Replaced the wheel.'"
     },
     {
-      "check": "evidence exact date: CL003246",
+      "check": "evidence exact date: CL006471",
       "passed": true,
-      "detail": "expected='2004-02-26'; actual='2004-02-26'"
+      "detail": "expected='2013-06-07'; actual='2013-06-07'"
     },
     {
-      "check": "evidence source ref: CL003246",
+      "check": "evidence source ref: CL006471",
       "passed": true,
-      "detail": "expected='raw/logbooks/era2-keeperlog/KLOG2004.DAT#002100'; actual='raw/logbooks/era2-keeperlog/KLOG2004.DAT#002100'"
+      "detail": "expected='raw/logbooks/era2-keeperlog/KLOG2013.DAT#005498'; actual='raw/logbooks/era2-keeperlog/KLOG2013.DAT#005498'"
     },
     {
-      "check": "evidence not future: CL003246",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL003246",
+      "check": "evidence not future: CL006471",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "identity type preserved: CL003246",
+      "check": "raw citation resolves: CL006471",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "identity type preserved: CL006471",
       "passed": true,
       "detail": "expected='keeper_code'; actual='keeper_code'"
     },
     {
-      "check": "raw identifier preserved: CL003246",
+      "check": "raw identifier preserved: CL006471",
       "passed": true,
       "detail": "expected='K0371'; actual='K0371'"
     },
     {
-      "check": "DAT attribution status preserved: CL003246",
+      "check": "DAT attribution status preserved: CL006471",
       "passed": true,
       "detail": "expected='corroborates'; actual='corroborates'"
     },
     {
-      "check": "evidence ID exists: CL000835",
+      "check": "evidence ID exists: CL002538",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "evidence keeper: CL000835",
+      "check": "evidence keeper: CL002538",
       "passed": true,
       "detail": "expected='K0371'; actual='K0371'"
     },
     {
-      "check": "evidence exact text: CL000835",
+      "check": "evidence exact text: CL002538",
       "passed": true,
-      "detail": "expected='Megger test on the No.1 feeder, 2.4 ohm, condemned the cable and ran a temporary.'; actual='Megger test on the No.1 feeder, 2.4 ohm, condemned the cable and ran a temporary.'"
+      "detail": "expected='Load tested the winch and the landing gear to the annual figure and certified the log.'; actual='Load tested the winch and the landing gear to the annual figure and certified the log.'"
     },
     {
-      "check": "evidence exact date: CL000835",
+      "check": "evidence exact date: CL002538",
       "passed": true,
-      "detail": "expected='1994-04-03'; actual='1994-04-03'"
+      "detail": "expected='2001-08-22'; actual='2001-08-22'"
     },
     {
-      "check": "evidence source ref: CL000835",
+      "check": "evidence source ref: CL002538",
       "passed": true,
-      "detail": "expected='raw/logbooks/era1-ocr/feorlinn-1994.txt#L138'; actual='raw/logbooks/era1-ocr/feorlinn-1994.txt#L138'"
+      "detail": "expected='raw/logbooks/era1-ocr/ornabaig-2001.txt#L304'; actual='raw/logbooks/era1-ocr/ornabaig-2001.txt#L304'"
     },
     {
-      "check": "evidence not future: CL000835",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL000835",
+      "check": "evidence not future: CL002538",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "identity type preserved: CL000835",
+      "check": "raw citation resolves: CL002538",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "identity type preserved: CL002538",
       "passed": true,
       "detail": "expected='absent'; actual='absent'"
     },
     {
-      "check": "raw identifier preserved: CL000835",
+      "check": "raw identifier preserved: CL002538",
       "passed": true,
       "detail": "expected=None; actual=None"
     },
     {
-      "check": "absent raw identity retained: CL000835",
+      "check": "absent raw identity retained: CL002538",
       "passed": true,
       "detail": "expected='absent'; actual='absent'"
     },
@@ -2751,56 +2761,6 @@
       "detail": "expected='corroborates'; actual='corroborates'"
     },
     {
-      "check": "evidence ID exists: CL001308",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL001308",
-      "passed": true,
-      "detail": "expected='K0482'; actual='K0482'"
-    },
-    {
-      "check": "evidence exact text: CL001308",
-      "passed": true,
-      "detail": "expected='Megger test on the NO.2 feeder, 48 psi, condemned the cable and ran a temporary.'; actual='Megger test on the NO.2 feeder, 48 psi, condemned the cable and ran a temporary.'"
-    },
-    {
-      "check": "evidence exact date: CL001308",
-      "passed": true,
-      "detail": "expected='1997-04-12'; actual='1997-04-12'"
-    },
-    {
-      "check": "evidence source ref: CL001308",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era1-ocr/raheenvarra-1997.txt#L153'; actual='raw/logbooks/era1-ocr/raheenvarra-1997.txt#L153'"
-    },
-    {
-      "check": "evidence not future: CL001308",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL001308",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "identity type preserved: CL001308",
-      "passed": true,
-      "detail": "expected='absent'; actual='absent'"
-    },
-    {
-      "check": "raw identifier preserved: CL001308",
-      "passed": true,
-      "detail": "expected=None; actual=None"
-    },
-    {
-      "check": "absent raw identity retained: CL001308",
-      "passed": true,
-      "detail": "expected='absent'; actual='absent'"
-    },
-    {
       "check": "evidence ID exists: CL000839",
       "passed": true,
       "detail": ""
@@ -2907,6 +2867,66 @@
     },
     {
       "check": "payroll corroboration status: CL009967",
+      "passed": true,
+      "detail": "expected='corroborates'; actual='corroborates'"
+    },
+    {
+      "check": "evidence ID exists: CL009756",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL009756",
+      "passed": true,
+      "detail": "expected='K0482'; actual='K0482'"
+    },
+    {
+      "check": "evidence exact text: CL009756",
+      "passed": true,
+      "detail": "expected='Rewired the changeover contactor arrangement, tested on both feeds and left in auto.'; actual='Rewired the changeover contactor arrangement, tested on both feeds and left in auto.'"
+    },
+    {
+      "check": "evidence exact date: CL009756",
+      "passed": true,
+      "detail": "expected='2023-11-18'; actual='2023-11-18'"
+    },
+    {
+      "check": "evidence source ref: CL009756",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#25196'; actual='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#25196'"
+    },
+    {
+      "check": "evidence not future: CL009756",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL009756",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "identity type preserved: CL009756",
+      "passed": true,
+      "detail": "expected='payroll_reference'; actual='payroll_reference'"
+    },
+    {
+      "check": "raw identifier preserved: CL009756",
+      "passed": true,
+      "detail": "expected='11979'; actual='11979'"
+    },
+    {
+      "check": "payroll normalization: CL009756",
+      "passed": true,
+      "detail": "expected='11979'; actual='11979'"
+    },
+    {
+      "check": "clean payroll preserved: CL009756",
+      "passed": true,
+      "detail": "expected='0011979'; actual='0011979'"
+    },
+    {
+      "check": "payroll corroboration status: CL009756",
       "passed": true,
       "detail": "expected='corroborates'; actual='corroborates'"
     },
@@ -3361,56 +3381,6 @@
       "detail": "expected='corroborates'; actual='corroborates'"
     },
     {
-      "check": "evidence ID exists: CL007341",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL007341",
-      "passed": true,
-      "detail": "expected='K0561'; actual='K0561'"
-    },
-    {
-      "check": "evidence exact text: CL007341",
-      "passed": true,
-      "detail": "expected='Rebuilt the no.1 pump end to end, new wear rings, delivery back up to 11.2 V.'; actual='Rebuilt the no.1 pump end to end, new wear rings, delivery back up to 11.2 V.'"
-    },
-    {
-      "check": "evidence exact date: CL007341",
-      "passed": true,
-      "detail": "expected='2015-11-15'; actual='2015-11-15'"
-    },
-    {
-      "check": "evidence source ref: CL007341",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#18751'; actual='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#18751'"
-    },
-    {
-      "check": "evidence not future: CL007341",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL007341",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "identity type preserved: CL007341",
-      "passed": true,
-      "detail": "expected='name'; actual='name'"
-    },
-    {
-      "check": "raw identifier preserved: CL007341",
-      "passed": true,
-      "detail": "expected='Muirgheal Holmthwaite'; actual='Muirgheal Holmthwaite'"
-    },
-    {
-      "check": "name corroboration status: CL007341",
-      "passed": true,
-      "detail": "expected='corroborates'; actual='corroborates'"
-    },
-    {
       "check": "evidence ID exists: CL007052",
       "passed": true,
       "detail": ""
@@ -3457,6 +3427,56 @@
     },
     {
       "check": "DAT attribution status preserved: CL007052",
+      "passed": true,
+      "detail": "expected='corroborates'; actual='corroborates'"
+    },
+    {
+      "check": "evidence ID exists: CL005661",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL005661",
+      "passed": true,
+      "detail": "expected='K0561'; actual='K0561'"
+    },
+    {
+      "check": "evidence exact text: CL005661",
+      "passed": true,
+      "detail": "expected='Changed the battery in the portable set.'; actual='Changed the battery in the portable set.'"
+    },
+    {
+      "check": "evidence exact date: CL005661",
+      "passed": true,
+      "detail": "expected='2011-04-10'; actual='2011-04-10'"
+    },
+    {
+      "check": "evidence source ref: CL005661",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era2-keeperlog/KLOG2011.DAT#003581'; actual='raw/logbooks/era2-keeperlog/KLOG2011.DAT#003581'"
+    },
+    {
+      "check": "evidence not future: CL005661",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL005661",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "identity type preserved: CL005661",
+      "passed": true,
+      "detail": "expected='keeper_code'; actual='keeper_code'"
+    },
+    {
+      "check": "raw identifier preserved: CL005661",
+      "passed": true,
+      "detail": "expected='K0561'; actual='K0561'"
+    },
+    {
+      "check": "DAT attribution status preserved: CL005661",
       "passed": true,
       "detail": "expected='corroborates'; actual='corroborates'"
     },
@@ -4851,104 +4871,124 @@
       "detail": "expected='absent'; actual='absent'"
     },
     {
-      "check": "evidence ID exists: CL000987",
+      "check": "evidence ID exists: CL010452",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "evidence keeper: CL000987",
+      "check": "evidence keeper: CL010452",
       "passed": true,
       "detail": "expected='K0650'; actual='K0650'"
     },
     {
-      "check": "evidence exact text: CL000987",
+      "check": "evidence exact text: CL010452",
       "passed": true,
-      "detail": "expected='Megger test on the no.3 feeder, 24.6 V, condemned the cable and ran a temporary.'; actual='Megger test on the no.3 feeder, 24.6 V, condemned the cable and ran a temporary.'"
+      "detail": "expected='Lamp not lit, found the fuse gone. Renewed.'; actual='Lamp not lit, found the fuse gone. Renewed.'"
     },
     {
-      "check": "evidence exact date: CL000987",
+      "check": "evidence exact date: CL010452",
       "passed": true,
-      "detail": "expected='1995-04-27'; actual='1995-04-27'"
+      "detail": "expected='2026-05-20'; actual='2026-05-20'"
     },
     {
-      "check": "evidence source ref: CL000987",
+      "check": "evidence source ref: CL010452",
       "passed": true,
-      "detail": "expected='raw/logbooks/era1-ocr/pallasveen-1995.txt#L174'; actual='raw/logbooks/era1-ocr/pallasveen-1995.txt#L174'"
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#58075'; actual='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#58075'"
     },
     {
-      "check": "evidence not future: CL000987",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL000987",
+      "check": "evidence not future: CL010452",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "identity type preserved: CL000987",
-      "passed": true,
-      "detail": "expected='absent'; actual='absent'"
-    },
-    {
-      "check": "raw identifier preserved: CL000987",
-      "passed": true,
-      "detail": "expected=None; actual=None"
-    },
-    {
-      "check": "absent raw identity retained: CL000987",
-      "passed": true,
-      "detail": "expected='absent'; actual='absent'"
-    },
-    {
-      "check": "evidence ID exists: CL000539",
+      "check": "raw citation resolves: CL010452",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "evidence keeper: CL000539",
+      "check": "identity type preserved: CL010452",
+      "passed": true,
+      "detail": "expected='payroll_reference'; actual='payroll_reference'"
+    },
+    {
+      "check": "raw identifier preserved: CL010452",
+      "passed": true,
+      "detail": "expected='0011602'; actual='0011602'"
+    },
+    {
+      "check": "payroll normalization: CL010452",
+      "passed": true,
+      "detail": "expected='11602'; actual='11602'"
+    },
+    {
+      "check": "clean payroll preserved: CL010452",
+      "passed": true,
+      "detail": "expected='0011602'; actual='0011602'"
+    },
+    {
+      "check": "payroll corroboration status: CL010452",
+      "passed": true,
+      "detail": "expected='corroborates'; actual='corroborates'"
+    },
+    {
+      "check": "evidence ID exists: CL009955",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL009955",
       "passed": true,
       "detail": "expected='K0650'; actual='K0650'"
     },
     {
-      "check": "evidence exact text: CL000539",
+      "check": "evidence exact text: CL009955",
       "passed": true,
-      "detail": "expected='Megger test on the No.2 feeder, 3.6 bar, condemned the cable and ran a temporary.'; actual='Megger test on the No.2 feeder, 3.6 bar, condemned the cable and ran a temporary.'"
+      "detail": "expected='Rebuilt the clockwork drive, cleaned forty years of gum out of the train.'; actual='Rebuilt the clockwork drive, cleaned forty years of gum out of the train.'"
     },
     {
-      "check": "evidence exact date: CL000539",
+      "check": "evidence exact date: CL009955",
       "passed": true,
-      "detail": "expected='1991-12-17'; actual='1991-12-17'"
+      "detail": "expected='2024-07-12'; actual='2024-07-12'"
     },
     {
-      "check": "evidence source ref: CL000539",
+      "check": "evidence source ref: CL009955",
       "passed": true,
-      "detail": "expected='raw/logbooks/era1-ocr/pallasveen-1991.txt#L510'; actual='raw/logbooks/era1-ocr/pallasveen-1991.txt#L510'"
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#33530'; actual='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#33530'"
     },
     {
-      "check": "evidence not future: CL000539",
+      "check": "evidence not future: CL009955",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "raw citation resolves: CL000539",
+      "check": "raw citation resolves: CL009955",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "identity type preserved: CL000539",
+      "check": "identity type preserved: CL009955",
       "passed": true,
-      "detail": "expected='absent'; actual='absent'"
+      "detail": "expected='payroll_reference'; actual='payroll_reference'"
     },
     {
-      "check": "raw identifier preserved: CL000539",
+      "check": "raw identifier preserved: CL009955",
       "passed": true,
-      "detail": "expected=None; actual=None"
+      "detail": "expected='0011602'; actual='0011602'"
     },
     {
-      "check": "absent raw identity retained: CL000539",
+      "check": "payroll normalization: CL009955",
       "passed": true,
-      "detail": "expected='absent'; actual='absent'"
+      "detail": "expected='11602'; actual='11602'"
+    },
+    {
+      "check": "clean payroll preserved: CL009955",
+      "passed": true,
+      "detail": "expected='0011602'; actual='0011602'"
+    },
+    {
+      "check": "payroll corroboration status: CL009955",
+      "passed": true,
+      "detail": "expected='corroborates'; actual='corroborates'"
     },
     {
       "check": "candidate as-of: K0663",
@@ -5901,156 +5941,6 @@
       "detail": "expected='conflicts'; actual='conflicts'"
     },
     {
-      "check": "evidence ID exists: CL005698",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL005698",
-      "passed": true,
-      "detail": "expected='K0847'; actual='K0847'"
-    },
-    {
-      "check": "evidence exact text: CL005698",
-      "passed": true,
-      "detail": "expected='Megger test on the no.1 feeder, 11.2 V, condemned the cable and ran a temporary.'; actual='Megger test on the no.1 feeder, 11.2 V, condemned the cable and ran a temporary.'"
-    },
-    {
-      "check": "evidence exact date: CL005698",
-      "passed": true,
-      "detail": "expected='2011-05-13'; actual='2011-05-13'"
-    },
-    {
-      "check": "evidence source ref: CL005698",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era2-keeperlog/KLOG2011.DAT#004815'; actual='raw/logbooks/era2-keeperlog/KLOG2011.DAT#004815'"
-    },
-    {
-      "check": "evidence not future: CL005698",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL005698",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "identity type preserved: CL005698",
-      "passed": true,
-      "detail": "expected='keeper_code'; actual='keeper_code'"
-    },
-    {
-      "check": "raw identifier preserved: CL005698",
-      "passed": true,
-      "detail": "expected='K0847'; actual='K0847'"
-    },
-    {
-      "check": "DAT attribution status preserved: CL005698",
-      "passed": true,
-      "detail": "expected='corroborates'; actual='corroborates'"
-    },
-    {
-      "check": "evidence ID exists: CL002773",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL002773",
-      "passed": true,
-      "detail": "expected='K0847'; actual='K0847'"
-    },
-    {
-      "check": "evidence exact text: CL002773",
-      "passed": true,
-      "detail": "expected='Megger test on the no.3 feeder, 3.6 bar, condemned the cable and ran a temporary.'; actual='Megger test on the no.3 feeder, 3.6 bar, condemned the cable and ran a temporary.'"
-    },
-    {
-      "check": "evidence exact date: CL002773",
-      "passed": true,
-      "detail": "expected='2002-07-21'; actual='2002-07-21'"
-    },
-    {
-      "check": "evidence source ref: CL002773",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era1-ocr/portnalee-2002.txt#L322'; actual='raw/logbooks/era1-ocr/portnalee-2002.txt#L322'"
-    },
-    {
-      "check": "evidence not future: CL002773",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL002773",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "identity type preserved: CL002773",
-      "passed": true,
-      "detail": "expected='absent'; actual='absent'"
-    },
-    {
-      "check": "raw identifier preserved: CL002773",
-      "passed": true,
-      "detail": "expected=None; actual=None"
-    },
-    {
-      "check": "absent raw identity retained: CL002773",
-      "passed": true,
-      "detail": "expected='absent'; actual='absent'"
-    },
-    {
-      "check": "evidence ID exists: CL002636",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL002636",
-      "passed": true,
-      "detail": "expected='K0847'; actual='K0847'"
-    },
-    {
-      "check": "evidence exact text: CL002636",
-      "passed": true,
-      "detail": "expected='Megger test on the no.3 feeder, 2.4 ohm, condemned the cable and ran a temporary.'; actual='Megger test on the no.3 feeder, 2.4 ohm, condemned the cable and ran a temporary.'"
-    },
-    {
-      "check": "evidence exact date: CL002636",
-      "passed": true,
-      "detail": "expected='2002-01-12'; actual='2002-01-12'"
-    },
-    {
-      "check": "evidence source ref: CL002636",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era1-ocr/portnalee-2002.txt#L26'; actual='raw/logbooks/era1-ocr/portnalee-2002.txt#L26'"
-    },
-    {
-      "check": "evidence not future: CL002636",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL002636",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "identity type preserved: CL002636",
-      "passed": true,
-      "detail": "expected='absent'; actual='absent'"
-    },
-    {
-      "check": "raw identifier preserved: CL002636",
-      "passed": true,
-      "detail": "expected=None; actual=None"
-    },
-    {
-      "check": "absent raw identity retained: CL002636",
-      "passed": true,
-      "detail": "expected='absent'; actual='absent'"
-    },
-    {
       "check": "evidence ID exists: CL001792",
       "passed": true,
       "detail": ""
@@ -6099,6 +5989,176 @@
       "check": "absent raw identity retained: CL001792",
       "passed": true,
       "detail": "expected='absent'; actual='absent'"
+    },
+    {
+      "check": "evidence ID exists: CL000916",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL000916",
+      "passed": true,
+      "detail": "expected='K0847'; actual='K0847'"
+    },
+    {
+      "check": "evidence exact text: CL000916",
+      "passed": true,
+      "detail": "expected='Traced the nuisance low-volt alarm to a soft cell in the No.2 bank, replaced it.'; actual='Traced the nuisance low-volt alarm to a soft cell in the No.2 bank, replaced it.'"
+    },
+    {
+      "check": "evidence exact date: CL000916",
+      "passed": true,
+      "detail": "expected='1994-11-24'; actual='1994-11-24'"
+    },
+    {
+      "check": "evidence source ref: CL000916",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era1-ocr/dunsaille-1994.txt#L620'; actual='raw/logbooks/era1-ocr/dunsaille-1994.txt#L620'"
+    },
+    {
+      "check": "evidence not future: CL000916",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL000916",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "identity type preserved: CL000916",
+      "passed": true,
+      "detail": "expected='absent'; actual='absent'"
+    },
+    {
+      "check": "raw identifier preserved: CL000916",
+      "passed": true,
+      "detail": "expected=None; actual=None"
+    },
+    {
+      "check": "absent raw identity retained: CL000916",
+      "passed": true,
+      "detail": "expected='absent'; actual='absent'"
+    },
+    {
+      "check": "evidence ID exists: CL008299",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL008299",
+      "passed": true,
+      "detail": "expected='K0847'; actual='K0847'"
+    },
+    {
+      "check": "evidence exact text: CL008299",
+      "passed": true,
+      "detail": "expected='AVR on no.1 replaced and the volts set to 0.8 ohm, load-shared with No.1 properly after.'; actual='AVR on no.1 replaced and the volts set to 0.8 ohm, load-shared with No.1 properly after.'"
+    },
+    {
+      "check": "evidence exact date: CL008299",
+      "passed": true,
+      "detail": "expected='2018-11-18'; actual='2018-11-18'"
+    },
+    {
+      "check": "evidence source ref: CL008299",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#11591'; actual='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#11591'"
+    },
+    {
+      "check": "evidence not future: CL008299",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL008299",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "identity type preserved: CL008299",
+      "passed": true,
+      "detail": "expected='payroll_reference'; actual='payroll_reference'"
+    },
+    {
+      "check": "raw identifier preserved: CL008299",
+      "passed": true,
+      "detail": "expected='0012263'; actual='0012263'"
+    },
+    {
+      "check": "payroll normalization: CL008299",
+      "passed": true,
+      "detail": "expected='12263'; actual='12263'"
+    },
+    {
+      "check": "clean payroll preserved: CL008299",
+      "passed": true,
+      "detail": "expected='0012263'; actual='0012263'"
+    },
+    {
+      "check": "payroll corroboration status: CL008299",
+      "passed": true,
+      "detail": "expected='corroborates'; actual='corroborates'"
+    },
+    {
+      "check": "evidence ID exists: CL008261",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL008261",
+      "passed": true,
+      "detail": "expected='K0847'; actual='K0847'"
+    },
+    {
+      "check": "evidence exact text: CL008261",
+      "passed": true,
+      "detail": "expected='Protection relay settings checked against the schedule and two were found wrong.'; actual='Protection relay settings checked against the schedule and two were found wrong.'"
+    },
+    {
+      "check": "evidence exact date: CL008261",
+      "passed": true,
+      "detail": "expected='2018-10-12'; actual='2018-10-12'"
+    },
+    {
+      "check": "evidence source ref: CL008261",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#10234'; actual='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#10234'"
+    },
+    {
+      "check": "evidence not future: CL008261",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL008261",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "identity type preserved: CL008261",
+      "passed": true,
+      "detail": "expected='payroll_reference'; actual='payroll_reference'"
+    },
+    {
+      "check": "raw identifier preserved: CL008261",
+      "passed": true,
+      "detail": "expected='0012263'; actual='0012263'"
+    },
+    {
+      "check": "payroll normalization: CL008261",
+      "passed": true,
+      "detail": "expected='12263'; actual='12263'"
+    },
+    {
+      "check": "clean payroll preserved: CL008261",
+      "passed": true,
+      "detail": "expected='0012263'; actual='0012263'"
+    },
+    {
+      "check": "payroll corroboration status: CL008261",
+      "passed": true,
+      "detail": "expected='corroborates'; actual='corroborates'"
     },
     {
       "check": "candidate as-of: K0897",
@@ -6226,56 +6286,6 @@
       "detail": "expected='corroborates'; actual='corroborates'"
     },
     {
-      "check": "evidence ID exists: CL005345",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL005345",
-      "passed": true,
-      "detail": "expected='K0897'; actual='K0897'"
-    },
-    {
-      "check": "evidence exact text: CL005345",
-      "passed": true,
-      "detail": "expected='Megger test on the no 1 feeder, 232 V, condemned the cable and ran a temporary.'; actual='Megger test on the no 1 feeder, 232 V, condemned the cable and ran a temporary.'"
-    },
-    {
-      "check": "evidence exact date: CL005345",
-      "passed": true,
-      "detail": "expected='2010-06-04'; actual='2010-06-04'"
-    },
-    {
-      "check": "evidence source ref: CL005345",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era2-keeperlog/KLOG2010.DAT#005453'; actual='raw/logbooks/era2-keeperlog/KLOG2010.DAT#005453'"
-    },
-    {
-      "check": "evidence not future: CL005345",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL005345",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "identity type preserved: CL005345",
-      "passed": true,
-      "detail": "expected='keeper_code'; actual='keeper_code'"
-    },
-    {
-      "check": "raw identifier preserved: CL005345",
-      "passed": true,
-      "detail": "expected='K0897'; actual='K0897'"
-    },
-    {
-      "check": "DAT attribution status preserved: CL005345",
-      "passed": true,
-      "detail": "expected='corroborates'; actual='corroborates'"
-    },
-    {
       "check": "evidence ID exists: CL008960",
       "passed": true,
       "detail": ""
@@ -6392,6 +6402,66 @@
     },
     {
       "check": "payroll corroboration status: CL008649",
+      "passed": true,
+      "detail": "expected='corroborates'; actual='corroborates'"
+    },
+    {
+      "check": "evidence ID exists: CL008539",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL008539",
+      "passed": true,
+      "detail": "expected='K0897'; actual='K0897'"
+    },
+    {
+      "check": "evidence exact text: CL008539",
+      "passed": true,
+      "detail": "expected='Changed oil and filters on no 1.'; actual='Changed oil and filters on no 1.'"
+    },
+    {
+      "check": "evidence exact date: CL008539",
+      "passed": true,
+      "detail": "expected='2019-10-07'; actual='2019-10-07'"
+    },
+    {
+      "check": "evidence source ref: CL008539",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#23484'; actual='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#23484'"
+    },
+    {
+      "check": "evidence not future: CL008539",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL008539",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "identity type preserved: CL008539",
+      "passed": true,
+      "detail": "expected='payroll_reference'; actual='payroll_reference'"
+    },
+    {
+      "check": "raw identifier preserved: CL008539",
+      "passed": true,
+      "detail": "expected='0011753'; actual='0011753'"
+    },
+    {
+      "check": "payroll normalization: CL008539",
+      "passed": true,
+      "detail": "expected='11753'; actual='11753'"
+    },
+    {
+      "check": "clean payroll preserved: CL008539",
+      "passed": true,
+      "detail": "expected='0011753'; actual='0011753'"
+    },
+    {
+      "check": "payroll corroboration status: CL008539",
       "passed": true,
       "detail": "expected='corroborates'; actual='corroborates'"
     },
@@ -6706,62 +6776,52 @@
       "detail": "expected='corroborates'; actual='corroborates'"
     },
     {
-      "check": "evidence ID exists: CL009921",
+      "check": "evidence ID exists: CL007505",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "evidence keeper: CL009921",
+      "check": "evidence keeper: CL007505",
       "passed": true,
       "detail": "expected='K1200'; actual='K1200'"
     },
     {
-      "check": "evidence exact text: CL009921",
+      "check": "evidence exact text: CL007505",
       "passed": true,
-      "detail": "expected='Stripped and cleaned the mercury bath, float centred and the rotation smoothed out.'; actual='Stripped and cleaned the mercury bath, float centred and the rotation smoothed out.'"
+      "detail": "expected='Lamp changer stepping twice, dismantled the ratchet and dressed the pawl faces.'; actual='Lamp changer stepping twice, dismantled the ratchet and dressed the pawl faces.'"
     },
     {
-      "check": "evidence exact date: CL009921",
+      "check": "evidence exact date: CL007505",
       "passed": true,
-      "detail": "expected='2024-05-24'; actual='2024-05-24'"
+      "detail": "expected='2016-05-27'; actual='2016-05-27'"
     },
     {
-      "check": "evidence source ref: CL009921",
+      "check": "evidence source ref: CL007505",
       "passed": true,
-      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#31925'; actual='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#31925'"
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#25724'; actual='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#25724'"
     },
     {
-      "check": "evidence not future: CL009921",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL009921",
+      "check": "evidence not future: CL007505",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "identity type preserved: CL009921",
+      "check": "raw citation resolves: CL007505",
       "passed": true,
-      "detail": "expected='payroll_reference'; actual='payroll_reference'"
+      "detail": ""
     },
     {
-      "check": "raw identifier preserved: CL009921",
+      "check": "identity type preserved: CL007505",
       "passed": true,
-      "detail": "expected='0011721'; actual='0011721'"
+      "detail": "expected='name'; actual='name'"
     },
     {
-      "check": "payroll normalization: CL009921",
+      "check": "raw identifier preserved: CL007505",
       "passed": true,
-      "detail": "expected='11721'; actual='11721'"
+      "detail": "expected='Tomaltach Yarrowfell'; actual='Tomaltach Yarrowfell'"
     },
     {
-      "check": "clean payroll preserved: CL009921",
-      "passed": true,
-      "detail": "expected='0011721'; actual='0011721'"
-    },
-    {
-      "check": "payroll corroboration status: CL009921",
+      "check": "name corroboration status: CL007505",
       "passed": true,
       "detail": "expected='corroborates'; actual='corroborates'"
     },
@@ -6826,104 +6886,64 @@
       "detail": "expected='corroborates'; actual='corroborates'"
     },
     {
-      "check": "evidence ID exists: CL007505",
+      "check": "evidence ID exists: CL009921",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "evidence keeper: CL007505",
+      "check": "evidence keeper: CL009921",
       "passed": true,
       "detail": "expected='K1200'; actual='K1200'"
     },
     {
-      "check": "evidence exact text: CL007505",
+      "check": "evidence exact text: CL009921",
       "passed": true,
-      "detail": "expected='Lamp changer stepping twice, dismantled the ratchet and dressed the pawl faces.'; actual='Lamp changer stepping twice, dismantled the ratchet and dressed the pawl faces.'"
+      "detail": "expected='Stripped and cleaned the mercury bath, float centred and the rotation smoothed out.'; actual='Stripped and cleaned the mercury bath, float centred and the rotation smoothed out.'"
     },
     {
-      "check": "evidence exact date: CL007505",
+      "check": "evidence exact date: CL009921",
       "passed": true,
-      "detail": "expected='2016-05-27'; actual='2016-05-27'"
+      "detail": "expected='2024-05-24'; actual='2024-05-24'"
     },
     {
-      "check": "evidence source ref: CL007505",
+      "check": "evidence source ref: CL009921",
       "passed": true,
-      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#25724'; actual='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#25724'"
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#31925'; actual='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#31925'"
     },
     {
-      "check": "evidence not future: CL007505",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL007505",
+      "check": "evidence not future: CL009921",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "identity type preserved: CL007505",
+      "check": "raw citation resolves: CL009921",
       "passed": true,
-      "detail": "expected='name'; actual='name'"
+      "detail": ""
     },
     {
-      "check": "raw identifier preserved: CL007505",
+      "check": "identity type preserved: CL009921",
       "passed": true,
-      "detail": "expected='Tomaltach Yarrowfell'; actual='Tomaltach Yarrowfell'"
+      "detail": "expected='payroll_reference'; actual='payroll_reference'"
     },
     {
-      "check": "name corroboration status: CL007505",
+      "check": "raw identifier preserved: CL009921",
+      "passed": true,
+      "detail": "expected='0011721'; actual='0011721'"
+    },
+    {
+      "check": "payroll normalization: CL009921",
+      "passed": true,
+      "detail": "expected='11721'; actual='11721'"
+    },
+    {
+      "check": "clean payroll preserved: CL009921",
+      "passed": true,
+      "detail": "expected='0011721'; actual='0011721'"
+    },
+    {
+      "check": "payroll corroboration status: CL009921",
       "passed": true,
       "detail": "expected='corroborates'; actual='corroborates'"
-    },
-    {
-      "check": "evidence ID exists: CL002973",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL002973",
-      "passed": true,
-      "detail": "expected='K1200'; actual='K1200'"
-    },
-    {
-      "check": "evidence exact text: CL002973",
-      "passed": true,
-      "detail": "expected='Drive motor brushes and commutator dressed, rotation back to time.'; actual='Drive motor brushes and commutator dressed, rotation back to time.'"
-    },
-    {
-      "check": "evidence exact date: CL002973",
-      "passed": true,
-      "detail": "expected='2003-04-28'; actual='2003-04-28'"
-    },
-    {
-      "check": "evidence source ref: CL002973",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era1-ocr/wrackholm-2003.txt#L123'; actual='raw/logbooks/era1-ocr/wrackholm-2003.txt#L123'"
-    },
-    {
-      "check": "evidence not future: CL002973",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL002973",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "identity type preserved: CL002973",
-      "passed": true,
-      "detail": "expected='absent'; actual='absent'"
-    },
-    {
-      "check": "raw identifier preserved: CL002973",
-      "passed": true,
-      "detail": "expected=None; actual=None"
-    },
-    {
-      "check": "absent raw identity retained: CL002973",
-      "passed": true,
-      "detail": "expected='absent'; actual='absent'"
     },
     {
       "check": "candidate as-of: K1203",
@@ -7866,56 +7886,6 @@
       "detail": "expected='corroborates'; actual='corroborates'"
     },
     {
-      "check": "evidence ID exists: CL003195",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL003195",
-      "passed": true,
-      "detail": "expected='K1302'; actual='K1302'"
-    },
-    {
-      "check": "evidence exact text: CL003195",
-      "passed": true,
-      "detail": "expected='AVR on no.1 replaced and the volts set to 418 V, load-shared with No.1 properly after.'; actual='AVR on no.1 replaced and the volts set to 418 V, load-shared with No.1 properly after.'"
-    },
-    {
-      "check": "evidence exact date: CL003195",
-      "passed": true,
-      "detail": "expected='2004-01-04'; actual='2004-01-04'"
-    },
-    {
-      "check": "evidence source ref: CL003195",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era2-keeperlog/KLOG2004.DAT#000130'; actual='raw/logbooks/era2-keeperlog/KLOG2004.DAT#000130'"
-    },
-    {
-      "check": "evidence not future: CL003195",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL003195",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "identity type preserved: CL003195",
-      "passed": true,
-      "detail": "expected='keeper_code'; actual='keeper_code'"
-    },
-    {
-      "check": "raw identifier preserved: CL003195",
-      "passed": true,
-      "detail": "expected='K1302'; actual='K1302'"
-    },
-    {
-      "check": "DAT attribution status preserved: CL003195",
-      "passed": true,
-      "detail": "expected='corroborates'; actual='corroborates'"
-    },
-    {
       "check": "evidence ID exists: CL002551",
       "passed": true,
       "detail": ""
@@ -8012,6 +7982,56 @@
     },
     {
       "check": "absent raw identity retained: CL002447",
+      "passed": true,
+      "detail": "expected='absent'; actual='absent'"
+    },
+    {
+      "check": "evidence ID exists: CL002191",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL002191",
+      "passed": true,
+      "detail": "expected='K1302'; actual='K1302'"
+    },
+    {
+      "check": "evidence exact text: CL002191",
+      "passed": true,
+      "detail": "expected='Filter changed on the power pack.'; actual='Filter changed on the power pack.'"
+    },
+    {
+      "check": "evidence exact date: CL002191",
+      "passed": true,
+      "detail": "expected='2000-04-17'; actual='2000-04-17'"
+    },
+    {
+      "check": "evidence source ref: CL002191",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era1-ocr/fionnvarra-2000.txt#L254'; actual='raw/logbooks/era1-ocr/fionnvarra-2000.txt#L254'"
+    },
+    {
+      "check": "evidence not future: CL002191",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL002191",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "identity type preserved: CL002191",
+      "passed": true,
+      "detail": "expected='absent'; actual='absent'"
+    },
+    {
+      "check": "raw identifier preserved: CL002191",
+      "passed": true,
+      "detail": "expected=None; actual=None"
+    },
+    {
+      "check": "absent raw identity retained: CL002191",
       "passed": true,
       "detail": "expected='absent'; actual='absent'"
     },
@@ -10556,112 +10576,122 @@
       "detail": "expected='corroborates'; actual='corroborates'"
     },
     {
-      "check": "evidence ID exists: CL008221",
+      "check": "evidence ID exists: CL010561",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "evidence keeper: CL008221",
+      "check": "evidence keeper: CL010561",
       "passed": true,
       "detail": "expected='K1511'; actual='K1511'"
     },
     {
-      "check": "evidence exact text: CL008221",
+      "check": "evidence exact text: CL010561",
       "passed": true,
-      "detail": "expected='Megger test on the NO.2 feeder, 3.6 bar, condemned the cable and ran a temporary.'; actual='Megger test on the NO.2 feeder, 3.6 bar, condemned the cable and ran a temporary.'"
+      "detail": "expected='Rewired the changeover contactor arrangement, tested on both feeds and left in auto.'; actual='Rewired the changeover contactor arrangement, tested on both feeds and left in auto.'"
     },
     {
-      "check": "evidence exact date: CL008221",
+      "check": "evidence exact date: CL010561",
       "passed": true,
-      "detail": "expected='2018-09-05'; actual='2018-09-05'"
+      "detail": "expected='2026-10-10'; actual='2026-10-10'"
     },
     {
-      "check": "evidence source ref: CL008221",
+      "check": "evidence source ref: CL010561",
       "passed": true,
-      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#8872'; actual='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#8872'"
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#63354'; actual='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#63354'"
     },
     {
-      "check": "evidence not future: CL008221",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL008221",
+      "check": "evidence not future: CL010561",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "identity type preserved: CL008221",
+      "check": "raw citation resolves: CL010561",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "identity type preserved: CL010561",
       "passed": true,
       "detail": "expected='payroll_reference'; actual='payroll_reference'"
     },
     {
-      "check": "raw identifier preserved: CL008221",
+      "check": "raw identifier preserved: CL010561",
       "passed": true,
-      "detail": "expected='992603'; actual='992603'"
+      "detail": "expected='12846'; actual='12846'"
     },
     {
-      "check": "payroll normalization: CL008221",
+      "check": "payroll normalization: CL010561",
       "passed": true,
-      "detail": "expected='992603'; actual='992603'"
+      "detail": "expected='12846'; actual='12846'"
     },
     {
-      "check": "clean payroll preserved: CL008221",
+      "check": "clean payroll preserved: CL010561",
       "passed": true,
       "detail": "expected='0012846'; actual='0012846'"
     },
     {
-      "check": "payroll corroboration status: CL008221",
+      "check": "payroll corroboration status: CL010561",
       "passed": true,
-      "detail": "expected='conflicts'; actual='conflicts'"
+      "detail": "expected='corroborates'; actual='corroborates'"
     },
     {
-      "check": "evidence ID exists: CL006786",
+      "check": "evidence ID exists: CL010470",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "evidence keeper: CL006786",
+      "check": "evidence keeper: CL010470",
       "passed": true,
       "detail": "expected='K1511'; actual='K1511'"
     },
     {
-      "check": "evidence exact text: CL006786",
+      "check": "evidence exact text: CL010470",
       "passed": true,
-      "detail": "expected='Megger test on the no 1 feeder, 2.4 ohm, condemned the cable and ran a temporary.'; actual='Megger test on the no 1 feeder, 2.4 ohm, condemned the cable and ran a temporary.'"
+      "detail": "expected='Protection relay settings checked against the schedule and two were found wrong.'; actual='Protection relay settings checked against the schedule and two were found wrong.'"
     },
     {
-      "check": "evidence exact date: CL006786",
+      "check": "evidence exact date: CL010470",
       "passed": true,
-      "detail": "expected='2014-05-09'; actual='2014-05-09'"
+      "detail": "expected='2026-06-27'; actual='2026-06-27'"
     },
     {
-      "check": "evidence source ref: CL006786",
+      "check": "evidence source ref: CL010470",
       "passed": true,
-      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#2453'; actual='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#2453'"
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#59496'; actual='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#59496'"
     },
     {
-      "check": "evidence not future: CL006786",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL006786",
+      "check": "evidence not future: CL010470",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "identity type preserved: CL006786",
+      "check": "raw citation resolves: CL010470",
       "passed": true,
-      "detail": "expected='name'; actual='name'"
+      "detail": ""
     },
     {
-      "check": "raw identifier preserved: CL006786",
+      "check": "identity type preserved: CL010470",
       "passed": true,
-      "detail": "expected='Jarlath Drenmore'; actual='Jarlath Drenmore'"
+      "detail": "expected='payroll_reference'; actual='payroll_reference'"
     },
     {
-      "check": "name corroboration status: CL006786",
+      "check": "raw identifier preserved: CL010470",
+      "passed": true,
+      "detail": "expected='12846'; actual='12846'"
+    },
+    {
+      "check": "payroll normalization: CL010470",
+      "passed": true,
+      "detail": "expected='12846'; actual='12846'"
+    },
+    {
+      "check": "clean payroll preserved: CL010470",
+      "passed": true,
+      "detail": "expected='0012846'; actual='0012846'"
+    },
+    {
+      "check": "payroll corroboration status: CL010470",
       "passed": true,
       "detail": "expected='corroborates'; actual='corroborates'"
     },
@@ -10721,56 +10751,6 @@
       "detail": "expected='corroborates'; actual='corroborates'"
     },
     {
-      "check": "evidence ID exists: CL007587",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL007587",
-      "passed": true,
-      "detail": "expected='K1538'; actual='K1538'"
-    },
-    {
-      "check": "evidence exact text: CL007587",
-      "passed": true,
-      "detail": "expected='Megger test on the no 1 feeder, 232 V, condemned the cable and ran a temporary.'; actual='Megger test on the no 1 feeder, 232 V, condemned the cable and ran a temporary.'"
-    },
-    {
-      "check": "evidence exact date: CL007587",
-      "passed": true,
-      "detail": "expected='2016-09-06'; actual='2016-09-06'"
-    },
-    {
-      "check": "evidence source ref: CL007587",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#29301'; actual='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#29301'"
-    },
-    {
-      "check": "evidence not future: CL007587",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL007587",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "identity type preserved: CL007587",
-      "passed": true,
-      "detail": "expected='name'; actual='name'"
-    },
-    {
-      "check": "raw identifier preserved: CL007587",
-      "passed": true,
-      "detail": "expected='Oileann Ní Gharbhail'; actual='Oileann Ní Gharbhail'"
-    },
-    {
-      "check": "name corroboration status: CL007587",
-      "passed": true,
-      "detail": "expected='corroborates'; actual='corroborates'"
-    },
-    {
       "check": "evidence ID exists: CL007420",
       "passed": true,
       "detail": ""
@@ -10817,56 +10797,6 @@
     },
     {
       "check": "name corroboration status: CL007420",
-      "passed": true,
-      "detail": "expected='corroborates'; actual='corroborates'"
-    },
-    {
-      "check": "evidence ID exists: CL007270",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL007270",
-      "passed": true,
-      "detail": "expected='K1538'; actual='K1538'"
-    },
-    {
-      "check": "evidence exact text: CL007270",
-      "passed": true,
-      "detail": "expected='Megger test on the no.2 feeder, 2.4 ohm, condemned the cable and ran a temporary.'; actual='Megger test on the no.2 feeder, 2.4 ohm, condemned the cable and ran a temporary.'"
-    },
-    {
-      "check": "evidence exact date: CL007270",
-      "passed": true,
-      "detail": "expected='2015-08-20'; actual='2015-08-20'"
-    },
-    {
-      "check": "evidence source ref: CL007270",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#15621'; actual='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#15621'"
-    },
-    {
-      "check": "evidence not future: CL007270",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL007270",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "identity type preserved: CL007270",
-      "passed": true,
-      "detail": "expected='name'; actual='name'"
-    },
-    {
-      "check": "raw identifier preserved: CL007270",
-      "passed": true,
-      "detail": "expected='Oileann Ni Gharbhail'; actual='Oileann Ni Gharbhail'"
-    },
-    {
-      "check": "name corroboration status: CL007270",
       "passed": true,
       "detail": "expected='corroborates'; actual='corroborates'"
     },
@@ -10921,9 +10851,109 @@
       "detail": "expected='corroborates'; actual='corroborates'"
     },
     {
+      "check": "evidence ID exists: CL004869",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL004869",
+      "passed": true,
+      "detail": "expected='K1538'; actual='K1538'"
+    },
+    {
+      "check": "evidence exact text: CL004869",
+      "passed": true,
+      "detail": "expected='Isolated NO.2 transformer, earths applied both ends, PTW 46 issued to the contractor.'; actual='Isolated NO.2 transformer, earths applied both ends, PTW 46 issued to the contractor.'"
+    },
+    {
+      "check": "evidence exact date: CL004869",
+      "passed": true,
+      "detail": "expected='2009-03-05'; actual='2009-03-05'"
+    },
+    {
+      "check": "evidence source ref: CL004869",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era2-keeperlog/KLOG2009.DAT#002363'; actual='raw/logbooks/era2-keeperlog/KLOG2009.DAT#002363'"
+    },
+    {
+      "check": "evidence not future: CL004869",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL004869",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "identity type preserved: CL004869",
+      "passed": true,
+      "detail": "expected='keeper_code'; actual='keeper_code'"
+    },
+    {
+      "check": "raw identifier preserved: CL004869",
+      "passed": true,
+      "detail": "expected='K1538'; actual='K1538'"
+    },
+    {
+      "check": "DAT attribution status preserved: CL004869",
+      "passed": true,
+      "detail": "expected='corroborates'; actual='corroborates'"
+    },
+    {
+      "check": "evidence ID exists: CL003887",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL003887",
+      "passed": true,
+      "detail": "expected='K1538'; actual='K1538'"
+    },
+    {
+      "check": "evidence exact text: CL003887",
+      "passed": true,
+      "detail": "expected='Checked continuity on the run to the fog hut.'; actual='Checked continuity on the run to the fog hut.'"
+    },
+    {
+      "check": "evidence exact date: CL003887",
+      "passed": true,
+      "detail": "expected='2006-02-21'; actual='2006-02-21'"
+    },
+    {
+      "check": "evidence source ref: CL003887",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era2-keeperlog/KLOG2006.DAT#001876'; actual='raw/logbooks/era2-keeperlog/KLOG2006.DAT#001876'"
+    },
+    {
+      "check": "evidence not future: CL003887",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL003887",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "identity type preserved: CL003887",
+      "passed": true,
+      "detail": "expected='keeper_code'; actual='keeper_code'"
+    },
+    {
+      "check": "raw identifier preserved: CL003887",
+      "passed": true,
+      "detail": "expected='K1538'; actual='K1538'"
+    },
+    {
+      "check": "DAT attribution status preserved: CL003887",
+      "passed": true,
+      "detail": "expected='corroborates'; actual='corroborates'"
+    },
+    {
       "check": "at least one traceable work example emitted",
       "passed": true,
-      "detail": "evidence_count=194"
+      "detail": "evidence_count=193"
     },
     {
       "check": "QA1 LH500938 belongs to K0589",
@@ -11711,32 +11741,22 @@
       "detail": "expected=False; actual=False"
     },
     {
-      "check": "measurement warning status: CL009113",
-      "passed": true,
-      "detail": "expected=False; actual=False"
-    },
-    {
-      "check": "measurement warning status: CL009081",
-      "passed": true,
-      "detail": "expected=True; actual=True"
-    },
-    {
-      "check": "measurement quote preserved: CL009081",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "measurement not treated as reliable: CL009081",
-      "passed": true,
-      "detail": ""
-    },
-    {
       "check": "measurement warning status: CL008870",
       "passed": true,
       "detail": "expected=False; actual=False"
     },
     {
       "check": "measurement warning status: CL008115",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "measurement warning status: CL009744",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "measurement warning status: CL009608",
       "passed": true,
       "detail": "expected=False; actual=False"
     },
@@ -11806,27 +11826,17 @@
       "detail": ""
     },
     {
-      "check": "measurement warning status: CL006447",
-      "passed": true,
-      "detail": "expected=True; actual=True"
-    },
-    {
-      "check": "measurement quote preserved: CL006447",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "measurement not treated as reliable: CL006447",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "measurement warning status: CL003246",
+      "check": "measurement warning status: CL010201",
       "passed": true,
       "detail": "expected=False; actual=False"
     },
     {
-      "check": "measurement warning status: CL000835",
+      "check": "measurement warning status: CL006471",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "measurement warning status: CL002538",
       "passed": true,
       "detail": "expected=False; actual=False"
     },
@@ -11891,27 +11901,17 @@
       "detail": "expected=False; actual=False"
     },
     {
-      "check": "measurement warning status: CL001308",
-      "passed": true,
-      "detail": "expected=True; actual=True"
-    },
-    {
-      "check": "measurement quote preserved: CL001308",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "measurement not treated as reliable: CL001308",
-      "passed": true,
-      "detail": ""
-    },
-    {
       "check": "measurement warning status: CL000839",
       "passed": true,
       "detail": "expected=False; actual=False"
     },
     {
       "check": "measurement warning status: CL009967",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "measurement warning status: CL009756",
       "passed": true,
       "detail": "expected=False; actual=False"
     },
@@ -11956,22 +11956,12 @@
       "detail": "expected=False; actual=False"
     },
     {
-      "check": "measurement warning status: CL007341",
-      "passed": true,
-      "detail": "expected=True; actual=True"
-    },
-    {
-      "check": "measurement quote preserved: CL007341",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "measurement not treated as reliable: CL007341",
-      "passed": true,
-      "detail": ""
-    },
-    {
       "check": "measurement warning status: CL007052",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "measurement warning status: CL005661",
       "passed": true,
       "detail": "expected=False; actual=False"
     },
@@ -12101,24 +12091,14 @@
       "detail": "expected=False; actual=False"
     },
     {
-      "check": "measurement warning status: CL000987",
+      "check": "measurement warning status: CL010452",
       "passed": true,
       "detail": "expected=False; actual=False"
     },
     {
-      "check": "measurement warning status: CL000539",
+      "check": "measurement warning status: CL009955",
       "passed": true,
-      "detail": "expected=True; actual=True"
-    },
-    {
-      "check": "measurement quote preserved: CL000539",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "measurement not treated as reliable: CL000539",
-      "passed": true,
-      "detail": ""
+      "detail": "expected=False; actual=False"
     },
     {
       "check": "measurement warning status: CL010451",
@@ -12211,32 +12191,32 @@
       "detail": ""
     },
     {
-      "check": "measurement warning status: CL005698",
+      "check": "measurement warning status: CL001792",
       "passed": true,
       "detail": "expected=False; actual=False"
     },
     {
-      "check": "measurement warning status: CL002773",
+      "check": "measurement warning status: CL000916",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "measurement warning status: CL008299",
       "passed": true,
       "detail": "expected=True; actual=True"
     },
     {
-      "check": "measurement quote preserved: CL002773",
+      "check": "measurement quote preserved: CL008299",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "measurement not treated as reliable: CL002773",
+      "check": "measurement not treated as reliable: CL008299",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "measurement warning status: CL002636",
-      "passed": true,
-      "detail": "expected=False; actual=False"
-    },
-    {
-      "check": "measurement warning status: CL001792",
+      "check": "measurement warning status: CL008261",
       "passed": true,
       "detail": "expected=False; actual=False"
     },
@@ -12251,17 +12231,17 @@
       "detail": "expected=False; actual=False"
     },
     {
-      "check": "measurement warning status: CL005345",
-      "passed": true,
-      "detail": "expected=False; actual=False"
-    },
-    {
       "check": "measurement warning status: CL008960",
       "passed": true,
       "detail": "expected=False; actual=False"
     },
     {
       "check": "measurement warning status: CL008649",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "measurement warning status: CL008539",
       "passed": true,
       "detail": "expected=False; actual=False"
     },
@@ -12296,7 +12276,7 @@
       "detail": "expected=False; actual=False"
     },
     {
-      "check": "measurement warning status: CL009921",
+      "check": "measurement warning status: CL007505",
       "passed": true,
       "detail": "expected=False; actual=False"
     },
@@ -12306,12 +12286,7 @@
       "detail": "expected=False; actual=False"
     },
     {
-      "check": "measurement warning status: CL007505",
-      "passed": true,
-      "detail": "expected=False; actual=False"
-    },
-    {
-      "check": "measurement warning status: CL002973",
+      "check": "measurement warning status: CL009921",
       "passed": true,
       "detail": "expected=False; actual=False"
     },
@@ -12421,17 +12396,17 @@
       "detail": "expected=False; actual=False"
     },
     {
-      "check": "measurement warning status: CL003195",
-      "passed": true,
-      "detail": "expected=False; actual=False"
-    },
-    {
       "check": "measurement warning status: CL002551",
       "passed": true,
       "detail": "expected=False; actual=False"
     },
     {
       "check": "measurement warning status: CL002447",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "measurement warning status: CL002191",
       "passed": true,
       "detail": "expected=False; actual=False"
     },
@@ -12676,22 +12651,12 @@
       "detail": "expected=False; actual=False"
     },
     {
-      "check": "measurement warning status: CL008221",
+      "check": "measurement warning status: CL010561",
       "passed": true,
-      "detail": "expected=True; actual=True"
+      "detail": "expected=False; actual=False"
     },
     {
-      "check": "measurement quote preserved: CL008221",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "measurement not treated as reliable: CL008221",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "measurement warning status: CL006786",
+      "check": "measurement warning status: CL010470",
       "passed": true,
       "detail": "expected=False; actual=False"
     },
@@ -12711,17 +12676,7 @@
       "detail": ""
     },
     {
-      "check": "measurement warning status: CL007587",
-      "passed": true,
-      "detail": "expected=False; actual=False"
-    },
-    {
       "check": "measurement warning status: CL007420",
-      "passed": true,
-      "detail": "expected=False; actual=False"
-    },
-    {
-      "check": "measurement warning status: CL007270",
       "passed": true,
       "detail": "expected=False; actual=False"
     },
@@ -12731,17 +12686,22 @@
       "detail": "expected=False; actual=False"
     },
     {
-      "check": "Correction 3 representative unit warning CL009081",
+      "check": "measurement warning status: CL004869",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "measurement warning status: CL003887",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "Correction 3 retained unit anomalies remain warned",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 3 representative unit warning CL007341",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "Correction 3 representative unit warning CL008058",
+      "check": "Correction 3 retained warning types remain explicit",
       "passed": true,
       "detail": ""
     },
@@ -14956,6 +14916,86 @@
       "detail": ""
     },
     {
+      "check": "appraisal exact keeper key: AP000087",
+      "passed": true,
+      "detail": "expected='K0147'; actual='K0147'"
+    },
+    {
+      "check": "appraisal exact year: AP000087",
+      "passed": true,
+      "detail": "expected=2018; actual=2018"
+    },
+    {
+      "check": "appraisal year precision: AP000087",
+      "passed": true,
+      "detail": "expected='year'; actual='year'"
+    },
+    {
+      "check": "appraisal exact station: AP000087",
+      "passed": true,
+      "detail": "expected='ORR'; actual='ORR'"
+    },
+    {
+      "check": "appraisal source reference: AP000087",
+      "passed": true,
+      "detail": "expected='raw/appraisals/appraisals.jsonl#AP000087'; actual='raw/appraisals/appraisals.jsonl#AP000087'"
+    },
+    {
+      "check": "appraisal full-text hash: AP000087",
+      "passed": true,
+      "detail": "expected='a51aed1f49ba04182a1029c8c654d6d0c9ea124106893e8acf17a31b9fcfdd68'; actual='a51aed1f49ba04182a1029c8c654d6d0c9ea124106893e8acf17a31b9fcfdd68'"
+    },
+    {
+      "check": "appraisal excerpts exact: AP000087",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "appraisal omits irrelevant identity fields: AP000087",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "appraisal exact keeper key: AP000090",
+      "passed": true,
+      "detail": "expected='K0147'; actual='K0147'"
+    },
+    {
+      "check": "appraisal exact year: AP000090",
+      "passed": true,
+      "detail": "expected=2022; actual=2022"
+    },
+    {
+      "check": "appraisal year precision: AP000090",
+      "passed": true,
+      "detail": "expected='year'; actual='year'"
+    },
+    {
+      "check": "appraisal exact station: AP000090",
+      "passed": true,
+      "detail": "expected='ORR'; actual='ORR'"
+    },
+    {
+      "check": "appraisal source reference: AP000090",
+      "passed": true,
+      "detail": "expected='raw/appraisals/appraisals.jsonl#AP000090'; actual='raw/appraisals/appraisals.jsonl#AP000090'"
+    },
+    {
+      "check": "appraisal full-text hash: AP000090",
+      "passed": true,
+      "detail": "expected='7e0d4defb6e5f629870085363dc356bd79a2bb15e9217a60dde3d9ed28515762'; actual='7e0d4defb6e5f629870085363dc356bd79a2bb15e9217a60dde3d9ed28515762'"
+    },
+    {
+      "check": "appraisal excerpts exact: AP000090",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "appraisal omits irrelevant identity fields: AP000090",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "full log row count reviewed: K0184",
       "passed": true,
       "detail": "expected=368; actual=368"
@@ -15306,6 +15346,46 @@
       "detail": ""
     },
     {
+      "check": "appraisal exact keeper key: AP000553",
+      "passed": true,
+      "detail": "expected='K0303'; actual='K0303'"
+    },
+    {
+      "check": "appraisal exact year: AP000553",
+      "passed": true,
+      "detail": "expected=2009; actual=2009"
+    },
+    {
+      "check": "appraisal year precision: AP000553",
+      "passed": true,
+      "detail": "expected='year'; actual='year'"
+    },
+    {
+      "check": "appraisal exact station: AP000553",
+      "passed": true,
+      "detail": "expected='TOR'; actual='TOR'"
+    },
+    {
+      "check": "appraisal source reference: AP000553",
+      "passed": true,
+      "detail": "expected='raw/appraisals/appraisals.jsonl#AP000553'; actual='raw/appraisals/appraisals.jsonl#AP000553'"
+    },
+    {
+      "check": "appraisal full-text hash: AP000553",
+      "passed": true,
+      "detail": "expected='06cb843fe892cd1a7d06f605da0696d34ab19e2da0193c07677ba9de46888c27'; actual='06cb843fe892cd1a7d06f605da0696d34ab19e2da0193c07677ba9de46888c27'"
+    },
+    {
+      "check": "appraisal excerpts exact: AP000553",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "appraisal omits irrelevant identity fields: AP000553",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "appraisal exact keeper key: AP000556",
       "passed": true,
       "detail": "expected='K0303'; actual='K0303'"
@@ -15616,6 +15696,86 @@
       "detail": ""
     },
     {
+      "check": "appraisal exact keeper key: AP000752",
+      "passed": true,
+      "detail": "expected='K0354'; actual='K0354'"
+    },
+    {
+      "check": "appraisal exact year: AP000752",
+      "passed": true,
+      "detail": "expected=2016; actual=2016"
+    },
+    {
+      "check": "appraisal year precision: AP000752",
+      "passed": true,
+      "detail": "expected='year'; actual='year'"
+    },
+    {
+      "check": "appraisal exact station: AP000752",
+      "passed": true,
+      "detail": "expected='RIN'; actual='RIN'"
+    },
+    {
+      "check": "appraisal source reference: AP000752",
+      "passed": true,
+      "detail": "expected='raw/appraisals/appraisals.jsonl#AP000752'; actual='raw/appraisals/appraisals.jsonl#AP000752'"
+    },
+    {
+      "check": "appraisal full-text hash: AP000752",
+      "passed": true,
+      "detail": "expected='29465ddc06e9b72dc4a24c78cd16e282fc5684d8a1ff39b057ea3ce0adf7fd24'; actual='29465ddc06e9b72dc4a24c78cd16e282fc5684d8a1ff39b057ea3ce0adf7fd24'"
+    },
+    {
+      "check": "appraisal excerpts exact: AP000752",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "appraisal omits irrelevant identity fields: AP000752",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "appraisal exact keeper key: AP000753",
+      "passed": true,
+      "detail": "expected='K0354'; actual='K0354'"
+    },
+    {
+      "check": "appraisal exact year: AP000753",
+      "passed": true,
+      "detail": "expected=2017; actual=2017"
+    },
+    {
+      "check": "appraisal year precision: AP000753",
+      "passed": true,
+      "detail": "expected='year'; actual='year'"
+    },
+    {
+      "check": "appraisal exact station: AP000753",
+      "passed": true,
+      "detail": "expected='RIN'; actual='RIN'"
+    },
+    {
+      "check": "appraisal source reference: AP000753",
+      "passed": true,
+      "detail": "expected='raw/appraisals/appraisals.jsonl#AP000753'; actual='raw/appraisals/appraisals.jsonl#AP000753'"
+    },
+    {
+      "check": "appraisal full-text hash: AP000753",
+      "passed": true,
+      "detail": "expected='9a4afcb9fea17df130ac5d1b1cd04519ccd3a973693ee5905f1a9ba9d9ce404e'; actual='9a4afcb9fea17df130ac5d1b1cd04519ccd3a973693ee5905f1a9ba9d9ce404e'"
+    },
+    {
+      "check": "appraisal excerpts exact: AP000753",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "appraisal omits irrelevant identity fields: AP000753",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "full log row count reviewed: K0371",
       "passed": true,
       "detail": "expected=227; actual=227"
@@ -15687,6 +15847,46 @@
     },
     {
       "check": "appraisal omits irrelevant identity fields: AP000798",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "appraisal exact keeper key: AP000799",
+      "passed": true,
+      "detail": "expected='K0371'; actual='K0371'"
+    },
+    {
+      "check": "appraisal exact year: AP000799",
+      "passed": true,
+      "detail": "expected=2025; actual=2025"
+    },
+    {
+      "check": "appraisal year precision: AP000799",
+      "passed": true,
+      "detail": "expected='year'; actual='year'"
+    },
+    {
+      "check": "appraisal exact station: AP000799",
+      "passed": true,
+      "detail": "expected='ARD'; actual='ARD'"
+    },
+    {
+      "check": "appraisal source reference: AP000799",
+      "passed": true,
+      "detail": "expected='raw/appraisals/appraisals.jsonl#AP000799'; actual='raw/appraisals/appraisals.jsonl#AP000799'"
+    },
+    {
+      "check": "appraisal full-text hash: AP000799",
+      "passed": true,
+      "detail": "expected='c56090ed9da8626282ea3bfb3544ab8603f65be98f3ab34e83daf72f862a010d'; actual='c56090ed9da8626282ea3bfb3544ab8603f65be98f3ab34e83daf72f862a010d'"
+    },
+    {
+      "check": "appraisal excerpts exact: AP000799",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "appraisal omits irrelevant identity fields: AP000799",
       "passed": true,
       "detail": ""
     },
@@ -16861,6 +17061,46 @@
       "detail": ""
     },
     {
+      "check": "appraisal exact keeper key: AP001556",
+      "passed": true,
+      "detail": "expected='K0592'; actual='K0592'"
+    },
+    {
+      "check": "appraisal exact year: AP001556",
+      "passed": true,
+      "detail": "expected=2007; actual=2007"
+    },
+    {
+      "check": "appraisal year precision: AP001556",
+      "passed": true,
+      "detail": "expected='year'; actual='year'"
+    },
+    {
+      "check": "appraisal exact station: AP001556",
+      "passed": true,
+      "detail": "expected='GLA'; actual='GLA'"
+    },
+    {
+      "check": "appraisal source reference: AP001556",
+      "passed": true,
+      "detail": "expected='raw/appraisals/appraisals.jsonl#AP001556'; actual='raw/appraisals/appraisals.jsonl#AP001556'"
+    },
+    {
+      "check": "appraisal full-text hash: AP001556",
+      "passed": true,
+      "detail": "expected='32680a3b5ce2ad574d40a8f054b612e7fe651a16ff9e77836232bcc0ad079ea9'; actual='32680a3b5ce2ad574d40a8f054b612e7fe651a16ff9e77836232bcc0ad079ea9'"
+    },
+    {
+      "check": "appraisal excerpts exact: AP001556",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "appraisal omits irrelevant identity fields: AP001556",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "appraisal exact keeper key: AP001557",
       "passed": true,
       "detail": "expected='K0592'; actual='K0592'"
@@ -16897,6 +17137,46 @@
     },
     {
       "check": "appraisal omits irrelevant identity fields: AP001557",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "appraisal exact keeper key: AP001559",
+      "passed": true,
+      "detail": "expected='K0592'; actual='K0592'"
+    },
+    {
+      "check": "appraisal exact year: AP001559",
+      "passed": true,
+      "detail": "expected=2012; actual=2012"
+    },
+    {
+      "check": "appraisal year precision: AP001559",
+      "passed": true,
+      "detail": "expected='year'; actual='year'"
+    },
+    {
+      "check": "appraisal exact station: AP001559",
+      "passed": true,
+      "detail": "expected='GLA'; actual='GLA'"
+    },
+    {
+      "check": "appraisal source reference: AP001559",
+      "passed": true,
+      "detail": "expected='raw/appraisals/appraisals.jsonl#AP001559'; actual='raw/appraisals/appraisals.jsonl#AP001559'"
+    },
+    {
+      "check": "appraisal full-text hash: AP001559",
+      "passed": true,
+      "detail": "expected='bcacb4b7c46eefb30c7dcbea6a4a5afec040e34eb66f609fa4f6041f7a05508f'; actual='bcacb4b7c46eefb30c7dcbea6a4a5afec040e34eb66f609fa4f6041f7a05508f'"
+    },
+    {
+      "check": "appraisal excerpts exact: AP001559",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "appraisal omits irrelevant identity fields: AP001559",
       "passed": true,
       "detail": ""
     },
@@ -18876,6 +19156,46 @@
       "detail": ""
     },
     {
+      "check": "appraisal exact keeper key: AP003952",
+      "passed": true,
+      "detail": "expected='K1374'; actual='K1374'"
+    },
+    {
+      "check": "appraisal exact year: AP003952",
+      "passed": true,
+      "detail": "expected=2020; actual=2020"
+    },
+    {
+      "check": "appraisal year precision: AP003952",
+      "passed": true,
+      "detail": "expected='year'; actual='year'"
+    },
+    {
+      "check": "appraisal exact station: AP003952",
+      "passed": true,
+      "detail": "expected='BEA'; actual='BEA'"
+    },
+    {
+      "check": "appraisal source reference: AP003952",
+      "passed": true,
+      "detail": "expected='raw/appraisals/appraisals.jsonl#AP003952'; actual='raw/appraisals/appraisals.jsonl#AP003952'"
+    },
+    {
+      "check": "appraisal full-text hash: AP003952",
+      "passed": true,
+      "detail": "expected='643c7fa355df4f6964ff5009a3deadadd2d92e9bed25fa1a64545f4684acac7d'; actual='643c7fa355df4f6964ff5009a3deadadd2d92e9bed25fa1a64545f4684acac7d'"
+    },
+    {
+      "check": "appraisal excerpts exact: AP003952",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "appraisal omits irrelevant identity fields: AP003952",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "appraisal exact keeper key: AP003954",
       "passed": true,
       "detail": "expected='K1374'; actual='K1374'"
@@ -19654,6 +19974,3916 @@
       "check": "comparison table has 38 current rows",
       "passed": true,
       "detail": "expected=38; actual=38"
+    },
+    {
+      "check": "Markdown profile section exists: K0147",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010280",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010280",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009116",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009116",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008345",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008345",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008080",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008080",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL006984",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL006984",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K0184",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010442",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010442",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010068",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010068",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009825",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009825",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009666",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009666",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009470",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009470",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K0274",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL003354",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL003354",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010515",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010515",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010397",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010397",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009729",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009729",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009558",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009558",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K0303",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009302",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009302",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008870",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008870",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008115",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008115",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009744",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009744",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009608",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009608",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K0310",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL006179",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL006179",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL005658",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL005658",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL005313",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL005313",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL002469",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL002469",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL000831",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL000831",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K0354",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL007773",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL007773",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL005691",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL005691",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL004792",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL004792",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL004425",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL004425",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K0371",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010343",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010343",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL006460",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL006460",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown measurement warning in own section: CL006460",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010201",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010201",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL006471",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL006471",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL002538",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL002538",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K0394",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009886",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009886",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009816",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009816",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009161",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009161",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008893",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008893",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL002569",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL002569",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K0478",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010541",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010541",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010398",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010398",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009371",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009371",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008977",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008977",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010466",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010466",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K0482",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010082",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010082",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009526",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009526",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL000839",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL000839",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009967",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009967",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009756",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009756",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K0525",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010216",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010216",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL007269",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL007269",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL006644",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL006644",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL006427",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL006427",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL003265",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL003265",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K0561",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008741",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008741",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008494",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008494",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008084",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008084",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL007052",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL007052",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL005661",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL005661",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K0566",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010043",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010043",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL006379",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL006379",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL005856",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL005856",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL002799",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL002799",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL006319",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL006319",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K0586",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL002089",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL002089",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL006901",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL006901",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL004932",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL004932",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K0589",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL007592",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL007592",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008681",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008681",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008008",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008008",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL006691",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL006691",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K0592",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008207",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008207",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008184",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008184",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL003227",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL003227",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008111",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008111",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008021",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008021",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K0641",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009728",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009728",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008068",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008068",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009753",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009753",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009530",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009530",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009468",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009468",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K0650",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL003088",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL003088",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL002876",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL002876",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL002727",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL002727",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010452",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010452",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009955",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009955",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K0663",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010451",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010451",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009806",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009806",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010471",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010471",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009965",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009965",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009957",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009957",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K0664",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009911",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009911",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009694",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009694",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009229",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009229",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009228",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009228",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009139",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009139",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K0817",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009476",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009476",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008628",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008628",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008376",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008376",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL007263",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL007263",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL006645",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL006645",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K0847",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL007701",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL007701",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown measurement warning in own section: CL007701",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL001792",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL001792",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL000916",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL000916",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008299",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008299",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown measurement warning in own section: CL008299",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008261",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008261",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K0897",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009512",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009512",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008869",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008869",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008960",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008960",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008649",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008649",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008539",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008539",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K1055",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL000604",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL000604",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL003053",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL003053",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL003002",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL003002",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL002459",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL002459",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL001961",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL001961",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K1200",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL005994",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL005994",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL007505",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL007505",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009097",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009097",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009921",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009921",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K1203",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL003752",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL003752",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL003006",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL003006",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL001872",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL001872",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL000627",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL000627",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL000397",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL000397",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K1231",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010239",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010239",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010180",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010180",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010135",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010135",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009834",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009834",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008927",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008927",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K1281",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL001465",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL001465",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008233",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008233",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008058",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008058",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown measurement warning in own section: CL008058",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL002218",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL002218",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL001334",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL001334",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K1302",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL004774",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL004774",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown measurement warning in own section: CL004774",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL004522",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL004522",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL002551",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL002551",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL002447",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL002447",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL002191",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL002191",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K1345",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008356",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008356",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL007631",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL007631",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL007040",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL007040",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL006199",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL006199",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL005867",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL005867",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K1363",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL002712",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL002712",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL001473",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL001473",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009700",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009700",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009245",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009245",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008995",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008995",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K1374",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010173",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010173",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008335",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008335",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL007007",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL007007",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010559",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010559",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010308",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010308",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K1418",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL003361",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL003361",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL004517",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL004517",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL004222",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL004222",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL003898",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL003898",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL002921",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL002921",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K1446",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010352",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010352",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010079",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010079",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010071",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010071",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009650",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009650",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008769",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008769",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K1458",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL006091",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL006091",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL000499",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL000499",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL000151",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL000151",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL006217",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL006217",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL006098",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL006098",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown measurement warning in own section: CL006098",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K1468",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL003121",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL003121",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL000944",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL000944",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010450",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010450",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010252",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010252",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010246",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010246",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K1474",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL006207",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL006207",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL007339",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL007339",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL007218",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL007218",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL005945",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL005945",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL005770",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL005770",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K1483",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL007775",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL007775",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL001023",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL001023",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL000410",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL000410",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K1511",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010534",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010534",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL009253",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL009253",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL008338",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL008338",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010561",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010561",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL010470",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL010470",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown profile section exists: K1538",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL007686",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL007686",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown measurement warning in own section: CL007686",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL007420",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL007420",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL006753",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL006753",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL004869",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL004869",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retained experience in own section: CL003887",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown attribution in own section: CL003887",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "measurement value/unit variants share one canonical pattern",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "K1200 canonical pattern count",
+      "passed": true,
+      "detail": "expected=3; actual=3"
+    },
+    {
+      "check": "K1200 count equals unique canonical keys",
+      "passed": true,
+      "detail": "expected=3; actual=3"
+    },
+    {
+      "check": "K1200 canonical keys contain no display IDs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "K1200 four display exceptions retained",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "K1200 displayed record uses canonical text key: CL005994",
+      "passed": true,
+      "detail": "expected='drive motor brushes and commutator dressed rotation back to time'; actual='drive motor brushes and commutator dressed rotation back to time'"
+    },
+    {
+      "check": "K1200 displayed record uses canonical text key: CL007505",
+      "passed": true,
+      "detail": "expected='lamp changer stepping twice dismantled the ratchet and dressed the pawl faces'; actual='lamp changer stepping twice dismantled the ratchet and dressed the pawl faces'"
+    },
+    {
+      "check": "K1200 displayed record uses canonical text key: CL009097",
+      "passed": true,
+      "detail": "expected='rebuilt the clockwork drive cleaned forty years of gum out of the train'; actual='rebuilt the clockwork drive cleaned forty years of gum out of the train'"
+    },
+    {
+      "check": "K1200 displayed record uses canonical text key: CL009921",
+      "passed": true,
+      "detail": "expected='stripped and cleaned the mercury bath float centred and the rotation smoothed out'; actual='stripped and cleaned the mercury bath float centred and the rotation smoothed out'"
+    },
+    {
+      "check": "K1200 display-only mercury record not counted as canonical decision pattern",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0147/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0147/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0147/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0147/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0147/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0147/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0147/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0147/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0184/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0184/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0184/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0184/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0184/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0184/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0274/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0274/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0274/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0274/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0303/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0303/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0310/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0310/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0310/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0310/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0310/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0310/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0354/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0354/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0354/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0354/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0354/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0354/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0371/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0371/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0394/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0394/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0394/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0394/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0478/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0478/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0478/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0478/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0478/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0478/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0478/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0478/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0482/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0482/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0482/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0482/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0482/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0482/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0482/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0482/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0525/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0525/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0525/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0525/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0561/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0561/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0561/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0561/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0561/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0561/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0566/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0566/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0566/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0566/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0566/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0566/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0586/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0586/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0586/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0586/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0586/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0586/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0586/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0586/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0589/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0589/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0589/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0589/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0592/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0592/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0592/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0592/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0592/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0592/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0592/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0592/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0641/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0641/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0641/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0641/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0641/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0641/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0641/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0641/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0650/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0650/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0650/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0650/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0650/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0650/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0650/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0650/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0663/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0663/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0663/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0663/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0663/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0663/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0664/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0664/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0664/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0664/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0664/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0664/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0664/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0664/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0817/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0817/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0817/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0817/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0817/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0817/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0817/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0817/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0847/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0847/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0847/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0847/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0847/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0847/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0847/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0847/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0897/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0897/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0897/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0897/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0897/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0897/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K0897/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K0897/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1055/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1055/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1055/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1055/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1055/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1055/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1055/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1055/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1231/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1231/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1231/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1231/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1231/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1231/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1231/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1231/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1281/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1281/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1281/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1281/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1281/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1281/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1281/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1281/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1302/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1302/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1302/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1302/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1302/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1302/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1302/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1302/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1345/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1345/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1345/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1345/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1345/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1345/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1345/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1345/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1363/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1363/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1363/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1363/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1363/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1363/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1363/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1363/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1374/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1374/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1374/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1374/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1418/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1418/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1418/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1418/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1418/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1418/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1446/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1446/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1446/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1446/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1446/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1446/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1468/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1468/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1468/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1468/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1468/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1468/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1468/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1468/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1474/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1474/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1474/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1474/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1474/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1474/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1474/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1474/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1483/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1483/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1483/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1483/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1483/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1483/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1483/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1483/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1511/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1511/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1511/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1511/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1511/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1511/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1538/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1538/OSSC-SS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1538/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1538/OSSC-FF",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1538/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1538/OSSC-FA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module action present: K1538/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent module verifies before conditional training: K1538/WAHS-1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "absent-record action cases exercised",
+      "passed": true,
+      "detail": "cases=123"
+    },
+    {
+      "check": "named appraisal context retained: AP000090",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "named appraisal context exact: AP000090",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "named appraisal source hash exact: AP000090",
+      "passed": true,
+      "detail": "expected='7e0d4defb6e5f629870085363dc356bd79a2bb15e9217a60dde3d9ed28515762'; actual='7e0d4defb6e5f629870085363dc356bd79a2bb15e9217a60dde3d9ed28515762'"
+    },
+    {
+      "check": "named appraisal context does not alter material concern gate: AP000090",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "named appraisal context retained: AP000752",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "named appraisal context exact: AP000752",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "named appraisal source hash exact: AP000752",
+      "passed": true,
+      "detail": "expected='29465ddc06e9b72dc4a24c78cd16e282fc5684d8a1ff39b057ea3ce0adf7fd24'; actual='29465ddc06e9b72dc4a24c78cd16e282fc5684d8a1ff39b057ea3ce0adf7fd24'"
+    },
+    {
+      "check": "named appraisal context does not alter material concern gate: AP000752",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "named appraisal context retained: AP000753",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "named appraisal context exact: AP000753",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "named appraisal source hash exact: AP000753",
+      "passed": true,
+      "detail": "expected='9a4afcb9fea17df130ac5d1b1cd04519ccd3a973693ee5905f1a9ba9d9ce404e'; actual='9a4afcb9fea17df130ac5d1b1cd04519ccd3a973693ee5905f1a9ba9d9ce404e'"
+    },
+    {
+      "check": "named appraisal context does not alter material concern gate: AP000753",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "unmatched appraisal label: K0147",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K0147",
+      "passed": true,
+      "detail": "expected=8; actual=8"
+    },
+    {
+      "check": "unmatched appraisal label: K0184",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K0184",
+      "passed": true,
+      "detail": "expected=13; actual=13"
+    },
+    {
+      "check": "unmatched appraisal label: K0274",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K0274",
+      "passed": true,
+      "detail": "expected=4; actual=4"
+    },
+    {
+      "check": "unmatched appraisal label: K0303",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K0303",
+      "passed": true,
+      "detail": "expected=6; actual=6"
+    },
+    {
+      "check": "unmatched appraisal label: K0310",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K0310",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "unmatched appraisal label: K0354",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K0354",
+      "passed": true,
+      "detail": "expected=5; actual=5"
+    },
+    {
+      "check": "unmatched appraisal label: K0371",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K0371",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "unmatched appraisal label: K0394",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K0394",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "unmatched appraisal label: K0478",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K0478",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "unmatched appraisal label: K0482",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K0482",
+      "passed": true,
+      "detail": "expected=3; actual=3"
+    },
+    {
+      "check": "unmatched appraisal label: K0525",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K0525",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "unmatched appraisal label: K0561",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K0561",
+      "passed": true,
+      "detail": "expected=9; actual=9"
+    },
+    {
+      "check": "unmatched appraisal label: K0566",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K0566",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "unmatched appraisal label: K0586",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K0586",
+      "passed": true,
+      "detail": "expected=10; actual=10"
+    },
+    {
+      "check": "unmatched appraisal label: K0589",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K0589",
+      "passed": true,
+      "detail": "expected=8; actual=8"
+    },
+    {
+      "check": "unmatched appraisal label: K0592",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K0592",
+      "passed": true,
+      "detail": "expected=2; actual=2"
+    },
+    {
+      "check": "unmatched appraisal label: K0641",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K0641",
+      "passed": true,
+      "detail": "expected=9; actual=9"
+    },
+    {
+      "check": "unmatched appraisal label: K0650",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K0650",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "unmatched appraisal label: K0663",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K0663",
+      "passed": true,
+      "detail": "expected=5; actual=5"
+    },
+    {
+      "check": "unmatched appraisal label: K0664",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K0664",
+      "passed": true,
+      "detail": "expected=8; actual=8"
+    },
+    {
+      "check": "unmatched appraisal label: K0817",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K0817",
+      "passed": true,
+      "detail": "expected=10; actual=10"
+    },
+    {
+      "check": "unmatched appraisal label: K0847",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K0847",
+      "passed": true,
+      "detail": "expected=5; actual=5"
+    },
+    {
+      "check": "unmatched appraisal label: K0897",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K0897",
+      "passed": true,
+      "detail": "expected=10; actual=10"
+    },
+    {
+      "check": "unmatched appraisal label: K1055",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K1055",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "unmatched appraisal label: K1200",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K1200",
+      "passed": true,
+      "detail": "expected=6; actual=6"
+    },
+    {
+      "check": "unmatched appraisal label: K1203",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K1203",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "unmatched appraisal label: K1231",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K1231",
+      "passed": true,
+      "detail": "expected=10; actual=10"
+    },
+    {
+      "check": "unmatched appraisal label: K1281",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K1281",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "unmatched appraisal label: K1302",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K1302",
+      "passed": true,
+      "detail": "expected=6; actual=6"
+    },
+    {
+      "check": "unmatched appraisal label: K1345",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K1345",
+      "passed": true,
+      "detail": "expected=8; actual=8"
+    },
+    {
+      "check": "unmatched appraisal label: K1363",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K1363",
+      "passed": true,
+      "detail": "expected=6; actual=6"
+    },
+    {
+      "check": "unmatched appraisal label: K1374",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K1374",
+      "passed": true,
+      "detail": "expected=6; actual=6"
+    },
+    {
+      "check": "unmatched appraisal label: K1418",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K1418",
+      "passed": true,
+      "detail": "expected=5; actual=5"
+    },
+    {
+      "check": "unmatched appraisal label: K1446",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K1446",
+      "passed": true,
+      "detail": "expected=8; actual=8"
+    },
+    {
+      "check": "unmatched appraisal label: K1458",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K1458",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "unmatched appraisal label: K1468",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K1468",
+      "passed": true,
+      "detail": "expected=2; actual=2"
+    },
+    {
+      "check": "unmatched appraisal label: K1474",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K1474",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "unmatched appraisal label: K1483",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K1483",
+      "passed": true,
+      "detail": "expected=3; actual=3"
+    },
+    {
+      "check": "unmatched appraisal label: K1511",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K1511",
+      "passed": true,
+      "detail": "expected=6; actual=6"
+    },
+    {
+      "check": "unmatched appraisal label: K1538",
+      "passed": true,
+      "detail": "expected='not selected by the appraisal filter'; actual='not selected by the appraisal filter'"
+    },
+    {
+      "check": "unmatched appraisal filter count: K1538",
+      "passed": true,
+      "detail": "expected=6; actual=6"
     },
     {
       "check": "OSSC definition has no height module",

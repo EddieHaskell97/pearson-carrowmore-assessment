@@ -79,6 +79,20 @@ def normalize_name(value: str | None) -> str | None:
     return "".join(c.lower() for c in value if c.isalnum() and not unicodedata.combining(c))
 
 
+def canonical_work_pattern(text: str) -> str:
+    """Independent normalization for superficial numeric/measurement variants."""
+    value = text.lower()
+    value = re.sub(
+        r"\b\d+(?:\.\d+)?\s*(?:psi|bar|volts?|v|ohms?|amps?|a|hz|kw|rpm|°?c)\b",
+        " measurement ",
+        value,
+        flags=re.I,
+    )
+    value = re.sub(r"\d+(?:\.\d+)?", "#", value)
+    value = re.sub(r"\bno\s*\.?\s*#", "no #", value)
+    return re.sub(r"\W+", " ", value).strip()
+
+
 def add_years(value: date, years: int) -> date:
     try:
         return value.replace(year=value.year + years)
@@ -331,9 +345,17 @@ def run(zip_path: Path, results_path: Path) -> dict:
                 if expected_warning:
                     checks.check(f"measurement quote preserved: {evidence['entry_id']}", evidence["text"] == logs_by_id[evidence["entry_id"]]["text"])
                     checks.check(f"measurement not treated as reliable: {evidence['entry_id']}", all("unreliable" in flag["finding"] for flag in evidence["measurement_quality_flags"]))
-        for entry_id in ("CL009081", "CL007341", "CL008058"):
-            emitted = next(row for candidate in candidates.values() for row in candidate["relevant_experience"] if row["entry_id"] == entry_id)
-            checks.check(f"Correction 3 representative unit warning {entry_id}", bool(emitted["measurement_quality_flags"]))
+        emitted_measurement_warnings = [
+            row
+            for candidate in candidates.values()
+            for row in candidate["relevant_experience"]
+            if row["measurement_quality_flags"]
+        ]
+        checks.check("Correction 3 retained unit anomalies remain warned", bool(emitted_measurement_warnings))
+        checks.check(
+            "Correction 3 retained warning types remain explicit",
+            all(flag["code"] == "inconsistent_measurement_unit" for row in emitted_measurement_warnings for flag in row["measurement_quality_flags"]),
+        )
 
         # Correction pass 4: scientific payroll notation is normalized, not guessed.
         cl010280 = logs_by_id["CL010280"]
@@ -470,6 +492,102 @@ def run(zip_path: Path, results_path: Path) -> dict:
             markdown = markdown_path.read_text(encoding="utf-8")
             checks.check("comparison table precedes details", markdown.find("## Current-keeper comparison") < markdown.find("## Detailed evidence"))
             checks.equal("comparison table has 38 current rows", sum(line.startswith("| K") for line in markdown.splitlines()), 38)
+
+            # Repair 1: every retained record must occur in its own detailed
+            # profile, not merely in the summary table or another profile.
+            for candidate in candidates.values():
+                heading = rf"^## {re.escape(candidate['keeper_code'])} — .*$"
+                match = re.search(heading, markdown, flags=re.M)
+                checks.check(f"Markdown profile section exists: {candidate['keeper_code']}", match is not None)
+                if not match:
+                    continue
+                next_heading = re.search(r"^## K\d+ — .*$", markdown[match.end():], flags=re.M)
+                section_end = match.end() + next_heading.start() if next_heading else len(markdown)
+                section = markdown[match.start():section_end]
+                for evidence in candidate["relevant_experience"]:
+                    checks.check(
+                        f"Markdown retained experience in own section: {evidence['entry_id']}",
+                        all(value in section for value in (evidence["entry_id"], evidence["date"], evidence["text"], evidence["source_reference"])),
+                    )
+                    provenance = evidence["raw_corroboration"]["identity_provenance"]
+                    checks.check(
+                        f"Markdown attribution in own section: {evidence['entry_id']}",
+                        provenance["corroboration"] in section or "clean/manual attribution" in section,
+                    )
+                    for flag in evidence["measurement_quality_flags"]:
+                        checks.check(
+                            f"Markdown measurement warning in own section: {evidence['entry_id']}",
+                            flag["code"] in section and flag["observed"] in section,
+                        )
+
+        # Repair 2: value/unit variants canonicalize together, while K1200's
+        # four display exceptions remain visible without ID-based identities.
+        measurement_variants = [logs_by_id[entry_id]["text"] for entry_id in ("CL006460", "CL007701", "CL009081")]
+        checks.equal(
+            "measurement value/unit variants share one canonical pattern",
+            len({canonical_work_pattern(text) for text in measurement_variants}),
+            1,
+        )
+        k1200 = candidates["K1200"]
+        k1200_review = k1200["work_history_review"]
+        checks.equal("K1200 canonical pattern count", k1200_review["distinct_qualifying_examples"], 3)
+        checks.equal("K1200 count equals unique canonical keys", k1200_review["distinct_qualifying_examples"], len(set(k1200_review["canonical_pattern_keys"])))
+        checks.check("K1200 canonical keys contain no display IDs", all(not key.startswith("material:") and "CL00" not in key for key in k1200_review["canonical_pattern_keys"]))
+        checks.check("K1200 four display exceptions retained", {"CL005994", "CL007505", "CL009097", "CL009921"} <= set(k1200_review["displayed_entry_ids"]))
+        for evidence in k1200["relevant_experience"]:
+            checks.equal(f"K1200 displayed record uses canonical text key: {evidence['entry_id']}", evidence["template_key"], canonical_work_pattern(logs_by_id[evidence["entry_id"]]["text"]))
+        checks.check("K1200 display-only mercury record not counted as canonical decision pattern", canonical_work_pattern(logs_by_id["CL009921"]["text"]) not in k1200_review["canonical_pattern_keys"])
+
+        # Repair 3: no matched dated Pass is an evidence gap, not proof that
+        # training is needed. Verification must precede the conditional course.
+        essential_modules = ("OSSC-SS", "OSSC-FF", "OSSC-FA", "WAHS-1")
+        absent_action_checks = 0
+        for candidate in candidates.values():
+            if candidate["cohort_status"] != "current_redeployment_cohort":
+                continue
+            actions = " ".join(candidate["later_qualification_and_mobilisation_actions"])
+            recorded_modules = {claim["module"] for claim in candidate["credential_claims"]}
+            for module in essential_modules:
+                if module in recorded_modules:
+                    continue
+                absent_action_checks += 1
+                module_start = actions.find(f"{module}:")
+                checks.check(f"absent module action present: {candidate['keeper_code']}/{module}", module_start >= 0)
+                if module_start >= 0:
+                    module_text = actions[module_start:]
+                    next_module = re.search(r"\s(?:OSSC-(?:SS|FF|FA)|WAHS-1):", module_text[len(module) + 1:])
+                    if next_module:
+                        module_text = module_text[: len(module) + 1 + next_module.start()]
+                    checks.check(
+                        f"absent module verifies before conditional training: {candidate['keeper_code']}/{module}",
+                        "first verify any existing certificate with the issuer" in module_text
+                        and "Only if current required coverage remains unestablished" in module_text
+                        and module_text.index("first verify") < module_text.index("Only if"),
+                    )
+        checks.check("absent-record action cases exercised", absent_action_checks > 0, f"cases={absent_action_checks}")
+
+        # Repair 4: named appraisal context is exact and decision-neutral.
+        named_context = {
+            "AP000090": ("K0147", "There is a habit of mind here that is worth writing down: Coilean will not leave rope work half done."),
+            "AP000752": ("K0354", "The standard achieved in defect reporting falls below that expected of the grade."),
+            "AP000753": ("K0354", "The standard achieved in inspection reports falls below that expected of the grade."),
+        }
+        for record_id, (keeper_code, exact_excerpt) in named_context.items():
+            candidate = candidates[keeper_code]
+            selected = next((item for item in candidate["appraisal_review"]["role_relevant_testimony"] if item["record_id"] == record_id), None)
+            checks.check(f"named appraisal context retained: {record_id}", selected is not None)
+            if selected:
+                checks.check(f"named appraisal context exact: {record_id}", exact_excerpt in selected["role_relevant_excerpt"] and exact_excerpt in appraisals_by_id[record_id]["text"])
+                checks.equal(f"named appraisal source hash exact: {record_id}", selected["source_text_sha256"], digest(appraisals_by_id[record_id]["text"].encode("utf-8")))
+            checks.check(f"named appraisal context does not alter material concern gate: {record_id}", record_id not in candidate["appraisal_review"]["material_pre_cutoff_concern_ids"])
+        for candidate in candidates.values():
+            review = candidate["appraisal_review"]
+            checks.equal(f"unmatched appraisal label: {candidate['keeper_code']}", review["unmatched_row_label"], "not selected by the appraisal filter")
+            checks.equal(
+                f"unmatched appraisal filter count: {candidate['keeper_code']}",
+                review["rows_not_selected_by_appraisal_filter"],
+                review["keyed_rows_reviewed"] - review["role_relevant_testimony_count"],
+            )
 
         # Definitions must retain the source conflict: height is WAHS, not an invented OSSC module.
         checks.check("OSSC definition has no height module", all("height" not in m["name"].lower() for m in scheme_map["OSSC"]["modules"]))

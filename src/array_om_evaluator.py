@@ -92,8 +92,9 @@ ESSENTIAL_MODULES = {
 }
 
 # Appraisals are manager testimony, not observed competence. These deliberately
-# narrow patterns surface only role-related testimony; every keeper-code-keyed
-# row is reviewed, but irrelevant narrative is not repeated in the output.
+# narrow patterns surface selected role-related testimony; every keeper-code-
+# keyed row is reviewed, while unmatched rows are explicitly labelled as not
+# selected by this filter rather than characterized as irrelevant.
 APPRAISAL_TOPIC_PATTERNS = {
     "electrical_or_controls": re.compile(
         r"\b(electrical|batter(?:y|ies)|standby banks?|boards?|distribution|switchgear|"
@@ -107,6 +108,7 @@ APPRAISAL_TOPIC_PATTERNS = {
     "height_or_access": re.compile(
         r"\b(height work|staging work|rope work|abseil inspections?|work on the gallery)\b", re.I
     ),
+    "work_reporting": re.compile(r"\b(defect reporting|inspection reports?)\b", re.I),
     "adjacent_station_technical": re.compile(
         r"\b(optic|lamp and lens|light itself|fog signal|diaphone|VHF|AIS gear|"
         r"aton telemetry|radio work|lantern glass|ironwork)\b", re.I
@@ -134,13 +136,18 @@ APPRAISAL_SUPPORT_PATTERNS = {
     "good_standard": re.compile(r"\bto a good standard\b|\bproper standard\b", re.I),
     "sound": re.compile(r"\bis sound\b", re.I),
 }
+APPRAISAL_CONTEXT_PATTERNS = {
+    # Retain useful corroborating or contrary context without allowing these
+    # phrases alone to change the decision gate.
+    "careful_completion_testimony": re.compile(r"\bwill not leave\b.*\bhalf done\b", re.I),
+}
 
 PRIMARY_APPRAISAL_TOPICS = {
     "electrical_or_controls",
     "mechanical_or_generating_plant",
     "height_or_access",
 }
-K1200_MATERIAL_LOG_IDS = {"CL005994", "CL007505", "CL009097", "CL009921"}
+K1200_MATERIAL_LOG_IDS = ("CL005994", "CL007505", "CL009097", "CL009921")
 
 
 def sha256(data: bytes) -> str:
@@ -333,9 +340,45 @@ def entry_categories(text: str) -> list[str]:
 
 
 def normalized_work_template(text: str) -> str:
-    normalized = re.sub(r"\d+(?:\.\d+)?", "#", text.lower())
+    normalized = text.lower()
+    # Measurement values and their supplied units are one superficial slot.
+    # This intentionally collapses malformed variants such as 3.6 bar,
+    # 48 psi and 11.2 V without rewriting the quoted evidence itself.
+    normalized = re.sub(
+        r"\b\d+(?:\.\d+)?\s*(?:psi|bar|volts?|v|ohms?|amps?|a|hz|kw|rpm|°?c)\b",
+        " measurement ",
+        normalized,
+        flags=re.I,
+    )
+    normalized = re.sub(r"\d+(?:\.\d+)?", "#", normalized)
     normalized = re.sub(r"\bno\s*\.?\s*#", "no #", normalized)
     return re.sub(r"\W+", " ", normalized).strip()
+
+
+def work_evidence_record(
+    zf: zipfile.ZipFile,
+    keeper: dict,
+    entry: dict,
+    categories: list[str],
+    score: int,
+) -> dict:
+    corroboration = raw_corroboration(zf, entry, keeper)
+    if not corroboration["resolved"]:
+        raise ValueError(f"unresolved source reference {entry['source_record']}")
+    return {
+        "entry_id": entry["entry_id"],
+        "date": entry["date"],
+        "text": entry["text"],
+        "station": entry["station"],
+        "categories": categories,
+        "clean_source": "clean/logbook_entries.json",
+        "source_reference": entry["source_record"],
+        "attribution": "clean_manual_attribution",
+        "raw_corroboration": corroboration,
+        "measurement_quality_flags": measurement_quality_flags(entry["text"]),
+        "selection_score": score,
+        "template_key": normalized_work_template(entry["text"]),
+    }
 
 
 def select_work_evidence(
@@ -343,50 +386,42 @@ def select_work_evidence(
 ) -> tuple[list[dict], dict]:
     """Review the complete clean history, then return a readable evidence sample."""
     candidates = []
+    material_display_candidates = {}
     at_cutoff = [entry for entry in entries if parse_date(entry["date"]) <= as_of]
     for entry in entries:
         required_k1200 = keeper["keeper_code"] == "K1200" and entry["entry_id"] in K1200_MATERIAL_LOG_IDS
-        if parse_date(entry["date"]) > as_of or (not ACTION_RE.search(entry["text"]) and not required_k1200):
+        if parse_date(entry["date"]) > as_of:
             continue
         categories = entry_categories(entry["text"])
-        if required_k1200 and not ({"electrical", "mechanical"} & set(categories)):
-            categories.append("mechanical")
-        if not ({"electrical", "mechanical"} & set(categories)):
-            continue
-        score = 2 * len({"electrical", "mechanical", "fault_finding", "permit_or_isolation"} & set(categories))
-        score += len(set(categories))
-        candidates.append((score, entry["date"], entry, categories))
+        normally_qualifies = bool(ACTION_RE.search(entry["text"])) and bool(
+            {"electrical", "mechanical"} & set(categories)
+        )
+        if normally_qualifies:
+            score = 2 * len({"electrical", "mechanical", "fault_finding", "permit_or_isolation"} & set(categories))
+            score += len(set(categories))
+            candidate = (score, entry["date"], entry, categories)
+            candidates.append(candidate)
+            if required_k1200:
+                material_display_candidates[entry["entry_id"]] = candidate
+        elif required_k1200:
+            display_categories = categories + (["mechanical"] if "mechanical" not in categories else [])
+            display_score = 2 * len({"electrical", "mechanical", "fault_finding", "permit_or_isolation"} & set(display_categories))
+            display_score += len(set(display_categories))
+            material_display_candidates[entry["entry_id"]] = (
+                display_score,
+                entry["date"],
+                entry,
+                display_categories,
+            )
     candidates.sort(key=lambda item: (item[0], item[1], item[2]["entry_id"]), reverse=True)
     distinct, normalized_seen = [], set()
     for score, _, entry, categories in candidates:
         # Collapse superficial asset-number and measurement variants so repeated
         # synthetic templates do not masquerade as diverse experience.
-        normalized = (
-            f"material:{entry['entry_id']}"
-            if keeper["keeper_code"] == "K1200" and entry["entry_id"] in K1200_MATERIAL_LOG_IDS
-            else normalized_work_template(entry["text"])
-        )
+        normalized = normalized_work_template(entry["text"])
         if normalized in normalized_seen:
             continue
-        corroboration = raw_corroboration(zf, entry, keeper)
-        if not corroboration["resolved"]:
-            raise ValueError(f"unresolved source reference {entry['source_record']}")
-        distinct.append(
-            {
-                "entry_id": entry["entry_id"],
-                "date": entry["date"],
-                "text": entry["text"],
-                "station": entry["station"],
-                "categories": categories,
-                "clean_source": "clean/logbook_entries.json",
-                "source_reference": entry["source_record"],
-                "attribution": "clean_manual_attribution",
-                "raw_corroboration": corroboration,
-                "measurement_quality_flags": measurement_quality_flags(entry["text"]),
-                "selection_score": score,
-                "template_key": normalized,
-            }
-        )
+        distinct.append(work_evidence_record(zf, keeper, entry, categories, score))
         normalized_seen.add(normalized)
 
     # Five examples are normally sufficient for readability. K1200's four
@@ -394,7 +429,10 @@ def select_work_evidence(
     # disputes what that log history represents.
     chosen = distinct[:5]
     if keeper["keeper_code"] == "K1200":
-        required = [row for row in distinct if row["entry_id"] in K1200_MATERIAL_LOG_IDS]
+        required = []
+        for entry_id in K1200_MATERIAL_LOG_IDS:
+            score, _, entry, categories = material_display_candidates[entry_id]
+            required.append(work_evidence_record(zf, keeper, entry, categories, score))
         chosen = required + [row for row in chosen if row["entry_id"] not in K1200_MATERIAL_LOG_IDS]
         chosen = chosen[: max(5, len(required))]
 
@@ -408,9 +446,10 @@ def select_work_evidence(
         "history_date_range_at_cutoff": [min(dates), max(dates)] if dates else None,
         "qualifying_action_entry_count": len(candidates),
         "distinct_qualifying_examples": len(distinct),
+        "canonical_pattern_keys": [row["template_key"] for row in distinct],
         "category_coverage": category_coverage,
         "displayed_entry_ids": [row["entry_id"] for row in chosen],
-        "interpretation": "The complete clean log history was screened. Repeated numeric and superficial wording variants were collapsed for decision quality; counts and repetition were not treated as competence.",
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence.",
     }
     return chosen, review
 
@@ -420,23 +459,26 @@ def build_appraisal_review(rows: list[dict], as_of: date) -> dict:
     reviewed_ids, relevant, future_ids, same_year_uncertain = [], [], [], []
     for row in sorted(rows, key=lambda item: (item["year"], item["record_id"])):
         reviewed_ids.append(row["record_id"])
-        relevant_sentences, topic_set, concern_set, support_set = [], set(), set(), set()
+        relevant_sentences, topic_set, concern_set, support_set, context_set = [], set(), set(), set(), set()
         for sentence in re.split(r"(?<=[.!?])\s+|\n+", row["text"]):
             sentence = sentence.strip()
             sentence_topics = {name for name, pattern in APPRAISAL_TOPIC_PATTERNS.items() if pattern.search(sentence)}
             sentence_concerns = {name for name, pattern in APPRAISAL_CONCERN_PATTERNS.items() if pattern.search(sentence)}
             sentence_supports = {name for name, pattern in APPRAISAL_SUPPORT_PATTERNS.items() if pattern.search(sentence)}
+            sentence_context = {name for name, pattern in APPRAISAL_CONTEXT_PATTERNS.items() if pattern.search(sentence)}
             # Signals and topics must co-occur in the same sentence. This avoids,
             # for example, attaching a paint-work criticism to a separate engine
             # compliment elsewhere in the appraisal.
-            if sentence_topics and (sentence_concerns or sentence_supports):
+            if sentence_topics and (sentence_concerns or sentence_supports or sentence_context):
                 relevant_sentences.append(sentence)
                 topic_set.update(sentence_topics)
                 concern_set.update(sentence_concerns)
                 support_set.update(sentence_supports)
+                context_set.update(sentence_context)
         topics = sorted(topic_set)
         concerns = sorted(concern_set)
         supports = sorted(support_set)
+        context = sorted(context_set)
         if row["year"] > as_of.year:
             future_ids.append(row["record_id"])
             temporal_use = "future_year_not_used"
@@ -445,7 +487,7 @@ def build_appraisal_review(rows: list[dict], as_of: date) -> dict:
             temporal_use = "same_year_timing_uncertain_context_only"
         else:
             temporal_use = "pre_cutoff_year"
-        if topics and (concerns or supports):
+        if topics and (concerns or supports or context):
             relevant.append(
                 {
                     "record_id": row["record_id"],
@@ -459,6 +501,7 @@ def build_appraisal_review(rows: list[dict], as_of: date) -> dict:
                     "topics": topics,
                     "support_signals": supports,
                     "concern_signals": concerns,
+                    "context_signals": context,
                     "decision_time_treatment": temporal_use,
                     "evidence_limit": "Manager testimony; useful for screening questions but not proof of competence, authorisation or the date of an event within the year.",
                 }
@@ -488,7 +531,16 @@ def build_appraisal_review(rows: list[dict], as_of: date) -> dict:
         "same_year_record_ids_timing_uncertain": same_year_uncertain,
         "material_pre_cutoff_concern_ids": [row["record_id"] for row in material_concerns],
         "strong_manager_support_ids": [row["record_id"] for row in strong_support],
-        "irrelevant_narrative_not_repeated": len(rows) - len(relevant),
+        "context_only_record_ids": [
+            row["record_id"] for row in relevant if row["context_signals"] and not row["support_signals"] and not row["concern_signals"]
+        ],
+        "decision_neutral_context_ids": [
+            row["record_id"]
+            for row in relevant
+            if row["record_id"] not in {item["record_id"] for item in material_concerns + strong_support}
+        ],
+        "rows_not_selected_by_appraisal_filter": len(rows) - len(relevant),
+        "unmatched_row_label": "not selected by the appraisal filter",
     }
 
 
@@ -727,7 +779,11 @@ def credential_action(claims: list[dict], module: str) -> str:
     attended = [claim["record_id"] for claim in records if claim["status_at_cutoff"] == "attended_not_passed"]
     if attended:
         return f"{module}: Attended in {', '.join(attended)} is not a Pass; establish the required passed assessment if progression is approved (first-time funding is not promised)."
-    return f"{module}: no dated Pass is established; obtain the module if progression is approved (first-time funding is not promised)."
+    return (
+        f"{module}: no matched dated Pass is established; first verify any existing certificate with the issuer. "
+        "Only if current required coverage remains unestablished should training and assessment be arranged "
+        "if progression is approved (first-time funding is not promised)."
+    )
 
 
 def ordered_actions(
@@ -780,7 +836,10 @@ def evaluate_keeper(zf, keeper, entries, appraisal_rows, learnhub_rows, scheme_m
         "same_year_record_ids_timing_uncertain": [],
         "material_pre_cutoff_concern_ids": [],
         "strong_manager_support_ids": [],
-        "irrelevant_narrative_not_repeated": 0,
+        "context_only_record_ids": [],
+        "decision_neutral_context_ids": [],
+        "rows_not_selected_by_appraisal_filter": 0,
+        "unmatched_row_label": "not selected by the appraisal filter",
     }
     claims, future = build_training(keeper, learnhub_rows, scheme_map, as_of)
     conflicts = credential_conflicts(keeper, claims, as_of)
@@ -921,6 +980,8 @@ def markdown_report(payload: dict) -> str:
     lines.extend(["", "## Detailed evidence", ""])
     ordering = {"supported_technical_interview": 0, "targeted_screening_first": 1, "insufficient_evidence": 2, "outside_current_redeployment_cohort": 3}
     for row in sorted(payload["candidates"], key=lambda r: (ordering[r["interview_recommendation"]], r["keeper_code"])):
+        appraisal_unmatched = row["appraisal_review"]["rows_not_selected_by_appraisal_filter"]
+        appraisal_row_word = "row" if appraisal_unmatched == 1 else "rows"
         lines.extend([
             f"## {row['keeper_code']} — {row['name_ascii'] or row['name']}",
             "",
@@ -929,30 +990,11 @@ def markdown_report(payload: dict) -> str:
             f"- Mobilisation readiness: `{row['mobilisation_readiness']}`",
             f"- Relevant evidence categories: {', '.join(row['experience_categories']) or 'none found'}",
             f"- Full clean log review: {row['work_history_review']['source_entry_count']} rows; {row['work_history_review']['distinct_qualifying_examples']} distinct relevant patterns after template collapse.",
-            f"- Appraisal review: {row['appraisal_review']['keyed_rows_reviewed']} exact keeper-code-keyed rows; {row['appraisal_review']['irrelevant_narrative_not_repeated']} non-role-relevant rows not repeated.",
+            f"- Appraisal review: {row['appraisal_review']['keyed_rows_reviewed']} exact keeper-code-keyed rows; {appraisal_unmatched} {appraisal_row_word} not selected by the appraisal filter.",
             "",
         ])
         if row["relevant_experience"]:
             lines.append("Evidence:")
-            lines.append("")
-        material_appraisals = [
-            item for item in row["appraisal_review"]["role_relevant_testimony"]
-            if item["record_id"] in set(row["appraisal_review"]["material_pre_cutoff_concern_ids"] + row["appraisal_review"]["strong_manager_support_ids"])
-        ]
-        if material_appraisals:
-            lines.extend(["Manager testimony used as screening context:", ""])
-            for item in material_appraisals:
-                signal = []
-                if item["support_signals"]:
-                    signal.append("support: " + ", ".join(item["support_signals"]))
-                if item["concern_signals"]:
-                    signal.append("concern: " + ", ".join(item["concern_signals"]))
-                excerpt = " / ".join(item["role_relevant_excerpt"])
-                lines.append(f"- {item['year']} (year precision) — {excerpt} ({item['record_id']}; `{item['source_reference']}`; {'; '.join(signal)}). Manager testimony only, not competence or authorisation.")
-            lines.append("")
-        uncertain_appraisals = row["appraisal_review"]["same_year_record_ids_timing_uncertain"]
-        if uncertain_appraisals:
-            lines.append(f"- Same-year timing uncertainty: {', '.join(uncertain_appraisals)} are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.")
             lines.append("")
             for e in row["relevant_experience"]:
                 raw = e["raw_corroboration"]
@@ -968,6 +1010,24 @@ def markdown_report(payload: dict) -> str:
                 lines.append(f"- {e['date']} — “{e['text']}” ({e['entry_id']}; `{e['source_reference']}`; {attribution}).")
                 for flag in e["measurement_quality_flags"]:
                     lines.append(f"  - Measurement warning `{flag['code']}`: {flag['finding']} Observed: `{flag['observed']}`.")
+            lines.append("")
+        selected_appraisals = row["appraisal_review"]["role_relevant_testimony"]
+        if selected_appraisals:
+            lines.extend(["Manager testimony selected as screening context:", ""])
+            for item in selected_appraisals:
+                signal = []
+                if item["support_signals"]:
+                    signal.append("support: " + ", ".join(item["support_signals"]))
+                if item["concern_signals"]:
+                    signal.append("concern: " + ", ".join(item["concern_signals"]))
+                if item["context_signals"]:
+                    signal.append("decision-neutral context: " + ", ".join(item["context_signals"]))
+                excerpt = " / ".join(item["role_relevant_excerpt"])
+                lines.append(f"- {item['year']} (year precision) — {excerpt} ({item['record_id']}; `{item['source_reference']}`; {'; '.join(signal)}). Manager testimony only, not competence or authorisation.")
+            lines.append("")
+        uncertain_appraisals = row["appraisal_review"]["same_year_record_ids_timing_uncertain"]
+        if uncertain_appraisals:
+            lines.append(f"- Same-year timing uncertainty: {', '.join(uncertain_appraisals)} are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.")
             lines.append("")
         for e in row["supplementary_evidence"]:
             lines.append(f"- Supplementary note: {e['claim']} (`{e['source_reference']}`). {e['attribution_basis']} This is an interview lead, not an authorisation.")

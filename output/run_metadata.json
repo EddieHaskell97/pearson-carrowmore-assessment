@@ -1,5 +1,5 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "dataset_context": "Entirely synthetic data supplied for a Pearson job-application assessment",
   "scenario_as_of": "2026-10-11",
   "interpreter": "C:\\Users\\George\\.conda\\envs\\carrowmore-ml\\python.exe",
@@ -20,7 +20,7 @@
   },
   "qa": {
     "status": "PASS",
-    "passed": 3931,
+    "passed": 4777,
     "failed": 0,
     "prepared_cases": 10,
     "earlier_bounded_correction_areas": 7,
@@ -30,7 +30,12 @@
       "year-precision handling",
       "non-ranking decision gates",
       "two-stage actions",
-      "named-case appraisal fidelity"
+      "named-case appraisal fidelity",
+      "per-profile Markdown experience rendering",
+      "measurement-unit canonicalization",
+      "K1200 display/count separation",
+      "absent-record verification actions",
+      "named appraisal filter context"
     ]
   },
   "decision_quality_correction_effort": {
@@ -43,14 +48,48 @@
     "first_bounded_correction_elapsed": "not_measured",
     "preparation_accounting": "Source audits, ML work and SQL reconciliation remain separate and are not included."
   },
+  "verified_defect_repair": {
+    "canonical_pattern_count_changes": {
+      "K0303": [10, 8],
+      "K0371": [10, 7],
+      "K0482": [12, 9],
+      "K0561": [7, 6],
+      "K0592": [12, 10],
+      "K0650": [12, 10],
+      "K0847": [15, 10],
+      "K0897": [8, 7],
+      "K1200": [7, 3],
+      "K1231": [13, 12],
+      "K1302": [7, 6],
+      "K1458": [14, 11],
+      "K1468": [15, 13],
+      "K1511": [10, 8],
+      "K1538": [17, 12]
+    },
+    "disposition_changes": [],
+    "result_counts": {
+      "supported_technical_interview": 22,
+      "targeted_screening_first": 16,
+      "insufficient_evidence": 0,
+      "outside_current_redeployment_cohort": 2
+    }
+  },
+  "verified_defect_repair_effort": {
+    "measurement_scope": "Active bounded repair work from first repository inspection through final regenerated-output, QA and repeatability verification; metadata and local Git bookkeeping followed and are excluded.",
+    "started_at": "2026-10-11T14:24:46.5377362-04:00",
+    "finished_at": "2026-10-11T14:30:57.7265715-04:00",
+    "elapsed_seconds": 371,
+    "elapsed_hms": "00:06:11",
+    "preparation_accounting": "Earlier build, correction, source-audit, ML and SQL work remain separately accounted."
+  },
   "sha256": {
-    "README.md": "9cfbc58c1adc23237c8db406fd0a7ecab3aa640e0412ea43d4787cca8fb38f6b",
-    "WRITTEN_EXPLANATION.md": "735f5b12268a9e3598e63767e160d9f62f272e85f183a47bfa60d8be258301c0",
+    "README.md": "a1241c3c668cb6d975a638b50d626b3f8c686bd5de00042e47a934cafdc3d38b",
+    "WRITTEN_EXPLANATION.md": "2e9b2bceee2971e0948b8149689818921d228ad966ef00066b467c82bcb23efe",
     "SOURCE_FINGERPRINTS.json": "60ace608a598cc98db0c1b33fdbd709cb35a1524a16a266562ea1aa61a9fade2",
-    "src/array_om_evaluator.py": "24305c42c576786abb69c2b1461baf207c9c2cafe5f9431ae481c30a08c906be",
-    "qa/independent_qa.py": "8b2539053dc3027ed98c057c3cfce25d54bce62414afa6f5389aa76f3768d7d5",
-    "output/recommendations.json": "67f111e627280d50f6590705bdb850c1cfcd10895b84b191090a9841c9df9cb6",
-    "output/recommendations.md": "939c4dddc7520f46e55333ef295d17b3a430990ef64260f59d1e6a11c17bdb2e",
-    "output/qa_report.json": "2eae53d553a2e4d676d0e91eaf0a67cceec6356d1c5a426ce832fe3db62d5b54"
+    "src/array_om_evaluator.py": "36c42b6407dccf9a7e1974876a3ea7c2162e4ada66548661a185f629414087da",
+    "qa/independent_qa.py": "2799d684067f818cc858a0a6f8fba57bf16b0bf4ea816cb184641f2ecfcd3312",
+    "output/recommendations.json": "2455e61c4169beb0b1928cda747e495ea5f656fd29b55adc9fe4cabc2747aa7e",
+    "output/recommendations.md": "e3f674be1fb2089d66f5fbee8c2b73f22a2cdb7b45c5b80d5bc26442bc061845",
+    "output/qa_report.json": "df7bb1484de178434c0dac64c6bbbebc317dd0dd07c34c001c2fa8ddc7f74b1b"
   }
 }
