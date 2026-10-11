@@ -5,17 +5,17 @@
   },
   "source_archive": {
     "path": "../data/carrowmore-data-pack.zip",
-    "sha256": "59f12b6b9308d806ae686136a3842aa1d1072c48b310c2f248e83271a7a570f5",
+    "sha256": "59f12ea4dfb43d311429fdd34c207517c2ffefbf917e4cdfe9737ca5776270f5",
     "member_count": 1447
   },
   "selected_members": {
-    "carrowmore-data-pack/clean/keepers.json": "5aa6c97c3c79d57afdf8e44bf7be2c32f35b7de978b533e60746bed6eac0d58b",
-    "carrowmore-data-pack/clean/logbook_entries.json": "b7b2e82b8cb0ce0455680e89598305ce24fd4db11ef2c7d7e599c8208fb8c4a95",
-    "carrowmore-data-pack/raw/training/vendor-c-learnhub-2023-2026.json": "a8d097f38f8ef19d303061aff34566d499774de942db3ef3c7d30812d3fc3c2b",
-    "carrowmore-data-pack/reference/certification_schemes.json": "51eaf911368914f31104840816e8e551127d18b10d56f614f4240e0d84e2e4ef",
-    "carrowmore-data-pack/reference/jobs/array_om_technician.md": "64b81fef5b163fb1d4e2330a2d3f06792c7aa2e53ec52fde786fbb2b1b9f6d0c",
-    "carrowmore-data-pack/raw/hr/current_personnel.csv": "14bad3acbc45ff2a139cf17616115a51b17ae6af0cd409070e623c1cfa4084c7",
-    "carrowmore-data-pack/raw/hr/leavers.csv": "920f0aa806b9caabfd1372ad460e87fccba6a450338d3f945328d9db8dc89a0a",
-    "carrowmore-data-pack/raw/appraisals/station_manager_notes/2011-nevisbeg-keeper-note.txt": "767facd8352807adcbd665171d744978971604022288097512f7ef76992bcadc4"
+    "carrowmore-data-pack/clean/keepers.json": "5aa6e0a811b5d49da43d524d86023163aea90ff67db32143be1821cba554d58b",
+    "carrowmore-data-pack/clean/logbook_entries.json": "b7b247d406d4faa538c1880991b2f85d6c1b2b9c4300a02b7834850cc9324a95",
+    "carrowmore-data-pack/raw/training/vendor-c-learnhub-2017-2026.json": "a8d0f1a3dab7ad6f430e7352c72e434c01d8b38ca1cec3d4de26a2fdd4403c2b",
+    "carrowmore-data-pack/employers/certification_schemes.json": "51ea3687808118b5aefe1707de26f2c87661ba20df6c542d98ac3b4f237de4ef",
+    "carrowmore-data-pack/employers/carrowmore-array-om-technician.md": "64b86a9bafe79f01757495cbf0eebde11e0cb5f680d21928cd0cf0ecbdfa6d0c",
+    "carrowmore-data-pack/raw/personnel/cla_personnel_export.csv": "14ba3653d9ab29b86b273cb7016dba574d840729de85d5b0eac367ed3170b4c7",
+    "carrowmore-data-pack/raw/personnel/cla_personnel_leavers.csv": "920f7a76d3710ac08a56d7bf9ac0de83cf65f5525e8c7a1dfc905b517d2d9a0a",
+    "carrowmore-data-pack/raw/appraisals/station_manager_notes/2011-nevisbeg-keeper-note.txt": "767fa1decaafb6e56556ca7416b069e07cebf85a2cbd5d3c2d661df85d08adc4"
   }
 }
