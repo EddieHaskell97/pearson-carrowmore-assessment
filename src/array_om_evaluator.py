@@ -10,9 +10,11 @@ import io
 import json
 import re
 import sys
+import unicodedata
 import zipfile
 from collections import Counter, defaultdict
 from datetime import date
+from decimal import Decimal, InvalidOperation
 from pathlib import Path
 
 
@@ -53,7 +55,8 @@ CATEGORY_PATTERNS = {
     "electrical": re.compile(
         r"\b(electrical|voltage|volt(?:age)?s?|earth fault|continuity|breaker|switchgear|"
         r"relay|contactor|cable|wiring|fuse|battery|charger|alternator|transformer|"
-        r"insulation|megger|clamp meter|rectifier|control gear|generator controls?)\b",
+        r"insulation|megger|clamp meter|rectifier|commutator|motor brushes|control gear|"
+        r"generator controls?)\b",
         re.I,
     ),
     "mechanical": re.compile(
@@ -119,7 +122,95 @@ def parse_personnel(zf: zipfile.ZipFile, member: str) -> list[dict]:
     return list(csv.DictReader(io.StringIO(text)))
 
 
-def raw_corroboration(zf: zipfile.ZipFile, entry: dict) -> dict:
+def canonical_name(value: str | None) -> str | None:
+    if not value:
+        return None
+    decomposed = unicodedata.normalize("NFKD", value)
+    return "".join(c.lower() for c in decomposed if c.isalnum() and not unicodedata.combining(c))
+
+
+def numeric_identifier(value: str | None) -> str | None:
+    """Normalize integer-like decimal/scientific IDs without inventing digits."""
+    if not value:
+        return None
+    try:
+        number = Decimal(value.strip().lstrip("'"))
+    except InvalidOperation:
+        return None
+    if not number.is_finite() or number != number.to_integral_value():
+        return None
+    return str(int(number))
+
+
+def identity_provenance(identifier_type: str, raw_value: str | None, keeper: dict) -> dict:
+    if identifier_type == "keeper_code":
+        expected = keeper["keeper_code"]
+        normalized_raw = raw_value
+        match = raw_value == expected
+    elif identifier_type == "payroll_reference":
+        expected = keeper.get("payroll_ref")
+        normalized_raw = numeric_identifier(raw_value)
+        normalized_expected = numeric_identifier(expected)
+        match = normalized_raw is not None and normalized_raw == normalized_expected
+    elif identifier_type == "name":
+        expected = keeper.get("name")
+        normalized_raw = canonical_name(raw_value)
+        expected_names = {canonical_name(keeper.get("name")), canonical_name(keeper.get("name_ascii"))}
+        match = normalized_raw is not None and normalized_raw in expected_names
+    else:
+        return {
+            "identifier_type": "absent",
+            "raw_value": None,
+            "normalized_raw_value": None,
+            "expected_value": None,
+            "corroboration": "absent",
+        }
+    return {
+        "identifier_type": identifier_type,
+        "raw_value": raw_value,
+        "normalized_raw_value": normalized_raw,
+        "expected_value": expected,
+        "normalized_expected_value": numeric_identifier(expected) if identifier_type == "payroll_reference" else canonical_name(expected) if identifier_type == "name" else expected,
+        "corroboration": "corroborates" if match else "conflicts",
+    }
+
+
+def measurement_quality_flags(text: str) -> list[dict]:
+    flags = []
+    if re.search(r"\bmegger\b", text, re.I):
+        match = re.search(r"\b\d+(?:\.\d+)?\s*(psi|bar)\b", text, re.I)
+        if match:
+            flags.append(
+                {
+                    "code": "inconsistent_measurement_unit",
+                    "observed": match.group(0),
+                    "finding": "The quoted Megger reading uses a pressure unit, so the activity is retained but the numerical measurement is unreliable.",
+                }
+            )
+    if re.search(r"\bpump\b.*\bdelivery\b", text, re.I):
+        match = re.search(r"\b\d+(?:\.\d+)?\s*(V|volts?)\b", text, re.I)
+        if match:
+            flags.append(
+                {
+                    "code": "inconsistent_measurement_unit",
+                    "observed": match.group(0),
+                    "finding": "The quoted pump delivery uses an electrical-potential unit, so the activity is retained but the numerical measurement is unreliable.",
+                }
+            )
+    if re.search(r"\bAVR\b", text, re.I) and re.search(r"\bvolts?\s+set\b", text, re.I):
+        match = re.search(r"\b\d+(?:\.\d+)?\s*ohms?\b", text, re.I)
+        if match:
+            flags.append(
+                {
+                    "code": "inconsistent_measurement_unit",
+                    "observed": match.group(0),
+                    "finding": "The quoted AVR voltage setting uses a resistance unit, so the activity is retained but the numerical measurement is unreliable.",
+                }
+            )
+    return flags
+
+
+def raw_corroboration(zf: zipfile.ZipFile, entry: dict, keeper: dict) -> dict:
     """Resolve a clean citation at the source format's declared granularity."""
     source, locator = entry["source_record"].split("#", 1)
     member = ROOT + source
@@ -130,7 +221,13 @@ def raw_corroboration(zf: zipfile.ZipFile, entry: dict) -> dict:
         lines = raw.decode("utf-8", errors="replace").splitlines()
         if not (1 <= line_no <= len(lines)):
             return result
-        result.update(resolved=True, resolution="physical_line", raw_excerpt=lines[line_no - 1].strip())
+        result.update(
+            resolved=True,
+            resolution="physical_line",
+            raw_excerpt=lines[line_no - 1].strip(),
+            identity_provenance=identity_provenance("absent", None, keeper),
+            attribution_match=None,
+        )
         return result
     if entry["source_era"] == 2:
         rec_id = locator
@@ -144,6 +241,7 @@ def raw_corroboration(zf: zipfile.ZipFile, entry: dict) -> dict:
                     raw_keeper_name=fields[4],
                     raw_activity=fields[6],
                     attribution_match=fields[3] == entry["keeper_code"],
+                    identity_provenance=identity_provenance("keeper_code", fields[3], keeper),
                 )
                 return result
         return result
@@ -151,13 +249,24 @@ def raw_corroboration(zf: zipfile.ZipFile, entry: dict) -> dict:
     lines = raw.decode("utf-8-sig", errors="replace").splitlines()
     if not (2 <= row_no <= len(lines)):
         return result
+    header = [value.strip().lower() for value in next(csv.reader([lines[0]]))]
     row = next(csv.reader([lines[row_no - 1]]))
+    values = dict(zip(header, row))
+    if "keeper_id" in values:
+        identity = identity_provenance("payroll_reference", values["keeper_id"], keeper)
+    elif "keeper name" in values:
+        identity = identity_provenance("name", values["keeper name"], keeper)
+    else:
+        identity = identity_provenance("absent", None, keeper)
+    activity = values.get("description", values.get("activity", "")).lstrip("'")
     result.update(
         resolved=True,
         resolution="physical_csv_row_including_header",
-        raw_keeper_name=row[2],
-        raw_activity=row[3].lstrip("'"),
-        attribution_match=None,
+        raw_keeper_name=values.get("keeper name"),
+        raw_payroll_reference=values.get("keeper_id"),
+        raw_activity=activity,
+        attribution_match=True if identity["corroboration"] == "corroborates" else False if identity["corroboration"] == "conflicts" else None,
+        identity_provenance=identity,
     )
     return result
 
@@ -166,7 +275,7 @@ def entry_categories(text: str) -> list[str]:
     return [name for name, pattern in CATEGORY_PATTERNS.items() if pattern.search(text)]
 
 
-def select_work_evidence(zf: zipfile.ZipFile, entries: list[dict], as_of: date) -> list[dict]:
+def select_work_evidence(zf: zipfile.ZipFile, keeper: dict, entries: list[dict], as_of: date) -> list[dict]:
     candidates = []
     for entry in entries:
         if parse_date(entry["date"]) > as_of or not ACTION_RE.search(entry["text"]):
@@ -187,7 +296,7 @@ def select_work_evidence(zf: zipfile.ZipFile, entries: list[dict], as_of: date) 
         normalized = re.sub(r"\W+", " ", normalized).strip()
         if normalized in normalized_seen:
             continue
-        corroboration = raw_corroboration(zf, entry)
+        corroboration = raw_corroboration(zf, entry, keeper)
         if not corroboration["resolved"]:
             raise ValueError(f"unresolved source reference {entry['source_record']}")
         chosen.append(
@@ -201,6 +310,7 @@ def select_work_evidence(zf: zipfile.ZipFile, entries: list[dict], as_of: date) 
                 "source_reference": entry["source_record"],
                 "attribution": "clean_manual_attribution",
                 "raw_corroboration": corroboration,
+                "measurement_quality_flags": measurement_quality_flags(entry["text"]),
                 "selection_score": score,
             }
         )
@@ -227,10 +337,18 @@ def training_status(record: dict, as_of: date) -> str:
     return "pass_current_at_cutoff" if expires else "pass_no_expiry_recorded"
 
 
-def build_training(keeper: dict, learnhub_rows: list[dict], as_of: date) -> tuple[list[dict], list[dict]]:
+def add_years(value: date, years: int) -> date:
+    try:
+        return value.replace(year=value.year + years)
+    except ValueError:
+        return value.replace(year=value.year + years, day=28)
+
+
+def build_training(keeper: dict, learnhub_rows: list[dict], scheme_map: dict, as_of: date) -> tuple[list[dict], list[dict]]:
     claims, future = [], []
     for row in sorted(learnhub_rows, key=lambda x: (x.get("completed_on") or "", x["id"])):
         module = row.get("scheme_module") or ""
+        status = training_status(row, as_of)
         claim = {
             "record_id": row["id"],
             "module": module,
@@ -238,9 +356,30 @@ def build_training(keeper: dict, learnhub_rows: list[dict], as_of: date) -> tupl
             "outcome": row["outcome"],
             "completed_on": row.get("completed_on"),
             "expires_on": row.get("expires_on"),
-            "status_at_cutoff": training_status(row, as_of),
+            "status_at_cutoff": status,
             "source_reference": f"raw/training/vendor-c-learnhub-2017-2026.json#{row['id']}",
         }
+        scheme_code = module.split("-", 1)[0] if "-" in module else None
+        scheme = scheme_map.get(scheme_code)
+        completed = parse_date(row.get("completed_on"))
+        supplied_expiry = parse_date(row.get("expires_on"))
+        renewal_years = scheme.get("renewal_years") if scheme else None
+        if row.get("outcome") == "Pass" and completed and supplied_expiry and renewal_years:
+            nominal_expiry = add_years(completed, renewal_years)
+            supplied_current = supplied_expiry >= as_of
+            nominal_current = nominal_expiry >= as_of
+            claim["expiry_comparison"] = {
+                "supplied_expiry": supplied_expiry.isoformat(),
+                "scheme_renewal_years": renewal_years,
+                "nominal_scheme_rule_date": nominal_expiry.isoformat(),
+                "dates_differ": supplied_expiry != nominal_expiry,
+                "cutoff_status_disagrees": supplied_current != nominal_current and completed <= as_of,
+                "supplied_status_at_cutoff": "current" if supplied_current else "expired",
+                "nominal_rule_status_at_cutoff": "current" if nominal_current else "expired",
+                "interpretation": "The supplied module expiry and nominal scheme renewal rule are preserved separately; neither is silently substituted for the other.",
+            }
+            if claim["expiry_comparison"]["cutoff_status_disagrees"]:
+                claim["status_at_cutoff"] = "pass_expiry_conflict_at_cutoff"
         if claim["status_at_cutoff"] == "future_at_cutoff":
             future.append(claim)
         elif module.startswith(RELEVANT_TRAINING_PREFIXES):
@@ -262,6 +401,19 @@ def clean_completed_modules(keeper: dict, scheme: str) -> set[str]:
 
 def credential_conflicts(keeper: dict, claims: list[dict], as_of: date) -> list[dict]:
     conflicts = []
+    for claim in claims:
+        comparison = claim.get("expiry_comparison")
+        if comparison and comparison["cutoff_status_disagrees"]:
+            conflicts.append(
+                {
+                    "code": "expiry_rule_conflict",
+                    "scheme": claim["module"].split("-", 1)[0],
+                    "record_id": claim["record_id"],
+                    "claim": f"LearnHub supplies {comparison['supplied_expiry']} while the nominal {comparison['scheme_renewal_years']}-year scheme rule points to {comparison['nominal_scheme_rule_date']}.",
+                    "finding": f"At {as_of.isoformat()}, the supplied expiry says {comparison['supplied_status_at_cutoff']} but the nominal scheme-rule date says {comparison['nominal_rule_status_at_cutoff']}; issuer verification is required before relying on either date.",
+                    "source_references": [claim["source_reference"], f"employers/certification_schemes.json#{claim['module'].split('-', 1)[0]}"],
+                }
+            )
     ss_current = current_module(claims, "OSSC-SS")
     clean_certs = {c["scheme"]: c for c in keeper.get("certifications", [])}
     for scheme in ("WAHS", "SMOC"):
@@ -339,9 +491,67 @@ def clean_summaries(keeper: dict) -> list[dict]:
     ]
 
 
-def evaluate_keeper(zf, keeper, entries, learnhub_rows, as_of):
-    evidence = select_work_evidence(zf, entries, as_of)
-    claims, future = build_training(keeper, learnhub_rows, as_of)
+def recommendation_basis(evidence: list[dict], recommendation: str) -> tuple[str, dict]:
+    categories = sorted({category for item in evidence for category in item["categories"]})
+    criteria = {
+        "qualifying_distinct_examples": len(evidence),
+        "category_coverage": categories,
+        "cross_discipline_evidence": {"electrical", "mechanical"} <= set(categories),
+        "fault_finding_evidence": "fault_finding" in categories,
+        "recommend_interview_rule": "At least three de-duplicated qualifying examples plus either electrical-and-mechanical coverage or explicit fault-finding.",
+        "ranking_used": False,
+    }
+    if recommendation == "outside_current_redeployment_cohort":
+        return "The clean profile and leavers export mark this person as having left; no current redeployment pathway is assessed.", criteria
+    if not evidence:
+        return "No directly actionable electrical or mechanical maintenance example met the documented evidence rule in this bounded subset.", criteria
+    selected = []
+    for category in ("fault_finding", "electrical", "mechanical", "permit_or_isolation"):
+        item = next((row for row in evidence if category in row["categories"] and row not in selected), None)
+        if item:
+            selected.append(item)
+        if len(selected) == 2:
+            break
+    if len(selected) < 2:
+        selected.extend(row for row in evidence if row not in selected and len(selected) < 2)
+    examples = "; ".join(f"{row['entry_id']} records “{row['text']}”" for row in selected)
+    if recommendation == "recommend_interview":
+        conclusion = "The documented interview rule is met; this supports an interview, not competence or appointment."
+    else:
+        conclusion = "Relevant maintenance is recorded, but the stronger documented interview rule is not met; consider a screening interview."
+    return f"{examples}. {conclusion}", criteria
+
+
+def ordered_actions(keeper: dict, coverage: dict, conflicts: list[dict], is_current: bool) -> list[str]:
+    if not is_current:
+        return ["No current redeployment pathway is assessed for this leaver."]
+    conflict_ids = sorted({c.get("record_id") for c in conflicts if c.get("record_id")})
+    if conflict_ids:
+        verification = f"First, ask the issuer to verify the conflicting expiry evidence for {', '.join(conflict_ids)} and retain both supplied and nominal dates until resolved."
+    else:
+        verification = "First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer."
+    ossc_missing = [coverage[key]["module"] for key in ("sea_survival", "fire", "first_aid") if not coverage[key]["dated_pass_current"]]
+    if ossc_missing:
+        ossc_action = f"After medical clearance, verify, renew or complete {', '.join(ossc_missing)} as appropriate. The posting says the employer will pay for renewals; it does not promise funding for first-time training."
+    else:
+        ossc_action = "After medical clearance, present original current OSSC sea-survival, fire and first-aid evidence for mobilisation checks."
+    if not coverage["working_at_height"]["dated_pass_current"]:
+        height_action = "After OSSC-SS is verified current, verify, renew or complete WAHS-1 height safety; WAHS requires OSSC-SS within validity."
+    else:
+        height_action = "After OSSC-SS is verified current, present the current WAHS-1 record and complete the employer's role-specific height assessment."
+    return [
+        verification,
+        "Before arranging courses, confirm directly that the person accepts 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern.",
+        "Then obtain a current offshore medical fitness declaration; the OSSC definition makes this a prerequisite.",
+        ossc_action,
+        height_action,
+        "Finally, validate the cited work in a structured technical interview and complete the employer's permit, isolation and practical assessment before any appointment or mobilisation.",
+    ]
+
+
+def evaluate_keeper(zf, keeper, entries, learnhub_rows, scheme_map, as_of):
+    evidence = select_work_evidence(zf, keeper, entries, as_of)
+    claims, future = build_training(keeper, learnhub_rows, scheme_map, as_of)
     conflicts = credential_conflicts(keeper, claims, as_of)
     coverage = safety_coverage(claims)
     categories = sorted({c for item in evidence for c in item["categories"]})
@@ -349,38 +559,28 @@ def evaluate_keeper(zf, keeper, entries, learnhub_rows, as_of):
 
     if not is_current:
         recommendation = "outside_current_redeployment_cohort"
-        reason = "The clean profile and leavers export mark this person as having left; no current redeployment recommendation is made."
         eligibility = "not_assessed_outside_current_cohort"
     elif len(evidence) >= 3 and ({"electrical", "mechanical"} <= set(categories) or "fault_finding" in categories):
         recommendation = "recommend_interview"
-        reason = "The bounded records contain multiple directly cited maintenance examples, including diagnostic or cross-discipline evidence. Interview is warranted; competence is not inferred."
         eligibility = "plausible_but_essential_evidence_incomplete"
     elif evidence:
         recommendation = "consider_interview"
-        reason = "At least one directly cited plant-maintenance example is present, but the bounded evidence is too narrow for a stronger recommendation."
         eligibility = "plausible_but_essential_evidence_incomplete"
     else:
         recommendation = "insufficient_evidence_in_subset"
-        reason = "No directly actionable electrical or mechanical maintenance example met the transparent evidence rule in this bounded subset."
         eligibility = "not_established_from_bounded_evidence"
-
-    gaps = []
-    for need, item in coverage.items():
-        if not item["dated_pass_current"]:
-            gaps.append(f"Obtain or verify a current dated Pass for {item['module']} ({need.replace('_', ' ')}).")
-    gaps.extend([
-        "Obtain a current offshore medical fitness declaration.",
-        "Confirm directly that the person accepts 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern.",
-        "Assess hands-on skill under the employer's permit, isolation and task standards before mobilisation.",
-    ])
+    reason, recommendation_criteria = recommendation_basis(evidence, recommendation)
+    actions = ordered_actions(keeper, coverage, conflicts, is_current)
     limitations = [
         {"code": "competence_not_inferred", "text": "Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence."},
-        {"code": "medical_not_supplied", "text": "No current offshore medical evidence is present in the bounded sources."},
     ]
+    if is_current:
+        limitations.append({"code": "medical_not_supplied", "text": "No current offshore medical evidence is present in the bounded sources."})
     supplementary = []
+    chronology_conflicts = []
     if keeper["keeper_code"] == "K1538":
         switching_entry = next(e for e in entries if e["entry_id"] == "CL006360")
-        switching_raw = raw_corroboration(zf, switching_entry)
+        switching_raw = raw_corroboration(zf, switching_entry, keeper)
         if not switching_raw["resolved"]:
             raise ValueError("unresolved Oileann hand-check citation CL006360")
         supplementary.append(
@@ -395,8 +595,19 @@ def evaluate_keeper(zf, keeper, entries, learnhub_rows, as_of):
                     "attribution": "clean_manual_attribution",
                     "raw_corroboration": switching_raw,
                 },
-                "attribution_basis": "The note names NI GHARBHAIL O/Oileann; the personnel export has one exact NI GHARBHAIL O match and the clean profile places K1538 at Nevisbeg in 2011.",
+                "attribution_basis": "The note names NI GHARBHAIL O/Oileann and the personnel export has one exact NI GHARBHAIL O match. The clean profile places K1538 at Nevisbeg in 2011, but the note's claimed eleven-year station tenure conflicts with the recorded chronology.",
                 "use": "interview_lead_only",
+            }
+        )
+        chronology_conflicts.append(
+            {
+                "code": "oileann_station_tenure_conflict",
+                "finding": "The 2011 note says Oileann had been at Nevisbeg for eleven years (implying about 2000), while the clean profile records joining in 1998 and a Nevisbeg posting beginning in 2009. The testimony is retained as an interview lead, but its station-tenure chronology is not established.",
+                "source_references": [
+                    "raw/appraisals/station_manager_notes/2011-nevisbeg-keeper-note.txt#L2,L3,L7",
+                    "clean/keepers.json#K1538/date_joined",
+                    "clean/keepers.json#K1538/postings/NEV",
+                ],
             }
         )
         limitations.append(
@@ -412,21 +623,19 @@ def evaluate_keeper(zf, keeper, entries, learnhub_rows, as_of):
         "interview_recommendation": recommendation,
         "recommendation_reason": reason,
         "application_eligibility": eligibility,
-        "mobilisation_readiness": "not_established",
+        "mobilisation_readiness": "not_established" if is_current else "not_assessed_outside_current_cohort",
+        "recommendation_criteria": recommendation_criteria,
         "relevant_experience": evidence,
         "supplementary_evidence": supplementary,
+        "identity_and_chronology_conflicts": chronology_conflicts,
         "experience_categories": categories,
         "credential_claims": claims,
         "clean_certification_summaries": clean_summaries(keeper),
         "credential_conflicts": conflicts,
         "future_evidence_not_used": future,
         "essential_coverage_from_dated_passes": coverage,
-        "remaining_requirements": gaps,
-        "next_actions": [
-            "If shortlisted, validate each cited example in a structured technical interview.",
-            "Resolve listed credential conflicts against original certificates or issuer records.",
-            "Complete employer practical assessment, medical and role-specific safety gap training before mobilisation.",
-        ],
+        "remaining_requirements": actions if is_current else [],
+        "next_actions": actions,
         "limitations": limitations,
     }
 
@@ -461,13 +670,18 @@ def markdown_report(payload: dict) -> str:
             lines.append("")
             for e in row["relevant_experience"]:
                 raw = e["raw_corroboration"]
-                if raw.get("attribution_match") is False:
-                    attribution = f"clean/manual attribution; raw activity resolves but carries {raw.get('raw_keeper')}/{raw.get('raw_keeper_name')}, so the raw key does not independently corroborate the person assignment"
-                elif raw.get("attribution_match") is True:
-                    attribution = "clean/manual attribution corroborated by the raw keeper key"
+                identity = raw["identity_provenance"]
+                if identity["corroboration"] == "corroborates" and identity["identifier_type"] == "payroll_reference":
+                    attribution = f"clean/manual attribution corroborated by raw payroll value {identity['raw_value']} normalized to {identity['normalized_raw_value']}, matching clean payroll {identity['expected_value']}"
+                elif identity["corroboration"] == "corroborates":
+                    attribution = f"clean/manual attribution corroborated by raw {identity['identifier_type']} {identity['raw_value']}"
+                elif identity["corroboration"] == "conflicts":
+                    attribution = f"clean/manual attribution; raw {identity['identifier_type']} {identity['raw_value']} conflicts with clean {identity['expected_value']} and does not corroborate the person assignment"
                 else:
-                    attribution = "clean/manual attribution; raw reference resolves but its format has no keeper code"
+                    attribution = "clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated"
                 lines.append(f"- {e['date']} — “{e['text']}” ({e['entry_id']}; `{e['source_reference']}`; {attribution}).")
+                for flag in e["measurement_quality_flags"]:
+                    lines.append(f"  - Measurement warning `{flag['code']}`: {flag['finding']} Observed: `{flag['observed']}`.")
             lines.append("")
         for e in row["supplementary_evidence"]:
             lines.append(f"- Supplementary note: {e['claim']} (`{e['source_reference']}`). {e['attribution_basis']} This is an interview lead, not an authorisation.")
@@ -475,6 +689,12 @@ def markdown_report(payload: dict) -> str:
                 s = e["supporting_entry"]
                 lines.append(f"- Hand-check entry: {s['date']} — “{s['text']}” ({s['entry_id']}; `{s['source_reference']}`).")
             lines.append("")
+        for conflict in row["identity_and_chronology_conflicts"]:
+            lines.append(f"- Chronology conflict `{conflict['code']}`: {conflict['finding']}")
+            lines.append("")
+        if row["cohort_status"] == "leaver_outside_current_cohort":
+            lines.extend(["No current credential, training or mobilisation pathway is assessed for this leaver.", ""])
+            continue
         current_passes = [c for c in row["credential_claims"] if c["status_at_cutoff"] == "pass_current_at_cutoff"]
         lines.append("Credential position:")
         lines.append("")
@@ -486,13 +706,16 @@ def markdown_report(payload: dict) -> str:
         for c in row["credential_claims"]:
             if c["status_at_cutoff"] in {"not_achieved", "attended_not_passed", "pass_expired"}:
                 lines.append(f"- {c['module']}: {c['outcome']}; `{c['status_at_cutoff']}` (`{c['source_reference']}`).")
+            elif c["status_at_cutoff"] == "pass_expiry_conflict_at_cutoff":
+                comparison = c["expiry_comparison"]
+                lines.append(f"- Expiry conflict: {c['module']} Pass {c['record_id']} supplies {comparison['supplied_expiry']} ({comparison['supplied_status_at_cutoff']} at cutoff), while the nominal {comparison['scheme_renewal_years']}-year rule points to {comparison['nominal_scheme_rule_date']} ({comparison['nominal_rule_status_at_cutoff']}); issuer verification required (`{c['source_reference']}`).")
         for c in row["credential_conflicts"]:
             lines.append(f"- Conflict `{c['code']}`: {c['finding']}")
         if row["future_evidence_not_used"]:
             ids = ", ".join(x["record_id"] for x in row["future_evidence_not_used"])
             lines.append(f"- Future at cutoff and not used: {ids}.")
         lines.extend(["", "First actions:", ""])
-        for action in row["remaining_requirements"][:6]:
+        for action in row["next_actions"]:
             lines.append(f"- {action}")
         lines.append("")
     return "\n".join(lines) + "\n"
@@ -505,6 +728,7 @@ def build(zip_path: Path, as_of: date) -> dict:
         logs = read_json(zf, LOGS)
         learnhub = read_json(zf, LEARNHUB)["records"]
         schemes = read_json(zf, SCHEMES)["schemes"]
+        scheme_map = {scheme["code"]: scheme for scheme in schemes}
         current_people = parse_personnel(zf, CURRENT)
         leavers = parse_personnel(zf, LEAVERS)
         if len(keepers) != 40 or Counter(k["status"] for k in keepers) != {"current": 38, "left": 2}:
@@ -522,12 +746,12 @@ def build(zip_path: Path, as_of: date) -> dict:
         for row in learnhub:
             by_keeper_training[row["keeper_code"]].append(row)
         candidates = [
-            evaluate_keeper(zf, k, by_keeper_logs[k["keeper_code"]], by_keeper_training[k["keeper_code"]], as_of)
+            evaluate_keeper(zf, k, by_keeper_logs[k["keeper_code"]], by_keeper_training[k["keeper_code"]], scheme_map, as_of)
             for k in sorted(keepers, key=lambda x: x["keeper_code"])
         ]
     counts = Counter(c["interview_recommendation"] for c in candidates)
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "dataset": "synthetic Carrowmore Pearson assessment pack",
         "as_of": as_of.isoformat(),
         "scope": "Permitted 40-profile clean subset; 38 current keepers assessed and two leavers explicitly retained outside the current cohort.",
@@ -546,11 +770,13 @@ def build(zip_path: Path, as_of: date) -> dict:
             "outside_current_cohort": counts["outside_current_redeployment_cohort"],
         },
         "method": {
-            "work_evidence": "An entry must contain an explicit maintenance action plus an electrical or mechanical plant term. Up to five diverse, highest-signal entries are shown; counts and hours are not treated as competence.",
-            "recommend_interview": "At least three qualifying entries and either both electrical/mechanical coverage or explicit fault-finding evidence.",
+            "work_evidence": "An entry must contain an explicit maintenance action plus an electrical or mechanical plant term. Up to five de-duplicated, highest-signal entries are shown; counts, hours and numerical readings are not treated as competence. Suspect measurement units are flagged without rewriting the quote.",
+            "recommend_interview": "At least three de-duplicated qualifying entries and either both electrical/mechanical coverage or explicit fault-finding evidence. The same rule is applied to every current profile, produces no ranking, and every result cites its person-specific basis.",
             "consider_interview": "At least one qualifying entry but the stronger rule is not met.",
-            "training": "Dated LearnHub outcome and supplied expiry are evaluated at the explicit cutoff. Pass, Attended and Not achieved remain distinct; expiry is never recomputed.",
+            "training": "Dated LearnHub outcome and supplied expiry are evaluated at the explicit cutoff. Pass, Attended and Not achieved remain distinct. A nominal scheme-rule date is also shown; when it changes cutoff status, neither date is chosen and issuer verification is required.",
             "height_mapping": "WAHS-1 is used as the supplied definition's direct height-safety module. This is a documented interpretation because the posting asks for a combined offshore certificate while OSSC itself has no height module.",
+            "identity": "Raw keeper codes, payroll references and names are identified separately. Integer-like payroll values may be normalized across leading-zero, decimal and scientific notation only; absent or conflicting identifiers remain explicit and clean attribution is never rewritten.",
+            "action_dependencies": "Issuer verification precedes spending decisions; working-condition willingness is confirmed before courses; medical clearance precedes OSSC; verified OSSC-SS precedes WAHS. The posting funds renewals but does not promise first-time training funding.",
         },
         "candidates": candidates,
     }

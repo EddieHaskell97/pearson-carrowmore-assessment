@@ -12,8 +12,8 @@ The bounded run produced:
 
 | Result | Profiles |
 |---|---:|
-| Recommend interview | 37 |
-| Consider interview | 1 |
+| Recommend interview | 38 |
+| Consider interview | 0 |
 | Insufficient relevant evidence in this subset | 0 |
 | Leaver outside the current cohort | 2 |
 
@@ -57,14 +57,15 @@ Run independent QA separately after generation:
   --report output\qa_report.json
 ```
 
-The submitted QA run passed **1,530/1,530 checks**, including the ten cases defined before implementation. The QA program reads the ZIP and output directly and never imports the evaluator or repeats its recommendation score.
+The submitted correction-pass QA run passed **2,844/2,844 checks**, including the ten cases defined before implementation and direct checks for the seven bounded corrections. The QA program reads the ZIP and output directly and never imports the evaluator or recomputes its recommendation score.
 
 ## What the output means
 
 Each profile keeps these concepts separate:
 
 - `interview_recommendation`: whether the bounded records justify a conversation;
-- `relevant_experience`: exact clean log text, date, entry ID, raw source reference, attribution method and raw corroboration;
+- `recommendation_reason` and `recommendation_criteria`: person-specific cited reasons and the non-ranking rule result;
+- `relevant_experience`: exact clean log text, date, entry ID, raw source reference, identity provenance, raw corroboration and measurement warnings;
 - `application_eligibility`: whether the supplied evidence establishes the posting's application position;
 - `mobilisation_readiness`: whether every safety, medical and employer gate is established;
 - `credential_claims`: dated LearnHub rows with Pass, Attended and Not achieved preserved exactly;
@@ -72,11 +73,15 @@ Each profile keeps these concepts separate:
 - `future_evidence_not_used`: records later than the scenario cutoff;
 - `remaining_requirements` and `next_actions`: what to verify, renew, train or assess first.
 
-The evidence rule requires an explicit maintenance action plus an electrical or mechanical plant term. Up to five diverse examples are shown. Counts, hours, grade and tags are never treated as competence. A stronger interview recommendation requires at least three examples plus diagnostic or cross-discipline evidence; it remains a shortlist rule, not an employment decision.
+The evidence rule requires an explicit maintenance action plus an electrical or mechanical plant term. Up to five de-duplicated examples are shown. Counts, hours, grade and tags are never treated as competence. A stronger interview recommendation requires at least three examples plus diagnostic or electrical-and-mechanical evidence; it remains a shortlist rule, not a ranking or employment decision. K1200 now meets that same rule because CL005994 records work on motor brushes and a commutator, which is consistently categorized as electro-mechanical wherever that wording appears.
 
-Credential status is based on each supplied LearnHub outcome and expiry. Expiry dates are not recalculated from nominal scheme periods. `Pass`, `Attended`, and `Not achieved` remain different. WAHS-1 is mapped to the posting's height requirement as an explicit prototype interpretation because the supplied OSSC definition does not include height.
+Credential status preserves each supplied LearnHub outcome and expiry. The output separately calculates the nominal date implied by the scheme's stated renewal years. If those two dates produce different status at the cutoff, the claim is marked unresolved and issuer verification is required; neither date silently wins. `Pass`, `Attended`, and `Not achieved` remain different. WAHS-1 is mapped to the posting's height requirement as an explicit prototype interpretation because the supplied OSSC definition does not include height.
 
-For era-2 DAT evidence, the output distinguishes a matching raw keeper key from a clean/manual person assignment that the raw K8xxx/`UNKNOWN` key cannot independently corroborate. Era-3 CSV row numbers include the header; era-2 citations use file plus record ID; era-1 citations use physical lines.
+Identity provenance distinguishes raw keeper codes, payroll references, names and absent identifiers. Integer-like payroll values are normalized across leading-zero, decimal and scientific notation without adding digits; for example, raw `1.1245E+04` corroborates K0147's clean `0011245`. Conflicting identifiers remain visible and clean/manual attribution remains explicit. Era-3 CSV row numbers include the header; era-2 citations use file plus record ID; era-1 citations use physical lines.
+
+Quoted measurement anomalies are retained verbatim and flagged. Megger readings in `psi`/`bar`, pump delivery in volts and AVR voltage settings in ohms support only that an activity was recorded; their numerical measurements are not treated as reliable and no repair is invented.
+
+For current profiles, next actions are ordered: issuer/source verification, willingness and working-condition confirmation, medical clearance, OSSC work, dependent WAHS work, then technical/practical assessment. The posting's promise to fund renewals is reported only for renewals. The two leavers receive no training or mobilisation pathway.
 
 ## Repository layout
 
@@ -99,6 +104,7 @@ The source archive is not duplicated inside this repository. Supply its path wit
 - Older name-only training is not guessed into identities. Clean aggregate certification summaries remain claims rather than independent issuer verification.
 - Exact course availability, duration, price and fastest completion route are not in the sources and remain unknown.
 - Work narratives support interview questions. They do not establish assessed competence, an appointment, current authorisation, or qualifying experience duration.
+- Oileann/K1538's manager testimony remains an interview lead, but its claimed eleven-year Nevisbeg tenure conflicts with the recorded 1998 joining date and Nevisbeg posting beginning in 2009.
 - Unicode is preserved from the source. Where the supplied pack itself contains a replacement character, the JSON retains it and the readable report uses the supplied ASCII name where available.
 
 See [WRITTEN_EXPLANATION.md](WRITTEN_EXPLANATION.md) for the required design reflection and effort statement.

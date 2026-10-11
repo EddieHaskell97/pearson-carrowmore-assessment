@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "dataset_context": "Entirely synthetic data supplied for a Pearson job-application assessment",
   "scenario_as_of": "2026-10-11",
   "interpreter": "C:\\Users\\George\\.conda\\envs\\carrowmore-ml\\python.exe",
@@ -19,15 +19,16 @@
   },
   "qa": {
     "status": "PASS",
-    "passed": 1530,
+    "passed": 2844,
     "failed": 0,
-    "prepared_cases": 10
+    "prepared_cases": 10,
+    "bounded_correction_areas": 7
   },
   "sha256": {
-    "src/array_om_evaluator.py": "5f0b925a00c929a6bf7822e4935bd91510edb16abdb666a7c33af67afee0d270",
-    "qa/independent_qa.py": "66f7f56cffb5c067863b241aacbd69f698782f6849534a0a46bcee67b3b23b57",
-    "output/recommendations.json": "95c822e882d3e00baa44a71139111b63194ae51ad80fa52656a07e94fa121655",
-    "output/recommendations.md": "aba1c97203c9089d80d323b2dd5abc337938b51b13836111905e124347288048",
-    "output/qa_report.json": "3163d8a59bc7da4dcc8f025bee0925ff9bb7267975052dd5ba6d100924347bba"
+    "src/array_om_evaluator.py": "1f85a8456fd65f7256dd473b84c07948cf7ab3a3fdd9560bcd5fa73420b3eba1",
+    "qa/independent_qa.py": "0b97318891f90dc7763b2a3063b845912b581cbaae9979e957b7523a7a387672",
+    "output/recommendations.json": "71f601e27876b2658c81eb8d99bf2d45f0fea0ec1b59cdad2e9d04729803a912",
+    "output/recommendations.md": "9930e6cc27c5ed0f4f2b516d82d071f7fd8e6d7d1b3dc8e9d15725231b0f0e80",
+    "output/qa_report.json": "cf775e27616e1231a1f93aa34252431d4ebda640ee1e518cbd60d97c4a6c2bd3"
   }
 }

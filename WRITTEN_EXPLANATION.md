@@ -4,7 +4,7 @@
 
 I built one file-based answer to the assessment's useful question: which current keepers in the permitted subset plausibly merit an Array O&M interview, and what must happen next? The source pack is entirely synthetic and was supplied for a Pearson job-application assessment. The implementation uses the allowed clean subset of 40 because four hours is better spent making person-level claims traceable than producing a broader but less defensible ranking. Thirty-eight profiles are current; K1203 and K1458 are visible only as leavers outside the redeployment cohort. This is not presented as the full population of 340 current staff or as the separate 240-example ML dataset.
 
-The scenario cutoff is an explicit input and the submitted run uses 2026-10-11. The output separates interview potential, application eligibility and mobilisation readiness. Each experience claim carries the exact clean text and ID plus a resolvable raw citation. Each training claim preserves its exact outcome and supplied expiry. Future evidence is shown separately, contradictions stay visible, and missing evidence becomes a verification action rather than a claim that training never happened. Oileann/K1538's manager note and 11 kV entry are useful interview leads, but they are not turned into a current authorisation or two years of qualifying experience.
+The scenario cutoff is an explicit input and the submitted run uses 2026-10-11. The output separates interview potential, application eligibility and mobilisation readiness. Each experience claim carries the exact clean text and ID plus a resolvable raw citation. Each training claim preserves its exact outcome and supplied expiry. Future evidence is shown separately, contradictions stay visible, and missing evidence becomes a verification action rather than a claim that training never happened. Oileann/K1538's manager note and 11 kV entry are useful interview leads, but they are not turned into a current authorisation or two years of qualifying experience. The note's eleven-year Nevisbeg claim is also shown to conflict with the 1998 joining date and the recorded Nevisbeg posting beginning in 2009.
 
 ## What I did not build, and why
 
@@ -22,6 +22,14 @@ The build benefited from treating AI output as a draft to be checked against sou
 4. The generic work-text rule did not select K1538's exact 11 kV sentence because its wording lacks the rule's usual action/plant vocabulary. I added the predeclared CL006360 hand-check beside the curated manager note and kept the explicit non-authorisation limitation.
 5. The final profile sanity pass showed that the action vocabulary missed irregular and trade-specific wording such as “rebuilt” and “dressed,” which hid K1200's motor and clockwork maintenance. I added those explicit verbs and regenerated the whole answer rather than manually changing that person's result.
 
+The bounded correction pass then made the evidence contract stricter:
+
+- CL005994's motor-brush and commutator work is consistently categorized as both electrical and mechanical. Under the documented non-ranking rule, K1200 changes from `consider_interview` to `recommend_interview`; no other recommendation changes.
+- Supplied module expiries remain untouched, while nominal scheme-rule dates are shown separately. Four cutoff-changing conflicts are visible: K0274/LH500295, K1200/LH502297, K1200/LH502305 and K1345/LH502579. Each is unresolved pending issuer verification.
+- Suspect units in quoted work records are preserved and warned about. The activity can support an interview question, but the number is not treated as reliable evidence.
+- Era-3 identity handling now reads its actual versioned headers. It distinguishes names from payroll IDs and normalizes only integer-like numeric/scientific payroll representations. Conflicts and absent identifiers remain explicit.
+- Leavers no longer receive a training or mobilisation route. Current-person actions now respect verification, willingness, medical, OSSC and WAHS dependencies, and quote the employer's renewal funding narrowly.
+
 These corrections are why the QA program is separate from the evaluator and why the ten representative cases were specified before the build.
 
 ## If this became a real product
@@ -32,4 +40,4 @@ I would keep the evidence contract: immutable source fingerprints, explicit scen
 
 ## Effort
 
-The focused implementation, generated run, independent QA, documentation and Git checkpoints were completed in one bounded session, comfortably inside the four-hour limit. The tracked active agent work was approximately 15 minutes at the documentation checkpoint. Earlier source audits, ML work and SQL reconciliation were preparation and are not represented as assessment build time; elapsed time for those separate activities is not invented or folded into this figure.
+The initial build's completion timer recorded 1,118 seconds (18 minutes 38 seconds) of active agent execution; the earlier “approximately 15 minutes” wording was a provisional documentation-checkpoint figure and is superseded. This correction pass was not instrumented by that same timer, so its exact elapsed time is recorded as **not measured** rather than estimated or added to the initial figure. Earlier source audits, ML work and SQL reconciliation were preparation and remain separate; their elapsed time is not invented or folded into assessment-build time.
