@@ -380,7 +380,7 @@ def evaluate_keeper(zf, keeper, entries, learnhub_rows, as_of):
         supplementary.append(
             {
                 "claim": "A 2011 manager note records generator-control fault-finding and years of station high-voltage switching; clean entry CL006360 records work on an 11 kV board.",
-                "source_reference": "raw/appraisals/station_manager_notes/2011-nevisbeg-keeper-note.txt#L8-L10",
+                "source_reference": "raw/appraisals/station_manager_notes/2011-nevisbeg-keeper-note.txt#L3,L7,L9,L11",
                 "supporting_entry": {
                     "entry_id": switching_entry["entry_id"],
                     "date": switching_entry["date"],
