@@ -24,6 +24,7 @@ LOGS = ROOT + "clean/logbook_entries.json"
 LEARNHUB = ROOT + "raw/training/vendor-c-learnhub-2017-2026.json"
 SCHEMES = ROOT + "employers/certification_schemes.json"
 POSTING = ROOT + "employers/carrowmore-array-om-technician.md"
+HVAP_POSTING = ROOT + "employers/carrowmore-array-hv-authorised-person.md"
 CURRENT = ROOT + "raw/personnel/cla_personnel_export.csv"
 LEAVERS = ROOT + "raw/personnel/cla_personnel_leavers.csv"
 OILEANN_NOTE = ROOT + "raw/appraisals/station_manager_notes/2011-nevisbeg-keeper-note.txt"
@@ -36,6 +37,7 @@ EXPECTED_MEMBER_HASHES = {
     LEARNHUB: "a8d0f1a3dab7ad6f430e7352c72e434c01d8b38ca1cec3d4de26a2fdd4403c2b",
     SCHEMES: "51ea3687808118b5aefe1707de26f2c87661ba20df6c542d98ac3b4f237de4ef",
     POSTING: "64b86a9bafe79f01757495cbf0eebde11e0cb5f680d21928cd0cf0ecbdfa6d0c",
+    HVAP_POSTING: "0a2fff04396dd62d10defa122014dff1671ab04bfea4f8780241130636f66aa7",
     CURRENT: "14ba3653d9ab29b86b273cb7016dba574d840729de85d5b0eac367ed3170b4c7",
     LEAVERS: "920f7a76d3710ac08a56d7bf9ac0de83cf65f5525e8c7a1dfc905b517d2d9a0a",
     OILEANN_NOTE: "767fa1decaafb6e56556ca7416b069e07cebf85a2cbd5d3c2d661df85d08adc4",
@@ -89,6 +91,22 @@ ESSENTIAL_MODULES = {
     "fire": "OSSC-FF",
     "first_aid": "OSSC-FA",
     "working_at_height": "WAHS-1",
+}
+
+# These are the only material core-experience contradictions identified by the
+# bounded, person-by-person policy review. They are explicit reviewed source
+# cases, not keyword triggers, scores, time windows or numerical thresholds.
+MATERIAL_CORE_CONTRADICTIONS = {
+    "K0478": {
+        "record_ids": ["AP001159", "AP001160", "AP001162", "AP001165"],
+        "finding": "Attributed electrical and isolation logs sit alongside repeated, directly conflicting testimony about switching, distribution and switchgear work, including both 'go-to' and shortfall/checking claims. The records establish activity but leave its responsibility and quality materially unresolved.",
+        "clarification": "Before a technical interview, clarify what switching and distribution work Ossian personally performed, what checking was required, and whether the 2024 switchgear deficiency was resolved. Preserve the 2026 praise as time-uncertain context rather than treating it as a resolution.",
+    },
+    "K1200": {
+        "record_ids": ["AP003496"],
+        "finding": "Four attributed hands-on records, including motor-brush and commutator maintenance, conflict with AP003496's direct statement that the manager had not observed the plant work suggested by the record and that two requests for assistance were avoided.",
+        "clarification": "Before a technical interview, establish which work Tomaltach performed personally, whether the optic and clockwork activities meet the employer's plant-maintenance criterion, and why AP003496 differs from the logs and other manager testimony.",
+    },
 }
 
 # Appraisals are manager testimony, not observed competence. These deliberately
@@ -448,7 +466,7 @@ def select_work_evidence(
 
     # A reported category must always be inspectable through at least one
     # displayed source record. Add the strongest missing category example
-    # without removing the normal five-record sample or K1200's exceptions.
+    # without removing the readability sample or K1200's exceptions.
     category_support = {
         category: next(row for row in distinct if category in row["categories"])
         for category in sorted({category for row in distinct for category in row["categories"]})
@@ -472,7 +490,7 @@ def select_work_evidence(
         "canonical_pattern_keys": [row["template_key"] for row in distinct],
         "category_coverage": category_coverage,
         "displayed_entry_ids": [row["entry_id"] for row in chosen],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence.",
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed only for a descriptive workflow count; display exceptions do not create pattern identities, and counts or repetition do not decide interview support or establish competence.",
     }
     return chosen, review
 
@@ -529,13 +547,17 @@ def build_appraisal_review(rows: list[dict], as_of: date) -> dict:
                     "evidence_limit": "Manager testimony; useful for screening questions but not proof of competence, authorisation or the date of an event within the year.",
                 }
             )
-    material_concerns = [
+    pre_cutoff_adverse = [
         row
         for row in relevant
         if row["decision_time_treatment"] == "pre_cutoff_year"
-        and row["year"] >= as_of.year - 10
         and row["concern_signals"]
-        and PRIMARY_APPRAISAL_TOPICS.intersection(row["topics"])
+    ]
+    same_year_adverse = [
+        row
+        for row in relevant
+        if row["decision_time_treatment"] == "same_year_timing_uncertain_context_only"
+        and row["concern_signals"]
     ]
     strong_support = [
         row
@@ -552,7 +574,11 @@ def build_appraisal_review(rows: list[dict], as_of: date) -> dict:
         "role_relevant_testimony_count": len(relevant),
         "future_year_record_ids_not_used": future_ids,
         "same_year_record_ids_timing_uncertain": same_year_uncertain,
-        "material_pre_cutoff_concern_ids": [row["record_id"] for row in material_concerns],
+        "pre_cutoff_adverse_testimony_ids": [row["record_id"] for row in pre_cutoff_adverse],
+        "same_year_adverse_testimony_ids": [row["record_id"] for row in same_year_adverse],
+        "selected_adverse_testimony_ids": [
+            row["record_id"] for row in relevant if row["concern_signals"]
+        ],
         "strong_manager_support_ids": [row["record_id"] for row in strong_support],
         "context_only_record_ids": [
             row["record_id"] for row in relevant if row["context_signals"] and not row["support_signals"] and not row["concern_signals"]
@@ -560,7 +586,7 @@ def build_appraisal_review(rows: list[dict], as_of: date) -> dict:
         "decision_neutral_context_ids": [
             row["record_id"]
             for row in relevant
-            if row["record_id"] not in {item["record_id"] for item in material_concerns + strong_support}
+            if row["record_id"] not in {item["record_id"] for item in strong_support}
         ],
         "rows_not_selected_by_appraisal_filter": len(rows) - len(relevant),
         "unmatched_row_label": "not selected by the appraisal filter",
@@ -623,7 +649,7 @@ def build_training(keeper: dict, learnhub_rows: list[dict], scheme_map: dict, as
                 "cutoff_status_disagrees": supplied_current != nominal_current and completed <= as_of,
                 "supplied_status_at_cutoff": "current" if supplied_current else "expired",
                 "nominal_rule_status_at_cutoff": "current" if nominal_current else "expired",
-                "interpretation": "The supplied module expiry and nominal scheme renewal rule are preserved separately; neither is silently substituted for the other.",
+                "interpretation": "The nominal scheme-period calculation is a consistency check only. The supplied expiry and calculated date are preserved separately; issuer verification is required where they conflict and neither date is silently substituted for the other.",
             }
             if claim["expiry_comparison"]["cutoff_status_disagrees"]:
                 claim["status_at_cutoff"] = "pass_expiry_conflict_at_cutoff"
@@ -712,10 +738,15 @@ def credential_conflicts(keeper: dict, claims: list[dict], as_of: date) -> list[
     return conflicts
 
 
-def safety_coverage(claims: list[dict]) -> dict:
+def provisional_safety_mapping(claims: list[dict]) -> dict:
     return {
-        need: {"module": module, "dated_pass_current": current_module(claims, module)}
-        for need, module in ESSENTIAL_MODULES.items()
+        "status": "provisional_mapping_not_employer_acceptance",
+        "mapped_dated_passes": {
+            need: {"module": module, "dated_pass_current": current_module(claims, module)}
+            for need, module in ESSENTIAL_MODULES.items()
+        },
+        "unresolved_scope": "The O&M posting names sea survival, fire, first aid and working-at-height coverage but does not identify the accepted package. OSSC contains no height module; WAHS separately defines height safety, climbing and rescue. Employer/issuer confirmation is required.",
+        "coverage_not_inferred": ["WAHS-2 ladder and tower climbing", "WAHS-4 tower rescue and casualty recovery"],
     }
 
 
@@ -738,51 +769,160 @@ def clean_summaries(keeper: dict) -> list[dict]:
     ]
 
 
-def recommendation_basis(
-    evidence: list[dict], work_review: dict, appraisal_review: dict, recommendation: str
-) -> tuple[str, dict]:
+def individual_policy_review(
+    keeper: dict, evidence: list[dict], work_review: dict, appraisal_review: dict, is_current: bool
+) -> tuple[str, str, dict, dict]:
+    """Apply the approved qualitative policy after an explicit per-profile review."""
     categories = work_review["category_coverage"]
-    concern_ids = appraisal_review["material_pre_cutoff_concern_ids"]
-    support_ids = appraisal_review["strong_manager_support_ids"]
-    criteria = {
-        "qualifying_distinct_examples": work_review["distinct_qualifying_examples"],
-        "category_coverage": categories,
-        "cross_discipline_evidence": {"electrical", "mechanical"} <= set(categories),
-        "fault_finding_evidence": "fault_finding" in categories,
-        "material_pre_cutoff_appraisal_concern_ids": concern_ids,
-        "strong_manager_support_ids": support_ids,
-        "policy": {
-            "supported_technical_interview": "At least five distinct relevant log examples and no explicit role-related appraisal concern in the ten years before the cutoff.",
-            "targeted_screening_first": "Some relevant evidence exists, but it is sparse (fewer than five distinct examples) or recent explicit appraisal concerns require a focused screen before a full technical interview.",
-            "insufficient_evidence": "Fewer than three distinct relevant examples and no strong keeper-code-keyed manager support.",
-            "year_precision": "A 2026 year-only appraisal is context only because its position relative to 2026-10-11 is unknown.",
-        },
-        "ranking_used": False,
-    }
-    if recommendation == "outside_current_redeployment_cohort":
-        return "The clean profile and leavers export mark this person as having left; no current redeployment pathway is assessed.", criteria
-    if recommendation == "insufficient_evidence":
-        return "The full clean history and exact keeper-code-keyed appraisals do not provide enough directly relevant, diverse evidence to support an interview decision; obtain specific plant-maintenance examples before reassessment.", criteria
+    core_evidence = [
+        row for row in evidence if {"electrical", "mechanical"}.intersection(row["categories"])
+    ]
+    provenance_order = {"corroborates": 0, "absent": 1, "conflicts": 2}
+    core_evidence = sorted(
+        core_evidence,
+        key=lambda row: (
+            provenance_order[row["raw_corroboration"]["identity_provenance"]["corroboration"]],
+            -int(row["date"].replace("-", "")),
+            row["entry_id"],
+        ),
+    )
     selected = []
-    for category in ("fault_finding", "electrical", "mechanical", "permit_or_isolation"):
-        item = next((row for row in evidence if category in row["categories"] and row not in selected), None)
-        if item:
-            selected.append(item)
+    for row in core_evidence:
+        covered = {category for item in selected for category in item["categories"]}
+        if not selected or {"electrical", "mechanical"}.intersection(row["categories"]) - covered:
+            selected.append(row)
         if len(selected) == 2:
             break
-    if len(selected) < 2:
-        selected.extend(row for row in evidence if row not in selected and len(selected) < 2)
-    examples = "; ".join(f"{row['entry_id']} records “{row['text']}”" for row in selected)
-    appraisal_clause = ""
-    if concern_ids:
-        appraisal_clause = f" Explicit role-related concerns in {', '.join(concern_ids)} remain unresolved."
-    elif support_ids:
-        appraisal_clause = f" Keeper-code-keyed manager testimony in {', '.join(support_ids[:2])} adds a screening lead, not proof of competence."
-    if recommendation == "supported_technical_interview":
-        conclusion = "The documented policy supports a structured technical interview, not competence, eligibility or appointment."
+    if not selected and core_evidence:
+        selected.append(core_evidence[0])
+
+    positive_ids = [
+        row["record_id"]
+        for row in appraisal_review["role_relevant_testimony"]
+        if row["support_signals"]
+    ]
+    adverse_ids = appraisal_review["selected_adverse_testimony_ids"]
+    same_year_ids = appraisal_review["same_year_record_ids_timing_uncertain"]
+    raw_conflict_ids = [
+        row["entry_id"]
+        for row in evidence
+        if row["raw_corroboration"]["identity_provenance"]["corroboration"] == "conflicts"
+    ]
+    material = MATERIAL_CORE_CONTRADICTIONS.get(keeper["keeper_code"])
+    unresolved_questions = []
+    if material:
+        unresolved_questions.append(material["clarification"])
+    elif adverse_ids:
+        unresolved_questions.append(
+            f"Discuss the selected adverse testimony in {', '.join(adverse_ids)} alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto."
+        )
+    if raw_conflict_ids:
+        unresolved_questions.append(
+            f"The permitted clean/manual attribution for {', '.join(raw_conflict_ids)} is not corroborated by the cited raw identifier; preserve that provenance limitation and do not use those rows alone."
+        )
+    if not appraisal_review["reviewed_record_ids"] and is_current:
+        unresolved_questions.append(
+            "No exact keeper-code-keyed appraisal is supplied; this is an evidence gap, not a clean performance finding."
+        )
+    if same_year_ids:
+        unresolved_questions.append(
+            f"Appraisals {', '.join(same_year_ids)} have year-only 2026 dates, so their position relative to 2026-10-11 is unknown and they remain context only."
+        )
+    if keeper["keeper_code"] == "K0310":
+        unresolved_questions.append(
+            "The supplied work logs end in 2012; ask about subsequent and current practice without applying an invented recency threshold."
+        )
+
+    if not is_current:
+        recommendation = "outside_current_redeployment_cohort"
+        reason = "The clean profile and leavers export mark this person as having left; no current redeployment pathway is assessed."
+        selection_action = "No current redeployment pathway is assessed for this leaver."
+        summary_uncertainty = "Outside current cohort"
+    elif not selected:
+        recommendation = "insufficient_evidence"
+        reason = (
+            "The bounded sources do not contain a specific attributed work record establishing hands-on mechanical or electrical maintenance. "
+            "This is missing evidence, not a finding that the person lacks experience."
+        )
+        selection_action = (
+            "Before deciding on a technical interview, ask for a specific attributable example of hands-on mechanical or electrical plant maintenance, including equipment, personal responsibility and outcome."
+        )
+        summary_uncertainty = "Essential hands-on maintenance evidence not established"
     else:
-        conclusion = "Relevant experience is recorded, but the uncertainty should be tested in a targeted screen before deciding on a full technical interview."
-    return f"{examples}.{appraisal_clause} {conclusion}", criteria
+        disciplines = sorted(
+            {category for row in selected for category in row["categories"] if category in {"electrical", "mechanical"}}
+        )
+        examples = "; ".join(
+            f"{row['entry_id']} ({row['date']}) records \"{row['text']}\""
+            for row in selected
+        )
+        relevance = (
+            f"This is specific, attributed evidence of hands-on {' and '.join(disciplines)} maintenance with transferable relevance to the O&M posting's plant-maintenance work."
+        )
+        if material:
+            recommendation = "targeted_screening_first"
+            reason = (
+                f"{examples}. {relevance} However, material contradiction in {', '.join(material['record_ids'])}: {material['finding']} Clarification is needed before a technical interview; neither source is silently preferred."
+            )
+            selection_action = material["clarification"]
+            summary_uncertainty = f"Material core contradiction: {', '.join(material['record_ids'])}"
+        else:
+            recommendation = "supported_technical_interview"
+            appraisal_clause = ""
+            if adverse_ids:
+                appraisal_clause = (
+                    f" Adverse testimony in {', '.join(adverse_ids)} is retained with positive testimony"
+                    + (f" in {', '.join(positive_ids)}" if positive_ids else "")
+                    + "; it supplies interview questions but does not erase the attributed activity or automatically bar an interview."
+                )
+            elif positive_ids:
+                appraisal_clause = f" Positive testimony in {', '.join(positive_ids)} is an interview lead, not proof of competence."
+            reason = (
+                f"{examples}. {relevance}{appraisal_clause} A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding."
+            )
+            selection_action = (
+                f"Invite to a structured technical interview using {', '.join(row['entry_id'] for row in selected)} and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome."
+            )
+            if keeper["keeper_code"] == "K0310":
+                summary_uncertainty = "Historical evidence only; logs end 2012 and no keyed appraisal"
+            elif same_year_ids:
+                summary_uncertainty = "Year-only 2026 appraisal timing is uncertain"
+            elif adverse_ids:
+                summary_uncertainty = f"Adverse testimony retained for interview: {', '.join(adverse_ids)}"
+            elif not appraisal_review["reviewed_record_ids"]:
+                summary_uncertainty = "No keyed appraisal; no clean-record inference"
+            else:
+                summary_uncertainty = "Competence and mobilisation remain unestablished"
+
+    criteria = {
+        "reviewed_individually": True,
+        "supporting_core_work_ids": [row["entry_id"] for row in selected],
+        "descriptive_distinct_workflow_count": work_review["distinct_qualifying_examples"],
+        "category_coverage": categories,
+        "selected_positive_testimony_ids": positive_ids,
+        "selected_adverse_testimony_ids": adverse_ids,
+        "same_year_2026_timing_uncertain_ids": same_year_ids,
+        "material_core_contradiction_ids": material["record_ids"] if material else [],
+        "ranking_used": False,
+        "numerical_interview_threshold_used": False,
+        "automatic_adverse_appraisal_gate_used": False,
+        "policy": {
+            "supported_technical_interview": "Specific attributed evidence supports plausible hands-on mechanical or electrical maintenance experience; adverse, sparse or old evidence is discussed but is not an automatic veto.",
+            "targeted_screening_first": "A named material attribution problem or contradiction concerning the core experience claim must be clarified before a technical interview.",
+            "insufficient_evidence": "The bounded sources do not establish essential hands-on mechanical or electrical maintenance; missing records are not proof that the person lacks experience.",
+            "year_precision": "A 2026 year-only appraisal is context only because its position relative to 2026-10-11 is unknown.",
+        },
+    }
+    review = {
+        "supporting_core_work_ids": criteria["supporting_core_work_ids"],
+        "positive_testimony_ids": positive_ids,
+        "adverse_testimony_ids": adverse_ids,
+        "material_unresolved_issue": material["finding"] if material else None,
+        "unresolved_questions": unresolved_questions,
+        "summary_uncertainty": summary_uncertainty,
+        "selection_action": selection_action,
+    }
+    return recommendation, reason, criteria, review
 
 
 def credential_action(claims: list[dict], module: str) -> str:
@@ -795,7 +935,10 @@ def credential_action(claims: list[dict], module: str) -> str:
         return f"{module}: present and issuer-verify the current dated Pass ({', '.join(current)})."
     expired = [claim["record_id"] for claim in records if claim["status_at_cutoff"] == "pass_expired"]
     if expired:
-        return f"{module}: renew the expired Pass ({', '.join(expired)}); the posting says the employer funds renewals."
+        return (
+            f"{module}: the supplied Pass is expired ({', '.join(expired)}); ask the issuer which renewal, assessment or training route applies. "
+            "The posting says the employer funds renewals, but it does not define the route or promise first-time training funding."
+        )
     not_achieved = [claim["record_id"] for claim in records if claim["status_at_cutoff"] == "not_achieved"]
     if not_achieved:
         return f"{module}: Not achieved in {', '.join(not_achieved)} is not a Pass; complete training and assessment if progression is approved (first-time funding is not promised)."
@@ -814,20 +957,12 @@ def ordered_actions(
     claims: list[dict],
     conflicts: list[dict],
     recommendation: str,
-    appraisal_review: dict,
+    policy_review: dict,
     is_current: bool,
 ) -> tuple[list[str], list[str]]:
     if not is_current:
         return ["No current redeployment pathway is assessed for this leaver."], []
-    concern_ids = appraisal_review["material_pre_cutoff_concern_ids"]
-    if recommendation == "supported_technical_interview":
-        source_phrase = "the cited logs and manager testimony" if appraisal_review["role_relevant_testimony_count"] else "the cited logs"
-        initial = [f"Invite to a structured technical interview and use {source_phrase} as questions; assess fault diagnosis, safe isolation and hands-on plant maintenance rather than treating the records as proof."]
-    elif recommendation == "targeted_screening_first":
-        focus = f" Resolve the explicit concerns in {', '.join(concern_ids)}." if concern_ids else " Test the sparse or repetitive evidence with concrete examples."
-        initial = [f"Run a targeted evidence screen before a full technical interview.{focus} Ask what the person did personally, what plant was involved, what checks controlled the work and what outcome was verified."]
-    else:
-        initial = ["Do not progress to a technical interview on the current evidence; first obtain independently checkable examples of hands-on electrical or mechanical plant maintenance."]
+    initial = [policy_review["selection_action"]]
     conflict_ids = sorted({c.get("record_id") for c in conflicts if c.get("record_id")})
     if conflict_ids:
         verification = f"First, ask the issuer to verify the conflicting expiry evidence for {', '.join(conflict_ids)} and retain both supplied and nominal dates until resolved."
@@ -840,9 +975,9 @@ def ordered_actions(
         verification,
         "Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.",
         "Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.",
-        f"After medical clearance, address the offshore-safety modules individually. {ossc_actions}",
-        f"After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. {height_action}",
-        "Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.",
+        f"After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. {ossc_actions}",
+        f"After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. {height_action}",
+        "Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.",
     ]
     return initial, later
 
@@ -857,7 +992,9 @@ def evaluate_keeper(zf, keeper, entries, appraisal_rows, learnhub_rows, scheme_m
         "role_relevant_testimony_count": 0,
         "future_year_record_ids_not_used": [],
         "same_year_record_ids_timing_uncertain": [],
-        "material_pre_cutoff_concern_ids": [],
+        "pre_cutoff_adverse_testimony_ids": [],
+        "same_year_adverse_testimony_ids": [],
+        "selected_adverse_testimony_ids": [],
         "strong_manager_support_ids": [],
         "context_only_record_ids": [],
         "decision_neutral_context_ids": [],
@@ -866,7 +1003,7 @@ def evaluate_keeper(zf, keeper, entries, appraisal_rows, learnhub_rows, scheme_m
     }
     claims, future = build_training(keeper, learnhub_rows, scheme_map, as_of)
     conflicts = credential_conflicts(keeper, claims, as_of)
-    coverage = safety_coverage(claims)
+    coverage = provisional_safety_mapping(claims)
     categories = work_review["category_coverage"]
     category_evidence = []
     for category in categories:
@@ -882,20 +1019,19 @@ def evaluate_keeper(zf, keeper, entries, appraisal_rows, learnhub_rows, scheme_m
         )
     is_current = keeper["status"] == "current"
 
-    if not is_current:
-        recommendation = "outside_current_redeployment_cohort"
-        eligibility = "not_assessed_outside_current_cohort"
-    elif work_review["distinct_qualifying_examples"] < 3 and not appraisal_review["strong_manager_support_ids"]:
-        recommendation = "insufficient_evidence"
-        eligibility = "not_established_from_bounded_evidence"
-    elif work_review["distinct_qualifying_examples"] < 5 or appraisal_review["material_pre_cutoff_concern_ids"]:
-        recommendation = "targeted_screening_first"
-        eligibility = "plausible_but_essential_evidence_incomplete"
-    else:
-        recommendation = "supported_technical_interview"
-        eligibility = "plausible_but_essential_evidence_incomplete"
-    reason, recommendation_criteria = recommendation_basis(evidence, work_review, appraisal_review, recommendation)
-    initial_actions, later_actions = ordered_actions(keeper, claims, conflicts, recommendation, appraisal_review, is_current)
+    recommendation, reason, recommendation_criteria, policy_review = individual_policy_review(
+        keeper, evidence, work_review, appraisal_review, is_current
+    )
+    eligibility = (
+        "not_assessed_outside_current_cohort"
+        if not is_current
+        else "not_established_from_bounded_evidence"
+        if recommendation == "insufficient_evidence"
+        else "plausible_but_essential_evidence_incomplete"
+    )
+    initial_actions, later_actions = ordered_actions(
+        keeper, claims, conflicts, recommendation, policy_review, is_current
+    )
     actions = initial_actions + later_actions
     limitations = [
         {"code": "competence_not_inferred", "text": "Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence."},
@@ -961,6 +1097,7 @@ def evaluate_keeper(zf, keeper, entries, appraisal_rows, learnhub_rows, scheme_m
         "application_eligibility": eligibility,
         "mobilisation_readiness": "not_established" if is_current else "not_assessed_outside_current_cohort",
         "recommendation_criteria": recommendation_criteria,
+        "individual_policy_review": policy_review,
         "work_history_review": work_review,
         "relevant_experience": evidence,
         "appraisal_review": appraisal_review,
@@ -972,7 +1109,7 @@ def evaluate_keeper(zf, keeper, entries, appraisal_rows, learnhub_rows, scheme_m
         "clean_certification_summaries": clean_summaries(keeper),
         "credential_conflicts": conflicts,
         "future_evidence_not_used": future,
-        "essential_coverage_from_dated_passes": coverage,
+        "provisional_safety_coverage_mapping": coverage,
         "initial_selection_actions": initial_actions,
         "later_qualification_and_mobilisation_actions": later_actions,
         "remaining_requirements": later_actions,
@@ -995,6 +1132,8 @@ def markdown_report(payload: dict) -> str:
         "",
         "Interview potential is deliberately separate from application eligibility and mobilisation readiness. No person is marked mobilisation-ready because medical fitness and direct acceptance of height/boat/enclosed-space conditions are not supplied.",
         "",
+        "Requirement provenance: the O&M posting requires hands-on mechanical **or** electrical maintenance and named offshore-safety coverage. The separate HV Authorised Person posting is not an O&M interview gate. The OSSC/WAHS mapping is provisional pending employer/issuer confirmation, and permit/isolation/practical checks are recommendations unless expressly required for a separate appointment. Nominal fictional-scheme periods are consistency checks; no external GWO duration or policy is imported.",
+        "",
         "## Current-keeper comparison",
         "",
         "| ID / name | Decision | Strongest evidence | Main uncertainty | Immediate next action |",
@@ -1004,17 +1143,7 @@ def markdown_report(payload: dict) -> str:
         evidence_ids = [item["entry_id"] for item in row["relevant_experience"][:2]]
         support_ids = row["appraisal_review"]["strong_manager_support_ids"][:1]
         strongest = ", ".join(evidence_ids + support_ids) or "No direct evidence"
-        concerns = row["appraisal_review"]["material_pre_cutoff_concern_ids"]
-        if concerns:
-            uncertainty = "Unresolved " + ", ".join(concerns)
-        elif row["work_history_review"]["distinct_qualifying_examples"] < 5:
-            uncertainty = f"Only {row['work_history_review']['distinct_qualifying_examples']} distinct log patterns"
-        elif row["appraisal_review"]["same_year_record_ids_timing_uncertain"]:
-            uncertainty = "2026 appraisal timing uncertain"
-        elif not row["appraisal_review"]["reviewed_record_ids"]:
-            uncertainty = "No keyed appraisal"
-        else:
-            uncertainty = "Manager testimony unverified; mobilisation gates open"
+        uncertainty = row["individual_policy_review"]["summary_uncertainty"]
         if row["interview_recommendation"] == "supported_technical_interview":
             immediate = "Structured technical interview"
         elif row["interview_recommendation"] == "targeted_screening_first":
@@ -1034,16 +1163,27 @@ def markdown_report(payload: dict) -> str:
             f"- Interview: `{row['interview_recommendation']}` — {row['recommendation_reason']}",
             f"- Application eligibility: `{row['application_eligibility']}`",
             f"- Mobilisation readiness: `{row['mobilisation_readiness']}`",
+            f"- Core work records used for interview policy: {', '.join(row['individual_policy_review']['supporting_core_work_ids']) or 'none established'}",
+            f"- Selected positive testimony: {', '.join(row['individual_policy_review']['positive_testimony_ids']) or 'none selected'}",
+            f"- Selected adverse testimony: {', '.join(row['individual_policy_review']['adverse_testimony_ids']) or 'none selected'}",
             f"- Relevant evidence categories: {', '.join(row['experience_categories']) or 'none found'}",
-            f"- Full clean log review: {row['work_history_review']['source_entry_count']} rows; {row['work_history_review']['distinct_qualifying_examples']} distinct relevant patterns after template collapse.",
+            f"- Full clean log review: {row['work_history_review']['source_entry_count']} rows; {row['work_history_review']['distinct_qualifying_examples']} distinct relevant patterns after template collapse (descriptive only; not an interview threshold).",
             f"- Appraisal review: {row['appraisal_review']['keyed_rows_reviewed']} exact keeper-code-keyed rows; {appraisal_unmatched} {appraisal_row_word} not selected by the appraisal filter.",
             "",
         ])
+        if row["individual_policy_review"]["material_unresolved_issue"]:
+            lines.append(f"- Material unresolved core issue: {row['individual_policy_review']['material_unresolved_issue']}")
+            lines.append("")
+        if row["individual_policy_review"]["unresolved_questions"]:
+            lines.extend(["Unresolved questions retained for selection:", ""])
+            for question in row["individual_policy_review"]["unresolved_questions"]:
+                lines.append(f"- {question}")
+            lines.append("")
         if row["experience_category_evidence"]:
             lines.extend(["Category support:", ""])
             for support in row["experience_category_evidence"]:
                 lines.append(
-                    f"- `{support['category']}` â€” {support['date']} â€” â€œ{support['text']}â€ "
+                    f"- `{support['category']}` — {support['date']} — “{support['text']}” "
                     f"({support['entry_id']}; `{support['source_reference']}`)."
                 )
             lines.append("")
@@ -1174,7 +1314,7 @@ def build(zip_path: Path, as_of: date) -> dict:
         ]
     counts = Counter(c["interview_recommendation"] for c in candidates)
     return {
-        "schema_version": 4,
+        "schema_version": 5,
         "dataset": "synthetic Carrowmore Pearson assessment pack",
         "as_of": as_of.isoformat(),
         "scope": "Permitted 40-profile clean subset; 38 current keepers assessed and two leavers explicitly retained outside the current cohort.",
@@ -1183,6 +1323,36 @@ def build(zip_path: Path, as_of: date) -> dict:
         "employer_requirement_source": "employers/carrowmore-array-om-technician.md",
         "certification_definition_source": "employers/certification_schemes.json",
         "certification_schemes_loaded": [s["code"] for s in schemes],
+        "requirement_provenance": {
+            "pearson_brief": {
+                "classification": "Pearson assessment requirement",
+                "local_status": "not present in the current workspace; hash and sections 3-7 findings are recorded in CARROWMORE_RULES_AUDIT_20261011.md and SOURCE_FINGERPRINTS.json",
+                "recorded_sha256": "93dea408967cc43fb273a09ff613a801f195f126a51bfa80a9991687914626d2",
+            },
+            "om_role": {
+                "classification": "synthetic scenario requirement",
+                "source": "employers/carrowmore-array-om-technician.md",
+                "experience": "Hands-on mechanical or electrical maintenance experience on plant the person was responsible for.",
+            },
+            "hv_authorised_person": {
+                "classification": "separate synthetic appointment, not an O&M interview requirement",
+                "source": "employers/carrowmore-array-hv-authorised-person.md",
+                "scope": "The AP posting separately requires HVAP, full OSSC, medical fitness, documented switching experience, an AP interview and site familiarisation.",
+                "insurer_scope_ambiguity": "The HVAP scheme note says insurer-mandated for the Carrowmore Array, while the mandatory insurer language is explicit in the separate AP posting. The exact boundary for individual O&M duties is not supplied; no AP requirement is imported wholesale into O&M triage.",
+            },
+            "safety_mapping": {
+                "classification": "provisional implementation mapping",
+                "scope": "OSSC-SS/FF/FA and WAHS-1 are record checks, not proof of an employer-accepted package. The posting does not specify whether WAHS-2 climbing, WAHS-4 rescue or another package is required.",
+            },
+            "employer_checks": {
+                "classification": "recommended verification, not an express O&M-posting requirement",
+                "scope": "Permit, isolation and practical checks are proposed in proportion to duties. The O&M posting states assessed capability at offer but does not prescribe that exact suite.",
+            },
+            "scheme_periods": {
+                "classification": "fictional supplied definitions",
+                "scope": "Supplied renewal periods and prerequisites are preserved. Nominal dates are consistency checks requiring issuer verification where inconsistent; no GWO duration or external policy is imported as binding.",
+            },
+        },
         "summary": {
             "profiles": len(candidates),
             "current": sum(c["cohort_status"] == "current_redeployment_cohort" for c in candidates),
@@ -1199,14 +1369,14 @@ def build(zip_path: Path, as_of: date) -> dict:
         "method": {
             "work_evidence": "Every clean log entry for each profile is reviewed. An entry normally needs an explicit maintenance action plus an electrical or mechanical plant term; superficial numeric, measurement and equivalent permit/PTW/permit-bk workflow variants are collapsed only for diversity counting. The strongest examples and at least one exact cited record for every claimed category are shown, except named material records needed to explain a conflict. Counts, hours and repetition are not competence.",
             "appraisals": "Every appraisal carrying an exact current-cohort keeper_code is reviewed. Name-only/null-key rows are not attached. Only role-relevant testimony is repeated. Year-only 2026 records are context-only because their timing relative to 2026-10-11 is unknown; future years are excluded from conclusions.",
-            "decision_categories": "supported_technical_interview; targeted_screening_first; insufficient_evidence; outside_current_redeployment_cohort. The categories are rule-based gates, not a score or ranking.",
-            "supported_technical_interview": "At least five distinct relevant log examples and no explicit role-related appraisal concern in the ten years before the cutoff.",
-            "targeted_screening_first": "Relevant evidence exists, but it is sparse or explicit recent role-related appraisal concerns need focused resolution before a full technical interview.",
-            "insufficient_evidence": "Fewer than three distinct relevant log examples and no strong keeper-code-keyed manager support.",
-            "training": "Dated LearnHub outcome and supplied expiry are evaluated at the explicit cutoff. Pass, Attended and Not achieved remain distinct. A nominal scheme-rule date is also shown; when it changes cutoff status, neither date is chosen and issuer verification is required.",
-            "height_mapping": "WAHS-1 is used as the supplied definition's direct height-safety module. This is a documented interpretation because the posting asks for a combined offshore certificate while OSSC itself has no height module.",
+            "decision_categories": "supported_technical_interview; targeted_screening_first; insufficient_evidence; outside_current_redeployment_cohort. Every current profile is reviewed individually; no score, rank, numerical workflow threshold, adverse-appraisal window or keyword veto decides the category.",
+            "supported_technical_interview": "Specific attributed evidence supports plausible hands-on mechanical or electrical maintenance. The reason explains the activity and transferable relevance; adverse, sparse or old evidence alone is not a veto.",
+            "targeted_screening_first": "A named material unresolved attribution problem or contradiction concerning the core experience claim requires clarification before a technical interview.",
+            "insufficient_evidence": "The bounded sources do not establish essential hands-on mechanical or electrical maintenance. Missing evidence is not a finding that the person lacks experience.",
+            "training": "Dated LearnHub outcome and supplied expiry are evaluated at the explicit cutoff. Pass, Attended and Not achieved remain distinct. Nominal fictional-scheme dates are consistency checks only; issuer verification is required where they conflict with supplied expiries.",
+            "height_mapping": "OSSC-SS/FF/FA plus WAHS-1 is a provisional record mapping only. Employer/issuer acceptance and climbing/rescue scope are not supplied and must be confirmed.",
             "identity": "Raw keeper codes, payroll references and names are identified separately. Integer-like payroll values may be normalized across leading-zero, decimal and scientific notation only; absent or conflicting identifiers remain explicit and clean attribution is never rewritten.",
-            "action_dependencies": "Issuer verification precedes spending decisions; working-condition willingness is confirmed before courses; medical clearance precedes OSSC; verified OSSC-SS precedes WAHS. The posting funds renewals but does not promise first-time training funding.",
+            "action_dependencies": "Issuer verification precedes spending decisions; working-condition willingness is confirmed before courses; medical clearance precedes OSSC; verified OSSC-SS precedes WAHS. The posting funds renewals but does not define renewal routes or promise first-time training funding. Proposed employer checks are labelled recommendations.",
         },
         "candidates": candidates,
     }

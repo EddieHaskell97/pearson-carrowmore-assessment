@@ -28,6 +28,7 @@ EXPECTED = {
     ROOT + "raw/training/vendor-c-learnhub-2017-2026.json": "a8d0f1a3dab7ad6f430e7352c72e434c01d8b38ca1cec3d4de26a2fdd4403c2b",
     ROOT + "employers/certification_schemes.json": "51ea3687808118b5aefe1707de26f2c87661ba20df6c542d98ac3b4f237de4ef",
     ROOT + "employers/carrowmore-array-om-technician.md": "64b86a9bafe79f01757495cbf0eebde11e0cb5f680d21928cd0cf0ecbdfa6d0c",
+    ROOT + "employers/carrowmore-array-hv-authorised-person.md": "0a2fff04396dd62d10defa122014dff1671ab04bfea4f8780241130636f66aa7",
     ROOT + "raw/personnel/cla_personnel_export.csv": "14ba3653d9ab29b86b273cb7016dba574d840729de85d5b0eac367ed3170b4c7",
     ROOT + "raw/personnel/cla_personnel_leavers.csv": "920f7a76d3710ac08a56d7bf9ac0de83cf65f5525e8c7a1dfc905b517d2d9a0a",
     ROOT + "raw/appraisals/station_manager_notes/2011-nevisbeg-keeper-note.txt": "767fa1decaafb6e56556ca7416b069e07cebf85a2cbd5d3c2d661df85d08adc4",
@@ -184,6 +185,7 @@ def run(zip_path: Path, results_path: Path) -> dict:
         learnhub = load_json(zf, ROOT + "raw/training/vendor-c-learnhub-2017-2026.json")["records"]
         schemes = load_json(zf, ROOT + "employers/certification_schemes.json")["schemes"]
         posting_text = zf.read(ROOT + "employers/carrowmore-array-om-technician.md").decode("utf-8", errors="replace")
+        hvap_posting_text = zf.read(ROOT + "employers/carrowmore-array-hv-authorised-person.md").decode("utf-8", errors="replace")
         current_rows = list(csv.DictReader(io.StringIO(zf.read(ROOT + "raw/personnel/cla_personnel_export.csv").decode("utf-8-sig"))))
         leaver_rows = list(csv.DictReader(io.StringIO(zf.read(ROOT + "raw/personnel/cla_personnel_leavers.csv").decode("utf-8-sig"))))
         logs_by_id = {r["entry_id"]: r for r in logs}
@@ -194,7 +196,7 @@ def run(zip_path: Path, results_path: Path) -> dict:
         scheme_map = {s["code"]: s for s in schemes}
 
         checks.equal("explicit scenario date", output["as_of"], "2026-10-11")
-        checks.equal("output schema version", output["schema_version"], 4)
+        checks.equal("output schema version", output["schema_version"], 5)
         checks.equal("40 unique output profiles", len(candidates), 40)
         checks.equal("output IDs equal clean-subset IDs", set(candidates), set(keepers_by_id))
         checks.equal("clean cohort split", Counter(k["status"] for k in keepers), Counter({"current": 38, "left": 2}))
@@ -340,6 +342,15 @@ def run(zip_path: Path, results_path: Path) -> dict:
                 emitted_ids = {row["entry_id"] for row in candidate["relevant_experience"]}
                 checks.check(f"person-specific recommendation reason: {candidate['keeper_code']}", any(entry_id in candidate["recommendation_reason"] for entry_id in emitted_ids))
                 checks.equal(f"no ranking used: {candidate['keeper_code']}", candidate["recommendation_criteria"]["ranking_used"], False)
+                checks.equal(f"individual policy review: {candidate['keeper_code']}", candidate["recommendation_criteria"]["reviewed_individually"], True)
+                checks.equal(f"no numerical interview threshold: {candidate['keeper_code']}", candidate["recommendation_criteria"]["numerical_interview_threshold_used"], False)
+                checks.equal(f"no automatic appraisal gate: {candidate['keeper_code']}", candidate["recommendation_criteria"]["automatic_adverse_appraisal_gate_used"], False)
+                core_ids = candidate["individual_policy_review"]["supporting_core_work_ids"]
+                checks.check(f"specific core evidence selected: {candidate['keeper_code']}", bool(core_ids))
+                for entry_id in core_ids:
+                    checks.check(f"core evidence displayed: {candidate['keeper_code']}/{entry_id}", entry_id in emitted_ids)
+                    checks.check(f"core evidence cited in reason: {candidate['keeper_code']}/{entry_id}", entry_id in candidate["recommendation_reason"])
+                    checks.check(f"core evidence is mechanical or electrical: {candidate['keeper_code']}/{entry_id}", bool({"mechanical", "electrical"}.intersection(next(row for row in candidate["relevant_experience"] if row["entry_id"] == entry_id)["categories"])))
 
         # Correction pass 2: supplied expiry and nominal scheme-rule date both survive.
         named_expiry_cases = {
@@ -442,8 +453,12 @@ def run(zip_path: Path, results_path: Path) -> dict:
             checks.check(f"Correction 7 medical before OSSC {candidate['keeper_code']}", actions[3].startswith("Obtain a current offshore medical"))
             checks.check(f"Correction 7 module-specific OSSC {candidate['keeper_code']}", actions[4].startswith("After medical clearance") and all(module in actions[4] for module in ("OSSC-SS", "OSSC-FF", "OSSC-FA")))
             checks.check(f"Correction 7 OSSC precedes WAHS {candidate['keeper_code']}", actions[5].startswith("After OSSC-SS is issuer-verified current") and "WAHS-1" in actions[5])
+            checks.check(f"Correction 7 safety mapping provisional {candidate['keeper_code']}", "provisional" in actions[4] and "provisional" in actions[5] and "WAHS-2" in actions[5] and "WAHS-4" in actions[5])
             checks.check(f"Correction 7 funding limits {candidate['keeper_code']}", "first-time funding is not promised" in (actions[4] + actions[5]) or "employer funds renewals" in (actions[4] + actions[5]) or "present and issuer-verify" in (actions[4] + actions[5]))
-            checks.check(f"Correction 7 assessment last {candidate['keeper_code']}", actions[6].startswith("Finally,"))
+            checks.check(f"Correction 7 proposed checks last {candidate['keeper_code']}", actions[6].startswith("Finally,") and "recommended employer verification" in actions[6] and "rather than an express O&M-posting requirement" in actions[6])
+            mapping = candidate["provisional_safety_coverage_mapping"]
+            checks.equal(f"Correction 7 provisional mapping status {candidate['keeper_code']}", mapping["status"], "provisional_mapping_not_employer_acceptance")
+            checks.check(f"Correction 7 climbing/rescue not inferred {candidate['keeper_code']}", "WAHS-2 ladder and tower climbing" in mapping["coverage_not_inferred"] and "WAHS-4 tower rescue and casualty recovery" in mapping["coverage_not_inferred"])
 
         # Decision-quality correction: appraisal attribution and full-history review.
         clean_current_ids = {row["keeper_code"] for row in keepers if row["status"] == "current"}
@@ -524,13 +539,59 @@ def run(zip_path: Path, results_path: Path) -> dict:
             source = appraisals_by_id[record_id]
             checks.equal(f"named appraisal keeper: {record_id}", source["keeper_code"], keeper_code)
             checks.check(f"named appraisal exact text: {record_id}", exact_fragment in source["text"])
-            checks.check(f"named appraisal surfaced as concern: {record_id}", record_id in candidates[keeper_code]["appraisal_review"]["material_pre_cutoff_concern_ids"])
-            checks.equal(f"named appraisal drives targeted screen: {record_id}", candidates[keeper_code]["interview_recommendation"], "targeted_screening_first")
+            checks.check(f"named appraisal retained as adverse testimony: {record_id}", record_id in candidates[keeper_code]["appraisal_review"]["selected_adverse_testimony_ids"])
+
+        # Approved qualitative policy: patterns and appraisal matches remain
+        # descriptive. Only the two explicitly reviewed material core
+        # contradictions require clarification before a technical interview.
+        checks.equal(
+            "only material core contradictions are targeted",
+            {candidate["keeper_code"] for candidate in candidates.values() if candidate["interview_recommendation"] == "targeted_screening_first"},
+            {"K0478", "K1200"},
+        )
+        checks.equal(
+            "no current profile is insufficient on the bounded evidence",
+            {candidate["keeper_code"] for candidate in candidates.values() if candidate["interview_recommendation"] == "insufficient_evidence"},
+            set(),
+        )
+        material_cases = {
+            "K0478": {"AP001159", "AP001160", "AP001162", "AP001165"},
+            "K1200": {"AP003496"},
+        }
+        for keeper_code, record_ids in material_cases.items():
+            candidate = candidates[keeper_code]
+            checks.equal(f"material contradiction IDs exact: {keeper_code}", set(candidate["recommendation_criteria"]["material_core_contradiction_ids"]), record_ids)
+            checks.check(f"material contradiction explained: {keeper_code}", bool(candidate["individual_policy_review"]["material_unresolved_issue"]))
+            checks.check(f"material clarification before interview: {keeper_code}", "Before a technical interview" in candidate["initial_selection_actions"][0])
+            checks.check(f"material sources retained in reason: {keeper_code}", all(record_id in candidate["recommendation_reason"] for record_id in record_ids))
+
+        supported_despite_old_gates = {
+            "K0566": 4,
+            "K0586": 3,
+            "K1483": 3,
+        }
+        for keeper_code, descriptive_count in supported_despite_old_gates.items():
+            candidate = candidates[keeper_code]
+            checks.equal(f"old count gate removed: {keeper_code}", candidate["interview_recommendation"], "supported_technical_interview")
+            checks.equal(f"descriptive count retained: {keeper_code}", candidate["work_history_review"]["distinct_qualifying_examples"], descriptive_count)
+
+        for keeper_code in ("K0147", "K0184", "K0303", "K0354", "K0394", "K0561", "K0589", "K0897", "K1231", "K1345", "K1446", "K1483", "K1538"):
+            candidate = candidates[keeper_code]
+            checks.equal(f"adverse or sparse evidence not automatic veto: {keeper_code}", candidate["interview_recommendation"], "supported_technical_interview")
+
+        for candidate in candidates.values():
+            if candidate["cohort_status"] != "current_redeployment_cohort":
+                continue
+            if candidate["individual_policy_review"]["adverse_testimony_ids"] and not candidate["recommendation_criteria"]["material_core_contradiction_ids"]:
+                checks.equal(
+                    f"non-material adverse testimony does not decide disposition: {candidate['keeper_code']}",
+                    candidate["interview_recommendation"],
+                    "supported_technical_interview",
+                )
 
         k1200_material = {"CL005994", "CL007505", "CL009097", "CL009921"}
         checks.check("K1200 all named material logs shown", k1200_material <= {row["entry_id"] for row in candidates["K1200"]["relevant_experience"]})
         checks.check("K1200 reason reconciles log and appraisal", "CL005994" in candidates["K1200"]["recommendation_reason"] and "AP003496" in candidates["K1200"]["recommendation_reason"])
-        checks.equal("K0586 cautious targeted screen", candidates["K0586"]["interview_recommendation"], "targeted_screening_first")
         checks.equal("K0586 distinct evidence independently visible", candidates["K0586"]["work_history_review"]["distinct_qualifying_examples"], 3)
 
         mixed = next(item for item in candidates["K1231"]["appraisal_review"]["role_relevant_testimony"] if item["record_id"] == "AP003571")
@@ -544,6 +605,8 @@ def run(zip_path: Path, results_path: Path) -> dict:
         checks.check("readable recommendations exist", markdown_path.is_file())
         if markdown_path.is_file():
             markdown = markdown_path.read_text(encoding="utf-8")
+            checks.check("Markdown has no category-rendering mojibake", all(token not in markdown for token in ("â€”", "â€œ", "â€", "Ã¢")))
+            checks.check("Markdown retains true Unicode category punctuation", " — " in markdown and "“" in markdown and "”" in markdown)
             checks.check("comparison table precedes details", markdown.find("## Current-keeper comparison") < markdown.find("## Detailed evidence"))
             checks.equal("comparison table has 38 current rows", sum(line.startswith("| K") for line in markdown.splitlines()), 38)
 
@@ -578,6 +641,8 @@ def run(zip_path: Path, results_path: Path) -> dict:
                         f"Markdown exact category citation in own section: {candidate['keeper_code']}/{support['category']}",
                         all(value in section for value in (support["category"], support["entry_id"], support["date"], support["text"], support["source_reference"])),
                     )
+                    expected_render = f"- `{support['category']}` — {support['date']} — “{support['text']}” ({support['entry_id']}; `{support['source_reference']}`)."
+                    checks.check(f"Markdown category citation punctuation faithful: {candidate['keeper_code']}/{support['category']}", expected_render in section)
                 if candidate["keeper_code"] == "K0310" and k0310_limit:
                     checks.check("K0310 historical limitation rendered in Markdown", k0310_limit["text"] in section)
 
@@ -665,7 +730,7 @@ def run(zip_path: Path, results_path: Path) -> dict:
             if selected:
                 checks.check(f"named appraisal context exact: {record_id}", exact_excerpt in selected["role_relevant_excerpt"] and exact_excerpt in appraisals_by_id[record_id]["text"])
                 checks.equal(f"named appraisal source hash exact: {record_id}", selected["source_text_sha256"], digest(appraisals_by_id[record_id]["text"].encode("utf-8")))
-            checks.check(f"named appraisal context does not alter material concern gate: {record_id}", record_id not in candidate["appraisal_review"]["material_pre_cutoff_concern_ids"])
+            checks.check(f"named appraisal context is not a material core contradiction: {record_id}", record_id not in candidate["recommendation_criteria"]["material_core_contradiction_ids"])
         for candidate in candidates.values():
             review = candidate["appraisal_review"]
             checks.equal(f"unmatched appraisal label: {candidate['keeper_code']}", review["unmatched_row_label"], "not selected by the appraisal filter")
@@ -675,13 +740,40 @@ def run(zip_path: Path, results_path: Path) -> dict:
                 review["keyed_rows_reviewed"] - review["role_relevant_testimony_count"],
             )
 
+        # Named policy cases are checked against exact records, not counts.
+        k1345_review = candidates["K1345"]["individual_policy_review"]
+        checks.equal("K1345 supported after individual review", candidates["K1345"]["interview_recommendation"], "supported_technical_interview")
+        checks.equal("K1345 positive testimony retained", set(k1345_review["positive_testimony_ids"]), {"AP003865", "AP003870", "AP003874"})
+        checks.equal("K1345 adverse testimony retained", set(k1345_review["adverse_testimony_ids"]), {"AP003873", "AP003877"})
+        checks.check("K1345 2026 appraisal remains timing-uncertain", "AP003877" in candidates["K1345"]["appraisal_review"]["same_year_record_ids_timing_uncertain"])
+        checks.check("K1345 action asks interview questions", candidates["K1345"]["initial_selection_actions"][0].startswith("Invite to a structured technical interview"))
+
+        checks.equal("K0566 supported without workflow threshold", candidates["K0566"]["interview_recommendation"], "supported_technical_interview")
+        checks.check("K0566 evidence and relevance explained", all(entry_id in candidates["K0566"]["recommendation_reason"] for entry_id in ("CL010043", "CL006319")) and "transferable relevance" in candidates["K0566"]["recommendation_reason"])
+        checks.equal("K0310 historical evidence does not auto-reject", candidates["K0310"]["interview_recommendation"], "supported_technical_interview")
+        checks.check("K0310 current-practice question retained", any("subsequent and current practice" in question for question in candidates["K0310"]["individual_policy_review"]["unresolved_questions"]))
+        checks.equal("K1200 remains targeted for named contradiction", candidates["K1200"]["recommendation_criteria"]["material_core_contradiction_ids"], ["AP003496"])
+
+        # Requirement provenance comes from the supplied scenario sources.
+        provenance = output["requirement_provenance"]
+        checks.check("O&M posting uses mechanical OR electrical", "Hands-on mechanical or electrical maintenance experience" in posting_text)
+        checks.check("O&M posting does not require HVAP", "HVAP" not in posting_text and "Authorised Person" not in posting_text)
+        checks.check("separate AP posting requirements preserved", all(fragment in hvap_posting_text for fragment in ("all four modules", "Two years of documented switching experience", "formal Authorised Person interview", "not less than six weeks")))
+        checks.equal("HVAP kept separate from O&M", provenance["hv_authorised_person"]["classification"], "separate synthetic appointment, not an O&M interview requirement")
+        checks.check("insurer scope ambiguity explicit", "exact boundary" in provenance["hv_authorised_person"]["insurer_scope_ambiguity"] and "not supplied" in provenance["hv_authorised_person"]["insurer_scope_ambiguity"])
+        checks.equal("safety mapping classified provisional", provenance["safety_mapping"]["classification"], "provisional implementation mapping")
+        checks.check("climbing and rescue scope unresolved", "WAHS-2" in provenance["safety_mapping"]["scope"] and "WAHS-4" in provenance["safety_mapping"]["scope"])
+        checks.equal("employer checks labelled recommendation", provenance["employer_checks"]["classification"], "recommended verification, not an express O&M-posting requirement")
+        checks.check("fictional scheme periods retained without GWO import", "no GWO duration or external policy is imported as binding" in provenance["scheme_periods"]["scope"])
+        checks.check("brief absence recorded honestly", provenance["pearson_brief"]["local_status"].startswith("not present in the current workspace"))
+
         # Definitions must retain the source conflict: height is WAHS, not an invented OSSC module.
         checks.check("OSSC definition has no height module", all("height" not in m["name"].lower() for m in scheme_map["OSSC"]["modules"]))
         checks.check("WAHS definition contains height module", any(m["code"] == "WAHS-1" for m in scheme_map["WAHS"]["modules"]))
 
     failed = [item for item in checks.items if not item["passed"]]
     return {
-        "schema_version": 4,
+        "schema_version": 5,
         "independence": "Reads the ZIP, appraisal JSONL and generated outputs directly; does not import evaluator code or recompute its recommendation policy.",
         "source_archive_sha256": digest(zip_path.read_bytes()),
         "recommendations_sha256": digest(results_bytes),

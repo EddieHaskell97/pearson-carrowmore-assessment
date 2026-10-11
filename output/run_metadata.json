@@ -20,7 +20,7 @@
   },
   "qa": {
     "status": "PASS",
-    "passed": 5737,
+    "passed": 6389,
     "failed": 0,
     "prepared_cases": 10,
     "earlier_bounded_correction_areas": 7,
@@ -38,7 +38,14 @@
       "named appraisal filter context",
       "permit/PTW/permit-bk workflow equivalence",
       "exact category-to-record citations",
-      "K0310 historical-evidence limitation"
+      "K0310 historical-evidence limitation",
+      "individual qualitative policy review for every current profile",
+      "no numerical interview threshold or automatic appraisal gate",
+      "exact material-contradiction sources for K0478 and K1200",
+      "year-only 2026 appraisal uncertainty",
+      "O&M versus separate HV Authorised Person provenance",
+      "provisional OSSC/WAHS mapping and recommended checks",
+      "faithful UTF-8 category-support rendering"
     ]
   },
   "decision_quality_correction_effort": {
@@ -139,15 +146,70 @@
     "elapsed_hms": "00:05:08",
     "preparation_accounting": "Earlier build, reviews, correction passes, source audits, ML work and SQL reconciliation remain separately accounted."
   },
+  "bounded_policy_correction": {
+    "rules_audit": {
+      "path": "../reviews/recorded_approvals/CARROWMORE_RULES_AUDIT_20261011.md",
+      "sha256": "b30be4fe0a685fd4e05568dbb48ec0011c0c6f877f67e992eb85f03472b4b220"
+    },
+    "requirement_sources": {
+      "om_posting_sha256": "64b86a9bafe79f01757495cbf0eebde11e0cb5f680d21928cd0cf0ecbdfa6d0c",
+      "hv_authorised_person_posting_sha256": "0a2fff04396dd62d10defa122014dff1671ab04bfea4f8780241130636f66aa7",
+      "certification_schemes_sha256": "51ea3687808118b5aefe1707de26f2c87661ba20df6c542d98ac3b4f237de4ef",
+      "pearson_brief": "Not present in the current workspace; recorded SHA-256 93dea408967cc43fb273a09ff613a801f195f126a51bfa80a9991687914626d2 and rules-audit findings preserved without reconstructing its contents."
+    },
+    "removed_automatic_gates": [
+      "five-pattern supported-interview threshold",
+      "three-pattern insufficient-evidence threshold",
+      "ten-year adverse-appraisal gate"
+    ],
+    "replacement_policy": "Individual qualitative review of specific attributed mechanical or electrical maintenance evidence. Targeted screening is reserved for a material unresolved attribution problem or contradiction concerning that core claim; counts, dates and canonical workflows remain descriptive.",
+    "canonical_pattern_count_changes": {},
+    "result_counts": {
+      "supported_technical_interview": 36,
+      "targeted_screening_first": 2,
+      "insufficient_evidence": 0,
+      "outside_current_redeployment_cohort": 2
+    },
+    "disposition_changes": [
+      {"keeper_code": "K0147", "before": "targeted_screening_first", "old_rationale": "automatic adverse-appraisal treatment of AP000086", "after": "supported_technical_interview", "new_rationale": "specific attributed electrical and mechanical work in CL010280 and CL009116; adverse and positive testimony retained as interview context"},
+      {"keeper_code": "K0184", "before": "targeted_screening_first", "old_rationale": "automatic adverse-appraisal treatment of AP000198", "after": "supported_technical_interview", "new_rationale": "specific attributed mechanical and electrical work in CL010442 and CL010068; adverse testimony remains an interview question"},
+      {"keeper_code": "K0303", "before": "targeted_screening_first", "old_rationale": "automatic adverse-appraisal treatment of AP000562", "after": "supported_technical_interview", "new_rationale": "specific attributed mechanical and electrical work in CL009744 and CL008870; mixed testimony retained"},
+      {"keeper_code": "K0354", "before": "targeted_screening_first", "old_rationale": "four-pattern evidence count fell below the former five-pattern gate", "after": "supported_technical_interview", "new_rationale": "specific attributed electrical and mechanical work in CL007773 and CL004792; AP000750, AP000752 and AP000753 retained together"},
+      {"keeper_code": "K0394", "before": "targeted_screening_first", "old_rationale": "automatic adverse-appraisal treatment of AP000862", "after": "supported_technical_interview", "new_rationale": "specific attributed electrical and mechanical work in CL009886 and CL009816; adverse and positive testimony retained"},
+      {"keeper_code": "K0561", "before": "targeted_screening_first", "old_rationale": "automatic adverse-appraisal treatment of AP001433", "after": "supported_technical_interview", "new_rationale": "specific attributed mechanical and electrical work in CL008741 and CL007052; testimony remains interview context"},
+      {"keeper_code": "K0566", "before": "targeted_screening_first", "old_rationale": "four canonical workflows fell below the former five-pattern gate", "after": "supported_technical_interview", "new_rationale": "specific attributed electrical and mechanical work in CL010043 and CL006319; workflow count remains descriptive"},
+      {"keeper_code": "K0586", "before": "targeted_screening_first", "old_rationale": "three-pattern evidence count was treated as sparse under the former gates", "after": "supported_technical_interview", "new_rationale": "CL006901 is a specific attributed hands-on electrical maintenance example"},
+      {"keeper_code": "K0589", "before": "targeted_screening_first", "old_rationale": "automatic adverse-appraisal treatment of AP001528 and AP001530", "after": "supported_technical_interview", "new_rationale": "specific attributed mechanical and electrical work in CL008681 and CL008008; mixed testimony retained"},
+      {"keeper_code": "K0897", "before": "targeted_screening_first", "old_rationale": "automatic adverse-appraisal treatment of AP002492", "after": "supported_technical_interview", "new_rationale": "specific attributed electrical and mechanical work in CL009512 and CL008539; appraisal testimony remains an interview question"},
+      {"keeper_code": "K1231", "before": "targeted_screening_first", "old_rationale": "automatic adverse-appraisal treatment of AP003571", "after": "supported_technical_interview", "new_rationale": "specific attributed electrical and mechanical work in CL010320 and CL008529; positive and adverse testimony retained together"},
+      {"keeper_code": "K1345", "before": "targeted_screening_first", "old_rationale": "automatic adverse-appraisal treatment of AP003873", "after": "supported_technical_interview", "new_rationale": "specific attributed electrical and mechanical work in CL008356 and CL007631; AP003873 and time-uncertain AP003877 retained with AP003865, AP003870 and AP003874"},
+      {"keeper_code": "K1446", "before": "targeted_screening_first", "old_rationale": "automatic adverse-appraisal treatment of AP004147 and AP004150", "after": "supported_technical_interview", "new_rationale": "specific attributed electrical and mechanical work in CL010352 and CL010071; adverse testimony remains interview context"},
+      {"keeper_code": "K1483", "before": "targeted_screening_first", "old_rationale": "three-pattern evidence count was treated as sparse under the former gates", "after": "supported_technical_interview", "new_rationale": "specific attributed mechanical and electrical work in CL007775 and CL000410; AP004258 remains an interview question"},
+      {"keeper_code": "K1538", "before": "targeted_screening_first", "old_rationale": "automatic adverse-appraisal treatment of AP004422", "after": "supported_technical_interview", "new_rationale": "specific attributed mechanical and electrical work in CL007925 and CL007686; chronology and authorisation limitations remain explicit"}
+    ],
+    "unchanged_dispositions_with_revised_rationale": {
+      "K0478": "targeted_screening_first now rests on the material conflict among attributed electrical/isolation logs and AP001159, AP001160, AP001162 and AP001165, not an automatic adverse-appraisal gate",
+      "K1200": "targeted_screening_first now rests on the direct conflict between the four attributed hands-on records including CL005994 and AP003496, not a workflow count or automatic appraisal gate"
+    },
+    "encoding_diagnosis": "Literal mojibake was stored in the category-support template. Original source quotations and the UTF-8 viewing path were not the cause. The template now emits true Unicode em dashes and curly quotation marks, and QA rejects the prior byte-decoded tokens."
+  },
+  "bounded_policy_correction_effort": {
+    "measurement_scope": "Active bounded policy-correction work from first audit/repository inspection through regenerated-output, independent QA, required-date and byte-for-byte repeatability verification; metadata and local Git bookkeeping followed and are excluded.",
+    "started_at": "2026-10-11T19:22:18.0184036-04:00",
+    "finished_at": "2026-10-11T19:36:49.3793982-04:00",
+    "elapsed_seconds": 871,
+    "elapsed_hms": "00:14:31",
+    "candidate_effort": "George's previously reported two-to-four-hour assessment effort remains separate; this agent interval does not replace it."
+  },
   "sha256": {
-    "README.md": "c2ada2b9e2093034b07fa75edaab127fb02b93c6719a3df47b1194f9d2afb902",
-    "WRITTEN_EXPLANATION.md": "a963c6642554567c6c4425b6944bd589df92b3a11bcfa655966cfe663478dce0",
+    "README.md": "254dbaa7a65b7b279378d780e22b23436ffcd537ed18cc1b0b0d6fe98afb427c",
+    "WRITTEN_EXPLANATION.md": "8bb1c04a8f5c4afa7d19efeef1408f1be620d2e481ebfbc93fa076a6bf9e6a55",
     "docs/DEVELOPMENT_HISTORY.md": "e062a5e4babb6a03d6bbc90bf8832659f2be41cd0655e342692d289575463a4d",
-    "SOURCE_FINGERPRINTS.json": "60ace608a598cc98db0c1b33fdbd709cb35a1524a16a266562ea1aa61a9fade2",
-    "src/array_om_evaluator.py": "8590859437a20d3f76fdd133544707c4588a824fccf2850fff61324c388073ec",
-    "qa/independent_qa.py": "3fec123923394945b8670c8e2670565060e7c1a352be79a8175317ce8153ffc9",
-    "output/recommendations.json": "67198a38a7e2a9aa1d9bcab4e5f20a5424a3a277914d4e989aa1800d0f65d2d0",
-    "output/recommendations.md": "fe88c2ff2a2125dd4c75d52b747b2c35d5a7197d551922c914ed29cf53ae5f7c",
-    "output/qa_report.json": "691145cfb85b98b25ea5af4127e026f55038fb2c07c34f4ce30315661aa027a0"
+    "SOURCE_FINGERPRINTS.json": "a3aa3401d247366e44ba1821ace45c00fcc57f189f00114d6c6c9d423398943c",
+    "src/array_om_evaluator.py": "75f601fe8342f1cc5622e5325ff06ce590c027029ea302f042872e47f536766e",
+    "qa/independent_qa.py": "d501478e68b31255ed5c313c2f9edba05883c69908d331b7e665fdcd20fc02db",
+    "output/recommendations.json": "db1be646b8765a147e5e9ab2b44681e5c31773209292dee0d65977962c4f40c1",
+    "output/recommendations.md": "75d7fa3e5634388a27d17a01bd979a825652ab0c26f540c8b28d50905ee96e0b",
+    "output/qa_report.json": "c076cb4882e287802fbbc053f24930d6d109159e537e9252054737916c08ed12"
   }
 }

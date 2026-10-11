@@ -4,69 +4,207 @@
 
 Scenario date: **2026-10-11**  
 Subset: **40 profiles — 38 current keepers and 2 leavers outside the redeployment cohort**  
-Results: **21 supported technical interview, 17 targeted screening first, 0 insufficient evidence; 2 outside the current cohort**
+Results: **36 supported technical interview, 2 targeted screening first, 0 insufficient evidence; 2 outside the current cohort**
 
 Interview potential is deliberately separate from application eligibility and mobilisation readiness. No person is marked mobilisation-ready because medical fitness and direct acceptance of height/boat/enclosed-space conditions are not supplied.
+
+Requirement provenance: the O&M posting requires hands-on mechanical **or** electrical maintenance and named offshore-safety coverage. The separate HV Authorised Person posting is not an O&M interview gate. The OSSC/WAHS mapping is provisional pending employer/issuer confirmation, and permit/isolation/practical checks are recommendations unless expressly required for a separate appointment. Nominal fictional-scheme periods are consistency checks; no external GWO duration or policy is imported.
 
 ## Current-keeper comparison
 
 | ID / name | Decision | Strongest evidence | Main uncertainty | Immediate next action |
 |---|---|---|---|---|
-| K0147 / Coilean O Caomhthaigh | `targeted_screening_first` | CL010280, CL009116, AP000081 | Unresolved AP000086 | Targeted evidence screen |
-| K0184 / Bearach Ormlaithe | `targeted_screening_first` | CL010442, CL010068 | Unresolved AP000198 | Targeted evidence screen |
-| K0274 / Iarlaith O Niallghusa | `supported_technical_interview` | CL003354, CL010515 | 2026 appraisal timing uncertain | Structured technical interview |
-| K0303 / Ambrosan O Lachtnain | `targeted_screening_first` | CL009302, CL008870, AP000551 | Unresolved AP000562 | Targeted evidence screen |
-| K0310 / Gearalt O hEidhneain | `supported_technical_interview` | CL006179, CL005658 | No keyed appraisal | Structured technical interview |
-| K0354 / Quillan O Fuarain | `targeted_screening_first` | CL007773, CL005691, AP000750 | Only 4 distinct log patterns | Targeted evidence screen |
-| K0371 / Cianan Mac Lanngail | `supported_technical_interview` | CL010343, CL006460, AP000798 | Manager testimony unverified; mobilisation gates open | Structured technical interview |
-| K0394 / Lugharn O Neascan | `targeted_screening_first` | CL009886, CL009816, AP000863 | Unresolved AP000862 | Targeted evidence screen |
-| K0478 / Ossian O Raghnaill | `targeted_screening_first` | CL010541, CL010398, AP001157 | Unresolved AP001159, AP001160, AP001162, AP001165 | Targeted evidence screen |
-| K0482 / Tadhgan Mac Deargain | `supported_technical_interview` | CL010082, CL009526, AP001188 | Manager testimony unverified; mobilisation gates open | Structured technical interview |
-| K0525 / Hugheen Mordaunley | `supported_technical_interview` | CL010216, CL007269 | Manager testimony unverified; mobilisation gates open | Structured technical interview |
-| K0561 / Muirgheal Holmthwaite | `targeted_screening_first` | CL008741, CL008494, AP001428 | Unresolved AP001433 | Targeted evidence screen |
-| K0566 / Garbhan O Riagain | `targeted_screening_first` | CL010043, CL002799 | Only 4 distinct log patterns | Targeted evidence screen |
-| K0586 / Gealbhan Nethercarn | `targeted_screening_first` | CL002089, CL006901 | Only 3 distinct log patterns | Targeted evidence screen |
-| K0589 / Eachann Westrayne | `targeted_screening_first` | CL007592, CL008681 | Unresolved AP001528, AP001530 | Targeted evidence screen |
-| K0592 / Fergal Mac Eibhleain | `supported_technical_interview` | CL008207, CL008184, AP001555 | Manager testimony unverified; mobilisation gates open | Structured technical interview |
-| K0641 / Eimhreann Nic Gormghaile | `supported_technical_interview` | CL009728, CL008068 | Manager testimony unverified; mobilisation gates open | Structured technical interview |
-| K0650 / Duaghal Mac Ualghairg | `supported_technical_interview` | CL003088, CL002876, AP001712 | 2026 appraisal timing uncertain | Structured technical interview |
-| K0663 / Lugharn O Niallghusa | `supported_technical_interview` | CL010451, CL009806 | 2026 appraisal timing uncertain | Structured technical interview |
-| K0664 / Bruaigh O Braoscan | `supported_technical_interview` | CL009911, CL009694, AP001767 | 2026 appraisal timing uncertain | Structured technical interview |
-| K0817 / Odhran O Luachra | `supported_technical_interview` | CL009476, CL008628 | Manager testimony unverified; mobilisation gates open | Structured technical interview |
-| K0847 / Aoife Ni Mhurchu | `supported_technical_interview` | CL007701, CL001792, AP002309 | Manager testimony unverified; mobilisation gates open | Structured technical interview |
-| K0897 / Bearach Mac Teallach | `targeted_screening_first` | CL009512, CL008869 | Unresolved AP002492 | Targeted evidence screen |
-| K1055 / Tailte Ni Chuirrin | `supported_technical_interview` | CL000604, CL003053 | Manager testimony unverified; mobilisation gates open | Structured technical interview |
-| K1200 / Tomaltach Yarrowfell | `targeted_screening_first` | CL005994, CL007505 | Unresolved AP003496 | Targeted evidence screen |
-| K1231 / Joachima Ulverstane | `targeted_screening_first` | CL010239, CL010135, AP003567 | Unresolved AP003571 | Targeted evidence screen |
-| K1281 / Fearghal Nethercarn | `supported_technical_interview` | CL001465, CL008233 | Manager testimony unverified; mobilisation gates open | Structured technical interview |
-| K1302 / Uaithne Mac Bruachail | `supported_technical_interview` | CL004774, CL004522 | 2026 appraisal timing uncertain | Structured technical interview |
-| K1345 / Dualta O hIarnain | `targeted_screening_first` | CL008356, CL007631, AP003865 | Unresolved AP003873 | Targeted evidence screen |
-| K1363 / Ualaith Enfarrow | `supported_technical_interview` | CL002712, CL001473 | Manager testimony unverified; mobilisation gates open | Structured technical interview |
-| K1374 / Aodhan O hAghmoir | `supported_technical_interview` | CL010173, CL008335 | 2026 appraisal timing uncertain | Structured technical interview |
-| K1418 / Hurlan O Failbhe | `supported_technical_interview` | CL003361, CL004517 | 2026 appraisal timing uncertain | Structured technical interview |
-| K1446 / Kelveen Sellanby | `targeted_screening_first` | CL010352, CL010079 | Unresolved AP004147, AP004150 | Targeted evidence screen |
-| K1468 / Ruadhan O Niallghusa | `supported_technical_interview` | CL003121, CL000944 | Manager testimony unverified; mobilisation gates open | Structured technical interview |
-| K1474 / Ossian Mac Domhnallain | `supported_technical_interview` | CL006207, CL007339 | Manager testimony unverified; mobilisation gates open | Structured technical interview |
-| K1483 / Eachann O Preachain | `targeted_screening_first` | CL007775, CL001023 | Only 3 distinct log patterns | Targeted evidence screen |
-| K1511 / Jarlath Drenmore | `supported_technical_interview` | CL010534, CL009253, AP004320 | 2026 appraisal timing uncertain | Structured technical interview |
-| K1538 / Oileann Ni Gharbhail | `targeted_screening_first` | CL007686, CL007420, AP004418 | Unresolved AP004422 | Targeted evidence screen |
+| K0147 / Coilean O Caomhthaigh | `supported_technical_interview` | CL010280, CL009116, AP000081 | Adverse testimony retained for interview: AP000079, AP000084, AP000086 | Structured technical interview |
+| K0184 / Bearach Ormlaithe | `supported_technical_interview` | CL010442, CL010068 | Adverse testimony retained for interview: AP000189, AP000198, AP000201 | Structured technical interview |
+| K0274 / Iarlaith O Niallghusa | `supported_technical_interview` | CL003354, CL010515 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
+| K0303 / Ambrosan O Lachtnain | `supported_technical_interview` | CL009302, CL008870, AP000551 | Adverse testimony retained for interview: AP000556, AP000561, AP000562, AP000564 | Structured technical interview |
+| K0310 / Gearalt O hEidhneain | `supported_technical_interview` | CL006179, CL005658 | Historical evidence only; logs end 2012 and no keyed appraisal | Structured technical interview |
+| K0354 / Quillan O Fuarain | `supported_technical_interview` | CL007773, CL005691, AP000750 | Adverse testimony retained for interview: AP000752, AP000753 | Structured technical interview |
+| K0371 / Cianan Mac Lanngail | `supported_technical_interview` | CL010343, CL006460, AP000798 | Competence and mobilisation remain unestablished | Structured technical interview |
+| K0394 / Lugharn O Neascan | `supported_technical_interview` | CL009886, CL009816, AP000863 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
+| K0478 / Ossian O Raghnaill | `targeted_screening_first` | CL010541, CL010398, AP001157 | Material core contradiction: AP001159, AP001160, AP001162, AP001165 | Targeted evidence screen |
+| K0482 / Tadhgan Mac Deargain | `supported_technical_interview` | CL010082, CL009526, AP001188 | Competence and mobilisation remain unestablished | Structured technical interview |
+| K0525 / Hugheen Mordaunley | `supported_technical_interview` | CL010216, CL007269 | Adverse testimony retained for interview: AP001352, AP001353 | Structured technical interview |
+| K0561 / Muirgheal Holmthwaite | `supported_technical_interview` | CL008741, CL008494, AP001428 | Adverse testimony retained for interview: AP001433 | Structured technical interview |
+| K0566 / Garbhan O Riagain | `supported_technical_interview` | CL010043, CL002799 | Competence and mobilisation remain unestablished | Structured technical interview |
+| K0586 / Gealbhan Nethercarn | `supported_technical_interview` | CL002089, CL006901 | Competence and mobilisation remain unestablished | Structured technical interview |
+| K0589 / Eachann Westrayne | `supported_technical_interview` | CL007592, CL008681 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
+| K0592 / Fergal Mac Eibhleain | `supported_technical_interview` | CL008207, CL008184, AP001555 | Competence and mobilisation remain unestablished | Structured technical interview |
+| K0641 / Eimhreann Nic Gormghaile | `supported_technical_interview` | CL009728, CL008068 | Competence and mobilisation remain unestablished | Structured technical interview |
+| K0650 / Duaghal Mac Ualghairg | `supported_technical_interview` | CL003088, CL002876, AP001712 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
+| K0663 / Lugharn O Niallghusa | `supported_technical_interview` | CL010451, CL009806 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
+| K0664 / Bruaigh O Braoscan | `supported_technical_interview` | CL009911, CL009694, AP001767 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
+| K0817 / Odhran O Luachra | `supported_technical_interview` | CL009476, CL008628 | Adverse testimony retained for interview: AP002219, AP002225, AP002230 | Structured technical interview |
+| K0847 / Aoife Ni Mhurchu | `supported_technical_interview` | CL007701, CL001792, AP002309 | Competence and mobilisation remain unestablished | Structured technical interview |
+| K0897 / Bearach Mac Teallach | `supported_technical_interview` | CL009512, CL008869 | Adverse testimony retained for interview: AP002492 | Structured technical interview |
+| K1055 / Tailte Ni Chuirrin | `supported_technical_interview` | CL000604, CL003053 | Competence and mobilisation remain unestablished | Structured technical interview |
+| K1200 / Tomaltach Yarrowfell | `targeted_screening_first` | CL005994, CL007505 | Material core contradiction: AP003496 | Targeted evidence screen |
+| K1231 / Joachima Ulverstane | `supported_technical_interview` | CL010239, CL010135, AP003567 | Adverse testimony retained for interview: AP003564, AP003566, AP003571 | Structured technical interview |
+| K1281 / Fearghal Nethercarn | `supported_technical_interview` | CL001465, CL008233 | Competence and mobilisation remain unestablished | Structured technical interview |
+| K1302 / Uaithne Mac Bruachail | `supported_technical_interview` | CL004774, CL004522 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
+| K1345 / Dualta O hIarnain | `supported_technical_interview` | CL008356, CL007631, AP003865 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
+| K1363 / Ualaith Enfarrow | `supported_technical_interview` | CL002712, CL001473 | Competence and mobilisation remain unestablished | Structured technical interview |
+| K1374 / Aodhan O hAghmoir | `supported_technical_interview` | CL010173, CL008335 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
+| K1418 / Hurlan O Failbhe | `supported_technical_interview` | CL003361, CL004517 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
+| K1446 / Kelveen Sellanby | `supported_technical_interview` | CL010352, CL010079 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
+| K1468 / Ruadhan O Niallghusa | `supported_technical_interview` | CL003121, CL000944 | Adverse testimony retained for interview: AP004219 | Structured technical interview |
+| K1474 / Ossian Mac Domhnallain | `supported_technical_interview` | CL006207, CL007339 | Competence and mobilisation remain unestablished | Structured technical interview |
+| K1483 / Eachann O Preachain | `supported_technical_interview` | CL007775, CL001023 | Adverse testimony retained for interview: AP004258 | Structured technical interview |
+| K1511 / Jarlath Drenmore | `supported_technical_interview` | CL010534, CL009253, AP004320 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
+| K1538 / Oileann Ni Gharbhail | `supported_technical_interview` | CL007686, CL007420, AP004418 | Adverse testimony retained for interview: AP004422 | Structured technical interview |
 
 ## Detailed evidence
 
-## K0274 — Iarlaith O Niallghusa
+## K0147 — Coilean O Caomhthaigh
 
-- Interview: `supported_technical_interview` — CL003354 records “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.”; CL010397 records “Tightened glands in the cable trunk by the stair.”. The documented policy supports a structured technical interview, not competence, eligibility or appointment.
+- Interview: `supported_technical_interview` — CL010280 (2025-09-17) records "Traced the nuisance low-volt alarm to a soft cell in the no 1 bank, replaced it."; CL009116 (2021-09-10) records "Changed oil and filters on no.3.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP000079, AP000084, AP000086 is retained with positive testimony in AP000081; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL010280, CL009116
+- Selected positive testimony: AP000081
+- Selected adverse testimony: AP000079, AP000084, AP000086
 - Relevant evidence categories: electrical, fault_finding, mechanical
-- Full clean log review: 274 rows; 10 distinct relevant patterns after template collapse.
-- Appraisal review: 6 exact keeper-code-keyed rows; 4 rows not selected by the appraisal filter.
+- Full clean log review: 305 rows; 9 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
+- Appraisal review: 14 exact keeper-code-keyed rows; 8 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- Discuss the selected adverse testimony in AP000079, AP000084, AP000086 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
 
 Category support:
 
-- `electrical` â€” 2004-07-02 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL003354; `raw/logbooks/era2-keeperlog/KLOG2004.DAT#006575`).
-- `fault_finding` â€” 2004-07-02 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL003354; `raw/logbooks/era2-keeperlog/KLOG2004.DAT#006575`).
-- `mechanical` â€” 2026-08-07 â€” â€œRebuilt the clockwork drive, cleaned forty years of gum out of the train.â€ (CL010515; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#60993`).
+- `electrical` — 2025-09-17 — “Traced the nuisance low-volt alarm to a soft cell in the no 1 bank, replaced it.” (CL010280; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#48954`).
+- `fault_finding` — 2025-09-17 — “Traced the nuisance low-volt alarm to a soft cell in the no 1 bank, replaced it.” (CL010280; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#48954`).
+- `mechanical` — 2021-09-10 — “Changed oil and filters on no.3.” (CL009116; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#48605`).
+
+Evidence:
+
+- 2025-09-17 — “Traced the nuisance low-volt alarm to a soft cell in the no 1 bank, replaced it.” (CL010280; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#48954`; clean/manual attribution corroborated by raw payroll value 1.1245E+04 normalized to 11245, matching clean payroll 0011245).
+- 2021-09-10 — “Changed oil and filters on no.3.” (CL009116; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#48605`; clean/manual attribution corroborated by raw payroll value 0011245 normalized to 11245, matching clean payroll 0011245).
+- 2019-02-06 — “Set the timing on no.1 after the pump was refitted, ran it up and checked exhaust temps.” (CL008345; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#14510`; clean/manual attribution corroborated by raw payroll value 1.1245E+04 normalized to 11245, matching clean payroll 0011245).
+- 2018-04-04 — “Cleaned the contacts in the changeover relay.” (CL008080; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#3409`; clean/manual attribution corroborated by raw payroll value 11245 normalized to 11245, matching clean payroll 0011245).
+- 2014-10-16 — “Tightened glands in the cable trunk by the stair.” (CL006984; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#5523`; clean/manual attribution corroborated by raw name Coilean O Caomhthaigh).
+
+Manager testimony selected as screening context:
+
+- 2008 (year precision) — The standard achieved in rope work falls below that expected of the grade. (AP000079; `raw/appraisals/appraisals.jsonl#AP000079`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
+- 2010 (year precision) — Section A: Performance It is noted that Coilean has maintained a proper standard in the abseil inspections. (AP000081; `raw/appraisals/appraisals.jsonl#AP000081`; support: good_standard). Manager testimony only, not competence or authorisation.
+- 2014 (year precision) — The standard achieved in the batteries falls below that expected of the grade. (AP000084; `raw/appraisals/appraisals.jsonl#AP000084`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
+- 2017 (year precision) — rope work has to be checked behind him. (AP000086; `raw/appraisals/appraisals.jsonl#AP000086`; concern: work_checked_behind). Manager testimony only, not competence or authorisation.
+- 2018 (year precision) — There is a habit of mind here that is worth writing down: Coilean will not leave the standby banks half done. (AP000087; `raw/appraisals/appraisals.jsonl#AP000087`; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
+- 2022 (year precision) — There is a habit of mind here that is worth writing down: Coilean will not leave rope work half done. (AP000090; `raw/appraisals/appraisals.jsonl#AP000090`; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
+
+Credential position:
+
+- Dated Pass: MECS-5, completed 2023-09-10, supplied expiry 2028-05-25 (`raw/training/vendor-c-learnhub-2017-2026.json#LH500049`).
+- MECS-1: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500045`).
+- HVAP-02: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500046`).
+- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 1; later modules do not bridge missing earlier stages.
+
+Initial selection action:
+
+- Invite to a structured technical interview using CL010280, CL009116 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+
+Later qualification and mobilisation actions (only after selection progression):
+
+- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
+- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
+- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
+- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
+
+## K0184 — Bearach Ormlaithe
+
+- Interview: `supported_technical_interview` — CL010442 (2026-05-07) records "Set the timing on No.2 after the pump was refitted, ran it up and checked exhaust temps."; CL010068 (2024-12-05) records "Lamp not lit, found the fuse gone. Renewed.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP000189, AP000198, AP000201 is retained with positive testimony; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Application eligibility: `plausible_but_essential_evidence_incomplete`
+- Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL010442, CL010068
+- Selected positive testimony: none selected
+- Selected adverse testimony: AP000189, AP000198, AP000201
+- Relevant evidence categories: electrical, mechanical
+- Full clean log review: 368 rows; 8 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
+- Appraisal review: 16 exact keeper-code-keyed rows; 13 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- Discuss the selected adverse testimony in AP000189, AP000198, AP000201 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+
+Category support:
+
+- `electrical` — 2024-12-05 — “Lamp not lit, found the fuse gone. Renewed.” (CL010068; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38570`).
+- `mechanical` — 2026-05-07 — “Set the timing on No.2 after the pump was refitted, ran it up and checked exhaust temps.” (CL010442; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#57550`).
+
+Evidence:
+
+- 2026-05-07 — “Set the timing on No.2 after the pump was refitted, ran it up and checked exhaust temps.” (CL010442; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#57550`; clean/manual attribution corroborated by raw payroll value 0012021 normalized to 12021, matching clean payroll 0012021).
+- 2024-12-05 — “Lamp not lit, found the fuse gone. Renewed.” (CL010068; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38570`; clean/manual attribution corroborated by raw payroll value 12021 normalized to 12021, matching clean payroll 0012021).
+- 2024-02-16 — “Changed the battery in the portable set.” (CL009825; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#28398`; clean/manual attribution corroborated by raw payroll value 0012021 normalized to 12021, matching clean payroll 0012021).
+- 2023-07-23 — “Bled the fuel system after the filter change.” (CL009666; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#20916`; clean/manual attribution corroborated by raw payroll value 12021 normalized to 12021, matching clean payroll 0012021).
+- 2022-11-20 — “Changed oil and filters on no.2.” (CL009470; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#11830`; clean/manual attribution corroborated by raw payroll value 0012021 normalized to 12021, matching clean payroll 0012021).
+
+Manager testimony selected as screening context:
+
+- 2008 (year precision) — Attention is drawn to a recurring shortfall in the engines. (AP000189; `raw/appraisals/appraisals.jsonl#AP000189`; concern: recurring_shortfall). Manager testimony only, not competence or authorisation.
+- 2020 (year precision) — Weak on the engines. (AP000198; `raw/appraisals/appraisals.jsonl#AP000198`; concern: weakness). Manager testimony only, not competence or authorisation.
+- 2023 (year precision) — REVIEW 2023 Needs supervision on the ironwork. (AP000201; `raw/appraisals/appraisals.jsonl#AP000201`; concern: needs_supervision). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
+
+Credential position:
+
+- Dated Pass: MPMC-D, completed 2022-05-03, supplied expiry 2027-04-27 (`raw/training/vendor-c-learnhub-2017-2026.json#LH500125`).
+- Dated Pass: HVAP-01, completed 2026-08-03, supplied expiry 2029-07-09 (`raw/training/vendor-c-learnhub-2017-2026.json#LH500128`).
+- MPMC-C: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500121`).
+- HVAP-03: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500122`).
+- OSSC-CS: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500123`).
+- OSSC-SS: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500124`).
+
+Initial selection action:
+
+- Invite to a structured technical interview using CL010442, CL010068 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+
+Later qualification and mobilisation actions (only after selection progression):
+
+- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
+- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
+- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
+- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: the supplied Pass is expired (LH500124); ask the issuer which renewal, assessment or training route applies. The posting says the employer funds renewals, but it does not define the route or promise first-time training funding. OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
+
+## K0274 — Iarlaith O Niallghusa
+
+- Interview: `supported_technical_interview` — CL010515 (2026-08-07) records "Rebuilt the clockwork drive, cleaned forty years of gum out of the train."; CL010397 (2026-03-11) records "Tightened glands in the cable trunk by the stair.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP000489 is retained with positive testimony in AP000494; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Application eligibility: `plausible_but_essential_evidence_incomplete`
+- Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL010515, CL010397
+- Selected positive testimony: AP000494
+- Selected adverse testimony: AP000489
+- Relevant evidence categories: electrical, fault_finding, mechanical
+- Full clean log review: 274 rows; 10 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
+- Appraisal review: 6 exact keeper-code-keyed rows; 4 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- Discuss the selected adverse testimony in AP000489 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+- Appraisals AP000494 have year-only 2026 dates, so their position relative to 2026-10-11 is unknown and they remain context only.
+
+Category support:
+
+- `electrical` — 2004-07-02 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL003354; `raw/logbooks/era2-keeperlog/KLOG2004.DAT#006575`).
+- `fault_finding` — 2004-07-02 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL003354; `raw/logbooks/era2-keeperlog/KLOG2004.DAT#006575`).
+- `mechanical` — 2026-08-07 — “Rebuilt the clockwork drive, cleaned forty years of gum out of the train.” (CL010515; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#60993`).
 
 Evidence:
 
@@ -102,7 +240,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview and use the cited logs and manager testimony as questions; assess fault diagnosis, safe isolation and hands-on plant maintenance rather than treating the records as proof.
+- Invite to a structured technical interview using CL010515, CL010397 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -110,24 +248,101 @@ Later qualification and mobilisation actions (only after selection progression):
 - First, ask the issuer to verify the conflicting expiry evidence for LH500295 and retain both supplied and nominal dates until resolved.
 - Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
 - Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: present and issuer-verify the current dated Pass (LH500296). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: ask the issuer to resolve the supplied-expiry/scheme-rule conflict in LH500295 before deciding whether renewal is required.
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: present and issuer-verify the current dated Pass (LH500296). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: ask the issuer to resolve the supplied-expiry/scheme-rule conflict in LH500295 before deciding whether renewal is required.
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
 
-## K0310 — Gearalt O hEidhneain
+## K0303 — Ambrosan O Lachtnain
 
-- Interview: `supported_technical_interview` — CL006179 records “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.”; CL005658 records “Rewired the changeover contactor arrangement, tested on both feeds and left in auto.”. The documented policy supports a structured technical interview, not competence, eligibility or appointment.
+- Interview: `supported_technical_interview` — CL009744 (2023-11-06) records "Rebuilt the clockwork drive, cleaned forty years of gum out of the train."; CL008870 (2020-11-15) records "Drive motor brushes and commutator dressed, rotation back to time.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP000556, AP000561, AP000562, AP000564 is retained with positive testimony in AP000551, AP000557; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL009744, CL008870
+- Selected positive testimony: AP000551, AP000557
+- Selected adverse testimony: AP000556, AP000561, AP000562, AP000564
 - Relevant evidence categories: electrical, fault_finding, mechanical
-- Full clean log review: 320 rows; 5 distinct relevant patterns after template collapse.
-- Appraisal review: 0 exact keeper-code-keyed rows; 0 rows not selected by the appraisal filter.
+- Full clean log review: 367 rows; 8 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
+- Appraisal review: 13 exact keeper-code-keyed rows; 6 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- Discuss the selected adverse testimony in AP000556, AP000561, AP000562, AP000564 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+- The permitted clean/manual attribution for CL009302 is not corroborated by the cited raw identifier; preserve that provenance limitation and do not use those rows alone.
 
 Category support:
 
-- `electrical` â€” 2012-08-03 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL006179; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#007687`).
-- `fault_finding` â€” 2012-08-03 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL006179; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#007687`).
-- `mechanical` â€” 2010-05-02 â€” â€œChanged oil and filters on no 2.â€ (CL005313; `raw/logbooks/era2-keeperlog/KLOG2010.DAT#004314`).
+- `electrical` — 2022-04-17 — “Megger test on the No.1 feeder, 0.8 ohm, condemned the cable and ran a temporary.” (CL009302; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#4072`).
+- `fault_finding` — 2022-04-17 — “Megger test on the No.1 feeder, 0.8 ohm, condemned the cable and ran a temporary.” (CL009302; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#4072`).
+- `mechanical` — 2020-11-15 — “Drive motor brushes and commutator dressed, rotation back to time.” (CL008870; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#37866`).
+
+Evidence:
+
+- 2022-04-17 — “Megger test on the No.1 feeder, 0.8 ohm, condemned the cable and ran a temporary.” (CL009302; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#4072`; clean/manual attribution; raw payroll_reference 906660 conflicts with clean 0012781 and does not corroborate the person assignment).
+- 2020-11-15 — “Drive motor brushes and commutator dressed, rotation back to time.” (CL008870; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#37866`; clean/manual attribution corroborated by raw payroll value 1.2781E+04 normalized to 12781, matching clean payroll 0012781).
+- 2018-05-09 — “Checked continuity on the run to the fog hut.” (CL008115; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#4708`; clean/manual attribution corroborated by raw payroll value 0012781 normalized to 12781, matching clean payroll 0012781).
+- 2023-11-06 — “Rebuilt the clockwork drive, cleaned forty years of gum out of the train.” (CL009744; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#24746`; clean/manual attribution corroborated by raw payroll value 0012781 normalized to 12781, matching clean payroll 0012781).
+- 2023-05-20 — “Lamp changer stepping twice, dismantled the ratchet and dressed the pawl faces.” (CL009608; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#18589`; clean/manual attribution corroborated by raw payroll value 0012781 normalized to 12781, matching clean payroll 0012781).
+
+Manager testimony selected as screening context:
+
+- 2006 (year precision) — Ambrosan took on fault work without being asked and made a proper job of it. (AP000551; `raw/appraisals/appraisals.jsonl#AP000551`; support: made_proper_job). Manager testimony only, not competence or authorisation.
+- 2009 (year precision) — There is a habit of mind here that is worth writing down: Ambrosan will not leave the optic half done. (AP000553; `raw/appraisals/appraisals.jsonl#AP000553`; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
+- 2012 (year precision) — Needs supervision on diagnostics. (AP000556; `raw/appraisals/appraisals.jsonl#AP000556`; concern: needs_supervision). Manager testimony only, not competence or authorisation.
+- 2015 (year precision) — chasing faults to a good standard. (AP000557; `raw/appraisals/appraisals.jsonl#AP000557`; support: good_standard). Manager testimony only, not competence or authorisation.
+- 2019 (year precision) — the light itself needs work. (AP000561; `raw/appraisals/appraisals.jsonl#AP000561`; concern: needs_work). Manager testimony only, not competence or authorisation.
+- 2021 (year precision) — Attention is drawn to a recurring shortfall in chasing faults. (AP000562; `raw/appraisals/appraisals.jsonl#AP000562`; concern: recurring_shortfall). Manager testimony only, not competence or authorisation.
+- 2023 (year precision) — Some deficiency has been noted in respect of the light itself, which the keeper has been advised to address. (AP000564; `raw/appraisals/appraisals.jsonl#AP000564`; concern: specific_deficiency). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
+
+Credential position:
+
+- Dated Pass: OSSC-SS, completed 2025-07-11, supplied expiry 2029-02-16 (`raw/training/vendor-c-learnhub-2017-2026.json#LH500329`).
+- Dated Pass: WAHS-3, completed 2026-10-09, supplied expiry 2029-03-01 (`raw/training/vendor-c-learnhub-2017-2026.json#LH500330`).
+- OSSC-FF: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500324`).
+- OSSC-FA: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500326`).
+- OSSC-HL: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500327`).
+
+Initial selection action:
+
+- Invite to a structured technical interview using CL009744, CL008870 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+
+Later qualification and mobilisation actions (only after selection progression):
+
+- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
+- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
+- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
+- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: present and issuer-verify the current dated Pass (LH500329). OSSC-FF: the supplied Pass is expired (LH500324); ask the issuer which renewal, assessment or training route applies. The posting says the employer funds renewals, but it does not define the route or promise first-time training funding. OSSC-FA: the supplied Pass is expired (LH500326); ask the issuer which renewal, assessment or training route applies. The posting says the employer funds renewals, but it does not define the route or promise first-time training funding.
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
+
+## K0310 — Gearalt O hEidhneain
+
+- Interview: `supported_technical_interview` — CL005658 (2011-04-09) records "Rewired the changeover contactor arrangement, tested on both feeds and left in auto."; CL005313 (2010-05-02) records "Changed oil and filters on no 2.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Application eligibility: `plausible_but_essential_evidence_incomplete`
+- Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL005658, CL005313
+- Selected positive testimony: none selected
+- Selected adverse testimony: none selected
+- Relevant evidence categories: electrical, fault_finding, mechanical
+- Full clean log review: 320 rows; 5 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
+- Appraisal review: 0 exact keeper-code-keyed rows; 0 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- The permitted clean/manual attribution for CL006179 is not corroborated by the cited raw identifier; preserve that provenance limitation and do not use those rows alone.
+- No exact keeper-code-keyed appraisal is supplied; this is an evidence gap, not a clean performance finding.
+- The supplied work logs end in 2012; ask about subsequent and current practice without applying an invented recency threshold.
+
+Category support:
+
+- `electrical` — 2012-08-03 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL006179; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#007687`).
+- `fault_finding` — 2012-08-03 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL006179; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#007687`).
+- `mechanical` — 2010-05-02 — “Changed oil and filters on no 2.” (CL005313; `raw/logbooks/era2-keeperlog/KLOG2010.DAT#004314`).
 
 Evidence:
 
@@ -154,7 +369,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview and use the cited logs as questions; assess fault diagnosis, safe isolation and hands-on plant maintenance rather than treating the records as proof.
+- Invite to a structured technical interview using CL005658, CL005313 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -162,24 +377,89 @@ Later qualification and mobilisation actions (only after selection progression):
 - First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
 - Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
 - Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: present and issuer-verify the current dated Pass (LH500369).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: present and issuer-verify the current dated Pass (LH500369).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
+
+## K0354 — Quillan O Fuarain
+
+- Interview: `supported_technical_interview` — CL007773 (2017-04-16) records "Tightened glands in the cable trunk by the stair."; CL004792 (2008-12-22) records "Ran No.2 set 0.5 hrs. Oil and water checked.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP000752, AP000753 is retained with positive testimony in AP000750; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Application eligibility: `plausible_but_essential_evidence_incomplete`
+- Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL007773, CL004792
+- Selected positive testimony: AP000750
+- Selected adverse testimony: AP000752, AP000753
+- Relevant evidence categories: electrical, mechanical
+- Full clean log review: 199 rows; 4 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
+- Appraisal review: 8 exact keeper-code-keyed rows; 5 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- Discuss the selected adverse testimony in AP000752, AP000753 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+
+Category support:
+
+- `electrical` — 2017-04-16 — “Tightened glands in the cable trunk by the stair.” (CL007773; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#37475`).
+- `mechanical` — 2008-12-22 — “Ran No.2 set 0.5 hrs. Oil and water checked.” (CL004792; `raw/logbooks/era2-keeperlog/KLOG2008.DAT#012450`).
+
+Evidence:
+
+- 2017-04-16 — “Tightened glands in the cable trunk by the stair.” (CL007773; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#37475`; clean/manual attribution corroborated by raw name Quillan O Fuarain).
+- 2011-05-09 — “Lamp not lit, found the fuse gone. Renewed.” (CL005691; `raw/logbooks/era2-keeperlog/KLOG2011.DAT#004643`; clean/manual attribution corroborated by raw keeper_code K0354).
+- 2008-12-22 — “Ran No.2 set 0.5 hrs. Oil and water checked.” (CL004792; `raw/logbooks/era2-keeperlog/KLOG2008.DAT#012450`; clean/manual attribution corroborated by raw keeper_code K0354).
+- 2007-11-20 — “Greased the compressor and checked the belts.” (CL004425; `raw/logbooks/era2-keeperlog/KLOG2007.DAT#011308`; clean/manual attribution corroborated by raw keeper_code K0354).
+
+Manager testimony selected as screening context:
+
+- 2013 (year precision) — It is noted that Quillan has maintained a proper standard in the standby banks. (AP000750; `raw/appraisals/appraisals.jsonl#AP000750`; support: good_standard). Manager testimony only, not competence or authorisation.
+- 2016 (year precision) — The standard achieved in defect reporting falls below that expected of the grade. (AP000752; `raw/appraisals/appraisals.jsonl#AP000752`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
+- 2017 (year precision) — The standard achieved in inspection reports falls below that expected of the grade. (AP000753; `raw/appraisals/appraisals.jsonl#AP000753`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
+
+Credential position:
+
+- Dated Pass: WAHS-4, completed 2024-12-06, supplied expiry 2027-08-24 (`raw/training/vendor-c-learnhub-2017-2026.json#LH500436`).
+- Dated Pass: WAHS-3, completed 2025-10-15, supplied expiry 2028-12-01 (`raw/training/vendor-c-learnhub-2017-2026.json#LH500437`).
+- Dated Pass: OSSC-CS, completed 2026-09-16, supplied expiry 2030-07-19 (`raw/training/vendor-c-learnhub-2017-2026.json#LH500438`).
+- OSSC-FA: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500435`).
+- HVAP-03: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500434`).
+- Conflict `prerequisite_not_established`: A current OSSC-SS prerequisite is not established by the dated LearnHub rows supplied.
+
+Initial selection action:
+
+- Invite to a structured technical interview using CL007773, CL004792 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+
+Later qualification and mobilisation actions (only after selection progression):
+
+- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
+- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
+- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
+- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: the supplied Pass is expired (LH500435); ask the issuer which renewal, assessment or training route applies. The posting says the employer funds renewals, but it does not define the route or promise first-time training funding.
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
 
 ## K0371 — Cianan Mac Lanngail
 
-- Interview: `supported_technical_interview` — CL010343 records “Checked continuity on the run to the fog hut.”; CL006460 records “Megger test on the no 2 feeder, 3.6 bar, condemned the cable and ran a temporary.”. Keeper-code-keyed manager testimony in AP000798 adds a screening lead, not proof of competence. The documented policy supports a structured technical interview, not competence, eligibility or appointment.
+- Interview: `supported_technical_interview` — CL010343 (2025-12-15) records "Checked continuity on the run to the fog hut."; CL010201 (2025-05-24) records "Changed oil and filters on no.3.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Positive testimony in AP000798 is an interview lead, not proof of competence. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL010343, CL010201
+- Selected positive testimony: AP000798
+- Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, fault_finding, mechanical
-- Full clean log review: 227 rows; 7 distinct relevant patterns after template collapse.
+- Full clean log review: 227 rows; 7 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
 - Appraisal review: 3 exact keeper-code-keyed rows; 1 row not selected by the appraisal filter.
 
 Category support:
 
-- `electrical` â€” 2025-12-15 â€” â€œChecked continuity on the run to the fog hut.â€ (CL010343; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#52159`).
-- `fault_finding` â€” 2025-12-15 â€” â€œChecked continuity on the run to the fog hut.â€ (CL010343; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#52159`).
-- `mechanical` â€” 2025-05-24 â€” â€œChanged oil and filters on no.3.â€ (CL010201; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#44788`).
+- `electrical` — 2025-12-15 — “Checked continuity on the run to the fog hut.” (CL010343; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#52159`).
+- `fault_finding` — 2025-12-15 — “Checked continuity on the run to the fog hut.” (CL010343; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#52159`).
+- `mechanical` — 2025-05-24 — “Changed oil and filters on no.3.” (CL010201; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#44788`).
 
 Evidence:
 
@@ -214,7 +494,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview and use the cited logs and manager testimony as questions; assess fault diagnosis, safe isolation and hands-on plant maintenance rather than treating the records as proof.
+- Invite to a structured technical interview using CL010343, CL010201 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -222,23 +502,92 @@ Later qualification and mobilisation actions (only after selection progression):
 - First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
 - Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
 - Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: renew the expired Pass (LH500470); the posting says the employer funds renewals. OSSC-FA: present and issuer-verify the current dated Pass (LH500473).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: renew the expired Pass (LH500468); the posting says the employer funds renewals.
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: the supplied Pass is expired (LH500470); ask the issuer which renewal, assessment or training route applies. The posting says the employer funds renewals, but it does not define the route or promise first-time training funding. OSSC-FA: present and issuer-verify the current dated Pass (LH500473).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: the supplied Pass is expired (LH500468); ask the issuer which renewal, assessment or training route applies. The posting says the employer funds renewals, but it does not define the route or promise first-time training funding.
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
+
+## K0394 — Lugharn O Neascan
+
+- Interview: `supported_technical_interview` — CL009886 (2024-04-09) records "Renewed fuse links, no.3 way. All made off."; CL009816 (2024-02-06) records "Bled the fuel system after the filter change.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP000862 is retained with positive testimony in AP000863, AP000865; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Application eligibility: `plausible_but_essential_evidence_incomplete`
+- Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL009886, CL009816
+- Selected positive testimony: AP000863, AP000865
+- Selected adverse testimony: AP000862
+- Relevant evidence categories: electrical, mechanical
+- Full clean log review: 325 rows; 5 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
+- Appraisal review: 4 exact keeper-code-keyed rows; 1 row not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- Discuss the selected adverse testimony in AP000862 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+- Appraisals AP000865 have year-only 2026 dates, so their position relative to 2026-10-11 is unknown and they remain context only.
+
+Category support:
+
+- `electrical` — 2024-04-09 — “Renewed fuse links, no.3 way. All made off.” (CL009886; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#30274`).
+- `mechanical` — 2024-02-06 — “Bled the fuel system after the filter change.” (CL009816; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#28049`).
+
+Evidence:
+
+- 2024-04-09 — “Renewed fuse links, no.3 way. All made off.” (CL009886; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#30274`; clean/manual attribution corroborated by raw payroll value 12523 normalized to 12523, matching clean payroll 0012523).
+- 2024-02-06 — “Bled the fuel system after the filter change.” (CL009816; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#28049`; clean/manual attribution corroborated by raw payroll value 12523 normalized to 12523, matching clean payroll 0012523).
+- 2021-11-06 — “Cleaned the contacts in the changeover relay.” (CL009161; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#50662`; clean/manual attribution corroborated by raw payroll value 12523 normalized to 12523, matching clean payroll 0012523).
+- 2020-12-16 — “Ran no.1 set 3 hrs. Oil and water checked.” (CL008893; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#38959`; clean/manual attribution corroborated by raw payroll value 0012523 normalized to 12523, matching clean payroll 0012523).
+- 2001-10-09 — “Greased the compressor and checked the belts.” (CL002569; `raw/logbooks/era1-ocr/uaigneas-2001.txt#L459`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
+
+Manager testimony selected as screening context:
+
+- 2020 (year precision) — Attention is drawn to a recurring shortfall in work on the gallery. (AP000862; `raw/appraisals/appraisals.jsonl#AP000862`; concern: recurring_shortfall). Manager testimony only, not competence or authorisation.
+- 2024 (year precision) — Over the year Lugharn has quietly become the station's go-to for height work. (AP000863; `raw/appraisals/appraisals.jsonl#AP000863`; support: go_to_person). Manager testimony only, not competence or authorisation.
+- 2026 (year precision) — It is noted that Lugharn has maintained a proper standard in height work. (AP000865; `raw/appraisals/appraisals.jsonl#AP000865`; support: good_standard). Manager testimony only, not competence or authorisation.
+
+- Same-year timing uncertainty: AP000865 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
+
+Credential position:
+
+- No currently dated relevant LearnHub Pass was established at the cutoff.
+- MECS-2: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500536`).
+- WAHS-1: Attended; `attended_not_passed` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500537`).
+- HVAP-01: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500538`).
+- OSSC-SS: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500539`).
+- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 0; later modules do not bridge missing earlier stages.
+
+Initial selection action:
+
+- Invite to a structured technical interview using CL009886, CL009816 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+
+Later qualification and mobilisation actions (only after selection progression):
+
+- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
+- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
+- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
+- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: the supplied Pass is expired (LH500539); ask the issuer which renewal, assessment or training route applies. The posting says the employer funds renewals, but it does not define the route or promise first-time training funding. OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: Attended in LH500537 is not a Pass; establish the required passed assessment if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
 
 ## K0482 — Tadhgan Mac Deargain
 
-- Interview: `supported_technical_interview` — CL010082 records “Megger test on the NO.2 feeder, 11.2 V, condemned the cable and ran a temporary.”; CL009526 records “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.”. Keeper-code-keyed manager testimony in AP001188 adds a screening lead, not proof of competence. The documented policy supports a structured technical interview, not competence, eligibility or appointment.
+- Interview: `supported_technical_interview` — CL010082 (2024-12-16) records "Megger test on the NO.2 feeder, 11.2 V, condemned the cable and ran a temporary.". This is specific, attributed evidence of hands-on electrical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Positive testimony in AP001188 is an interview lead, not proof of competence. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL010082
+- Selected positive testimony: AP001188
+- Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, fault_finding
-- Full clean log review: 180 rows; 9 distinct relevant patterns after template collapse.
+- Full clean log review: 180 rows; 9 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
 - Appraisal review: 4 exact keeper-code-keyed rows; 3 rows not selected by the appraisal filter.
 
 Category support:
 
-- `electrical` â€” 2024-12-16 â€” â€œMegger test on the NO.2 feeder, 11.2 V, condemned the cable and ran a temporary.â€ (CL010082; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38994`).
-- `fault_finding` â€” 2024-12-16 â€” â€œMegger test on the NO.2 feeder, 11.2 V, condemned the cable and ran a temporary.â€ (CL010082; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38994`).
+- `electrical` — 2024-12-16 — “Megger test on the NO.2 feeder, 11.2 V, condemned the cable and ran a temporary.” (CL010082; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38994`).
+- `fault_finding` — 2024-12-16 — “Megger test on the NO.2 feeder, 11.2 V, condemned the cable and ran a temporary.” (CL010082; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38994`).
 
 Evidence:
 
@@ -263,7 +612,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview and use the cited logs and manager testimony as questions; assess fault diagnosis, safe isolation and hands-on plant maintenance rather than treating the records as proof.
+- Invite to a structured technical interview using CL010082 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -271,24 +620,31 @@ Later qualification and mobilisation actions (only after selection progression):
 - First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
 - Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
 - Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
 
 ## K0525 — Hugheen Mordaunley
 
-- Interview: `supported_technical_interview` — CL010216 records “Checked continuity on the run to the fog hut.”; CL007269 records “Changed the battery in the portable set.”. The documented policy supports a structured technical interview, not competence, eligibility or appointment.
+- Interview: `supported_technical_interview` — CL010216 (2025-06-19) records "Checked continuity on the run to the fog hut."; CL006644 (2013-12-13) records "Bled the fuel system after the filter change.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP001352, AP001353 is retained with positive testimony in AP001348; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL010216, CL006644
+- Selected positive testimony: AP001348
+- Selected adverse testimony: AP001352, AP001353
 - Relevant evidence categories: electrical, fault_finding, mechanical
-- Full clean log review: 211 rows; 5 distinct relevant patterns after template collapse.
+- Full clean log review: 211 rows; 5 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
 - Appraisal review: 10 exact keeper-code-keyed rows; 7 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- Discuss the selected adverse testimony in AP001352, AP001353 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
 
 Category support:
 
-- `electrical` â€” 2025-06-19 â€” â€œChecked continuity on the run to the fog hut.â€ (CL010216; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#45721`).
-- `fault_finding` â€” 2025-06-19 â€” â€œChecked continuity on the run to the fog hut.â€ (CL010216; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#45721`).
-- `mechanical` â€” 2013-12-13 â€” â€œBled the fuel system after the filter change.â€ (CL006644; `raw/logbooks/era2-keeperlog/KLOG2013.DAT#012056`).
+- `electrical` — 2025-06-19 — “Checked continuity on the run to the fog hut.” (CL010216; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#45721`).
+- `fault_finding` — 2025-06-19 — “Checked continuity on the run to the fog hut.” (CL010216; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#45721`).
+- `mechanical` — 2013-12-13 — “Bled the fuel system after the filter change.” (CL006644; `raw/logbooks/era2-keeperlog/KLOG2013.DAT#012056`).
 
 Evidence:
 
@@ -319,7 +675,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview and use the cited logs and manager testimony as questions; assess fault diagnosis, safe isolation and hands-on plant maintenance rather than treating the records as proof.
+- Invite to a structured technical interview using CL010216, CL006644 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -327,24 +683,260 @@ Later qualification and mobilisation actions (only after selection progression):
 - First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
 - Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
 - Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: renew the expired Pass (LH500814); the posting says the employer funds renewals. OSSC-FF: present and issuer-verify the current dated Pass (LH500817). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: the supplied Pass is expired (LH500814); ask the issuer which renewal, assessment or training route applies. The posting says the employer funds renewals, but it does not define the route or promise first-time training funding. OSSC-FF: present and issuer-verify the current dated Pass (LH500817). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
+
+## K0561 — Muirgheal Holmthwaite
+
+- Interview: `supported_technical_interview` — CL008741 (2020-06-14) records "Mechanical seal gone on the fire pump, fitted new and re-aligned the coupling."; CL007052 (2014-12-12) records "Found the receiver desensitised by the charger, fitted suppression and the noise went.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP001433 is retained with positive testimony in AP001428; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Application eligibility: `plausible_but_essential_evidence_incomplete`
+- Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL008741, CL007052
+- Selected positive testimony: AP001428
+- Selected adverse testimony: AP001433
+- Relevant evidence categories: electrical, mechanical
+- Full clean log review: 175 rows; 6 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
+- Appraisal review: 11 exact keeper-code-keyed rows; 9 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- Discuss the selected adverse testimony in AP001433 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+
+Category support:
+
+- `electrical` — 2014-12-12 — “Found the receiver desensitised by the charger, fitted suppression and the noise went.” (CL007052; `raw/logbooks/era2-keeperlog/KLOG2014.DAT#005949`).
+- `mechanical` — 2020-06-14 — “Mechanical seal gone on the fire pump, fitted new and re-aligned the coupling.” (CL008741; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#32504`).
+
+Evidence:
+
+- 2020-06-14 — “Mechanical seal gone on the fire pump, fitted new and re-aligned the coupling.” (CL008741; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#32504`; clean/manual attribution corroborated by raw payroll value 0011814 normalized to 11814, matching clean payroll 0011814).
+- 2019-08-06 — “Rebuilt the no 1 pump end to end, new wear rings, delivery back up to 3.6 bar.” (CL008494; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#21170`; clean/manual attribution corroborated by raw payroll value 0011814 normalized to 11814, matching clean payroll 0011814).
+- 2018-04-06 — “Ran no.1 set 4 hrs. Oil and water checked.” (CL008084; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#3503`; clean/manual attribution corroborated by raw payroll value 11814 normalized to 11814, matching clean payroll 0011814).
+- 2014-12-12 — “Found the receiver desensitised by the charger, fitted suppression and the noise went.” (CL007052; `raw/logbooks/era2-keeperlog/KLOG2014.DAT#005949`; clean/manual attribution corroborated by raw keeper_code K0561).
+- 2011-04-10 — “Changed the battery in the portable set.” (CL005661; `raw/logbooks/era2-keeperlog/KLOG2011.DAT#003581`; clean/manual attribution corroborated by raw keeper_code K0561).
+
+Manager testimony selected as screening context:
+
+- 2010 (year precision) — Over the year Muirgheal has quietly become the station's go-to for pumped systems. (AP001428; `raw/appraisals/appraisals.jsonl#AP001428`; support: go_to_person). Manager testimony only, not competence or authorisation.
+- 2019 (year precision) — Needs supervision on pumped systems. (AP001433; `raw/appraisals/appraisals.jsonl#AP001433`; concern: needs_supervision). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
+
+Credential position:
+
+- Dated Pass: MECS-3, completed 2023-01-01, supplied expiry 2028-04-08 (`raw/training/vendor-c-learnhub-2017-2026.json#LH500872`).
+- Dated Pass: OSSC-FA, completed 2023-03-08, supplied expiry 2027-06-27 (`raw/training/vendor-c-learnhub-2017-2026.json#LH500873`).
+- Dated Pass: HVAP-02, completed 2026-06-23, supplied expiry 2029-11-15 (`raw/training/vendor-c-learnhub-2017-2026.json#LH500875`).
+- OSSC-CS: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500866`).
+- MECS-4: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500867`).
+- OSSC-HL: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500868`).
+- HVAP-04: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500869`).
+- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 0; later modules do not bridge missing earlier stages.
+
+Initial selection action:
+
+- Invite to a structured technical interview using CL008741, CL007052 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+
+Later qualification and mobilisation actions (only after selection progression):
+
+- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
+- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
+- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
+- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: present and issuer-verify the current dated Pass (LH500873).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
+
+## K0566 — Garbhan O Riagain
+
+- Interview: `supported_technical_interview` — CL010043 (2024-11-01) records "Isolated no 1 transformer, earths applied both ends, PTW 46 issued to the contractor."; CL006319 (2012-12-27) records "Filter changed on the power pack.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Application eligibility: `plausible_but_essential_evidence_incomplete`
+- Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL010043, CL006319
+- Selected positive testimony: none selected
+- Selected adverse testimony: none selected
+- Relevant evidence categories: electrical, fault_finding, mechanical, permit_or_isolation
+- Full clean log review: 260 rows; 4 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
+- Appraisal review: 7 exact keeper-code-keyed rows; 7 rows not selected by the appraisal filter.
+
+Category support:
+
+- `electrical` — 2024-11-01 — “Isolated no 1 transformer, earths applied both ends, PTW 46 issued to the contractor.” (CL010043; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#37406`).
+- `fault_finding` — 2002-09-08 — “Checked continuity on the run to the fog hut.” (CL002799; `raw/logbooks/era1-ocr/drumnahaan-2002.txt#L336`).
+- `mechanical` — 2012-12-27 — “Filter changed on the power pack.” (CL006319; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#013100`).
+- `permit_or_isolation` — 2024-11-01 — “Isolated no 1 transformer, earths applied both ends, PTW 46 issued to the contractor.” (CL010043; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#37406`).
+
+Evidence:
+
+- 2024-11-01 — “Isolated no 1 transformer, earths applied both ends, PTW 46 issued to the contractor.” (CL010043; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#37406`; clean/manual attribution corroborated by raw payroll value 11851 normalized to 11851, matching clean payroll 0011851).
+- 2002-09-08 — “Checked continuity on the run to the fog hut.” (CL002799; `raw/logbooks/era1-ocr/drumnahaan-2002.txt#L336`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
+- 2012-12-27 — “Filter changed on the power pack.” (CL006319; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#013100`; clean/manual attribution corroborated by raw keeper_code K0566).
+- 2011-09-07 — “Gas tested the fuel tank before entry.” (CL005829; `raw/logbooks/era2-keeperlog/KLOG2011.DAT#008899`; clean/manual attribution corroborated by raw keeper_code K0566).
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
+
+Credential position:
+
+- No currently dated relevant LearnHub Pass was established at the cutoff.
+- OSSC-SS: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500882`).
+- HVAP-03: Not achieved; `not_achieved` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500883`).
+- OSSC-CS: Not achieved; `not_achieved` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500884`).
+
+Initial selection action:
+
+- Invite to a structured technical interview using CL010043, CL006319 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+
+Later qualification and mobilisation actions (only after selection progression):
+
+- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
+- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
+- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
+- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: the supplied Pass is expired (LH500882); ask the issuer which renewal, assessment or training route applies. The posting says the employer funds renewals, but it does not define the route or promise first-time training funding. OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
+
+## K0586 — Gealbhan Nethercarn
+
+- Interview: `supported_technical_interview` — CL006901 (2014-08-13) records "Lamp not lit, found the fuse gone. Renewed.". This is specific, attributed evidence of hands-on electrical maintenance with transferable relevance to the O&M posting's plant-maintenance work. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Application eligibility: `plausible_but_essential_evidence_incomplete`
+- Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL006901
+- Selected positive testimony: none selected
+- Selected adverse testimony: none selected
+- Relevant evidence categories: electrical, fault_finding
+- Full clean log review: 201 rows; 3 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
+- Appraisal review: 10 exact keeper-code-keyed rows; 10 rows not selected by the appraisal filter.
+
+Category support:
+
+- `electrical` — 1999-12-19 — “Checked continuity on the run to the fog hut.” (CL002089; `raw/logbooks/era1-ocr/hurlaven-1999.txt#L477`).
+- `fault_finding` — 1999-12-19 — “Checked continuity on the run to the fog hut.” (CL002089; `raw/logbooks/era1-ocr/hurlaven-1999.txt#L477`).
+
+Evidence:
+
+- 1999-12-19 — “Checked continuity on the run to the fog hut.” (CL002089; `raw/logbooks/era1-ocr/hurlaven-1999.txt#L477`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
+- 2014-08-13 — “Lamp not lit, found the fuse gone. Renewed.” (CL006901; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#4299`; clean/manual attribution corroborated by raw name Gealbhan Nethercarn).
+- 2009-05-06 — “Changed the battery in the portable set.” (CL004932; `raw/logbooks/era2-keeperlog/KLOG2009.DAT#004553`; clean/manual attribution corroborated by raw keeper_code K0586).
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
+
+Credential position:
+
+- No currently dated relevant LearnHub Pass was established at the cutoff.
+- WAHS-3: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500931`).
+- HVAP-01: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500932`).
+- MECS-1: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500933`).
+- HVAP-03: Not achieved; `not_achieved` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500935`).
+- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 1; later modules do not bridge missing earlier stages.
+
+Initial selection action:
+
+- Invite to a structured technical interview using CL006901 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+
+Later qualification and mobilisation actions (only after selection progression):
+
+- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
+- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
+- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
+- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
+
+## K0589 — Eachann Westrayne
+
+- Interview: `supported_technical_interview` — CL008681 (2020-03-27) records "Changed oil and filters on no 2."; CL008008 (2017-12-28) records "Renewed fuse links, no 1 way. All made off.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP001528, AP001530 is retained with positive testimony in AP001533, AP001536; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Application eligibility: `plausible_but_essential_evidence_incomplete`
+- Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL008681, CL008008
+- Selected positive testimony: AP001533, AP001536
+- Selected adverse testimony: AP001528, AP001530
+- Relevant evidence categories: electrical, fault_finding, mechanical
+- Full clean log review: 165 rows; 4 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
+- Appraisal review: 12 exact keeper-code-keyed rows; 8 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- Discuss the selected adverse testimony in AP001528, AP001530 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+- Appraisals AP001536 have year-only 2026 dates, so their position relative to 2026-10-11 is unknown and they remain context only.
+
+Category support:
+
+- `electrical` — 2016-09-14 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL007592; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#29593`).
+- `fault_finding` — 2016-09-14 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL007592; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#29593`).
+- `mechanical` — 2020-03-27 — “Changed oil and filters on no 2.” (CL008681; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#29766`).
+
+Evidence:
+
+- 2016-09-14 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL007592; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#29593`; clean/manual attribution corroborated by raw name Eachann Westrayne).
+- 2020-03-27 — “Changed oil and filters on no 2.” (CL008681; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#29766`; clean/manual attribution corroborated by raw payroll value 11453 normalized to 11453, matching clean payroll 0011453).
+- 2017-12-28 — “Renewed fuse links, no 1 way. All made off.” (CL008008; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#46820`; clean/manual attribution corroborated by raw name Eachann Westrayne).
+- 2014-02-04 — “Changed the battery in the portable set.” (CL006691; `raw/logbooks/era2-keeperlog/KLOG2014.DAT#000593`; clean/manual attribution corroborated by raw keeper_code K0589).
+
+Manager testimony selected as screening context:
+
+- 2018 (year precision) — Needs supervision on height work. (AP001528; `raw/appraisals/appraisals.jsonl#AP001528`; concern: needs_supervision). Manager testimony only, not competence or authorisation.
+- 2020 (year precision) — Some deficiency has been noted in respect of work on the gallery, which the keeper has been advised to address. (AP001530; `raw/appraisals/appraisals.jsonl#AP001530`; concern: specific_deficiency). Manager testimony only, not competence or authorisation.
+- 2023 (year precision) — When the ironwork went wrong in the spring, Eachann was the one who sorted it out. (AP001533; `raw/appraisals/appraisals.jsonl#AP001533`; support: resolved_failure). Manager testimony only, not competence or authorisation.
+- 2026 (year precision) — When height work went wrong in the spring, Eachann was the one who sorted it out. (AP001536; `raw/appraisals/appraisals.jsonl#AP001536`; support: resolved_failure). Manager testimony only, not competence or authorisation.
+
+- Same-year timing uncertainty: AP001536 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
+
+Credential position:
+
+- No currently dated relevant LearnHub Pass was established at the cutoff.
+- OSSC-SS: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500938`).
+- OSSC-FF: Attended; `attended_not_passed` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500937`).
+- MPMC-A: Attended; `attended_not_passed` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500946`).
+- Conflict `prerequisite_not_established`: A current OSSC-SS prerequisite is not established by the dated LearnHub rows supplied.
+
+Initial selection action:
+
+- Invite to a structured technical interview using CL008681, CL008008 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+
+Later qualification and mobilisation actions (only after selection progression):
+
+- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
+- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
+- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
+- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: the supplied Pass is expired (LH500938); ask the issuer which renewal, assessment or training route applies. The posting says the employer funds renewals, but it does not define the route or promise first-time training funding. OSSC-FF: Attended in LH500937 is not a Pass; establish the required passed assessment if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
 
 ## K0592 — Fergal Mac Eibhleain
 
-- Interview: `supported_technical_interview` — CL008207 records “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.”; CL008184 records “Drive motor brushes and commutator dressed, rotation back to time.”. Keeper-code-keyed manager testimony in AP001555, AP001557 adds a screening lead, not proof of competence. The documented policy supports a structured technical interview, not competence, eligibility or appointment.
+- Interview: `supported_technical_interview` — CL008207 (2018-08-17) records "Traced and lifted an earth fault on the tower lighting ring, split the ring to find it."; CL008184 (2018-07-20) records "Drive motor brushes and commutator dressed, rotation back to time.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Positive testimony in AP001555, AP001557, AP001561, AP001563 is an interview lead, not proof of competence. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL008207, CL008184
+- Selected positive testimony: AP001555, AP001557, AP001561, AP001563
+- Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, fault_finding, mechanical
-- Full clean log review: 316 rows; 10 distinct relevant patterns after template collapse.
+- Full clean log review: 316 rows; 10 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
 - Appraisal review: 8 exact keeper-code-keyed rows; 2 rows not selected by the appraisal filter.
 
 Category support:
 
-- `electrical` â€” 2018-08-17 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL008207; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#8269`).
-- `fault_finding` â€” 2018-08-17 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL008207; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#8269`).
-- `mechanical` â€” 2018-07-20 â€” â€œDrive motor brushes and commutator dressed, rotation back to time.â€ (CL008184; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#7336`).
+- `electrical` — 2018-08-17 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL008207; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#8269`).
+- `fault_finding` — 2018-08-17 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL008207; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#8269`).
+- `mechanical` — 2018-07-20 — “Drive motor brushes and commutator dressed, rotation back to time.” (CL008184; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#7336`).
 
 Evidence:
 
@@ -377,7 +969,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview and use the cited logs and manager testimony as questions; assess fault diagnosis, safe isolation and hands-on plant maintenance rather than treating the records as proof.
+- Invite to a structured technical interview using CL008207, CL008184 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -385,23 +977,26 @@ Later qualification and mobilisation actions (only after selection progression):
 - First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
 - Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
 - Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
 
 ## K0641 — Eimhreann Nic Gormghaile
 
-- Interview: `supported_technical_interview` — CL009728 records “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.”; CL008068 records “Traced the nuisance low-volt alarm to a soft cell in the no 2 bank, replaced it.”. The documented policy supports a structured technical interview, not competence, eligibility or appointment.
+- Interview: `supported_technical_interview` — CL009753 (2023-11-17) records "Renewed fuse links, no.1 way. All made off.". This is specific, attributed evidence of hands-on electrical maintenance with transferable relevance to the O&M posting's plant-maintenance work. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL009753
+- Selected positive testimony: none selected
+- Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, fault_finding
-- Full clean log review: 207 rows; 6 distinct relevant patterns after template collapse.
+- Full clean log review: 207 rows; 6 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
 - Appraisal review: 9 exact keeper-code-keyed rows; 9 rows not selected by the appraisal filter.
 
 Category support:
 
-- `electrical` â€” 2023-10-16 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL009728; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#23979`).
-- `fault_finding` â€” 2023-10-16 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL009728; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#23979`).
+- `electrical` — 2023-10-16 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL009728; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#23979`).
+- `fault_finding` — 2023-10-16 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL009728; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#23979`).
 
 Evidence:
 
@@ -423,7 +1018,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview and use the cited logs as questions; assess fault diagnosis, safe isolation and hands-on plant maintenance rather than treating the records as proof.
+- Invite to a structured technical interview using CL009753 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -431,24 +1026,31 @@ Later qualification and mobilisation actions (only after selection progression):
 - First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
 - Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
 - Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
 
 ## K0650 — Duaghal Mac Ualghairg
 
-- Interview: `supported_technical_interview` — CL003088 records “Megger test on the no.1 feeder, 0.8 ohm, condemned the cable and ran a temporary.”; CL002876 records “Drive motor brushes and commutator dressed, rotation back to time.”. Keeper-code-keyed manager testimony in AP001712, AP001713 adds a screening lead, not proof of competence. The documented policy supports a structured technical interview, not competence, eligibility or appointment.
+- Interview: `supported_technical_interview` — CL010452 (2026-05-20) records "Lamp not lit, found the fuse gone. Renewed."; CL009955 (2024-07-12) records "Rebuilt the clockwork drive, cleaned forty years of gum out of the train.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Positive testimony in AP001712, AP001713 is an interview lead, not proof of competence. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL010452, CL009955
+- Selected positive testimony: AP001712, AP001713
+- Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, fault_finding, mechanical
-- Full clean log review: 238 rows; 10 distinct relevant patterns after template collapse.
+- Full clean log review: 238 rows; 10 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
 - Appraisal review: 3 exact keeper-code-keyed rows; 1 row not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- Appraisals AP001714 have year-only 2026 dates, so their position relative to 2026-10-11 is unknown and they remain context only.
 
 Category support:
 
-- `electrical` â€” 2003-09-12 â€” â€œMegger test on the no.1 feeder, 0.8 ohm, condemned the cable and ran a temporary.â€ (CL003088; `raw/logbooks/era2-keeperlog/KLOG2003.DAT#003779`).
-- `fault_finding` â€” 2003-09-12 â€” â€œMegger test on the no.1 feeder, 0.8 ohm, condemned the cable and ran a temporary.â€ (CL003088; `raw/logbooks/era2-keeperlog/KLOG2003.DAT#003779`).
-- `mechanical` â€” 2003-01-09 â€” â€œDrive motor brushes and commutator dressed, rotation back to time.â€ (CL002876; `raw/logbooks/era1-ocr/inchmarrig-2003.txt#L22`).
+- `electrical` — 2003-09-12 — “Megger test on the no.1 feeder, 0.8 ohm, condemned the cable and ran a temporary.” (CL003088; `raw/logbooks/era2-keeperlog/KLOG2003.DAT#003779`).
+- `fault_finding` — 2003-09-12 — “Megger test on the no.1 feeder, 0.8 ohm, condemned the cable and ran a temporary.” (CL003088; `raw/logbooks/era2-keeperlog/KLOG2003.DAT#003779`).
+- `mechanical` — 2003-01-09 — “Drive motor brushes and commutator dressed, rotation back to time.” (CL002876; `raw/logbooks/era1-ocr/inchmarrig-2003.txt#L22`).
 
 Evidence:
 
@@ -477,7 +1079,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview and use the cited logs and manager testimony as questions; assess fault diagnosis, safe isolation and hands-on plant maintenance rather than treating the records as proof.
+- Invite to a structured technical interview using CL010452, CL009955 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -485,24 +1087,32 @@ Later qualification and mobilisation actions (only after selection progression):
 - First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
 - Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
 - Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
 
 ## K0663 — Lugharn O Niallghusa
 
-- Interview: `supported_technical_interview` — CL009806 records “Checked continuity on the run to the fog hut.”; CL010451 records “Drive motor brushes and commutator dressed, rotation back to time.”. The documented policy supports a structured technical interview, not competence, eligibility or appointment.
+- Interview: `supported_technical_interview` — CL010471 (2026-07-02) records "Lamp changer stepping twice, dismantled the ratchet and dressed the pawl faces."; CL010451 (2026-05-17) records "Drive motor brushes and commutator dressed, rotation back to time.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP001757, AP001760 is retained with positive testimony in AP001755, AP001756, AP001758; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL010471, CL010451
+- Selected positive testimony: AP001755, AP001756, AP001758
+- Selected adverse testimony: AP001757, AP001760
 - Relevant evidence categories: electrical, fault_finding, mechanical
-- Full clean log review: 240 rows; 7 distinct relevant patterns after template collapse.
+- Full clean log review: 240 rows; 7 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
 - Appraisal review: 10 exact keeper-code-keyed rows; 5 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- Discuss the selected adverse testimony in AP001757, AP001760 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+- Appraisals AP001760 have year-only 2026 dates, so their position relative to 2026-10-11 is unknown and they remain context only.
 
 Category support:
 
-- `electrical` â€” 2026-05-17 â€” â€œDrive motor brushes and commutator dressed, rotation back to time.â€ (CL010451; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#57997`).
-- `fault_finding` â€” 2024-01-20 â€” â€œChecked continuity on the run to the fog hut.â€ (CL009806; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#27466`).
-- `mechanical` â€” 2026-05-17 â€” â€œDrive motor brushes and commutator dressed, rotation back to time.â€ (CL010451; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#57997`).
+- `electrical` — 2026-05-17 — “Drive motor brushes and commutator dressed, rotation back to time.” (CL010451; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#57997`).
+- `fault_finding` — 2024-01-20 — “Checked continuity on the run to the fog hut.” (CL009806; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#27466`).
+- `mechanical` — 2026-05-17 — “Drive motor brushes and commutator dressed, rotation back to time.” (CL010451; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#57997`).
 
 Evidence:
 
@@ -534,7 +1144,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview and use the cited logs and manager testimony as questions; assess fault diagnosis, safe isolation and hands-on plant maintenance rather than treating the records as proof.
+- Invite to a structured technical interview using CL010471, CL010451 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -542,24 +1152,31 @@ Later qualification and mobilisation actions (only after selection progression):
 - First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
 - Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
 - Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: present and issuer-verify the current dated Pass (LH501121).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: present and issuer-verify the current dated Pass (LH501121).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
 
 ## K0664 — Bruaigh O Braoscan
 
-- Interview: `supported_technical_interview` — CL009911 records “Checked continuity on the run to the fog hut.”; CL009139 records “Renewed fuse links, No.1 way. All made off.”. Keeper-code-keyed manager testimony in AP001767 adds a screening lead, not proof of competence. The documented policy supports a structured technical interview, not competence, eligibility or appointment.
+- Interview: `supported_technical_interview` — CL009911 (2024-05-12) records "Checked continuity on the run to the fog hut."; CL009694 (2023-09-06) records "Ran no.3 set 2 hrs. Oil and water checked.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Positive testimony in AP001767 is an interview lead, not proof of competence. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL009911, CL009694
+- Selected positive testimony: AP001767
+- Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, fault_finding, mechanical
-- Full clean log review: 188 rows; 8 distinct relevant patterns after template collapse.
+- Full clean log review: 188 rows; 8 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
 - Appraisal review: 9 exact keeper-code-keyed rows; 8 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- Appraisals AP001769 have year-only 2026 dates, so their position relative to 2026-10-11 is unknown and they remain context only.
 
 Category support:
 
-- `electrical` â€” 2024-05-12 â€” â€œChecked continuity on the run to the fog hut.â€ (CL009911; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#31434`).
-- `fault_finding` â€” 2024-05-12 â€” â€œChecked continuity on the run to the fog hut.â€ (CL009911; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#31434`).
-- `mechanical` â€” 2023-09-06 â€” â€œRan no.3 set 2 hrs. Oil and water checked.â€ (CL009694; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#22471`).
+- `electrical` — 2024-05-12 — “Checked continuity on the run to the fog hut.” (CL009911; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#31434`).
+- `fault_finding` — 2024-05-12 — “Checked continuity on the run to the fog hut.” (CL009911; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#31434`).
+- `mechanical` — 2023-09-06 — “Ran no.3 set 2 hrs. Oil and water checked.” (CL009694; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#22471`).
 
 Evidence:
 
@@ -588,7 +1205,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview and use the cited logs and manager testimony as questions; assess fault diagnosis, safe isolation and hands-on plant maintenance rather than treating the records as proof.
+- Invite to a structured technical interview using CL009911, CL009694 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -596,24 +1213,31 @@ Later qualification and mobilisation actions (only after selection progression):
 - First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
 - Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
 - Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
 
 ## K0817 — Odhran O Luachra
 
-- Interview: `supported_technical_interview` — CL009476 records “Traced the nuisance low-volt alarm to a soft cell in the no.1 bank, replaced it.”; CL008628 records “Tightened glands in the cable trunk by the stair.”. The documented policy supports a structured technical interview, not competence, eligibility or appointment.
+- Interview: `supported_technical_interview` — CL009476 (2022-11-24) records "Traced the nuisance low-volt alarm to a soft cell in the no.1 bank, replaced it."; CL008376 (2019-03-03) records "Compressor not making pressure, rings worn. Rebuilt the no 2 cylinder.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP002219, AP002225, AP002230 is retained with positive testimony; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL009476, CL008376
+- Selected positive testimony: none selected
+- Selected adverse testimony: AP002219, AP002225, AP002230
 - Relevant evidence categories: electrical, fault_finding, mechanical
-- Full clean log review: 333 rows; 8 distinct relevant patterns after template collapse.
+- Full clean log review: 333 rows; 8 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
 - Appraisal review: 13 exact keeper-code-keyed rows; 10 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- Discuss the selected adverse testimony in AP002219, AP002225, AP002230 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
 
 Category support:
 
-- `electrical` â€” 2022-11-24 â€” â€œTraced the nuisance low-volt alarm to a soft cell in the no.1 bank, replaced it.â€ (CL009476; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#12011`).
-- `fault_finding` â€” 2022-11-24 â€” â€œTraced the nuisance low-volt alarm to a soft cell in the no.1 bank, replaced it.â€ (CL009476; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#12011`).
-- `mechanical` â€” 2019-03-03 â€” â€œCompressor not making pressure, rings worn. Rebuilt the no 2 cylinder.â€ (CL008376; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#15552`).
+- `electrical` — 2022-11-24 — “Traced the nuisance low-volt alarm to a soft cell in the no.1 bank, replaced it.” (CL009476; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#12011`).
+- `fault_finding` — 2022-11-24 — “Traced the nuisance low-volt alarm to a soft cell in the no.1 bank, replaced it.” (CL009476; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#12011`).
+- `mechanical` — 2019-03-03 — “Compressor not making pressure, rings worn. Rebuilt the no 2 cylinder.” (CL008376; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#15552`).
 
 Evidence:
 
@@ -642,7 +1266,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview and use the cited logs and manager testimony as questions; assess fault diagnosis, safe isolation and hands-on plant maintenance rather than treating the records as proof.
+- Invite to a structured technical interview using CL009476, CL008376 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -650,24 +1274,31 @@ Later qualification and mobilisation actions (only after selection progression):
 - First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
 - Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
 - Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
 
 ## K0847 — Aoife Ni Mhurchu
 
-- Interview: `supported_technical_interview` — CL007701 records “Megger test on the NO.2 feeder, 48 psi, condemned the cable and ran a temporary.”; CL001792 records “Checked continuity on the run to the fog hut.”. Keeper-code-keyed manager testimony in AP002309 adds a screening lead, not proof of competence. The documented policy supports a structured technical interview, not competence, eligibility or appointment.
+- Interview: `supported_technical_interview` — CL008299 (2018-11-18) records "AVR on no.1 replaced and the volts set to 0.8 ohm, load-shared with No.1 properly after."; CL007737 (2017-03-19) records "Set the timing on No.1 after the pump was refitted, ran it up and checked exhaust temps.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Positive testimony in AP002309 is an interview lead, not proof of competence. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL008299, CL007737
+- Selected positive testimony: AP002309
+- Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, fault_finding, mechanical
-- Full clean log review: 297 rows; 10 distinct relevant patterns after template collapse.
+- Full clean log review: 297 rows; 10 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
 - Appraisal review: 6 exact keeper-code-keyed rows; 5 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- The permitted clean/manual attribution for CL007701, CL007737 is not corroborated by the cited raw identifier; preserve that provenance limitation and do not use those rows alone.
 
 Category support:
 
-- `electrical` â€” 2017-01-22 â€” â€œMegger test on the NO.2 feeder, 48 psi, condemned the cable and ran a temporary.â€ (CL007701; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#34379`).
-- `fault_finding` â€” 2017-01-22 â€” â€œMegger test on the NO.2 feeder, 48 psi, condemned the cable and ran a temporary.â€ (CL007701; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#34379`).
-- `mechanical` â€” 2017-03-19 â€” â€œSet the timing on No.1 after the pump was refitted, ran it up and checked exhaust temps.â€ (CL007737; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#36467`).
+- `electrical` — 2017-01-22 — “Megger test on the NO.2 feeder, 48 psi, condemned the cable and ran a temporary.” (CL007701; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#34379`).
+- `fault_finding` — 2017-01-22 — “Megger test on the NO.2 feeder, 48 psi, condemned the cable and ran a temporary.” (CL007701; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#34379`).
+- `mechanical` — 2017-03-19 — “Set the timing on No.1 after the pump was refitted, ran it up and checked exhaust temps.” (CL007737; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#36467`).
 
 Evidence:
 
@@ -699,7 +1330,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview and use the cited logs and manager testimony as questions; assess fault diagnosis, safe isolation and hands-on plant maintenance rather than treating the records as proof.
+- Invite to a structured technical interview using CL008299, CL007737 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -707,24 +1338,85 @@ Later qualification and mobilisation actions (only after selection progression):
 - First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
 - Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
 - Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
+
+## K0897 — Bearach Mac Teallach
+
+- Interview: `supported_technical_interview` — CL009512 (2023-01-26) records "Megger test on the No.2 feeder, 2.4 ohm, condemned the cable and ran a temporary."; CL008539 (2019-10-07) records "Changed oil and filters on no 1.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP002492 is retained with positive testimony; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Application eligibility: `plausible_but_essential_evidence_incomplete`
+- Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL009512, CL008539
+- Selected positive testimony: none selected
+- Selected adverse testimony: AP002492
+- Relevant evidence categories: electrical, fault_finding, mechanical
+- Full clean log review: 170 rows; 7 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
+- Appraisal review: 11 exact keeper-code-keyed rows; 10 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- Discuss the selected adverse testimony in AP002492 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+
+Category support:
+
+- `electrical` — 2023-01-26 — “Megger test on the No.2 feeder, 2.4 ohm, condemned the cable and ran a temporary.” (CL009512; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#14356`).
+- `fault_finding` — 2023-01-26 — “Megger test on the No.2 feeder, 2.4 ohm, condemned the cable and ran a temporary.” (CL009512; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#14356`).
+- `mechanical` — 2019-10-07 — “Changed oil and filters on no 1.” (CL008539; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#23484`).
+
+Evidence:
+
+- 2023-01-26 — “Megger test on the No.2 feeder, 2.4 ohm, condemned the cable and ran a temporary.” (CL009512; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#14356`; clean/manual attribution corroborated by raw payroll value 0011753 normalized to 11753, matching clean payroll 0011753).
+- 2020-11-14 — “Checked continuity on the run to the fog hut.” (CL008869; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#37822`; clean/manual attribution corroborated by raw payroll value 0011753 normalized to 11753, matching clean payroll 0011753).
+- 2021-03-04 — “Lamp not lit, found the fuse gone. Renewed.” (CL008960; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#41756`; clean/manual attribution corroborated by raw payroll value 11753 normalized to 11753, matching clean payroll 0011753).
+- 2020-02-17 — “Renewed fuse links, no.2 way. All made off.” (CL008649; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#28352`; clean/manual attribution corroborated by raw payroll value 0011753 normalized to 11753, matching clean payroll 0011753).
+- 2019-10-07 — “Changed oil and filters on no 1.” (CL008539; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#23484`; clean/manual attribution corroborated by raw payroll value 0011753 normalized to 11753, matching clean payroll 0011753).
+
+Manager testimony selected as screening context:
+
+- 2023 (year precision) — Gap identified in chasing faults. (AP002492; `raw/appraisals/appraisals.jsonl#AP002492`; concern: identified_gap). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
+
+Credential position:
+
+- Dated Pass: HVAP-01, completed 2026-07-27, supplied expiry 2029-03-23 (`raw/training/vendor-c-learnhub-2017-2026.json#LH501548`).
+- HVAP-03: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH501545`).
+
+Initial selection action:
+
+- Invite to a structured technical interview using CL009512, CL008539 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+
+Later qualification and mobilisation actions (only after selection progression):
+
+- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
+- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
+- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
+- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
 
 ## K1055 — Tailte Ni Chuirrin
 
-- Interview: `supported_technical_interview` — CL000604 records “Checked continuity on the run to the fog hut.”; CL001961 records “Cleaned the contacts in the changeover relay.”. The documented policy supports a structured technical interview, not competence, eligibility or appointment.
+- Interview: `supported_technical_interview` — CL003053 (2003-08-05) records "Compressor not making pressure, rings worn. Rebuilt the no.1 cylinder."; CL001961 (1999-07-24) records "Cleaned the contacts in the changeover relay.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Positive testimony in AP002944 is an interview lead, not proof of competence. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL003053, CL001961
+- Selected positive testimony: AP002944
+- Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, fault_finding, mechanical
-- Full clean log review: 325 rows; 8 distinct relevant patterns after template collapse.
+- Full clean log review: 325 rows; 8 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
 - Appraisal review: 1 exact keeper-code-keyed rows; 0 rows not selected by the appraisal filter.
 
 Category support:
 
-- `electrical` â€” 1992-09-01 â€” â€œChecked continuity on the run to the fog hut.â€ (CL000604; `raw/logbooks/era1-ocr/knockmoyne-1992.txt#L448`).
-- `fault_finding` â€” 1992-09-01 â€” â€œChecked continuity on the run to the fog hut.â€ (CL000604; `raw/logbooks/era1-ocr/knockmoyne-1992.txt#L448`).
-- `mechanical` â€” 2003-08-05 â€” â€œCompressor not making pressure, rings worn. Rebuilt the no.1 cylinder.â€ (CL003053; `raw/logbooks/era1-ocr/mullanoe-2003.txt#L194`).
+- `electrical` — 1992-09-01 — “Checked continuity on the run to the fog hut.” (CL000604; `raw/logbooks/era1-ocr/knockmoyne-1992.txt#L448`).
+- `fault_finding` — 1992-09-01 — “Checked continuity on the run to the fog hut.” (CL000604; `raw/logbooks/era1-ocr/knockmoyne-1992.txt#L448`).
+- `mechanical` — 2003-08-05 — “Compressor not making pressure, rings worn. Rebuilt the no.1 cylinder.” (CL003053; `raw/logbooks/era1-ocr/mullanoe-2003.txt#L194`).
 
 Evidence:
 
@@ -750,7 +1442,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview and use the cited logs and manager testimony as questions; assess fault diagnosis, safe isolation and hands-on plant maintenance rather than treating the records as proof.
+- Invite to a structured technical interview using CL003053, CL001961 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -758,23 +1450,89 @@ Later qualification and mobilisation actions (only after selection progression):
 - First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
 - Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
 - Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
+
+## K1231 — Joachima Ulverstane
+
+- Interview: `supported_technical_interview` — CL010320 (2025-11-15) records "Rewired the changeover contactor arrangement, tested on both feeds and left in auto."; CL008529 (2019-09-21) records "Ran no.2 set 4 hrs. Oil and water checked.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP003564, AP003566, AP003571 is retained with positive testimony in AP003567, AP003568, AP003571; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Application eligibility: `plausible_but_essential_evidence_incomplete`
+- Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL010320, CL008529
+- Selected positive testimony: AP003567, AP003568, AP003571
+- Selected adverse testimony: AP003564, AP003566, AP003571
+- Relevant evidence categories: electrical, fault_finding, mechanical, permit_or_isolation
+- Full clean log review: 300 rows; 10 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
+- Appraisal review: 15 exact keeper-code-keyed rows; 10 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- Discuss the selected adverse testimony in AP003564, AP003566, AP003571 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+
+Category support:
+
+- `electrical` — 2025-07-15 — “Isolated no 2 transformer, earths applied both ends, permit 1102 issued to the contractor.” (CL010239; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#46689`).
+- `fault_finding` — 2025-02-26 — “Checked continuity on the run to the fog hut.” (CL010135; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#41590`).
+- `mechanical` — 2019-09-21 — “Ran no.2 set 4 hrs. Oil and water checked.” (CL008529; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#22910`).
+- `permit_or_isolation` — 2025-07-15 — “Isolated no 2 transformer, earths applied both ends, permit 1102 issued to the contractor.” (CL010239; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#46689`).
+
+Evidence:
+
+- 2025-07-15 — “Isolated no 2 transformer, earths applied both ends, permit 1102 issued to the contractor.” (CL010239; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#46689`; clean/manual attribution corroborated by raw payroll value 0012406 normalized to 12406, matching clean payroll 0012406).
+- 2025-02-26 — “Checked continuity on the run to the fog hut.” (CL010135; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#41590`; clean/manual attribution corroborated by raw payroll value 0012406 normalized to 12406, matching clean payroll 0012406).
+- 2024-02-22 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL009834; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#28644`; clean/manual attribution corroborated by raw payroll value 12406 normalized to 12406, matching clean payroll 0012406).
+- 2016-11-03 — “Megger test on the No.2 feeder, 11.2 V, condemned the cable and ran a temporary.” (CL007632; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#31397`; clean/manual attribution corroborated by raw name Joachima Ulverstane).
+- 2025-11-15 — “Rewired the changeover contactor arrangement, tested on both feeds and left in auto.” (CL010320; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#51050`; clean/manual attribution corroborated by raw payroll value 0012406 normalized to 12406, matching clean payroll 0012406).
+- 2019-09-21 — “Ran no.2 set 4 hrs. Oil and water checked.” (CL008529; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#22910`; clean/manual attribution corroborated by raw payroll value 0012406 normalized to 12406, matching clean payroll 0012406).
+
+Manager testimony selected as screening context:
+
+- 2011 (year precision) — The standard achieved in the boards falls below that expected of the grade. (AP003564; `raw/appraisals/appraisals.jsonl#AP003564`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
+- 2013 (year precision) — The standard achieved in the distribution side falls below that expected of the grade. (AP003566; `raw/appraisals/appraisals.jsonl#AP003566`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
+- 2014 (year precision) — Joachima — 2014 Joachima took on chasing faults without being asked and made a proper job of it. (AP003567; `raw/appraisals/appraisals.jsonl#AP003567`; support: made_proper_job). Manager testimony only, not competence or authorisation.
+- 2015 (year precision) — Good humoured, hard working, and genuinely capable at fault work. (AP003568; `raw/appraisals/appraisals.jsonl#AP003568`; support: explicit_capability). Manager testimony only, not competence or authorisation.
+- 2019 (year precision) — switchgear work has to be checked behind her. / fault work to a good standard. (AP003571; `raw/appraisals/appraisals.jsonl#AP003571`; support: good_standard; concern: work_checked_behind). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
+
+Credential position:
+
+- No currently dated relevant LearnHub Pass was established at the cutoff.
+
+Initial selection action:
+
+- Invite to a structured technical interview using CL010320, CL008529 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+
+Later qualification and mobilisation actions (only after selection progression):
+
+- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
+- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
+- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
+- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
 
 ## K1281 — Fearghal Nethercarn
 
-- Interview: `supported_technical_interview` — CL001465 records “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.”; CL008233 records “Protection relay settings checked against the schedule and two were found wrong.”. The documented policy supports a structured technical interview, not competence, eligibility or appointment.
+- Interview: `supported_technical_interview` — CL008233 (2018-09-13) records "Protection relay settings checked against the schedule and two were found wrong.". This is specific, attributed evidence of hands-on electrical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Positive testimony in AP003700 is an interview lead, not proof of competence. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL008233
+- Selected positive testimony: AP003700
+- Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, fault_finding
-- Full clean log review: 231 rows; 6 distinct relevant patterns after template collapse.
+- Full clean log review: 231 rows; 6 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
 - Appraisal review: 1 exact keeper-code-keyed rows; 0 rows not selected by the appraisal filter.
 
 Category support:
 
-- `electrical` â€” 1997-12-28 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL001465; `raw/logbooks/era1-ocr/mullanoe-1997.txt#L677`).
-- `fault_finding` â€” 1997-12-28 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL001465; `raw/logbooks/era1-ocr/mullanoe-1997.txt#L677`).
+- `electrical` — 1997-12-28 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL001465; `raw/logbooks/era1-ocr/mullanoe-1997.txt#L677`).
+- `fault_finding` — 1997-12-28 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL001465; `raw/logbooks/era1-ocr/mullanoe-1997.txt#L677`).
 
 Evidence:
 
@@ -802,7 +1560,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview and use the cited logs and manager testimony as questions; assess fault diagnosis, safe isolation and hands-on plant maintenance rather than treating the records as proof.
+- Invite to a structured technical interview using CL008233 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -810,23 +1568,30 @@ Later qualification and mobilisation actions (only after selection progression):
 - First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
 - Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
 - Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
 
 ## K1302 — Uaithne Mac Bruachail
 
-- Interview: `supported_technical_interview` — CL004774 records “AVR on no.2 replaced and the volts set to 0.8 ohm, load-shared with no.1 properly after.”; CL002551 records “Changed oil and filters on No.1.”. The documented policy supports a structured technical interview, not competence, eligibility or appointment.
+- Interview: `supported_technical_interview` — CL004774 (2008-12-02) records "AVR on no.2 replaced and the volts set to 0.8 ohm, load-shared with no.1 properly after."; CL002551 (2001-09-19) records "Changed oil and filters on No.1.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL004774, CL002551
+- Selected positive testimony: none selected
+- Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, mechanical
-- Full clean log review: 288 rows; 6 distinct relevant patterns after template collapse.
+- Full clean log review: 288 rows; 6 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
 - Appraisal review: 6 exact keeper-code-keyed rows; 6 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- Appraisals AP003748 have year-only 2026 dates, so their position relative to 2026-10-11 is unknown and they remain context only.
 
 Category support:
 
-- `electrical` â€” 2008-12-02 â€” â€œAVR on no.2 replaced and the volts set to 0.8 ohm, load-shared with no.1 properly after.â€ (CL004774; `raw/logbooks/era2-keeperlog/KLOG2008.DAT#011722`).
-- `mechanical` â€” 2001-09-19 â€” â€œChanged oil and filters on No.1.â€ (CL002551; `raw/logbooks/era1-ocr/fionnvarra-2001.txt#L388`).
+- `electrical` — 2008-12-02 — “AVR on no.2 replaced and the volts set to 0.8 ohm, load-shared with no.1 properly after.” (CL004774; `raw/logbooks/era2-keeperlog/KLOG2008.DAT#011722`).
+- `mechanical` — 2001-09-19 — “Changed oil and filters on No.1.” (CL002551; `raw/logbooks/era1-ocr/fionnvarra-2001.txt#L388`).
 
 Evidence:
 
@@ -851,7 +1616,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview and use the cited logs as questions; assess fault diagnosis, safe isolation and hands-on plant maintenance rather than treating the records as proof.
+- Invite to a structured technical interview using CL004774, CL002551 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -859,24 +1624,100 @@ Later qualification and mobilisation actions (only after selection progression):
 - First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
 - Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
 - Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
 
-## K1363 — Ualaith Enfarrow
+## K1345 — Dualta O hIarnain
 
-- Interview: `supported_technical_interview` — CL002712 records “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.”; CL001473 records “Checked continuity on the run to the fog hut.”. The documented policy supports a structured technical interview, not competence, eligibility or appointment.
+- Interview: `supported_technical_interview` — CL008356 (2019-02-17) records "Tightened glands in the cable trunk by the stair."; CL007631 (2016-11-03) records "Ran NO.2 set 6 hrs. Oil and water checked.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP003873, AP003877 is retained with positive testimony in AP003865, AP003870, AP003874; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
-- Relevant evidence categories: electrical, fault_finding, mechanical
-- Full clean log review: 252 rows; 6 distinct relevant patterns after template collapse.
-- Appraisal review: 6 exact keeper-code-keyed rows; 6 rows not selected by the appraisal filter.
+- Core work records used for interview policy: CL008356, CL007631
+- Selected positive testimony: AP003865, AP003870, AP003874
+- Selected adverse testimony: AP003873, AP003877
+- Relevant evidence categories: electrical, mechanical
+- Full clean log review: 209 rows; 8 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
+- Appraisal review: 13 exact keeper-code-keyed rows; 8 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- Discuss the selected adverse testimony in AP003873, AP003877 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+- Appraisals AP003877 have year-only 2026 dates, so their position relative to 2026-10-11 is unknown and they remain context only.
 
 Category support:
 
-- `electrical` â€” 2002-05-08 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL002712; `raw/logbooks/era1-ocr/rinnaglas-2002.txt#L210`).
-- `fault_finding` â€” 2002-05-08 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL002712; `raw/logbooks/era1-ocr/rinnaglas-2002.txt#L210`).
-- `mechanical` â€” 2023-09-16 â€” â€œRepaired the derrick luffing gear, new pin and bush turned up on station.â€ (CL009700; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#22883`).
+- `electrical` — 2019-02-17 — “Tightened glands in the cable trunk by the stair.” (CL008356; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#14956`).
+- `mechanical` — 2016-11-03 — “Ran NO.2 set 6 hrs. Oil and water checked.” (CL007631; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#31387`).
+
+Evidence:
+
+- 2019-02-17 — “Tightened glands in the cable trunk by the stair.” (CL008356; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#14956`; clean/manual attribution corroborated by raw payroll value 11266 normalized to 11266, matching clean payroll 0011266).
+- 2016-11-03 — “Ran NO.2 set 6 hrs. Oil and water checked.” (CL007631; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#31387`; clean/manual attribution corroborated by raw name Dualta O hIarnain).
+- 2014-12-01 — “Load tested the winch and the landing gear to the annual figure and certified the log.” (CL007040; `raw/logbooks/era2-keeperlog/KLOG2014.DAT#005749`; clean/manual attribution corroborated by raw keeper_code K1345).
+- 2012-08-26 — “Bled the fuel system after the filter change.” (CL006199; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#008592`; clean/manual attribution corroborated by raw keeper_code K1345).
+- 2011-10-20 — “Gearbox stripped on the winch, 2 teeth found broken. Replaced the wheel.” (CL005867; `raw/logbooks/era2-keeperlog/KLOG2011.DAT#010421`; clean/manual attribution corroborated by raw keeper_code K1345).
+
+Manager testimony selected as screening context:
+
+- 2008 (year precision) — When the winch went wrong in the spring, Dualta was the one who sorted it out. (AP003865; `raw/appraisals/appraisals.jsonl#AP003865`; support: resolved_failure). Manager testimony only, not competence or authorisation.
+- 2014 (year precision) — When lifting work went wrong in the spring, Dualta was the one who sorted it out. (AP003870; `raw/appraisals/appraisals.jsonl#AP003870`; support: resolved_failure). Manager testimony only, not competence or authorisation.
+- 2018 (year precision) — the derrick has to be checked behind him. (AP003873; `raw/appraisals/appraisals.jsonl#AP003873`; concern: work_checked_behind). Manager testimony only, not competence or authorisation.
+- 2019 (year precision) — When the derrick went wrong in the spring, Dualta was the one who sorted it out. (AP003874; `raw/appraisals/appraisals.jsonl#AP003874`; support: resolved_failure). Manager testimony only, not competence or authorisation.
+- 2026 (year precision) — lifting work has to be checked behind him. (AP003877; `raw/appraisals/appraisals.jsonl#AP003877`; concern: work_checked_behind). Manager testimony only, not competence or authorisation.
+
+- Same-year timing uncertainty: AP003877 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
+
+Credential position:
+
+- Dated Pass: MECS-2, completed 2025-10-14, supplied expiry 2030-07-09 (`raw/training/vendor-c-learnhub-2017-2026.json#LH502580`).
+- WAHS-3: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502573`).
+- MECS-1: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502572`).
+- MECS-5: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502577`).
+- Expiry conflict: HVAP-04 Pass LH502579 supplies 2026-11-04 (current at cutoff), while the nominal 3-year rule points to 2026-01-14 (expired); issuer verification required (`raw/training/vendor-c-learnhub-2017-2026.json#LH502579`).
+- Conflict `expiry_rule_conflict`: At 2026-10-11, the supplied expiry says current but the nominal scheme-rule date says expired; issuer verification is required before relying on either date.
+- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 2; later modules do not bridge missing earlier stages.
+
+Initial selection action:
+
+- Invite to a structured technical interview using CL008356, CL007631 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+
+Later qualification and mobilisation actions (only after selection progression):
+
+- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
+- First, ask the issuer to verify the conflicting expiry evidence for LH502579 and retain both supplied and nominal dates until resolved.
+- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
+- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
+
+## K1363 — Ualaith Enfarrow
+
+- Interview: `supported_technical_interview` — CL009245 (2022-01-28) records "Filter changed on the power pack."; CL008995 (2021-04-21) records "Renewed fuse links, no.3 way. All made off.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Application eligibility: `plausible_but_essential_evidence_incomplete`
+- Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL009245, CL008995
+- Selected positive testimony: none selected
+- Selected adverse testimony: none selected
+- Relevant evidence categories: electrical, fault_finding, mechanical
+- Full clean log review: 252 rows; 6 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
+- Appraisal review: 6 exact keeper-code-keyed rows; 6 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- The permitted clean/manual attribution for CL009700 is not corroborated by the cited raw identifier; preserve that provenance limitation and do not use those rows alone.
+
+Category support:
+
+- `electrical` — 2002-05-08 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL002712; `raw/logbooks/era1-ocr/rinnaglas-2002.txt#L210`).
+- `fault_finding` — 2002-05-08 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL002712; `raw/logbooks/era1-ocr/rinnaglas-2002.txt#L210`).
+- `mechanical` — 2023-09-16 — “Repaired the derrick luffing gear, new pin and bush turned up on station.” (CL009700; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#22883`).
 
 Evidence:
 
@@ -903,7 +1744,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview and use the cited logs as questions; assess fault diagnosis, safe isolation and hands-on plant maintenance rather than treating the records as proof.
+- Invite to a structured technical interview using CL009245, CL008995 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -911,25 +1752,33 @@ Later qualification and mobilisation actions (only after selection progression):
 - First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
 - Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
 - Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
 
 ## K1374 — Aodhan O hAghmoir
 
-- Interview: `supported_technical_interview` — CL008335 records “Megger test on the No.2 feeder, 2.4 ohm, condemned the cable and ran a temporary.”; CL010173 records “Isolated No.2 transformer, earths applied both ends, permit 0412 issued to the contractor.”. The documented policy supports a structured technical interview, not competence, eligibility or appointment.
+- Interview: `supported_technical_interview` — CL010559 (2026-10-08) records "Battery checked on the beacon."; CL009203 (2021-12-18) records "Changed oil and filters on no.2.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP003945, AP003949 is retained with positive testimony in AP003954; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL010559, CL009203
+- Selected positive testimony: AP003954
+- Selected adverse testimony: AP003945, AP003949
 - Relevant evidence categories: electrical, fault_finding, mechanical, permit_or_isolation
-- Full clean log review: 259 rows; 7 distinct relevant patterns after template collapse.
+- Full clean log review: 259 rows; 7 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
 - Appraisal review: 10 exact keeper-code-keyed rows; 6 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- Discuss the selected adverse testimony in AP003945, AP003949 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+- Appraisals AP003954 have year-only 2026 dates, so their position relative to 2026-10-11 is unknown and they remain context only.
 
 Category support:
 
-- `electrical` â€” 2025-04-19 â€” â€œIsolated No.2 transformer, earths applied both ends, permit 0412 issued to the contractor.â€ (CL010173; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#43555`).
-- `fault_finding` â€” 2019-01-20 â€” â€œMegger test on the No.2 feeder, 2.4 ohm, condemned the cable and ran a temporary.â€ (CL008335; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#13919`).
-- `mechanical` â€” 2021-12-18 â€” â€œChanged oil and filters on no.2.â€ (CL009203; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#52250`).
-- `permit_or_isolation` â€” 2025-04-19 â€” â€œIsolated No.2 transformer, earths applied both ends, permit 0412 issued to the contractor.â€ (CL010173; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#43555`).
+- `electrical` — 2025-04-19 — “Isolated No.2 transformer, earths applied both ends, permit 0412 issued to the contractor.” (CL010173; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#43555`).
+- `fault_finding` — 2019-01-20 — “Megger test on the No.2 feeder, 2.4 ohm, condemned the cable and ran a temporary.” (CL008335; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#13919`).
+- `mechanical` — 2021-12-18 — “Changed oil and filters on no.2.” (CL009203; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#52250`).
+- `permit_or_isolation` — 2025-04-19 — “Isolated No.2 transformer, earths applied both ends, permit 0412 issued to the contractor.” (CL010173; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#43555`).
 
 Evidence:
 
@@ -967,7 +1816,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview and use the cited logs and manager testimony as questions; assess fault diagnosis, safe isolation and hands-on plant maintenance rather than treating the records as proof.
+- Invite to a structured technical interview using CL010559, CL009203 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -975,24 +1824,31 @@ Later qualification and mobilisation actions (only after selection progression):
 - First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
 - Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
 - Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: present and issuer-verify the current dated Pass (LH502626). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: Not achieved in LH502616 is not a Pass; complete training and assessment if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: present and issuer-verify the current dated Pass (LH502626). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: Not achieved in LH502616 is not a Pass; complete training and assessment if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
 
 ## K1418 — Hurlan O Failbhe
 
-- Interview: `supported_technical_interview` — CL003361 records “Checked continuity on the run to the fog hut.”; CL004517 records “Changed the battery in the portable set.”. The documented policy supports a structured technical interview, not competence, eligibility or appointment.
+- Interview: `supported_technical_interview` — CL004517 (2008-02-24) records "Changed the battery in the portable set."; CL003898 (2006-03-09) records "Ran No.2 set 8 hrs. Oil and water checked.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL004517, CL003898
+- Selected positive testimony: none selected
+- Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, fault_finding, mechanical
-- Full clean log review: 297 rows; 7 distinct relevant patterns after template collapse.
+- Full clean log review: 297 rows; 7 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
 - Appraisal review: 5 exact keeper-code-keyed rows; 5 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- Appraisals AP004064 have year-only 2026 dates, so their position relative to 2026-10-11 is unknown and they remain context only.
 
 Category support:
 
-- `electrical` â€” 2004-07-09 â€” â€œChecked continuity on the run to the fog hut.â€ (CL003361; `raw/logbooks/era2-keeperlog/KLOG2004.DAT#006859`).
-- `fault_finding` â€” 2004-07-09 â€” â€œChecked continuity on the run to the fog hut.â€ (CL003361; `raw/logbooks/era2-keeperlog/KLOG2004.DAT#006859`).
-- `mechanical` â€” 2006-03-09 â€” â€œRan No.2 set 8 hrs. Oil and water checked.â€ (CL003898; `raw/logbooks/era2-keeperlog/KLOG2006.DAT#002534`).
+- `electrical` — 2004-07-09 — “Checked continuity on the run to the fog hut.” (CL003361; `raw/logbooks/era2-keeperlog/KLOG2004.DAT#006859`).
+- `fault_finding` — 2004-07-09 — “Checked continuity on the run to the fog hut.” (CL003361; `raw/logbooks/era2-keeperlog/KLOG2004.DAT#006859`).
+- `mechanical` — 2006-03-09 — “Ran No.2 set 8 hrs. Oil and water checked.” (CL003898; `raw/logbooks/era2-keeperlog/KLOG2006.DAT#002534`).
 
 Evidence:
 
@@ -1019,7 +1875,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview and use the cited logs as questions; assess fault diagnosis, safe isolation and hands-on plant maintenance rather than treating the records as proof.
+- Invite to a structured technical interview using CL004517, CL003898 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -1027,24 +1883,98 @@ Later qualification and mobilisation actions (only after selection progression):
 - First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
 - Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
 - Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: renew the expired Pass (LH502692); the posting says the employer funds renewals.
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: the supplied Pass is expired (LH502692); ask the issuer which renewal, assessment or training route applies. The posting says the employer funds renewals, but it does not define the route or promise first-time training funding.
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
 
-## K1468 — Ruadhan O Niallghusa
+## K1446 — Kelveen Sellanby
 
-- Interview: `supported_technical_interview` — CL003121 records “Checked continuity on the run to the fog hut.”; CL000944 records “Megger test on the no 2 feeder, 2.4 ohm, condemned the cable and ran a temporary.”. The documented policy supports a structured technical interview, not competence, eligibility or appointment.
+- Interview: `supported_technical_interview` — CL010352 (2026-01-02) records "Traced the nuisance low-volt alarm to a soft cell in the NO.2 bank, replaced it."; CL010071 (2024-12-06) records "Bled the fuel system after the filter change.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP004147, AP004150 is retained with positive testimony; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL010352, CL010071
+- Selected positive testimony: none selected
+- Selected adverse testimony: AP004147, AP004150
 - Relevant evidence categories: electrical, fault_finding, mechanical
-- Full clean log review: 200 rows; 13 distinct relevant patterns after template collapse.
-- Appraisal review: 3 exact keeper-code-keyed rows; 2 rows not selected by the appraisal filter.
+- Full clean log review: 408 rows; 8 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
+- Appraisal review: 10 exact keeper-code-keyed rows; 8 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- Discuss the selected adverse testimony in AP004147, AP004150 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+- Appraisals AP004153 have year-only 2026 dates, so their position relative to 2026-10-11 is unknown and they remain context only.
 
 Category support:
 
-- `electrical` â€” 2003-10-11 â€” â€œChecked continuity on the run to the fog hut.â€ (CL003121; `raw/logbooks/era2-keeperlog/KLOG2003.DAT#004186`).
-- `fault_finding` â€” 2003-10-11 â€” â€œChecked continuity on the run to the fog hut.â€ (CL003121; `raw/logbooks/era2-keeperlog/KLOG2003.DAT#004186`).
-- `mechanical` â€” 2026-05-16 â€” â€œSet the timing on NO.2 after the pump was refitted, ran it up and checked exhaust temps.â€ (CL010450; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#57976`).
+- `electrical` — 2026-01-02 — “Traced the nuisance low-volt alarm to a soft cell in the NO.2 bank, replaced it.” (CL010352; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#52786`).
+- `fault_finding` — 2026-01-02 — “Traced the nuisance low-volt alarm to a soft cell in the NO.2 bank, replaced it.” (CL010352; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#52786`).
+- `mechanical` — 2024-12-06 — “Bled the fuel system after the filter change.” (CL010071; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38646`).
+
+Evidence:
+
+- 2026-01-02 — “Traced the nuisance low-volt alarm to a soft cell in the NO.2 bank, replaced it.” (CL010352; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#52786`; clean/manual attribution corroborated by raw payroll value 0011572 normalized to 11572, matching clean payroll 0011572).
+- 2024-12-13 — “Changed the battery in the portable set.” (CL010079; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38892`; clean/manual attribution corroborated by raw payroll value 0011572 normalized to 11572, matching clean payroll 0011572).
+- 2024-12-06 — “Bled the fuel system after the filter change.” (CL010071; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38646`; clean/manual attribution corroborated by raw payroll value 11572 normalized to 11572, matching clean payroll 0011572).
+- 2023-07-04 — “Gas tested the fuel tank before entry.” (CL009650; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#20199`; clean/manual attribution corroborated by raw payroll value 0011572 normalized to 11572, matching clean payroll 0011572).
+- 2020-07-17 — “Set the timing on no.3 after the pump was refitted, ran it up and checked exhaust temps.” (CL008769; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#33654`; clean/manual attribution corroborated by raw payroll value 11572 normalized to 11572, matching clean payroll 0011572).
+
+Manager testimony selected as screening context:
+
+- 2018 (year precision) — The standard achieved in height work falls below that expected of the grade. (AP004147; `raw/appraisals/appraisals.jsonl#AP004147`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
+- 2023 (year precision) — Needs supervision on the standby banks. / staging work needs work. (AP004150; `raw/appraisals/appraisals.jsonl#AP004150`; concern: needs_supervision, needs_work). Manager testimony only, not competence or authorisation.
+
+- Same-year timing uncertainty: AP004153 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
+
+Credential position:
+
+- Dated Pass: HVAP-02, completed 2024-08-05, supplied expiry 2027-09-20 (`raw/training/vendor-c-learnhub-2017-2026.json#LH502759`).
+- OSSC-SS: Attended; `attended_not_passed` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502750`).
+- HVAP-04: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502751`).
+- MECS-3: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502753`).
+- MPMC-B: Attended; `attended_not_passed` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502755`).
+- Conflict `prerequisite_not_established`: A current OSSC-SS prerequisite is not established by the dated LearnHub rows supplied.
+- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 1; later modules do not bridge missing earlier stages.
+
+Initial selection action:
+
+- Invite to a structured technical interview using CL010352, CL010071 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+
+Later qualification and mobilisation actions (only after selection progression):
+
+- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
+- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
+- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
+- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: Attended in LH502750 is not a Pass; establish the required passed assessment if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
+
+## K1468 — Ruadhan O Niallghusa
+
+- Interview: `supported_technical_interview` — CL010450 (2026-05-16) records "Set the timing on NO.2 after the pump was refitted, ran it up and checked exhaust temps."; CL010252 (2025-08-04) records "Lamp not lit, found the fuse gone. Renewed.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP004219 is retained with positive testimony; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Application eligibility: `plausible_but_essential_evidence_incomplete`
+- Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL010450, CL010252
+- Selected positive testimony: none selected
+- Selected adverse testimony: AP004219
+- Relevant evidence categories: electrical, fault_finding, mechanical
+- Full clean log review: 200 rows; 13 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
+- Appraisal review: 3 exact keeper-code-keyed rows; 2 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- Discuss the selected adverse testimony in AP004219 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+
+Category support:
+
+- `electrical` — 2003-10-11 — “Checked continuity on the run to the fog hut.” (CL003121; `raw/logbooks/era2-keeperlog/KLOG2003.DAT#004186`).
+- `fault_finding` — 2003-10-11 — “Checked continuity on the run to the fog hut.” (CL003121; `raw/logbooks/era2-keeperlog/KLOG2003.DAT#004186`).
+- `mechanical` — 2026-05-16 — “Set the timing on NO.2 after the pump was refitted, ran it up and checked exhaust temps.” (CL010450; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#57976`).
 
 Evidence:
 
@@ -1072,7 +2002,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview and use the cited logs and manager testimony as questions; assess fault diagnosis, safe isolation and hands-on plant maintenance rather than treating the records as proof.
+- Invite to a structured technical interview using CL010450, CL010252 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -1080,24 +2010,31 @@ Later qualification and mobilisation actions (only after selection progression):
 - First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
 - Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
 - Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
 
 ## K1474 — Ossian Mac Domhnallain
 
-- Interview: `supported_technical_interview` — CL006207 records “Checked continuity on the run to the fog hut.”; CL007339 records “Lamp not lit, found the fuse gone. Renewed.”. The documented policy supports a structured technical interview, not competence, eligibility or appointment.
+- Interview: `supported_technical_interview` — CL007218 (2015-06-25) records "Renewed fuse links, no 2 way. All made off."; CL005945 (2012-01-05) records "Filter changed on the power pack.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL007218, CL005945
+- Selected positive testimony: none selected
+- Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, fault_finding, mechanical
-- Full clean log review: 233 rows; 7 distinct relevant patterns after template collapse.
+- Full clean log review: 233 rows; 7 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
 - Appraisal review: 7 exact keeper-code-keyed rows; 7 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- The permitted clean/manual attribution for CL007339 is not corroborated by the cited raw identifier; preserve that provenance limitation and do not use those rows alone.
 
 Category support:
 
-- `electrical` â€” 2012-09-03 â€” â€œChecked continuity on the run to the fog hut.â€ (CL006207; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#008781`).
-- `fault_finding` â€” 2012-09-03 â€” â€œChecked continuity on the run to the fog hut.â€ (CL006207; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#008781`).
-- `mechanical` â€” 2012-01-05 â€” â€œFilter changed on the power pack.â€ (CL005945; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#000173`).
+- `electrical` — 2012-09-03 — “Checked continuity on the run to the fog hut.” (CL006207; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#008781`).
+- `fault_finding` — 2012-09-03 — “Checked continuity on the run to the fog hut.” (CL006207; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#008781`).
+- `mechanical` — 2012-01-05 — “Filter changed on the power pack.” (CL005945; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#000173`).
 
 Evidence:
 
@@ -1119,7 +2056,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview and use the cited logs as questions; assess fault diagnosis, safe isolation and hands-on plant maintenance rather than treating the records as proof.
+- Invite to a structured technical interview using CL007218, CL005945 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -1127,23 +2064,89 @@ Later qualification and mobilisation actions (only after selection progression):
 - First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
 - Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
 - Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
 
-## K1511 — Jarlath Drenmore
+## K1483 — Eachann O Preachain
 
-- Interview: `supported_technical_interview` — CL010534 records “Megger test on the NO.2 feeder, 232 V, condemned the cable and ran a temporary.”; CL009253 records “Checked continuity on the run to the fog hut.”. Keeper-code-keyed manager testimony in AP004320 adds a screening lead, not proof of competence. The documented policy supports a structured technical interview, not competence, eligibility or appointment.
+- Interview: `supported_technical_interview` — CL007775 (2017-04-19) records "Compressor not making pressure, rings worn. Rebuilt the No.1 cylinder."; CL000410 (1990-11-07) records "Changed the battery in the portable set.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP004258 is retained with positive testimony; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
-- Relevant evidence categories: electrical, fault_finding
-- Full clean log review: 171 rows; 8 distinct relevant patterns after template collapse.
-- Appraisal review: 8 exact keeper-code-keyed rows; 6 rows not selected by the appraisal filter.
+- Core work records used for interview policy: CL007775, CL000410
+- Selected positive testimony: none selected
+- Selected adverse testimony: AP004258
+- Relevant evidence categories: electrical, mechanical
+- Full clean log review: 268 rows; 3 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
+- Appraisal review: 4 exact keeper-code-keyed rows; 3 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- Discuss the selected adverse testimony in AP004258 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
 
 Category support:
 
-- `electrical` â€” 2026-09-07 â€” â€œMegger test on the NO.2 feeder, 232 V, condemned the cable and ran a temporary.â€ (CL010534; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62098`).
-- `fault_finding` â€” 2026-09-07 â€” â€œMegger test on the NO.2 feeder, 232 V, condemned the cable and ran a temporary.â€ (CL010534; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62098`).
+- `electrical` — 1990-11-07 — “Changed the battery in the portable set.” (CL000410; `raw/logbooks/era1-ocr/keimnalee-1990.txt#L442`).
+- `mechanical` — 2017-04-19 — “Compressor not making pressure, rings worn. Rebuilt the No.1 cylinder.” (CL007775; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#37579`).
+
+Evidence:
+
+- 2017-04-19 — “Compressor not making pressure, rings worn. Rebuilt the No.1 cylinder.” (CL007775; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#37579`; clean/manual attribution corroborated by raw name Eachann O Preachain).
+- 1995-07-11 — “Greased the compressor and checked the belts.” (CL001023; `raw/logbooks/era1-ocr/mornaskea-1995.txt#L366`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
+- 1990-11-07 — “Changed the battery in the portable set.” (CL000410; `raw/logbooks/era1-ocr/keimnalee-1990.txt#L442`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
+
+Manager testimony selected as screening context:
+
+- 2019 (year precision) — the fog signal has to be checked behind him. (AP004258; `raw/appraisals/appraisals.jsonl#AP004258`; concern: work_checked_behind). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
+
+Credential position:
+
+- Dated Pass: HVAP-03, completed 2026-07-24, supplied expiry 2029-11-01 (`raw/training/vendor-c-learnhub-2017-2026.json#LH502828`).
+- LOSC-P: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502827`).
+- HVAP-02: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502826`).
+- Conflict `prerequisite_chronology_not_established`: The supplied rows do not establish both prerequisite passes on or before LOSC-P; an earlier unrepresented pass remains possible.
+
+Initial selection action:
+
+- Invite to a structured technical interview using CL007775, CL000410 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+
+Later qualification and mobilisation actions (only after selection progression):
+
+- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
+- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
+- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
+- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
+
+## K1511 — Jarlath Drenmore
+
+- Interview: `supported_technical_interview` — CL010561 (2026-10-10) records "Rewired the changeover contactor arrangement, tested on both feeds and left in auto.". This is specific, attributed evidence of hands-on electrical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP004317 is retained with positive testimony in AP004320; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Application eligibility: `plausible_but_essential_evidence_incomplete`
+- Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL010561
+- Selected positive testimony: AP004320
+- Selected adverse testimony: AP004317
+- Relevant evidence categories: electrical, fault_finding
+- Full clean log review: 171 rows; 8 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
+- Appraisal review: 8 exact keeper-code-keyed rows; 6 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- Discuss the selected adverse testimony in AP004317 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+- The permitted clean/manual attribution for CL009253 is not corroborated by the cited raw identifier; preserve that provenance limitation and do not use those rows alone.
+- Appraisals AP004322 have year-only 2026 dates, so their position relative to 2026-10-11 is unknown and they remain context only.
+
+Category support:
+
+- `electrical` — 2026-09-07 — “Megger test on the NO.2 feeder, 232 V, condemned the cable and ran a temporary.” (CL010534; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62098`).
+- `fault_finding` — 2026-09-07 — “Megger test on the NO.2 feeder, 232 V, condemned the cable and ran a temporary.” (CL010534; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62098`).
 
 Evidence:
 
@@ -1174,7 +2177,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview and use the cited logs and manager testimony as questions; assess fault diagnosis, safe isolation and hands-on plant maintenance rather than treating the records as proof.
+- Invite to a structured technical interview using CL010561 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -1182,57 +2185,65 @@ Later qualification and mobilisation actions (only after selection progression):
 - First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
 - Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
 - Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: Attended in LH502844 is not a Pass; establish the required passed assessment if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: Attended in LH502844 is not a Pass; establish the required passed assessment if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
 
-## K0147 — Coilean O Caomhthaigh
+## K1538 — Oileann Ni Gharbhail
 
-- Interview: `targeted_screening_first` — CL010280 records “Traced the nuisance low-volt alarm to a soft cell in the no 1 bank, replaced it.”; CL008080 records “Cleaned the contacts in the changeover relay.”. Explicit role-related concerns in AP000086 remain unresolved. Relevant experience is recorded, but the uncertainty should be tested in a targeted screen before deciding on a full technical interview.
+- Interview: `supported_technical_interview` — CL007925 (2017-10-13) records "Changed oil and filters on no 2."; CL007686 (2017-01-11) records "Megger test on the No.1 feeder, 3.6 bar, condemned the cable and ran a temporary.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP004422 is retained with positive testimony in AP004418; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
-- Relevant evidence categories: electrical, fault_finding, mechanical
-- Full clean log review: 305 rows; 9 distinct relevant patterns after template collapse.
-- Appraisal review: 14 exact keeper-code-keyed rows; 8 rows not selected by the appraisal filter.
+- Core work records used for interview policy: CL007925, CL007686
+- Selected positive testimony: AP004418
+- Selected adverse testimony: AP004422
+- Relevant evidence categories: electrical, fault_finding, mechanical, permit_or_isolation
+- Full clean log review: 369 rows; 11 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
+- Appraisal review: 8 exact keeper-code-keyed rows; 6 rows not selected by the appraisal filter.
+
+Unresolved questions retained for selection:
+
+- Discuss the selected adverse testimony in AP004422 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
 
 Category support:
 
-- `electrical` â€” 2025-09-17 â€” â€œTraced the nuisance low-volt alarm to a soft cell in the no 1 bank, replaced it.â€ (CL010280; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#48954`).
-- `fault_finding` â€” 2025-09-17 â€” â€œTraced the nuisance low-volt alarm to a soft cell in the no 1 bank, replaced it.â€ (CL010280; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#48954`).
-- `mechanical` â€” 2021-09-10 â€” â€œChanged oil and filters on no.3.â€ (CL009116; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#48605`).
+- `electrical` — 2017-01-11 — “Megger test on the No.1 feeder, 3.6 bar, condemned the cable and ran a temporary.” (CL007686; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#33937`).
+- `fault_finding` — 2017-01-11 — “Megger test on the No.1 feeder, 3.6 bar, condemned the cable and ran a temporary.” (CL007686; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#33937`).
+- `mechanical` — 2017-10-13 — “Changed oil and filters on no 2.” (CL007925; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#43990`).
+- `permit_or_isolation` — 2016-02-20 — “Isolated NO.2 transformer, earths applied both ends, permit 0412 issued to the contractor.” (CL007420; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#22259`).
 
 Evidence:
 
-- 2025-09-17 — “Traced the nuisance low-volt alarm to a soft cell in the no 1 bank, replaced it.” (CL010280; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#48954`; clean/manual attribution corroborated by raw payroll value 1.1245E+04 normalized to 11245, matching clean payroll 0011245).
-- 2021-09-10 — “Changed oil and filters on no.3.” (CL009116; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#48605`; clean/manual attribution corroborated by raw payroll value 0011245 normalized to 11245, matching clean payroll 0011245).
-- 2019-02-06 — “Set the timing on no.1 after the pump was refitted, ran it up and checked exhaust temps.” (CL008345; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#14510`; clean/manual attribution corroborated by raw payroll value 1.1245E+04 normalized to 11245, matching clean payroll 0011245).
-- 2018-04-04 — “Cleaned the contacts in the changeover relay.” (CL008080; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#3409`; clean/manual attribution corroborated by raw payroll value 11245 normalized to 11245, matching clean payroll 0011245).
-- 2014-10-16 — “Tightened glands in the cable trunk by the stair.” (CL006984; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#5523`; clean/manual attribution corroborated by raw name Coilean O Caomhthaigh).
+- 2017-01-11 — “Megger test on the No.1 feeder, 3.6 bar, condemned the cable and ran a temporary.” (CL007686; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#33937`; clean/manual attribution corroborated by raw name Oileann Ni Gharbhail).
+  - Measurement warning `inconsistent_measurement_unit`: The quoted Megger reading uses a pressure unit, so the activity is retained but the numerical measurement is unreliable. Observed: `3.6 bar`.
+- 2016-02-20 — “Isolated NO.2 transformer, earths applied both ends, permit 0412 issued to the contractor.” (CL007420; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#22259`; clean/manual attribution corroborated by raw name Oileann Ni Gharbhail).
+- 2014-04-10 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL006753; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#1921`; clean/manual attribution corroborated by raw name Oileann Ni Gharbhail).
+- 2006-02-21 — “Checked continuity on the run to the fog hut.” (CL003887; `raw/logbooks/era2-keeperlog/KLOG2006.DAT#001876`; clean/manual attribution corroborated by raw keeper_code K1538).
+- 2017-10-13 — “Changed oil and filters on no 2.” (CL007925; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#43990`; clean/manual attribution corroborated by raw name Oileann Ní Gharbhail).
 
 Manager testimony selected as screening context:
 
-- 2008 (year precision) — The standard achieved in rope work falls below that expected of the grade. (AP000079; `raw/appraisals/appraisals.jsonl#AP000079`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
-- 2010 (year precision) — Section A: Performance It is noted that Coilean has maintained a proper standard in the abseil inspections. (AP000081; `raw/appraisals/appraisals.jsonl#AP000081`; support: good_standard). Manager testimony only, not competence or authorisation.
-- 2014 (year precision) — The standard achieved in the batteries falls below that expected of the grade. (AP000084; `raw/appraisals/appraisals.jsonl#AP000084`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
-- 2017 (year precision) — rope work has to be checked behind him. (AP000086; `raw/appraisals/appraisals.jsonl#AP000086`; concern: work_checked_behind). Manager testimony only, not competence or authorisation.
-- 2018 (year precision) — There is a habit of mind here that is worth writing down: Coilean will not leave the standby banks half done. (AP000087; `raw/appraisals/appraisals.jsonl#AP000087`; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
-- 2022 (year precision) — There is a habit of mind here that is worth writing down: Coilean will not leave rope work half done. (AP000090; `raw/appraisals/appraisals.jsonl#AP000090`; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
+- 2013 (year precision) — There is a habit of mind here that is worth writing down: Oileann will not leave the high voltage side half done. / Over the year Oileann has quietly become the station's go-to for switching work. / When the boards went wrong in the spring, Oileann was the one who sorted it out. (AP004418; `raw/appraisals/appraisals.jsonl#AP004418`; support: go_to_person, resolved_failure; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
+- 2017 (year precision) — Gap identified in isolations on the 11kV. (AP004422; `raw/appraisals/appraisals.jsonl#AP004422`; concern: identified_gap). Manager testimony only, not competence or authorisation.
+
+- Supplementary note: A 2011 manager note records generator-control fault-finding and years of station high-voltage switching; clean entry CL006360 records work on an 11 kV board. (`raw/appraisals/station_manager_notes/2011-nevisbeg-keeper-note.txt#L3,L7,L9,L11`). The note names NI GHARBHAIL O/Oileann and the personnel export has one exact NI GHARBHAIL O match. The clean profile places K1538 at Nevisbeg in 2011, but the note's claimed eleven-year station tenure conflicts with the recorded chronology. This is an interview lead, not an authorisation.
+- Hand-check entry: 2013-02-03 — “Took the 11kV board off, worked the sequence myself, the supernumerary witnessing.” (CL006360; `raw/logbooks/era2-keeperlog/KLOG2013.DAT#001138`).
+
+- Chronology conflict `oileann_station_tenure_conflict`: The 2011 note says Oileann had been at Nevisbeg for eleven years (implying about 2000), while the clean profile records joining in 1998 and a Nevisbeg posting beginning in 2009. The testimony is retained as an interview lead, but its station-tenure chronology is not established.
 
 Limitations:
 
 - `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
 - `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
+- `authorization_not_established`: The manager's narrative is not a currently recognised authorisation and does not establish two years of qualifying 11 kV experience.
 
 Credential position:
 
-- Dated Pass: MECS-5, completed 2023-09-10, supplied expiry 2028-05-25 (`raw/training/vendor-c-learnhub-2017-2026.json#LH500049`).
-- MECS-1: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500045`).
-- HVAP-02: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500046`).
-- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 1; later modules do not bridge missing earlier stages.
+- Dated Pass: WAHS-2, completed 2026-05-03, supplied expiry 2029-11-14 (`raw/training/vendor-c-learnhub-2017-2026.json#LH502939`).
 
 Initial selection action:
 
-- Run a targeted evidence screen before a full technical interview. Resolve the explicit concerns in AP000086. Ask what the person did personally, what plant was involved, what checks controlled the work and what outcome was verified.
+- Invite to a structured technical interview using CL007925, CL007686 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -1240,253 +2251,34 @@ Later qualification and mobilisation actions (only after selection progression):
 - First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
 - Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
 - Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
-
-## K0184 — Bearach Ormlaithe
-
-- Interview: `targeted_screening_first` — CL010068 records “Lamp not lit, found the fuse gone. Renewed.”; CL010442 records “Set the timing on No.2 after the pump was refitted, ran it up and checked exhaust temps.”. Explicit role-related concerns in AP000198 remain unresolved. Relevant experience is recorded, but the uncertainty should be tested in a targeted screen before deciding on a full technical interview.
-- Application eligibility: `plausible_but_essential_evidence_incomplete`
-- Mobilisation readiness: `not_established`
-- Relevant evidence categories: electrical, mechanical
-- Full clean log review: 368 rows; 8 distinct relevant patterns after template collapse.
-- Appraisal review: 16 exact keeper-code-keyed rows; 13 rows not selected by the appraisal filter.
-
-Category support:
-
-- `electrical` â€” 2024-12-05 â€” â€œLamp not lit, found the fuse gone. Renewed.â€ (CL010068; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38570`).
-- `mechanical` â€” 2026-05-07 â€” â€œSet the timing on No.2 after the pump was refitted, ran it up and checked exhaust temps.â€ (CL010442; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#57550`).
-
-Evidence:
-
-- 2026-05-07 — “Set the timing on No.2 after the pump was refitted, ran it up and checked exhaust temps.” (CL010442; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#57550`; clean/manual attribution corroborated by raw payroll value 0012021 normalized to 12021, matching clean payroll 0012021).
-- 2024-12-05 — “Lamp not lit, found the fuse gone. Renewed.” (CL010068; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38570`; clean/manual attribution corroborated by raw payroll value 12021 normalized to 12021, matching clean payroll 0012021).
-- 2024-02-16 — “Changed the battery in the portable set.” (CL009825; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#28398`; clean/manual attribution corroborated by raw payroll value 0012021 normalized to 12021, matching clean payroll 0012021).
-- 2023-07-23 — “Bled the fuel system after the filter change.” (CL009666; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#20916`; clean/manual attribution corroborated by raw payroll value 12021 normalized to 12021, matching clean payroll 0012021).
-- 2022-11-20 — “Changed oil and filters on no.2.” (CL009470; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#11830`; clean/manual attribution corroborated by raw payroll value 0012021 normalized to 12021, matching clean payroll 0012021).
-
-Manager testimony selected as screening context:
-
-- 2008 (year precision) — Attention is drawn to a recurring shortfall in the engines. (AP000189; `raw/appraisals/appraisals.jsonl#AP000189`; concern: recurring_shortfall). Manager testimony only, not competence or authorisation.
-- 2020 (year precision) — Weak on the engines. (AP000198; `raw/appraisals/appraisals.jsonl#AP000198`; concern: weakness). Manager testimony only, not competence or authorisation.
-- 2023 (year precision) — REVIEW 2023 Needs supervision on the ironwork. (AP000201; `raw/appraisals/appraisals.jsonl#AP000201`; concern: needs_supervision). Manager testimony only, not competence or authorisation.
-
-Limitations:
-
-- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
-- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
-
-Credential position:
-
-- Dated Pass: MPMC-D, completed 2022-05-03, supplied expiry 2027-04-27 (`raw/training/vendor-c-learnhub-2017-2026.json#LH500125`).
-- Dated Pass: HVAP-01, completed 2026-08-03, supplied expiry 2029-07-09 (`raw/training/vendor-c-learnhub-2017-2026.json#LH500128`).
-- MPMC-C: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500121`).
-- HVAP-03: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500122`).
-- OSSC-CS: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500123`).
-- OSSC-SS: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500124`).
-
-Initial selection action:
-
-- Run a targeted evidence screen before a full technical interview. Resolve the explicit concerns in AP000198. Ask what the person did personally, what plant was involved, what checks controlled the work and what outcome was verified.
-
-Later qualification and mobilisation actions (only after selection progression):
-
-- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
-- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
-- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
-- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: renew the expired Pass (LH500124); the posting says the employer funds renewals. OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
-
-## K0303 — Ambrosan O Lachtnain
-
-- Interview: `targeted_screening_first` — CL009302 records “Megger test on the No.1 feeder, 0.8 ohm, condemned the cable and ran a temporary.”; CL008870 records “Drive motor brushes and commutator dressed, rotation back to time.”. Explicit role-related concerns in AP000562 remain unresolved. Relevant experience is recorded, but the uncertainty should be tested in a targeted screen before deciding on a full technical interview.
-- Application eligibility: `plausible_but_essential_evidence_incomplete`
-- Mobilisation readiness: `not_established`
-- Relevant evidence categories: electrical, fault_finding, mechanical
-- Full clean log review: 367 rows; 8 distinct relevant patterns after template collapse.
-- Appraisal review: 13 exact keeper-code-keyed rows; 6 rows not selected by the appraisal filter.
-
-Category support:
-
-- `electrical` â€” 2022-04-17 â€” â€œMegger test on the No.1 feeder, 0.8 ohm, condemned the cable and ran a temporary.â€ (CL009302; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#4072`).
-- `fault_finding` â€” 2022-04-17 â€” â€œMegger test on the No.1 feeder, 0.8 ohm, condemned the cable and ran a temporary.â€ (CL009302; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#4072`).
-- `mechanical` â€” 2020-11-15 â€” â€œDrive motor brushes and commutator dressed, rotation back to time.â€ (CL008870; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#37866`).
-
-Evidence:
-
-- 2022-04-17 — “Megger test on the No.1 feeder, 0.8 ohm, condemned the cable and ran a temporary.” (CL009302; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#4072`; clean/manual attribution; raw payroll_reference 906660 conflicts with clean 0012781 and does not corroborate the person assignment).
-- 2020-11-15 — “Drive motor brushes and commutator dressed, rotation back to time.” (CL008870; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#37866`; clean/manual attribution corroborated by raw payroll value 1.2781E+04 normalized to 12781, matching clean payroll 0012781).
-- 2018-05-09 — “Checked continuity on the run to the fog hut.” (CL008115; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#4708`; clean/manual attribution corroborated by raw payroll value 0012781 normalized to 12781, matching clean payroll 0012781).
-- 2023-11-06 — “Rebuilt the clockwork drive, cleaned forty years of gum out of the train.” (CL009744; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#24746`; clean/manual attribution corroborated by raw payroll value 0012781 normalized to 12781, matching clean payroll 0012781).
-- 2023-05-20 — “Lamp changer stepping twice, dismantled the ratchet and dressed the pawl faces.” (CL009608; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#18589`; clean/manual attribution corroborated by raw payroll value 0012781 normalized to 12781, matching clean payroll 0012781).
-
-Manager testimony selected as screening context:
-
-- 2006 (year precision) — Ambrosan took on fault work without being asked and made a proper job of it. (AP000551; `raw/appraisals/appraisals.jsonl#AP000551`; support: made_proper_job). Manager testimony only, not competence or authorisation.
-- 2009 (year precision) — There is a habit of mind here that is worth writing down: Ambrosan will not leave the optic half done. (AP000553; `raw/appraisals/appraisals.jsonl#AP000553`; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
-- 2012 (year precision) — Needs supervision on diagnostics. (AP000556; `raw/appraisals/appraisals.jsonl#AP000556`; concern: needs_supervision). Manager testimony only, not competence or authorisation.
-- 2015 (year precision) — chasing faults to a good standard. (AP000557; `raw/appraisals/appraisals.jsonl#AP000557`; support: good_standard). Manager testimony only, not competence or authorisation.
-- 2019 (year precision) — the light itself needs work. (AP000561; `raw/appraisals/appraisals.jsonl#AP000561`; concern: needs_work). Manager testimony only, not competence or authorisation.
-- 2021 (year precision) — Attention is drawn to a recurring shortfall in chasing faults. (AP000562; `raw/appraisals/appraisals.jsonl#AP000562`; concern: recurring_shortfall). Manager testimony only, not competence or authorisation.
-- 2023 (year precision) — Some deficiency has been noted in respect of the light itself, which the keeper has been advised to address. (AP000564; `raw/appraisals/appraisals.jsonl#AP000564`; concern: specific_deficiency). Manager testimony only, not competence or authorisation.
-
-Limitations:
-
-- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
-- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
-
-Credential position:
-
-- Dated Pass: OSSC-SS, completed 2025-07-11, supplied expiry 2029-02-16 (`raw/training/vendor-c-learnhub-2017-2026.json#LH500329`).
-- Dated Pass: WAHS-3, completed 2026-10-09, supplied expiry 2029-03-01 (`raw/training/vendor-c-learnhub-2017-2026.json#LH500330`).
-- OSSC-FF: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500324`).
-- OSSC-FA: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500326`).
-- OSSC-HL: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500327`).
-
-Initial selection action:
-
-- Run a targeted evidence screen before a full technical interview. Resolve the explicit concerns in AP000562. Ask what the person did personally, what plant was involved, what checks controlled the work and what outcome was verified.
-
-Later qualification and mobilisation actions (only after selection progression):
-
-- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
-- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
-- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
-- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: present and issuer-verify the current dated Pass (LH500329). OSSC-FF: renew the expired Pass (LH500324); the posting says the employer funds renewals. OSSC-FA: renew the expired Pass (LH500326); the posting says the employer funds renewals.
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
-
-## K0354 — Quillan O Fuarain
-
-- Interview: `targeted_screening_first` — CL007773 records “Tightened glands in the cable trunk by the stair.”; CL004792 records “Ran No.2 set 0.5 hrs. Oil and water checked.”. Keeper-code-keyed manager testimony in AP000750 adds a screening lead, not proof of competence. Relevant experience is recorded, but the uncertainty should be tested in a targeted screen before deciding on a full technical interview.
-- Application eligibility: `plausible_but_essential_evidence_incomplete`
-- Mobilisation readiness: `not_established`
-- Relevant evidence categories: electrical, mechanical
-- Full clean log review: 199 rows; 4 distinct relevant patterns after template collapse.
-- Appraisal review: 8 exact keeper-code-keyed rows; 5 rows not selected by the appraisal filter.
-
-Category support:
-
-- `electrical` â€” 2017-04-16 â€” â€œTightened glands in the cable trunk by the stair.â€ (CL007773; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#37475`).
-- `mechanical` â€” 2008-12-22 â€” â€œRan No.2 set 0.5 hrs. Oil and water checked.â€ (CL004792; `raw/logbooks/era2-keeperlog/KLOG2008.DAT#012450`).
-
-Evidence:
-
-- 2017-04-16 — “Tightened glands in the cable trunk by the stair.” (CL007773; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#37475`; clean/manual attribution corroborated by raw name Quillan O Fuarain).
-- 2011-05-09 — “Lamp not lit, found the fuse gone. Renewed.” (CL005691; `raw/logbooks/era2-keeperlog/KLOG2011.DAT#004643`; clean/manual attribution corroborated by raw keeper_code K0354).
-- 2008-12-22 — “Ran No.2 set 0.5 hrs. Oil and water checked.” (CL004792; `raw/logbooks/era2-keeperlog/KLOG2008.DAT#012450`; clean/manual attribution corroborated by raw keeper_code K0354).
-- 2007-11-20 — “Greased the compressor and checked the belts.” (CL004425; `raw/logbooks/era2-keeperlog/KLOG2007.DAT#011308`; clean/manual attribution corroborated by raw keeper_code K0354).
-
-Manager testimony selected as screening context:
-
-- 2013 (year precision) — It is noted that Quillan has maintained a proper standard in the standby banks. (AP000750; `raw/appraisals/appraisals.jsonl#AP000750`; support: good_standard). Manager testimony only, not competence or authorisation.
-- 2016 (year precision) — The standard achieved in defect reporting falls below that expected of the grade. (AP000752; `raw/appraisals/appraisals.jsonl#AP000752`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
-- 2017 (year precision) — The standard achieved in inspection reports falls below that expected of the grade. (AP000753; `raw/appraisals/appraisals.jsonl#AP000753`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
-
-Limitations:
-
-- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
-- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
-
-Credential position:
-
-- Dated Pass: WAHS-4, completed 2024-12-06, supplied expiry 2027-08-24 (`raw/training/vendor-c-learnhub-2017-2026.json#LH500436`).
-- Dated Pass: WAHS-3, completed 2025-10-15, supplied expiry 2028-12-01 (`raw/training/vendor-c-learnhub-2017-2026.json#LH500437`).
-- Dated Pass: OSSC-CS, completed 2026-09-16, supplied expiry 2030-07-19 (`raw/training/vendor-c-learnhub-2017-2026.json#LH500438`).
-- OSSC-FA: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500435`).
-- HVAP-03: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500434`).
-- Conflict `prerequisite_not_established`: A current OSSC-SS prerequisite is not established by the dated LearnHub rows supplied.
-
-Initial selection action:
-
-- Run a targeted evidence screen before a full technical interview. Test the sparse or repetitive evidence with concrete examples. Ask what the person did personally, what plant was involved, what checks controlled the work and what outcome was verified.
-
-Later qualification and mobilisation actions (only after selection progression):
-
-- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
-- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
-- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
-- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: renew the expired Pass (LH500435); the posting says the employer funds renewals.
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
-
-## K0394 — Lugharn O Neascan
-
-- Interview: `targeted_screening_first` — CL009886 records “Renewed fuse links, no.3 way. All made off.”; CL009816 records “Bled the fuel system after the filter change.”. Explicit role-related concerns in AP000862 remain unresolved. Relevant experience is recorded, but the uncertainty should be tested in a targeted screen before deciding on a full technical interview.
-- Application eligibility: `plausible_but_essential_evidence_incomplete`
-- Mobilisation readiness: `not_established`
-- Relevant evidence categories: electrical, mechanical
-- Full clean log review: 325 rows; 5 distinct relevant patterns after template collapse.
-- Appraisal review: 4 exact keeper-code-keyed rows; 1 row not selected by the appraisal filter.
-
-Category support:
-
-- `electrical` â€” 2024-04-09 â€” â€œRenewed fuse links, no.3 way. All made off.â€ (CL009886; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#30274`).
-- `mechanical` â€” 2024-02-06 â€” â€œBled the fuel system after the filter change.â€ (CL009816; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#28049`).
-
-Evidence:
-
-- 2024-04-09 — “Renewed fuse links, no.3 way. All made off.” (CL009886; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#30274`; clean/manual attribution corroborated by raw payroll value 12523 normalized to 12523, matching clean payroll 0012523).
-- 2024-02-06 — “Bled the fuel system after the filter change.” (CL009816; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#28049`; clean/manual attribution corroborated by raw payroll value 12523 normalized to 12523, matching clean payroll 0012523).
-- 2021-11-06 — “Cleaned the contacts in the changeover relay.” (CL009161; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#50662`; clean/manual attribution corroborated by raw payroll value 12523 normalized to 12523, matching clean payroll 0012523).
-- 2020-12-16 — “Ran no.1 set 3 hrs. Oil and water checked.” (CL008893; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#38959`; clean/manual attribution corroborated by raw payroll value 0012523 normalized to 12523, matching clean payroll 0012523).
-- 2001-10-09 — “Greased the compressor and checked the belts.” (CL002569; `raw/logbooks/era1-ocr/uaigneas-2001.txt#L459`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
-
-Manager testimony selected as screening context:
-
-- 2020 (year precision) — Attention is drawn to a recurring shortfall in work on the gallery. (AP000862; `raw/appraisals/appraisals.jsonl#AP000862`; concern: recurring_shortfall). Manager testimony only, not competence or authorisation.
-- 2024 (year precision) — Over the year Lugharn has quietly become the station's go-to for height work. (AP000863; `raw/appraisals/appraisals.jsonl#AP000863`; support: go_to_person). Manager testimony only, not competence or authorisation.
-- 2026 (year precision) — It is noted that Lugharn has maintained a proper standard in height work. (AP000865; `raw/appraisals/appraisals.jsonl#AP000865`; support: good_standard). Manager testimony only, not competence or authorisation.
-
-- Same-year timing uncertainty: AP000865 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
-
-Limitations:
-
-- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
-- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
-
-Credential position:
-
-- No currently dated relevant LearnHub Pass was established at the cutoff.
-- MECS-2: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500536`).
-- WAHS-1: Attended; `attended_not_passed` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500537`).
-- HVAP-01: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500538`).
-- OSSC-SS: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500539`).
-- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 0; later modules do not bridge missing earlier stages.
-
-Initial selection action:
-
-- Run a targeted evidence screen before a full technical interview. Resolve the explicit concerns in AP000862. Ask what the person did personally, what plant was involved, what checks controlled the work and what outcome was verified.
-
-Later qualification and mobilisation actions (only after selection progression):
-
-- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
-- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
-- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
-- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: renew the expired Pass (LH500539); the posting says the employer funds renewals. OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: Attended in LH500537 is not a Pass; establish the required passed assessment if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
 
 ## K0478 — Ossian O Raghnaill
 
-- Interview: `targeted_screening_first` — CL010541 records “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.”; CL010398 records “Isolated NO.2 transformer, earths applied both ends, permit 1102 issued to the contractor.”. Explicit role-related concerns in AP001159, AP001160, AP001162, AP001165 remain unresolved. Relevant experience is recorded, but the uncertainty should be tested in a targeted screen before deciding on a full technical interview.
+- Interview: `targeted_screening_first` — CL010541 (2026-09-20) records "Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.". This is specific, attributed evidence of hands-on electrical maintenance with transferable relevance to the O&M posting's plant-maintenance work. However, material contradiction in AP001159, AP001160, AP001162, AP001165: Attributed electrical and isolation logs sit alongside repeated, directly conflicting testimony about switching, distribution and switchgear work, including both 'go-to' and shortfall/checking claims. The records establish activity but leave its responsibility and quality materially unresolved. Clarification is needed before a technical interview; neither source is silently preferred.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL010541
+- Selected positive testimony: AP001157, AP001159, AP001166, AP001167
+- Selected adverse testimony: AP001159, AP001160, AP001162, AP001165
 - Relevant evidence categories: electrical, fault_finding, permit_or_isolation
-- Full clean log review: 192 rows; 6 distinct relevant patterns after template collapse.
+- Full clean log review: 192 rows; 6 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
 - Appraisal review: 8 exact keeper-code-keyed rows; 1 row not selected by the appraisal filter.
+
+- Material unresolved core issue: Attributed electrical and isolation logs sit alongside repeated, directly conflicting testimony about switching, distribution and switchgear work, including both 'go-to' and shortfall/checking claims. The records establish activity but leave its responsibility and quality materially unresolved.
+
+Unresolved questions retained for selection:
+
+- Before a technical interview, clarify what switching and distribution work Ossian personally performed, what checking was required, and whether the 2024 switchgear deficiency was resolved. Preserve the 2026 praise as time-uncertain context rather than treating it as a resolution.
+- Appraisals AP001167 have year-only 2026 dates, so their position relative to 2026-10-11 is unknown and they remain context only.
 
 Category support:
 
-- `electrical` â€” 2026-09-20 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL010541; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62613`).
-- `fault_finding` â€” 2026-09-20 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL010541; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62613`).
-- `permit_or_isolation` â€” 2026-03-11 â€” â€œIsolated NO.2 transformer, earths applied both ends, permit 1102 issued to the contractor.â€ (CL010398; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#55458`).
+- `electrical` — 2026-09-20 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL010541; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62613`).
+- `fault_finding` — 2026-09-20 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL010541; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62613`).
+- `permit_or_isolation` — 2026-03-11 — “Isolated NO.2 transformer, earths applied both ends, permit 1102 issued to the contractor.” (CL010398; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#55458`).
 
 Evidence:
 
@@ -1521,7 +2313,7 @@ Credential position:
 
 Initial selection action:
 
-- Run a targeted evidence screen before a full technical interview. Resolve the explicit concerns in AP001159, AP001160, AP001162, AP001165. Ask what the person did personally, what plant was involved, what checks controlled the work and what outcome was verified.
+- Before a technical interview, clarify what switching and distribution work Ossian personally performed, what checking was required, and whether the 2024 switchgear deficiency was resolved. Preserve the 2026 praise as time-uncertain context rather than treating it as a resolution.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -1529,286 +2321,32 @@ Later qualification and mobilisation actions (only after selection progression):
 - First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
 - Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
 - Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
-
-## K0561 — Muirgheal Holmthwaite
-
-- Interview: `targeted_screening_first` — CL007052 records “Found the receiver desensitised by the charger, fitted suppression and the noise went.”; CL008741 records “Mechanical seal gone on the fire pump, fitted new and re-aligned the coupling.”. Explicit role-related concerns in AP001433 remain unresolved. Relevant experience is recorded, but the uncertainty should be tested in a targeted screen before deciding on a full technical interview.
-- Application eligibility: `plausible_but_essential_evidence_incomplete`
-- Mobilisation readiness: `not_established`
-- Relevant evidence categories: electrical, mechanical
-- Full clean log review: 175 rows; 6 distinct relevant patterns after template collapse.
-- Appraisal review: 11 exact keeper-code-keyed rows; 9 rows not selected by the appraisal filter.
-
-Category support:
-
-- `electrical` â€” 2014-12-12 â€” â€œFound the receiver desensitised by the charger, fitted suppression and the noise went.â€ (CL007052; `raw/logbooks/era2-keeperlog/KLOG2014.DAT#005949`).
-- `mechanical` â€” 2020-06-14 â€” â€œMechanical seal gone on the fire pump, fitted new and re-aligned the coupling.â€ (CL008741; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#32504`).
-
-Evidence:
-
-- 2020-06-14 — “Mechanical seal gone on the fire pump, fitted new and re-aligned the coupling.” (CL008741; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#32504`; clean/manual attribution corroborated by raw payroll value 0011814 normalized to 11814, matching clean payroll 0011814).
-- 2019-08-06 — “Rebuilt the no 1 pump end to end, new wear rings, delivery back up to 3.6 bar.” (CL008494; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#21170`; clean/manual attribution corroborated by raw payroll value 0011814 normalized to 11814, matching clean payroll 0011814).
-- 2018-04-06 — “Ran no.1 set 4 hrs. Oil and water checked.” (CL008084; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#3503`; clean/manual attribution corroborated by raw payroll value 11814 normalized to 11814, matching clean payroll 0011814).
-- 2014-12-12 — “Found the receiver desensitised by the charger, fitted suppression and the noise went.” (CL007052; `raw/logbooks/era2-keeperlog/KLOG2014.DAT#005949`; clean/manual attribution corroborated by raw keeper_code K0561).
-- 2011-04-10 — “Changed the battery in the portable set.” (CL005661; `raw/logbooks/era2-keeperlog/KLOG2011.DAT#003581`; clean/manual attribution corroborated by raw keeper_code K0561).
-
-Manager testimony selected as screening context:
-
-- 2010 (year precision) — Over the year Muirgheal has quietly become the station's go-to for pumped systems. (AP001428; `raw/appraisals/appraisals.jsonl#AP001428`; support: go_to_person). Manager testimony only, not competence or authorisation.
-- 2019 (year precision) — Needs supervision on pumped systems. (AP001433; `raw/appraisals/appraisals.jsonl#AP001433`; concern: needs_supervision). Manager testimony only, not competence or authorisation.
-
-Limitations:
-
-- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
-- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
-
-Credential position:
-
-- Dated Pass: MECS-3, completed 2023-01-01, supplied expiry 2028-04-08 (`raw/training/vendor-c-learnhub-2017-2026.json#LH500872`).
-- Dated Pass: OSSC-FA, completed 2023-03-08, supplied expiry 2027-06-27 (`raw/training/vendor-c-learnhub-2017-2026.json#LH500873`).
-- Dated Pass: HVAP-02, completed 2026-06-23, supplied expiry 2029-11-15 (`raw/training/vendor-c-learnhub-2017-2026.json#LH500875`).
-- OSSC-CS: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500866`).
-- MECS-4: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500867`).
-- OSSC-HL: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500868`).
-- HVAP-04: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500869`).
-- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 0; later modules do not bridge missing earlier stages.
-
-Initial selection action:
-
-- Run a targeted evidence screen before a full technical interview. Resolve the explicit concerns in AP001433. Ask what the person did personally, what plant was involved, what checks controlled the work and what outcome was verified.
-
-Later qualification and mobilisation actions (only after selection progression):
-
-- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
-- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
-- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
-- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: present and issuer-verify the current dated Pass (LH500873).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
-
-## K0566 — Garbhan O Riagain
-
-- Interview: `targeted_screening_first` — CL002799 records “Checked continuity on the run to the fog hut.”; CL010043 records “Isolated no 1 transformer, earths applied both ends, PTW 46 issued to the contractor.”. Relevant experience is recorded, but the uncertainty should be tested in a targeted screen before deciding on a full technical interview.
-- Application eligibility: `plausible_but_essential_evidence_incomplete`
-- Mobilisation readiness: `not_established`
-- Relevant evidence categories: electrical, fault_finding, mechanical, permit_or_isolation
-- Full clean log review: 260 rows; 4 distinct relevant patterns after template collapse.
-- Appraisal review: 7 exact keeper-code-keyed rows; 7 rows not selected by the appraisal filter.
-
-Category support:
-
-- `electrical` â€” 2024-11-01 â€” â€œIsolated no 1 transformer, earths applied both ends, PTW 46 issued to the contractor.â€ (CL010043; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#37406`).
-- `fault_finding` â€” 2002-09-08 â€” â€œChecked continuity on the run to the fog hut.â€ (CL002799; `raw/logbooks/era1-ocr/drumnahaan-2002.txt#L336`).
-- `mechanical` â€” 2012-12-27 â€” â€œFilter changed on the power pack.â€ (CL006319; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#013100`).
-- `permit_or_isolation` â€” 2024-11-01 â€” â€œIsolated no 1 transformer, earths applied both ends, PTW 46 issued to the contractor.â€ (CL010043; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#37406`).
-
-Evidence:
-
-- 2024-11-01 — “Isolated no 1 transformer, earths applied both ends, PTW 46 issued to the contractor.” (CL010043; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#37406`; clean/manual attribution corroborated by raw payroll value 11851 normalized to 11851, matching clean payroll 0011851).
-- 2002-09-08 — “Checked continuity on the run to the fog hut.” (CL002799; `raw/logbooks/era1-ocr/drumnahaan-2002.txt#L336`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
-- 2012-12-27 — “Filter changed on the power pack.” (CL006319; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#013100`; clean/manual attribution corroborated by raw keeper_code K0566).
-- 2011-09-07 — “Gas tested the fuel tank before entry.” (CL005829; `raw/logbooks/era2-keeperlog/KLOG2011.DAT#008899`; clean/manual attribution corroborated by raw keeper_code K0566).
-
-Limitations:
-
-- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
-- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
-
-Credential position:
-
-- No currently dated relevant LearnHub Pass was established at the cutoff.
-- OSSC-SS: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500882`).
-- HVAP-03: Not achieved; `not_achieved` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500883`).
-- OSSC-CS: Not achieved; `not_achieved` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500884`).
-
-Initial selection action:
-
-- Run a targeted evidence screen before a full technical interview. Test the sparse or repetitive evidence with concrete examples. Ask what the person did personally, what plant was involved, what checks controlled the work and what outcome was verified.
-
-Later qualification and mobilisation actions (only after selection progression):
-
-- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
-- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
-- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
-- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: renew the expired Pass (LH500882); the posting says the employer funds renewals. OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
-
-## K0586 — Gealbhan Nethercarn
-
-- Interview: `targeted_screening_first` — CL002089 records “Checked continuity on the run to the fog hut.”; CL006901 records “Lamp not lit, found the fuse gone. Renewed.”. Relevant experience is recorded, but the uncertainty should be tested in a targeted screen before deciding on a full technical interview.
-- Application eligibility: `plausible_but_essential_evidence_incomplete`
-- Mobilisation readiness: `not_established`
-- Relevant evidence categories: electrical, fault_finding
-- Full clean log review: 201 rows; 3 distinct relevant patterns after template collapse.
-- Appraisal review: 10 exact keeper-code-keyed rows; 10 rows not selected by the appraisal filter.
-
-Category support:
-
-- `electrical` â€” 1999-12-19 â€” â€œChecked continuity on the run to the fog hut.â€ (CL002089; `raw/logbooks/era1-ocr/hurlaven-1999.txt#L477`).
-- `fault_finding` â€” 1999-12-19 â€” â€œChecked continuity on the run to the fog hut.â€ (CL002089; `raw/logbooks/era1-ocr/hurlaven-1999.txt#L477`).
-
-Evidence:
-
-- 1999-12-19 — “Checked continuity on the run to the fog hut.” (CL002089; `raw/logbooks/era1-ocr/hurlaven-1999.txt#L477`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
-- 2014-08-13 — “Lamp not lit, found the fuse gone. Renewed.” (CL006901; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#4299`; clean/manual attribution corroborated by raw name Gealbhan Nethercarn).
-- 2009-05-06 — “Changed the battery in the portable set.” (CL004932; `raw/logbooks/era2-keeperlog/KLOG2009.DAT#004553`; clean/manual attribution corroborated by raw keeper_code K0586).
-
-Limitations:
-
-- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
-- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
-
-Credential position:
-
-- No currently dated relevant LearnHub Pass was established at the cutoff.
-- WAHS-3: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500931`).
-- HVAP-01: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500932`).
-- MECS-1: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500933`).
-- HVAP-03: Not achieved; `not_achieved` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500935`).
-- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 1; later modules do not bridge missing earlier stages.
-
-Initial selection action:
-
-- Run a targeted evidence screen before a full technical interview. Test the sparse or repetitive evidence with concrete examples. Ask what the person did personally, what plant was involved, what checks controlled the work and what outcome was verified.
-
-Later qualification and mobilisation actions (only after selection progression):
-
-- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
-- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
-- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
-- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
-
-## K0589 — Eachann Westrayne
-
-- Interview: `targeted_screening_first` — CL007592 records “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.”; CL008008 records “Renewed fuse links, no 1 way. All made off.”. Explicit role-related concerns in AP001528, AP001530 remain unresolved. Relevant experience is recorded, but the uncertainty should be tested in a targeted screen before deciding on a full technical interview.
-- Application eligibility: `plausible_but_essential_evidence_incomplete`
-- Mobilisation readiness: `not_established`
-- Relevant evidence categories: electrical, fault_finding, mechanical
-- Full clean log review: 165 rows; 4 distinct relevant patterns after template collapse.
-- Appraisal review: 12 exact keeper-code-keyed rows; 8 rows not selected by the appraisal filter.
-
-Category support:
-
-- `electrical` â€” 2016-09-14 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL007592; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#29593`).
-- `fault_finding` â€” 2016-09-14 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL007592; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#29593`).
-- `mechanical` â€” 2020-03-27 â€” â€œChanged oil and filters on no 2.â€ (CL008681; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#29766`).
-
-Evidence:
-
-- 2016-09-14 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL007592; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#29593`; clean/manual attribution corroborated by raw name Eachann Westrayne).
-- 2020-03-27 — “Changed oil and filters on no 2.” (CL008681; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#29766`; clean/manual attribution corroborated by raw payroll value 11453 normalized to 11453, matching clean payroll 0011453).
-- 2017-12-28 — “Renewed fuse links, no 1 way. All made off.” (CL008008; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#46820`; clean/manual attribution corroborated by raw name Eachann Westrayne).
-- 2014-02-04 — “Changed the battery in the portable set.” (CL006691; `raw/logbooks/era2-keeperlog/KLOG2014.DAT#000593`; clean/manual attribution corroborated by raw keeper_code K0589).
-
-Manager testimony selected as screening context:
-
-- 2018 (year precision) — Needs supervision on height work. (AP001528; `raw/appraisals/appraisals.jsonl#AP001528`; concern: needs_supervision). Manager testimony only, not competence or authorisation.
-- 2020 (year precision) — Some deficiency has been noted in respect of work on the gallery, which the keeper has been advised to address. (AP001530; `raw/appraisals/appraisals.jsonl#AP001530`; concern: specific_deficiency). Manager testimony only, not competence or authorisation.
-- 2023 (year precision) — When the ironwork went wrong in the spring, Eachann was the one who sorted it out. (AP001533; `raw/appraisals/appraisals.jsonl#AP001533`; support: resolved_failure). Manager testimony only, not competence or authorisation.
-- 2026 (year precision) — When height work went wrong in the spring, Eachann was the one who sorted it out. (AP001536; `raw/appraisals/appraisals.jsonl#AP001536`; support: resolved_failure). Manager testimony only, not competence or authorisation.
-
-- Same-year timing uncertainty: AP001536 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
-
-Limitations:
-
-- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
-- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
-
-Credential position:
-
-- No currently dated relevant LearnHub Pass was established at the cutoff.
-- OSSC-SS: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500938`).
-- OSSC-FF: Attended; `attended_not_passed` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500937`).
-- MPMC-A: Attended; `attended_not_passed` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500946`).
-- Conflict `prerequisite_not_established`: A current OSSC-SS prerequisite is not established by the dated LearnHub rows supplied.
-
-Initial selection action:
-
-- Run a targeted evidence screen before a full technical interview. Resolve the explicit concerns in AP001528, AP001530. Ask what the person did personally, what plant was involved, what checks controlled the work and what outcome was verified.
-
-Later qualification and mobilisation actions (only after selection progression):
-
-- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
-- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
-- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
-- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: renew the expired Pass (LH500938); the posting says the employer funds renewals. OSSC-FF: Attended in LH500937 is not a Pass; establish the required passed assessment if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
-
-## K0897 — Bearach Mac Teallach
-
-- Interview: `targeted_screening_first` — CL009512 records “Megger test on the No.2 feeder, 2.4 ohm, condemned the cable and ran a temporary.”; CL008869 records “Checked continuity on the run to the fog hut.”. Explicit role-related concerns in AP002492 remain unresolved. Relevant experience is recorded, but the uncertainty should be tested in a targeted screen before deciding on a full technical interview.
-- Application eligibility: `plausible_but_essential_evidence_incomplete`
-- Mobilisation readiness: `not_established`
-- Relevant evidence categories: electrical, fault_finding, mechanical
-- Full clean log review: 170 rows; 7 distinct relevant patterns after template collapse.
-- Appraisal review: 11 exact keeper-code-keyed rows; 10 rows not selected by the appraisal filter.
-
-Category support:
-
-- `electrical` â€” 2023-01-26 â€” â€œMegger test on the No.2 feeder, 2.4 ohm, condemned the cable and ran a temporary.â€ (CL009512; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#14356`).
-- `fault_finding` â€” 2023-01-26 â€” â€œMegger test on the No.2 feeder, 2.4 ohm, condemned the cable and ran a temporary.â€ (CL009512; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#14356`).
-- `mechanical` â€” 2019-10-07 â€” â€œChanged oil and filters on no 1.â€ (CL008539; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#23484`).
-
-Evidence:
-
-- 2023-01-26 — “Megger test on the No.2 feeder, 2.4 ohm, condemned the cable and ran a temporary.” (CL009512; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#14356`; clean/manual attribution corroborated by raw payroll value 0011753 normalized to 11753, matching clean payroll 0011753).
-- 2020-11-14 — “Checked continuity on the run to the fog hut.” (CL008869; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#37822`; clean/manual attribution corroborated by raw payroll value 0011753 normalized to 11753, matching clean payroll 0011753).
-- 2021-03-04 — “Lamp not lit, found the fuse gone. Renewed.” (CL008960; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#41756`; clean/manual attribution corroborated by raw payroll value 11753 normalized to 11753, matching clean payroll 0011753).
-- 2020-02-17 — “Renewed fuse links, no.2 way. All made off.” (CL008649; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#28352`; clean/manual attribution corroborated by raw payroll value 0011753 normalized to 11753, matching clean payroll 0011753).
-- 2019-10-07 — “Changed oil and filters on no 1.” (CL008539; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#23484`; clean/manual attribution corroborated by raw payroll value 0011753 normalized to 11753, matching clean payroll 0011753).
-
-Manager testimony selected as screening context:
-
-- 2023 (year precision) — Gap identified in chasing faults. (AP002492; `raw/appraisals/appraisals.jsonl#AP002492`; concern: identified_gap). Manager testimony only, not competence or authorisation.
-
-Limitations:
-
-- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
-- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
-
-Credential position:
-
-- Dated Pass: HVAP-01, completed 2026-07-27, supplied expiry 2029-03-23 (`raw/training/vendor-c-learnhub-2017-2026.json#LH501548`).
-- HVAP-03: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH501545`).
-
-Initial selection action:
-
-- Run a targeted evidence screen before a full technical interview. Resolve the explicit concerns in AP002492. Ask what the person did personally, what plant was involved, what checks controlled the work and what outcome was verified.
-
-Later qualification and mobilisation actions (only after selection progression):
-
-- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
-- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
-- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
-- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
 
 ## K1200 — Tomaltach Yarrowfell
 
-- Interview: `targeted_screening_first` — CL005994 records “Drive motor brushes and commutator dressed, rotation back to time.”; CL007505 records “Lamp changer stepping twice, dismantled the ratchet and dressed the pawl faces.”. Explicit role-related concerns in AP003496 remain unresolved. Relevant experience is recorded, but the uncertainty should be tested in a targeted screen before deciding on a full technical interview.
+- Interview: `targeted_screening_first` — CL009921 (2024-05-24) records "Stripped and cleaned the mercury bath, float centred and the rotation smoothed out."; CL005994 (2012-02-13) records "Drive motor brushes and commutator dressed, rotation back to time.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. However, material contradiction in AP003496: Four attributed hands-on records, including motor-brush and commutator maintenance, conflict with AP003496's direct statement that the manager had not observed the plant work suggested by the record and that two requests for assistance were avoided. Clarification is needed before a technical interview; neither source is silently preferred.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL009921, CL005994
+- Selected positive testimony: AP003484, AP003485, AP003489, AP003490, AP003494, AP003497
+- Selected adverse testimony: AP003496
 - Relevant evidence categories: electrical, mechanical
-- Full clean log review: 332 rows; 3 distinct relevant patterns after template collapse.
+- Full clean log review: 332 rows; 3 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
 - Appraisal review: 13 exact keeper-code-keyed rows; 6 rows not selected by the appraisal filter.
+
+- Material unresolved core issue: Four attributed hands-on records, including motor-brush and commutator maintenance, conflict with AP003496's direct statement that the manager had not observed the plant work suggested by the record and that two requests for assistance were avoided.
+
+Unresolved questions retained for selection:
+
+- Before a technical interview, establish which work Tomaltach performed personally, whether the optic and clockwork activities meet the employer's plant-maintenance criterion, and why AP003496 differs from the logs and other manager testimony.
 
 Category support:
 
-- `electrical` â€” 2012-02-13 â€” â€œDrive motor brushes and commutator dressed, rotation back to time.â€ (CL005994; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#001585`).
-- `mechanical` â€” 2012-02-13 â€” â€œDrive motor brushes and commutator dressed, rotation back to time.â€ (CL005994; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#001585`).
+- `electrical` — 2012-02-13 — “Drive motor brushes and commutator dressed, rotation back to time.” (CL005994; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#001585`).
+- `mechanical` — 2012-02-13 — “Drive motor brushes and commutator dressed, rotation back to time.” (CL005994; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#001585`).
 
 Evidence:
 
@@ -1866,7 +2404,7 @@ Credential position:
 
 Initial selection action:
 
-- Run a targeted evidence screen before a full technical interview. Resolve the explicit concerns in AP003496. Ask what the person did personally, what plant was involved, what checks controlled the work and what outcome was verified.
+- Before a technical interview, establish which work Tomaltach performed personally, whether the optic and clockwork activities meet the employer's plant-maintenance criterion, and why AP003496 differs from the logs and other manager testimony.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -1874,308 +2412,26 @@ Later qualification and mobilisation actions (only after selection progression):
 - First, ask the issuer to verify the conflicting expiry evidence for LH502297, LH502305 and retain both supplied and nominal dates until resolved.
 - Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
 - Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: ask the issuer to resolve the supplied-expiry/scheme-rule conflict in LH502305 before deciding whether renewal is required. OSSC-FF: present and issuer-verify the current dated Pass (LH502320). OSSC-FA: renew the expired Pass (LH502298); the posting says the employer funds renewals.
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: present and issuer-verify the current dated Pass (LH502322).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
-
-## K1231 — Joachima Ulverstane
-
-- Interview: `targeted_screening_first` — CL010135 records “Checked continuity on the run to the fog hut.”; CL010239 records “Isolated no 2 transformer, earths applied both ends, permit 1102 issued to the contractor.”. Explicit role-related concerns in AP003571 remain unresolved. Relevant experience is recorded, but the uncertainty should be tested in a targeted screen before deciding on a full technical interview.
-- Application eligibility: `plausible_but_essential_evidence_incomplete`
-- Mobilisation readiness: `not_established`
-- Relevant evidence categories: electrical, fault_finding, mechanical, permit_or_isolation
-- Full clean log review: 300 rows; 10 distinct relevant patterns after template collapse.
-- Appraisal review: 15 exact keeper-code-keyed rows; 10 rows not selected by the appraisal filter.
-
-Category support:
-
-- `electrical` â€” 2025-07-15 â€” â€œIsolated no 2 transformer, earths applied both ends, permit 1102 issued to the contractor.â€ (CL010239; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#46689`).
-- `fault_finding` â€” 2025-02-26 â€” â€œChecked continuity on the run to the fog hut.â€ (CL010135; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#41590`).
-- `mechanical` â€” 2019-09-21 â€” â€œRan no.2 set 4 hrs. Oil and water checked.â€ (CL008529; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#22910`).
-- `permit_or_isolation` â€” 2025-07-15 â€” â€œIsolated no 2 transformer, earths applied both ends, permit 1102 issued to the contractor.â€ (CL010239; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#46689`).
-
-Evidence:
-
-- 2025-07-15 — “Isolated no 2 transformer, earths applied both ends, permit 1102 issued to the contractor.” (CL010239; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#46689`; clean/manual attribution corroborated by raw payroll value 0012406 normalized to 12406, matching clean payroll 0012406).
-- 2025-02-26 — “Checked continuity on the run to the fog hut.” (CL010135; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#41590`; clean/manual attribution corroborated by raw payroll value 0012406 normalized to 12406, matching clean payroll 0012406).
-- 2024-02-22 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL009834; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#28644`; clean/manual attribution corroborated by raw payroll value 12406 normalized to 12406, matching clean payroll 0012406).
-- 2016-11-03 — “Megger test on the No.2 feeder, 11.2 V, condemned the cable and ran a temporary.” (CL007632; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#31397`; clean/manual attribution corroborated by raw name Joachima Ulverstane).
-- 2025-11-15 — “Rewired the changeover contactor arrangement, tested on both feeds and left in auto.” (CL010320; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#51050`; clean/manual attribution corroborated by raw payroll value 0012406 normalized to 12406, matching clean payroll 0012406).
-- 2019-09-21 — “Ran no.2 set 4 hrs. Oil and water checked.” (CL008529; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#22910`; clean/manual attribution corroborated by raw payroll value 0012406 normalized to 12406, matching clean payroll 0012406).
-
-Manager testimony selected as screening context:
-
-- 2011 (year precision) — The standard achieved in the boards falls below that expected of the grade. (AP003564; `raw/appraisals/appraisals.jsonl#AP003564`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
-- 2013 (year precision) — The standard achieved in the distribution side falls below that expected of the grade. (AP003566; `raw/appraisals/appraisals.jsonl#AP003566`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
-- 2014 (year precision) — Joachima — 2014 Joachima took on chasing faults without being asked and made a proper job of it. (AP003567; `raw/appraisals/appraisals.jsonl#AP003567`; support: made_proper_job). Manager testimony only, not competence or authorisation.
-- 2015 (year precision) — Good humoured, hard working, and genuinely capable at fault work. (AP003568; `raw/appraisals/appraisals.jsonl#AP003568`; support: explicit_capability). Manager testimony only, not competence or authorisation.
-- 2019 (year precision) — switchgear work has to be checked behind her. / fault work to a good standard. (AP003571; `raw/appraisals/appraisals.jsonl#AP003571`; support: good_standard; concern: work_checked_behind). Manager testimony only, not competence or authorisation.
-
-Limitations:
-
-- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
-- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
-
-Credential position:
-
-- No currently dated relevant LearnHub Pass was established at the cutoff.
-
-Initial selection action:
-
-- Run a targeted evidence screen before a full technical interview. Resolve the explicit concerns in AP003571. Ask what the person did personally, what plant was involved, what checks controlled the work and what outcome was verified.
-
-Later qualification and mobilisation actions (only after selection progression):
-
-- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
-- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
-- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
-- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
-
-## K1345 — Dualta O hIarnain
-
-- Interview: `targeted_screening_first` — CL008356 records “Tightened glands in the cable trunk by the stair.”; CL007631 records “Ran NO.2 set 6 hrs. Oil and water checked.”. Explicit role-related concerns in AP003873 remain unresolved. Relevant experience is recorded, but the uncertainty should be tested in a targeted screen before deciding on a full technical interview.
-- Application eligibility: `plausible_but_essential_evidence_incomplete`
-- Mobilisation readiness: `not_established`
-- Relevant evidence categories: electrical, mechanical
-- Full clean log review: 209 rows; 8 distinct relevant patterns after template collapse.
-- Appraisal review: 13 exact keeper-code-keyed rows; 8 rows not selected by the appraisal filter.
-
-Category support:
-
-- `electrical` â€” 2019-02-17 â€” â€œTightened glands in the cable trunk by the stair.â€ (CL008356; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#14956`).
-- `mechanical` â€” 2016-11-03 â€” â€œRan NO.2 set 6 hrs. Oil and water checked.â€ (CL007631; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#31387`).
-
-Evidence:
-
-- 2019-02-17 — “Tightened glands in the cable trunk by the stair.” (CL008356; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#14956`; clean/manual attribution corroborated by raw payroll value 11266 normalized to 11266, matching clean payroll 0011266).
-- 2016-11-03 — “Ran NO.2 set 6 hrs. Oil and water checked.” (CL007631; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#31387`; clean/manual attribution corroborated by raw name Dualta O hIarnain).
-- 2014-12-01 — “Load tested the winch and the landing gear to the annual figure and certified the log.” (CL007040; `raw/logbooks/era2-keeperlog/KLOG2014.DAT#005749`; clean/manual attribution corroborated by raw keeper_code K1345).
-- 2012-08-26 — “Bled the fuel system after the filter change.” (CL006199; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#008592`; clean/manual attribution corroborated by raw keeper_code K1345).
-- 2011-10-20 — “Gearbox stripped on the winch, 2 teeth found broken. Replaced the wheel.” (CL005867; `raw/logbooks/era2-keeperlog/KLOG2011.DAT#010421`; clean/manual attribution corroborated by raw keeper_code K1345).
-
-Manager testimony selected as screening context:
-
-- 2008 (year precision) — When the winch went wrong in the spring, Dualta was the one who sorted it out. (AP003865; `raw/appraisals/appraisals.jsonl#AP003865`; support: resolved_failure). Manager testimony only, not competence or authorisation.
-- 2014 (year precision) — When lifting work went wrong in the spring, Dualta was the one who sorted it out. (AP003870; `raw/appraisals/appraisals.jsonl#AP003870`; support: resolved_failure). Manager testimony only, not competence or authorisation.
-- 2018 (year precision) — the derrick has to be checked behind him. (AP003873; `raw/appraisals/appraisals.jsonl#AP003873`; concern: work_checked_behind). Manager testimony only, not competence or authorisation.
-- 2019 (year precision) — When the derrick went wrong in the spring, Dualta was the one who sorted it out. (AP003874; `raw/appraisals/appraisals.jsonl#AP003874`; support: resolved_failure). Manager testimony only, not competence or authorisation.
-- 2026 (year precision) — lifting work has to be checked behind him. (AP003877; `raw/appraisals/appraisals.jsonl#AP003877`; concern: work_checked_behind). Manager testimony only, not competence or authorisation.
-
-- Same-year timing uncertainty: AP003877 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
-
-Limitations:
-
-- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
-- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
-
-Credential position:
-
-- Dated Pass: MECS-2, completed 2025-10-14, supplied expiry 2030-07-09 (`raw/training/vendor-c-learnhub-2017-2026.json#LH502580`).
-- WAHS-3: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502573`).
-- MECS-1: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502572`).
-- MECS-5: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502577`).
-- Expiry conflict: HVAP-04 Pass LH502579 supplies 2026-11-04 (current at cutoff), while the nominal 3-year rule points to 2026-01-14 (expired); issuer verification required (`raw/training/vendor-c-learnhub-2017-2026.json#LH502579`).
-- Conflict `expiry_rule_conflict`: At 2026-10-11, the supplied expiry says current but the nominal scheme-rule date says expired; issuer verification is required before relying on either date.
-- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 2; later modules do not bridge missing earlier stages.
-
-Initial selection action:
-
-- Run a targeted evidence screen before a full technical interview. Resolve the explicit concerns in AP003873. Ask what the person did personally, what plant was involved, what checks controlled the work and what outcome was verified.
-
-Later qualification and mobilisation actions (only after selection progression):
-
-- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
-- First, ask the issuer to verify the conflicting expiry evidence for LH502579 and retain both supplied and nominal dates until resolved.
-- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
-- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
-
-## K1446 — Kelveen Sellanby
-
-- Interview: `targeted_screening_first` — CL010352 records “Traced the nuisance low-volt alarm to a soft cell in the NO.2 bank, replaced it.”; CL010079 records “Changed the battery in the portable set.”. Explicit role-related concerns in AP004147, AP004150 remain unresolved. Relevant experience is recorded, but the uncertainty should be tested in a targeted screen before deciding on a full technical interview.
-- Application eligibility: `plausible_but_essential_evidence_incomplete`
-- Mobilisation readiness: `not_established`
-- Relevant evidence categories: electrical, fault_finding, mechanical
-- Full clean log review: 408 rows; 8 distinct relevant patterns after template collapse.
-- Appraisal review: 10 exact keeper-code-keyed rows; 8 rows not selected by the appraisal filter.
-
-Category support:
-
-- `electrical` â€” 2026-01-02 â€” â€œTraced the nuisance low-volt alarm to a soft cell in the NO.2 bank, replaced it.â€ (CL010352; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#52786`).
-- `fault_finding` â€” 2026-01-02 â€” â€œTraced the nuisance low-volt alarm to a soft cell in the NO.2 bank, replaced it.â€ (CL010352; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#52786`).
-- `mechanical` â€” 2024-12-06 â€” â€œBled the fuel system after the filter change.â€ (CL010071; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38646`).
-
-Evidence:
-
-- 2026-01-02 — “Traced the nuisance low-volt alarm to a soft cell in the NO.2 bank, replaced it.” (CL010352; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#52786`; clean/manual attribution corroborated by raw payroll value 0011572 normalized to 11572, matching clean payroll 0011572).
-- 2024-12-13 — “Changed the battery in the portable set.” (CL010079; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38892`; clean/manual attribution corroborated by raw payroll value 0011572 normalized to 11572, matching clean payroll 0011572).
-- 2024-12-06 — “Bled the fuel system after the filter change.” (CL010071; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38646`; clean/manual attribution corroborated by raw payroll value 11572 normalized to 11572, matching clean payroll 0011572).
-- 2023-07-04 — “Gas tested the fuel tank before entry.” (CL009650; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#20199`; clean/manual attribution corroborated by raw payroll value 0011572 normalized to 11572, matching clean payroll 0011572).
-- 2020-07-17 — “Set the timing on no.3 after the pump was refitted, ran it up and checked exhaust temps.” (CL008769; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#33654`; clean/manual attribution corroborated by raw payroll value 11572 normalized to 11572, matching clean payroll 0011572).
-
-Manager testimony selected as screening context:
-
-- 2018 (year precision) — The standard achieved in height work falls below that expected of the grade. (AP004147; `raw/appraisals/appraisals.jsonl#AP004147`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
-- 2023 (year precision) — Needs supervision on the standby banks. / staging work needs work. (AP004150; `raw/appraisals/appraisals.jsonl#AP004150`; concern: needs_supervision, needs_work). Manager testimony only, not competence or authorisation.
-
-- Same-year timing uncertainty: AP004153 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
-
-Limitations:
-
-- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
-- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
-
-Credential position:
-
-- Dated Pass: HVAP-02, completed 2024-08-05, supplied expiry 2027-09-20 (`raw/training/vendor-c-learnhub-2017-2026.json#LH502759`).
-- OSSC-SS: Attended; `attended_not_passed` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502750`).
-- HVAP-04: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502751`).
-- MECS-3: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502753`).
-- MPMC-B: Attended; `attended_not_passed` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502755`).
-- Conflict `prerequisite_not_established`: A current OSSC-SS prerequisite is not established by the dated LearnHub rows supplied.
-- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 1; later modules do not bridge missing earlier stages.
-
-Initial selection action:
-
-- Run a targeted evidence screen before a full technical interview. Resolve the explicit concerns in AP004147, AP004150. Ask what the person did personally, what plant was involved, what checks controlled the work and what outcome was verified.
-
-Later qualification and mobilisation actions (only after selection progression):
-
-- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
-- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
-- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
-- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: Attended in LH502750 is not a Pass; establish the required passed assessment if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
-
-## K1483 — Eachann O Preachain
-
-- Interview: `targeted_screening_first` — CL000410 records “Changed the battery in the portable set.”; CL007775 records “Compressor not making pressure, rings worn. Rebuilt the No.1 cylinder.”. Relevant experience is recorded, but the uncertainty should be tested in a targeted screen before deciding on a full technical interview.
-- Application eligibility: `plausible_but_essential_evidence_incomplete`
-- Mobilisation readiness: `not_established`
-- Relevant evidence categories: electrical, mechanical
-- Full clean log review: 268 rows; 3 distinct relevant patterns after template collapse.
-- Appraisal review: 4 exact keeper-code-keyed rows; 3 rows not selected by the appraisal filter.
-
-Category support:
-
-- `electrical` â€” 1990-11-07 â€” â€œChanged the battery in the portable set.â€ (CL000410; `raw/logbooks/era1-ocr/keimnalee-1990.txt#L442`).
-- `mechanical` â€” 2017-04-19 â€” â€œCompressor not making pressure, rings worn. Rebuilt the No.1 cylinder.â€ (CL007775; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#37579`).
-
-Evidence:
-
-- 2017-04-19 — “Compressor not making pressure, rings worn. Rebuilt the No.1 cylinder.” (CL007775; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#37579`; clean/manual attribution corroborated by raw name Eachann O Preachain).
-- 1995-07-11 — “Greased the compressor and checked the belts.” (CL001023; `raw/logbooks/era1-ocr/mornaskea-1995.txt#L366`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
-- 1990-11-07 — “Changed the battery in the portable set.” (CL000410; `raw/logbooks/era1-ocr/keimnalee-1990.txt#L442`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
-
-Manager testimony selected as screening context:
-
-- 2019 (year precision) — the fog signal has to be checked behind him. (AP004258; `raw/appraisals/appraisals.jsonl#AP004258`; concern: work_checked_behind). Manager testimony only, not competence or authorisation.
-
-Limitations:
-
-- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
-- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
-
-Credential position:
-
-- Dated Pass: HVAP-03, completed 2026-07-24, supplied expiry 2029-11-01 (`raw/training/vendor-c-learnhub-2017-2026.json#LH502828`).
-- LOSC-P: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502827`).
-- HVAP-02: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502826`).
-- Conflict `prerequisite_chronology_not_established`: The supplied rows do not establish both prerequisite passes on or before LOSC-P; an earlier unrepresented pass remains possible.
-
-Initial selection action:
-
-- Run a targeted evidence screen before a full technical interview. Test the sparse or repetitive evidence with concrete examples. Ask what the person did personally, what plant was involved, what checks controlled the work and what outcome was verified.
-
-Later qualification and mobilisation actions (only after selection progression):
-
-- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
-- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
-- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
-- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
-
-## K1538 — Oileann Ni Gharbhail
-
-- Interview: `targeted_screening_first` — CL007686 records “Megger test on the No.1 feeder, 3.6 bar, condemned the cable and ran a temporary.”; CL007420 records “Isolated NO.2 transformer, earths applied both ends, permit 0412 issued to the contractor.”. Explicit role-related concerns in AP004422 remain unresolved. Relevant experience is recorded, but the uncertainty should be tested in a targeted screen before deciding on a full technical interview.
-- Application eligibility: `plausible_but_essential_evidence_incomplete`
-- Mobilisation readiness: `not_established`
-- Relevant evidence categories: electrical, fault_finding, mechanical, permit_or_isolation
-- Full clean log review: 369 rows; 11 distinct relevant patterns after template collapse.
-- Appraisal review: 8 exact keeper-code-keyed rows; 6 rows not selected by the appraisal filter.
-
-Category support:
-
-- `electrical` â€” 2017-01-11 â€” â€œMegger test on the No.1 feeder, 3.6 bar, condemned the cable and ran a temporary.â€ (CL007686; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#33937`).
-- `fault_finding` â€” 2017-01-11 â€” â€œMegger test on the No.1 feeder, 3.6 bar, condemned the cable and ran a temporary.â€ (CL007686; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#33937`).
-- `mechanical` â€” 2017-10-13 â€” â€œChanged oil and filters on no 2.â€ (CL007925; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#43990`).
-- `permit_or_isolation` â€” 2016-02-20 â€” â€œIsolated NO.2 transformer, earths applied both ends, permit 0412 issued to the contractor.â€ (CL007420; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#22259`).
-
-Evidence:
-
-- 2017-01-11 — “Megger test on the No.1 feeder, 3.6 bar, condemned the cable and ran a temporary.” (CL007686; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#33937`; clean/manual attribution corroborated by raw name Oileann Ni Gharbhail).
-  - Measurement warning `inconsistent_measurement_unit`: The quoted Megger reading uses a pressure unit, so the activity is retained but the numerical measurement is unreliable. Observed: `3.6 bar`.
-- 2016-02-20 — “Isolated NO.2 transformer, earths applied both ends, permit 0412 issued to the contractor.” (CL007420; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#22259`; clean/manual attribution corroborated by raw name Oileann Ni Gharbhail).
-- 2014-04-10 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL006753; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#1921`; clean/manual attribution corroborated by raw name Oileann Ni Gharbhail).
-- 2006-02-21 — “Checked continuity on the run to the fog hut.” (CL003887; `raw/logbooks/era2-keeperlog/KLOG2006.DAT#001876`; clean/manual attribution corroborated by raw keeper_code K1538).
-- 2017-10-13 — “Changed oil and filters on no 2.” (CL007925; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#43990`; clean/manual attribution corroborated by raw name Oileann Ní Gharbhail).
-
-Manager testimony selected as screening context:
-
-- 2013 (year precision) — There is a habit of mind here that is worth writing down: Oileann will not leave the high voltage side half done. / Over the year Oileann has quietly become the station's go-to for switching work. / When the boards went wrong in the spring, Oileann was the one who sorted it out. (AP004418; `raw/appraisals/appraisals.jsonl#AP004418`; support: go_to_person, resolved_failure; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
-- 2017 (year precision) — Gap identified in isolations on the 11kV. (AP004422; `raw/appraisals/appraisals.jsonl#AP004422`; concern: identified_gap). Manager testimony only, not competence or authorisation.
-
-- Supplementary note: A 2011 manager note records generator-control fault-finding and years of station high-voltage switching; clean entry CL006360 records work on an 11 kV board. (`raw/appraisals/station_manager_notes/2011-nevisbeg-keeper-note.txt#L3,L7,L9,L11`). The note names NI GHARBHAIL O/Oileann and the personnel export has one exact NI GHARBHAIL O match. The clean profile places K1538 at Nevisbeg in 2011, but the note's claimed eleven-year station tenure conflicts with the recorded chronology. This is an interview lead, not an authorisation.
-- Hand-check entry: 2013-02-03 — “Took the 11kV board off, worked the sequence myself, the supernumerary witnessing.” (CL006360; `raw/logbooks/era2-keeperlog/KLOG2013.DAT#001138`).
-
-- Chronology conflict `oileann_station_tenure_conflict`: The 2011 note says Oileann had been at Nevisbeg for eleven years (implying about 2000), while the clean profile records joining in 1998 and a Nevisbeg posting beginning in 2009. The testimony is retained as an interview lead, but its station-tenure chronology is not established.
-
-Limitations:
-
-- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
-- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
-- `authorization_not_established`: The manager's narrative is not a currently recognised authorisation and does not establish two years of qualifying 11 kV experience.
-
-Credential position:
-
-- Dated Pass: WAHS-2, completed 2026-05-03, supplied expiry 2029-11-14 (`raw/training/vendor-c-learnhub-2017-2026.json#LH502939`).
-
-Initial selection action:
-
-- Run a targeted evidence screen before a full technical interview. Resolve the explicit concerns in AP004422. Ask what the person did personally, what plant was involved, what checks controlled the work and what outcome was verified.
-
-Later qualification and mobilisation actions (only after selection progression):
-
-- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
-- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
-- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
-- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: ask the issuer to resolve the supplied-expiry/scheme-rule conflict in LH502305 before deciding whether renewal is required. OSSC-FF: present and issuer-verify the current dated Pass (LH502320). OSSC-FA: the supplied Pass is expired (LH502298); ask the issuer which renewal, assessment or training route applies. The posting says the employer funds renewals, but it does not define the route or promise first-time training funding.
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: present and issuer-verify the current dated Pass (LH502322).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
 
 ## K1203 — Dualta O hIarnain
 
 - Interview: `outside_current_redeployment_cohort` — The clean profile and leavers export mark this person as having left; no current redeployment pathway is assessed.
 - Application eligibility: `not_assessed_outside_current_cohort`
 - Mobilisation readiness: `not_assessed_outside_current_cohort`
+- Core work records used for interview policy: CL003752, CL000326
+- Selected positive testimony: none selected
+- Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, mechanical
-- Full clean log review: 374 rows; 7 distinct relevant patterns after template collapse.
+- Full clean log review: 374 rows; 7 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
 - Appraisal review: 0 exact keeper-code-keyed rows; 0 rows not selected by the appraisal filter.
 
 Category support:
 
-- `electrical` â€” 1989-09-16 â€” â€œLamp not lit, found the fuse gone. Renewed.â€ (CL000326; `raw/logbooks/era1-ocr/naomhog-1989.txt#L426`).
-- `mechanical` â€” 2005-10-06 â€” â€œRan NO.2 set 6 hrs. Oil and water checked.â€ (CL003752; `raw/logbooks/era2-keeperlog/KLOG2005.DAT#010038`).
+- `electrical` — 1989-09-16 — “Lamp not lit, found the fuse gone. Renewed.” (CL000326; `raw/logbooks/era1-ocr/naomhog-1989.txt#L426`).
+- `mechanical` — 2005-10-06 — “Ran NO.2 set 6 hrs. Oil and water checked.” (CL003752; `raw/logbooks/era2-keeperlog/KLOG2005.DAT#010038`).
 
 Evidence:
 
@@ -2197,15 +2453,18 @@ No current credential, training or mobilisation pathway is assessed for this lea
 - Interview: `outside_current_redeployment_cohort` — The clean profile and leavers export mark this person as having left; no current redeployment pathway is assessed.
 - Application eligibility: `not_assessed_outside_current_cohort`
 - Mobilisation readiness: `not_assessed_outside_current_cohort`
+- Core work records used for interview policy: CL006217, CL006098
+- Selected positive testimony: none selected
+- Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, mechanical, permit_or_isolation
-- Full clean log review: 353 rows; 9 distinct relevant patterns after template collapse.
+- Full clean log review: 353 rows; 9 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
 - Appraisal review: 0 exact keeper-code-keyed rows; 0 rows not selected by the appraisal filter.
 
 Category support:
 
-- `electrical` â€” 2012-05-01 â€” â€œIsolated NO.2 transformer, earths applied both ends, PTW 114 issued to the contractor.â€ (CL006091; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#004409`).
-- `mechanical` â€” 2012-09-16 â€” â€œSet the timing on no.3 after the pump was refitted, ran it up and checked exhaust temps.â€ (CL006217; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#009298`).
-- `permit_or_isolation` â€” 2012-05-01 â€” â€œIsolated NO.2 transformer, earths applied both ends, PTW 114 issued to the contractor.â€ (CL006091; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#004409`).
+- `electrical` — 2012-05-01 — “Isolated NO.2 transformer, earths applied both ends, PTW 114 issued to the contractor.” (CL006091; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#004409`).
+- `mechanical` — 2012-09-16 — “Set the timing on no.3 after the pump was refitted, ran it up and checked exhaust temps.” (CL006217; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#009298`).
+- `permit_or_isolation` — 2012-05-01 — “Isolated NO.2 transformer, earths applied both ends, PTW 114 issued to the contractor.” (CL006091; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#004409`).
 
 Evidence:
 

@@ -1,10 +1,10 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
   "independence": "Reads the ZIP, appraisal JSONL and generated outputs directly; does not import evaluator code or recompute its recommendation policy.",
   "source_archive_sha256": "59f12ea4dfb43d311429fdd34c207517c2ffefbf917e4cdfe9737ca5776270f5",
-  "recommendations_sha256": "67198a38a7e2a9aa1d9bcab4e5f20a5424a3a277914d4e989aa1800d0f65d2d0",
-  "checks": 5737,
-  "passed": 5737,
+  "recommendations_sha256": "db1be646b8765a147e5e9ab2b44681e5c31773209292dee0d65977962c4f40c1",
+  "checks": 6389,
+  "passed": 6389,
   "failed": 0,
   "status": "PASS",
   "failures": [],
@@ -46,6 +46,11 @@
       "detail": "expected='64b86a9bafe79f01757495cbf0eebde11e0cb5f680d21928cd0cf0ecbdfa6d0c'; actual='64b86a9bafe79f01757495cbf0eebde11e0cb5f680d21928cd0cf0ecbdfa6d0c'"
     },
     {
+      "check": "member SHA-256: employers/carrowmore-array-hv-authorised-person.md",
+      "passed": true,
+      "detail": "expected='0a2fff04396dd62d10defa122014dff1671ab04bfea4f8780241130636f66aa7'; actual='0a2fff04396dd62d10defa122014dff1671ab04bfea4f8780241130636f66aa7'"
+    },
+    {
       "check": "member SHA-256: raw/personnel/cla_personnel_export.csv",
       "passed": true,
       "detail": "expected='14ba3653d9ab29b86b273cb7016dba574d840729de85d5b0eac367ed3170b4c7'; actual='14ba3653d9ab29b86b273cb7016dba574d840729de85d5b0eac367ed3170b4c7'"
@@ -73,7 +78,7 @@
     {
       "check": "output schema version",
       "passed": true,
-      "detail": "expected=4; actual=4"
+      "detail": "expected=5; actual=5"
     },
     {
       "check": "40 unique output profiles",
@@ -15346,6 +15351,56 @@
       "detail": "expected=False; actual=False"
     },
     {
+      "check": "individual policy review: K0147",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K0147",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K0147",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K0147",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0147/CL010280",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0147/CL010280",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0147/CL010280",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0147/CL009116",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0147/CL009116",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0147/CL009116",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "person-specific recommendation reason: K0184",
       "passed": true,
       "detail": ""
@@ -15354,6 +15409,56 @@
       "check": "no ranking used: K0184",
       "passed": true,
       "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "individual policy review: K0184",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K0184",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K0184",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K0184",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0184/CL010442",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0184/CL010442",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0184/CL010442",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0184/CL010068",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0184/CL010068",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0184/CL010068",
+      "passed": true,
+      "detail": ""
     },
     {
       "check": "person-specific recommendation reason: K0274",
@@ -15366,6 +15471,56 @@
       "detail": "expected=False; actual=False"
     },
     {
+      "check": "individual policy review: K0274",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K0274",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K0274",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K0274",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0274/CL010515",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0274/CL010515",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0274/CL010515",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0274/CL010397",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0274/CL010397",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0274/CL010397",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "person-specific recommendation reason: K0303",
       "passed": true,
       "detail": ""
@@ -15374,6 +15529,56 @@
       "check": "no ranking used: K0303",
       "passed": true,
       "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "individual policy review: K0303",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K0303",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K0303",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K0303",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0303/CL009744",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0303/CL009744",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0303/CL009744",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0303/CL008870",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0303/CL008870",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0303/CL008870",
+      "passed": true,
+      "detail": ""
     },
     {
       "check": "person-specific recommendation reason: K0310",
@@ -15386,6 +15591,56 @@
       "detail": "expected=False; actual=False"
     },
     {
+      "check": "individual policy review: K0310",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K0310",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K0310",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K0310",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0310/CL005658",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0310/CL005658",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0310/CL005658",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0310/CL005313",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0310/CL005313",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0310/CL005313",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "person-specific recommendation reason: K0354",
       "passed": true,
       "detail": ""
@@ -15394,6 +15649,56 @@
       "check": "no ranking used: K0354",
       "passed": true,
       "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "individual policy review: K0354",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K0354",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K0354",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K0354",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0354/CL007773",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0354/CL007773",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0354/CL007773",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0354/CL004792",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0354/CL004792",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0354/CL004792",
+      "passed": true,
+      "detail": ""
     },
     {
       "check": "person-specific recommendation reason: K0371",
@@ -15406,6 +15711,56 @@
       "detail": "expected=False; actual=False"
     },
     {
+      "check": "individual policy review: K0371",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K0371",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K0371",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K0371",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0371/CL010343",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0371/CL010343",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0371/CL010343",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0371/CL010201",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0371/CL010201",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0371/CL010201",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "person-specific recommendation reason: K0394",
       "passed": true,
       "detail": ""
@@ -15414,6 +15769,56 @@
       "check": "no ranking used: K0394",
       "passed": true,
       "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "individual policy review: K0394",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K0394",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K0394",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K0394",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0394/CL009886",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0394/CL009886",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0394/CL009886",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0394/CL009816",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0394/CL009816",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0394/CL009816",
+      "passed": true,
+      "detail": ""
     },
     {
       "check": "person-specific recommendation reason: K0478",
@@ -15426,6 +15831,41 @@
       "detail": "expected=False; actual=False"
     },
     {
+      "check": "individual policy review: K0478",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K0478",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K0478",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K0478",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0478/CL010541",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0478/CL010541",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0478/CL010541",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "person-specific recommendation reason: K0482",
       "passed": true,
       "detail": ""
@@ -15434,6 +15874,41 @@
       "check": "no ranking used: K0482",
       "passed": true,
       "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "individual policy review: K0482",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K0482",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K0482",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K0482",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0482/CL010082",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0482/CL010082",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0482/CL010082",
+      "passed": true,
+      "detail": ""
     },
     {
       "check": "person-specific recommendation reason: K0525",
@@ -15446,6 +15921,56 @@
       "detail": "expected=False; actual=False"
     },
     {
+      "check": "individual policy review: K0525",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K0525",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K0525",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K0525",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0525/CL010216",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0525/CL010216",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0525/CL010216",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0525/CL006644",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0525/CL006644",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0525/CL006644",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "person-specific recommendation reason: K0561",
       "passed": true,
       "detail": ""
@@ -15454,6 +15979,56 @@
       "check": "no ranking used: K0561",
       "passed": true,
       "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "individual policy review: K0561",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K0561",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K0561",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K0561",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0561/CL008741",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0561/CL008741",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0561/CL008741",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0561/CL007052",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0561/CL007052",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0561/CL007052",
+      "passed": true,
+      "detail": ""
     },
     {
       "check": "person-specific recommendation reason: K0566",
@@ -15466,6 +16041,56 @@
       "detail": "expected=False; actual=False"
     },
     {
+      "check": "individual policy review: K0566",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K0566",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K0566",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K0566",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0566/CL010043",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0566/CL010043",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0566/CL010043",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0566/CL006319",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0566/CL006319",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0566/CL006319",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "person-specific recommendation reason: K0586",
       "passed": true,
       "detail": ""
@@ -15474,6 +16099,41 @@
       "check": "no ranking used: K0586",
       "passed": true,
       "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "individual policy review: K0586",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K0586",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K0586",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K0586",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0586/CL006901",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0586/CL006901",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0586/CL006901",
+      "passed": true,
+      "detail": ""
     },
     {
       "check": "person-specific recommendation reason: K0589",
@@ -15486,6 +16146,56 @@
       "detail": "expected=False; actual=False"
     },
     {
+      "check": "individual policy review: K0589",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K0589",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K0589",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K0589",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0589/CL008681",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0589/CL008681",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0589/CL008681",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0589/CL008008",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0589/CL008008",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0589/CL008008",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "person-specific recommendation reason: K0592",
       "passed": true,
       "detail": ""
@@ -15494,6 +16204,56 @@
       "check": "no ranking used: K0592",
       "passed": true,
       "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "individual policy review: K0592",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K0592",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K0592",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K0592",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0592/CL008207",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0592/CL008207",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0592/CL008207",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0592/CL008184",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0592/CL008184",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0592/CL008184",
+      "passed": true,
+      "detail": ""
     },
     {
       "check": "person-specific recommendation reason: K0641",
@@ -15506,6 +16266,41 @@
       "detail": "expected=False; actual=False"
     },
     {
+      "check": "individual policy review: K0641",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K0641",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K0641",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K0641",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0641/CL009753",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0641/CL009753",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0641/CL009753",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "person-specific recommendation reason: K0650",
       "passed": true,
       "detail": ""
@@ -15514,6 +16309,56 @@
       "check": "no ranking used: K0650",
       "passed": true,
       "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "individual policy review: K0650",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K0650",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K0650",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K0650",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0650/CL010452",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0650/CL010452",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0650/CL010452",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0650/CL009955",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0650/CL009955",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0650/CL009955",
+      "passed": true,
+      "detail": ""
     },
     {
       "check": "person-specific recommendation reason: K0663",
@@ -15526,6 +16371,56 @@
       "detail": "expected=False; actual=False"
     },
     {
+      "check": "individual policy review: K0663",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K0663",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K0663",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K0663",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0663/CL010471",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0663/CL010471",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0663/CL010471",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0663/CL010451",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0663/CL010451",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0663/CL010451",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "person-specific recommendation reason: K0664",
       "passed": true,
       "detail": ""
@@ -15534,6 +16429,56 @@
       "check": "no ranking used: K0664",
       "passed": true,
       "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "individual policy review: K0664",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K0664",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K0664",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K0664",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0664/CL009911",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0664/CL009911",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0664/CL009911",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0664/CL009694",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0664/CL009694",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0664/CL009694",
+      "passed": true,
+      "detail": ""
     },
     {
       "check": "person-specific recommendation reason: K0817",
@@ -15546,6 +16491,56 @@
       "detail": "expected=False; actual=False"
     },
     {
+      "check": "individual policy review: K0817",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K0817",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K0817",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K0817",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0817/CL009476",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0817/CL009476",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0817/CL009476",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0817/CL008376",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0817/CL008376",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0817/CL008376",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "person-specific recommendation reason: K0847",
       "passed": true,
       "detail": ""
@@ -15554,6 +16549,56 @@
       "check": "no ranking used: K0847",
       "passed": true,
       "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "individual policy review: K0847",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K0847",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K0847",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K0847",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0847/CL008299",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0847/CL008299",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0847/CL008299",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0847/CL007737",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0847/CL007737",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0847/CL007737",
+      "passed": true,
+      "detail": ""
     },
     {
       "check": "person-specific recommendation reason: K0897",
@@ -15566,6 +16611,56 @@
       "detail": "expected=False; actual=False"
     },
     {
+      "check": "individual policy review: K0897",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K0897",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K0897",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K0897",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0897/CL009512",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0897/CL009512",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0897/CL009512",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K0897/CL008539",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K0897/CL008539",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K0897/CL008539",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "person-specific recommendation reason: K1055",
       "passed": true,
       "detail": ""
@@ -15574,6 +16669,56 @@
       "check": "no ranking used: K1055",
       "passed": true,
       "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "individual policy review: K1055",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K1055",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K1055",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K1055",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1055/CL003053",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1055/CL003053",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1055/CL003053",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1055/CL001961",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1055/CL001961",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1055/CL001961",
+      "passed": true,
+      "detail": ""
     },
     {
       "check": "person-specific recommendation reason: K1200",
@@ -15586,6 +16731,56 @@
       "detail": "expected=False; actual=False"
     },
     {
+      "check": "individual policy review: K1200",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K1200",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K1200",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K1200",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1200/CL009921",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1200/CL009921",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1200/CL009921",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1200/CL005994",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1200/CL005994",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1200/CL005994",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "person-specific recommendation reason: K1231",
       "passed": true,
       "detail": ""
@@ -15594,6 +16789,56 @@
       "check": "no ranking used: K1231",
       "passed": true,
       "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "individual policy review: K1231",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K1231",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K1231",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K1231",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1231/CL010320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1231/CL010320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1231/CL010320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1231/CL008529",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1231/CL008529",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1231/CL008529",
+      "passed": true,
+      "detail": ""
     },
     {
       "check": "person-specific recommendation reason: K1281",
@@ -15606,6 +16851,41 @@
       "detail": "expected=False; actual=False"
     },
     {
+      "check": "individual policy review: K1281",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K1281",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K1281",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K1281",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1281/CL008233",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1281/CL008233",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1281/CL008233",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "person-specific recommendation reason: K1302",
       "passed": true,
       "detail": ""
@@ -15614,6 +16894,56 @@
       "check": "no ranking used: K1302",
       "passed": true,
       "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "individual policy review: K1302",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K1302",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K1302",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K1302",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1302/CL004774",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1302/CL004774",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1302/CL004774",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1302/CL002551",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1302/CL002551",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1302/CL002551",
+      "passed": true,
+      "detail": ""
     },
     {
       "check": "person-specific recommendation reason: K1345",
@@ -15626,6 +16956,56 @@
       "detail": "expected=False; actual=False"
     },
     {
+      "check": "individual policy review: K1345",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K1345",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K1345",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K1345",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1345/CL008356",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1345/CL008356",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1345/CL008356",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1345/CL007631",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1345/CL007631",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1345/CL007631",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "person-specific recommendation reason: K1363",
       "passed": true,
       "detail": ""
@@ -15634,6 +17014,56 @@
       "check": "no ranking used: K1363",
       "passed": true,
       "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "individual policy review: K1363",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K1363",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K1363",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K1363",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1363/CL009245",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1363/CL009245",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1363/CL009245",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1363/CL008995",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1363/CL008995",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1363/CL008995",
+      "passed": true,
+      "detail": ""
     },
     {
       "check": "person-specific recommendation reason: K1374",
@@ -15646,6 +17076,56 @@
       "detail": "expected=False; actual=False"
     },
     {
+      "check": "individual policy review: K1374",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K1374",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K1374",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K1374",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1374/CL010559",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1374/CL010559",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1374/CL010559",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1374/CL009203",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1374/CL009203",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1374/CL009203",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "person-specific recommendation reason: K1418",
       "passed": true,
       "detail": ""
@@ -15654,6 +17134,56 @@
       "check": "no ranking used: K1418",
       "passed": true,
       "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "individual policy review: K1418",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K1418",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K1418",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K1418",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1418/CL004517",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1418/CL004517",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1418/CL004517",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1418/CL003898",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1418/CL003898",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1418/CL003898",
+      "passed": true,
+      "detail": ""
     },
     {
       "check": "person-specific recommendation reason: K1446",
@@ -15666,6 +17196,56 @@
       "detail": "expected=False; actual=False"
     },
     {
+      "check": "individual policy review: K1446",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K1446",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K1446",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K1446",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1446/CL010352",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1446/CL010352",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1446/CL010352",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1446/CL010071",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1446/CL010071",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1446/CL010071",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "person-specific recommendation reason: K1468",
       "passed": true,
       "detail": ""
@@ -15674,6 +17254,56 @@
       "check": "no ranking used: K1468",
       "passed": true,
       "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "individual policy review: K1468",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K1468",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K1468",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K1468",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1468/CL010450",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1468/CL010450",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1468/CL010450",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1468/CL010252",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1468/CL010252",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1468/CL010252",
+      "passed": true,
+      "detail": ""
     },
     {
       "check": "person-specific recommendation reason: K1474",
@@ -15686,6 +17316,56 @@
       "detail": "expected=False; actual=False"
     },
     {
+      "check": "individual policy review: K1474",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K1474",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K1474",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K1474",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1474/CL007218",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1474/CL007218",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1474/CL007218",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1474/CL005945",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1474/CL005945",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1474/CL005945",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "person-specific recommendation reason: K1483",
       "passed": true,
       "detail": ""
@@ -15694,6 +17374,56 @@
       "check": "no ranking used: K1483",
       "passed": true,
       "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "individual policy review: K1483",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K1483",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K1483",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K1483",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1483/CL007775",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1483/CL007775",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1483/CL007775",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1483/CL000410",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1483/CL000410",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1483/CL000410",
+      "passed": true,
+      "detail": ""
     },
     {
       "check": "person-specific recommendation reason: K1511",
@@ -15706,6 +17436,41 @@
       "detail": "expected=False; actual=False"
     },
     {
+      "check": "individual policy review: K1511",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K1511",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K1511",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K1511",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1511/CL010561",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1511/CL010561",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1511/CL010561",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "person-specific recommendation reason: K1538",
       "passed": true,
       "detail": ""
@@ -15714,6 +17479,56 @@
       "check": "no ranking used: K1538",
       "passed": true,
       "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "individual policy review: K1538",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "no numerical interview threshold: K1538",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "no automatic appraisal gate: K1538",
+      "passed": true,
+      "detail": "expected=False; actual=False"
+    },
+    {
+      "check": "specific core evidence selected: K1538",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1538/CL007925",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1538/CL007925",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1538/CL007925",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence displayed: K1538/CL007686",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence cited in reason: K1538/CL007686",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core evidence is mechanical or electrical: K1538/CL007686",
+      "passed": true,
+      "detail": ""
     },
     {
       "check": "Correction 2 source fields LH502305",
@@ -17001,12 +18816,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K0147",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K0147",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K0147",
+      "check": "Correction 7 proposed checks last K0147",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K0147",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K0147",
       "passed": true,
       "detail": ""
     },
@@ -17051,12 +18881,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K0184",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K0184",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K0184",
+      "check": "Correction 7 proposed checks last K0184",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K0184",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K0184",
       "passed": true,
       "detail": ""
     },
@@ -17101,12 +18946,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K0274",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K0274",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K0274",
+      "check": "Correction 7 proposed checks last K0274",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K0274",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K0274",
       "passed": true,
       "detail": ""
     },
@@ -17151,12 +19011,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K0303",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K0303",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K0303",
+      "check": "Correction 7 proposed checks last K0303",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K0303",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K0303",
       "passed": true,
       "detail": ""
     },
@@ -17201,12 +19076,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K0310",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K0310",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K0310",
+      "check": "Correction 7 proposed checks last K0310",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K0310",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K0310",
       "passed": true,
       "detail": ""
     },
@@ -17251,12 +19141,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K0354",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K0354",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K0354",
+      "check": "Correction 7 proposed checks last K0354",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K0354",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K0354",
       "passed": true,
       "detail": ""
     },
@@ -17301,12 +19206,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K0371",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K0371",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K0371",
+      "check": "Correction 7 proposed checks last K0371",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K0371",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K0371",
       "passed": true,
       "detail": ""
     },
@@ -17351,12 +19271,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K0394",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K0394",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K0394",
+      "check": "Correction 7 proposed checks last K0394",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K0394",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K0394",
       "passed": true,
       "detail": ""
     },
@@ -17401,12 +19336,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K0478",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K0478",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K0478",
+      "check": "Correction 7 proposed checks last K0478",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K0478",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K0478",
       "passed": true,
       "detail": ""
     },
@@ -17451,12 +19401,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K0482",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K0482",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K0482",
+      "check": "Correction 7 proposed checks last K0482",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K0482",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K0482",
       "passed": true,
       "detail": ""
     },
@@ -17501,12 +19466,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K0525",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K0525",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K0525",
+      "check": "Correction 7 proposed checks last K0525",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K0525",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K0525",
       "passed": true,
       "detail": ""
     },
@@ -17551,12 +19531,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K0561",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K0561",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K0561",
+      "check": "Correction 7 proposed checks last K0561",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K0561",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K0561",
       "passed": true,
       "detail": ""
     },
@@ -17601,12 +19596,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K0566",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K0566",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K0566",
+      "check": "Correction 7 proposed checks last K0566",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K0566",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K0566",
       "passed": true,
       "detail": ""
     },
@@ -17651,12 +19661,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K0586",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K0586",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K0586",
+      "check": "Correction 7 proposed checks last K0586",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K0586",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K0586",
       "passed": true,
       "detail": ""
     },
@@ -17701,12 +19726,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K0589",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K0589",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K0589",
+      "check": "Correction 7 proposed checks last K0589",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K0589",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K0589",
       "passed": true,
       "detail": ""
     },
@@ -17751,12 +19791,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K0592",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K0592",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K0592",
+      "check": "Correction 7 proposed checks last K0592",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K0592",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K0592",
       "passed": true,
       "detail": ""
     },
@@ -17801,12 +19856,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K0641",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K0641",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K0641",
+      "check": "Correction 7 proposed checks last K0641",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K0641",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K0641",
       "passed": true,
       "detail": ""
     },
@@ -17851,12 +19921,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K0650",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K0650",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K0650",
+      "check": "Correction 7 proposed checks last K0650",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K0650",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K0650",
       "passed": true,
       "detail": ""
     },
@@ -17901,12 +19986,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K0663",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K0663",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K0663",
+      "check": "Correction 7 proposed checks last K0663",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K0663",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K0663",
       "passed": true,
       "detail": ""
     },
@@ -17951,12 +20051,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K0664",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K0664",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K0664",
+      "check": "Correction 7 proposed checks last K0664",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K0664",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K0664",
       "passed": true,
       "detail": ""
     },
@@ -18001,12 +20116,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K0817",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K0817",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K0817",
+      "check": "Correction 7 proposed checks last K0817",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K0817",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K0817",
       "passed": true,
       "detail": ""
     },
@@ -18051,12 +20181,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K0847",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K0847",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K0847",
+      "check": "Correction 7 proposed checks last K0847",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K0847",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K0847",
       "passed": true,
       "detail": ""
     },
@@ -18101,12 +20246,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K0897",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K0897",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K0897",
+      "check": "Correction 7 proposed checks last K0897",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K0897",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K0897",
       "passed": true,
       "detail": ""
     },
@@ -18151,12 +20311,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K1055",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K1055",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K1055",
+      "check": "Correction 7 proposed checks last K1055",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K1055",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K1055",
       "passed": true,
       "detail": ""
     },
@@ -18201,12 +20376,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K1200",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K1200",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K1200",
+      "check": "Correction 7 proposed checks last K1200",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K1200",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K1200",
       "passed": true,
       "detail": ""
     },
@@ -18251,12 +20441,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K1231",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K1231",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K1231",
+      "check": "Correction 7 proposed checks last K1231",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K1231",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K1231",
       "passed": true,
       "detail": ""
     },
@@ -18301,12 +20506,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K1281",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K1281",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K1281",
+      "check": "Correction 7 proposed checks last K1281",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K1281",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K1281",
       "passed": true,
       "detail": ""
     },
@@ -18351,12 +20571,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K1302",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K1302",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K1302",
+      "check": "Correction 7 proposed checks last K1302",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K1302",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K1302",
       "passed": true,
       "detail": ""
     },
@@ -18401,12 +20636,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K1345",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K1345",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K1345",
+      "check": "Correction 7 proposed checks last K1345",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K1345",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K1345",
       "passed": true,
       "detail": ""
     },
@@ -18451,12 +20701,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K1363",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K1363",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K1363",
+      "check": "Correction 7 proposed checks last K1363",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K1363",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K1363",
       "passed": true,
       "detail": ""
     },
@@ -18501,12 +20766,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K1374",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K1374",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K1374",
+      "check": "Correction 7 proposed checks last K1374",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K1374",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K1374",
       "passed": true,
       "detail": ""
     },
@@ -18551,12 +20831,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K1418",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K1418",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K1418",
+      "check": "Correction 7 proposed checks last K1418",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K1418",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K1418",
       "passed": true,
       "detail": ""
     },
@@ -18601,12 +20896,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K1446",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K1446",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K1446",
+      "check": "Correction 7 proposed checks last K1446",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K1446",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K1446",
       "passed": true,
       "detail": ""
     },
@@ -18651,12 +20961,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K1468",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K1468",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K1468",
+      "check": "Correction 7 proposed checks last K1468",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K1468",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K1468",
       "passed": true,
       "detail": ""
     },
@@ -18701,12 +21026,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K1474",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K1474",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K1474",
+      "check": "Correction 7 proposed checks last K1474",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K1474",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K1474",
       "passed": true,
       "detail": ""
     },
@@ -18751,12 +21091,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K1483",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K1483",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K1483",
+      "check": "Correction 7 proposed checks last K1483",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K1483",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K1483",
       "passed": true,
       "detail": ""
     },
@@ -18801,12 +21156,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K1511",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K1511",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K1511",
+      "check": "Correction 7 proposed checks last K1511",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K1511",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K1511",
       "passed": true,
       "detail": ""
     },
@@ -18851,12 +21221,27 @@
       "detail": ""
     },
     {
+      "check": "Correction 7 safety mapping provisional K1538",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Correction 7 funding limits K1538",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "Correction 7 assessment last K1538",
+      "check": "Correction 7 proposed checks last K1538",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Correction 7 provisional mapping status K1538",
+      "passed": true,
+      "detail": "expected='provisional_mapping_not_employer_acceptance'; actual='provisional_mapping_not_employer_acceptance'"
+    },
+    {
+      "check": "Correction 7 climbing/rescue not inferred K1538",
       "passed": true,
       "detail": ""
     },
@@ -24003,7 +26388,7 @@
     {
       "check": "decision summary matches profiles",
       "passed": true,
-      "detail": "expected={\"insufficient_evidence\": 0, \"outside_current_redeployment_cohort\": 2, \"supported_technical_interview\": 21, \"targeted_screening_first\": 17}; actual={\"outside_current_redeployment_cohort\": 2, \"supported_technical_interview\": 21, \"targeted_screening_first\": 17}"
+      "detail": "expected={\"insufficient_evidence\": 0, \"outside_current_redeployment_cohort\": 2, \"supported_technical_interview\": 36, \"targeted_screening_first\": 2}; actual={\"outside_current_redeployment_cohort\": 2, \"supported_technical_interview\": 36, \"targeted_screening_first\": 2}"
     },
     {
       "check": "named appraisal keeper: AP003496",
@@ -24016,14 +26401,9 @@
       "detail": ""
     },
     {
-      "check": "named appraisal surfaced as concern: AP003496",
+      "check": "named appraisal retained as adverse testimony: AP003496",
       "passed": true,
       "detail": ""
-    },
-    {
-      "check": "named appraisal drives targeted screen: AP003496",
-      "passed": true,
-      "detail": "expected='targeted_screening_first'; actual='targeted_screening_first'"
     },
     {
       "check": "named appraisal keeper: AP001433",
@@ -24036,14 +26416,9 @@
       "detail": ""
     },
     {
-      "check": "named appraisal surfaced as concern: AP001433",
+      "check": "named appraisal retained as adverse testimony: AP001433",
       "passed": true,
       "detail": ""
-    },
-    {
-      "check": "named appraisal drives targeted screen: AP001433",
-      "passed": true,
-      "detail": "expected='targeted_screening_first'; actual='targeted_screening_first'"
     },
     {
       "check": "named appraisal keeper: AP003571",
@@ -24056,14 +26431,9 @@
       "detail": ""
     },
     {
-      "check": "named appraisal surfaced as concern: AP003571",
+      "check": "named appraisal retained as adverse testimony: AP003571",
       "passed": true,
       "detail": ""
-    },
-    {
-      "check": "named appraisal drives targeted screen: AP003571",
-      "passed": true,
-      "detail": "expected='targeted_screening_first'; actual='targeted_screening_first'"
     },
     {
       "check": "named appraisal keeper: AP004150",
@@ -24076,14 +26446,9 @@
       "detail": ""
     },
     {
-      "check": "named appraisal surfaced as concern: AP004150",
+      "check": "named appraisal retained as adverse testimony: AP004150",
       "passed": true,
       "detail": ""
-    },
-    {
-      "check": "named appraisal drives targeted screen: AP004150",
-      "passed": true,
-      "detail": "expected='targeted_screening_first'; actual='targeted_screening_first'"
     },
     {
       "check": "named appraisal keeper: AP004147",
@@ -24096,14 +26461,254 @@
       "detail": ""
     },
     {
-      "check": "named appraisal surfaced as concern: AP004147",
+      "check": "named appraisal retained as adverse testimony: AP004147",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "named appraisal drives targeted screen: AP004147",
+      "check": "only material core contradictions are targeted",
       "passed": true,
-      "detail": "expected='targeted_screening_first'; actual='targeted_screening_first'"
+      "detail": "expected=['K0478', 'K1200']; actual=['K0478', 'K1200']"
+    },
+    {
+      "check": "no current profile is insufficient on the bounded evidence",
+      "passed": true,
+      "detail": "expected=[]; actual=[]"
+    },
+    {
+      "check": "material contradiction IDs exact: K0478",
+      "passed": true,
+      "detail": "expected=['AP001159', 'AP001160', 'AP001162', 'AP001165']; actual=['AP001159', 'AP001160', 'AP001162', 'AP001165']"
+    },
+    {
+      "check": "material contradiction explained: K0478",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "material clarification before interview: K0478",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "material sources retained in reason: K0478",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "material contradiction IDs exact: K1200",
+      "passed": true,
+      "detail": "expected=['AP003496']; actual=['AP003496']"
+    },
+    {
+      "check": "material contradiction explained: K1200",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "material clarification before interview: K1200",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "material sources retained in reason: K1200",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "old count gate removed: K0566",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "descriptive count retained: K0566",
+      "passed": true,
+      "detail": "expected=4; actual=4"
+    },
+    {
+      "check": "old count gate removed: K0586",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "descriptive count retained: K0586",
+      "passed": true,
+      "detail": "expected=3; actual=3"
+    },
+    {
+      "check": "old count gate removed: K1483",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "descriptive count retained: K1483",
+      "passed": true,
+      "detail": "expected=3; actual=3"
+    },
+    {
+      "check": "adverse or sparse evidence not automatic veto: K0147",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "adverse or sparse evidence not automatic veto: K0184",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "adverse or sparse evidence not automatic veto: K0303",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "adverse or sparse evidence not automatic veto: K0354",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "adverse or sparse evidence not automatic veto: K0394",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "adverse or sparse evidence not automatic veto: K0561",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "adverse or sparse evidence not automatic veto: K0589",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "adverse or sparse evidence not automatic veto: K0897",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "adverse or sparse evidence not automatic veto: K1231",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "adverse or sparse evidence not automatic veto: K1345",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "adverse or sparse evidence not automatic veto: K1446",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "adverse or sparse evidence not automatic veto: K1483",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "adverse or sparse evidence not automatic veto: K1538",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "non-material adverse testimony does not decide disposition: K0147",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "non-material adverse testimony does not decide disposition: K0184",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "non-material adverse testimony does not decide disposition: K0274",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "non-material adverse testimony does not decide disposition: K0303",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "non-material adverse testimony does not decide disposition: K0354",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "non-material adverse testimony does not decide disposition: K0394",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "non-material adverse testimony does not decide disposition: K0525",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "non-material adverse testimony does not decide disposition: K0561",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "non-material adverse testimony does not decide disposition: K0589",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "non-material adverse testimony does not decide disposition: K0663",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "non-material adverse testimony does not decide disposition: K0817",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "non-material adverse testimony does not decide disposition: K0897",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "non-material adverse testimony does not decide disposition: K1231",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "non-material adverse testimony does not decide disposition: K1345",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "non-material adverse testimony does not decide disposition: K1374",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "non-material adverse testimony does not decide disposition: K1446",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "non-material adverse testimony does not decide disposition: K1468",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "non-material adverse testimony does not decide disposition: K1483",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "non-material adverse testimony does not decide disposition: K1511",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "non-material adverse testimony does not decide disposition: K1538",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
     },
     {
       "check": "K1200 all named material logs shown",
@@ -24114,11 +26719,6 @@
       "check": "K1200 reason reconciles log and appraisal",
       "passed": true,
       "detail": ""
-    },
-    {
-      "check": "K0586 cautious targeted screen",
-      "passed": true,
-      "detail": "expected='targeted_screening_first'; actual='targeted_screening_first'"
     },
     {
       "check": "K0586 distinct evidence independently visible",
@@ -24152,6 +26752,16 @@
     },
     {
       "check": "readable recommendations exist",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown has no category-rendering mojibake",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown retains true Unicode category punctuation",
       "passed": true,
       "detail": ""
     },
@@ -24226,12 +26836,27 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0147/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0147/fault_finding",
       "passed": true,
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0147/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0147/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K0147/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -24296,7 +26921,17 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0184/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0184/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K0184/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -24361,12 +26996,27 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0274/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0274/fault_finding",
       "passed": true,
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0274/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0274/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K0274/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -24431,12 +27081,27 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0303/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0303/fault_finding",
       "passed": true,
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0303/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0303/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K0303/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -24501,12 +27166,27 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0310/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0310/fault_finding",
       "passed": true,
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0310/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0310/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K0310/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -24566,7 +27246,17 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0354/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0354/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K0354/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -24636,12 +27326,27 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0371/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0371/fault_finding",
       "passed": true,
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0371/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0371/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K0371/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -24706,7 +27411,17 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0394/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0394/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K0394/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -24771,12 +27486,27 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0478/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0478/fault_finding",
       "passed": true,
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0478/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0478/permit_or_isolation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K0478/permit_or_isolation",
       "passed": true,
       "detail": ""
     },
@@ -24841,7 +27571,17 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0482/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0482/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K0482/fault_finding",
       "passed": true,
       "detail": ""
     },
@@ -24906,12 +27646,27 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0525/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0525/fault_finding",
       "passed": true,
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0525/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0525/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K0525/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -24976,7 +27731,17 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0561/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0561/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K0561/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -25031,7 +27796,17 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0566/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0566/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K0566/fault_finding",
       "passed": true,
       "detail": ""
     },
@@ -25041,7 +27816,17 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0566/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0566/permit_or_isolation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K0566/permit_or_isolation",
       "passed": true,
       "detail": ""
     },
@@ -25086,7 +27871,17 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0586/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0586/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K0586/fault_finding",
       "passed": true,
       "detail": ""
     },
@@ -25141,12 +27936,27 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0589/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0589/fault_finding",
       "passed": true,
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0589/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0589/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K0589/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -25211,12 +28021,27 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0592/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0592/fault_finding",
       "passed": true,
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0592/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0592/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K0592/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -25281,7 +28106,17 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0641/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0641/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K0641/fault_finding",
       "passed": true,
       "detail": ""
     },
@@ -25346,12 +28181,27 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0650/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0650/fault_finding",
       "passed": true,
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0650/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0650/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K0650/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -25416,12 +28266,27 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0663/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0663/fault_finding",
       "passed": true,
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0663/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0663/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K0663/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -25486,12 +28351,27 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0664/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0664/fault_finding",
       "passed": true,
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0664/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0664/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K0664/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -25556,12 +28436,27 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0817/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0817/fault_finding",
       "passed": true,
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0817/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0817/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K0817/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -25646,12 +28541,27 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0847/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0847/fault_finding",
       "passed": true,
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0847/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0847/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K0847/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -25716,12 +28626,27 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0897/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0897/fault_finding",
       "passed": true,
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K0897/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K0897/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K0897/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -25786,12 +28711,27 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1055/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1055/fault_finding",
       "passed": true,
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1055/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1055/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K1055/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -25846,7 +28786,17 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1200/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1200/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K1200/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -25921,7 +28871,17 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1203/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1203/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K1203/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -25996,7 +28956,17 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1231/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1231/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K1231/fault_finding",
       "passed": true,
       "detail": ""
     },
@@ -26006,7 +28976,17 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1231/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1231/permit_or_isolation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K1231/permit_or_isolation",
       "passed": true,
       "detail": ""
     },
@@ -26076,7 +29056,17 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1281/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1281/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K1281/fault_finding",
       "passed": true,
       "detail": ""
     },
@@ -26146,7 +29136,17 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1302/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1302/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K1302/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -26211,7 +29211,17 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1345/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1345/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K1345/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -26276,12 +29286,27 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1363/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1363/fault_finding",
       "passed": true,
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1363/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1363/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K1363/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -26346,7 +29371,17 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1374/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1374/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K1374/fault_finding",
       "passed": true,
       "detail": ""
     },
@@ -26356,7 +29391,17 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1374/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1374/permit_or_isolation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K1374/permit_or_isolation",
       "passed": true,
       "detail": ""
     },
@@ -26421,12 +29466,27 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1418/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1418/fault_finding",
       "passed": true,
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1418/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1418/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K1418/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -26491,12 +29551,27 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1446/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1446/fault_finding",
       "passed": true,
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1446/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1446/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K1446/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -26566,12 +29641,27 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1458/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1458/mechanical",
       "passed": true,
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1458/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1458/permit_or_isolation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K1458/permit_or_isolation",
       "passed": true,
       "detail": ""
     },
@@ -26636,12 +29726,27 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1468/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1468/fault_finding",
       "passed": true,
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1468/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1468/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K1468/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -26706,12 +29811,27 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1474/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1474/fault_finding",
       "passed": true,
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1474/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1474/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K1474/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -26756,7 +29876,17 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1483/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1483/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K1483/mechanical",
       "passed": true,
       "detail": ""
     },
@@ -26821,7 +29951,17 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1511/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1511/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K1511/fault_finding",
       "passed": true,
       "detail": ""
     },
@@ -26891,7 +30031,17 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1538/electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1538/fault_finding",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K1538/fault_finding",
       "passed": true,
       "detail": ""
     },
@@ -26901,7 +30051,17 @@
       "detail": ""
     },
     {
+      "check": "Markdown category citation punctuation faithful: K1538/mechanical",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown exact category citation in own section: K1538/permit_or_isolation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown category citation punctuation faithful: K1538/permit_or_isolation",
       "passed": true,
       "detail": ""
     },
@@ -28241,7 +31401,7 @@
       "detail": "expected='7e0d4defb6e5f629870085363dc356bd79a2bb15e9217a60dde3d9ed28515762'; actual='7e0d4defb6e5f629870085363dc356bd79a2bb15e9217a60dde3d9ed28515762'"
     },
     {
-      "check": "named appraisal context does not alter material concern gate: AP000090",
+      "check": "named appraisal context is not a material core contradiction: AP000090",
       "passed": true,
       "detail": ""
     },
@@ -28261,7 +31421,7 @@
       "detail": "expected='29465ddc06e9b72dc4a24c78cd16e282fc5684d8a1ff39b057ea3ce0adf7fd24'; actual='29465ddc06e9b72dc4a24c78cd16e282fc5684d8a1ff39b057ea3ce0adf7fd24'"
     },
     {
-      "check": "named appraisal context does not alter material concern gate: AP000752",
+      "check": "named appraisal context is not a material core contradiction: AP000752",
       "passed": true,
       "detail": ""
     },
@@ -28281,7 +31441,7 @@
       "detail": "expected='9a4afcb9fea17df130ac5d1b1cd04519ccd3a973693ee5905f1a9ba9d9ce404e'; actual='9a4afcb9fea17df130ac5d1b1cd04519ccd3a973693ee5905f1a9ba9d9ce404e'"
     },
     {
-      "check": "named appraisal context does not alter material concern gate: AP000753",
+      "check": "named appraisal context is not a material core contradiction: AP000753",
       "passed": true,
       "detail": ""
     },
@@ -28684,6 +31844,106 @@
       "check": "unmatched appraisal filter count: K1538",
       "passed": true,
       "detail": "expected=6; actual=6"
+    },
+    {
+      "check": "K1345 supported after individual review",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "K1345 positive testimony retained",
+      "passed": true,
+      "detail": "expected=['AP003865', 'AP003870', 'AP003874']; actual=['AP003865', 'AP003870', 'AP003874']"
+    },
+    {
+      "check": "K1345 adverse testimony retained",
+      "passed": true,
+      "detail": "expected=['AP003873', 'AP003877']; actual=['AP003873', 'AP003877']"
+    },
+    {
+      "check": "K1345 2026 appraisal remains timing-uncertain",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "K1345 action asks interview questions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "K0566 supported without workflow threshold",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "K0566 evidence and relevance explained",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "K0310 historical evidence does not auto-reject",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "K0310 current-practice question retained",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "K1200 remains targeted for named contradiction",
+      "passed": true,
+      "detail": "expected=['AP003496']; actual=['AP003496']"
+    },
+    {
+      "check": "O&M posting uses mechanical OR electrical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "O&M posting does not require HVAP",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "separate AP posting requirements preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "HVAP kept separate from O&M",
+      "passed": true,
+      "detail": "expected='separate synthetic appointment, not an O&M interview requirement'; actual='separate synthetic appointment, not an O&M interview requirement'"
+    },
+    {
+      "check": "insurer scope ambiguity explicit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "safety mapping classified provisional",
+      "passed": true,
+      "detail": "expected='provisional implementation mapping'; actual='provisional implementation mapping'"
+    },
+    {
+      "check": "climbing and rescue scope unresolved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "employer checks labelled recommendation",
+      "passed": true,
+      "detail": "expected='recommended verification, not an express O&M-posting requirement'; actual='recommended verification, not an express O&M-posting requirement'"
+    },
+    {
+      "check": "fictional scheme periods retained without GWO import",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "brief absence recorded honestly",
+      "passed": true,
+      "detail": ""
     },
     {
       "check": "OSSC definition has no height module",
