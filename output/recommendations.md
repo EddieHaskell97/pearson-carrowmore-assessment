@@ -4,7 +4,7 @@
 
 Scenario date: **2026-10-11**  
 Subset: **40 profiles — 38 current keepers and 2 leavers outside the redeployment cohort**  
-Results: **22 supported technical interview, 16 targeted screening first, 0 insufficient evidence; 2 outside the current cohort**
+Results: **21 supported technical interview, 17 targeted screening first, 0 insufficient evidence; 2 outside the current cohort**
 
 Interview potential is deliberately separate from application eligibility and mobilisation readiness. No person is marked mobilisation-ready because medical fitness and direct acceptance of height/boat/enclosed-space conditions are not supplied.
 
@@ -24,7 +24,7 @@ Interview potential is deliberately separate from application eligibility and mo
 | K0482 / Tadhgan Mac Deargain | `supported_technical_interview` | CL010082, CL009526, AP001188 | Manager testimony unverified; mobilisation gates open | Structured technical interview |
 | K0525 / Hugheen Mordaunley | `supported_technical_interview` | CL010216, CL007269 | Manager testimony unverified; mobilisation gates open | Structured technical interview |
 | K0561 / Muirgheal Holmthwaite | `targeted_screening_first` | CL008741, CL008494, AP001428 | Unresolved AP001433 | Targeted evidence screen |
-| K0566 / Garbhan O Riagain | `supported_technical_interview` | CL010043, CL006379 | Manager testimony unverified; mobilisation gates open | Structured technical interview |
+| K0566 / Garbhan O Riagain | `targeted_screening_first` | CL010043, CL002799 | Only 4 distinct log patterns | Targeted evidence screen |
 | K0586 / Gealbhan Nethercarn | `targeted_screening_first` | CL002089, CL006901 | Only 3 distinct log patterns | Targeted evidence screen |
 | K0589 / Eachann Westrayne | `targeted_screening_first` | CL007592, CL008681 | Unresolved AP001528, AP001530 | Targeted evidence screen |
 | K0592 / Fergal Mac Eibhleain | `supported_technical_interview` | CL008207, CL008184, AP001555 | Manager testimony unverified; mobilisation gates open | Structured technical interview |
@@ -37,7 +37,7 @@ Interview potential is deliberately separate from application eligibility and mo
 | K0897 / Bearach Mac Teallach | `targeted_screening_first` | CL009512, CL008869 | Unresolved AP002492 | Targeted evidence screen |
 | K1055 / Tailte Ni Chuirrin | `supported_technical_interview` | CL000604, CL003053 | Manager testimony unverified; mobilisation gates open | Structured technical interview |
 | K1200 / Tomaltach Yarrowfell | `targeted_screening_first` | CL005994, CL007505 | Unresolved AP003496 | Targeted evidence screen |
-| K1231 / Joachima Ulverstane | `targeted_screening_first` | CL010239, CL010180, AP003567 | Unresolved AP003571 | Targeted evidence screen |
+| K1231 / Joachima Ulverstane | `targeted_screening_first` | CL010239, CL010135, AP003567 | Unresolved AP003571 | Targeted evidence screen |
 | K1281 / Fearghal Nethercarn | `supported_technical_interview` | CL001465, CL008233 | Manager testimony unverified; mobilisation gates open | Structured technical interview |
 | K1302 / Uaithne Mac Bruachail | `supported_technical_interview` | CL004774, CL004522 | 2026 appraisal timing uncertain | Structured technical interview |
 | K1345 / Dualta O hIarnain | `targeted_screening_first` | CL008356, CL007631, AP003865 | Unresolved AP003873 | Targeted evidence screen |
@@ -62,6 +62,12 @@ Interview potential is deliberately separate from application eligibility and mo
 - Full clean log review: 274 rows; 10 distinct relevant patterns after template collapse.
 - Appraisal review: 6 exact keeper-code-keyed rows; 4 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2004-07-02 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL003354; `raw/logbooks/era2-keeperlog/KLOG2004.DAT#006575`).
+- `fault_finding` â€” 2004-07-02 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL003354; `raw/logbooks/era2-keeperlog/KLOG2004.DAT#006575`).
+- `mechanical` â€” 2026-08-07 â€” â€œRebuilt the clockwork drive, cleaned forty years of gum out of the train.â€ (CL010515; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#60993`).
+
 Evidence:
 
 - 2004-07-02 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL003354; `raw/logbooks/era2-keeperlog/KLOG2004.DAT#006575`; clean/manual attribution corroborated by raw keeper_code K0274).
@@ -76,6 +82,11 @@ Manager testimony selected as screening context:
 - 2026 (year precision) — When the boards went wrong in the spring, Iarlaith was the one who sorted it out. (AP000494; `raw/appraisals/appraisals.jsonl#AP000494`; support: resolved_failure). Manager testimony only, not competence or authorisation.
 
 - Same-year timing uncertainty: AP000494 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -112,6 +123,12 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 320 rows; 5 distinct relevant patterns after template collapse.
 - Appraisal review: 0 exact keeper-code-keyed rows; 0 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2012-08-03 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL006179; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#007687`).
+- `fault_finding` â€” 2012-08-03 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL006179; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#007687`).
+- `mechanical` â€” 2010-05-02 â€” â€œChanged oil and filters on no 2.â€ (CL005313; `raw/logbooks/era2-keeperlog/KLOG2010.DAT#004314`).
+
 Evidence:
 
 - 2012-08-03 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL006179; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#007687`; clean/manual attribution; raw keeper_code K8056 conflicts with clean K0310 and does not corroborate the person assignment).
@@ -119,6 +136,12 @@ Evidence:
 - 2010-05-02 — “Changed oil and filters on no 2.” (CL005313; `raw/logbooks/era2-keeperlog/KLOG2010.DAT#004314`; clean/manual attribution corroborated by raw keeper_code K0310).
 - 2001-05-13 — “Renewed fuse links, NO.2 way. All made off.” (CL002469; `raw/logbooks/era1-ocr/keimnalee-2001.txt#L162`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
 - 1994-03-25 — “Tightened glands in the cable trunk by the stair.” (CL000831; `raw/logbooks/era1-ocr/dunsaille-1994.txt#L163`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
+- `historical_evidence_only`: Supplied clean logs end on 2012-12-21 and no exact keeper-code-keyed appraisal is present. This is a historical-evidence limitation only; no recency threshold is applied and it does not automatically reject the person.
 
 Credential position:
 
@@ -152,6 +175,12 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 227 rows; 7 distinct relevant patterns after template collapse.
 - Appraisal review: 3 exact keeper-code-keyed rows; 1 row not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2025-12-15 â€” â€œChecked continuity on the run to the fog hut.â€ (CL010343; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#52159`).
+- `fault_finding` â€” 2025-12-15 â€” â€œChecked continuity on the run to the fog hut.â€ (CL010343; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#52159`).
+- `mechanical` â€” 2025-05-24 â€” â€œChanged oil and filters on no.3.â€ (CL010201; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#44788`).
+
 Evidence:
 
 - 2025-12-15 — “Checked continuity on the run to the fog hut.” (CL010343; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#52159`; clean/manual attribution corroborated by raw payroll value 0011092 normalized to 11092, matching clean payroll 0011092).
@@ -165,6 +194,11 @@ Manager testimony selected as screening context:
 
 - 2024 (year precision) — Over the year Cianan has quietly become the station's go-to for the HV authorisation work. (AP000798; `raw/appraisals/appraisals.jsonl#AP000798`; support: go_to_person). Manager testimony only, not competence or authorisation.
 - 2025 (year precision) — About Cianan, 2025: There is a habit of mind here that is worth writing down: Cianan will not leave isolations on the 11kV half done. (AP000799; `raw/appraisals/appraisals.jsonl#AP000799`; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -201,6 +235,11 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 180 rows; 9 distinct relevant patterns after template collapse.
 - Appraisal review: 4 exact keeper-code-keyed rows; 3 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2024-12-16 â€” â€œMegger test on the NO.2 feeder, 11.2 V, condemned the cable and ran a temporary.â€ (CL010082; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38994`).
+- `fault_finding` â€” 2024-12-16 â€” â€œMegger test on the NO.2 feeder, 11.2 V, condemned the cable and ran a temporary.â€ (CL010082; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38994`).
+
 Evidence:
 
 - 2024-12-16 — “Megger test on the NO.2 feeder, 11.2 V, condemned the cable and ran a temporary.” (CL010082; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38994`; clean/manual attribution corroborated by raw payroll value 0011979 normalized to 11979, matching clean payroll 0011979).
@@ -212,6 +251,11 @@ Evidence:
 Manager testimony selected as screening context:
 
 - 2020 (year precision) — It is noted that Tadhgan has maintained a proper standard in the control side of the sets. (AP001188; `raw/appraisals/appraisals.jsonl#AP001188`; support: good_standard). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -240,6 +284,12 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 211 rows; 5 distinct relevant patterns after template collapse.
 - Appraisal review: 10 exact keeper-code-keyed rows; 7 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2025-06-19 â€” â€œChecked continuity on the run to the fog hut.â€ (CL010216; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#45721`).
+- `fault_finding` â€” 2025-06-19 â€” â€œChecked continuity on the run to the fog hut.â€ (CL010216; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#45721`).
+- `mechanical` â€” 2013-12-13 â€” â€œBled the fuel system after the filter change.â€ (CL006644; `raw/logbooks/era2-keeperlog/KLOG2013.DAT#012056`).
+
 Evidence:
 
 - 2025-06-19 — “Checked continuity on the run to the fog hut.” (CL010216; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#45721`; clean/manual attribution corroborated by raw payroll value 0011695 normalized to 11695, matching clean payroll 0011695).
@@ -253,6 +303,11 @@ Manager testimony selected as screening context:
 - 2006 (year precision) — When the aton telemetry went wrong in the spring, Hugheen was the one who sorted it out. (AP001348; `raw/appraisals/appraisals.jsonl#AP001348`; support: resolved_failure). Manager testimony only, not competence or authorisation.
 - 2015 (year precision) — Some deficiency has been noted in respect of the aton telemetry, which the keeper has been advised to address. (AP001352; `raw/appraisals/appraisals.jsonl#AP001352`; concern: specific_deficiency). Manager testimony only, not competence or authorisation.
 - 2016 (year precision) — Needs supervision on the aton telemetry. (AP001353; `raw/appraisals/appraisals.jsonl#AP001353`; concern: needs_supervision). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -276,44 +331,6 @@ Later qualification and mobilisation actions (only after selection progression):
 - After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
 - Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
 
-## K0566 — Garbhan O Riagain
-
-- Interview: `supported_technical_interview` — CL002799 records “Checked continuity on the run to the fog hut.”; CL010043 records “Isolated no 1 transformer, earths applied both ends, PTW 46 issued to the contractor.”. The documented policy supports a structured technical interview, not competence, eligibility or appointment.
-- Application eligibility: `plausible_but_essential_evidence_incomplete`
-- Mobilisation readiness: `not_established`
-- Relevant evidence categories: electrical, fault_finding, mechanical, permit_or_isolation
-- Full clean log review: 260 rows; 6 distinct relevant patterns after template collapse.
-- Appraisal review: 7 exact keeper-code-keyed rows; 7 rows not selected by the appraisal filter.
-
-Evidence:
-
-- 2024-11-01 — “Isolated no 1 transformer, earths applied both ends, PTW 46 issued to the contractor.” (CL010043; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#37406`; clean/manual attribution corroborated by raw payroll value 11851 normalized to 11851, matching clean payroll 0011851).
-- 2013-02-15 — “Isolated NO.2 transformer, earths applied both ends, permit bk.3 no.19 issued to the contractor.” (CL006379; `raw/logbooks/era2-keeperlog/KLOG2013.DAT#001660`; clean/manual attribution corroborated by raw keeper_code K0566).
-- 2011-10-05 — “Isolated No.2 transformer, earths applied both ends, permit 1102 issued to the contractor.” (CL005856; `raw/logbooks/era2-keeperlog/KLOG2011.DAT#009909`; clean/manual attribution corroborated by raw keeper_code K0566).
-- 2002-09-08 — “Checked continuity on the run to the fog hut.” (CL002799; `raw/logbooks/era1-ocr/drumnahaan-2002.txt#L336`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
-- 2012-12-27 — “Filter changed on the power pack.” (CL006319; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#013100`; clean/manual attribution corroborated by raw keeper_code K0566).
-
-Credential position:
-
-- No currently dated relevant LearnHub Pass was established at the cutoff.
-- OSSC-SS: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500882`).
-- HVAP-03: Not achieved; `not_achieved` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500883`).
-- OSSC-CS: Not achieved; `not_achieved` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500884`).
-
-Initial selection action:
-
-- Invite to a structured technical interview and use the cited logs as questions; assess fault diagnosis, safe isolation and hands-on plant maintenance rather than treating the records as proof.
-
-Later qualification and mobilisation actions (only after selection progression):
-
-- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
-- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
-- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
-- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, address the offshore-safety modules individually. OSSC-SS: renew the expired Pass (LH500882); the posting says the employer funds renewals. OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
-
 ## K0592 — Fergal Mac Eibhleain
 
 - Interview: `supported_technical_interview` — CL008207 records “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.”; CL008184 records “Drive motor brushes and commutator dressed, rotation back to time.”. Keeper-code-keyed manager testimony in AP001555, AP001557 adds a screening lead, not proof of competence. The documented policy supports a structured technical interview, not competence, eligibility or appointment.
@@ -322,6 +339,12 @@ Later qualification and mobilisation actions (only after selection progression):
 - Relevant evidence categories: electrical, fault_finding, mechanical
 - Full clean log review: 316 rows; 10 distinct relevant patterns after template collapse.
 - Appraisal review: 8 exact keeper-code-keyed rows; 2 rows not selected by the appraisal filter.
+
+Category support:
+
+- `electrical` â€” 2018-08-17 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL008207; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#8269`).
+- `fault_finding` â€” 2018-08-17 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL008207; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#8269`).
+- `mechanical` â€” 2018-07-20 â€” â€œDrive motor brushes and commutator dressed, rotation back to time.â€ (CL008184; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#7336`).
 
 Evidence:
 
@@ -339,6 +362,11 @@ Manager testimony selected as screening context:
 - 2012 (year precision) — There is a habit of mind here that is worth writing down: Fergal will not leave the lamp and lens half done. (AP001559; `raw/appraisals/appraisals.jsonl#AP001559`; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
 - 2014 (year precision) — There is a habit of mind here that is worth writing down: Fergal will not leave switchgear work half done. / Over the year Fergal has quietly become the station's go-to for the pumps. (AP001561; `raw/appraisals/appraisals.jsonl#AP001561`; support: go_to_person; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
 - 2018 (year precision) — On Fergal this year: Good humoured, hard working, and genuinely capable at pumped systems. (AP001563; `raw/appraisals/appraisals.jsonl#AP001563`; support: explicit_capability). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -370,6 +398,11 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 207 rows; 6 distinct relevant patterns after template collapse.
 - Appraisal review: 9 exact keeper-code-keyed rows; 9 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2023-10-16 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL009728; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#23979`).
+- `fault_finding` â€” 2023-10-16 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL009728; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#23979`).
+
 Evidence:
 
 - 2023-10-16 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL009728; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#23979`; clean/manual attribution corroborated by raw payroll value 0011450 normalized to 11450, matching clean payroll 0011450).
@@ -377,6 +410,11 @@ Evidence:
 - 2023-11-17 — “Renewed fuse links, no.1 way. All made off.” (CL009753; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#25136`; clean/manual attribution corroborated by raw payroll value 0011450 normalized to 11450, matching clean payroll 0011450).
 - 2023-02-17 — “Rewired the changeover contactor arrangement, tested on both feeds and left in auto.” (CL009530; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#15089`; clean/manual attribution corroborated by raw payroll value 11450 normalized to 11450, matching clean payroll 0011450).
 - 2022-11-18 — “Battery checked on the beacon.” (CL009468; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#11761`; clean/manual attribution corroborated by raw payroll value 0011450 normalized to 11450, matching clean payroll 0011450).
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -406,6 +444,12 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 238 rows; 10 distinct relevant patterns after template collapse.
 - Appraisal review: 3 exact keeper-code-keyed rows; 1 row not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2003-09-12 â€” â€œMegger test on the no.1 feeder, 0.8 ohm, condemned the cable and ran a temporary.â€ (CL003088; `raw/logbooks/era2-keeperlog/KLOG2003.DAT#003779`).
+- `fault_finding` â€” 2003-09-12 â€” â€œMegger test on the no.1 feeder, 0.8 ohm, condemned the cable and ran a temporary.â€ (CL003088; `raw/logbooks/era2-keeperlog/KLOG2003.DAT#003779`).
+- `mechanical` â€” 2003-01-09 â€” â€œDrive motor brushes and commutator dressed, rotation back to time.â€ (CL002876; `raw/logbooks/era1-ocr/inchmarrig-2003.txt#L22`).
+
 Evidence:
 
 - 2003-09-12 — “Megger test on the no.1 feeder, 0.8 ohm, condemned the cable and ran a temporary.” (CL003088; `raw/logbooks/era2-keeperlog/KLOG2003.DAT#003779`; clean/manual attribution corroborated by raw keeper_code K0650).
@@ -420,6 +464,11 @@ Manager testimony selected as screening context:
 - 2025 (year precision) — Duaghal took on the light itself without being asked and made a proper job of it. / When chasing faults went wrong in the spring, Duaghal was the one who sorted it out. (AP001713; `raw/appraisals/appraisals.jsonl#AP001713`; support: made_proper_job, resolved_failure). Manager testimony only, not competence or authorisation.
 
 - Same-year timing uncertainty: AP001714 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -449,6 +498,12 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 240 rows; 7 distinct relevant patterns after template collapse.
 - Appraisal review: 10 exact keeper-code-keyed rows; 5 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2026-05-17 â€” â€œDrive motor brushes and commutator dressed, rotation back to time.â€ (CL010451; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#57997`).
+- `fault_finding` â€” 2024-01-20 â€” â€œChecked continuity on the run to the fog hut.â€ (CL009806; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#27466`).
+- `mechanical` â€” 2026-05-17 â€” â€œDrive motor brushes and commutator dressed, rotation back to time.â€ (CL010451; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#57997`).
+
 Evidence:
 
 - 2026-05-17 — “Drive motor brushes and commutator dressed, rotation back to time.” (CL010451; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#57997`; clean/manual attribution corroborated by raw payroll value 0012856 normalized to 12856, matching clean payroll 0012856).
@@ -466,6 +521,11 @@ Manager testimony selected as screening context:
 - 2026 (year precision) — radio work has to be checked behind him. / No use at all on the aton telemetry and shows no sign of learning. (AP001760; `raw/appraisals/appraisals.jsonl#AP001760`; concern: no_use_and_not_learning, work_checked_behind). Manager testimony only, not competence or authorisation.
 
 - Same-year timing uncertainty: AP001760 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -495,6 +555,12 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 188 rows; 8 distinct relevant patterns after template collapse.
 - Appraisal review: 9 exact keeper-code-keyed rows; 8 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2024-05-12 â€” â€œChecked continuity on the run to the fog hut.â€ (CL009911; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#31434`).
+- `fault_finding` â€” 2024-05-12 â€” â€œChecked continuity on the run to the fog hut.â€ (CL009911; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#31434`).
+- `mechanical` â€” 2023-09-06 â€” â€œRan no.3 set 2 hrs. Oil and water checked.â€ (CL009694; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#22471`).
+
 Evidence:
 
 - 2024-05-12 — “Checked continuity on the run to the fog hut.” (CL009911; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#31434`; clean/manual attribution corroborated by raw payroll value 0011809 normalized to 11809, matching clean payroll 0011809).
@@ -508,6 +574,11 @@ Manager testimony selected as screening context:
 - 2021 (year precision) — the engines is sound and that is the main thing. (AP001767; `raw/appraisals/appraisals.jsonl#AP001767`; support: sound). Manager testimony only, not competence or authorisation.
 
 - Same-year timing uncertainty: AP001769 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -538,6 +609,12 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 333 rows; 8 distinct relevant patterns after template collapse.
 - Appraisal review: 13 exact keeper-code-keyed rows; 10 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2022-11-24 â€” â€œTraced the nuisance low-volt alarm to a soft cell in the no.1 bank, replaced it.â€ (CL009476; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#12011`).
+- `fault_finding` â€” 2022-11-24 â€” â€œTraced the nuisance low-volt alarm to a soft cell in the no.1 bank, replaced it.â€ (CL009476; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#12011`).
+- `mechanical` â€” 2019-03-03 â€” â€œCompressor not making pressure, rings worn. Rebuilt the no 2 cylinder.â€ (CL008376; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#15552`).
+
 Evidence:
 
 - 2022-11-24 — “Traced the nuisance low-volt alarm to a soft cell in the no.1 bank, replaced it.” (CL009476; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#12011`; clean/manual attribution corroborated by raw payroll value 0012766 normalized to 12766, matching clean payroll 0012766).
@@ -551,6 +628,11 @@ Manager testimony selected as screening context:
 - 2005 (year precision) — Will not touch the AIS gear if he can get someone else to do it. (AP002219; `raw/appraisals/appraisals.jsonl#AP002219`; concern: avoids_work). Manager testimony only, not competence or authorisation.
 - 2013 (year precision) — REVIEW 2013 Needs supervision on the fog signal. (AP002225; `raw/appraisals/appraisals.jsonl#AP002225`; concern: needs_supervision). Manager testimony only, not competence or authorisation.
 - 2020 (year precision) — No use at all on the aton telemetry and shows no sign of learning. (AP002230; `raw/appraisals/appraisals.jsonl#AP002230`; concern: no_use_and_not_learning). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -581,6 +663,12 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 297 rows; 10 distinct relevant patterns after template collapse.
 - Appraisal review: 6 exact keeper-code-keyed rows; 5 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2017-01-22 â€” â€œMegger test on the NO.2 feeder, 48 psi, condemned the cable and ran a temporary.â€ (CL007701; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#34379`).
+- `fault_finding` â€” 2017-01-22 â€” â€œMegger test on the NO.2 feeder, 48 psi, condemned the cable and ran a temporary.â€ (CL007701; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#34379`).
+- `mechanical` â€” 2017-03-19 â€” â€œSet the timing on No.1 after the pump was refitted, ran it up and checked exhaust temps.â€ (CL007737; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#36467`).
+
 Evidence:
 
 - 2017-01-22 — “Megger test on the NO.2 feeder, 48 psi, condemned the cable and ran a temporary.” (CL007701; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#34379`; clean/manual attribution; raw name Aoife Ni Murchu conflicts with clean Aoife Ní Mhurchú and does not corroborate the person assignment).
@@ -590,10 +678,16 @@ Evidence:
 - 2018-11-18 — “AVR on no.1 replaced and the volts set to 0.8 ohm, load-shared with No.1 properly after.” (CL008299; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#11591`; clean/manual attribution corroborated by raw payroll value 0012263 normalized to 12263, matching clean payroll 0012263).
   - Measurement warning `inconsistent_measurement_unit`: The quoted AVR voltage setting uses a resistance unit, so the activity is retained but the numerical measurement is unreliable. Observed: `0.8 ohm`.
 - 2018-10-12 — “Protection relay settings checked against the schedule and two were found wrong.” (CL008261; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#10234`; clean/manual attribution corroborated by raw payroll value 0012263 normalized to 12263, matching clean payroll 0012263).
+- 2017-03-19 — “Set the timing on No.1 after the pump was refitted, ran it up and checked exhaust temps.” (CL007737; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#36467`; clean/manual attribution; raw name Aoife Ni Murchu conflicts with clean Aoife Ní Mhurchú and does not corroborate the person assignment).
 
 Manager testimony selected as screening context:
 
 - 2014 (year precision) — I have come to rely on Aoife for the control side of the sets and have never been let down. / It is noted that Aoife has maintained a proper standard in chasing faults. (AP002309; `raw/appraisals/appraisals.jsonl#AP002309`; support: good_standard, trusted_by_manager). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -626,6 +720,12 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 325 rows; 8 distinct relevant patterns after template collapse.
 - Appraisal review: 1 exact keeper-code-keyed rows; 0 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 1992-09-01 â€” â€œChecked continuity on the run to the fog hut.â€ (CL000604; `raw/logbooks/era1-ocr/knockmoyne-1992.txt#L448`).
+- `fault_finding` â€” 1992-09-01 â€” â€œChecked continuity on the run to the fog hut.â€ (CL000604; `raw/logbooks/era1-ocr/knockmoyne-1992.txt#L448`).
+- `mechanical` â€” 2003-08-05 â€” â€œCompressor not making pressure, rings worn. Rebuilt the no.1 cylinder.â€ (CL003053; `raw/logbooks/era1-ocr/mullanoe-2003.txt#L194`).
+
 Evidence:
 
 - 1992-09-01 — “Checked continuity on the run to the fog hut.” (CL000604; `raw/logbooks/era1-ocr/knockmoyne-1992.txt#L448`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
@@ -637,6 +737,11 @@ Evidence:
 Manager testimony selected as screening context:
 
 - 2021 (year precision) — Over the year Tailte has quietly become the station's go-to for the diaphone. (AP002944; `raw/appraisals/appraisals.jsonl#AP002944`; support: go_to_person). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -666,6 +771,11 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 231 rows; 6 distinct relevant patterns after template collapse.
 - Appraisal review: 1 exact keeper-code-keyed rows; 0 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 1997-12-28 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL001465; `raw/logbooks/era1-ocr/mullanoe-1997.txt#L677`).
+- `fault_finding` â€” 1997-12-28 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL001465; `raw/logbooks/era1-ocr/mullanoe-1997.txt#L677`).
+
 Evidence:
 
 - 1997-12-28 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL001465; `raw/logbooks/era1-ocr/mullanoe-1997.txt#L677`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
@@ -678,6 +788,11 @@ Evidence:
 Manager testimony selected as screening context:
 
 - 2017 (year precision) — Over the year Fearghal has quietly become the station's go-to for radio work. (AP003700; `raw/appraisals/appraisals.jsonl#AP003700`; support: go_to_person). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -708,6 +823,11 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 288 rows; 6 distinct relevant patterns after template collapse.
 - Appraisal review: 6 exact keeper-code-keyed rows; 6 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2008-12-02 â€” â€œAVR on no.2 replaced and the volts set to 0.8 ohm, load-shared with no.1 properly after.â€ (CL004774; `raw/logbooks/era2-keeperlog/KLOG2008.DAT#011722`).
+- `mechanical` â€” 2001-09-19 â€” â€œChanged oil and filters on No.1.â€ (CL002551; `raw/logbooks/era1-ocr/fionnvarra-2001.txt#L388`).
+
 Evidence:
 
 - 2008-12-02 — “AVR on no.2 replaced and the volts set to 0.8 ohm, load-shared with no.1 properly after.” (CL004774; `raw/logbooks/era2-keeperlog/KLOG2008.DAT#011722`; clean/manual attribution corroborated by raw keeper_code K1302).
@@ -718,6 +838,11 @@ Evidence:
 - 2000-04-17 — “Filter changed on the power pack.” (CL002191; `raw/logbooks/era1-ocr/fionnvarra-2000.txt#L254`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
 
 - Same-year timing uncertainty: AP003748 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -747,6 +872,12 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 252 rows; 6 distinct relevant patterns after template collapse.
 - Appraisal review: 6 exact keeper-code-keyed rows; 6 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2002-05-08 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL002712; `raw/logbooks/era1-ocr/rinnaglas-2002.txt#L210`).
+- `fault_finding` â€” 2002-05-08 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL002712; `raw/logbooks/era1-ocr/rinnaglas-2002.txt#L210`).
+- `mechanical` â€” 2023-09-16 â€” â€œRepaired the derrick luffing gear, new pin and bush turned up on station.â€ (CL009700; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#22883`).
+
 Evidence:
 
 - 2002-05-08 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL002712; `raw/logbooks/era1-ocr/rinnaglas-2002.txt#L210`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
@@ -754,6 +885,11 @@ Evidence:
 - 2023-09-16 — “Repaired the derrick luffing gear, new pin and bush turned up on station.” (CL009700; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#22883`; clean/manual attribution; raw payroll_reference 982128 conflicts with clean 0011920 and does not corroborate the person assignment).
 - 2022-01-28 — “Filter changed on the power pack.” (CL009245; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#1115`; clean/manual attribution corroborated by raw payroll value 0011920 normalized to 11920, matching clean payroll 0011920).
 - 2021-04-21 — “Renewed fuse links, no.3 way. All made off.” (CL008995; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#43595`; clean/manual attribution corroborated by raw payroll value 0011920 normalized to 11920, matching clean payroll 0011920).
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -785,16 +921,23 @@ Later qualification and mobilisation actions (only after selection progression):
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Relevant evidence categories: electrical, fault_finding, mechanical, permit_or_isolation
-- Full clean log review: 259 rows; 8 distinct relevant patterns after template collapse.
+- Full clean log review: 259 rows; 7 distinct relevant patterns after template collapse.
 - Appraisal review: 10 exact keeper-code-keyed rows; 6 rows not selected by the appraisal filter.
+
+Category support:
+
+- `electrical` â€” 2025-04-19 â€” â€œIsolated No.2 transformer, earths applied both ends, permit 0412 issued to the contractor.â€ (CL010173; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#43555`).
+- `fault_finding` â€” 2019-01-20 â€” â€œMegger test on the No.2 feeder, 2.4 ohm, condemned the cable and ran a temporary.â€ (CL008335; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#13919`).
+- `mechanical` â€” 2021-12-18 â€” â€œChanged oil and filters on no.2.â€ (CL009203; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#52250`).
+- `permit_or_isolation` â€” 2025-04-19 â€” â€œIsolated No.2 transformer, earths applied both ends, permit 0412 issued to the contractor.â€ (CL010173; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#43555`).
 
 Evidence:
 
 - 2025-04-19 — “Isolated No.2 transformer, earths applied both ends, permit 0412 issued to the contractor.” (CL010173; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#43555`; clean/manual attribution corroborated by raw payroll value 0012129 normalized to 12129, matching clean payroll 0012129).
 - 2019-01-20 — “Megger test on the No.2 feeder, 2.4 ohm, condemned the cable and ran a temporary.” (CL008335; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#13919`; clean/manual attribution corroborated by raw payroll value 0012129 normalized to 12129, matching clean payroll 0012129).
-- 2014-11-05 — “Isolated no 1 transformer, earths applied both ends, PTW/88 issued to the contractor.” (CL007007; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#5902`; clean/manual attribution; raw name S. Corrigane conflicts with clean Aodhan Ó hAghmoir and does not corroborate the person assignment).
 - 2026-10-08 — “Battery checked on the beacon.” (CL010559; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#63269`; clean/manual attribution corroborated by raw payroll value 0012129 normalized to 12129, matching clean payroll 0012129).
 - 2025-11-03 — “Changed the battery in the portable set.” (CL010308; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#50573`; clean/manual attribution corroborated by raw payroll value 0012129 normalized to 12129, matching clean payroll 0012129).
+- 2021-12-18 — “Changed oil and filters on no.2.” (CL009203; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#52250`; clean/manual attribution corroborated by raw payroll value 0012129 normalized to 12129, matching clean payroll 0012129).
 
 Manager testimony selected as screening context:
 
@@ -804,6 +947,11 @@ Manager testimony selected as screening context:
 - 2026 (year precision) — Over the year Aodhan has quietly become the station's go-to for the HV authorisation work. (AP003954; `raw/appraisals/appraisals.jsonl#AP003954`; support: go_to_person). Manager testimony only, not competence or authorisation.
 
 - Same-year timing uncertainty: AP003954 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -840,6 +988,12 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 297 rows; 7 distinct relevant patterns after template collapse.
 - Appraisal review: 5 exact keeper-code-keyed rows; 5 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2004-07-09 â€” â€œChecked continuity on the run to the fog hut.â€ (CL003361; `raw/logbooks/era2-keeperlog/KLOG2004.DAT#006859`).
+- `fault_finding` â€” 2004-07-09 â€” â€œChecked continuity on the run to the fog hut.â€ (CL003361; `raw/logbooks/era2-keeperlog/KLOG2004.DAT#006859`).
+- `mechanical` â€” 2006-03-09 â€” â€œRan No.2 set 8 hrs. Oil and water checked.â€ (CL003898; `raw/logbooks/era2-keeperlog/KLOG2006.DAT#002534`).
+
 Evidence:
 
 - 2004-07-09 — “Checked continuity on the run to the fog hut.” (CL003361; `raw/logbooks/era2-keeperlog/KLOG2004.DAT#006859`; clean/manual attribution corroborated by raw keeper_code K1418).
@@ -849,6 +1003,11 @@ Evidence:
 - 2003-03-04 — “Bled the fuel system after the filter change.” (CL002921; `raw/logbooks/era1-ocr/naomhog-2003.txt#L107`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
 
 - Same-year timing uncertainty: AP004064 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -881,6 +1040,12 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 200 rows; 13 distinct relevant patterns after template collapse.
 - Appraisal review: 3 exact keeper-code-keyed rows; 2 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2003-10-11 â€” â€œChecked continuity on the run to the fog hut.â€ (CL003121; `raw/logbooks/era2-keeperlog/KLOG2003.DAT#004186`).
+- `fault_finding` â€” 2003-10-11 â€” â€œChecked continuity on the run to the fog hut.â€ (CL003121; `raw/logbooks/era2-keeperlog/KLOG2003.DAT#004186`).
+- `mechanical` â€” 2026-05-16 â€” â€œSet the timing on NO.2 after the pump was refitted, ran it up and checked exhaust temps.â€ (CL010450; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#57976`).
+
 Evidence:
 
 - 2003-10-11 — “Checked continuity on the run to the fog hut.” (CL003121; `raw/logbooks/era2-keeperlog/KLOG2003.DAT#004186`; clean/manual attribution corroborated by raw keeper_code K1468).
@@ -892,6 +1057,11 @@ Evidence:
 Manager testimony selected as screening context:
 
 - 2004 (year precision) — ANNUAL CONFIDENTIAL REPORT Some deficiency has been noted in respect of haulage gear, which the keeper has been advised to address. (AP004219; `raw/appraisals/appraisals.jsonl#AP004219`; concern: specific_deficiency). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -923,6 +1093,12 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 233 rows; 7 distinct relevant patterns after template collapse.
 - Appraisal review: 7 exact keeper-code-keyed rows; 7 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2012-09-03 â€” â€œChecked continuity on the run to the fog hut.â€ (CL006207; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#008781`).
+- `fault_finding` â€” 2012-09-03 â€” â€œChecked continuity on the run to the fog hut.â€ (CL006207; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#008781`).
+- `mechanical` â€” 2012-01-05 â€” â€œFilter changed on the power pack.â€ (CL005945; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#000173`).
+
 Evidence:
 
 - 2012-09-03 — “Checked continuity on the run to the fog hut.” (CL006207; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#008781`; clean/manual attribution corroborated by raw keeper_code K1474).
@@ -930,6 +1106,11 @@ Evidence:
 - 2015-06-25 — “Renewed fuse links, no 2 way. All made off.” (CL007218; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#13546`; clean/manual attribution corroborated by raw name Ossian Mac Domhnalláin).
 - 2012-01-05 — “Filter changed on the power pack.” (CL005945; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#000173`; clean/manual attribution corroborated by raw keeper_code K1474).
 - 2011-07-18 — “Greased the compressor and checked the belts.” (CL005770; `raw/logbooks/era2-keeperlog/KLOG2011.DAT#007194`; clean/manual attribution corroborated by raw keeper_code K1474).
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -959,6 +1140,11 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 171 rows; 8 distinct relevant patterns after template collapse.
 - Appraisal review: 8 exact keeper-code-keyed rows; 6 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2026-09-07 â€” â€œMegger test on the NO.2 feeder, 232 V, condemned the cable and ran a temporary.â€ (CL010534; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62098`).
+- `fault_finding` â€” 2026-09-07 â€” â€œMegger test on the NO.2 feeder, 232 V, condemned the cable and ran a temporary.â€ (CL010534; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62098`).
+
 Evidence:
 
 - 2026-09-07 — “Megger test on the NO.2 feeder, 232 V, condemned the cable and ran a temporary.” (CL010534; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62098`; clean/manual attribution corroborated by raw payroll value 0012846 normalized to 12846, matching clean payroll 0012846).
@@ -973,6 +1159,11 @@ Manager testimony selected as screening context:
 - 2018 (year precision) — switchgear work is sound and that is the main thing. (AP004320; `raw/appraisals/appraisals.jsonl#AP004320`; support: sound). Manager testimony only, not competence or authorisation.
 
 - Same-year timing uncertainty: AP004322 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -1004,6 +1195,12 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 305 rows; 9 distinct relevant patterns after template collapse.
 - Appraisal review: 14 exact keeper-code-keyed rows; 8 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2025-09-17 â€” â€œTraced the nuisance low-volt alarm to a soft cell in the no 1 bank, replaced it.â€ (CL010280; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#48954`).
+- `fault_finding` â€” 2025-09-17 â€” â€œTraced the nuisance low-volt alarm to a soft cell in the no 1 bank, replaced it.â€ (CL010280; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#48954`).
+- `mechanical` â€” 2021-09-10 â€” â€œChanged oil and filters on no.3.â€ (CL009116; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#48605`).
+
 Evidence:
 
 - 2025-09-17 — “Traced the nuisance low-volt alarm to a soft cell in the no 1 bank, replaced it.” (CL010280; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#48954`; clean/manual attribution corroborated by raw payroll value 1.1245E+04 normalized to 11245, matching clean payroll 0011245).
@@ -1020,6 +1217,11 @@ Manager testimony selected as screening context:
 - 2017 (year precision) — rope work has to be checked behind him. (AP000086; `raw/appraisals/appraisals.jsonl#AP000086`; concern: work_checked_behind). Manager testimony only, not competence or authorisation.
 - 2018 (year precision) — There is a habit of mind here that is worth writing down: Coilean will not leave the standby banks half done. (AP000087; `raw/appraisals/appraisals.jsonl#AP000087`; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
 - 2022 (year precision) — There is a habit of mind here that is worth writing down: Coilean will not leave rope work half done. (AP000090; `raw/appraisals/appraisals.jsonl#AP000090`; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -1051,6 +1253,11 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 368 rows; 8 distinct relevant patterns after template collapse.
 - Appraisal review: 16 exact keeper-code-keyed rows; 13 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2024-12-05 â€” â€œLamp not lit, found the fuse gone. Renewed.â€ (CL010068; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38570`).
+- `mechanical` â€” 2026-05-07 â€” â€œSet the timing on No.2 after the pump was refitted, ran it up and checked exhaust temps.â€ (CL010442; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#57550`).
+
 Evidence:
 
 - 2026-05-07 — “Set the timing on No.2 after the pump was refitted, ran it up and checked exhaust temps.” (CL010442; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#57550`; clean/manual attribution corroborated by raw payroll value 0012021 normalized to 12021, matching clean payroll 0012021).
@@ -1064,6 +1271,11 @@ Manager testimony selected as screening context:
 - 2008 (year precision) — Attention is drawn to a recurring shortfall in the engines. (AP000189; `raw/appraisals/appraisals.jsonl#AP000189`; concern: recurring_shortfall). Manager testimony only, not competence or authorisation.
 - 2020 (year precision) — Weak on the engines. (AP000198; `raw/appraisals/appraisals.jsonl#AP000198`; concern: weakness). Manager testimony only, not competence or authorisation.
 - 2023 (year precision) — REVIEW 2023 Needs supervision on the ironwork. (AP000201; `raw/appraisals/appraisals.jsonl#AP000201`; concern: needs_supervision). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -1097,6 +1309,12 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 367 rows; 8 distinct relevant patterns after template collapse.
 - Appraisal review: 13 exact keeper-code-keyed rows; 6 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2022-04-17 â€” â€œMegger test on the No.1 feeder, 0.8 ohm, condemned the cable and ran a temporary.â€ (CL009302; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#4072`).
+- `fault_finding` â€” 2022-04-17 â€” â€œMegger test on the No.1 feeder, 0.8 ohm, condemned the cable and ran a temporary.â€ (CL009302; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#4072`).
+- `mechanical` â€” 2020-11-15 â€” â€œDrive motor brushes and commutator dressed, rotation back to time.â€ (CL008870; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#37866`).
+
 Evidence:
 
 - 2022-04-17 — “Megger test on the No.1 feeder, 0.8 ohm, condemned the cable and ran a temporary.” (CL009302; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#4072`; clean/manual attribution; raw payroll_reference 906660 conflicts with clean 0012781 and does not corroborate the person assignment).
@@ -1114,6 +1332,11 @@ Manager testimony selected as screening context:
 - 2019 (year precision) — the light itself needs work. (AP000561; `raw/appraisals/appraisals.jsonl#AP000561`; concern: needs_work). Manager testimony only, not competence or authorisation.
 - 2021 (year precision) — Attention is drawn to a recurring shortfall in chasing faults. (AP000562; `raw/appraisals/appraisals.jsonl#AP000562`; concern: recurring_shortfall). Manager testimony only, not competence or authorisation.
 - 2023 (year precision) — Some deficiency has been noted in respect of the light itself, which the keeper has been advised to address. (AP000564; `raw/appraisals/appraisals.jsonl#AP000564`; concern: specific_deficiency). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -1146,6 +1369,11 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 199 rows; 4 distinct relevant patterns after template collapse.
 - Appraisal review: 8 exact keeper-code-keyed rows; 5 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2017-04-16 â€” â€œTightened glands in the cable trunk by the stair.â€ (CL007773; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#37475`).
+- `mechanical` â€” 2008-12-22 â€” â€œRan No.2 set 0.5 hrs. Oil and water checked.â€ (CL004792; `raw/logbooks/era2-keeperlog/KLOG2008.DAT#012450`).
+
 Evidence:
 
 - 2017-04-16 — “Tightened glands in the cable trunk by the stair.” (CL007773; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#37475`; clean/manual attribution corroborated by raw name Quillan O Fuarain).
@@ -1158,6 +1386,11 @@ Manager testimony selected as screening context:
 - 2013 (year precision) — It is noted that Quillan has maintained a proper standard in the standby banks. (AP000750; `raw/appraisals/appraisals.jsonl#AP000750`; support: good_standard). Manager testimony only, not competence or authorisation.
 - 2016 (year precision) — The standard achieved in defect reporting falls below that expected of the grade. (AP000752; `raw/appraisals/appraisals.jsonl#AP000752`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
 - 2017 (year precision) — The standard achieved in inspection reports falls below that expected of the grade. (AP000753; `raw/appraisals/appraisals.jsonl#AP000753`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -1191,6 +1424,11 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 325 rows; 5 distinct relevant patterns after template collapse.
 - Appraisal review: 4 exact keeper-code-keyed rows; 1 row not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2024-04-09 â€” â€œRenewed fuse links, no.3 way. All made off.â€ (CL009886; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#30274`).
+- `mechanical` â€” 2024-02-06 â€” â€œBled the fuel system after the filter change.â€ (CL009816; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#28049`).
+
 Evidence:
 
 - 2024-04-09 — “Renewed fuse links, no.3 way. All made off.” (CL009886; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#30274`; clean/manual attribution corroborated by raw payroll value 12523 normalized to 12523, matching clean payroll 0012523).
@@ -1206,6 +1444,11 @@ Manager testimony selected as screening context:
 - 2026 (year precision) — It is noted that Lugharn has maintained a proper standard in height work. (AP000865; `raw/appraisals/appraisals.jsonl#AP000865`; support: good_standard). Manager testimony only, not competence or authorisation.
 
 - Same-year timing uncertainty: AP000865 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -1236,16 +1479,22 @@ Later qualification and mobilisation actions (only after selection progression):
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Relevant evidence categories: electrical, fault_finding, permit_or_isolation
-- Full clean log review: 192 rows; 8 distinct relevant patterns after template collapse.
+- Full clean log review: 192 rows; 6 distinct relevant patterns after template collapse.
 - Appraisal review: 8 exact keeper-code-keyed rows; 1 row not selected by the appraisal filter.
+
+Category support:
+
+- `electrical` â€” 2026-09-20 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL010541; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62613`).
+- `fault_finding` â€” 2026-09-20 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL010541; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62613`).
+- `permit_or_isolation` â€” 2026-03-11 â€” â€œIsolated NO.2 transformer, earths applied both ends, permit 1102 issued to the contractor.â€ (CL010398; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#55458`).
 
 Evidence:
 
 - 2026-09-20 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL010541; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62613`; clean/manual attribution corroborated by raw payroll value 0011722 normalized to 11722, matching clean payroll 0011722).
 - 2026-03-11 — “Isolated NO.2 transformer, earths applied both ends, permit 1102 issued to the contractor.” (CL010398; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#55458`; clean/manual attribution corroborated by raw payroll value 0011722 normalized to 11722, matching clean payroll 0011722).
-- 2022-07-21 — “Isolated No.1 transformer, earths applied both ends, PTW/88 issued to the contractor.” (CL009371; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#7412`; clean/manual attribution corroborated by raw payroll value 11722 normalized to 11722, matching clean payroll 0011722).
-- 2021-03-28 — “Isolated NO.2 transformer, earths applied both ends, permit bk.3 no.19 issued to the contractor.” (CL008977; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#42713`; clean/manual attribution corroborated by raw payroll value 0011722 normalized to 11722, matching clean payroll 0011722).
 - 2026-06-23 — “Rewired the changeover contactor arrangement, tested on both feeds and left in auto.” (CL010466; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#59328`; clean/manual attribution corroborated by raw payroll value 0011722 normalized to 11722, matching clean payroll 0011722).
+- 2022-12-08 — “Tightened glands in the cable trunk by the stair.” (CL009483; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#12500`; clean/manual attribution corroborated by raw payroll value 0011722 normalized to 11722, matching clean payroll 0011722).
+- 2022-01-13 — “Renewed fuse links, no.1 way. All made off.” (CL009227; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#483`; clean/manual attribution corroborated by raw payroll value 1.1722E+04 normalized to 11722, matching clean payroll 0011722).
 
 Manager testimony selected as screening context:
 
@@ -1258,6 +1507,11 @@ Manager testimony selected as screening context:
 - 2026 (year precision) — Good humoured, hard working, and genuinely capable at the boards. (AP001167; `raw/appraisals/appraisals.jsonl#AP001167`; support: explicit_capability). Manager testimony only, not competence or authorisation.
 
 - Same-year timing uncertainty: AP001167 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -1288,6 +1542,11 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 175 rows; 6 distinct relevant patterns after template collapse.
 - Appraisal review: 11 exact keeper-code-keyed rows; 9 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2014-12-12 â€” â€œFound the receiver desensitised by the charger, fitted suppression and the noise went.â€ (CL007052; `raw/logbooks/era2-keeperlog/KLOG2014.DAT#005949`).
+- `mechanical` â€” 2020-06-14 â€” â€œMechanical seal gone on the fire pump, fitted new and re-aligned the coupling.â€ (CL008741; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#32504`).
+
 Evidence:
 
 - 2020-06-14 — “Mechanical seal gone on the fire pump, fitted new and re-aligned the coupling.” (CL008741; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#32504`; clean/manual attribution corroborated by raw payroll value 0011814 normalized to 11814, matching clean payroll 0011814).
@@ -1300,6 +1559,11 @@ Manager testimony selected as screening context:
 
 - 2010 (year precision) — Over the year Muirgheal has quietly become the station's go-to for pumped systems. (AP001428; `raw/appraisals/appraisals.jsonl#AP001428`; support: go_to_person). Manager testimony only, not competence or authorisation.
 - 2019 (year precision) — Needs supervision on pumped systems. (AP001433; `raw/appraisals/appraisals.jsonl#AP001433`; concern: needs_supervision). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -1326,6 +1590,55 @@ Later qualification and mobilisation actions (only after selection progression):
 - After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
 - Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
 
+## K0566 — Garbhan O Riagain
+
+- Interview: `targeted_screening_first` — CL002799 records “Checked continuity on the run to the fog hut.”; CL010043 records “Isolated no 1 transformer, earths applied both ends, PTW 46 issued to the contractor.”. Relevant experience is recorded, but the uncertainty should be tested in a targeted screen before deciding on a full technical interview.
+- Application eligibility: `plausible_but_essential_evidence_incomplete`
+- Mobilisation readiness: `not_established`
+- Relevant evidence categories: electrical, fault_finding, mechanical, permit_or_isolation
+- Full clean log review: 260 rows; 4 distinct relevant patterns after template collapse.
+- Appraisal review: 7 exact keeper-code-keyed rows; 7 rows not selected by the appraisal filter.
+
+Category support:
+
+- `electrical` â€” 2024-11-01 â€” â€œIsolated no 1 transformer, earths applied both ends, PTW 46 issued to the contractor.â€ (CL010043; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#37406`).
+- `fault_finding` â€” 2002-09-08 â€” â€œChecked continuity on the run to the fog hut.â€ (CL002799; `raw/logbooks/era1-ocr/drumnahaan-2002.txt#L336`).
+- `mechanical` â€” 2012-12-27 â€” â€œFilter changed on the power pack.â€ (CL006319; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#013100`).
+- `permit_or_isolation` â€” 2024-11-01 â€” â€œIsolated no 1 transformer, earths applied both ends, PTW 46 issued to the contractor.â€ (CL010043; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#37406`).
+
+Evidence:
+
+- 2024-11-01 — “Isolated no 1 transformer, earths applied both ends, PTW 46 issued to the contractor.” (CL010043; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#37406`; clean/manual attribution corroborated by raw payroll value 11851 normalized to 11851, matching clean payroll 0011851).
+- 2002-09-08 — “Checked continuity on the run to the fog hut.” (CL002799; `raw/logbooks/era1-ocr/drumnahaan-2002.txt#L336`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
+- 2012-12-27 — “Filter changed on the power pack.” (CL006319; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#013100`; clean/manual attribution corroborated by raw keeper_code K0566).
+- 2011-09-07 — “Gas tested the fuel tank before entry.” (CL005829; `raw/logbooks/era2-keeperlog/KLOG2011.DAT#008899`; clean/manual attribution corroborated by raw keeper_code K0566).
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
+
+Credential position:
+
+- No currently dated relevant LearnHub Pass was established at the cutoff.
+- OSSC-SS: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500882`).
+- HVAP-03: Not achieved; `not_achieved` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500883`).
+- OSSC-CS: Not achieved; `not_achieved` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500884`).
+
+Initial selection action:
+
+- Run a targeted evidence screen before a full technical interview. Test the sparse or repetitive evidence with concrete examples. Ask what the person did personally, what plant was involved, what checks controlled the work and what outcome was verified.
+
+Later qualification and mobilisation actions (only after selection progression):
+
+- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
+- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
+- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
+- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
+- After medical clearance, address the offshore-safety modules individually. OSSC-SS: renew the expired Pass (LH500882); the posting says the employer funds renewals. OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, address height safety because the supplied WAHS definition requires it. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation.
+
 ## K0586 — Gealbhan Nethercarn
 
 - Interview: `targeted_screening_first` — CL002089 records “Checked continuity on the run to the fog hut.”; CL006901 records “Lamp not lit, found the fuse gone. Renewed.”. Relevant experience is recorded, but the uncertainty should be tested in a targeted screen before deciding on a full technical interview.
@@ -1335,11 +1648,21 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 201 rows; 3 distinct relevant patterns after template collapse.
 - Appraisal review: 10 exact keeper-code-keyed rows; 10 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 1999-12-19 â€” â€œChecked continuity on the run to the fog hut.â€ (CL002089; `raw/logbooks/era1-ocr/hurlaven-1999.txt#L477`).
+- `fault_finding` â€” 1999-12-19 â€” â€œChecked continuity on the run to the fog hut.â€ (CL002089; `raw/logbooks/era1-ocr/hurlaven-1999.txt#L477`).
+
 Evidence:
 
 - 1999-12-19 — “Checked continuity on the run to the fog hut.” (CL002089; `raw/logbooks/era1-ocr/hurlaven-1999.txt#L477`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
 - 2014-08-13 — “Lamp not lit, found the fuse gone. Renewed.” (CL006901; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#4299`; clean/manual attribution corroborated by raw name Gealbhan Nethercarn).
 - 2009-05-06 — “Changed the battery in the portable set.” (CL004932; `raw/logbooks/era2-keeperlog/KLOG2009.DAT#004553`; clean/manual attribution corroborated by raw keeper_code K0586).
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -1373,6 +1696,12 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 165 rows; 4 distinct relevant patterns after template collapse.
 - Appraisal review: 12 exact keeper-code-keyed rows; 8 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2016-09-14 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL007592; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#29593`).
+- `fault_finding` â€” 2016-09-14 â€” â€œTraced and lifted an earth fault on the tower lighting ring, split the ring to find it.â€ (CL007592; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#29593`).
+- `mechanical` â€” 2020-03-27 â€” â€œChanged oil and filters on no 2.â€ (CL008681; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#29766`).
+
 Evidence:
 
 - 2016-09-14 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL007592; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#29593`; clean/manual attribution corroborated by raw name Eachann Westrayne).
@@ -1388,6 +1717,11 @@ Manager testimony selected as screening context:
 - 2026 (year precision) — When height work went wrong in the spring, Eachann was the one who sorted it out. (AP001536; `raw/appraisals/appraisals.jsonl#AP001536`; support: resolved_failure). Manager testimony only, not competence or authorisation.
 
 - Same-year timing uncertainty: AP001536 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -1420,6 +1754,12 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 170 rows; 7 distinct relevant patterns after template collapse.
 - Appraisal review: 11 exact keeper-code-keyed rows; 10 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2023-01-26 â€” â€œMegger test on the No.2 feeder, 2.4 ohm, condemned the cable and ran a temporary.â€ (CL009512; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#14356`).
+- `fault_finding` â€” 2023-01-26 â€” â€œMegger test on the No.2 feeder, 2.4 ohm, condemned the cable and ran a temporary.â€ (CL009512; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#14356`).
+- `mechanical` â€” 2019-10-07 â€” â€œChanged oil and filters on no 1.â€ (CL008539; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#23484`).
+
 Evidence:
 
 - 2023-01-26 — “Megger test on the No.2 feeder, 2.4 ohm, condemned the cable and ran a temporary.” (CL009512; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#14356`; clean/manual attribution corroborated by raw payroll value 0011753 normalized to 11753, matching clean payroll 0011753).
@@ -1431,6 +1771,11 @@ Evidence:
 Manager testimony selected as screening context:
 
 - 2023 (year precision) — Gap identified in chasing faults. (AP002492; `raw/appraisals/appraisals.jsonl#AP002492`; concern: identified_gap). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -1460,6 +1805,11 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 332 rows; 3 distinct relevant patterns after template collapse.
 - Appraisal review: 13 exact keeper-code-keyed rows; 6 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2012-02-13 â€” â€œDrive motor brushes and commutator dressed, rotation back to time.â€ (CL005994; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#001585`).
+- `mechanical` â€” 2012-02-13 â€” â€œDrive motor brushes and commutator dressed, rotation back to time.â€ (CL005994; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#001585`).
+
 Evidence:
 
 - 2012-02-13 — “Drive motor brushes and commutator dressed, rotation back to time.” (CL005994; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#001585`; clean/manual attribution corroborated by raw keeper_code K1200).
@@ -1476,6 +1826,11 @@ Manager testimony selected as screening context:
 - 2020 (year precision) — I have come to rely on Tomaltach for the optic and have never been let down. (AP003494; `raw/appraisals/appraisals.jsonl#AP003494`; support: trusted_by_manager). Manager testimony only, not competence or authorisation.
 - 2024 (year precision) — He has not, to my knowledge, carried out any of the plant work the certificates would suggest, and on the two occasions I have asked him to assist he has found reasons not to. (AP003496; `raw/appraisals/appraisals.jsonl#AP003496`; concern: avoids_work, experience_disputed). Manager testimony only, not competence or authorisation.
 - 2025 (year precision) — Tomaltach — 2025 Tomaltach took on the lamp and lens without being asked and made a proper job of it. / I have come to rely on Tomaltach for defect reporting and have never been let down. (AP003497; `raw/appraisals/appraisals.jsonl#AP003497`; support: made_proper_job, trusted_by_manager). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -1529,16 +1884,24 @@ Later qualification and mobilisation actions (only after selection progression):
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Relevant evidence categories: electrical, fault_finding, mechanical, permit_or_isolation
-- Full clean log review: 300 rows; 12 distinct relevant patterns after template collapse.
+- Full clean log review: 300 rows; 10 distinct relevant patterns after template collapse.
 - Appraisal review: 15 exact keeper-code-keyed rows; 10 rows not selected by the appraisal filter.
+
+Category support:
+
+- `electrical` â€” 2025-07-15 â€” â€œIsolated no 2 transformer, earths applied both ends, permit 1102 issued to the contractor.â€ (CL010239; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#46689`).
+- `fault_finding` â€” 2025-02-26 â€” â€œChecked continuity on the run to the fog hut.â€ (CL010135; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#41590`).
+- `mechanical` â€” 2019-09-21 â€” â€œRan no.2 set 4 hrs. Oil and water checked.â€ (CL008529; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#22910`).
+- `permit_or_isolation` â€” 2025-07-15 â€” â€œIsolated no 2 transformer, earths applied both ends, permit 1102 issued to the contractor.â€ (CL010239; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#46689`).
 
 Evidence:
 
 - 2025-07-15 — “Isolated no 2 transformer, earths applied both ends, permit 1102 issued to the contractor.” (CL010239; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#46689`; clean/manual attribution corroborated by raw payroll value 0012406 normalized to 12406, matching clean payroll 0012406).
-- 2025-05-03 — “Isolated no 1 transformer, earths applied both ends, PTW 114 issued to the contractor.” (CL010180; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#44002`; clean/manual attribution corroborated by raw payroll value 0012406 normalized to 12406, matching clean payroll 0012406).
 - 2025-02-26 — “Checked continuity on the run to the fog hut.” (CL010135; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#41590`; clean/manual attribution corroborated by raw payroll value 0012406 normalized to 12406, matching clean payroll 0012406).
 - 2024-02-22 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL009834; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#28644`; clean/manual attribution corroborated by raw payroll value 12406 normalized to 12406, matching clean payroll 0012406).
-- 2021-02-01 — “Isolated No.2 transformer, earths applied both ends, permit bk.3 no.19 issued to the contractor.” (CL008927; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#40526`; clean/manual attribution corroborated by raw payroll value 0012406 normalized to 12406, matching clean payroll 0012406).
+- 2016-11-03 — “Megger test on the No.2 feeder, 11.2 V, condemned the cable and ran a temporary.” (CL007632; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#31397`; clean/manual attribution corroborated by raw name Joachima Ulverstane).
+- 2025-11-15 — “Rewired the changeover contactor arrangement, tested on both feeds and left in auto.” (CL010320; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#51050`; clean/manual attribution corroborated by raw payroll value 0012406 normalized to 12406, matching clean payroll 0012406).
+- 2019-09-21 — “Ran no.2 set 4 hrs. Oil and water checked.” (CL008529; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#22910`; clean/manual attribution corroborated by raw payroll value 0012406 normalized to 12406, matching clean payroll 0012406).
 
 Manager testimony selected as screening context:
 
@@ -1547,6 +1910,11 @@ Manager testimony selected as screening context:
 - 2014 (year precision) — Joachima — 2014 Joachima took on chasing faults without being asked and made a proper job of it. (AP003567; `raw/appraisals/appraisals.jsonl#AP003567`; support: made_proper_job). Manager testimony only, not competence or authorisation.
 - 2015 (year precision) — Good humoured, hard working, and genuinely capable at fault work. (AP003568; `raw/appraisals/appraisals.jsonl#AP003568`; support: explicit_capability). Manager testimony only, not competence or authorisation.
 - 2019 (year precision) — switchgear work has to be checked behind her. / fault work to a good standard. (AP003571; `raw/appraisals/appraisals.jsonl#AP003571`; support: good_standard; concern: work_checked_behind). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -1575,6 +1943,11 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 209 rows; 8 distinct relevant patterns after template collapse.
 - Appraisal review: 13 exact keeper-code-keyed rows; 8 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2019-02-17 â€” â€œTightened glands in the cable trunk by the stair.â€ (CL008356; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#14956`).
+- `mechanical` â€” 2016-11-03 â€” â€œRan NO.2 set 6 hrs. Oil and water checked.â€ (CL007631; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#31387`).
+
 Evidence:
 
 - 2019-02-17 — “Tightened glands in the cable trunk by the stair.” (CL008356; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#14956`; clean/manual attribution corroborated by raw payroll value 11266 normalized to 11266, matching clean payroll 0011266).
@@ -1592,6 +1965,11 @@ Manager testimony selected as screening context:
 - 2026 (year precision) — lifting work has to be checked behind him. (AP003877; `raw/appraisals/appraisals.jsonl#AP003877`; concern: work_checked_behind). Manager testimony only, not competence or authorisation.
 
 - Same-year timing uncertainty: AP003877 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -1626,6 +2004,12 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 408 rows; 8 distinct relevant patterns after template collapse.
 - Appraisal review: 10 exact keeper-code-keyed rows; 8 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 2026-01-02 â€” â€œTraced the nuisance low-volt alarm to a soft cell in the NO.2 bank, replaced it.â€ (CL010352; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#52786`).
+- `fault_finding` â€” 2026-01-02 â€” â€œTraced the nuisance low-volt alarm to a soft cell in the NO.2 bank, replaced it.â€ (CL010352; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#52786`).
+- `mechanical` â€” 2024-12-06 â€” â€œBled the fuel system after the filter change.â€ (CL010071; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38646`).
+
 Evidence:
 
 - 2026-01-02 — “Traced the nuisance low-volt alarm to a soft cell in the NO.2 bank, replaced it.” (CL010352; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#52786`; clean/manual attribution corroborated by raw payroll value 0011572 normalized to 11572, matching clean payroll 0011572).
@@ -1640,6 +2024,11 @@ Manager testimony selected as screening context:
 - 2023 (year precision) — Needs supervision on the standby banks. / staging work needs work. (AP004150; `raw/appraisals/appraisals.jsonl#AP004150`; concern: needs_supervision, needs_work). Manager testimony only, not competence or authorisation.
 
 - Same-year timing uncertainty: AP004153 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -1674,6 +2063,11 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 268 rows; 3 distinct relevant patterns after template collapse.
 - Appraisal review: 4 exact keeper-code-keyed rows; 3 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 1990-11-07 â€” â€œChanged the battery in the portable set.â€ (CL000410; `raw/logbooks/era1-ocr/keimnalee-1990.txt#L442`).
+- `mechanical` â€” 2017-04-19 â€” â€œCompressor not making pressure, rings worn. Rebuilt the No.1 cylinder.â€ (CL007775; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#37579`).
+
 Evidence:
 
 - 2017-04-19 — “Compressor not making pressure, rings worn. Rebuilt the No.1 cylinder.” (CL007775; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#37579`; clean/manual attribution corroborated by raw name Eachann O Preachain).
@@ -1683,6 +2077,11 @@ Evidence:
 Manager testimony selected as screening context:
 
 - 2019 (year precision) — the fog signal has to be checked behind him. (AP004258; `raw/appraisals/appraisals.jsonl#AP004258`; concern: work_checked_behind). Manager testimony only, not competence or authorisation.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
 
 Credential position:
 
@@ -1711,8 +2110,15 @@ Later qualification and mobilisation actions (only after selection progression):
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Relevant evidence categories: electrical, fault_finding, mechanical, permit_or_isolation
-- Full clean log review: 369 rows; 12 distinct relevant patterns after template collapse.
+- Full clean log review: 369 rows; 11 distinct relevant patterns after template collapse.
 - Appraisal review: 8 exact keeper-code-keyed rows; 6 rows not selected by the appraisal filter.
+
+Category support:
+
+- `electrical` â€” 2017-01-11 â€” â€œMegger test on the No.1 feeder, 3.6 bar, condemned the cable and ran a temporary.â€ (CL007686; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#33937`).
+- `fault_finding` â€” 2017-01-11 â€” â€œMegger test on the No.1 feeder, 3.6 bar, condemned the cable and ran a temporary.â€ (CL007686; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#33937`).
+- `mechanical` â€” 2017-10-13 â€” â€œChanged oil and filters on no 2.â€ (CL007925; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#43990`).
+- `permit_or_isolation` â€” 2016-02-20 â€” â€œIsolated NO.2 transformer, earths applied both ends, permit 0412 issued to the contractor.â€ (CL007420; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#22259`).
 
 Evidence:
 
@@ -1720,8 +2126,8 @@ Evidence:
   - Measurement warning `inconsistent_measurement_unit`: The quoted Megger reading uses a pressure unit, so the activity is retained but the numerical measurement is unreliable. Observed: `3.6 bar`.
 - 2016-02-20 — “Isolated NO.2 transformer, earths applied both ends, permit 0412 issued to the contractor.” (CL007420; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#22259`; clean/manual attribution corroborated by raw name Oileann Ni Gharbhail).
 - 2014-04-10 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL006753; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#1921`; clean/manual attribution corroborated by raw name Oileann Ni Gharbhail).
-- 2009-03-05 — “Isolated NO.2 transformer, earths applied both ends, PTW 46 issued to the contractor.” (CL004869; `raw/logbooks/era2-keeperlog/KLOG2009.DAT#002363`; clean/manual attribution corroborated by raw keeper_code K1538).
 - 2006-02-21 — “Checked continuity on the run to the fog hut.” (CL003887; `raw/logbooks/era2-keeperlog/KLOG2006.DAT#001876`; clean/manual attribution corroborated by raw keeper_code K1538).
+- 2017-10-13 — “Changed oil and filters on no 2.” (CL007925; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#43990`; clean/manual attribution corroborated by raw name Oileann Ní Gharbhail).
 
 Manager testimony selected as screening context:
 
@@ -1732,6 +2138,12 @@ Manager testimony selected as screening context:
 - Hand-check entry: 2013-02-03 — “Took the 11kV board off, worked the sequence myself, the supernumerary witnessing.” (CL006360; `raw/logbooks/era2-keeperlog/KLOG2013.DAT#001138`).
 
 - Chronology conflict `oileann_station_tenure_conflict`: The 2011 note says Oileann had been at Nevisbeg for eleven years (implying about 2000), while the clean profile records joining in 1998 and a Nevisbeg posting beginning in 2009. The testimony is retained as an interview lead, but its station-tenure chronology is not established.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
+- `authorization_not_established`: The manager's narrative is not a currently recognised authorisation and does not establish two years of qualifying 11 kV experience.
 
 Credential position:
 
@@ -1760,6 +2172,11 @@ Later qualification and mobilisation actions (only after selection progression):
 - Full clean log review: 374 rows; 7 distinct relevant patterns after template collapse.
 - Appraisal review: 0 exact keeper-code-keyed rows; 0 rows not selected by the appraisal filter.
 
+Category support:
+
+- `electrical` â€” 1989-09-16 â€” â€œLamp not lit, found the fuse gone. Renewed.â€ (CL000326; `raw/logbooks/era1-ocr/naomhog-1989.txt#L426`).
+- `mechanical` â€” 2005-10-06 â€” â€œRan NO.2 set 6 hrs. Oil and water checked.â€ (CL003752; `raw/logbooks/era2-keeperlog/KLOG2005.DAT#010038`).
+
 Evidence:
 
 - 2005-10-06 — “Ran NO.2 set 6 hrs. Oil and water checked.” (CL003752; `raw/logbooks/era2-keeperlog/KLOG2005.DAT#010038`; clean/manual attribution corroborated by raw keeper_code K1203).
@@ -1767,6 +2184,11 @@ Evidence:
 - 1999-04-13 — “Greased the compressor and checked the belts.” (CL001872; `raw/logbooks/era1-ocr/quillane-1999.txt#L210`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
 - 1992-10-23 — “Changed oil and filters on no 2.” (CL000627; `raw/logbooks/era1-ocr/naomhog-1992.txt#L573`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
 - 1990-09-09 — “Gearbox stripped on the winch, 1 teeth found broken. Replaced the wheel.” (CL000397; `raw/logbooks/era1-ocr/naomhog-1990.txt#L487`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
+- 1989-09-16 — “Lamp not lit, found the fuse gone. Renewed.” (CL000326; `raw/logbooks/era1-ocr/naomhog-1989.txt#L426`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
 
 No current credential, training or mobilisation pathway is assessed for this leaver.
 
@@ -1776,17 +2198,27 @@ No current credential, training or mobilisation pathway is assessed for this lea
 - Application eligibility: `not_assessed_outside_current_cohort`
 - Mobilisation readiness: `not_assessed_outside_current_cohort`
 - Relevant evidence categories: electrical, mechanical, permit_or_isolation
-- Full clean log review: 353 rows; 11 distinct relevant patterns after template collapse.
+- Full clean log review: 353 rows; 9 distinct relevant patterns after template collapse.
 - Appraisal review: 0 exact keeper-code-keyed rows; 0 rows not selected by the appraisal filter.
+
+Category support:
+
+- `electrical` â€” 2012-05-01 â€” â€œIsolated NO.2 transformer, earths applied both ends, PTW 114 issued to the contractor.â€ (CL006091; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#004409`).
+- `mechanical` â€” 2012-09-16 â€” â€œSet the timing on no.3 after the pump was refitted, ran it up and checked exhaust temps.â€ (CL006217; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#009298`).
+- `permit_or_isolation` â€” 2012-05-01 â€” â€œIsolated NO.2 transformer, earths applied both ends, PTW 114 issued to the contractor.â€ (CL006091; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#004409`).
 
 Evidence:
 
 - 2012-05-01 — “Isolated NO.2 transformer, earths applied both ends, PTW 114 issued to the contractor.” (CL006091; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#004409`; clean/manual attribution corroborated by raw keeper_code K1458).
-- 1991-08-08 — “Isolated no.3 transformer, earths applied both ends, permit bk.3 no.19 issued to the contractor.” (CL000499; `raw/logbooks/era1-ocr/portnalee-1991.txt#L273`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
-- 1987-07-23 — “Isolated No.1 transformer, earths applied both ends, permit 1102 issued to the contractor.” (CL000151; `raw/logbooks/era1-ocr/ornabaig-1987.txt#L343`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
 - 2012-09-16 — “Set the timing on no.3 after the pump was refitted, ran it up and checked exhaust temps.” (CL006217; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#009298`; clean/manual attribution corroborated by raw keeper_code K1458).
 - 2012-05-12 — “AVR on no.1 replaced and the volts set to 2.4 ohm, load-shared with no.2 properly after.” (CL006098; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#004825`; clean/manual attribution corroborated by raw keeper_code K1458).
   - Measurement warning `inconsistent_measurement_unit`: The quoted AVR voltage setting uses a resistance unit, so the activity is retained but the numerical measurement is unreliable. Observed: `2.4 ohm`.
+- 2011-11-13 — “Protection relay settings checked against the schedule and two were found wrong.” (CL005894; `raw/logbooks/era2-keeperlog/KLOG2011.DAT#011265`; clean/manual attribution corroborated by raw keeper_code K1458).
+- 2009-12-21 — “Changed oil and filters on No.2.” (CL005173; `raw/logbooks/era2-keeperlog/KLOG2009.DAT#012896`; clean/manual attribution corroborated by raw keeper_code K1458).
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
 
 No current credential, training or mobilisation pathway is assessed for this leaver.
 

@@ -1,5 +1,5 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "dataset": "synthetic Carrowmore Pearson assessment pack",
   "as_of": "2026-10-11",
   "scope": "Permitted 40-profile clean subset; 38 current keepers assessed and two leavers explicitly retained outside the current cohort.",
@@ -37,8 +37,8 @@
     "profiles": 40,
     "current": 38,
     "leavers": 2,
-    "supported_technical_interview": 22,
-    "targeted_screening_first": 16,
+    "supported_technical_interview": 21,
+    "targeted_screening_first": 17,
     "insufficient_evidence": 0,
     "outside_current_cohort": 2,
     "appraisal_source_rows": 4422,
@@ -47,7 +47,7 @@
     "appraisal_rows_reviewed_for_current_cohort": 305
   },
   "method": {
-    "work_evidence": "Every clean log entry for each profile is reviewed. An entry normally needs an explicit maintenance action plus an electrical or mechanical plant term; superficial numeric/template variants are collapsed. Up to five strongest examples are shown, except named material records needed to explain a conflict. Counts, hours and repetition are not competence.",
+    "work_evidence": "Every clean log entry for each profile is reviewed. An entry normally needs an explicit maintenance action plus an electrical or mechanical plant term; superficial numeric, measurement and equivalent permit/PTW/permit-bk workflow variants are collapsed only for diversity counting. The strongest examples and at least one exact cited record for every claimed category are shown, except named material records needed to explain a conflict. Counts, hours and repetition are not competence.",
     "appraisals": "Every appraisal carrying an exact current-cohort keeper_code is reviewed. Name-only/null-key rows are not attached. Only role-relevant testimony is repeated. Year-only 2026 records are context-only because their timing relative to 2026-10-11 is unknown; future years are excluded from conclusions.",
     "decision_categories": "supported_technical_interview; targeted_screening_first; insufficient_evidence; outside_current_redeployment_cohort. The categories are rule-based gates, not a score or ranking.",
     "supported_technical_interview": "At least five distinct relevant log examples and no explicit role-related appraisal concern in the ten years before the cutoff.",
@@ -126,7 +126,7 @@
           "CL008080",
           "CL006984"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -478,6 +478,29 @@
         "fault_finding",
         "mechanical"
       ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL010280",
+          "date": "2025-09-17",
+          "text": "Traced the nuisance low-volt alarm to a soft cell in the no 1 bank, replaced it.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#48954"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL010280",
+          "date": "2025-09-17",
+          "text": "Traced the nuisance low-volt alarm to a soft cell in the no 1 bank, replaced it.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#48954"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL009116",
+          "date": "2021-09-10",
+          "text": "Changed oil and filters on no.3.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#48605"
+        }
+      ],
       "credential_claims": [
         {
           "record_id": "LH500045",
@@ -729,7 +752,7 @@
           "CL009666",
           "CL009470"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -1007,6 +1030,22 @@
       "experience_categories": [
         "electrical",
         "mechanical"
+      ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL010068",
+          "date": "2024-12-05",
+          "text": "Lamp not lit, found the fuse gone. Renewed.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38570"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL010442",
+          "date": "2026-05-07",
+          "text": "Set the timing on No.2 after the pump was refitted, ran it up and checked exhaust temps.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#57550"
+        }
       ],
       "credential_claims": [
         {
@@ -1310,7 +1349,7 @@
           "CL009729",
           "CL009558"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -1558,6 +1597,29 @@
         "electrical",
         "fault_finding",
         "mechanical"
+      ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL003354",
+          "date": "2004-07-02",
+          "text": "Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2004.DAT#006575"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL003354",
+          "date": "2004-07-02",
+          "text": "Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2004.DAT#006575"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL010515",
+          "date": "2026-08-07",
+          "text": "Rebuilt the clockwork drive, cleaned forty years of gum out of the train.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#60993"
+        }
       ],
       "credential_claims": [
         {
@@ -1931,7 +1993,7 @@
           "CL009744",
           "CL009608"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -2306,6 +2368,29 @@
         "fault_finding",
         "mechanical"
       ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL009302",
+          "date": "2022-04-17",
+          "text": "Megger test on the No.1 feeder, 0.8 ohm, condemned the cable and ran a temporary.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#4072"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL009302",
+          "date": "2022-04-17",
+          "text": "Megger test on the No.1 feeder, 0.8 ohm, condemned the cable and ran a temporary.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#4072"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL008870",
+          "date": "2020-11-15",
+          "text": "Drive motor brushes and commutator dressed, rotation back to time.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#37866"
+        }
+      ],
       "credential_claims": [
         {
           "record_id": "LH500324",
@@ -2583,7 +2668,7 @@
           "CL002469",
           "CL000831"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -2768,6 +2853,29 @@
         "electrical",
         "fault_finding",
         "mechanical"
+      ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL006179",
+          "date": "2012-08-03",
+          "text": "Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2012.DAT#007687"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL006179",
+          "date": "2012-08-03",
+          "text": "Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2012.DAT#007687"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL005313",
+          "date": "2010-05-02",
+          "text": "Changed oil and filters on no 2.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2010.DAT#004314"
+        }
       ],
       "credential_claims": [
         {
@@ -3009,6 +3117,10 @@
         {
           "code": "medical_not_supplied",
           "text": "No current offshore medical evidence is present in the bounded sources."
+        },
+        {
+          "code": "historical_evidence_only",
+          "text": "Supplied clean logs end on 2012-12-21 and no exact keeper-code-keyed appraisal is present. This is a historical-evidence limitation only; no recency threshold is applied and it does not automatically reject the person."
         }
       ]
     },
@@ -3069,7 +3181,7 @@
           "CL004792",
           "CL004425"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -3306,6 +3418,22 @@
       "experience_categories": [
         "electrical",
         "mechanical"
+      ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL007773",
+          "date": "2017-04-16",
+          "text": "Tightened glands in the cable trunk by the stair.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#37475"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL004792",
+          "date": "2008-12-22",
+          "text": "Ran No.2 set 0.5 hrs. Oil and water checked.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2008.DAT#012450"
+        }
       ],
       "credential_claims": [
         {
@@ -3613,7 +3741,7 @@
           "CL006471",
           "CL002538"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -3863,6 +3991,29 @@
         "electrical",
         "fault_finding",
         "mechanical"
+      ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL010343",
+          "date": "2025-12-15",
+          "text": "Checked continuity on the run to the fog hut.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#52159"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL010343",
+          "date": "2025-12-15",
+          "text": "Checked continuity on the run to the fog hut.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#52159"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL010201",
+          "date": "2025-05-24",
+          "text": "Changed oil and filters on no.3.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#44788"
+        }
       ],
       "credential_claims": [
         {
@@ -4271,7 +4422,7 @@
           "CL008893",
           "CL002569"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -4538,6 +4689,22 @@
         "electrical",
         "mechanical"
       ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL009886",
+          "date": "2024-04-09",
+          "text": "Renewed fuse links, no.3 way. All made off.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#30274"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL009816",
+          "date": "2024-02-06",
+          "text": "Bled the fuel system after the filter change.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#28049"
+        }
+      ],
       "credential_claims": [
         {
           "record_id": "LH500536",
@@ -4800,7 +4967,7 @@
       "application_eligibility": "plausible_but_essential_evidence_incomplete",
       "mobilisation_readiness": "not_established",
       "recommendation_criteria": {
-        "qualifying_distinct_examples": 8,
+        "qualifying_distinct_examples": 6,
         "category_coverage": [
           "electrical",
           "fault_finding",
@@ -4836,12 +5003,10 @@
           "2026-09-20"
         ],
         "qualifying_action_entry_count": 33,
-        "distinct_qualifying_examples": 8,
+        "distinct_qualifying_examples": 6,
         "canonical_pattern_keys": [
           "traced and lifted an earth fault on the tower lighting ring split the ring to find it",
-          "isolated no transformer earths applied both ends permit issued to the contractor",
-          "isolated no transformer earths applied both ends ptw issued to the contractor",
-          "isolated no transformer earths applied both ends permit bk no issued to the contractor",
+          "isolated no transformer earths applied both ends permit reference issued to the contractor",
           "rewired the changeover contactor arrangement tested on both feeds and left in auto",
           "tightened glands in the cable trunk by the stair",
           "renewed fuse links no way all made off",
@@ -4855,11 +5020,11 @@
         "displayed_entry_ids": [
           "CL010541",
           "CL010398",
-          "CL009371",
-          "CL008977",
-          "CL010466"
+          "CL010466",
+          "CL009483",
+          "CL009227"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -4928,75 +5093,7 @@
           },
           "measurement_quality_flags": [],
           "selection_score": 6,
-          "template_key": "isolated no transformer earths applied both ends permit issued to the contractor"
-        },
-        {
-          "entry_id": "CL009371",
-          "date": "2022-07-21",
-          "text": "Isolated No.1 transformer, earths applied both ends, PTW/88 issued to the contractor.",
-          "station": "Fionnvarra Stack",
-          "categories": [
-            "electrical",
-            "permit_or_isolation"
-          ],
-          "clean_source": "clean/logbook_entries.json",
-          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#7412",
-          "attribution": "clean_manual_attribution",
-          "raw_corroboration": {
-            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#7412",
-            "format": "era3",
-            "resolved": true,
-            "resolution": "physical_csv_row_including_header",
-            "raw_keeper_name": null,
-            "raw_payroll_reference": "11722",
-            "raw_activity": "Isolated No.1 transformer, earths applied both ends, PTW/88 issued to the contractor.",
-            "attribution_match": true,
-            "identity_provenance": {
-              "identifier_type": "payroll_reference",
-              "raw_value": "11722",
-              "normalized_raw_value": "11722",
-              "expected_value": "0011722",
-              "normalized_expected_value": "11722",
-              "corroboration": "corroborates"
-            }
-          },
-          "measurement_quality_flags": [],
-          "selection_score": 6,
-          "template_key": "isolated no transformer earths applied both ends ptw issued to the contractor"
-        },
-        {
-          "entry_id": "CL008977",
-          "date": "2021-03-28",
-          "text": "Isolated NO.2 transformer, earths applied both ends, permit bk.3 no.19 issued to the contractor.",
-          "station": "Fionnvarra Stack",
-          "categories": [
-            "electrical",
-            "permit_or_isolation"
-          ],
-          "clean_source": "clean/logbook_entries.json",
-          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#42713",
-          "attribution": "clean_manual_attribution",
-          "raw_corroboration": {
-            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#42713",
-            "format": "era3",
-            "resolved": true,
-            "resolution": "physical_csv_row_including_header",
-            "raw_keeper_name": null,
-            "raw_payroll_reference": "0011722",
-            "raw_activity": "Isolated NO.2 transformer, earths applied both ends, permit bk.3 no.19 issued to the contractor.",
-            "attribution_match": true,
-            "identity_provenance": {
-              "identifier_type": "payroll_reference",
-              "raw_value": "0011722",
-              "normalized_raw_value": "11722",
-              "expected_value": "0011722",
-              "normalized_expected_value": "11722",
-              "corroboration": "corroborates"
-            }
-          },
-          "measurement_quality_flags": [],
-          "selection_score": 6,
-          "template_key": "isolated no transformer earths applied both ends permit bk no issued to the contractor"
+          "template_key": "isolated no transformer earths applied both ends permit reference issued to the contractor"
         },
         {
           "entry_id": "CL010466",
@@ -5030,6 +5127,72 @@
           "measurement_quality_flags": [],
           "selection_score": 3,
           "template_key": "rewired the changeover contactor arrangement tested on both feeds and left in auto"
+        },
+        {
+          "entry_id": "CL009483",
+          "date": "2022-12-08",
+          "text": "Tightened glands in the cable trunk by the stair.",
+          "station": "Fionnvarra Stack",
+          "categories": [
+            "electrical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#12500",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#12500",
+            "format": "era3",
+            "resolved": true,
+            "resolution": "physical_csv_row_including_header",
+            "raw_keeper_name": null,
+            "raw_payroll_reference": "0011722",
+            "raw_activity": "Tightened glands in the cable trunk by the stair.",
+            "attribution_match": true,
+            "identity_provenance": {
+              "identifier_type": "payroll_reference",
+              "raw_value": "0011722",
+              "normalized_raw_value": "11722",
+              "expected_value": "0011722",
+              "normalized_expected_value": "11722",
+              "corroboration": "corroborates"
+            }
+          },
+          "measurement_quality_flags": [],
+          "selection_score": 3,
+          "template_key": "tightened glands in the cable trunk by the stair"
+        },
+        {
+          "entry_id": "CL009227",
+          "date": "2022-01-13",
+          "text": "Renewed fuse links, no.1 way. All made off.",
+          "station": "Fionnvarra Stack",
+          "categories": [
+            "electrical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#483",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#483",
+            "format": "era3",
+            "resolved": true,
+            "resolution": "physical_csv_row_including_header",
+            "raw_keeper_name": null,
+            "raw_payroll_reference": "1.1722E+04",
+            "raw_activity": "Renewed fuse links, no.1 way. All made off.",
+            "attribution_match": true,
+            "identity_provenance": {
+              "identifier_type": "payroll_reference",
+              "raw_value": "1.1722E+04",
+              "normalized_raw_value": "11722",
+              "expected_value": "0011722",
+              "normalized_expected_value": "11722",
+              "corroboration": "corroborates"
+            }
+          },
+          "measurement_quality_flags": [],
+          "selection_score": 3,
+          "template_key": "renewed fuse links no way all made off"
         }
       ],
       "appraisal_review": {
@@ -5234,6 +5397,29 @@
         "fault_finding",
         "permit_or_isolation"
       ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL010541",
+          "date": "2026-09-20",
+          "text": "Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62613"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL010541",
+          "date": "2026-09-20",
+          "text": "Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62613"
+        },
+        {
+          "category": "permit_or_isolation",
+          "entry_id": "CL010398",
+          "date": "2026-03-11",
+          "text": "Isolated NO.2 transformer, earths applied both ends, permit 1102 issued to the contractor.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#55458"
+        }
+      ],
       "credential_claims": [
         {
           "record_id": "LH500718",
@@ -5420,7 +5606,7 @@
           "CL009967",
           "CL009756"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -5640,6 +5826,22 @@
         "electrical",
         "fault_finding"
       ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL010082",
+          "date": "2024-12-16",
+          "text": "Megger test on the NO.2 feeder, 11.2 V, condemned the cable and ran a temporary.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38994"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL010082",
+          "date": "2024-12-16",
+          "text": "Megger test on the NO.2 feeder, 11.2 V, condemned the cable and ran a temporary.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38994"
+        }
+      ],
       "credential_claims": [],
       "clean_certification_summaries": [
         {
@@ -5781,7 +5983,7 @@
           "CL006427",
           "CL003265"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -6054,6 +6256,29 @@
         "electrical",
         "fault_finding",
         "mechanical"
+      ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL010216",
+          "date": "2025-06-19",
+          "text": "Checked continuity on the run to the fog hut.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#45721"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL010216",
+          "date": "2025-06-19",
+          "text": "Checked continuity on the run to the fog hut.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#45721"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL006644",
+          "date": "2013-12-13",
+          "text": "Bled the fuel system after the filter change.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2013.DAT#012056"
+        }
       ],
       "credential_claims": [
         {
@@ -6343,7 +6568,7 @@
           "CL007052",
           "CL005661"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -6593,6 +6818,22 @@
       "experience_categories": [
         "electrical",
         "mechanical"
+      ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL007052",
+          "date": "2014-12-12",
+          "text": "Found the receiver desensitised by the charger, fitted suppression and the noise went.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2014.DAT#005949"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL008741",
+          "date": "2020-06-14",
+          "text": "Mechanical seal gone on the fire pump, fitted new and re-aligned the coupling.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#32504"
+        }
       ],
       "credential_claims": [
         {
@@ -6902,12 +7143,12 @@
       "name_ascii": "Garbhan O Riagain",
       "cohort_status": "current_redeployment_cohort",
       "as_of": "2026-10-11",
-      "interview_recommendation": "supported_technical_interview",
-      "recommendation_reason": "CL002799 records “Checked continuity on the run to the fog hut.”; CL010043 records “Isolated no 1 transformer, earths applied both ends, PTW 46 issued to the contractor.”. The documented policy supports a structured technical interview, not competence, eligibility or appointment.",
+      "interview_recommendation": "targeted_screening_first",
+      "recommendation_reason": "CL002799 records “Checked continuity on the run to the fog hut.”; CL010043 records “Isolated no 1 transformer, earths applied both ends, PTW 46 issued to the contractor.”. Relevant experience is recorded, but the uncertainty should be tested in a targeted screen before deciding on a full technical interview.",
       "application_eligibility": "plausible_but_essential_evidence_incomplete",
       "mobilisation_readiness": "not_established",
       "recommendation_criteria": {
-        "qualifying_distinct_examples": 6,
+        "qualifying_distinct_examples": 4,
         "category_coverage": [
           "electrical",
           "fault_finding",
@@ -6936,11 +7177,9 @@
           "2024-12-02"
         ],
         "qualifying_action_entry_count": 31,
-        "distinct_qualifying_examples": 6,
+        "distinct_qualifying_examples": 4,
         "canonical_pattern_keys": [
-          "isolated no transformer earths applied both ends ptw issued to the contractor",
-          "isolated no transformer earths applied both ends permit bk no issued to the contractor",
-          "isolated no transformer earths applied both ends permit issued to the contractor",
+          "isolated no transformer earths applied both ends permit reference issued to the contractor",
           "checked continuity on the run to the fog hut",
           "filter changed on the power pack",
           "gas tested the fuel tank before entry"
@@ -6953,12 +7192,11 @@
         ],
         "displayed_entry_ids": [
           "CL010043",
-          "CL006379",
-          "CL005856",
           "CL002799",
-          "CL006319"
+          "CL006319",
+          "CL005829"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -6993,75 +7231,7 @@
           },
           "measurement_quality_flags": [],
           "selection_score": 6,
-          "template_key": "isolated no transformer earths applied both ends ptw issued to the contractor"
-        },
-        {
-          "entry_id": "CL006379",
-          "date": "2013-02-15",
-          "text": "Isolated NO.2 transformer, earths applied both ends, permit bk.3 no.19 issued to the contractor.",
-          "station": "Ushnamore Island",
-          "categories": [
-            "electrical",
-            "permit_or_isolation"
-          ],
-          "clean_source": "clean/logbook_entries.json",
-          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2013.DAT#001660",
-          "attribution": "clean_manual_attribution",
-          "raw_corroboration": {
-            "reference": "raw/logbooks/era2-keeperlog/KLOG2013.DAT#001660",
-            "format": "era2",
-            "resolved": true,
-            "resolution": "file_and_record_id",
-            "raw_keeper": "K0566",
-            "raw_keeper_name": "O RIAGAIN G",
-            "raw_activity": "Isolated NO.2 transformer, earths applied both ends, permit bk.3 no.19 issued to the contractor.",
-            "attribution_match": true,
-            "identity_provenance": {
-              "identifier_type": "keeper_code",
-              "raw_value": "K0566",
-              "normalized_raw_value": "K0566",
-              "expected_value": "K0566",
-              "normalized_expected_value": "K0566",
-              "corroboration": "corroborates"
-            }
-          },
-          "measurement_quality_flags": [],
-          "selection_score": 6,
-          "template_key": "isolated no transformer earths applied both ends permit bk no issued to the contractor"
-        },
-        {
-          "entry_id": "CL005856",
-          "date": "2011-10-05",
-          "text": "Isolated No.2 transformer, earths applied both ends, permit 1102 issued to the contractor.",
-          "station": "Ushnamore Island",
-          "categories": [
-            "electrical",
-            "permit_or_isolation"
-          ],
-          "clean_source": "clean/logbook_entries.json",
-          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2011.DAT#009909",
-          "attribution": "clean_manual_attribution",
-          "raw_corroboration": {
-            "reference": "raw/logbooks/era2-keeperlog/KLOG2011.DAT#009909",
-            "format": "era2",
-            "resolved": true,
-            "resolution": "file_and_record_id",
-            "raw_keeper": "K0566",
-            "raw_keeper_name": "O RIAGAIN G",
-            "raw_activity": "Isolated No.2 transformer, earths applied both ends, permit 1102 issued to the contractor.",
-            "attribution_match": true,
-            "identity_provenance": {
-              "identifier_type": "keeper_code",
-              "raw_value": "K0566",
-              "normalized_raw_value": "K0566",
-              "expected_value": "K0566",
-              "normalized_expected_value": "K0566",
-              "corroboration": "corroborates"
-            }
-          },
-          "measurement_quality_flags": [],
-          "selection_score": 6,
-          "template_key": "isolated no transformer earths applied both ends permit issued to the contractor"
+          "template_key": "isolated no transformer earths applied both ends permit reference issued to the contractor"
         },
         {
           "entry_id": "CL002799",
@@ -7126,6 +7296,39 @@
           "measurement_quality_flags": [],
           "selection_score": 3,
           "template_key": "filter changed on the power pack"
+        },
+        {
+          "entry_id": "CL005829",
+          "date": "2011-09-07",
+          "text": "Gas tested the fuel tank before entry.",
+          "station": "Ushnamore Island",
+          "categories": [
+            "mechanical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2011.DAT#008899",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era2-keeperlog/KLOG2011.DAT#008899",
+            "format": "era2",
+            "resolved": true,
+            "resolution": "file_and_record_id",
+            "raw_keeper": "K0566",
+            "raw_keeper_name": "O RIAGAIN G",
+            "raw_activity": "Gas tested the fuel tank before entry.",
+            "attribution_match": true,
+            "identity_provenance": {
+              "identifier_type": "keeper_code",
+              "raw_value": "K0566",
+              "normalized_raw_value": "K0566",
+              "expected_value": "K0566",
+              "normalized_expected_value": "K0566",
+              "corroboration": "corroborates"
+            }
+          },
+          "measurement_quality_flags": [],
+          "selection_score": 3,
+          "template_key": "gas tested the fuel tank before entry"
         }
       ],
       "appraisal_review": {
@@ -7158,6 +7361,36 @@
         "fault_finding",
         "mechanical",
         "permit_or_isolation"
+      ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL010043",
+          "date": "2024-11-01",
+          "text": "Isolated no 1 transformer, earths applied both ends, PTW 46 issued to the contractor.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#37406"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL002799",
+          "date": "2002-09-08",
+          "text": "Checked continuity on the run to the fog hut.",
+          "source_reference": "raw/logbooks/era1-ocr/drumnahaan-2002.txt#L336"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL006319",
+          "date": "2012-12-27",
+          "text": "Filter changed on the power pack.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2012.DAT#013100"
+        },
+        {
+          "category": "permit_or_isolation",
+          "entry_id": "CL010043",
+          "date": "2024-11-01",
+          "text": "Isolated no 1 transformer, earths applied both ends, PTW 46 issued to the contractor.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#37406"
+        }
       ],
       "credential_claims": [
         {
@@ -7259,7 +7492,7 @@
         }
       },
       "initial_selection_actions": [
-        "Invite to a structured technical interview and use the cited logs as questions; assess fault diagnosis, safe isolation and hands-on plant maintenance rather than treating the records as proof."
+        "Run a targeted evidence screen before a full technical interview. Test the sparse or repetitive evidence with concrete examples. Ask what the person did personally, what plant was involved, what checks controlled the work and what outcome was verified."
       ],
       "later_qualification_and_mobilisation_actions": [
         "Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.",
@@ -7280,7 +7513,7 @@
         "Finally, complete the employer's permit, isolation and practical assessments before appointment or mobilisation."
       ],
       "next_actions": [
-        "Invite to a structured technical interview and use the cited logs as questions; assess fault diagnosis, safe isolation and hands-on plant maintenance rather than treating the records as proof.",
+        "Run a targeted evidence screen before a full technical interview. Test the sparse or repetitive evidence with concrete examples. Ask what the person did personally, what plant was involved, what checks controlled the work and what outcome was verified.",
         "Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.",
         "First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.",
         "Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.",
@@ -7353,7 +7586,7 @@
           "CL006901",
           "CL004932"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -7485,6 +7718,22 @@
       "experience_categories": [
         "electrical",
         "fault_finding"
+      ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL002089",
+          "date": "1999-12-19",
+          "text": "Checked continuity on the run to the fog hut.",
+          "source_reference": "raw/logbooks/era1-ocr/hurlaven-1999.txt#L477"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL002089",
+          "date": "1999-12-19",
+          "text": "Checked continuity on the run to the fog hut.",
+          "source_reference": "raw/logbooks/era1-ocr/hurlaven-1999.txt#L477"
+        }
       ],
       "credential_claims": [
         {
@@ -7762,7 +8011,7 @@
           "CL008008",
           "CL006691"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -8031,6 +8280,29 @@
         "fault_finding",
         "mechanical"
       ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL007592",
+          "date": "2016-09-14",
+          "text": "Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#29593"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL007592",
+          "date": "2016-09-14",
+          "text": "Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#29593"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL008681",
+          "date": "2020-03-27",
+          "text": "Changed oil and filters on no 2.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#29766"
+        }
+      ],
       "credential_claims": [
         {
           "record_id": "LH500938",
@@ -8268,7 +8540,7 @@
           "CL008111",
           "CL008021"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -8622,6 +8894,29 @@
         "fault_finding",
         "mechanical"
       ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL008207",
+          "date": "2018-08-17",
+          "text": "Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#8269"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL008207",
+          "date": "2018-08-17",
+          "text": "Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#8269"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL008184",
+          "date": "2018-07-20",
+          "text": "Drive motor brushes and commutator dressed, rotation back to time.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#7336"
+        }
+      ],
       "credential_claims": [
         {
           "record_id": "LH500972",
@@ -8850,7 +9145,7 @@
           "CL009530",
           "CL009468"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -9052,6 +9347,22 @@
         "electrical",
         "fault_finding"
       ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL009728",
+          "date": "2023-10-16",
+          "text": "Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#23979"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL009728",
+          "date": "2023-10-16",
+          "text": "Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#23979"
+        }
+      ],
       "credential_claims": [],
       "clean_certification_summaries": [
         {
@@ -9215,7 +9526,7 @@
           "renewed fuse links no way all made off",
           "lamp changer stepping twice dismantled the ratchet and dressed the pawl faces",
           "battery checked on the beacon",
-          "confined space entry to the no fuel tank ptw refers gas tested throughout",
+          "confined space entry to the no fuel tank permit reference refers gas tested throughout",
           "changed oil and filters on no"
         ],
         "category_coverage": [
@@ -9230,7 +9541,7 @@
           "CL010452",
           "CL009955"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -9475,6 +9786,29 @@
         "fault_finding",
         "mechanical"
       ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL003088",
+          "date": "2003-09-12",
+          "text": "Megger test on the no.1 feeder, 0.8 ohm, condemned the cable and ran a temporary.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2003.DAT#003779"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL003088",
+          "date": "2003-09-12",
+          "text": "Megger test on the no.1 feeder, 0.8 ohm, condemned the cable and ran a temporary.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2003.DAT#003779"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL002876",
+          "date": "2003-01-09",
+          "text": "Drive motor brushes and commutator dressed, rotation back to time.",
+          "source_reference": "raw/logbooks/era1-ocr/inchmarrig-2003.txt#L22"
+        }
+      ],
       "credential_claims": [
         {
           "record_id": "LH501074",
@@ -9673,7 +10007,7 @@
           "CL009965",
           "CL009957"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -10001,6 +10335,29 @@
         "fault_finding",
         "mechanical"
       ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL010451",
+          "date": "2026-05-17",
+          "text": "Drive motor brushes and commutator dressed, rotation back to time.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#57997"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL009806",
+          "date": "2024-01-20",
+          "text": "Checked continuity on the run to the fog hut.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#27466"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL010451",
+          "date": "2026-05-17",
+          "text": "Drive motor brushes and commutator dressed, rotation back to time.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#57997"
+        }
+      ],
       "credential_claims": [
         {
           "record_id": "LH501119",
@@ -10205,7 +10562,7 @@
           "CL009228",
           "CL009139"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -10433,6 +10790,29 @@
         "electrical",
         "fault_finding",
         "mechanical"
+      ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL009911",
+          "date": "2024-05-12",
+          "text": "Checked continuity on the run to the fog hut.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#31434"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL009911",
+          "date": "2024-05-12",
+          "text": "Checked continuity on the run to the fog hut.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#31434"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL009694",
+          "date": "2023-09-06",
+          "text": "Ran no.3 set 2 hrs. Oil and water checked.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#22471"
+        }
       ],
       "credential_claims": [
         {
@@ -10674,7 +11054,7 @@
           "CL007263",
           "CL006645"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -10951,6 +11331,29 @@
         "fault_finding",
         "mechanical"
       ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL009476",
+          "date": "2022-11-24",
+          "text": "Traced the nuisance low-volt alarm to a soft cell in the no.1 bank, replaced it.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#12011"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL009476",
+          "date": "2022-11-24",
+          "text": "Traced the nuisance low-volt alarm to a soft cell in the no.1 bank, replaced it.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#12011"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL008376",
+          "date": "2019-03-03",
+          "text": "Compressor not making pressure, rings worn. Rebuilt the no 2 cylinder.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#15552"
+        }
+      ],
       "credential_claims": [
         {
           "record_id": "LH501371",
@@ -11176,9 +11579,10 @@
           "CL001792",
           "CL000916",
           "CL008299",
-          "CL008261"
+          "CL008261",
+          "CL007737"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -11354,6 +11758,39 @@
           "measurement_quality_flags": [],
           "selection_score": 3,
           "template_key": "protection relay settings checked against the schedule and two were found wrong"
+        },
+        {
+          "entry_id": "CL007737",
+          "date": "2017-03-19",
+          "text": "Set the timing on No.1 after the pump was refitted, ran it up and checked exhaust temps.",
+          "station": "Pallasveen Holm",
+          "categories": [
+            "mechanical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#36467",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#36467",
+            "format": "era3",
+            "resolved": true,
+            "resolution": "physical_csv_row_including_header",
+            "raw_keeper_name": "Aoife Ni Murchu",
+            "raw_payroll_reference": null,
+            "raw_activity": "Set the timing on No.1 after the pump was refitted, ran it up and checked exhaust temps.",
+            "attribution_match": false,
+            "identity_provenance": {
+              "identifier_type": "name",
+              "raw_value": "Aoife Ni Murchu",
+              "normalized_raw_value": "aoifenimurchu",
+              "expected_value": "Aoife Ní Mhurchú",
+              "normalized_expected_value": "aoifenimhurchu",
+              "corroboration": "conflicts"
+            }
+          },
+          "measurement_quality_flags": [],
+          "selection_score": 3,
+          "template_key": "set the timing on no after the pump was refitted ran it up and checked exhaust temps"
         }
       ],
       "appraisal_review": {
@@ -11411,6 +11848,29 @@
         "electrical",
         "fault_finding",
         "mechanical"
+      ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL007701",
+          "date": "2017-01-22",
+          "text": "Megger test on the NO.2 feeder, 48 psi, condemned the cable and ran a temporary.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#34379"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL007701",
+          "date": "2017-01-22",
+          "text": "Megger test on the NO.2 feeder, 48 psi, condemned the cable and ran a temporary.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#34379"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL007737",
+          "date": "2017-03-19",
+          "text": "Set the timing on No.1 after the pump was refitted, ran it up and checked exhaust temps.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#36467"
+        }
       ],
       "credential_claims": [
         {
@@ -11681,7 +12141,7 @@
           "CL008649",
           "CL008539"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -11911,6 +12371,29 @@
         "fault_finding",
         "mechanical"
       ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL009512",
+          "date": "2023-01-26",
+          "text": "Megger test on the No.2 feeder, 2.4 ohm, condemned the cable and ran a temporary.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#14356"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL009512",
+          "date": "2023-01-26",
+          "text": "Megger test on the No.2 feeder, 2.4 ohm, condemned the cable and ran a temporary.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#14356"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL008539",
+          "date": "2019-10-07",
+          "text": "Changed oil and filters on no 1.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#23484"
+        }
+      ],
       "credential_claims": [
         {
           "record_id": "LH501545",
@@ -12113,7 +12596,7 @@
           "CL002459",
           "CL001961"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -12317,6 +12800,29 @@
         "fault_finding",
         "mechanical"
       ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL000604",
+          "date": "1992-09-01",
+          "text": "Checked continuity on the run to the fog hut.",
+          "source_reference": "raw/logbooks/era1-ocr/knockmoyne-1992.txt#L448"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL000604",
+          "date": "1992-09-01",
+          "text": "Checked continuity on the run to the fog hut.",
+          "source_reference": "raw/logbooks/era1-ocr/knockmoyne-1992.txt#L448"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL003053",
+          "date": "2003-08-05",
+          "text": "Compressor not making pressure, rings worn. Rebuilt the no.1 cylinder.",
+          "source_reference": "raw/logbooks/era1-ocr/mullanoe-2003.txt#L194"
+        }
+      ],
       "credential_claims": [
         {
           "record_id": "LH501850",
@@ -12499,7 +13005,7 @@
           "CL009097",
           "CL009921"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -12846,6 +13352,22 @@
       "experience_categories": [
         "electrical",
         "mechanical"
+      ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL005994",
+          "date": "2012-02-13",
+          "text": "Drive motor brushes and commutator dressed, rotation back to time.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2012.DAT#001585"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL005994",
+          "date": "2012-02-13",
+          "text": "Drive motor brushes and commutator dressed, rotation back to time.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2012.DAT#001585"
+        }
       ],
       "credential_claims": [
         {
@@ -13619,9 +14141,10 @@
           "CL003006",
           "CL001872",
           "CL000627",
-          "CL000397"
+          "CL000397",
+          "CL000326"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -13779,6 +14302,36 @@
           "measurement_quality_flags": [],
           "selection_score": 3,
           "template_key": "gearbox stripped on the winch teeth found broken replaced the wheel"
+        },
+        {
+          "entry_id": "CL000326",
+          "date": "1989-09-16",
+          "text": "Lamp not lit, found the fuse gone. Renewed.",
+          "station": "Naomhog Rock",
+          "categories": [
+            "electrical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era1-ocr/naomhog-1989.txt#L426",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era1-ocr/naomhog-1989.txt#L426",
+            "format": "era1",
+            "resolved": true,
+            "resolution": "physical_line",
+            "raw_excerpt": "PK Ó hIarnáin — Lamp not lit, found the fuse gone. Renewed.",
+            "identity_provenance": {
+              "identifier_type": "absent",
+              "raw_value": null,
+              "normalized_raw_value": null,
+              "expected_value": null,
+              "corroboration": "absent"
+            },
+            "attribution_match": null
+          },
+          "measurement_quality_flags": [],
+          "selection_score": 3,
+          "template_key": "lamp not lit found the fuse gone renewed"
         }
       ],
       "appraisal_review": {
@@ -13801,6 +14354,22 @@
       "experience_categories": [
         "electrical",
         "mechanical"
+      ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL000326",
+          "date": "1989-09-16",
+          "text": "Lamp not lit, found the fuse gone. Renewed.",
+          "source_reference": "raw/logbooks/era1-ocr/naomhog-1989.txt#L426"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL003752",
+          "date": "2005-10-06",
+          "text": "Ran NO.2 set 6 hrs. Oil and water checked.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2005.DAT#010038"
+        }
       ],
       "credential_claims": [],
       "clean_certification_summaries": [
@@ -13931,7 +14500,7 @@
       "application_eligibility": "plausible_but_essential_evidence_incomplete",
       "mobilisation_readiness": "not_established",
       "recommendation_criteria": {
-        "qualifying_distinct_examples": 12,
+        "qualifying_distinct_examples": 10,
         "category_coverage": [
           "electrical",
           "fault_finding",
@@ -13966,13 +14535,11 @@
           "2025-12-19"
         ],
         "qualifying_action_entry_count": 62,
-        "distinct_qualifying_examples": 12,
+        "distinct_qualifying_examples": 10,
         "canonical_pattern_keys": [
-          "isolated no transformer earths applied both ends permit issued to the contractor",
-          "isolated no transformer earths applied both ends ptw issued to the contractor",
+          "isolated no transformer earths applied both ends permit reference issued to the contractor",
           "checked continuity on the run to the fog hut",
           "traced and lifted an earth fault on the tower lighting ring split the ring to find it",
-          "isolated no transformer earths applied both ends permit bk no issued to the contractor",
           "megger test on the no feeder measurement condemned the cable and ran a temporary",
           "rewired the changeover contactor arrangement tested on both feeds and left in auto",
           "lamp not lit found the fuse gone renewed",
@@ -13989,12 +14556,13 @@
         ],
         "displayed_entry_ids": [
           "CL010239",
-          "CL010180",
           "CL010135",
           "CL009834",
-          "CL008927"
+          "CL007632",
+          "CL010320",
+          "CL008529"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -14029,41 +14597,7 @@
           },
           "measurement_quality_flags": [],
           "selection_score": 6,
-          "template_key": "isolated no transformer earths applied both ends permit issued to the contractor"
-        },
-        {
-          "entry_id": "CL010180",
-          "date": "2025-05-03",
-          "text": "Isolated no 1 transformer, earths applied both ends, PTW 114 issued to the contractor.",
-          "station": "Quillane Skerry",
-          "categories": [
-            "electrical",
-            "permit_or_isolation"
-          ],
-          "clean_source": "clean/logbook_entries.json",
-          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#44002",
-          "attribution": "clean_manual_attribution",
-          "raw_corroboration": {
-            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#44002",
-            "format": "era3",
-            "resolved": true,
-            "resolution": "physical_csv_row_including_header",
-            "raw_keeper_name": null,
-            "raw_payroll_reference": "0012406",
-            "raw_activity": "Isolated no 1 transformer, earths applied both ends, PTW 114 issued to the contractor.",
-            "attribution_match": true,
-            "identity_provenance": {
-              "identifier_type": "payroll_reference",
-              "raw_value": "0012406",
-              "normalized_raw_value": "12406",
-              "expected_value": "0012406",
-              "normalized_expected_value": "12406",
-              "corroboration": "corroborates"
-            }
-          },
-          "measurement_quality_flags": [],
-          "selection_score": 6,
-          "template_key": "isolated no transformer earths applied both ends ptw issued to the contractor"
+          "template_key": "isolated no transformer earths applied both ends permit reference issued to the contractor"
         },
         {
           "entry_id": "CL010135",
@@ -14134,25 +14668,58 @@
           "template_key": "traced and lifted an earth fault on the tower lighting ring split the ring to find it"
         },
         {
-          "entry_id": "CL008927",
-          "date": "2021-02-01",
-          "text": "Isolated No.2 transformer, earths applied both ends, permit bk.3 no.19 issued to the contractor.",
-          "station": "Quillane Skerry",
+          "entry_id": "CL007632",
+          "date": "2016-11-03",
+          "text": "Megger test on the No.2 feeder, 11.2 V, condemned the cable and ran a temporary.",
+          "station": "Torravaig Ness",
           "categories": [
             "electrical",
-            "permit_or_isolation"
+            "fault_finding"
           ],
           "clean_source": "clean/logbook_entries.json",
-          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#40526",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#31397",
           "attribution": "clean_manual_attribution",
           "raw_corroboration": {
-            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#40526",
+            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#31397",
+            "format": "era3",
+            "resolved": true,
+            "resolution": "physical_csv_row_including_header",
+            "raw_keeper_name": "Joachima Ulverstane",
+            "raw_payroll_reference": null,
+            "raw_activity": "Megger test on the No.2 feeder, 11.2 V, condemned the cable and ran a temporary.",
+            "attribution_match": true,
+            "identity_provenance": {
+              "identifier_type": "name",
+              "raw_value": "Joachima Ulverstane",
+              "normalized_raw_value": "joachimaulverstane",
+              "expected_value": "Joachima Ulverstane",
+              "normalized_expected_value": "joachimaulverstane",
+              "corroboration": "corroborates"
+            }
+          },
+          "measurement_quality_flags": [],
+          "selection_score": 6,
+          "template_key": "megger test on the no feeder measurement condemned the cable and ran a temporary"
+        },
+        {
+          "entry_id": "CL010320",
+          "date": "2025-11-15",
+          "text": "Rewired the changeover contactor arrangement, tested on both feeds and left in auto.",
+          "station": "Quillane Skerry",
+          "categories": [
+            "electrical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#51050",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#51050",
             "format": "era3",
             "resolved": true,
             "resolution": "physical_csv_row_including_header",
             "raw_keeper_name": null,
             "raw_payroll_reference": "0012406",
-            "raw_activity": "Isolated No.2 transformer, earths applied both ends, permit bk.3 no.19 issued to the contractor.",
+            "raw_activity": "Rewired the changeover contactor arrangement, tested on both feeds and left in auto.",
             "attribution_match": true,
             "identity_provenance": {
               "identifier_type": "payroll_reference",
@@ -14164,8 +14731,41 @@
             }
           },
           "measurement_quality_flags": [],
-          "selection_score": 6,
-          "template_key": "isolated no transformer earths applied both ends permit bk no issued to the contractor"
+          "selection_score": 3,
+          "template_key": "rewired the changeover contactor arrangement tested on both feeds and left in auto"
+        },
+        {
+          "entry_id": "CL008529",
+          "date": "2019-09-21",
+          "text": "Ran no.2 set 4 hrs. Oil and water checked.",
+          "station": "Quillane Skerry",
+          "categories": [
+            "mechanical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#22910",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#22910",
+            "format": "era3",
+            "resolved": true,
+            "resolution": "physical_csv_row_including_header",
+            "raw_keeper_name": null,
+            "raw_payroll_reference": "0012406",
+            "raw_activity": "Ran no.2 set 4 hrs. Oil and water checked.",
+            "attribution_match": true,
+            "identity_provenance": {
+              "identifier_type": "payroll_reference",
+              "raw_value": "0012406",
+              "normalized_raw_value": "12406",
+              "expected_value": "0012406",
+              "normalized_expected_value": "12406",
+              "corroboration": "corroborates"
+            }
+          },
+          "measurement_quality_flags": [],
+          "selection_score": 3,
+          "template_key": "ran no set hrs oil and water checked"
         }
       ],
       "appraisal_review": {
@@ -14330,6 +14930,36 @@
         "mechanical",
         "permit_or_isolation"
       ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL010239",
+          "date": "2025-07-15",
+          "text": "Isolated no 2 transformer, earths applied both ends, permit 1102 issued to the contractor.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#46689"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL010135",
+          "date": "2025-02-26",
+          "text": "Checked continuity on the run to the fog hut.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#41590"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL008529",
+          "date": "2019-09-21",
+          "text": "Ran no.2 set 4 hrs. Oil and water checked.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#22910"
+        },
+        {
+          "category": "permit_or_isolation",
+          "entry_id": "CL010239",
+          "date": "2025-07-15",
+          "text": "Isolated no 2 transformer, earths applied both ends, permit 1102 issued to the contractor.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#46689"
+        }
+      ],
       "credential_claims": [],
       "clean_certification_summaries": [
         {
@@ -14470,7 +15100,7 @@
           "CL002218",
           "CL001334"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -14684,6 +15314,22 @@
       "experience_categories": [
         "electrical",
         "fault_finding"
+      ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL001465",
+          "date": "1997-12-28",
+          "text": "Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.",
+          "source_reference": "raw/logbooks/era1-ocr/mullanoe-1997.txt#L677"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL001465",
+          "date": "1997-12-28",
+          "text": "Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.",
+          "source_reference": "raw/logbooks/era1-ocr/mullanoe-1997.txt#L677"
+        }
       ],
       "credential_claims": [
         {
@@ -14942,7 +15588,7 @@
           "CL002447",
           "CL002191"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -15138,6 +15784,22 @@
         "electrical",
         "mechanical"
       ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL004774",
+          "date": "2008-12-02",
+          "text": "AVR on no.2 replaced and the volts set to 0.8 ohm, load-shared with no.1 properly after.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2008.DAT#011722"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL002551",
+          "date": "2001-09-19",
+          "text": "Changed oil and filters on No.1.",
+          "source_reference": "raw/logbooks/era1-ocr/fionnvarra-2001.txt#L388"
+        }
+      ],
       "credential_claims": [
         {
           "record_id": "LH502474",
@@ -15327,7 +15989,7 @@
           "CL006199",
           "CL005867"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -15651,6 +16313,22 @@
       "experience_categories": [
         "electrical",
         "mechanical"
+      ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL008356",
+          "date": "2019-02-17",
+          "text": "Tightened glands in the cable trunk by the stair.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#14956"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL007631",
+          "date": "2016-11-03",
+          "text": "Ran NO.2 set 6 hrs. Oil and water checked.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#31387"
+        }
       ],
       "credential_claims": [
         {
@@ -15985,7 +16663,7 @@
           "CL009245",
           "CL008995"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -16178,6 +16856,29 @@
         "electrical",
         "fault_finding",
         "mechanical"
+      ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL002712",
+          "date": "2002-05-08",
+          "text": "Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.",
+          "source_reference": "raw/logbooks/era1-ocr/rinnaglas-2002.txt#L210"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL002712",
+          "date": "2002-05-08",
+          "text": "Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.",
+          "source_reference": "raw/logbooks/era1-ocr/rinnaglas-2002.txt#L210"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL009700",
+          "date": "2023-09-16",
+          "text": "Repaired the derrick luffing gear, new pin and bush turned up on station.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#22883"
+        }
       ],
       "credential_claims": [
         {
@@ -16489,7 +17190,7 @@
       "application_eligibility": "plausible_but_essential_evidence_incomplete",
       "mobilisation_readiness": "not_established",
       "recommendation_criteria": {
-        "qualifying_distinct_examples": 8,
+        "qualifying_distinct_examples": 7,
         "category_coverage": [
           "electrical",
           "fault_finding",
@@ -16518,11 +17219,10 @@
           "2026-10-08"
         ],
         "qualifying_action_entry_count": 13,
-        "distinct_qualifying_examples": 8,
+        "distinct_qualifying_examples": 7,
         "canonical_pattern_keys": [
-          "isolated no transformer earths applied both ends permit issued to the contractor",
+          "isolated no transformer earths applied both ends permit reference issued to the contractor",
           "megger test on the no feeder measurement condemned the cable and ran a temporary",
-          "isolated no transformer earths applied both ends ptw issued to the contractor",
           "battery checked on the beacon",
           "changed the battery in the portable set",
           "changed oil and filters on no",
@@ -16538,11 +17238,11 @@
         "displayed_entry_ids": [
           "CL010173",
           "CL008335",
-          "CL007007",
           "CL010559",
-          "CL010308"
+          "CL010308",
+          "CL009203"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -16577,7 +17277,7 @@
           },
           "measurement_quality_flags": [],
           "selection_score": 6,
-          "template_key": "isolated no transformer earths applied both ends permit issued to the contractor"
+          "template_key": "isolated no transformer earths applied both ends permit reference issued to the contractor"
         },
         {
           "entry_id": "CL008335",
@@ -16612,40 +17312,6 @@
           "measurement_quality_flags": [],
           "selection_score": 6,
           "template_key": "megger test on the no feeder measurement condemned the cable and ran a temporary"
-        },
-        {
-          "entry_id": "CL007007",
-          "date": "2014-11-05",
-          "text": "Isolated no 1 transformer, earths applied both ends, PTW/88 issued to the contractor.",
-          "station": "Naomhog Rock",
-          "categories": [
-            "electrical",
-            "permit_or_isolation"
-          ],
-          "clean_source": "clean/logbook_entries.json",
-          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#5902",
-          "attribution": "clean_manual_attribution",
-          "raw_corroboration": {
-            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#5902",
-            "format": "era3",
-            "resolved": true,
-            "resolution": "physical_csv_row_including_header",
-            "raw_keeper_name": "S. Corrigane",
-            "raw_payroll_reference": null,
-            "raw_activity": "Isolated no 1 transformer, earths applied both ends, PTW/88 issued to the contractor.",
-            "attribution_match": false,
-            "identity_provenance": {
-              "identifier_type": "name",
-              "raw_value": "S. Corrigane",
-              "normalized_raw_value": "scorrigane",
-              "expected_value": "Aodhan Ó hAghmoir",
-              "normalized_expected_value": "aodhanohaghmoir",
-              "corroboration": "conflicts"
-            }
-          },
-          "measurement_quality_flags": [],
-          "selection_score": 6,
-          "template_key": "isolated no transformer earths applied both ends ptw issued to the contractor"
         },
         {
           "entry_id": "CL010559",
@@ -16712,6 +17378,39 @@
           "measurement_quality_flags": [],
           "selection_score": 3,
           "template_key": "changed the battery in the portable set"
+        },
+        {
+          "entry_id": "CL009203",
+          "date": "2021-12-18",
+          "text": "Changed oil and filters on no.2.",
+          "station": "Kilvarran Bay",
+          "categories": [
+            "mechanical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#52250",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#52250",
+            "format": "era3",
+            "resolved": true,
+            "resolution": "physical_csv_row_including_header",
+            "raw_keeper_name": null,
+            "raw_payroll_reference": "0012129",
+            "raw_activity": "Changed oil and filters on no.2.",
+            "attribution_match": true,
+            "identity_provenance": {
+              "identifier_type": "payroll_reference",
+              "raw_value": "0012129",
+              "normalized_raw_value": "12129",
+              "expected_value": "0012129",
+              "normalized_expected_value": "12129",
+              "corroboration": "corroborates"
+            }
+          },
+          "measurement_quality_flags": [],
+          "selection_score": 3,
+          "template_key": "changed oil and filters on no"
         }
       ],
       "appraisal_review": {
@@ -16845,6 +17544,36 @@
         "fault_finding",
         "mechanical",
         "permit_or_isolation"
+      ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL010173",
+          "date": "2025-04-19",
+          "text": "Isolated No.2 transformer, earths applied both ends, permit 0412 issued to the contractor.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#43555"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL008335",
+          "date": "2019-01-20",
+          "text": "Megger test on the No.2 feeder, 2.4 ohm, condemned the cable and ran a temporary.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#13919"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL009203",
+          "date": "2021-12-18",
+          "text": "Changed oil and filters on no.2.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#52250"
+        },
+        {
+          "category": "permit_or_isolation",
+          "entry_id": "CL010173",
+          "date": "2025-04-19",
+          "text": "Isolated No.2 transformer, earths applied both ends, permit 0412 issued to the contractor.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#43555"
+        }
       ],
       "credential_claims": [
         {
@@ -17225,7 +17954,7 @@
           "CL003898",
           "CL002921"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -17421,6 +18150,29 @@
         "electrical",
         "fault_finding",
         "mechanical"
+      ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL003361",
+          "date": "2004-07-09",
+          "text": "Checked continuity on the run to the fog hut.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2004.DAT#006859"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL003361",
+          "date": "2004-07-09",
+          "text": "Checked continuity on the run to the fog hut.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2004.DAT#006859"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL003898",
+          "date": "2006-03-09",
+          "text": "Ran No.2 set 8 hrs. Oil and water checked.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2006.DAT#002534"
+        }
       ],
       "credential_claims": [
         {
@@ -17700,7 +18452,7 @@
           "CL009650",
           "CL008769"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -17955,6 +18707,29 @@
         "electrical",
         "fault_finding",
         "mechanical"
+      ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL010352",
+          "date": "2026-01-02",
+          "text": "Traced the nuisance low-volt alarm to a soft cell in the NO.2 bank, replaced it.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#52786"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL010352",
+          "date": "2026-01-02",
+          "text": "Traced the nuisance low-volt alarm to a soft cell in the NO.2 bank, replaced it.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#52786"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL010071",
+          "date": "2024-12-06",
+          "text": "Bled the fuel system after the filter change.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38646"
+        }
       ],
       "credential_claims": [
         {
@@ -18237,7 +19012,7 @@
       "application_eligibility": "not_assessed_outside_current_cohort",
       "mobilisation_readiness": "not_assessed_outside_current_cohort",
       "recommendation_criteria": {
-        "qualifying_distinct_examples": 11,
+        "qualifying_distinct_examples": 9,
         "category_coverage": [
           "electrical",
           "mechanical",
@@ -18265,11 +19040,9 @@
           "2012-11-26"
         ],
         "qualifying_action_entry_count": 50,
-        "distinct_qualifying_examples": 11,
+        "distinct_qualifying_examples": 9,
         "canonical_pattern_keys": [
-          "isolated no transformer earths applied both ends ptw issued to the contractor",
-          "isolated no transformer earths applied both ends permit bk no issued to the contractor",
-          "isolated no transformer earths applied both ends permit issued to the contractor",
+          "isolated no transformer earths applied both ends permit reference issued to the contractor",
           "set the timing on no after the pump was refitted ran it up and checked exhaust temps",
           "avr on no replaced and the volts set to measurement load shared with no properly after",
           "protection relay settings checked against the schedule and two were found wrong",
@@ -18286,12 +19059,12 @@
         ],
         "displayed_entry_ids": [
           "CL006091",
-          "CL000499",
-          "CL000151",
           "CL006217",
-          "CL006098"
+          "CL006098",
+          "CL005894",
+          "CL005173"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -18326,69 +19099,7 @@
           },
           "measurement_quality_flags": [],
           "selection_score": 6,
-          "template_key": "isolated no transformer earths applied both ends ptw issued to the contractor"
-        },
-        {
-          "entry_id": "CL000499",
-          "date": "1991-08-08",
-          "text": "Isolated no.3 transformer, earths applied both ends, permit bk.3 no.19 issued to the contractor.",
-          "station": "Portnalee Point",
-          "categories": [
-            "electrical",
-            "permit_or_isolation"
-          ],
-          "clean_source": "clean/logbook_entries.json",
-          "source_reference": "raw/logbooks/era1-ocr/portnalee-1991.txt#L273",
-          "attribution": "clean_manual_attribution",
-          "raw_corroboration": {
-            "reference": "raw/logbooks/era1-ocr/portnalee-1991.txt#L273",
-            "format": "era1",
-            "resolved": true,
-            "resolution": "physical_line",
-            "raw_excerpt": "Isolate no.3 transformer, earths applied both ends, peermit bk.3 no.19 issued to the contractor.",
-            "identity_provenance": {
-              "identifier_type": "absent",
-              "raw_value": null,
-              "normalized_raw_value": null,
-              "expected_value": null,
-              "corroboration": "absent"
-            },
-            "attribution_match": null
-          },
-          "measurement_quality_flags": [],
-          "selection_score": 6,
-          "template_key": "isolated no transformer earths applied both ends permit bk no issued to the contractor"
-        },
-        {
-          "entry_id": "CL000151",
-          "date": "1987-07-23",
-          "text": "Isolated No.1 transformer, earths applied both ends, permit 1102 issued to the contractor.",
-          "station": "Ornabaig Eilean",
-          "categories": [
-            "electrical",
-            "permit_or_isolation"
-          ],
-          "clean_source": "clean/logbook_entries.json",
-          "source_reference": "raw/logbooks/era1-ocr/ornabaig-1987.txt#L343",
-          "attribution": "clean_manual_attribution",
-          "raw_corroboration": {
-            "reference": "raw/logbooks/era1-ocr/ornabaig-1987.txt#L343",
-            "format": "era1",
-            "resolved": true,
-            "resolution": "physical_line",
-            "raw_excerpt": "Isolated No.1 transformer, earths applied both ends, permit 1102 issued to the contractor.",
-            "identity_provenance": {
-              "identifier_type": "absent",
-              "raw_value": null,
-              "normalized_raw_value": null,
-              "expected_value": null,
-              "corroboration": "absent"
-            },
-            "attribution_match": null
-          },
-          "measurement_quality_flags": [],
-          "selection_score": 6,
-          "template_key": "isolated no transformer earths applied both ends permit issued to the contractor"
+          "template_key": "isolated no transformer earths applied both ends permit reference issued to the contractor"
         },
         {
           "entry_id": "CL006217",
@@ -18461,6 +19172,72 @@
           ],
           "selection_score": 3,
           "template_key": "avr on no replaced and the volts set to measurement load shared with no properly after"
+        },
+        {
+          "entry_id": "CL005894",
+          "date": "2011-11-13",
+          "text": "Protection relay settings checked against the schedule and two were found wrong.",
+          "station": "Nevisbeg Skerry",
+          "categories": [
+            "electrical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2011.DAT#011265",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era2-keeperlog/KLOG2011.DAT#011265",
+            "format": "era2",
+            "resolved": true,
+            "resolution": "file_and_record_id",
+            "raw_keeper": "K1458",
+            "raw_keeper_name": "HASKELLEN H",
+            "raw_activity": "Protection relay settings checked against the schedule and two were found wrong.",
+            "attribution_match": true,
+            "identity_provenance": {
+              "identifier_type": "keeper_code",
+              "raw_value": "K1458",
+              "normalized_raw_value": "K1458",
+              "expected_value": "K1458",
+              "normalized_expected_value": "K1458",
+              "corroboration": "corroborates"
+            }
+          },
+          "measurement_quality_flags": [],
+          "selection_score": 3,
+          "template_key": "protection relay settings checked against the schedule and two were found wrong"
+        },
+        {
+          "entry_id": "CL005173",
+          "date": "2009-12-21",
+          "text": "Changed oil and filters on No.2.",
+          "station": "Nevisbeg Skerry",
+          "categories": [
+            "mechanical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2009.DAT#012896",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era2-keeperlog/KLOG2009.DAT#012896",
+            "format": "era2",
+            "resolved": true,
+            "resolution": "file_and_record_id",
+            "raw_keeper": "K1458",
+            "raw_keeper_name": "HASKELLEN H",
+            "raw_activity": "Changed oil and filters on No.2.",
+            "attribution_match": true,
+            "identity_provenance": {
+              "identifier_type": "keeper_code",
+              "raw_value": "K1458",
+              "normalized_raw_value": "K1458",
+              "expected_value": "K1458",
+              "normalized_expected_value": "K1458",
+              "corroboration": "corroborates"
+            }
+          },
+          "measurement_quality_flags": [],
+          "selection_score": 3,
+          "template_key": "changed oil and filters on no"
         }
       ],
       "appraisal_review": {
@@ -18484,6 +19261,29 @@
         "electrical",
         "mechanical",
         "permit_or_isolation"
+      ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL006091",
+          "date": "2012-05-01",
+          "text": "Isolated NO.2 transformer, earths applied both ends, PTW 114 issued to the contractor.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2012.DAT#004409"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL006217",
+          "date": "2012-09-16",
+          "text": "Set the timing on no.3 after the pump was refitted, ran it up and checked exhaust temps.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2012.DAT#009298"
+        },
+        {
+          "category": "permit_or_isolation",
+          "entry_id": "CL006091",
+          "date": "2012-05-01",
+          "text": "Isolated NO.2 transformer, earths applied both ends, PTW 114 issued to the contractor.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2012.DAT#004409"
+        }
       ],
       "credential_claims": [
         {
@@ -18664,7 +19464,7 @@
           "CL010252",
           "CL010246"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -18882,6 +19682,29 @@
         "electrical",
         "fault_finding",
         "mechanical"
+      ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL003121",
+          "date": "2003-10-11",
+          "text": "Checked continuity on the run to the fog hut.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2003.DAT#004186"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL003121",
+          "date": "2003-10-11",
+          "text": "Checked continuity on the run to the fog hut.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2003.DAT#004186"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL010450",
+          "date": "2026-05-16",
+          "text": "Set the timing on NO.2 after the pump was refitted, ran it up and checked exhaust temps.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#57976"
+        }
       ],
       "credential_claims": [
         {
@@ -19111,7 +19934,7 @@
           "CL005945",
           "CL005770"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -19310,6 +20133,29 @@
         "electrical",
         "fault_finding",
         "mechanical"
+      ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL006207",
+          "date": "2012-09-03",
+          "text": "Checked continuity on the run to the fog hut.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2012.DAT#008781"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL006207",
+          "date": "2012-09-03",
+          "text": "Checked continuity on the run to the fog hut.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2012.DAT#008781"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL005945",
+          "date": "2012-01-05",
+          "text": "Filter changed on the power pack.",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2012.DAT#000173"
+        }
       ],
       "credential_claims": [
         {
@@ -19511,7 +20357,7 @@
           "CL001023",
           "CL000410"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -19658,6 +20504,22 @@
       "experience_categories": [
         "electrical",
         "mechanical"
+      ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL000410",
+          "date": "1990-11-07",
+          "text": "Changed the battery in the portable set.",
+          "source_reference": "raw/logbooks/era1-ocr/keimnalee-1990.txt#L442"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL007775",
+          "date": "2017-04-19",
+          "text": "Compressor not making pressure, rings worn. Rebuilt the No.1 cylinder.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#37579"
+        }
       ],
       "credential_claims": [
         {
@@ -19890,7 +20752,7 @@
           "CL010561",
           "CL010470"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -20143,6 +21005,22 @@
         "electrical",
         "fault_finding"
       ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL010534",
+          "date": "2026-09-07",
+          "text": "Megger test on the NO.2 feeder, 232 V, condemned the cable and ran a temporary.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62098"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL010534",
+          "date": "2026-09-07",
+          "text": "Megger test on the NO.2 feeder, 232 V, condemned the cable and ran a temporary.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62098"
+        }
+      ],
       "credential_claims": [
         {
           "record_id": "LH502842",
@@ -20321,7 +21199,7 @@
       "application_eligibility": "plausible_but_essential_evidence_incomplete",
       "mobilisation_readiness": "not_established",
       "recommendation_criteria": {
-        "qualifying_distinct_examples": 12,
+        "qualifying_distinct_examples": 11,
         "category_coverage": [
           "electrical",
           "fault_finding",
@@ -20354,12 +21232,11 @@
           "2017-12-23"
         ],
         "qualifying_action_entry_count": 88,
-        "distinct_qualifying_examples": 12,
+        "distinct_qualifying_examples": 11,
         "canonical_pattern_keys": [
           "megger test on the no feeder measurement condemned the cable and ran a temporary",
-          "isolated no transformer earths applied both ends permit issued to the contractor",
+          "isolated no transformer earths applied both ends permit reference issued to the contractor",
           "traced and lifted an earth fault on the tower lighting ring split the ring to find it",
-          "isolated no transformer earths applied both ends ptw issued to the contractor",
           "checked continuity on the run to the fog hut",
           "changed oil and filters on no",
           "protection relay settings checked against the schedule and two were found wrong",
@@ -20379,10 +21256,10 @@
           "CL007686",
           "CL007420",
           "CL006753",
-          "CL004869",
-          "CL003887"
+          "CL003887",
+          "CL007925"
         ],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence."
       },
       "relevant_experience": [
         {
@@ -20457,7 +21334,7 @@
           },
           "measurement_quality_flags": [],
           "selection_score": 6,
-          "template_key": "isolated no transformer earths applied both ends permit issued to the contractor"
+          "template_key": "isolated no transformer earths applied both ends permit reference issued to the contractor"
         },
         {
           "entry_id": "CL006753",
@@ -20494,40 +21371,6 @@
           "template_key": "traced and lifted an earth fault on the tower lighting ring split the ring to find it"
         },
         {
-          "entry_id": "CL004869",
-          "date": "2009-03-05",
-          "text": "Isolated NO.2 transformer, earths applied both ends, PTW 46 issued to the contractor.",
-          "station": "Nevisbeg Skerry",
-          "categories": [
-            "electrical",
-            "permit_or_isolation"
-          ],
-          "clean_source": "clean/logbook_entries.json",
-          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2009.DAT#002363",
-          "attribution": "clean_manual_attribution",
-          "raw_corroboration": {
-            "reference": "raw/logbooks/era2-keeperlog/KLOG2009.DAT#002363",
-            "format": "era2",
-            "resolved": true,
-            "resolution": "file_and_record_id",
-            "raw_keeper": "K1538",
-            "raw_keeper_name": "NÍ GHARBHAIL O",
-            "raw_activity": "Isolated NO.2 transformer, earths applied both ends, PTW 46 issued to the contractor.",
-            "attribution_match": true,
-            "identity_provenance": {
-              "identifier_type": "keeper_code",
-              "raw_value": "K1538",
-              "normalized_raw_value": "K1538",
-              "expected_value": "K1538",
-              "normalized_expected_value": "K1538",
-              "corroboration": "corroborates"
-            }
-          },
-          "measurement_quality_flags": [],
-          "selection_score": 6,
-          "template_key": "isolated no transformer earths applied both ends ptw issued to the contractor"
-        },
-        {
           "entry_id": "CL003887",
           "date": "2006-02-21",
           "text": "Checked continuity on the run to the fog hut.",
@@ -20560,6 +21403,39 @@
           "measurement_quality_flags": [],
           "selection_score": 6,
           "template_key": "checked continuity on the run to the fog hut"
+        },
+        {
+          "entry_id": "CL007925",
+          "date": "2017-10-13",
+          "text": "Changed oil and filters on no 2.",
+          "station": "Nevisbeg Skerry",
+          "categories": [
+            "mechanical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#43990",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#43990",
+            "format": "era3",
+            "resolved": true,
+            "resolution": "physical_csv_row_including_header",
+            "raw_keeper_name": "Oileann Ní Gharbhail",
+            "raw_payroll_reference": null,
+            "raw_activity": "Changed oil and filters on no 2.",
+            "attribution_match": true,
+            "identity_provenance": {
+              "identifier_type": "name",
+              "raw_value": "Oileann Ní Gharbhail",
+              "normalized_raw_value": "oileannnigharbhail",
+              "expected_value": "Oileann Ní Gharbhail",
+              "normalized_expected_value": "oileannnigharbhail",
+              "corroboration": "corroborates"
+            }
+          },
+          "measurement_quality_flags": [],
+          "selection_score": 3,
+          "template_key": "changed oil and filters on no"
         }
       ],
       "appraisal_review": {
@@ -20689,6 +21565,36 @@
         "fault_finding",
         "mechanical",
         "permit_or_isolation"
+      ],
+      "experience_category_evidence": [
+        {
+          "category": "electrical",
+          "entry_id": "CL007686",
+          "date": "2017-01-11",
+          "text": "Megger test on the No.1 feeder, 3.6 bar, condemned the cable and ran a temporary.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#33937"
+        },
+        {
+          "category": "fault_finding",
+          "entry_id": "CL007686",
+          "date": "2017-01-11",
+          "text": "Megger test on the No.1 feeder, 3.6 bar, condemned the cable and ran a temporary.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#33937"
+        },
+        {
+          "category": "mechanical",
+          "entry_id": "CL007925",
+          "date": "2017-10-13",
+          "text": "Changed oil and filters on no 2.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#43990"
+        },
+        {
+          "category": "permit_or_isolation",
+          "entry_id": "CL007420",
+          "date": "2016-02-20",
+          "text": "Isolated NO.2 transformer, earths applied both ends, permit 0412 issued to the contractor.",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#22259"
+        }
       ],
       "credential_claims": [
         {

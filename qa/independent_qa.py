@@ -35,6 +35,26 @@ EXPECTED = {
 }
 ARCHIVE_HASH = "59f12ea4dfb43d311429fdd34c207517c2ffefbf917e4cdfe9737ca5776270f5"
 
+WORK_ACTION_RE = re.compile(
+    r"\b(repair(?:ed|ing)?|replac(?:e|ed|ing)|renew(?:ed|ing)?|servic(?:e|ed|ing)|"
+    r"maintain(?:ed|ing)?|test(?:ed|ing)?|check(?:ed|ing)?|inspect(?:ed|ing)?|"
+    r"strip(?:ped|ping)?|adjust(?:ed|ing)?|trace(?:d|ing)?|diagnos(?:e|ed|ing)|"
+    r"isolat(?:e|ed|ing)|greas(?:e|ed|ing)|fit(?:ted|ting)?|chang(?:e|ed|ing)|"
+    r"overhaul(?:ed|ing)?|calibrat(?:e|ed|ing)|tighten(?:ed|ing)?|rewir(?:e|ed|ing)|"
+    r"rebuild(?:s|ing)?|rebuilt|dismantl(?:e|ed|ing)|dress(?:ed|ing)|align(?:ed|ing)|"
+    r"investigat(?:e|ed|ing)|fault[- ]?find(?:ing)?|clean(?:ed|ing)?)\b",
+    re.I,
+)
+WORK_PLANT_RE = re.compile(
+    r"\b(electrical|voltage|volt(?:age)?s?|earth fault|continuity|breaker|switchgear|"
+    r"relay|contactor|cable|wiring|fuse|battery|charger|alternator|transformer|"
+    r"insulation|megger|clamp meter|rectifier|commutator|motor brushes|control gear|"
+    r"generator controls?|engine|generator|pump|motor|compressor|hydraulic|bearing|"
+    r"shaft|fuel|oil|filter|belt|gearbox|gear|drive|ratchet|clockwork|valve|cooling|"
+    r"lubrication|lubricated|fan)\b",
+    re.I,
+)
+
 
 def digest(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
@@ -82,6 +102,12 @@ def normalize_name(value: str | None) -> str | None:
 def canonical_work_pattern(text: str) -> str:
     """Independent normalization for superficial numeric/measurement variants."""
     value = text.lower()
+    value = re.sub(
+        r"\b(?:ptw(?:\s*/\s*\d+|\s+\d+)?|permit(?:\s+bk\.?\s*\d+\s+no\.?\s*\d+|\s+\d+)?)\b",
+        " permit reference ",
+        value,
+        flags=re.I,
+    )
     value = re.sub(
         r"\b\d+(?:\.\d+)?\s*(?:psi|bar|volts?|v|ohms?|amps?|a|hz|kw|rpm|°?c)\b",
         " measurement ",
@@ -168,6 +194,7 @@ def run(zip_path: Path, results_path: Path) -> dict:
         scheme_map = {s["code"]: s for s in schemes}
 
         checks.equal("explicit scenario date", output["as_of"], "2026-10-11")
+        checks.equal("output schema version", output["schema_version"], 4)
         checks.equal("40 unique output profiles", len(candidates), 40)
         checks.equal("output IDs equal clean-subset IDs", set(candidates), set(keepers_by_id))
         checks.equal("clean cohort split", Counter(k["status"] for k in keepers), Counter({"current": 38, "left": 2}))
@@ -209,6 +236,24 @@ def run(zip_path: Path, results_path: Path) -> dict:
                             checks.equal(f"name corroboration status: {evidence['entry_id']}", provenance["corroboration"], "corroborates" if expected_match else "conflicts")
                         else:
                             checks.equal(f"absent raw identity retained: {evidence['entry_id']}", provenance["corroboration"], "absent")
+            category_support = candidate["experience_category_evidence"]
+            checks.equal(
+                f"category citation set: {candidate['keeper_code']}",
+                {item["category"] for item in category_support},
+                set(candidate["experience_categories"]),
+            )
+            displayed = {item["entry_id"]: item for item in candidate["relevant_experience"]}
+            for support in category_support:
+                source = logs_by_id.get(support["entry_id"])
+                checks.check(f"category citation source exists: {candidate['keeper_code']}/{support['category']}", source is not None)
+                checks.check(f"category citation is displayed: {candidate['keeper_code']}/{support['category']}", support["entry_id"] in displayed)
+                if source:
+                    checks.equal(f"category citation exact keeper: {candidate['keeper_code']}/{support['category']}", source["keeper_code"], candidate["keeper_code"])
+                    checks.equal(f"category citation exact date: {candidate['keeper_code']}/{support['category']}", support["date"], source["date"])
+                    checks.equal(f"category citation exact text: {candidate['keeper_code']}/{support['category']}", support["text"], source["text"])
+                    checks.equal(f"category citation exact source reference: {candidate['keeper_code']}/{support['category']}", support["source_reference"], source["source_record"])
+                if support["entry_id"] in displayed:
+                    checks.check(f"category citation category supported: {candidate['keeper_code']}/{support['category']}", support["category"] in displayed[support["entry_id"]]["categories"])
         checks.check("at least one traceable work example emitted", evidence_count > 0, f"evidence_count={evidence_count}")
 
         # Prepared case 1: expired prerequisite remains visible; summary is not silently accepted.
@@ -411,6 +456,15 @@ def run(zip_path: Path, results_path: Path) -> dict:
         checks.equal("current profiles with keyed appraisals", len({row["keeper_code"] for row in current_appraisals}), 37)
         checks.equal("output current appraisal reviewed count", output["summary"]["appraisal_rows_reviewed_for_current_cohort"], 305)
         checks.equal("K0310 has no keyed appraisal", candidates["K0310"]["appraisal_review"]["reviewed_record_ids"], [])
+        k0310_logs = [row for row in logs if row["keeper_code"] == "K0310"]
+        checks.equal("K0310 supplied logs end in 2012", max(row["date"] for row in k0310_logs), "2012-12-21")
+        k0310_limit = next((item for item in candidates["K0310"]["limitations"] if item["code"] == "historical_evidence_only"), None)
+        checks.check("K0310 historical-evidence limitation present", k0310_limit is not None)
+        if k0310_limit:
+            checks.check(
+                "K0310 limitation states source bounds without recency rejection",
+                all(fragment in k0310_limit["text"] for fragment in ("2012-12-21", "no exact keeper-code-keyed appraisal", "no recency threshold", "does not automatically reject")),
+            )
 
         logs_by_keeper = {}
         for row in logs:
@@ -519,6 +573,13 @@ def run(zip_path: Path, results_path: Path) -> dict:
                             f"Markdown measurement warning in own section: {evidence['entry_id']}",
                             flag["code"] in section and flag["observed"] in section,
                         )
+                for support in candidate["experience_category_evidence"]:
+                    checks.check(
+                        f"Markdown exact category citation in own section: {candidate['keeper_code']}/{support['category']}",
+                        all(value in section for value in (support["category"], support["entry_id"], support["date"], support["text"], support["source_reference"])),
+                    )
+                if candidate["keeper_code"] == "K0310" and k0310_limit:
+                    checks.check("K0310 historical limitation rendered in Markdown", k0310_limit["text"] in section)
 
         # Repair 2: value/unit variants canonicalize together, while K1200's
         # four display exceptions remain visible without ID-based identities.
@@ -537,6 +598,31 @@ def run(zip_path: Path, results_path: Path) -> dict:
         for evidence in k1200["relevant_experience"]:
             checks.equal(f"K1200 displayed record uses canonical text key: {evidence['entry_id']}", evidence["template_key"], canonical_work_pattern(logs_by_id[evidence["entry_id"]]["text"]))
         checks.check("K1200 display-only mercury record not counted as canonical decision pattern", canonical_work_pattern(logs_by_id["CL009921"]["text"]) not in k1200_review["canonical_pattern_keys"])
+
+        # Recompute the permit-family collapse directly from the source. This
+        # verifies the observed K0566 effect without importing evaluator code
+        # or making a target disposition/count part of the test.
+        permit_variant_ids = ("CL010043", "CL006379", "CL005856")
+        checks.equal(
+            "K0566 permit/PTW/permit-bk transformer variants share one canonical pattern",
+            len({canonical_work_pattern(logs_by_id[entry_id]["text"]) for entry_id in permit_variant_ids}),
+            1,
+        )
+        k0566_qualifying = [
+            row for row in logs
+            if row["keeper_code"] == "K0566"
+            and date.fromisoformat(row["date"]) <= date(2026, 10, 11)
+            and WORK_ACTION_RE.search(row["text"])
+            and WORK_PLANT_RE.search(row["text"])
+        ]
+        k0566_patterns = {canonical_work_pattern(row["text"]) for row in k0566_qualifying}
+        checks.equal("K0566 canonical count independently recomputed", candidates["K0566"]["work_history_review"]["distinct_qualifying_examples"], len(k0566_patterns))
+        checks.equal("K0566 canonical keys independently recomputed", set(candidates["K0566"]["work_history_review"]["canonical_pattern_keys"]), k0566_patterns)
+
+        for keeper_code in ("K0847", "K1231", "K1374", "K1538"):
+            candidate = candidates[keeper_code]
+            mechanical = next((item for item in candidate["experience_category_evidence"] if item["category"] == "mechanical"), None)
+            checks.check(f"{keeper_code} has exact displayed mechanical category citation", mechanical is not None and mechanical["entry_id"] in {row["entry_id"] for row in candidate["relevant_experience"]})
 
         # Repair 3: no matched dated Pass is an evidence gap, not proof that
         # training is needed. Verification must precede the conditional course.
@@ -595,7 +681,7 @@ def run(zip_path: Path, results_path: Path) -> dict:
 
     failed = [item for item in checks.items if not item["passed"]]
     return {
-        "schema_version": 3,
+        "schema_version": 4,
         "independence": "Reads the ZIP, appraisal JSONL and generated outputs directly; does not import evaluator code or recompute its recommendation policy.",
         "source_archive_sha256": digest(zip_path.read_bytes()),
         "recommendations_sha256": digest(results_bytes),

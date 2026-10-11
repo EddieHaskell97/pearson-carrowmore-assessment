@@ -4,7 +4,9 @@
 
 This repository answers one bounded question: **which current keepers in the permitted 40-profile subset could plausibly interview for Carrowmore Array Operations & Maintenance, and what would each need first?** It evaluates 38 current keepers. K1203 and K1458 are retained as traceable historical records but explicitly excluded from the current redeployment cohort.
 
-The submitted scenario date is **2026-10-11**. The evaluator requires `--as-of`; it never substitutes the computer clock. It reads the supplied ZIP directly and does not require SQL, a trained model, network access, or third-party Python packages. The completed personal classification lab and SQL mirror are outside this repository and are not read or changed.
+Start with [output/recommendations.md](output/recommendations.md) for the answer and [WRITTEN_EXPLANATION.md](WRITTEN_EXPLANATION.md) for the concise design reflection. This is a local review draft awaiting George's review. Publication, panel access and sending the repository link require his explicit authorisation.
+
+The reference scenario date is **2026-10-11**. The evaluator requires `--as-of`; it never substitutes the computer clock. It reads the supplied ZIP directly and does not require SQL, a trained model, network access, or third-party Python packages. The completed personal classification lab and SQL mirror are outside this repository and are not read or changed.
 
 ## Result
 
@@ -12,8 +14,8 @@ The bounded run produced:
 
 | Result | Profiles |
 |---|---:|
-| Supported technical interview | 22 |
-| Targeted screening first | 16 |
+| Supported technical interview | 21 |
+| Targeted screening first | 17 |
 | Insufficient evidence | 0 |
 | Leaver outside the current cohort | 2 |
 
@@ -57,7 +59,7 @@ Run independent QA separately after generation:
   --report output\qa_report.json
 ```
 
-The submitted repaired-package QA run passed **4,777/4,777 checks**, including the ten cases defined before implementation, the earlier correction areas, and direct checks that every retained experience row renders in its own Markdown profile, measurement-unit variants share a canonical pattern, K1200 display exceptions do not inflate diversity, missing dated-Pass actions verify before prescribing training, and the named appraisal excerpts remain exact. The QA program reads the ZIP and output directly and never imports the evaluator or recomputes its recommendation policy.
+The verified package QA run passed **5,737/5,737 checks**, including the ten cases defined before implementation, the earlier correction areas, and direct checks for per-profile Markdown evidence, measurement and permit-workflow canonicalization, category-to-record citations, K1200 display/count separation, missing-record verification actions, the named appraisal excerpts, and K0310's bounded historical-evidence warning. The QA program reads the ZIP and output directly and never imports the evaluator or recomputes its recommendation policy.
 
 ## What the output means
 
@@ -67,6 +69,7 @@ Each profile keeps these concepts separate:
 - `recommendation_reason` and `recommendation_criteria`: person-specific cited reasons and the non-ranking rule result;
 - `work_history_review`: proof that the complete clean history was reviewed, with row counts, cutoff handling and template-collapsed diversity;
 - `relevant_experience`: exact clean log text, date, entry ID, raw source reference, identity provenance, raw corroboration and measurement warnings;
+- `experience_category_evidence`: one exact displayed work record supporting every claimed experience category;
 - `appraisal_review`: every exact keeper-code-keyed appraisal ID reviewed, role-relevant exact excerpts and source-text hashes, with null-key/name-only rows deliberately unattached;
 - `application_eligibility`: whether the supplied evidence establishes the posting's application position;
 - `mobilisation_readiness`: whether every safety, medical and employer gate is established;
@@ -76,7 +79,7 @@ Each profile keeps these concepts separate:
 - `initial_selection_actions`: the interview or screening step now;
 - `later_qualification_and_mobilisation_actions`: credential, medical and employer gates only if selection supports progression.
 
-The evaluator reviews every clean log row for every profile. The normal evidence rule requires an explicit maintenance action plus an electrical or mechanical plant term. Superficial numeric, measurement-value/unit and template variants are collapsed, and up to five strong examples are shown. All four named K1200 records remain visible, but their IDs are display exceptions rather than separate pattern identities; K1200 therefore has three canonical decision patterns, not seven. Counts, hours, grade and tags are never treated as competence. Five or more distinct patterns with no explicit role-related concern in the previous ten years support a technical interview; sparse evidence or such a concern routes to targeted screening. Fewer than three distinct patterns without strong keyed manager testimony is insufficient. These are transparent gates, not a score or ranking.
+The evaluator reviews every clean log row for every profile. The normal evidence rule requires an explicit maintenance action plus an electrical or mechanical plant term. Superficial numeric, measurement-value/unit, and equivalent `permit` / `PTW` / `permit bk.` transformer-isolation variants are collapsed only for diversity counting; original events and citations remain unchanged. The strongest examples plus at least one exact record for every claimed category are displayed. All four named K1200 records remain visible, but their IDs are display exceptions rather than separate pattern identities; K1200 therefore has three canonical decision patterns, not seven. Counts, hours, grade and tags are never treated as competence. Five or more distinct patterns with no explicit role-related concern in the previous ten years support a technical interview; sparse evidence or such a concern routes to targeted screening. Fewer than three distinct patterns without strong keyed manager testimony is insufficient. These are transparent gates, not a score or ranking.
 
 The previously omitted `raw/appraisals/appraisals.jsonl` is now part of the verified input contract (SHA-256 `c19ba6216619c0c4d103b5dd7d99edb49f9722fba94a6eb9de824adfba1488d1`). It contains 4,422 rows: 2,694 have a keeper code, 1,728 do not, and 305 are exactly keyed to 37 current profiles. Only exact `keeper_code` joins are allowed; null-key/name-only records are not guessed. All 305 are reviewed. Rows outside the narrow excerpt selector are labelled **not selected by the appraisal filter**, not declared irrelevant. The selected context now expressly includes K0147/AP000090's positive rope-work testimony and K0354/AP000752/AP000753's reporting concerns; those excerpts do not independently promote or reject either person. Full source-text hashes make excerpts checkable without reproducing unmatched narrative. Appraisal years remain year precision: 2026 records are context-only because their position relative to 2026-10-11 is unknown.
 
@@ -90,7 +93,7 @@ Quoted measurement anomalies are retained verbatim and flagged. Megger readings 
 
 For current profiles, selection happens first. Only after a positive selection outcome do later actions proceed through issuer/source verification, willingness and working-condition confirmation, medical clearance, module-specific OSSC work, dependent WAHS work, and employer permit/practical assessment. Each module action distinguishes a current Pass, expired Pass, Attended, Not achieved, conflict or missing evidence. An absent matched dated Pass now requires verification of any existing certificate first; training or assessment is conditional on coverage remaining unestablished. The posting's promise to fund renewals is reported only for renewals. The two leavers receive no training or mobilisation pathway.
 
-The bounded defect repair reduced canonical-pattern counts for 15 profiles (K0303, K0371, K0482, K0561, K0592, K0650, K0847, K0897, K1200, K1231, K1302, K1458, K1468, K1511 and K1538). No profile crossed an existing decision gate, so the 22 supported / 16 targeted / 0 insufficient / 2 outside-cohort totals did not change. This was observed, not forced.
+The earlier bounded defect repair reduced canonical-pattern counts for 15 profiles without changing a disposition. This pass additionally collapsed equivalent permit document labels for K0478 (8→6), K0566 (6→4), K1231 (12→10), K1374 (8→7), K1458 (11→9) and K1538 (12→11). K0566 alone crossed the unchanged five-pattern gate, moving from supported technical interview to targeted screening; the observed totals are therefore 21 supported / 17 targeted / 0 insufficient / 2 outside cohort. Category citations also add displayed mechanical records for K0847, K1231, K1374 and K1538. K0310 remains supported, but its profile now states that supplied logs end in 2012 and no keyed appraisal exists; no recency rule is invented.
 
 ## Repository layout
 
@@ -102,7 +105,8 @@ output/recommendations.json    complete structured answer
 output/recommendations.md      readable candidate-by-candidate answer
 output/qa_report.json          detailed QA evidence
 output/run_metadata.json       interpreter, commands, repeatability and hashes
-WRITTEN_EXPLANATION.md         scope, AI corrections and production reflection
+WRITTEN_EXPLANATION.md         concise final design reflection and effort statement
+docs/DEVELOPMENT_HISTORY.md    preserved historical development notes
 ```
 
 The source archive is not duplicated inside this repository. Supply its path with `--source-zip`; the required hash is recorded in `SOURCE_FINGERPRINTS.json` and enforced in code.
@@ -114,7 +118,7 @@ The source archive is not duplicated inside this repository. Supply its path wit
 - Exact course availability, duration, price and fastest completion route are not in the sources and remain unknown.
 - Work narratives support interview questions. They do not establish assessed competence, an appointment, current authorisation, or qualifying experience duration.
 - Appraisals are manager testimony, sometimes internally conflicting and sometimes templated. They can define screening questions but do not establish competence or current authorisation.
-- Oileann/K1538's manager testimony remains an interview lead, but its claimed eleven-year Nevisbeg tenure conflicts with the recorded 1998 joining date and Nevisbeg posting beginning in 2009.
+- K1538's manager testimony remains an interview lead. Eleven years at Nevisbeg by 2011 implies a start around 2000, while the structured posting begins in 2009. The 1998 joining date is not itself contradictory.
 - Unicode is preserved from the source. Where the supplied pack itself contains a replacement character, the JSON retains it and the readable report uses the supplied ASCII name where available.
 
 See [WRITTEN_EXPLANATION.md](WRITTEN_EXPLANATION.md) for the required design reflection and effort statement.

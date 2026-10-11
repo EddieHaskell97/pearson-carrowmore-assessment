@@ -341,6 +341,16 @@ def entry_categories(text: str) -> list[str]:
 
 def normalized_work_template(text: str) -> str:
     normalized = text.lower()
+    # The source uses "permit", "PTW" and "permit bk." for the same
+    # permit-to-work document in otherwise identical isolation workflows.
+    # Normalize the document label and its synthetic reference only in the
+    # counting key; the original evidence text remains untouched.
+    normalized = re.sub(
+        r"\b(?:ptw(?:\s*/\s*\d+|\s+\d+)?|permit(?:\s+bk\.?\s*\d+\s+no\.?\s*\d+|\s+\d+)?)\b",
+        " permit reference ",
+        normalized,
+        flags=re.I,
+    )
     # Measurement values and their supplied units are one superficial slot.
     # This intentionally collapses malformed variants such as 3.6 bar,
     # 48 psi and 11.2 V without rewriting the quoted evidence itself.
@@ -436,6 +446,19 @@ def select_work_evidence(
         chosen = required + [row for row in chosen if row["entry_id"] not in K1200_MATERIAL_LOG_IDS]
         chosen = chosen[: max(5, len(required))]
 
+    # A reported category must always be inspectable through at least one
+    # displayed source record. Add the strongest missing category example
+    # without removing the normal five-record sample or K1200's exceptions.
+    category_support = {
+        category: next(row for row in distinct if category in row["categories"])
+        for category in sorted({category for row in distinct for category in row["categories"]})
+    }
+    chosen_ids = {row["entry_id"] for row in chosen}
+    for row in category_support.values():
+        if row["entry_id"] not in chosen_ids:
+            chosen.append(row)
+            chosen_ids.add(row["entry_id"])
+
     category_coverage = sorted({category for item in distinct for category in item["categories"]})
     dates = [entry["date"] for entry in at_cutoff]
     review = {
@@ -449,7 +472,7 @@ def select_work_evidence(
         "canonical_pattern_keys": [row["template_key"] for row in distinct],
         "category_coverage": category_coverage,
         "displayed_entry_ids": [row["entry_id"] for row in chosen],
-        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence.",
+        "interpretation": "The complete clean log history was screened. Repeated numeric, measurement-value/unit, permit/PTW/permit-bk and superficial wording variants were collapsed for decision quality; display exceptions do not create pattern identities, and counts or repetition were not treated as competence.",
     }
     return chosen, review
 
@@ -845,6 +868,18 @@ def evaluate_keeper(zf, keeper, entries, appraisal_rows, learnhub_rows, scheme_m
     conflicts = credential_conflicts(keeper, claims, as_of)
     coverage = safety_coverage(claims)
     categories = work_review["category_coverage"]
+    category_evidence = []
+    for category in categories:
+        supporting = next(row for row in evidence if category in row["categories"])
+        category_evidence.append(
+            {
+                "category": category,
+                "entry_id": supporting["entry_id"],
+                "date": supporting["date"],
+                "text": supporting["text"],
+                "source_reference": supporting["source_reference"],
+            }
+        )
     is_current = keeper["status"] == "current"
 
     if not is_current:
@@ -867,6 +902,16 @@ def evaluate_keeper(zf, keeper, entries, appraisal_rows, learnhub_rows, scheme_m
     ]
     if is_current:
         limitations.append({"code": "medical_not_supplied", "text": "No current offshore medical evidence is present in the bounded sources."})
+    if keeper["keeper_code"] == "K0310":
+        if appraisal_review["reviewed_record_ids"]:
+            raise ValueError("K0310 unexpectedly has a keyed appraisal")
+        history_end = work_review["history_date_range_at_cutoff"][1]
+        limitations.append(
+            {
+                "code": "historical_evidence_only",
+                "text": f"Supplied clean logs end on {history_end} and no exact keeper-code-keyed appraisal is present. This is a historical-evidence limitation only; no recency threshold is applied and it does not automatically reject the person.",
+            }
+        )
     supplementary = []
     chronology_conflicts = []
     if keeper["keeper_code"] == "K1538":
@@ -922,6 +967,7 @@ def evaluate_keeper(zf, keeper, entries, appraisal_rows, learnhub_rows, scheme_m
         "supplementary_evidence": supplementary,
         "identity_and_chronology_conflicts": chronology_conflicts,
         "experience_categories": categories,
+        "experience_category_evidence": category_evidence,
         "credential_claims": claims,
         "clean_certification_summaries": clean_summaries(keeper),
         "credential_conflicts": conflicts,
@@ -993,6 +1039,14 @@ def markdown_report(payload: dict) -> str:
             f"- Appraisal review: {row['appraisal_review']['keyed_rows_reviewed']} exact keeper-code-keyed rows; {appraisal_unmatched} {appraisal_row_word} not selected by the appraisal filter.",
             "",
         ])
+        if row["experience_category_evidence"]:
+            lines.extend(["Category support:", ""])
+            for support in row["experience_category_evidence"]:
+                lines.append(
+                    f"- `{support['category']}` â€” {support['date']} â€” â€œ{support['text']}â€ "
+                    f"({support['entry_id']}; `{support['source_reference']}`)."
+                )
+            lines.append("")
         if row["relevant_experience"]:
             lines.append("Evidence:")
             lines.append("")
@@ -1037,6 +1091,11 @@ def markdown_report(payload: dict) -> str:
             lines.append("")
         for conflict in row["identity_and_chronology_conflicts"]:
             lines.append(f"- Chronology conflict `{conflict['code']}`: {conflict['finding']}")
+            lines.append("")
+        if row["limitations"]:
+            lines.extend(["Limitations:", ""])
+            for limitation in row["limitations"]:
+                lines.append(f"- `{limitation['code']}`: {limitation['text']}")
             lines.append("")
         if row["cohort_status"] == "leaver_outside_current_cohort":
             lines.extend(["No current credential, training or mobilisation pathway is assessed for this leaver.", ""])
@@ -1115,7 +1174,7 @@ def build(zip_path: Path, as_of: date) -> dict:
         ]
     counts = Counter(c["interview_recommendation"] for c in candidates)
     return {
-        "schema_version": 3,
+        "schema_version": 4,
         "dataset": "synthetic Carrowmore Pearson assessment pack",
         "as_of": as_of.isoformat(),
         "scope": "Permitted 40-profile clean subset; 38 current keepers assessed and two leavers explicitly retained outside the current cohort.",
@@ -1138,7 +1197,7 @@ def build(zip_path: Path, as_of: date) -> dict:
             "appraisal_rows_reviewed_for_current_cohort": sum(c["appraisal_review"]["keyed_rows_reviewed"] for c in candidates),
         },
         "method": {
-            "work_evidence": "Every clean log entry for each profile is reviewed. An entry normally needs an explicit maintenance action plus an electrical or mechanical plant term; superficial numeric/template variants are collapsed. Up to five strongest examples are shown, except named material records needed to explain a conflict. Counts, hours and repetition are not competence.",
+            "work_evidence": "Every clean log entry for each profile is reviewed. An entry normally needs an explicit maintenance action plus an electrical or mechanical plant term; superficial numeric, measurement and equivalent permit/PTW/permit-bk workflow variants are collapsed only for diversity counting. The strongest examples and at least one exact cited record for every claimed category are shown, except named material records needed to explain a conflict. Counts, hours and repetition are not competence.",
             "appraisals": "Every appraisal carrying an exact current-cohort keeper_code is reviewed. Name-only/null-key rows are not attached. Only role-relevant testimony is repeated. Year-only 2026 records are context-only because their timing relative to 2026-10-11 is unknown; future years are excluded from conclusions.",
             "decision_categories": "supported_technical_interview; targeted_screening_first; insufficient_evidence; outside_current_redeployment_cohort. The categories are rule-based gates, not a score or ranking.",
             "supported_technical_interview": "At least five distinct relevant log examples and no explicit role-related appraisal concern in the ten years before the cutoff.",

@@ -1,5 +1,5 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
   "dataset_context": "Entirely synthetic data supplied for a Pearson job-application assessment",
   "scenario_as_of": "2026-10-11",
   "interpreter": "C:\\Users\\George\\.conda\\envs\\carrowmore-ml\\python.exe",
@@ -20,7 +20,7 @@
   },
   "qa": {
     "status": "PASS",
-    "passed": 4777,
+    "passed": 5737,
     "failed": 0,
     "prepared_cases": 10,
     "earlier_bounded_correction_areas": 7,
@@ -35,7 +35,10 @@
       "measurement-unit canonicalization",
       "K1200 display/count separation",
       "absent-record verification actions",
-      "named appraisal filter context"
+      "named appraisal filter context",
+      "permit/PTW/permit-bk workflow equivalence",
+      "exact category-to-record citations",
+      "K0310 historical-evidence limitation"
     ]
   },
   "decision_quality_correction_effort": {
@@ -82,14 +85,69 @@
     "elapsed_hms": "00:06:11",
     "preparation_accounting": "Earlier build, correction, source-audit, ML and SQL work remain separately accounted."
   },
+  "documentation_preparation": {
+    "date": "2026-10-11",
+    "baseline_commit": "011a45db3d2c11eb64717c0ed3991e5588d87e5c",
+    "supplied_review_zip": "reviews/recorded_approvals/assessment_submission_review_20261011.zip",
+    "supplied_review_zip_sha256": "6b8857d9bfbed7570455313acd78bad6780a1a48615a7aa0ee0506208c8f40dc",
+    "scope": "Documentation update merged before the bounded evaluator correction; prior explanation preserved in docs/DEVELOPMENT_HISTORY.md",
+    "candidate_effort": {
+      "status": "reported_by_George",
+      "approximate_hours_range": [2, 4],
+      "scope": "Assessment-specific work and review, excluding the separate personal ML/SQL lab"
+    },
+    "agent_execution_intervals_are_candidate_effort": false,
+    "historical_explanation": "docs/DEVELOPMENT_HISTORY.md",
+    "publication_or_submission_authorised": false
+  },
+  "bounded_submission_correction": {
+    "canonical_pattern_count_changes": {
+      "K0478": [8, 6],
+      "K0566": [6, 4],
+      "K1231": [12, 10],
+      "K1374": [8, 7],
+      "K1458": [11, 9],
+      "K1538": [12, 11]
+    },
+    "disposition_changes": [
+      {
+        "keeper_code": "K0566",
+        "before": "supported_technical_interview",
+        "after": "targeted_screening_first",
+        "reason": "Equivalent transformer-isolation records using permit, PTW and permit bk. collapse from three wording variants to one canonical workflow; four distinct patterns remain under the unchanged five-pattern gate."
+      }
+    ],
+    "result_counts": {
+      "supported_technical_interview": 21,
+      "targeted_screening_first": 17,
+      "insufficient_evidence": 0,
+      "outside_current_redeployment_cohort": 2
+    },
+    "mechanical_category_display_records_added": {
+      "K0847": "CL007737",
+      "K1231": "CL008529",
+      "K1374": "CL009203",
+      "K1538": "CL007925"
+    },
+    "k0310_historical_limit": "Supplied logs end on 2012-12-21 and there is no exact keeper-code-keyed appraisal; no recency threshold or automatic rejection was introduced."
+  },
+  "bounded_submission_correction_effort": {
+    "measurement_scope": "Active work from ZIP inspection through final regenerated-output, independent QA and byte-for-byte repeatability verification; final metadata and local Git bookkeeping followed and are excluded.",
+    "started_at": "2026-10-11T15:50:21.0494301-04:00",
+    "finished_at": "2026-10-11T15:55:29.0784519-04:00",
+    "elapsed_seconds": 308,
+    "elapsed_hms": "00:05:08",
+    "preparation_accounting": "Earlier build, reviews, correction passes, source audits, ML work and SQL reconciliation remain separately accounted."
+  },
   "sha256": {
-    "README.md": "a1241c3c668cb6d975a638b50d626b3f8c686bd5de00042e47a934cafdc3d38b",
-    "WRITTEN_EXPLANATION.md": "2e9b2bceee2971e0948b8149689818921d228ad966ef00066b467c82bcb23efe",
+    "README.md": "c2ada2b9e2093034b07fa75edaab127fb02b93c6719a3df47b1194f9d2afb902",
+    "WRITTEN_EXPLANATION.md": "a963c6642554567c6c4425b6944bd589df92b3a11bcfa655966cfe663478dce0",
+    "docs/DEVELOPMENT_HISTORY.md": "e062a5e4babb6a03d6bbc90bf8832659f2be41cd0655e342692d289575463a4d",
     "SOURCE_FINGERPRINTS.json": "60ace608a598cc98db0c1b33fdbd709cb35a1524a16a266562ea1aa61a9fade2",
-    "src/array_om_evaluator.py": "36c42b6407dccf9a7e1974876a3ea7c2162e4ada66548661a185f629414087da",
-    "qa/independent_qa.py": "2799d684067f818cc858a0a6f8fba57bf16b0bf4ea816cb184641f2ecfcd3312",
-    "output/recommendations.json": "2455e61c4169beb0b1928cda747e495ea5f656fd29b55adc9fe4cabc2747aa7e",
-    "output/recommendations.md": "e3f674be1fb2089d66f5fbee8c2b73f22a2cdb7b45c5b80d5bc26442bc061845",
-    "output/qa_report.json": "df7bb1484de178434c0dac64c6bbbebc317dd0dd07c34c001c2fa8ddc7f74b1b"
+    "src/array_om_evaluator.py": "8590859437a20d3f76fdd133544707c4588a824fccf2850fff61324c388073ec",
+    "qa/independent_qa.py": "3fec123923394945b8670c8e2670565060e7c1a352be79a8175317ce8153ffc9",
+    "output/recommendations.json": "67198a38a7e2a9aa1d9bcab4e5f20a5424a3a277914d4e989aa1800d0f65d2d0",
+    "output/recommendations.md": "fe88c2ff2a2125dd4c75d52b747b2c35d5a7197d551922c914ed29cf53ae5f7c",
+    "output/qa_report.json": "691145cfb85b98b25ea5af4127e026f55038fb2c07c34f4ce30315661aa027a0"
   }
 }
