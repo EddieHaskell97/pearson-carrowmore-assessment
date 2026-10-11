@@ -178,7 +178,11 @@ def select_work_evidence(zf: zipfile.ZipFile, entries: list[dict], as_of: date) 
     candidates.sort(key=lambda item: (item[0], item[1], item[2]["entry_id"]), reverse=True)
     chosen, normalized_seen = [], set()
     for score, _, entry, categories in candidates:
-        normalized = re.sub(r"\W+", " ", entry["text"].lower()).strip()
+        # Collapse superficial asset-number and measurement variants so repeated
+        # synthetic templates do not masquerade as diverse experience.
+        normalized = re.sub(r"\d+(?:\.\d+)?", "#", entry["text"].lower())
+        normalized = re.sub(r"\bno\s*\.?\s*#", "no #", normalized)
+        normalized = re.sub(r"\W+", " ", normalized).strip()
         if normalized in normalized_seen:
             continue
         corroboration = raw_corroboration(zf, entry)

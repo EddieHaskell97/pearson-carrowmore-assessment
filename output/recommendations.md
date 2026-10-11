@@ -4,7 +4,7 @@
 
 Scenario date: **2026-10-11**  
 Subset: **40 profiles — 38 current keepers and 2 leavers outside the redeployment cohort**  
-Results: **34 recommend interview, 3 consider interview, 1 insufficient bounded evidence**
+Results: **36 recommend interview, 1 consider interview, 1 insufficient bounded evidence**
 
 Interview potential is deliberately separate from application eligibility and mobilisation readiness. No person is marked mobilisation-ready because medical fitness and direct acceptance of height/boat/enclosed-space conditions are not supplied.
 
@@ -18,10 +18,10 @@ Interview potential is deliberately separate from application eligibility and mo
 Evidence:
 
 - 2025-09-17 — “Traced the nuisance low-volt alarm to a soft cell in the no 1 bank, replaced it.” (CL010280; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#48954`; clean/manual attribution; raw reference resolves but its format has no keeper code).
-- 2019-11-12 — “Traced the nuisance low-volt alarm to a soft cell in the no.2 bank, replaced it.” (CL008567; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#24873`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2021-09-10 — “Changed oil and filters on no.3.” (CL009116; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#48605`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2019-02-06 — “Set the timing on no.1 after the pump was refitted, ran it up and checked exhaust temps.” (CL008345; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#14510`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2018-04-04 — “Cleaned the contacts in the changeover relay.” (CL008080; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#3409`; clean/manual attribution; raw reference resolves but its format has no keeper code).
+- 2014-10-16 — “Tightened glands in the cable trunk by the stair.” (CL006984; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#5523`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 
 Credential position:
 
@@ -50,9 +50,9 @@ Evidence:
 
 - 2026-05-07 — “Set the timing on No.2 after the pump was refitted, ran it up and checked exhaust temps.” (CL010442; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#57550`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2024-12-05 — “Lamp not lit, found the fuse gone. Renewed.” (CL010068; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38570`; clean/manual attribution; raw reference resolves but its format has no keeper code).
-- 2024-05-14 — “Set the timing on no.3 after the pump was refitted, ran it up and checked exhaust temps.” (CL009912; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#31490`; clean/manual attribution; raw reference resolves but its format has no keeper code).
-- 2024-05-04 — “Set the timing on no 1 after the pump was refitted, ran it up and checked exhaust temps.” (CL009904; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#31113`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2024-02-16 — “Changed the battery in the portable set.” (CL009825; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#28398`; clean/manual attribution; raw reference resolves but its format has no keeper code).
+- 2023-07-23 — “Bled the fuel system after the filter change.” (CL009666; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#20916`; clean/manual attribution; raw reference resolves but its format has no keeper code).
+- 2022-11-20 — “Changed oil and filters on no.2.” (CL009470; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#11830`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 
 Credential position:
 
@@ -117,10 +117,10 @@ First actions:
 Evidence:
 
 - 2022-04-17 — “Megger test on the No.1 feeder, 0.8 ohm, condemned the cable and ran a temporary.” (CL009302; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#4072`; clean/manual attribution; raw reference resolves but its format has no keeper code).
-- 2021-12-22 — “Megger test on the no.3 feeder, 0.8 ohm, condemned the cable and ran a temporary.” (CL009211; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#52433`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2021-09-06 — “Megger test on the no 2 feeder, 232 V, condemned the cable and ran a temporary.” (CL009113; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#48457`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2021-08-01 — “Megger test on the no.1 feeder, 48 psi, condemned the cable and ran a temporary.” (CL009081; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#47171`; clean/manual attribution; raw reference resolves but its format has no keeper code).
-- 2019-10-14 — “Megger test on the no 1 feeder, 2.4 ohm, condemned the cable and ran a temporary.” (CL008545; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#23822`; clean/manual attribution; raw reference resolves but its format has no keeper code).
+- 2018-05-09 — “Checked continuity on the run to the fog hut.” (CL008115; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#4708`; clean/manual attribution; raw reference resolves but its format has no keeper code).
+- 2017-05-25 — “Lamp not lit, found the fuse gone. Renewed.” (CL007811; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#38941`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 
 Credential position:
 
@@ -286,7 +286,7 @@ Evidence:
 - 2026-03-11 — “Isolated NO.2 transformer, earths applied both ends, permit 1102 issued to the contractor.” (CL010398; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#55458`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2022-07-21 — “Isolated No.1 transformer, earths applied both ends, PTW/88 issued to the contractor.” (CL009371; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#7412`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2021-03-28 — “Isolated NO.2 transformer, earths applied both ends, permit bk.3 no.19 issued to the contractor.” (CL008977; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#42713`; clean/manual attribution; raw reference resolves but its format has no keeper code).
-- 2015-06-18 — “Isolated NO.2 transformer, earths applied both ends, PTW 114 issued to the contractor.” (CL007211; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#13271`; clean/manual attribution; raw reference resolves but its format has no keeper code).
+- 2026-06-23 — “Rewired the changeover contactor arrangement, tested on both feeds and left in auto.” (CL010466; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#59328`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 
 Credential position:
 
@@ -313,10 +313,10 @@ First actions:
 Evidence:
 
 - 2024-12-16 — “Megger test on the NO.2 feeder, 11.2 V, condemned the cable and ran a temporary.” (CL010082; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38994`; clean/manual attribution; raw reference resolves but its format has no keeper code).
-- 2023-12-01 — “Megger test on the no.2 feeder, 24.6 V, condemned the cable and ran a temporary.” (CL009767; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#25612`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2023-02-15 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL009526; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#15028`; clean/manual attribution; raw reference resolves but its format has no keeper code).
-- 2004-06-21 — “Megger test on the no 1 feeder, 418 V, condemned the cable and ran a temporary.” (CL003343; `raw/logbooks/era2-keeperlog/KLOG2004.DAT#006218`; clean/manual attribution corroborated by the raw keeper key).
-- 2002-09-23 — “Megger test on the no.1 feeder, 11.2 V, condemned the cable and ran a temporary.” (CL002808; `raw/logbooks/era1-ocr/lisnavarra-2002.txt#L419`; clean/manual attribution; raw reference resolves but its format has no keeper code).
+- 1997-04-12 — “Megger test on the NO.2 feeder, 48 psi, condemned the cable and ran a temporary.” (CL001308; `raw/logbooks/era1-ocr/raheenvarra-1997.txt#L153`; clean/manual attribution; raw reference resolves but its format has no keeper code).
+- 1994-04-11 — “Checked continuity on the run to the fog hut.” (CL000839; `raw/logbooks/era1-ocr/barravane-1994.txt#L152`; clean/manual attribution; raw reference resolves but its format has no keeper code).
+- 2024-07-22 — “AVR on NO.2 replaced and the volts set to 24.6 V, load-shared with No.2 properly after.” (CL009967; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#33917`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 
 Credential position:
 
@@ -374,9 +374,9 @@ Evidence:
 
 - 2020-06-14 — “Mechanical seal gone on the fire pump, fitted new and re-aligned the coupling.” (CL008741; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#32504`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2018-04-06 — “Ran no.1 set 4 hrs. Oil and water checked.” (CL008084; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#3503`; clean/manual attribution; raw reference resolves but its format has no keeper code).
-- 2017-09-11 — “Ran NO.2 set 3 hrs. Oil and water checked.” (CL007899; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#42841`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2014-12-12 — “Found the receiver desensitised by the charger, fitted suppression and the noise went.” (CL007052; `raw/logbooks/era2-keeperlog/KLOG2014.DAT#005949`; clean/manual attribution corroborated by the raw keeper key).
 - 2011-04-10 — “Changed the battery in the portable set.” (CL005661; `raw/logbooks/era2-keeperlog/KLOG2011.DAT#003581`; clean/manual attribution corroborated by the raw keeper key).
+- 2004-03-14 — “Cleaned the contacts in the changeover relay.” (CL003253; `raw/logbooks/era2-keeperlog/KLOG2004.DAT#002662`; clean/manual attribution corroborated by the raw keeper key).
 
 Credential position:
 
@@ -397,6 +397,37 @@ First actions:
 - Obtain a current offshore medical fitness declaration.
 - Confirm directly that the person accepts 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern.
 - Assess hands-on skill under the employer's permit, isolation and task standards before mobilisation.
+
+## K0566 — Garbhan O Riagain
+
+- Interview: `recommend_interview` — The bounded records contain multiple directly cited maintenance examples, including diagnostic or cross-discipline evidence. Interview is warranted; competence is not inferred.
+- Application eligibility: `plausible_but_essential_evidence_incomplete`
+- Mobilisation readiness: `not_established`
+- Relevant evidence categories: electrical, fault_finding, mechanical, permit_or_isolation
+
+Evidence:
+
+- 2024-11-01 — “Isolated no 1 transformer, earths applied both ends, PTW 46 issued to the contractor.” (CL010043; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#37406`; clean/manual attribution; raw reference resolves but its format has no keeper code).
+- 2013-02-15 — “Isolated NO.2 transformer, earths applied both ends, permit bk.3 no.19 issued to the contractor.” (CL006379; `raw/logbooks/era2-keeperlog/KLOG2013.DAT#001660`; clean/manual attribution corroborated by the raw keeper key).
+- 2011-10-05 — “Isolated No.2 transformer, earths applied both ends, permit 1102 issued to the contractor.” (CL005856; `raw/logbooks/era2-keeperlog/KLOG2011.DAT#009909`; clean/manual attribution corroborated by the raw keeper key).
+- 2002-09-08 — “Checked continuity on the run to the fog hut.” (CL002799; `raw/logbooks/era1-ocr/drumnahaan-2002.txt#L336`; clean/manual attribution; raw reference resolves but its format has no keeper code).
+- 2012-12-27 — “Filter changed on the power pack.” (CL006319; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#013100`; clean/manual attribution corroborated by the raw keeper key).
+
+Credential position:
+
+- No currently dated relevant LearnHub Pass was established at the cutoff.
+- OSSC-SS: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500882`).
+- HVAP-03: Not achieved; `not_achieved` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500883`).
+- OSSC-CS: Not achieved; `not_achieved` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500884`).
+
+First actions:
+
+- Obtain or verify a current dated Pass for OSSC-SS (sea survival).
+- Obtain or verify a current dated Pass for OSSC-FF (fire).
+- Obtain or verify a current dated Pass for OSSC-FA (first aid).
+- Obtain or verify a current dated Pass for WAHS-1 (working at height).
+- Obtain a current offshore medical fitness declaration.
+- Confirm directly that the person accepts 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern.
 
 ## K0586 — Gealbhan Nethercarn
 
@@ -532,8 +563,8 @@ Evidence:
 - 2003-09-12 — “Megger test on the no.1 feeder, 0.8 ohm, condemned the cable and ran a temporary.” (CL003088; `raw/logbooks/era2-keeperlog/KLOG2003.DAT#003779`; clean/manual attribution corroborated by the raw keeper key).
 - 2002-05-25 — “Checked continuity on the run to the fog hut.” (CL002727; `raw/logbooks/era1-ocr/inchmarrig-2002.txt#L242`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 1995-04-27 — “Megger test on the no.3 feeder, 24.6 V, condemned the cable and ran a temporary.” (CL000987; `raw/logbooks/era1-ocr/pallasveen-1995.txt#L174`; clean/manual attribution; raw reference resolves but its format has no keeper code).
-- 1993-05-01 — “Megger test on the no.2 feeder, 24.6 V, condemned the cable and ran a temporary.” (CL000700; `raw/logbooks/era1-ocr/pallasveen-1993.txt#L194`; clean/manual attribution; raw reference resolves but its format has no keeper code).
-- 1992-05-17 — “Megger test on the no.1 feeder, 24.6 V, condemned the cable and ran a temporary.” (CL000577; `raw/logbooks/era1-ocr/pallasveen-1992.txt#L224`; clean/manual attribution; raw reference resolves but its format has no keeper code).
+- 1991-12-17 — “Megger test on the No.2 feeder, 3.6 bar, condemned the cable and ran a temporary.” (CL000539; `raw/logbooks/era1-ocr/pallasveen-1991.txt#L510`; clean/manual attribution; raw reference resolves but its format has no keeper code).
+- 2026-05-20 — “Lamp not lit, found the fuse gone. Renewed.” (CL010452; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#58075`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 
 Credential position:
 
@@ -617,10 +648,10 @@ First actions:
 Evidence:
 
 - 2022-11-24 — “Traced the nuisance low-volt alarm to a soft cell in the no.1 bank, replaced it.” (CL009476; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#12011`; clean/manual attribution; raw reference resolves but its format has no keeper code).
-- 2006-12-08 — “Traced the nuisance low-volt alarm to a soft cell in the no.3 bank, replaced it.” (CL004124; `raw/logbooks/era2-keeperlog/KLOG2006.DAT#012300`; clean/manual attribution corroborated by the raw keeper key).
-- 2005-07-21 — “Traced the nuisance low-volt alarm to a soft cell in the NO.2 bank, replaced it.” (CL003683; `raw/logbooks/era2-keeperlog/KLOG2005.DAT#007328`; clean/manual attribution corroborated by the raw keeper key).
 - 2020-01-21 — “Tightened glands in the cable trunk by the stair.” (CL008628; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#27496`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2015-08-17 — “Greased the compressor and checked the belts.” (CL007263; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#15487`; clean/manual attribution; raw reference resolves but its format has no keeper code).
+- 2013-12-14 — “Battery checked on the beacon.” (CL006645; `raw/logbooks/era2-keeperlog/KLOG2013.DAT#012101`; clean/manual attribution corroborated by the raw keeper key).
+- 2011-03-08 — “Changed oil and filters on No.1.” (CL005622; `raw/logbooks/era2-keeperlog/KLOG2011.DAT#002363`; clean/manual attribution corroborated by the raw keeper key).
 
 Credential position:
 
@@ -648,9 +679,9 @@ Evidence:
 
 - 2017-01-22 — “Megger test on the NO.2 feeder, 48 psi, condemned the cable and ran a temporary.” (CL007701; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#34379`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2011-05-13 — “Megger test on the no.1 feeder, 11.2 V, condemned the cable and ran a temporary.” (CL005698; `raw/logbooks/era2-keeperlog/KLOG2011.DAT#004815`; clean/manual attribution corroborated by the raw keeper key).
-- 2002-07-22 — “Megger test on the No.2 feeder, 11.2 V, condemned the cable and ran a temporary.” (CL002774; `raw/logbooks/era1-ocr/portnalee-2002.txt#L326`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2002-07-21 — “Megger test on the no.3 feeder, 3.6 bar, condemned the cable and ran a temporary.” (CL002773; `raw/logbooks/era1-ocr/portnalee-2002.txt#L322`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2002-01-12 — “Megger test on the no.3 feeder, 2.4 ohm, condemned the cable and ran a temporary.” (CL002636; `raw/logbooks/era1-ocr/portnalee-2002.txt#L26`; clean/manual attribution; raw reference resolves but its format has no keeper code).
+- 1999-01-22 — “Checked continuity on the run to the fog hut.” (CL001792; `raw/logbooks/era1-ocr/glasnavaig-1999.txt#L50`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 
 Credential position:
 
@@ -739,8 +770,8 @@ Evidence:
 - 2025-07-15 — “Isolated no 2 transformer, earths applied both ends, permit 1102 issued to the contractor.” (CL010239; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#46689`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2025-05-03 — “Isolated no 1 transformer, earths applied both ends, PTW 114 issued to the contractor.” (CL010180; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#44002`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2025-02-26 — “Checked continuity on the run to the fog hut.” (CL010135; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#41590`; clean/manual attribution; raw reference resolves but its format has no keeper code).
-- 2024-07-17 — “Isolated no.3 transformer, earths applied both ends, PTW 114 issued to the contractor.” (CL009966; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#33726`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2024-02-22 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL009834; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#28644`; clean/manual attribution; raw reference resolves but its format has no keeper code).
+- 2021-02-01 — “Isolated No.2 transformer, earths applied both ends, permit bk.3 no.19 issued to the contractor.” (CL008927; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#40526`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 
 Credential position:
 
@@ -767,14 +798,43 @@ Evidence:
 - 1997-12-28 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL001465; `raw/logbooks/era1-ocr/mullanoe-1997.txt#L677`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2018-09-13 — “Protection relay settings checked against the schedule and two were found wrong.” (CL008233; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#9223`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2018-03-03 — “AVR on no.3 replaced and the volts set to 2.4 ohm, load-shared with No.2 properly after.” (CL008058; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#2304`; clean/manual attribution; raw reference resolves but its format has no keeper code).
-- 2003-12-19 — “AVR on no 1 replaced and the volts set to 0.8 ohm, load-shared with no.1 properly after.” (CL003181; `raw/logbooks/era2-keeperlog/KLOG2003.DAT#005178`; clean/manual attribution corroborated by the raw keeper key).
 - 2000-05-21 — “Cleaned the contacts in the changeover relay.” (CL002218; `raw/logbooks/era1-ocr/pallasveen-2000.txt#L251`; clean/manual attribution; raw reference resolves but its format has no keeper code).
+- 1997-05-15 — “Changed the battery in the portable set.” (CL001334; `raw/logbooks/era1-ocr/mullanoe-1997.txt#L259`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 
 Credential position:
 
 - No currently dated relevant LearnHub Pass was established at the cutoff.
 - LOSC-A: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502442`).
 - Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 1; later modules do not bridge missing earlier stages.
+
+First actions:
+
+- Obtain or verify a current dated Pass for OSSC-SS (sea survival).
+- Obtain or verify a current dated Pass for OSSC-FF (fire).
+- Obtain or verify a current dated Pass for OSSC-FA (first aid).
+- Obtain or verify a current dated Pass for WAHS-1 (working at height).
+- Obtain a current offshore medical fitness declaration.
+- Confirm directly that the person accepts 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern.
+
+## K1302 — Uaithne Mac Bruachail
+
+- Interview: `recommend_interview` — The bounded records contain multiple directly cited maintenance examples, including diagnostic or cross-discipline evidence. Interview is warranted; competence is not inferred.
+- Application eligibility: `plausible_but_essential_evidence_incomplete`
+- Mobilisation readiness: `not_established`
+- Relevant evidence categories: electrical, mechanical
+
+Evidence:
+
+- 2008-12-02 — “AVR on no.2 replaced and the volts set to 0.8 ohm, load-shared with no.1 properly after.” (CL004774; `raw/logbooks/era2-keeperlog/KLOG2008.DAT#011722`; clean/manual attribution corroborated by the raw keeper key).
+- 2008-03-02 — “Protection relay settings checked against the schedule and two were found wrong.” (CL004522; `raw/logbooks/era2-keeperlog/KLOG2008.DAT#002120`; clean/manual attribution corroborated by the raw keeper key).
+- 2004-01-04 — “AVR on no.1 replaced and the volts set to 418 V, load-shared with No.1 properly after.” (CL003195; `raw/logbooks/era2-keeperlog/KLOG2004.DAT#000130`; clean/manual attribution corroborated by the raw keeper key).
+- 2001-09-19 — “Changed oil and filters on No.1.” (CL002551; `raw/logbooks/era1-ocr/fionnvarra-2001.txt#L388`; clean/manual attribution; raw reference resolves but its format has no keeper code).
+- 2000-04-17 — “Filter changed on the power pack.” (CL002191; `raw/logbooks/era1-ocr/fionnvarra-2000.txt#L254`; clean/manual attribution; raw reference resolves but its format has no keeper code).
+
+Credential position:
+
+- Dated Pass: MECS-4, completed 2022-07-28, supplied expiry 2027-05-10 (`raw/training/vendor-c-learnhub-2017-2026.json#LH502474`).
+- Dated Pass: MECS-1, completed 2025-04-05, supplied expiry 2030-03-04 (`raw/training/vendor-c-learnhub-2017-2026.json#LH502475`).
 
 First actions:
 
@@ -798,7 +858,7 @@ Evidence:
 - 2016-11-03 — “Ran NO.2 set 6 hrs. Oil and water checked.” (CL007631; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#31387`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2012-08-26 — “Bled the fuel system after the filter change.” (CL006199; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#008592`; clean/manual attribution corroborated by the raw keeper key).
 - 2011-10-20 — “Gearbox stripped on the winch, 2 teeth found broken. Replaced the wheel.” (CL005867; `raw/logbooks/era2-keeperlog/KLOG2011.DAT#010421`; clean/manual attribution corroborated by the raw keeper key).
-- 2009-04-15 — “Gearbox stripped on the winch, 4 teeth found broken. Replaced the wheel.” (CL004909; `raw/logbooks/era2-keeperlog/KLOG2009.DAT#003783`; clean/manual attribution corroborated by the raw keeper key).
+- 2007-09-23 — “Changed oil and filters on no.1.” (CL004370; `raw/logbooks/era2-keeperlog/KLOG2007.DAT#009222`; clean/manual attribution corroborated by the raw keeper key).
 
 Credential position:
 
@@ -864,8 +924,8 @@ Evidence:
 - 2025-04-19 — “Isolated No.2 transformer, earths applied both ends, permit 0412 issued to the contractor.” (CL010173; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#43555`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2019-01-20 — “Megger test on the No.2 feeder, 2.4 ohm, condemned the cable and ran a temporary.” (CL008335; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#13919`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2014-11-05 — “Isolated no 1 transformer, earths applied both ends, PTW/88 issued to the contractor.” (CL007007; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#5902`; clean/manual attribution; raw reference resolves but its format has no keeper code).
-- 2013-01-16 — “Isolated no 1 transformer, earths applied both ends, permit 1102 issued to the contractor.” (CL006346; `raw/logbooks/era2-keeperlog/KLOG2013.DAT#000607`; clean/manual attribution corroborated by the raw keeper key).
 - 2026-10-08 — “Battery checked on the beacon.” (CL010559; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#63269`; clean/manual attribution; raw reference resolves but its format has no keeper code).
+- 2025-11-03 — “Changed the battery in the portable set.” (CL010308; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#50573`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 
 Credential position:
 
@@ -901,7 +961,7 @@ Evidence:
 - 2008-02-24 — “Changed the battery in the portable set.” (CL004517; `raw/logbooks/era2-keeperlog/KLOG2008.DAT#001885`; clean/manual attribution corroborated by the raw keeper key).
 - 2007-04-10 — “Tightened glands in the cable trunk by the stair.” (CL004222; `raw/logbooks/era2-keeperlog/KLOG2007.DAT#003463`; clean/manual attribution corroborated by the raw keeper key).
 - 2006-03-09 — “Ran No.2 set 8 hrs. Oil and water checked.” (CL003898; `raw/logbooks/era2-keeperlog/KLOG2006.DAT#002534`; clean/manual attribution corroborated by the raw keeper key).
-- 2003-06-08 — “Ran no.3 set 0.5 hrs. Oil and water checked.” (CL002999; `raw/logbooks/era1-ocr/naomhog-2003.txt#L219`; clean/manual attribution; raw reference resolves but its format has no keeper code).
+- 2003-03-04 — “Bled the fuel system after the filter change.” (CL002921; `raw/logbooks/era1-ocr/naomhog-2003.txt#L107`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 
 Credential position:
 
@@ -930,10 +990,10 @@ First actions:
 Evidence:
 
 - 2026-01-02 — “Traced the nuisance low-volt alarm to a soft cell in the NO.2 bank, replaced it.” (CL010352; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#52786`; clean/manual attribution; raw reference resolves but its format has no keeper code).
-- 2023-06-06 — “Traced the nuisance low-volt alarm to a soft cell in the No.1 bank, replaced it.” (CL009619; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#19109`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2024-12-13 — “Changed the battery in the portable set.” (CL010079; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38892`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2024-12-06 — “Bled the fuel system after the filter change.” (CL010071; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38646`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2023-07-04 — “Gas tested the fuel tank before entry.” (CL009650; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#20199`; clean/manual attribution; raw reference resolves but its format has no keeper code).
+- 2020-07-17 — “Set the timing on no.3 after the pump was refitted, ran it up and checked exhaust temps.” (CL008769; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#33654`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 
 Credential position:
 
@@ -1026,8 +1086,8 @@ Evidence:
 - 2026-09-07 — “Megger test on the NO.2 feeder, 232 V, condemned the cable and ran a temporary.” (CL010534; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62098`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2022-02-06 — “Checked continuity on the run to the fog hut.” (CL009253; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#1352`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2019-01-25 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL008338; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#14146`; clean/manual attribution; raw reference resolves but its format has no keeper code).
-- 2018-09-19 — “Megger test on the no.2 feeder, 24.6 V, condemned the cable and ran a temporary.” (CL008241; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#9422`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2018-09-05 — “Megger test on the NO.2 feeder, 3.6 bar, condemned the cable and ran a temporary.” (CL008221; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#8872`; clean/manual attribution; raw reference resolves but its format has no keeper code).
+- 2014-05-09 — “Megger test on the no 1 feeder, 2.4 ohm, condemned the cable and ran a temporary.” (CL006786; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#2453`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 
 Credential position:
 
@@ -1058,7 +1118,7 @@ Evidence:
 - 2016-09-06 — “Megger test on the no 1 feeder, 232 V, condemned the cable and ran a temporary.” (CL007587; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#29301`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2016-02-20 — “Isolated NO.2 transformer, earths applied both ends, permit 0412 issued to the contractor.” (CL007420; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#22259`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 2015-08-20 — “Megger test on the no.2 feeder, 2.4 ohm, condemned the cable and ran a temporary.” (CL007270; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#15621`; clean/manual attribution; raw reference resolves but its format has no keeper code).
-- 2015-08-06 — “Megger test on the no.2 feeder, 3.6 bar, condemned the cable and ran a temporary.” (CL007256; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#15062`; clean/manual attribution; raw reference resolves but its format has no keeper code).
+- 2014-04-10 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL006753; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#1921`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 
 - Supplementary note: A 2011 manager note records generator-control fault-finding and years of station high-voltage switching; clean entry CL006360 records work on an 11 kV board. (`raw/appraisals/station_manager_notes/2011-nevisbeg-keeper-note.txt#L3,L7,L9,L11`). The note names NI GHARBHAIL O/Oileann; the personnel export has one exact NI GHARBHAIL O match and the clean profile places K1538 at Nevisbeg in 2011. This is an interview lead, not an authorisation.
 - Hand-check entry: 2013-02-03 — “Took the 11kV board off, worked the sequence myself, the supernumerary witnessing.” (CL006360; `raw/logbooks/era2-keeperlog/KLOG2013.DAT#001138`).
@@ -1066,66 +1126,6 @@ Evidence:
 Credential position:
 
 - Dated Pass: WAHS-2, completed 2026-05-03, supplied expiry 2029-11-14 (`raw/training/vendor-c-learnhub-2017-2026.json#LH502939`).
-
-First actions:
-
-- Obtain or verify a current dated Pass for OSSC-SS (sea survival).
-- Obtain or verify a current dated Pass for OSSC-FF (fire).
-- Obtain or verify a current dated Pass for OSSC-FA (first aid).
-- Obtain or verify a current dated Pass for WAHS-1 (working at height).
-- Obtain a current offshore medical fitness declaration.
-- Confirm directly that the person accepts 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern.
-
-## K0566 — Garbhan O Riagain
-
-- Interview: `consider_interview` — At least one directly cited plant-maintenance example is present, but the bounded evidence is too narrow for a stronger recommendation.
-- Application eligibility: `plausible_but_essential_evidence_incomplete`
-- Mobilisation readiness: `not_established`
-- Relevant evidence categories: electrical, permit_or_isolation
-
-Evidence:
-
-- 2024-11-01 — “Isolated no 1 transformer, earths applied both ends, PTW 46 issued to the contractor.” (CL010043; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#37406`; clean/manual attribution; raw reference resolves but its format has no keeper code).
-- 2023-06-16 — “Isolated NO.2 transformer, earths applied both ends, PTW 207 issued to the contractor.” (CL009632; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#19556`; clean/manual attribution; raw reference resolves but its format has no keeper code).
-- 2013-02-15 — “Isolated NO.2 transformer, earths applied both ends, permit bk.3 no.19 issued to the contractor.” (CL006379; `raw/logbooks/era2-keeperlog/KLOG2013.DAT#001660`; clean/manual attribution corroborated by the raw keeper key).
-- 2013-01-24 — “Isolated no.1 transformer, earths applied both ends, PTW 331 issued to the contractor.” (CL006356; `raw/logbooks/era2-keeperlog/KLOG2013.DAT#000882`; clean/manual attribution corroborated by the raw keeper key).
-- 2011-10-05 — “Isolated No.2 transformer, earths applied both ends, permit 1102 issued to the contractor.” (CL005856; `raw/logbooks/era2-keeperlog/KLOG2011.DAT#009909`; clean/manual attribution corroborated by the raw keeper key).
-
-Credential position:
-
-- No currently dated relevant LearnHub Pass was established at the cutoff.
-- OSSC-SS: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500882`).
-- HVAP-03: Not achieved; `not_achieved` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500883`).
-- OSSC-CS: Not achieved; `not_achieved` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500884`).
-
-First actions:
-
-- Obtain or verify a current dated Pass for OSSC-SS (sea survival).
-- Obtain or verify a current dated Pass for OSSC-FF (fire).
-- Obtain or verify a current dated Pass for OSSC-FA (first aid).
-- Obtain or verify a current dated Pass for WAHS-1 (working at height).
-- Obtain a current offshore medical fitness declaration.
-- Confirm directly that the person accepts 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern.
-
-## K1302 — Uaithne Mac Bruachail
-
-- Interview: `consider_interview` — At least one directly cited plant-maintenance example is present, but the bounded evidence is too narrow for a stronger recommendation.
-- Application eligibility: `plausible_but_essential_evidence_incomplete`
-- Mobilisation readiness: `not_established`
-- Relevant evidence categories: electrical
-
-Evidence:
-
-- 2008-12-02 — “AVR on no.2 replaced and the volts set to 0.8 ohm, load-shared with no.1 properly after.” (CL004774; `raw/logbooks/era2-keeperlog/KLOG2008.DAT#011722`; clean/manual attribution corroborated by the raw keeper key).
-- 2008-03-02 — “Protection relay settings checked against the schedule and two were found wrong.” (CL004522; `raw/logbooks/era2-keeperlog/KLOG2008.DAT#002120`; clean/manual attribution corroborated by the raw keeper key).
-- 2007-01-28 — “AVR on no.1 replaced and the volts set to 2.4 ohm, load-shared with no.2 properly after.” (CL004159; `raw/logbooks/era2-keeperlog/KLOG2007.DAT#001009`; clean/manual attribution corroborated by the raw keeper key).
-- 2004-08-26 — “AVR on No.2 replaced and the volts set to 2.4 ohm, load-shared with No.1 properly after.” (CL003409; `raw/logbooks/era2-keeperlog/KLOG2004.DAT#008608`; clean/manual attribution corroborated by the raw keeper key).
-- 2004-01-04 — “AVR on no.1 replaced and the volts set to 418 V, load-shared with No.1 properly after.” (CL003195; `raw/logbooks/era2-keeperlog/KLOG2004.DAT#000130`; clean/manual attribution corroborated by the raw keeper key).
-
-Credential position:
-
-- Dated Pass: MECS-4, completed 2022-07-28, supplied expiry 2027-05-10 (`raw/training/vendor-c-learnhub-2017-2026.json#LH502474`).
-- Dated Pass: MECS-1, completed 2025-04-05, supplied expiry 2030-03-04 (`raw/training/vendor-c-learnhub-2017-2026.json#LH502475`).
 
 First actions:
 
@@ -1216,10 +1216,10 @@ First actions:
 Evidence:
 
 - 2005-10-06 — “Ran NO.2 set 6 hrs. Oil and water checked.” (CL003752; `raw/logbooks/era2-keeperlog/KLOG2005.DAT#010038`; clean/manual attribution corroborated by the raw keeper key).
-- 2005-03-13 — “Ran No.2 set 0.5 hrs. Oil and water checked.” (CL003585; `raw/logbooks/era2-keeperlog/KLOG2005.DAT#002654`; clean/manual attribution corroborated by the raw keeper key).
 - 2003-06-11 — “Filter changed on the power pack.” (CL003006; `raw/logbooks/era2-keeperlog/KLOG2003.DAT#002406`; clean/manual attribution corroborated by the raw keeper key).
 - 1999-04-13 — “Greased the compressor and checked the belts.” (CL001872; `raw/logbooks/era1-ocr/quillane-1999.txt#L210`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 - 1992-10-23 — “Changed oil and filters on no 2.” (CL000627; `raw/logbooks/era1-ocr/naomhog-1992.txt#L573`; clean/manual attribution; raw reference resolves but its format has no keeper code).
+- 1990-09-09 — “Gearbox stripped on the winch, 1 teeth found broken. Replaced the wheel.” (CL000397; `raw/logbooks/era1-ocr/naomhog-1990.txt#L487`; clean/manual attribution; raw reference resolves but its format has no keeper code).
 
 Credential position:
 

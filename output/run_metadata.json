@@ -10,7 +10,8 @@
   "qa_command": "python qa/independent_qa.py --source-zip ../data/carrowmore-data-pack.zip --results output/recommendations.json --report output/qa_report.json",
   "determinism_check": {
     "repeat_run_json_identical": true,
-    "repeat_run_markdown_identical": true
+    "repeat_run_markdown_identical": true,
+    "repeat_run_qa_report_identical": true
   },
   "required_as_of_check": {
     "missing_argument_exit_code": 2,
@@ -18,15 +19,15 @@
   },
   "qa": {
     "status": "PASS",
-    "passed": 1515,
+    "passed": 1505,
     "failed": 0,
     "prepared_cases": 10
   },
   "sha256": {
-    "src/array_om_evaluator.py": "6c3e270d9a678252c9c0c4c11978be08faea8da04dd002ae118e7bb545fabebf",
-    "qa/independent_qa.py": "5c8a3c1a974382f5ec4242ba520637fafa0dbd2e14d3461059073639203511b4",
-    "output/recommendations.json": "299b9d1d439446792e0be5b1e8408e86ffc5d2f67e312fec5ae3459c8fce0a67",
-    "output/recommendations.md": "16d668462b5d9f89dd1508f90e70a1921850ec398500073e2150b9be313d9562",
-    "output/qa_report.json": "ee516bf25dad02d05db13f335f87857575d05b5612ccb31969b65ed6081dca03"
+    "src/array_om_evaluator.py": "cbd9cf36a1fb2b997870bbce778407e38883402ddc0023b5be2295d4e9600932",
+    "qa/independent_qa.py": "66f7f56cffb5c067863b241aacbd69f698782f6849534a0a46bcee67b3b23b57",
+    "output/recommendations.json": "836809e847cc6c57364cbc91df7cf4ba0474fb8b570d4c48ddec40f3623133b1",
+    "output/recommendations.md": "d45024e7e543938af4d1ca80e07ecff5f2521498b318475904f6cd760aa5ae7f",
+    "output/qa_report.json": "00905daddba454c31fa50f84d4fd73004a69edde3839f341b78372648f854811"
   }
 }

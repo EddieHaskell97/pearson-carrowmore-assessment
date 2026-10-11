@@ -48,7 +48,14 @@ class Checks:
         self.items.append({"check": name, "passed": bool(condition), "detail": detail})
 
     def equal(self, name: str, actual, expected):
-        self.check(name, actual == expected, f"expected={expected!r}; actual={actual!r}")
+        def stable(value):
+            if isinstance(value, set):
+                return repr(sorted(value))
+            if isinstance(value, dict):
+                return json.dumps(dict(sorted(value.items())), ensure_ascii=False, sort_keys=True)
+            return repr(value)
+
+        self.check(name, actual == expected, f"expected={stable(expected)}; actual={stable(actual)}")
 
 
 def resolve_reference(zf: zipfile.ZipFile, source_reference: str, era: int) -> dict | None:

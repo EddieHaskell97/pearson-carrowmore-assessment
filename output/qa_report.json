@@ -2,9 +2,9 @@
   "schema_version": 1,
   "independence": "Reads the ZIP and generated JSON directly; does not import evaluator code or recompute its recommendation score.",
   "source_archive_sha256": "59f12ea4dfb43d311429fdd34c207517c2ffefbf917e4cdfe9737ca5776270f5",
-  "recommendations_sha256": "299b9d1d439446792e0be5b1e8408e86ffc5d2f67e312fec5ae3459c8fce0a67",
-  "checks": 1515,
-  "passed": 1515,
+  "recommendations_sha256": "836809e847cc6c57364cbc91df7cf4ba0474fb8b570d4c48ddec40f3623133b1",
+  "checks": 1505,
+  "passed": 1505,
   "failed": 0,
   "status": "PASS",
   "failures": [],
@@ -73,17 +73,17 @@
     {
       "check": "output IDs equal clean-subset IDs",
       "passed": true,
-      "detail": "expected={'K1468', 'K0310', 'K0371', 'K1345', 'K0274', 'K1363', 'K0897', 'K1418', 'K1538', 'K1231', 'K0354', 'K0566', 'K1474', 'K0525', 'K0663', 'K0817', 'K0592', 'K1302', 'K0303', 'K1200', 'K1511', 'K0589', 'K0650', 'K0394', 'K0184', 'K0586', 'K1055', 'K1203', 'K0147', 'K0482', 'K0847', 'K0478', 'K1458', 'K1483', 'K0561', 'K1281', 'K1446', 'K0664', 'K1374', 'K0641'}; actual={'K1468', 'K0310', 'K0371', 'K1345', 'K0274', 'K1363', 'K0897', 'K1418', 'K1538', 'K1231', 'K0354', 'K0566', 'K1474', 'K0525', 'K0663', 'K0817', 'K0592', 'K1302', 'K0303', 'K1200', 'K1511', 'K0589', 'K0650', 'K0394', 'K0184', 'K0586', 'K1055', 'K1203', 'K0147', 'K0482', 'K0847', 'K0478', 'K1458', 'K1483', 'K0561', 'K1281', 'K1446', 'K0664', 'K1374', 'K0641'}"
+      "detail": "expected=['K0147', 'K0184', 'K0274', 'K0303', 'K0310', 'K0354', 'K0371', 'K0394', 'K0478', 'K0482', 'K0525', 'K0561', 'K0566', 'K0586', 'K0589', 'K0592', 'K0641', 'K0650', 'K0663', 'K0664', 'K0817', 'K0847', 'K0897', 'K1055', 'K1200', 'K1203', 'K1231', 'K1281', 'K1302', 'K1345', 'K1363', 'K1374', 'K1418', 'K1446', 'K1458', 'K1468', 'K1474', 'K1483', 'K1511', 'K1538']; actual=['K0147', 'K0184', 'K0274', 'K0303', 'K0310', 'K0354', 'K0371', 'K0394', 'K0478', 'K0482', 'K0525', 'K0561', 'K0566', 'K0586', 'K0589', 'K0592', 'K0641', 'K0650', 'K0663', 'K0664', 'K0817', 'K0847', 'K0897', 'K1055', 'K1200', 'K1203', 'K1231', 'K1281', 'K1302', 'K1345', 'K1363', 'K1374', 'K1418', 'K1446', 'K1458', 'K1468', 'K1474', 'K1483', 'K1511', 'K1538']"
     },
     {
       "check": "clean cohort split",
       "passed": true,
-      "detail": "expected=Counter({'current': 38, 'left': 2}); actual=Counter({'current': 38, 'left': 2})"
+      "detail": "expected={\"current\": 38, \"left\": 2}; actual={\"current\": 38, \"left\": 2}"
     },
     {
       "check": "output cohort split",
       "passed": true,
-      "detail": "expected=Counter({'current_redeployment_cohort': 38, 'leaver_outside_current_cohort': 2}); actual=Counter({'current_redeployment_cohort': 38, 'leaver_outside_current_cohort': 2})"
+      "detail": "expected={\"current_redeployment_cohort\": 38, \"leaver_outside_current_cohort\": 2}; actual={\"current_redeployment_cohort\": 38, \"leaver_outside_current_cohort\": 2}"
     },
     {
       "check": "all clean current IDs occur in current personnel export",
@@ -132,41 +132,6 @@
     },
     {
       "check": "raw citation resolves: CL010280",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence ID exists: CL008567",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL008567",
-      "passed": true,
-      "detail": "expected='K0147'; actual='K0147'"
-    },
-    {
-      "check": "evidence exact text: CL008567",
-      "passed": true,
-      "detail": "expected='Traced the nuisance low-volt alarm to a soft cell in the no.2 bank, replaced it.'; actual='Traced the nuisance low-volt alarm to a soft cell in the no.2 bank, replaced it.'"
-    },
-    {
-      "check": "evidence exact date: CL008567",
-      "passed": true,
-      "detail": "expected='2019-11-12'; actual='2019-11-12'"
-    },
-    {
-      "check": "evidence source ref: CL008567",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#24873'; actual='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#24873'"
-    },
-    {
-      "check": "evidence not future: CL008567",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL008567",
       "passed": true,
       "detail": ""
     },
@@ -276,6 +241,41 @@
       "detail": ""
     },
     {
+      "check": "evidence ID exists: CL006984",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL006984",
+      "passed": true,
+      "detail": "expected='K0147'; actual='K0147'"
+    },
+    {
+      "check": "evidence exact text: CL006984",
+      "passed": true,
+      "detail": "expected='Tightened glands in the cable trunk by the stair.'; actual='Tightened glands in the cable trunk by the stair.'"
+    },
+    {
+      "check": "evidence exact date: CL006984",
+      "passed": true,
+      "detail": "expected='2014-10-16'; actual='2014-10-16'"
+    },
+    {
+      "check": "evidence source ref: CL006984",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#5523'; actual='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#5523'"
+    },
+    {
+      "check": "evidence not future: CL006984",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL006984",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "candidate as-of: K0184",
       "passed": true,
       "detail": "expected='2026-10-11'; actual='2026-10-11'"
@@ -351,76 +351,6 @@
       "detail": ""
     },
     {
-      "check": "evidence ID exists: CL009912",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL009912",
-      "passed": true,
-      "detail": "expected='K0184'; actual='K0184'"
-    },
-    {
-      "check": "evidence exact text: CL009912",
-      "passed": true,
-      "detail": "expected='Set the timing on no.3 after the pump was refitted, ran it up and checked exhaust temps.'; actual='Set the timing on no.3 after the pump was refitted, ran it up and checked exhaust temps.'"
-    },
-    {
-      "check": "evidence exact date: CL009912",
-      "passed": true,
-      "detail": "expected='2024-05-14'; actual='2024-05-14'"
-    },
-    {
-      "check": "evidence source ref: CL009912",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#31490'; actual='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#31490'"
-    },
-    {
-      "check": "evidence not future: CL009912",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL009912",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence ID exists: CL009904",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL009904",
-      "passed": true,
-      "detail": "expected='K0184'; actual='K0184'"
-    },
-    {
-      "check": "evidence exact text: CL009904",
-      "passed": true,
-      "detail": "expected='Set the timing on no 1 after the pump was refitted, ran it up and checked exhaust temps.'; actual='Set the timing on no 1 after the pump was refitted, ran it up and checked exhaust temps.'"
-    },
-    {
-      "check": "evidence exact date: CL009904",
-      "passed": true,
-      "detail": "expected='2024-05-04'; actual='2024-05-04'"
-    },
-    {
-      "check": "evidence source ref: CL009904",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#31113'; actual='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#31113'"
-    },
-    {
-      "check": "evidence not future: CL009904",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL009904",
-      "passed": true,
-      "detail": ""
-    },
-    {
       "check": "evidence ID exists: CL009825",
       "passed": true,
       "detail": ""
@@ -452,6 +382,76 @@
     },
     {
       "check": "raw citation resolves: CL009825",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence ID exists: CL009666",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL009666",
+      "passed": true,
+      "detail": "expected='K0184'; actual='K0184'"
+    },
+    {
+      "check": "evidence exact text: CL009666",
+      "passed": true,
+      "detail": "expected='Bled the fuel system after the filter change.'; actual='Bled the fuel system after the filter change.'"
+    },
+    {
+      "check": "evidence exact date: CL009666",
+      "passed": true,
+      "detail": "expected='2023-07-23'; actual='2023-07-23'"
+    },
+    {
+      "check": "evidence source ref: CL009666",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#20916'; actual='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#20916'"
+    },
+    {
+      "check": "evidence not future: CL009666",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL009666",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence ID exists: CL009470",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL009470",
+      "passed": true,
+      "detail": "expected='K0184'; actual='K0184'"
+    },
+    {
+      "check": "evidence exact text: CL009470",
+      "passed": true,
+      "detail": "expected='Changed oil and filters on no.2.'; actual='Changed oil and filters on no.2.'"
+    },
+    {
+      "check": "evidence exact date: CL009470",
+      "passed": true,
+      "detail": "expected='2022-11-20'; actual='2022-11-20'"
+    },
+    {
+      "check": "evidence source ref: CL009470",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#11830'; actual='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#11830'"
+    },
+    {
+      "check": "evidence not future: CL009470",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL009470",
       "passed": true,
       "detail": ""
     },
@@ -696,41 +696,6 @@
       "detail": ""
     },
     {
-      "check": "evidence ID exists: CL009211",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL009211",
-      "passed": true,
-      "detail": "expected='K0303'; actual='K0303'"
-    },
-    {
-      "check": "evidence exact text: CL009211",
-      "passed": true,
-      "detail": "expected='Megger test on the no.3 feeder, 0.8 ohm, condemned the cable and ran a temporary.'; actual='Megger test on the no.3 feeder, 0.8 ohm, condemned the cable and ran a temporary.'"
-    },
-    {
-      "check": "evidence exact date: CL009211",
-      "passed": true,
-      "detail": "expected='2021-12-22'; actual='2021-12-22'"
-    },
-    {
-      "check": "evidence source ref: CL009211",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#52433'; actual='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#52433'"
-    },
-    {
-      "check": "evidence not future: CL009211",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL009211",
-      "passed": true,
-      "detail": ""
-    },
-    {
       "check": "evidence ID exists: CL009113",
       "passed": true,
       "detail": ""
@@ -801,37 +766,72 @@
       "detail": ""
     },
     {
-      "check": "evidence ID exists: CL008545",
+      "check": "evidence ID exists: CL008115",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "evidence keeper: CL008545",
+      "check": "evidence keeper: CL008115",
       "passed": true,
       "detail": "expected='K0303'; actual='K0303'"
     },
     {
-      "check": "evidence exact text: CL008545",
+      "check": "evidence exact text: CL008115",
       "passed": true,
-      "detail": "expected='Megger test on the no 1 feeder, 2.4 ohm, condemned the cable and ran a temporary.'; actual='Megger test on the no 1 feeder, 2.4 ohm, condemned the cable and ran a temporary.'"
+      "detail": "expected='Checked continuity on the run to the fog hut.'; actual='Checked continuity on the run to the fog hut.'"
     },
     {
-      "check": "evidence exact date: CL008545",
+      "check": "evidence exact date: CL008115",
       "passed": true,
-      "detail": "expected='2019-10-14'; actual='2019-10-14'"
+      "detail": "expected='2018-05-09'; actual='2018-05-09'"
     },
     {
-      "check": "evidence source ref: CL008545",
+      "check": "evidence source ref: CL008115",
       "passed": true,
-      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#23822'; actual='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#23822'"
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#4708'; actual='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#4708'"
     },
     {
-      "check": "evidence not future: CL008545",
+      "check": "evidence not future: CL008115",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "raw citation resolves: CL008545",
+      "check": "raw citation resolves: CL008115",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence ID exists: CL007811",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL007811",
+      "passed": true,
+      "detail": "expected='K0303'; actual='K0303'"
+    },
+    {
+      "check": "evidence exact text: CL007811",
+      "passed": true,
+      "detail": "expected='Lamp not lit, found the fuse gone. Renewed.'; actual='Lamp not lit, found the fuse gone. Renewed.'"
+    },
+    {
+      "check": "evidence exact date: CL007811",
+      "passed": true,
+      "detail": "expected='2017-05-25'; actual='2017-05-25'"
+    },
+    {
+      "check": "evidence source ref: CL007811",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#38941'; actual='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#38941'"
+    },
+    {
+      "check": "evidence not future: CL007811",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL007811",
       "passed": true,
       "detail": ""
     },
@@ -1756,37 +1756,37 @@
       "detail": ""
     },
     {
-      "check": "evidence ID exists: CL007211",
+      "check": "evidence ID exists: CL010466",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "evidence keeper: CL007211",
+      "check": "evidence keeper: CL010466",
       "passed": true,
       "detail": "expected='K0478'; actual='K0478'"
     },
     {
-      "check": "evidence exact text: CL007211",
+      "check": "evidence exact text: CL010466",
       "passed": true,
-      "detail": "expected='Isolated NO.2 transformer, earths applied both ends, PTW 114 issued to the contractor.'; actual='Isolated NO.2 transformer, earths applied both ends, PTW 114 issued to the contractor.'"
+      "detail": "expected='Rewired the changeover contactor arrangement, tested on both feeds and left in auto.'; actual='Rewired the changeover contactor arrangement, tested on both feeds and left in auto.'"
     },
     {
-      "check": "evidence exact date: CL007211",
+      "check": "evidence exact date: CL010466",
       "passed": true,
-      "detail": "expected='2015-06-18'; actual='2015-06-18'"
+      "detail": "expected='2026-06-23'; actual='2026-06-23'"
     },
     {
-      "check": "evidence source ref: CL007211",
+      "check": "evidence source ref: CL010466",
       "passed": true,
-      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#13271'; actual='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#13271'"
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#59328'; actual='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#59328'"
     },
     {
-      "check": "evidence not future: CL007211",
+      "check": "evidence not future: CL010466",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "raw citation resolves: CL007211",
+      "check": "raw citation resolves: CL010466",
       "passed": true,
       "detail": ""
     },
@@ -1831,41 +1831,6 @@
       "detail": ""
     },
     {
-      "check": "evidence ID exists: CL009767",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL009767",
-      "passed": true,
-      "detail": "expected='K0482'; actual='K0482'"
-    },
-    {
-      "check": "evidence exact text: CL009767",
-      "passed": true,
-      "detail": "expected='Megger test on the no.2 feeder, 24.6 V, condemned the cable and ran a temporary.'; actual='Megger test on the no.2 feeder, 24.6 V, condemned the cable and ran a temporary.'"
-    },
-    {
-      "check": "evidence exact date: CL009767",
-      "passed": true,
-      "detail": "expected='2023-12-01'; actual='2023-12-01'"
-    },
-    {
-      "check": "evidence source ref: CL009767",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#25612'; actual='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#25612'"
-    },
-    {
-      "check": "evidence not future: CL009767",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL009767",
-      "passed": true,
-      "detail": ""
-    },
-    {
       "check": "evidence ID exists: CL009526",
       "passed": true,
       "detail": ""
@@ -1901,82 +1866,107 @@
       "detail": ""
     },
     {
-      "check": "evidence ID exists: CL003343",
+      "check": "evidence ID exists: CL001308",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "evidence keeper: CL003343",
+      "check": "evidence keeper: CL001308",
       "passed": true,
       "detail": "expected='K0482'; actual='K0482'"
     },
     {
-      "check": "evidence exact text: CL003343",
+      "check": "evidence exact text: CL001308",
       "passed": true,
-      "detail": "expected='Megger test on the no 1 feeder, 418 V, condemned the cable and ran a temporary.'; actual='Megger test on the no 1 feeder, 418 V, condemned the cable and ran a temporary.'"
+      "detail": "expected='Megger test on the NO.2 feeder, 48 psi, condemned the cable and ran a temporary.'; actual='Megger test on the NO.2 feeder, 48 psi, condemned the cable and ran a temporary.'"
     },
     {
-      "check": "evidence exact date: CL003343",
+      "check": "evidence exact date: CL001308",
       "passed": true,
-      "detail": "expected='2004-06-21'; actual='2004-06-21'"
+      "detail": "expected='1997-04-12'; actual='1997-04-12'"
     },
     {
-      "check": "evidence source ref: CL003343",
+      "check": "evidence source ref: CL001308",
       "passed": true,
-      "detail": "expected='raw/logbooks/era2-keeperlog/KLOG2004.DAT#006218'; actual='raw/logbooks/era2-keeperlog/KLOG2004.DAT#006218'"
+      "detail": "expected='raw/logbooks/era1-ocr/raheenvarra-1997.txt#L153'; actual='raw/logbooks/era1-ocr/raheenvarra-1997.txt#L153'"
     },
     {
-      "check": "evidence not future: CL003343",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL003343",
+      "check": "evidence not future: CL001308",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "DAT attribution status preserved: CL003343",
+      "check": "raw citation resolves: CL001308",
       "passed": true,
-      "detail": "expected=True; actual=True"
+      "detail": ""
     },
     {
-      "check": "DAT raw keeper preserved: CL003343",
+      "check": "evidence ID exists: CL000839",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL000839",
       "passed": true,
       "detail": "expected='K0482'; actual='K0482'"
     },
     {
-      "check": "evidence ID exists: CL002808",
+      "check": "evidence exact text: CL000839",
+      "passed": true,
+      "detail": "expected='Checked continuity on the run to the fog hut.'; actual='Checked continuity on the run to the fog hut.'"
+    },
+    {
+      "check": "evidence exact date: CL000839",
+      "passed": true,
+      "detail": "expected='1994-04-11'; actual='1994-04-11'"
+    },
+    {
+      "check": "evidence source ref: CL000839",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era1-ocr/barravane-1994.txt#L152'; actual='raw/logbooks/era1-ocr/barravane-1994.txt#L152'"
+    },
+    {
+      "check": "evidence not future: CL000839",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "evidence keeper: CL002808",
+      "check": "raw citation resolves: CL000839",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence ID exists: CL009967",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL009967",
       "passed": true,
       "detail": "expected='K0482'; actual='K0482'"
     },
     {
-      "check": "evidence exact text: CL002808",
+      "check": "evidence exact text: CL009967",
       "passed": true,
-      "detail": "expected='Megger test on the no.1 feeder, 11.2 V, condemned the cable and ran a temporary.'; actual='Megger test on the no.1 feeder, 11.2 V, condemned the cable and ran a temporary.'"
+      "detail": "expected='AVR on NO.2 replaced and the volts set to 24.6 V, load-shared with No.2 properly after.'; actual='AVR on NO.2 replaced and the volts set to 24.6 V, load-shared with No.2 properly after.'"
     },
     {
-      "check": "evidence exact date: CL002808",
+      "check": "evidence exact date: CL009967",
       "passed": true,
-      "detail": "expected='2002-09-23'; actual='2002-09-23'"
+      "detail": "expected='2024-07-22'; actual='2024-07-22'"
     },
     {
-      "check": "evidence source ref: CL002808",
+      "check": "evidence source ref: CL009967",
       "passed": true,
-      "detail": "expected='raw/logbooks/era1-ocr/lisnavarra-2002.txt#L419'; actual='raw/logbooks/era1-ocr/lisnavarra-2002.txt#L419'"
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#33917'; actual='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#33917'"
     },
     {
-      "check": "evidence not future: CL002808",
+      "check": "evidence not future: CL009967",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "raw citation resolves: CL002808",
+      "check": "raw citation resolves: CL009967",
       "passed": true,
       "detail": ""
     },
@@ -2266,41 +2256,6 @@
       "detail": ""
     },
     {
-      "check": "evidence ID exists: CL007899",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL007899",
-      "passed": true,
-      "detail": "expected='K0561'; actual='K0561'"
-    },
-    {
-      "check": "evidence exact text: CL007899",
-      "passed": true,
-      "detail": "expected='Ran NO.2 set 3 hrs. Oil and water checked.'; actual='Ran NO.2 set 3 hrs. Oil and water checked.'"
-    },
-    {
-      "check": "evidence exact date: CL007899",
-      "passed": true,
-      "detail": "expected='2017-09-11'; actual='2017-09-11'"
-    },
-    {
-      "check": "evidence source ref: CL007899",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#42841'; actual='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#42841'"
-    },
-    {
-      "check": "evidence not future: CL007899",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL007899",
-      "passed": true,
-      "detail": ""
-    },
-    {
       "check": "evidence ID exists: CL007052",
       "passed": true,
       "detail": ""
@@ -2391,6 +2346,51 @@
       "detail": "expected='K0561'; actual='K0561'"
     },
     {
+      "check": "evidence ID exists: CL003253",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL003253",
+      "passed": true,
+      "detail": "expected='K0561'; actual='K0561'"
+    },
+    {
+      "check": "evidence exact text: CL003253",
+      "passed": true,
+      "detail": "expected='Cleaned the contacts in the changeover relay.'; actual='Cleaned the contacts in the changeover relay.'"
+    },
+    {
+      "check": "evidence exact date: CL003253",
+      "passed": true,
+      "detail": "expected='2004-03-14'; actual='2004-03-14'"
+    },
+    {
+      "check": "evidence source ref: CL003253",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era2-keeperlog/KLOG2004.DAT#002662'; actual='raw/logbooks/era2-keeperlog/KLOG2004.DAT#002662'"
+    },
+    {
+      "check": "evidence not future: CL003253",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL003253",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "DAT attribution status preserved: CL003253",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "DAT raw keeper preserved: CL003253",
+      "passed": true,
+      "detail": "expected='K0561'; actual='K0561'"
+    },
+    {
       "check": "candidate as-of: K0566",
       "passed": true,
       "detail": "expected='2026-10-11'; actual='2026-10-11'"
@@ -2427,41 +2427,6 @@
     },
     {
       "check": "raw citation resolves: CL010043",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence ID exists: CL009632",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL009632",
-      "passed": true,
-      "detail": "expected='K0566'; actual='K0566'"
-    },
-    {
-      "check": "evidence exact text: CL009632",
-      "passed": true,
-      "detail": "expected='Isolated NO.2 transformer, earths applied both ends, PTW 207 issued to the contractor.'; actual='Isolated NO.2 transformer, earths applied both ends, PTW 207 issued to the contractor.'"
-    },
-    {
-      "check": "evidence exact date: CL009632",
-      "passed": true,
-      "detail": "expected='2023-06-16'; actual='2023-06-16'"
-    },
-    {
-      "check": "evidence source ref: CL009632",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#19556'; actual='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#19556'"
-    },
-    {
-      "check": "evidence not future: CL009632",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL009632",
       "passed": true,
       "detail": ""
     },
@@ -2511,51 +2476,6 @@
       "detail": "expected='K0566'; actual='K0566'"
     },
     {
-      "check": "evidence ID exists: CL006356",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL006356",
-      "passed": true,
-      "detail": "expected='K0566'; actual='K0566'"
-    },
-    {
-      "check": "evidence exact text: CL006356",
-      "passed": true,
-      "detail": "expected='Isolated no.1 transformer, earths applied both ends, PTW 331 issued to the contractor.'; actual='Isolated no.1 transformer, earths applied both ends, PTW 331 issued to the contractor.'"
-    },
-    {
-      "check": "evidence exact date: CL006356",
-      "passed": true,
-      "detail": "expected='2013-01-24'; actual='2013-01-24'"
-    },
-    {
-      "check": "evidence source ref: CL006356",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era2-keeperlog/KLOG2013.DAT#000882'; actual='raw/logbooks/era2-keeperlog/KLOG2013.DAT#000882'"
-    },
-    {
-      "check": "evidence not future: CL006356",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL006356",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "DAT attribution status preserved: CL006356",
-      "passed": true,
-      "detail": "expected=True; actual=True"
-    },
-    {
-      "check": "DAT raw keeper preserved: CL006356",
-      "passed": true,
-      "detail": "expected='K0566'; actual='K0566'"
-    },
-    {
       "check": "evidence ID exists: CL005856",
       "passed": true,
       "detail": ""
@@ -2597,6 +2517,86 @@
     },
     {
       "check": "DAT raw keeper preserved: CL005856",
+      "passed": true,
+      "detail": "expected='K0566'; actual='K0566'"
+    },
+    {
+      "check": "evidence ID exists: CL002799",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL002799",
+      "passed": true,
+      "detail": "expected='K0566'; actual='K0566'"
+    },
+    {
+      "check": "evidence exact text: CL002799",
+      "passed": true,
+      "detail": "expected='Checked continuity on the run to the fog hut.'; actual='Checked continuity on the run to the fog hut.'"
+    },
+    {
+      "check": "evidence exact date: CL002799",
+      "passed": true,
+      "detail": "expected='2002-09-08'; actual='2002-09-08'"
+    },
+    {
+      "check": "evidence source ref: CL002799",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era1-ocr/drumnahaan-2002.txt#L336'; actual='raw/logbooks/era1-ocr/drumnahaan-2002.txt#L336'"
+    },
+    {
+      "check": "evidence not future: CL002799",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL002799",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence ID exists: CL006319",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL006319",
+      "passed": true,
+      "detail": "expected='K0566'; actual='K0566'"
+    },
+    {
+      "check": "evidence exact text: CL006319",
+      "passed": true,
+      "detail": "expected='Filter changed on the power pack.'; actual='Filter changed on the power pack.'"
+    },
+    {
+      "check": "evidence exact date: CL006319",
+      "passed": true,
+      "detail": "expected='2012-12-27'; actual='2012-12-27'"
+    },
+    {
+      "check": "evidence source ref: CL006319",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era2-keeperlog/KLOG2012.DAT#013100'; actual='raw/logbooks/era2-keeperlog/KLOG2012.DAT#013100'"
+    },
+    {
+      "check": "evidence not future: CL006319",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL006319",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "DAT attribution status preserved: CL006319",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "DAT raw keeper preserved: CL006319",
       "passed": true,
       "detail": "expected='K0566'; actual='K0566'"
     },
@@ -3376,72 +3376,72 @@
       "detail": ""
     },
     {
-      "check": "evidence ID exists: CL000700",
+      "check": "evidence ID exists: CL000539",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "evidence keeper: CL000700",
+      "check": "evidence keeper: CL000539",
       "passed": true,
       "detail": "expected='K0650'; actual='K0650'"
     },
     {
-      "check": "evidence exact text: CL000700",
+      "check": "evidence exact text: CL000539",
       "passed": true,
-      "detail": "expected='Megger test on the no.2 feeder, 24.6 V, condemned the cable and ran a temporary.'; actual='Megger test on the no.2 feeder, 24.6 V, condemned the cable and ran a temporary.'"
+      "detail": "expected='Megger test on the No.2 feeder, 3.6 bar, condemned the cable and ran a temporary.'; actual='Megger test on the No.2 feeder, 3.6 bar, condemned the cable and ran a temporary.'"
     },
     {
-      "check": "evidence exact date: CL000700",
+      "check": "evidence exact date: CL000539",
       "passed": true,
-      "detail": "expected='1993-05-01'; actual='1993-05-01'"
+      "detail": "expected='1991-12-17'; actual='1991-12-17'"
     },
     {
-      "check": "evidence source ref: CL000700",
+      "check": "evidence source ref: CL000539",
       "passed": true,
-      "detail": "expected='raw/logbooks/era1-ocr/pallasveen-1993.txt#L194'; actual='raw/logbooks/era1-ocr/pallasveen-1993.txt#L194'"
+      "detail": "expected='raw/logbooks/era1-ocr/pallasveen-1991.txt#L510'; actual='raw/logbooks/era1-ocr/pallasveen-1991.txt#L510'"
     },
     {
-      "check": "evidence not future: CL000700",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL000700",
+      "check": "evidence not future: CL000539",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "evidence ID exists: CL000577",
+      "check": "raw citation resolves: CL000539",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "evidence keeper: CL000577",
+      "check": "evidence ID exists: CL010452",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL010452",
       "passed": true,
       "detail": "expected='K0650'; actual='K0650'"
     },
     {
-      "check": "evidence exact text: CL000577",
+      "check": "evidence exact text: CL010452",
       "passed": true,
-      "detail": "expected='Megger test on the no.1 feeder, 24.6 V, condemned the cable and ran a temporary.'; actual='Megger test on the no.1 feeder, 24.6 V, condemned the cable and ran a temporary.'"
+      "detail": "expected='Lamp not lit, found the fuse gone. Renewed.'; actual='Lamp not lit, found the fuse gone. Renewed.'"
     },
     {
-      "check": "evidence exact date: CL000577",
+      "check": "evidence exact date: CL010452",
       "passed": true,
-      "detail": "expected='1992-05-17'; actual='1992-05-17'"
+      "detail": "expected='2026-05-20'; actual='2026-05-20'"
     },
     {
-      "check": "evidence source ref: CL000577",
+      "check": "evidence source ref: CL010452",
       "passed": true,
-      "detail": "expected='raw/logbooks/era1-ocr/pallasveen-1992.txt#L224'; actual='raw/logbooks/era1-ocr/pallasveen-1992.txt#L224'"
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#58075'; actual='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#58075'"
     },
     {
-      "check": "evidence not future: CL000577",
+      "check": "evidence not future: CL010452",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "raw citation resolves: CL000577",
+      "check": "raw citation resolves: CL010452",
       "passed": true,
       "detail": ""
     },
@@ -3811,96 +3811,6 @@
       "detail": ""
     },
     {
-      "check": "evidence ID exists: CL004124",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL004124",
-      "passed": true,
-      "detail": "expected='K0817'; actual='K0817'"
-    },
-    {
-      "check": "evidence exact text: CL004124",
-      "passed": true,
-      "detail": "expected='Traced the nuisance low-volt alarm to a soft cell in the no.3 bank, replaced it.'; actual='Traced the nuisance low-volt alarm to a soft cell in the no.3 bank, replaced it.'"
-    },
-    {
-      "check": "evidence exact date: CL004124",
-      "passed": true,
-      "detail": "expected='2006-12-08'; actual='2006-12-08'"
-    },
-    {
-      "check": "evidence source ref: CL004124",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era2-keeperlog/KLOG2006.DAT#012300'; actual='raw/logbooks/era2-keeperlog/KLOG2006.DAT#012300'"
-    },
-    {
-      "check": "evidence not future: CL004124",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL004124",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "DAT attribution status preserved: CL004124",
-      "passed": true,
-      "detail": "expected=True; actual=True"
-    },
-    {
-      "check": "DAT raw keeper preserved: CL004124",
-      "passed": true,
-      "detail": "expected='K0817'; actual='K0817'"
-    },
-    {
-      "check": "evidence ID exists: CL003683",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL003683",
-      "passed": true,
-      "detail": "expected='K0817'; actual='K0817'"
-    },
-    {
-      "check": "evidence exact text: CL003683",
-      "passed": true,
-      "detail": "expected='Traced the nuisance low-volt alarm to a soft cell in the NO.2 bank, replaced it.'; actual='Traced the nuisance low-volt alarm to a soft cell in the NO.2 bank, replaced it.'"
-    },
-    {
-      "check": "evidence exact date: CL003683",
-      "passed": true,
-      "detail": "expected='2005-07-21'; actual='2005-07-21'"
-    },
-    {
-      "check": "evidence source ref: CL003683",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era2-keeperlog/KLOG2005.DAT#007328'; actual='raw/logbooks/era2-keeperlog/KLOG2005.DAT#007328'"
-    },
-    {
-      "check": "evidence not future: CL003683",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL003683",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "DAT attribution status preserved: CL003683",
-      "passed": true,
-      "detail": "expected=True; actual=True"
-    },
-    {
-      "check": "DAT raw keeper preserved: CL003683",
-      "passed": true,
-      "detail": "expected='K0817'; actual='K0817'"
-    },
-    {
       "check": "evidence ID exists: CL008628",
       "passed": true,
       "detail": ""
@@ -3969,6 +3879,96 @@
       "check": "raw citation resolves: CL007263",
       "passed": true,
       "detail": ""
+    },
+    {
+      "check": "evidence ID exists: CL006645",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL006645",
+      "passed": true,
+      "detail": "expected='K0817'; actual='K0817'"
+    },
+    {
+      "check": "evidence exact text: CL006645",
+      "passed": true,
+      "detail": "expected='Battery checked on the beacon.'; actual='Battery checked on the beacon.'"
+    },
+    {
+      "check": "evidence exact date: CL006645",
+      "passed": true,
+      "detail": "expected='2013-12-14'; actual='2013-12-14'"
+    },
+    {
+      "check": "evidence source ref: CL006645",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era2-keeperlog/KLOG2013.DAT#012101'; actual='raw/logbooks/era2-keeperlog/KLOG2013.DAT#012101'"
+    },
+    {
+      "check": "evidence not future: CL006645",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL006645",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "DAT attribution status preserved: CL006645",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "DAT raw keeper preserved: CL006645",
+      "passed": true,
+      "detail": "expected='K0817'; actual='K0817'"
+    },
+    {
+      "check": "evidence ID exists: CL005622",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL005622",
+      "passed": true,
+      "detail": "expected='K0817'; actual='K0817'"
+    },
+    {
+      "check": "evidence exact text: CL005622",
+      "passed": true,
+      "detail": "expected='Changed oil and filters on No.1.'; actual='Changed oil and filters on No.1.'"
+    },
+    {
+      "check": "evidence exact date: CL005622",
+      "passed": true,
+      "detail": "expected='2011-03-08'; actual='2011-03-08'"
+    },
+    {
+      "check": "evidence source ref: CL005622",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era2-keeperlog/KLOG2011.DAT#002363'; actual='raw/logbooks/era2-keeperlog/KLOG2011.DAT#002363'"
+    },
+    {
+      "check": "evidence not future: CL005622",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL005622",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "DAT attribution status preserved: CL005622",
+      "passed": true,
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "DAT raw keeper preserved: CL005622",
+      "passed": true,
+      "detail": "expected='K0817'; actual='K0817'"
     },
     {
       "check": "candidate as-of: K0847",
@@ -4056,41 +4056,6 @@
       "detail": "expected='K0847'; actual='K0847'"
     },
     {
-      "check": "evidence ID exists: CL002774",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL002774",
-      "passed": true,
-      "detail": "expected='K0847'; actual='K0847'"
-    },
-    {
-      "check": "evidence exact text: CL002774",
-      "passed": true,
-      "detail": "expected='Megger test on the No.2 feeder, 11.2 V, condemned the cable and ran a temporary.'; actual='Megger test on the No.2 feeder, 11.2 V, condemned the cable and ran a temporary.'"
-    },
-    {
-      "check": "evidence exact date: CL002774",
-      "passed": true,
-      "detail": "expected='2002-07-22'; actual='2002-07-22'"
-    },
-    {
-      "check": "evidence source ref: CL002774",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era1-ocr/portnalee-2002.txt#L326'; actual='raw/logbooks/era1-ocr/portnalee-2002.txt#L326'"
-    },
-    {
-      "check": "evidence not future: CL002774",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL002774",
-      "passed": true,
-      "detail": ""
-    },
-    {
       "check": "evidence ID exists: CL002773",
       "passed": true,
       "detail": ""
@@ -4157,6 +4122,41 @@
     },
     {
       "check": "raw citation resolves: CL002636",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence ID exists: CL001792",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL001792",
+      "passed": true,
+      "detail": "expected='K0847'; actual='K0847'"
+    },
+    {
+      "check": "evidence exact text: CL001792",
+      "passed": true,
+      "detail": "expected='Checked continuity on the run to the fog hut.'; actual='Checked continuity on the run to the fog hut.'"
+    },
+    {
+      "check": "evidence exact date: CL001792",
+      "passed": true,
+      "detail": "expected='1999-01-22'; actual='1999-01-22'"
+    },
+    {
+      "check": "evidence source ref: CL001792",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era1-ocr/glasnavaig-1999.txt#L50'; actual='raw/logbooks/era1-ocr/glasnavaig-1999.txt#L50'"
+    },
+    {
+      "check": "evidence not future: CL001792",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL001792",
       "passed": true,
       "detail": ""
     },
@@ -4586,51 +4586,6 @@
       "detail": "expected='K1203'; actual='K1203'"
     },
     {
-      "check": "evidence ID exists: CL003585",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL003585",
-      "passed": true,
-      "detail": "expected='K1203'; actual='K1203'"
-    },
-    {
-      "check": "evidence exact text: CL003585",
-      "passed": true,
-      "detail": "expected='Ran No.2 set 0.5 hrs. Oil and water checked.'; actual='Ran No.2 set 0.5 hrs. Oil and water checked.'"
-    },
-    {
-      "check": "evidence exact date: CL003585",
-      "passed": true,
-      "detail": "expected='2005-03-13'; actual='2005-03-13'"
-    },
-    {
-      "check": "evidence source ref: CL003585",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era2-keeperlog/KLOG2005.DAT#002654'; actual='raw/logbooks/era2-keeperlog/KLOG2005.DAT#002654'"
-    },
-    {
-      "check": "evidence not future: CL003585",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL003585",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "DAT attribution status preserved: CL003585",
-      "passed": true,
-      "detail": "expected=True; actual=True"
-    },
-    {
-      "check": "DAT raw keeper preserved: CL003585",
-      "passed": true,
-      "detail": "expected='K1203'; actual='K1203'"
-    },
-    {
       "check": "evidence ID exists: CL003006",
       "passed": true,
       "detail": ""
@@ -4746,6 +4701,41 @@
       "detail": ""
     },
     {
+      "check": "evidence ID exists: CL000397",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL000397",
+      "passed": true,
+      "detail": "expected='K1203'; actual='K1203'"
+    },
+    {
+      "check": "evidence exact text: CL000397",
+      "passed": true,
+      "detail": "expected='Gearbox stripped on the winch, 1 teeth found broken. Replaced the wheel.'; actual='Gearbox stripped on the winch, 1 teeth found broken. Replaced the wheel.'"
+    },
+    {
+      "check": "evidence exact date: CL000397",
+      "passed": true,
+      "detail": "expected='1990-09-09'; actual='1990-09-09'"
+    },
+    {
+      "check": "evidence source ref: CL000397",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era1-ocr/naomhog-1990.txt#L487'; actual='raw/logbooks/era1-ocr/naomhog-1990.txt#L487'"
+    },
+    {
+      "check": "evidence not future: CL000397",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL000397",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "candidate as-of: K1231",
       "passed": true,
       "detail": "expected='2026-10-11'; actual='2026-10-11'"
@@ -4856,41 +4846,6 @@
       "detail": ""
     },
     {
-      "check": "evidence ID exists: CL009966",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL009966",
-      "passed": true,
-      "detail": "expected='K1231'; actual='K1231'"
-    },
-    {
-      "check": "evidence exact text: CL009966",
-      "passed": true,
-      "detail": "expected='Isolated no.3 transformer, earths applied both ends, PTW 114 issued to the contractor.'; actual='Isolated no.3 transformer, earths applied both ends, PTW 114 issued to the contractor.'"
-    },
-    {
-      "check": "evidence exact date: CL009966",
-      "passed": true,
-      "detail": "expected='2024-07-17'; actual='2024-07-17'"
-    },
-    {
-      "check": "evidence source ref: CL009966",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#33726'; actual='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#33726'"
-    },
-    {
-      "check": "evidence not future: CL009966",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL009966",
-      "passed": true,
-      "detail": ""
-    },
-    {
       "check": "evidence ID exists: CL009834",
       "passed": true,
       "detail": ""
@@ -4922,6 +4877,41 @@
     },
     {
       "check": "raw citation resolves: CL009834",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence ID exists: CL008927",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL008927",
+      "passed": true,
+      "detail": "expected='K1231'; actual='K1231'"
+    },
+    {
+      "check": "evidence exact text: CL008927",
+      "passed": true,
+      "detail": "expected='Isolated No.2 transformer, earths applied both ends, permit bk.3 no.19 issued to the contractor.'; actual='Isolated No.2 transformer, earths applied both ends, permit bk.3 no.19 issued to the contractor.'"
+    },
+    {
+      "check": "evidence exact date: CL008927",
+      "passed": true,
+      "detail": "expected='2021-02-01'; actual='2021-02-01'"
+    },
+    {
+      "check": "evidence source ref: CL008927",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#40526'; actual='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#40526'"
+    },
+    {
+      "check": "evidence not future: CL008927",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL008927",
       "passed": true,
       "detail": ""
     },
@@ -5036,51 +5026,6 @@
       "detail": ""
     },
     {
-      "check": "evidence ID exists: CL003181",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL003181",
-      "passed": true,
-      "detail": "expected='K1281'; actual='K1281'"
-    },
-    {
-      "check": "evidence exact text: CL003181",
-      "passed": true,
-      "detail": "expected='AVR on no 1 replaced and the volts set to 0.8 ohm, load-shared with no.1 properly after.'; actual='AVR on no 1 replaced and the volts set to 0.8 ohm, load-shared with no.1 properly after.'"
-    },
-    {
-      "check": "evidence exact date: CL003181",
-      "passed": true,
-      "detail": "expected='2003-12-19'; actual='2003-12-19'"
-    },
-    {
-      "check": "evidence source ref: CL003181",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era2-keeperlog/KLOG2003.DAT#005178'; actual='raw/logbooks/era2-keeperlog/KLOG2003.DAT#005178'"
-    },
-    {
-      "check": "evidence not future: CL003181",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL003181",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "DAT attribution status preserved: CL003181",
-      "passed": true,
-      "detail": "expected=True; actual=True"
-    },
-    {
-      "check": "DAT raw keeper preserved: CL003181",
-      "passed": true,
-      "detail": "expected='K1281'; actual='K1281'"
-    },
-    {
       "check": "evidence ID exists: CL002218",
       "passed": true,
       "detail": ""
@@ -5112,6 +5057,41 @@
     },
     {
       "check": "raw citation resolves: CL002218",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence ID exists: CL001334",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL001334",
+      "passed": true,
+      "detail": "expected='K1281'; actual='K1281'"
+    },
+    {
+      "check": "evidence exact text: CL001334",
+      "passed": true,
+      "detail": "expected='Changed the battery in the portable set.'; actual='Changed the battery in the portable set.'"
+    },
+    {
+      "check": "evidence exact date: CL001334",
+      "passed": true,
+      "detail": "expected='1997-05-15'; actual='1997-05-15'"
+    },
+    {
+      "check": "evidence source ref: CL001334",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era1-ocr/mullanoe-1997.txt#L259'; actual='raw/logbooks/era1-ocr/mullanoe-1997.txt#L259'"
+    },
+    {
+      "check": "evidence not future: CL001334",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL001334",
       "passed": true,
       "detail": ""
     },
@@ -5211,96 +5191,6 @@
       "detail": "expected='K1302'; actual='K1302'"
     },
     {
-      "check": "evidence ID exists: CL004159",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL004159",
-      "passed": true,
-      "detail": "expected='K1302'; actual='K1302'"
-    },
-    {
-      "check": "evidence exact text: CL004159",
-      "passed": true,
-      "detail": "expected='AVR on no.1 replaced and the volts set to 2.4 ohm, load-shared with no.2 properly after.'; actual='AVR on no.1 replaced and the volts set to 2.4 ohm, load-shared with no.2 properly after.'"
-    },
-    {
-      "check": "evidence exact date: CL004159",
-      "passed": true,
-      "detail": "expected='2007-01-28'; actual='2007-01-28'"
-    },
-    {
-      "check": "evidence source ref: CL004159",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era2-keeperlog/KLOG2007.DAT#001009'; actual='raw/logbooks/era2-keeperlog/KLOG2007.DAT#001009'"
-    },
-    {
-      "check": "evidence not future: CL004159",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL004159",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "DAT attribution status preserved: CL004159",
-      "passed": true,
-      "detail": "expected=True; actual=True"
-    },
-    {
-      "check": "DAT raw keeper preserved: CL004159",
-      "passed": true,
-      "detail": "expected='K1302'; actual='K1302'"
-    },
-    {
-      "check": "evidence ID exists: CL003409",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL003409",
-      "passed": true,
-      "detail": "expected='K1302'; actual='K1302'"
-    },
-    {
-      "check": "evidence exact text: CL003409",
-      "passed": true,
-      "detail": "expected='AVR on No.2 replaced and the volts set to 2.4 ohm, load-shared with No.1 properly after.'; actual='AVR on No.2 replaced and the volts set to 2.4 ohm, load-shared with No.1 properly after.'"
-    },
-    {
-      "check": "evidence exact date: CL003409",
-      "passed": true,
-      "detail": "expected='2004-08-26'; actual='2004-08-26'"
-    },
-    {
-      "check": "evidence source ref: CL003409",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era2-keeperlog/KLOG2004.DAT#008608'; actual='raw/logbooks/era2-keeperlog/KLOG2004.DAT#008608'"
-    },
-    {
-      "check": "evidence not future: CL003409",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL003409",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "DAT attribution status preserved: CL003409",
-      "passed": true,
-      "detail": "expected=True; actual=True"
-    },
-    {
-      "check": "DAT raw keeper preserved: CL003409",
-      "passed": true,
-      "detail": "expected='K1302'; actual='K1302'"
-    },
-    {
       "check": "evidence ID exists: CL003195",
       "passed": true,
       "detail": ""
@@ -5344,6 +5234,76 @@
       "check": "DAT raw keeper preserved: CL003195",
       "passed": true,
       "detail": "expected='K1302'; actual='K1302'"
+    },
+    {
+      "check": "evidence ID exists: CL002551",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL002551",
+      "passed": true,
+      "detail": "expected='K1302'; actual='K1302'"
+    },
+    {
+      "check": "evidence exact text: CL002551",
+      "passed": true,
+      "detail": "expected='Changed oil and filters on No.1.'; actual='Changed oil and filters on No.1.'"
+    },
+    {
+      "check": "evidence exact date: CL002551",
+      "passed": true,
+      "detail": "expected='2001-09-19'; actual='2001-09-19'"
+    },
+    {
+      "check": "evidence source ref: CL002551",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era1-ocr/fionnvarra-2001.txt#L388'; actual='raw/logbooks/era1-ocr/fionnvarra-2001.txt#L388'"
+    },
+    {
+      "check": "evidence not future: CL002551",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL002551",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence ID exists: CL002191",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL002191",
+      "passed": true,
+      "detail": "expected='K1302'; actual='K1302'"
+    },
+    {
+      "check": "evidence exact text: CL002191",
+      "passed": true,
+      "detail": "expected='Filter changed on the power pack.'; actual='Filter changed on the power pack.'"
+    },
+    {
+      "check": "evidence exact date: CL002191",
+      "passed": true,
+      "detail": "expected='2000-04-17'; actual='2000-04-17'"
+    },
+    {
+      "check": "evidence source ref: CL002191",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era1-ocr/fionnvarra-2000.txt#L254'; actual='raw/logbooks/era1-ocr/fionnvarra-2000.txt#L254'"
+    },
+    {
+      "check": "evidence not future: CL002191",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL002191",
+      "passed": true,
+      "detail": ""
     },
     {
       "check": "candidate as-of: K1345",
@@ -5511,47 +5471,47 @@
       "detail": "expected='K1345'; actual='K1345'"
     },
     {
-      "check": "evidence ID exists: CL004909",
+      "check": "evidence ID exists: CL004370",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "evidence keeper: CL004909",
+      "check": "evidence keeper: CL004370",
       "passed": true,
       "detail": "expected='K1345'; actual='K1345'"
     },
     {
-      "check": "evidence exact text: CL004909",
+      "check": "evidence exact text: CL004370",
       "passed": true,
-      "detail": "expected='Gearbox stripped on the winch, 4 teeth found broken. Replaced the wheel.'; actual='Gearbox stripped on the winch, 4 teeth found broken. Replaced the wheel.'"
+      "detail": "expected='Changed oil and filters on no.1.'; actual='Changed oil and filters on no.1.'"
     },
     {
-      "check": "evidence exact date: CL004909",
+      "check": "evidence exact date: CL004370",
       "passed": true,
-      "detail": "expected='2009-04-15'; actual='2009-04-15'"
+      "detail": "expected='2007-09-23'; actual='2007-09-23'"
     },
     {
-      "check": "evidence source ref: CL004909",
+      "check": "evidence source ref: CL004370",
       "passed": true,
-      "detail": "expected='raw/logbooks/era2-keeperlog/KLOG2009.DAT#003783'; actual='raw/logbooks/era2-keeperlog/KLOG2009.DAT#003783'"
+      "detail": "expected='raw/logbooks/era2-keeperlog/KLOG2007.DAT#009222'; actual='raw/logbooks/era2-keeperlog/KLOG2007.DAT#009222'"
     },
     {
-      "check": "evidence not future: CL004909",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL004909",
+      "check": "evidence not future: CL004370",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "DAT attribution status preserved: CL004909",
+      "check": "raw citation resolves: CL004370",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "DAT attribution status preserved: CL004370",
       "passed": true,
       "detail": "expected=True; actual=True"
     },
     {
-      "check": "DAT raw keeper preserved: CL004909",
+      "check": "DAT raw keeper preserved: CL004370",
       "passed": true,
       "detail": "expected='K1345'; actual='K1345'"
     },
@@ -5856,51 +5816,6 @@
       "detail": ""
     },
     {
-      "check": "evidence ID exists: CL006346",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL006346",
-      "passed": true,
-      "detail": "expected='K1374'; actual='K1374'"
-    },
-    {
-      "check": "evidence exact text: CL006346",
-      "passed": true,
-      "detail": "expected='Isolated no 1 transformer, earths applied both ends, permit 1102 issued to the contractor.'; actual='Isolated no 1 transformer, earths applied both ends, permit 1102 issued to the contractor.'"
-    },
-    {
-      "check": "evidence exact date: CL006346",
-      "passed": true,
-      "detail": "expected='2013-01-16'; actual='2013-01-16'"
-    },
-    {
-      "check": "evidence source ref: CL006346",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era2-keeperlog/KLOG2013.DAT#000607'; actual='raw/logbooks/era2-keeperlog/KLOG2013.DAT#000607'"
-    },
-    {
-      "check": "evidence not future: CL006346",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL006346",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "DAT attribution status preserved: CL006346",
-      "passed": true,
-      "detail": "expected=True; actual=True"
-    },
-    {
-      "check": "DAT raw keeper preserved: CL006346",
-      "passed": true,
-      "detail": "expected='K1374'; actual='K1374'"
-    },
-    {
       "check": "evidence ID exists: CL010559",
       "passed": true,
       "detail": ""
@@ -5932,6 +5847,41 @@
     },
     {
       "check": "raw citation resolves: CL010559",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence ID exists: CL010308",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL010308",
+      "passed": true,
+      "detail": "expected='K1374'; actual='K1374'"
+    },
+    {
+      "check": "evidence exact text: CL010308",
+      "passed": true,
+      "detail": "expected='Changed the battery in the portable set.'; actual='Changed the battery in the portable set.'"
+    },
+    {
+      "check": "evidence exact date: CL010308",
+      "passed": true,
+      "detail": "expected='2025-11-03'; actual='2025-11-03'"
+    },
+    {
+      "check": "evidence source ref: CL010308",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#50573'; actual='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#50573'"
+    },
+    {
+      "check": "evidence not future: CL010308",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL010308",
       "passed": true,
       "detail": ""
     },
@@ -6121,37 +6071,37 @@
       "detail": "expected='K1418'; actual='K1418'"
     },
     {
-      "check": "evidence ID exists: CL002999",
+      "check": "evidence ID exists: CL002921",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "evidence keeper: CL002999",
+      "check": "evidence keeper: CL002921",
       "passed": true,
       "detail": "expected='K1418'; actual='K1418'"
     },
     {
-      "check": "evidence exact text: CL002999",
+      "check": "evidence exact text: CL002921",
       "passed": true,
-      "detail": "expected='Ran no.3 set 0.5 hrs. Oil and water checked.'; actual='Ran no.3 set 0.5 hrs. Oil and water checked.'"
+      "detail": "expected='Bled the fuel system after the filter change.'; actual='Bled the fuel system after the filter change.'"
     },
     {
-      "check": "evidence exact date: CL002999",
+      "check": "evidence exact date: CL002921",
       "passed": true,
-      "detail": "expected='2003-06-08'; actual='2003-06-08'"
+      "detail": "expected='2003-03-04'; actual='2003-03-04'"
     },
     {
-      "check": "evidence source ref: CL002999",
+      "check": "evidence source ref: CL002921",
       "passed": true,
-      "detail": "expected='raw/logbooks/era1-ocr/naomhog-2003.txt#L219'; actual='raw/logbooks/era1-ocr/naomhog-2003.txt#L219'"
+      "detail": "expected='raw/logbooks/era1-ocr/naomhog-2003.txt#L107'; actual='raw/logbooks/era1-ocr/naomhog-2003.txt#L107'"
     },
     {
-      "check": "evidence not future: CL002999",
+      "check": "evidence not future: CL002921",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "raw citation resolves: CL002999",
+      "check": "raw citation resolves: CL002921",
       "passed": true,
       "detail": ""
     },
@@ -6192,41 +6142,6 @@
     },
     {
       "check": "raw citation resolves: CL010352",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence ID exists: CL009619",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL009619",
-      "passed": true,
-      "detail": "expected='K1446'; actual='K1446'"
-    },
-    {
-      "check": "evidence exact text: CL009619",
-      "passed": true,
-      "detail": "expected='Traced the nuisance low-volt alarm to a soft cell in the No.1 bank, replaced it.'; actual='Traced the nuisance low-volt alarm to a soft cell in the No.1 bank, replaced it.'"
-    },
-    {
-      "check": "evidence exact date: CL009619",
-      "passed": true,
-      "detail": "expected='2023-06-06'; actual='2023-06-06'"
-    },
-    {
-      "check": "evidence source ref: CL009619",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#19109'; actual='raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#19109'"
-    },
-    {
-      "check": "evidence not future: CL009619",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL009619",
       "passed": true,
       "detail": ""
     },
@@ -6332,6 +6247,41 @@
     },
     {
       "check": "raw citation resolves: CL009650",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence ID exists: CL008769",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL008769",
+      "passed": true,
+      "detail": "expected='K1446'; actual='K1446'"
+    },
+    {
+      "check": "evidence exact text: CL008769",
+      "passed": true,
+      "detail": "expected='Set the timing on no.3 after the pump was refitted, ran it up and checked exhaust temps.'; actual='Set the timing on no.3 after the pump was refitted, ran it up and checked exhaust temps.'"
+    },
+    {
+      "check": "evidence exact date: CL008769",
+      "passed": true,
+      "detail": "expected='2020-07-17'; actual='2020-07-17'"
+    },
+    {
+      "check": "evidence source ref: CL008769",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#33654'; actual='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#33654'"
+    },
+    {
+      "check": "evidence not future: CL008769",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL008769",
       "passed": true,
       "detail": ""
     },
@@ -7131,41 +7081,6 @@
       "detail": ""
     },
     {
-      "check": "evidence ID exists: CL008241",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "evidence keeper: CL008241",
-      "passed": true,
-      "detail": "expected='K1511'; actual='K1511'"
-    },
-    {
-      "check": "evidence exact text: CL008241",
-      "passed": true,
-      "detail": "expected='Megger test on the no.2 feeder, 24.6 V, condemned the cable and ran a temporary.'; actual='Megger test on the no.2 feeder, 24.6 V, condemned the cable and ran a temporary.'"
-    },
-    {
-      "check": "evidence exact date: CL008241",
-      "passed": true,
-      "detail": "expected='2018-09-19'; actual='2018-09-19'"
-    },
-    {
-      "check": "evidence source ref: CL008241",
-      "passed": true,
-      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#9422'; actual='raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#9422'"
-    },
-    {
-      "check": "evidence not future: CL008241",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "raw citation resolves: CL008241",
-      "passed": true,
-      "detail": ""
-    },
-    {
       "check": "evidence ID exists: CL008221",
       "passed": true,
       "detail": ""
@@ -7197,6 +7112,41 @@
     },
     {
       "check": "raw citation resolves: CL008221",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence ID exists: CL006786",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evidence keeper: CL006786",
+      "passed": true,
+      "detail": "expected='K1511'; actual='K1511'"
+    },
+    {
+      "check": "evidence exact text: CL006786",
+      "passed": true,
+      "detail": "expected='Megger test on the no 1 feeder, 2.4 ohm, condemned the cable and ran a temporary.'; actual='Megger test on the no 1 feeder, 2.4 ohm, condemned the cable and ran a temporary.'"
+    },
+    {
+      "check": "evidence exact date: CL006786",
+      "passed": true,
+      "detail": "expected='2014-05-09'; actual='2014-05-09'"
+    },
+    {
+      "check": "evidence source ref: CL006786",
+      "passed": true,
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#2453'; actual='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#2453'"
+    },
+    {
+      "check": "evidence not future: CL006786",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "raw citation resolves: CL006786",
       "passed": true,
       "detail": ""
     },
@@ -7346,37 +7296,37 @@
       "detail": ""
     },
     {
-      "check": "evidence ID exists: CL007256",
+      "check": "evidence ID exists: CL006753",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "evidence keeper: CL007256",
+      "check": "evidence keeper: CL006753",
       "passed": true,
       "detail": "expected='K1538'; actual='K1538'"
     },
     {
-      "check": "evidence exact text: CL007256",
+      "check": "evidence exact text: CL006753",
       "passed": true,
-      "detail": "expected='Megger test on the no.2 feeder, 3.6 bar, condemned the cable and ran a temporary.'; actual='Megger test on the no.2 feeder, 3.6 bar, condemned the cable and ran a temporary.'"
+      "detail": "expected='Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.'; actual='Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.'"
     },
     {
-      "check": "evidence exact date: CL007256",
+      "check": "evidence exact date: CL006753",
       "passed": true,
-      "detail": "expected='2015-08-06'; actual='2015-08-06'"
+      "detail": "expected='2014-04-10'; actual='2014-04-10'"
     },
     {
-      "check": "evidence source ref: CL007256",
+      "check": "evidence source ref: CL006753",
       "passed": true,
-      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#15062'; actual='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#15062'"
+      "detail": "expected='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#1921'; actual='raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#1921'"
     },
     {
-      "check": "evidence not future: CL007256",
+      "check": "evidence not future: CL006753",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "raw citation resolves: CL007256",
+      "check": "raw citation resolves: CL006753",
       "passed": true,
       "detail": ""
     },
