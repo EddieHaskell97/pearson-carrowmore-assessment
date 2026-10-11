@@ -36,9 +36,9 @@
     "profiles": 40,
     "current": 38,
     "leavers": 2,
-    "recommend_interview": 36,
+    "recommend_interview": 37,
     "consider_interview": 1,
-    "insufficient_evidence": 1,
+    "insufficient_evidence": 0,
     "outside_current_cohort": 2
   },
   "method": {
@@ -644,6 +644,28 @@
           "selection_score": 6
         },
         {
+          "entry_id": "CL010515",
+          "date": "2026-08-07",
+          "text": "Rebuilt the clockwork drive, cleaned forty years of gum out of the train.",
+          "station": "Kellachan Holm",
+          "categories": [
+            "mechanical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#60993",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#60993",
+            "format": "era3",
+            "resolved": true,
+            "resolution": "physical_csv_row_including_header",
+            "raw_keeper_name": "0011259",
+            "raw_activity": "AIDS-TO-NAV",
+            "attribution_match": null
+          },
+          "selection_score": 3
+        },
+        {
           "entry_id": "CL010397",
           "date": "2026-03-11",
           "text": "Tightened glands in the cable trunk by the stair.",
@@ -706,29 +728,6 @@
             "raw_keeper_name": "0011259",
             "raw_activity": "MECHANICAL",
             "attribution_match": null
-          },
-          "selection_score": 3
-        },
-        {
-          "entry_id": "CL006015",
-          "date": "2012-03-03",
-          "text": "Renewed fuse links, NO.2 way. All made off.",
-          "station": "Gowlanmore Island",
-          "categories": [
-            "electrical"
-          ],
-          "clean_source": "clean/logbook_entries.json",
-          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2012.DAT#002293",
-          "attribution": "clean_manual_attribution",
-          "raw_corroboration": {
-            "reference": "raw/logbooks/era2-keeperlog/KLOG2012.DAT#002293",
-            "format": "era2",
-            "resolved": true,
-            "resolution": "file_and_record_id",
-            "raw_keeper": "K8919",
-            "raw_keeper_name": "UNKNOWN",
-            "raw_activity": "Renewed fuse links, NO.2 way. All made off.",
-            "attribution_match": false
           },
           "selection_score": 3
         }
@@ -1059,23 +1058,23 @@
           "selection_score": 6
         },
         {
-          "entry_id": "CL007811",
-          "date": "2017-05-25",
-          "text": "Lamp not lit, found the fuse gone. Renewed.",
+          "entry_id": "CL009744",
+          "date": "2023-11-06",
+          "text": "Rebuilt the clockwork drive, cleaned forty years of gum out of the train.",
           "station": "Quillane Skerry",
           "categories": [
-            "electrical"
+            "mechanical"
           ],
           "clean_source": "clean/logbook_entries.json",
-          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#38941",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#24746",
           "attribution": "clean_manual_attribution",
           "raw_corroboration": {
-            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#38941",
+            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#24746",
             "format": "era3",
             "resolved": true,
             "resolution": "physical_csv_row_including_header",
-            "raw_keeper_name": "Ambrosan O Lachtnain",
-            "raw_activity": "Lamp not lit, found the fuse gone. Renewed.",
+            "raw_keeper_name": "0012781",
+            "raw_activity": "AIDS-TO-NAV",
             "attribution_match": null
           },
           "selection_score": 3
@@ -1084,7 +1083,8 @@
       "supplementary_evidence": [],
       "experience_categories": [
         "electrical",
-        "fault_finding"
+        "fault_finding",
+        "mechanical"
       ],
       "credential_claims": [
         {
@@ -3307,6 +3307,28 @@
           "selection_score": 3
         },
         {
+          "entry_id": "CL008494",
+          "date": "2019-08-06",
+          "text": "Rebuilt the no 1 pump end to end, new wear rings, delivery back up to 3.6 bar.",
+          "station": "Varrasay Island",
+          "categories": [
+            "mechanical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#21170",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#21170",
+            "format": "era3",
+            "resolved": true,
+            "resolution": "physical_csv_row_including_header",
+            "raw_keeper_name": "0011814",
+            "raw_activity": "MECHANICAL",
+            "attribution_match": null
+          },
+          "selection_score": 3
+        },
+        {
           "entry_id": "CL008084",
           "date": "2018-04-06",
           "text": "Ran no.1 set 4 hrs. Oil and water checked.",
@@ -3324,6 +3346,28 @@
             "resolution": "physical_csv_row_including_header",
             "raw_keeper_name": "11814",
             "raw_activity": "MECHANICAL",
+            "attribution_match": null
+          },
+          "selection_score": 3
+        },
+        {
+          "entry_id": "CL007341",
+          "date": "2015-11-15",
+          "text": "Rebuilt the no.1 pump end to end, new wear rings, delivery back up to 11.2 V.",
+          "station": "Wrathnalee Island",
+          "categories": [
+            "mechanical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#18751",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#18751",
+            "format": "era3",
+            "resolved": true,
+            "resolution": "physical_csv_row_including_header",
+            "raw_keeper_name": "Muirgheal Holmthwaite",
+            "raw_activity": "Rebuilt the no.1 pump end to end, new wear rings, delivery back up to 11.2 V.",
             "attribution_match": null
           },
           "selection_score": 3
@@ -3347,52 +3391,6 @@
             "raw_keeper": "K0561",
             "raw_keeper_name": "HOLMTHWAITE M",
             "raw_activity": "Found the receiver desensitised by the charger, fitted suppression and the noise went.",
-            "attribution_match": true
-          },
-          "selection_score": 3
-        },
-        {
-          "entry_id": "CL005661",
-          "date": "2011-04-10",
-          "text": "Changed the battery in the portable set.",
-          "station": "Jurbylea Head",
-          "categories": [
-            "electrical"
-          ],
-          "clean_source": "clean/logbook_entries.json",
-          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2011.DAT#003581",
-          "attribution": "clean_manual_attribution",
-          "raw_corroboration": {
-            "reference": "raw/logbooks/era2-keeperlog/KLOG2011.DAT#003581",
-            "format": "era2",
-            "resolved": true,
-            "resolution": "file_and_record_id",
-            "raw_keeper": "K0561",
-            "raw_keeper_name": "HOLMTHWAITE M",
-            "raw_activity": "Changed the battery in the portable set.",
-            "attribution_match": true
-          },
-          "selection_score": 3
-        },
-        {
-          "entry_id": "CL003253",
-          "date": "2004-03-14",
-          "text": "Cleaned the contacts in the changeover relay.",
-          "station": "Corrymoyle Bay",
-          "categories": [
-            "electrical"
-          ],
-          "clean_source": "clean/logbook_entries.json",
-          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2004.DAT#002662",
-          "attribution": "clean_manual_attribution",
-          "raw_corroboration": {
-            "reference": "raw/logbooks/era2-keeperlog/KLOG2004.DAT#002662",
-            "format": "era2",
-            "resolved": true,
-            "resolution": "file_and_record_id",
-            "raw_keeper": "K0561",
-            "raw_keeper_name": "HOLMTHWAITE M",
-            "raw_activity": "Cleaned the contacts in the changeover relay.",
             "attribution_match": true
           },
           "selection_score": 3
@@ -4425,6 +4423,50 @@
           "selection_score": 6
         },
         {
+          "entry_id": "CL008184",
+          "date": "2018-07-20",
+          "text": "Drive motor brushes and commutator dressed, rotation back to time.",
+          "station": "Glasnavaig Skerry",
+          "categories": [
+            "mechanical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#7336",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#7336",
+            "format": "era3",
+            "resolved": true,
+            "resolution": "physical_csv_row_including_header",
+            "raw_keeper_name": "0011254",
+            "raw_activity": "AIDS-TO-NAV",
+            "attribution_match": null
+          },
+          "selection_score": 3
+        },
+        {
+          "entry_id": "CL008111",
+          "date": "2018-05-06",
+          "text": "Lamp changer stepping twice, dismantled the ratchet and dressed the pawl faces.",
+          "station": "Glasnavaig Skerry",
+          "categories": [
+            "mechanical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#4564",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#4564",
+            "format": "era3",
+            "resolved": true,
+            "resolution": "physical_csv_row_including_header",
+            "raw_keeper_name": "0011254",
+            "raw_activity": "AIDS-TO-NAV",
+            "attribution_match": null
+          },
+          "selection_score": 3
+        },
+        {
           "entry_id": "CL008021",
           "date": "2018-01-15",
           "text": "Mechanical seal gone on the fire pump, fitted new and re-aligned the coupling.",
@@ -4443,51 +4485,6 @@
             "raw_keeper_name": "0011254",
             "raw_activity": "MECHANICAL",
             "attribution_match": null
-          },
-          "selection_score": 3
-        },
-        {
-          "entry_id": "CL007507",
-          "date": "2016-06-03",
-          "text": "Rewired the changeover contactor arrangement, tested on both feeds and left in auto.",
-          "station": "Glasnavaig Skerry",
-          "categories": [
-            "electrical"
-          ],
-          "clean_source": "clean/logbook_entries.json",
-          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#25863",
-          "attribution": "clean_manual_attribution",
-          "raw_corroboration": {
-            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#25863",
-            "format": "era3",
-            "resolved": true,
-            "resolution": "physical_csv_row_including_header",
-            "raw_keeper_name": "Fergal Mac Eibhleain",
-            "raw_activity": "Rewired the changeover contactor arrangement, tested on both feeds and left in auto.",
-            "attribution_match": null
-          },
-          "selection_score": 3
-        },
-        {
-          "entry_id": "CL006335",
-          "date": "2013-01-11",
-          "text": "Tightened glands in the cable trunk by the stair.",
-          "station": "Glasnavaig Skerry",
-          "categories": [
-            "electrical"
-          ],
-          "clean_source": "clean/logbook_entries.json",
-          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2013.DAT#000374",
-          "attribution": "clean_manual_attribution",
-          "raw_corroboration": {
-            "reference": "raw/logbooks/era2-keeperlog/KLOG2013.DAT#000374",
-            "format": "era2",
-            "resolved": true,
-            "resolution": "file_and_record_id",
-            "raw_keeper": "K0592",
-            "raw_keeper_name": "MAC EIBHLEAIN F",
-            "raw_activity": "Tightened glands in the cable trunk by the stair.",
-            "attribution_match": true
           },
           "selection_score": 3
         }
@@ -5125,6 +5122,72 @@
           "selection_score": 6
         },
         {
+          "entry_id": "CL010471",
+          "date": "2026-07-02",
+          "text": "Lamp changer stepping twice, dismantled the ratchet and dressed the pawl faces.",
+          "station": "Lisnavarra Point",
+          "categories": [
+            "mechanical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#59623",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#59623",
+            "format": "era3",
+            "resolved": true,
+            "resolution": "physical_csv_row_including_header",
+            "raw_keeper_name": "0012856",
+            "raw_activity": "INSPECTION",
+            "attribution_match": null
+          },
+          "selection_score": 3
+        },
+        {
+          "entry_id": "CL010451",
+          "date": "2026-05-17",
+          "text": "Drive motor brushes and commutator dressed, rotation back to time.",
+          "station": "Lisnavarra Point",
+          "categories": [
+            "mechanical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#57997",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#57997",
+            "format": "era3",
+            "resolved": true,
+            "resolution": "physical_csv_row_including_header",
+            "raw_keeper_name": "0012856",
+            "raw_activity": "AIDS-TO-NAV",
+            "attribution_match": null
+          },
+          "selection_score": 3
+        },
+        {
+          "entry_id": "CL009965",
+          "date": "2024-07-17",
+          "text": "Rebuilt the clockwork drive, cleaned forty years of gum out of the train.",
+          "station": "Quillane Skerry",
+          "categories": [
+            "mechanical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#33725",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#33725",
+            "format": "era3",
+            "resolved": true,
+            "resolution": "physical_csv_row_including_header",
+            "raw_keeper_name": "0012856",
+            "raw_activity": "AIDS-TO-NAV",
+            "attribution_match": null
+          },
+          "selection_score": 3
+        },
+        {
           "entry_id": "CL009957",
           "date": "2024-07-12",
           "text": "Renewed fuse links, no.3 way. All made off.",
@@ -5142,50 +5205,6 @@
             "resolution": "physical_csv_row_including_header",
             "raw_keeper_name": "12856",
             "raw_activity": "ELECTRICAL",
-            "attribution_match": null
-          },
-          "selection_score": 3
-        },
-        {
-          "entry_id": "CL009671",
-          "date": "2023-07-27",
-          "text": "Gas tested the fuel tank before entry.",
-          "station": "Ardvarra Island",
-          "categories": [
-            "mechanical"
-          ],
-          "clean_source": "clean/logbook_entries.json",
-          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#21065",
-          "attribution": "clean_manual_attribution",
-          "raw_corroboration": {
-            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#21065",
-            "format": "era3",
-            "resolved": true,
-            "resolution": "physical_csv_row_including_header",
-            "raw_keeper_name": "0012856",
-            "raw_activity": "SAFETY",
-            "attribution_match": null
-          },
-          "selection_score": 3
-        },
-        {
-          "entry_id": "CL007389",
-          "date": "2016-01-03",
-          "text": "Changed oil and filters on no.1.",
-          "station": "Feorlinn Ness",
-          "categories": [
-            "mechanical"
-          ],
-          "clean_source": "clean/logbook_entries.json",
-          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#20494",
-          "attribution": "clean_manual_attribution",
-          "raw_corroboration": {
-            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#20494",
-            "format": "era3",
-            "resolved": true,
-            "resolution": "physical_csv_row_including_header",
-            "raw_keeper_name": "Lugharn O Niallghusa",
-            "raw_activity": "Changed oil and filters on no.1.",
             "attribution_match": null
           },
           "selection_score": 3
@@ -5616,6 +5635,28 @@
           "selection_score": 3
         },
         {
+          "entry_id": "CL008376",
+          "date": "2019-03-03",
+          "text": "Compressor not making pressure, rings worn. Rebuilt the no 2 cylinder.",
+          "station": "Lerravoe Eilean",
+          "categories": [
+            "mechanical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#15552",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#15552",
+            "format": "era3",
+            "resolved": true,
+            "resolution": "physical_csv_row_including_header",
+            "raw_keeper_name": "12766",
+            "raw_activity": "AIDS-TO-NAV",
+            "attribution_match": null
+          },
+          "selection_score": 3
+        },
+        {
           "entry_id": "CL007263",
           "date": "2015-08-17",
           "text": "Greased the compressor and checked the belts.",
@@ -5656,29 +5697,6 @@
             "raw_keeper": "K0817",
             "raw_keeper_name": "O LUACHRA O",
             "raw_activity": "Battery checked on the beacon.",
-            "attribution_match": true
-          },
-          "selection_score": 3
-        },
-        {
-          "entry_id": "CL005622",
-          "date": "2011-03-08",
-          "text": "Changed oil and filters on No.1.",
-          "station": "Fuarnalee Carrig",
-          "categories": [
-            "mechanical"
-          ],
-          "clean_source": "clean/logbook_entries.json",
-          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2011.DAT#002363",
-          "attribution": "clean_manual_attribution",
-          "raw_corroboration": {
-            "reference": "raw/logbooks/era2-keeperlog/KLOG2011.DAT#002363",
-            "format": "era2",
-            "resolved": true,
-            "resolution": "file_and_record_id",
-            "raw_keeper": "K0817",
-            "raw_keeper_name": "O LUACHRA O",
-            "raw_activity": "Changed oil and filters on No.1.",
             "attribution_match": true
           },
           "selection_score": 3
@@ -6367,6 +6385,46 @@
           "selection_score": 6
         },
         {
+          "entry_id": "CL003053",
+          "date": "2003-08-05",
+          "text": "Compressor not making pressure, rings worn. Rebuilt the no.1 cylinder.",
+          "station": "Mullanoe Carrig",
+          "categories": [
+            "mechanical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era1-ocr/mullanoe-2003.txt#L194",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era1-ocr/mullanoe-2003.txt#L194",
+            "format": "era1",
+            "resolved": true,
+            "resolution": "physical_line",
+            "raw_excerpt": "Compressor not making pre.ssiire, rings worn. Rebuilt the no.1 cylinder. A. Ruadhain)"
+          },
+          "selection_score": 3
+        },
+        {
+          "entry_id": "CL003002",
+          "date": "2003-06-09",
+          "text": "Repaired the derrick luffing gear, new pin and bush turned up on station.",
+          "station": "Mullanoe Carrig",
+          "categories": [
+            "mechanical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era1-ocr/mullanoe-2003.txt#L163",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era1-ocr/mullanoe-2003.txt#L163",
+            "format": "era1",
+            "resolved": true,
+            "resolution": "physical_line",
+            "raw_excerpt": "K/III Ní Chuirrin — Repaired the derrick luffing gear, new pin and bush turned up on station."
+          },
+          "selection_score": 3
+        },
+        {
           "entry_id": "CL002459",
           "date": "2001-05-04",
           "text": "Greased the compressor and checked the belts.",
@@ -6403,46 +6461,6 @@
             "resolved": true,
             "resolution": "physical_line",
             "raw_excerpt": "Cleaned the contacts in the changeover relay."
-          },
-          "selection_score": 3
-        },
-        {
-          "entry_id": "CL001801",
-          "date": "1999-02-01",
-          "text": "Changed the battery in the portable set.",
-          "station": "Mullanoe Carrig",
-          "categories": [
-            "electrical"
-          ],
-          "clean_source": "clean/logbook_entries.json",
-          "source_reference": "raw/logbooks/era1-ocr/mullanoe-1999.txt#L88",
-          "attribution": "clean_manual_attribution",
-          "raw_corroboration": {
-            "reference": "raw/logbooks/era1-ocr/mullanoe-1999.txt#L88",
-            "format": "era1",
-            "resolved": true,
-            "resolution": "physical_line",
-            "raw_excerpt": "Changed the battery in the portable set. (T.Ní Chuirrin)"
-          },
-          "selection_score": 3
-        },
-        {
-          "entry_id": "CL001100",
-          "date": "1995-11-27",
-          "text": "Battery checked on the beacon.",
-          "station": "Knockmoyne Skerry",
-          "categories": [
-            "electrical"
-          ],
-          "clean_source": "clean/logbook_entries.json",
-          "source_reference": "raw/logbooks/era1-ocr/knockmoyne-1995.txt#L590",
-          "attribution": "clean_manual_attribution",
-          "raw_corroboration": {
-            "reference": "raw/logbooks/era1-ocr/knockmoyne-1995.txt#L590",
-            "format": "era1",
-            "resolved": true,
-            "resolution": "physical_line",
-            "raw_excerpt": "K/III Ní Chuirrin — Battery checked on the beacon."
           },
           "selection_score": 3
         }
@@ -6568,13 +6586,83 @@
       "name_ascii": "Tomaltach Yarrowfell",
       "cohort_status": "current_redeployment_cohort",
       "as_of": "2026-10-11",
-      "interview_recommendation": "insufficient_evidence_in_subset",
-      "recommendation_reason": "No directly actionable electrical or mechanical maintenance example met the transparent evidence rule in this bounded subset.",
-      "application_eligibility": "not_established_from_bounded_evidence",
+      "interview_recommendation": "consider_interview",
+      "recommendation_reason": "At least one directly cited plant-maintenance example is present, but the bounded evidence is too narrow for a stronger recommendation.",
+      "application_eligibility": "plausible_but_essential_evidence_incomplete",
       "mobilisation_readiness": "not_established",
-      "relevant_experience": [],
+      "relevant_experience": [
+        {
+          "entry_id": "CL009097",
+          "date": "2021-08-23",
+          "text": "Rebuilt the clockwork drive, cleaned forty years of gum out of the train.",
+          "station": "Tullaghmore Lighthouse",
+          "categories": [
+            "mechanical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#48076",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#48076",
+            "format": "era3",
+            "resolved": true,
+            "resolution": "physical_csv_row_including_header",
+            "raw_keeper_name": "0011721",
+            "raw_activity": "AIDS-TO-NAV",
+            "attribution_match": null
+          },
+          "selection_score": 3
+        },
+        {
+          "entry_id": "CL007505",
+          "date": "2016-05-27",
+          "text": "Lamp changer stepping twice, dismantled the ratchet and dressed the pawl faces.",
+          "station": "Tullaghmore Lighthouse",
+          "categories": [
+            "mechanical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#25724",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#25724",
+            "format": "era3",
+            "resolved": true,
+            "resolution": "physical_csv_row_including_header",
+            "raw_keeper_name": "Tomaltach Yarrowfell",
+            "raw_activity": "Lamp changer stepping twice, dismantled the ratchet and dressed the pawl faces.",
+            "attribution_match": null
+          },
+          "selection_score": 3
+        },
+        {
+          "entry_id": "CL005994",
+          "date": "2012-02-13",
+          "text": "Drive motor brushes and commutator dressed, rotation back to time.",
+          "station": "Nevisbeg Skerry",
+          "categories": [
+            "mechanical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2012.DAT#001585",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era2-keeperlog/KLOG2012.DAT#001585",
+            "format": "era2",
+            "resolved": true,
+            "resolution": "file_and_record_id",
+            "raw_keeper": "K1200",
+            "raw_keeper_name": "YARROWFELL T",
+            "raw_activity": "Drive motor brushes and commutator dressed, rotation back to time.",
+            "attribution_match": true
+          },
+          "selection_score": 3
+        }
+      ],
       "supplementary_evidence": [],
-      "experience_categories": [],
+      "experience_categories": [
+        "mechanical"
+      ],
       "credential_claims": [
         {
           "record_id": "LH502291",
@@ -7831,22 +7919,22 @@
           "selection_score": 3
         },
         {
-          "entry_id": "CL002191",
-          "date": "2000-04-17",
-          "text": "Filter changed on the power pack.",
+          "entry_id": "CL002447",
+          "date": "2001-04-17",
+          "text": "Compressor not making pressure, rings worn. Rebuilt the no.2 cylinder.",
           "station": "Fionnvarra Stack",
           "categories": [
             "mechanical"
           ],
           "clean_source": "clean/logbook_entries.json",
-          "source_reference": "raw/logbooks/era1-ocr/fionnvarra-2000.txt#L254",
+          "source_reference": "raw/logbooks/era1-ocr/fionnvarra-2001.txt#L160",
           "attribution": "clean_manual_attribution",
           "raw_corroboration": {
-            "reference": "raw/logbooks/era1-ocr/fionnvarra-2000.txt#L254",
+            "reference": "raw/logbooks/era1-ocr/fionnvarra-2001.txt#L160",
             "format": "era1",
             "resolved": true,
             "resolution": "physical_line",
-            "raw_excerpt": "U.Mac Bruachail — Filer cang,e on the power pack ,"
+            "raw_excerpt": "PK Mac Bruachail — Compressor not making pressure, rings worn. Rebuilt the no.2 cylinder."
           },
           "selection_score": 3
         }
@@ -7998,6 +8086,29 @@
           "selection_score": 3
         },
         {
+          "entry_id": "CL007040",
+          "date": "2014-12-01",
+          "text": "Load tested the winch and the landing gear to the annual figure and certified the log.",
+          "station": "Uaigneas Holm",
+          "categories": [
+            "mechanical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2014.DAT#005749",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era2-keeperlog/KLOG2014.DAT#005749",
+            "format": "era2",
+            "resolved": true,
+            "resolution": "file_and_record_id",
+            "raw_keeper": "K1345",
+            "raw_keeper_name": "O HIARNAIN D",
+            "raw_activity": "Load tested the winch and the landing gear to the annual figure and certified the log.",
+            "attribution_match": true
+          },
+          "selection_score": 3
+        },
+        {
           "entry_id": "CL006199",
           "date": "2012-08-26",
           "text": "Bled the fuel system after the filter change.",
@@ -8039,29 +8150,6 @@
             "raw_keeper": "K1345",
             "raw_keeper_name": "Ó HIARNÁIN D",
             "raw_activity": "Gearbox stripped on the winch, 2 teeth found broken. Replaced the wheel.",
-            "attribution_match": true
-          },
-          "selection_score": 3
-        },
-        {
-          "entry_id": "CL004370",
-          "date": "2007-09-23",
-          "text": "Changed oil and filters on no.1.",
-          "station": "Dunsaille Head",
-          "categories": [
-            "mechanical"
-          ],
-          "clean_source": "clean/logbook_entries.json",
-          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2007.DAT#009222",
-          "attribution": "clean_manual_attribution",
-          "raw_corroboration": {
-            "reference": "raw/logbooks/era2-keeperlog/KLOG2007.DAT#009222",
-            "format": "era2",
-            "resolved": true,
-            "resolution": "file_and_record_id",
-            "raw_keeper": "K1345",
-            "raw_keeper_name": "Ó HIARNÁIN D",
-            "raw_activity": "Changed oil and filters on no.1.",
             "attribution_match": true
           },
           "selection_score": 3
@@ -8321,6 +8409,28 @@
           "selection_score": 6
         },
         {
+          "entry_id": "CL009700",
+          "date": "2023-09-16",
+          "text": "Repaired the derrick luffing gear, new pin and bush turned up on station.",
+          "station": "Varrasay Island",
+          "categories": [
+            "mechanical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#22883",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#22883",
+            "format": "era3",
+            "resolved": true,
+            "resolution": "physical_csv_row_including_header",
+            "raw_keeper_name": "982128",
+            "raw_activity": "MECHANICAL",
+            "attribution_match": null
+          },
+          "selection_score": 3
+        },
+        {
           "entry_id": "CL009245",
           "date": "2022-01-28",
           "text": "Filter changed on the power pack.",
@@ -8361,29 +8471,6 @@
             "raw_keeper_name": "0011920",
             "raw_activity": "ELECTRICAL",
             "attribution_match": null
-          },
-          "selection_score": 3
-        },
-        {
-          "entry_id": "CL005236",
-          "date": "2010-02-20",
-          "text": "Bled the fuel system after the filter change.",
-          "station": "Lerravoe Eilean",
-          "categories": [
-            "mechanical"
-          ],
-          "clean_source": "clean/logbook_entries.json",
-          "source_reference": "raw/logbooks/era2-keeperlog/KLOG2010.DAT#001792",
-          "attribution": "clean_manual_attribution",
-          "raw_corroboration": {
-            "reference": "raw/logbooks/era2-keeperlog/KLOG2010.DAT#001792",
-            "format": "era2",
-            "resolved": true,
-            "resolution": "file_and_record_id",
-            "raw_keeper": "K1363",
-            "raw_keeper_name": "ENFARROW U",
-            "raw_activity": "Bled the fuel system after the filter change.",
-            "attribution_match": true
           },
           "selection_score": 3
         }
@@ -10395,11 +10482,33 @@
       "name_ascii": "Eachann O Preachain",
       "cohort_status": "current_redeployment_cohort",
       "as_of": "2026-10-11",
-      "interview_recommendation": "consider_interview",
-      "recommendation_reason": "At least one directly cited plant-maintenance example is present, but the bounded evidence is too narrow for a stronger recommendation.",
+      "interview_recommendation": "recommend_interview",
+      "recommendation_reason": "The bounded records contain multiple directly cited maintenance examples, including diagnostic or cross-discipline evidence. Interview is warranted; competence is not inferred.",
       "application_eligibility": "plausible_but_essential_evidence_incomplete",
       "mobilisation_readiness": "not_established",
       "relevant_experience": [
+        {
+          "entry_id": "CL007775",
+          "date": "2017-04-19",
+          "text": "Compressor not making pressure, rings worn. Rebuilt the No.1 cylinder.",
+          "station": "Prollaghan Lighthouse",
+          "categories": [
+            "mechanical"
+          ],
+          "clean_source": "clean/logbook_entries.json",
+          "source_reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#37579",
+          "attribution": "clean_manual_attribution",
+          "raw_corroboration": {
+            "reference": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#37579",
+            "format": "era3",
+            "resolved": true,
+            "resolution": "physical_csv_row_including_header",
+            "raw_keeper_name": "Eachann O Preachain",
+            "raw_activity": "Compressor not making pressure, rings worn. Rebuilt the No.1 cylinder.",
+            "attribution_match": null
+          },
+          "selection_score": 3
+        },
         {
           "entry_id": "CL001023",
           "date": "1995-07-11",

@@ -20,6 +20,7 @@ The build benefited from treating AI output as a draft to be checked against sou
 2. The first independent check treated two DAT keeper-key mismatches as importer failures. The audit shows that clean/manual attribution sometimes adds identity information to raw K8xxx/`UNKNOWN` records. I changed the answer and QA to preserve both claims: the activity resolves, but the raw key does not independently corroborate the clean person assignment.
 3. A role-focused training filter initially hid K1200's future ANSM-C record. I changed future handling so every later LearnHub row is separated and visible even when its module is not a role gate.
 4. The generic work-text rule did not select K1538's exact 11 kV sentence because its wording lacks the rule's usual action/plant vocabulary. I added the predeclared CL006360 hand-check beside the curated manager note and kept the explicit non-authorisation limitation.
+5. The final profile sanity pass showed that the action vocabulary missed irregular and trade-specific wording such as “rebuilt” and “dressed,” which hid K1200's motor and clockwork maintenance. I added those explicit verbs and regenerated the whole answer rather than manually changing that person's result.
 
 These corrections are why the QA program is separate from the evaluator and why the ten representative cases were specified before the build.
 

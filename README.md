@@ -12,9 +12,9 @@ The bounded run produced:
 
 | Result | Profiles |
 |---|---:|
-| Recommend interview | 36 |
+| Recommend interview | 37 |
 | Consider interview | 1 |
-| Insufficient relevant evidence in this subset | 1 |
+| Insufficient relevant evidence in this subset | 0 |
 | Leaver outside the current cohort | 2 |
 
 The result is deliberately generous at the interview stage because the posting says the employer would rather train suitable people than screen only for existing certificates. It is deliberately conservative about eligibility and mobilisation: **no profile is declared competent, authorised, fully eligible, or mobilisation-ready.** Medical fitness, current safety coverage, willingness to work at height/on vessels, and employer practical assessment remain explicit checks.
@@ -57,7 +57,7 @@ Run independent QA separately after generation:
   --report output\qa_report.json
 ```
 
-The submitted QA run passed **1,505/1,505 checks**, including the ten cases defined before implementation. The QA program reads the ZIP and output directly and never imports the evaluator or repeats its recommendation score.
+The submitted QA run passed **1,530/1,530 checks**, including the ten cases defined before implementation. The QA program reads the ZIP and output directly and never imports the evaluator or repeats its recommendation score.
 
 ## What the output means
 

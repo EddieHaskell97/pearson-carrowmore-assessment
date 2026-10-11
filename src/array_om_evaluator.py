@@ -44,6 +44,7 @@ ACTION_RE = re.compile(
     r"strip(?:ped|ping)?|adjust(?:ed|ing)?|trace(?:d|ing)?|diagnos(?:e|ed|ing)|"
     r"isolat(?:e|ed|ing)|greas(?:e|ed|ing)|fit(?:ted|ting)?|chang(?:e|ed|ing)|"
     r"overhaul(?:ed|ing)?|calibrat(?:e|ed|ing)|tighten(?:ed|ing)?|rewir(?:e|ed|ing)|"
+    r"rebuild(?:s|ing)?|rebuilt|dismantl(?:e|ed|ing)|dress(?:ed|ing)|align(?:ed|ing)|"
     r"investigat(?:e|ed|ing)|fault[- ]?find(?:ing)?|clean(?:ed|ing)?)\b",
     re.I,
 )
@@ -57,7 +58,8 @@ CATEGORY_PATTERNS = {
     ),
     "mechanical": re.compile(
         r"\b(engine|generator|pump|motor|compressor|hydraulic|bearing|shaft|fuel|oil|"
-        r"filter|belt|gearbox|valve|cooling|lubrication|lubricated|fan)\b",
+        r"filter|belt|gearbox|gear|drive|ratchet|commutator|clockwork|valve|cooling|"
+        r"lubrication|lubricated|fan)\b",
         re.I,
     ),
     "fault_finding": re.compile(
