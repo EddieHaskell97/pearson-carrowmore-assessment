@@ -14,62 +14,62 @@ Requirement provenance: the O&M posting requires hands-on mechanical **or** elec
 
 | ID / name | Decision | Strongest evidence | Main uncertainty | Immediate next action |
 |---|---|---|---|---|
-| K0147 / Coilean O Caomhthaigh | `supported_technical_interview` | CL010280, CL009116, AP000081 | Adverse testimony retained for interview: AP000079, AP000084, AP000086 | Structured technical interview |
-| K0184 / Bearach Ormlaithe | `supported_technical_interview` | CL010442, CL010068 | Adverse testimony retained for interview: AP000189, AP000198, AP000201 | Structured technical interview |
-| K0274 / Iarlaith O Niallghusa | `supported_technical_interview` | CL003354, CL010515 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
-| K0303 / Ambrosan O Lachtnain | `supported_technical_interview` | CL009302, CL008870, AP000551 | Adverse testimony retained for interview: AP000556, AP000561, AP000562, AP000564 | Structured technical interview |
+| K0147 / Coilean O Caomhthaigh | `supported_technical_interview` | CL010280, CL009116, AP000079 | Adverse testimony retained for interview: AP000079, AP000084, AP000086, AP000087, AP000088 | Structured technical interview |
+| K0184 / Bearach Ormlaithe | `supported_technical_interview` | CL010442, CL010068, AP000189 | Adverse testimony retained for interview: AP000189, AP000198, AP000201 | Structured technical interview |
+| K0274 / Iarlaith O Niallghusa | `supported_technical_interview` | CL003354, CL010515, AP000490 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
+| K0303 / Ambrosan O Lachtnain | `supported_technical_interview` | CL009302, CL008870, AP000550 | Adverse testimony retained for interview: AP000550, AP000552, AP000556, AP000560, AP000561, AP000562, AP000564 | Structured technical interview |
 | K0310 / Gearalt O hEidhneain | `supported_technical_interview` | CL006179, CL005658 | Historical evidence only; logs end 2012 and no keyed appraisal | Structured technical interview |
-| K0354 / Quillan O Fuarain | `supported_technical_interview` | CL007773, CL005691, AP000750 | Adverse testimony retained for interview: AP000752, AP000753 | Structured technical interview |
-| K0371 / Cianan Mac Lanngail | `supported_technical_interview` | CL010343, CL006460, AP000798 | Competence and mobilisation remain unestablished | Structured technical interview |
-| K0394 / Lugharn O Neascan | `supported_technical_interview` | CL009886, CL009816, AP000863 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
+| K0354 / Quillan O Fuarain | `supported_technical_interview` | CL007773, CL005691, AP000743 | Adverse testimony retained for interview: AP000752, AP000753 | Structured technical interview |
+| K0371 / Cianan Mac Lanngail | `supported_technical_interview` | CL010343, CL006460, AP000797 | Adverse testimony retained for interview: AP000798, AP000799 | Structured technical interview |
+| K0394 / Lugharn O Neascan | `supported_technical_interview` | CL009886, CL009816, AP000862 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
 | K0478 / Ossian O Raghnaill | `targeted_screening_first` | CL010541, CL010398, AP001157 | Material core contradiction: AP001159, AP001160, AP001162, AP001165 | Targeted evidence screen |
-| K0482 / Tadhgan Mac Deargain | `supported_technical_interview` | CL010082, CL009526, AP001188 | Competence and mobilisation remain unestablished | Structured technical interview |
-| K0525 / Hugheen Mordaunley | `supported_technical_interview` | CL010216, CL007269 | Adverse testimony retained for interview: AP001352, AP001353 | Structured technical interview |
+| K0482 / Tadhgan Mac Deargain | `supported_technical_interview` | CL010082, CL009526, AP001186 | Competence and mobilisation remain unestablished | Structured technical interview |
+| K0525 / Hugheen Mordaunley | `supported_technical_interview` | CL010216, CL007269, AP001349 | Adverse testimony retained for interview: AP001352, AP001353 | Structured technical interview |
 | K0561 / Muirgheal Holmthwaite | `supported_technical_interview` | CL008741, CL008494, AP001428 | Adverse testimony retained for interview: AP001433 | Structured technical interview |
-| K0566 / Garbhan O Riagain | `supported_technical_interview` | CL010043, CL002799 | Competence and mobilisation remain unestablished | Structured technical interview |
+| K0566 / Garbhan O Riagain | `supported_technical_interview` | CL010043, CL002799, AP001447 | Competence and mobilisation remain unestablished | Structured technical interview |
 | K0586 / Gealbhan Nethercarn | `supported_technical_interview` | CL002089, CL006901 | Competence and mobilisation remain unestablished | Structured technical interview |
-| K0589 / Eachann Westrayne | `supported_technical_interview` | CL007592, CL008681 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
-| K0592 / Fergal Mac Eibhleain | `supported_technical_interview` | CL008207, CL008184, AP001555 | Competence and mobilisation remain unestablished | Structured technical interview |
-| K0641 / Eimhreann Nic Gormghaile | `supported_technical_interview` | CL009728, CL008068 | Competence and mobilisation remain unestablished | Structured technical interview |
+| K0589 / Eachann Westrayne | `supported_technical_interview` | CL007592, CL008681, AP001527 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
+| K0592 / Fergal Mac Eibhleain | `supported_technical_interview` | CL008207, CL008184, AP001555 | Adverse testimony retained for interview: AP001559, AP001560, AP001562 | Structured technical interview |
+| K0641 / Eimhreann Nic Gormghaile | `supported_technical_interview` | CL009728, CL008068, AP001695 | Adverse testimony retained for interview: AP001691 | Structured technical interview |
 | K0650 / Duaghal Mac Ualghairg | `supported_technical_interview` | CL003088, CL002876, AP001712 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
 | K0663 / Lugharn O Niallghusa | `supported_technical_interview` | CL010451, CL009806 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
-| K0664 / Bruaigh O Braoscan | `supported_technical_interview` | CL009911, CL009694, AP001767 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
-| K0817 / Odhran O Luachra | `supported_technical_interview` | CL009476, CL008628 | Adverse testimony retained for interview: AP002219, AP002225, AP002230 | Structured technical interview |
-| K0847 / Aoife Ni Mhurchu | `supported_technical_interview` | CL007701, CL001792, AP002309 | Competence and mobilisation remain unestablished | Structured technical interview |
-| K0897 / Bearach Mac Teallach | `supported_technical_interview` | CL009512, CL008869 | Adverse testimony retained for interview: AP002492 | Structured technical interview |
+| K0664 / Bruaigh O Braoscan | `supported_technical_interview` | CL009911, CL009694, AP001763 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
+| K0817 / Odhran O Luachra | `supported_technical_interview` | CL009476, CL008628, AP002220 | Adverse testimony retained for interview: AP002219, AP002225, AP002230 | Structured technical interview |
+| K0847 / Aoife Ni Mhurchu | `supported_technical_interview` | CL007701, CL001792, AP002307 | Competence and mobilisation remain unestablished | Structured technical interview |
+| K0897 / Bearach Mac Teallach | `supported_technical_interview` | CL009512, CL008869, AP002482 | Adverse testimony retained for interview: AP002481, AP002489, AP002492 | Structured technical interview |
 | K1055 / Tailte Ni Chuirrin | `supported_technical_interview` | CL000604, CL003053 | Competence and mobilisation remain unestablished | Structured technical interview |
 | K1200 / Tomaltach Yarrowfell | `targeted_screening_first` | CL005994, CL007505 | Material core contradiction: AP003496 | Targeted evidence screen |
-| K1231 / Joachima Ulverstane | `supported_technical_interview` | CL010239, CL010135, AP003567 | Adverse testimony retained for interview: AP003564, AP003566, AP003571 | Structured technical interview |
+| K1231 / Joachima Ulverstane | `supported_technical_interview` | CL010239, CL010135, AP003563 | Adverse testimony retained for interview: AP003564, AP003566, AP003571, AP003572 | Structured technical interview |
 | K1281 / Fearghal Nethercarn | `supported_technical_interview` | CL001465, CL008233 | Competence and mobilisation remain unestablished | Structured technical interview |
 | K1302 / Uaithne Mac Bruachail | `supported_technical_interview` | CL004774, CL004522 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
 | K1345 / Dualta O hIarnain | `supported_technical_interview` | CL008356, CL007631, AP003865 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
-| K1363 / Ualaith Enfarrow | `supported_technical_interview` | CL002712, CL001473 | Competence and mobilisation remain unestablished | Structured technical interview |
-| K1374 / Aodhan O hAghmoir | `supported_technical_interview` | CL010173, CL008335 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
+| K1363 / Ualaith Enfarrow | `supported_technical_interview` | CL002712, CL001473, AP003920 | Competence and mobilisation remain unestablished | Structured technical interview |
+| K1374 / Aodhan O hAghmoir | `supported_technical_interview` | CL010173, CL008335, AP003951 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
 | K1418 / Hurlan O Failbhe | `supported_technical_interview` | CL003361, CL004517 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
-| K1446 / Kelveen Sellanby | `supported_technical_interview` | CL010352, CL010079 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
-| K1468 / Ruadhan O Niallghusa | `supported_technical_interview` | CL003121, CL000944 | Adverse testimony retained for interview: AP004219 | Structured technical interview |
-| K1474 / Ossian Mac Domhnallain | `supported_technical_interview` | CL006207, CL007339 | Competence and mobilisation remain unestablished | Structured technical interview |
-| K1483 / Eachann O Preachain | `supported_technical_interview` | CL007775, CL001023 | Adverse testimony retained for interview: AP004258 | Structured technical interview |
-| K1511 / Jarlath Drenmore | `supported_technical_interview` | CL010534, CL009253, AP004320 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
-| K1538 / Oileann Ni Gharbhail | `supported_technical_interview` | CL007686, CL007420, AP004418 | Adverse testimony retained for interview: AP004422 | Structured technical interview |
+| K1446 / Kelveen Sellanby | `supported_technical_interview` | CL010352, CL010079, AP004145 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
+| K1468 / Ruadhan O Niallghusa | `supported_technical_interview` | CL003121, CL000944, AP004221 | Adverse testimony retained for interview: AP004219 | Structured technical interview |
+| K1474 / Ossian Mac Domhnallain | `supported_technical_interview` | CL006207, CL007339, AP004227 | Adverse testimony retained for interview: AP004229, AP004233, AP004235 | Structured technical interview |
+| K1483 / Eachann O Preachain | `supported_technical_interview` | CL007775, CL001023 | Adverse testimony retained for interview: AP004256, AP004258 | Structured technical interview |
+| K1511 / Jarlath Drenmore | `supported_technical_interview` | CL010534, CL009253, AP004314 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
+| K1538 / Oileann Ni Gharbhail | `supported_technical_interview` | CL007686, CL007420, AP004418 | Adverse testimony retained for interview: AP004419, AP004422 | Structured technical interview |
 
 ## Detailed evidence
 
 ## K0147 — Coilean O Caomhthaigh
 
-- Interview: `supported_technical_interview` — CL010280 (2025-09-17) records "Traced the nuisance low-volt alarm to a soft cell in the no 1 bank, replaced it."; CL009116 (2021-09-10) records "Changed oil and filters on no.3.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP000079, AP000084, AP000086 is retained with positive testimony in AP000081; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL010280 (2025-09-17) records "Traced the nuisance low-volt alarm to a soft cell in the no 1 bank, replaced it."; CL009116 (2021-09-10) records "Changed oil and filters on no.3.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP000079, AP000084, AP000086, AP000087, AP000088 is retained with positive testimony in AP000079, AP000081, AP000089; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL010280, CL009116
-- Selected positive testimony: AP000081
-- Selected adverse testimony: AP000079, AP000084, AP000086
+- Selected positive testimony: AP000079, AP000081, AP000089
+- Selected adverse testimony: AP000079, AP000084, AP000086, AP000087, AP000088
 - Relevant evidence categories: electrical, fault_finding, mechanical
 - Full clean log review: 305 rows; 9 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 14 exact keeper-code-keyed rows; 8 rows not selected by the appraisal filter.
+- Appraisal processing: 14 exact keeper-code-keyed rows mechanically processed; 6 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
-- Discuss the selected adverse testimony in AP000079, AP000084, AP000086 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+- Discuss the selected adverse testimony in AP000079, AP000084, AP000086, AP000087, AP000088 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
 
 Category support:
 
@@ -87,11 +87,13 @@ Evidence:
 
 Manager testimony selected as screening context:
 
-- 2008 (year precision) — The standard achieved in rope work falls below that expected of the grade. (AP000079; `raw/appraisals/appraisals.jsonl#AP000079`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
-- 2010 (year precision) — Section A: Performance It is noted that Coilean has maintained a proper standard in the abseil inspections. (AP000081; `raw/appraisals/appraisals.jsonl#AP000081`; support: good_standard). Manager testimony only, not competence or authorisation.
+- 2008 (year precision) — Section A: Performance Annual objective relating to the standby banks closed as achieved. / The standard achieved in rope work falls below that expected of the grade. (AP000079; `raw/appraisals/appraisals.jsonl#AP000079`; support: objective_achieved; concern: below_expected_standard; decision-neutral context: technical_objective). Manager testimony only, not competence or authorisation.
+- 2010 (year precision) — Section A: Performance It is noted that Coilean has maintained a proper standard in the abseil inspections. / The standard achieved in the batteries is considered acceptable for the grade. / Supporting observation: rope work. (AP000081; `raw/appraisals/appraisals.jsonl#AP000081`; support: acceptable_for_grade, good_standard; decision-neutral context: framework_or_evidence_reference). Manager testimony only, not competence or authorisation.
 - 2014 (year precision) — The standard achieved in the batteries falls below that expected of the grade. (AP000084; `raw/appraisals/appraisals.jsonl#AP000084`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
 - 2017 (year precision) — rope work has to be checked behind him. (AP000086; `raw/appraisals/appraisals.jsonl#AP000086`; concern: work_checked_behind). Manager testimony only, not competence or authorisation.
-- 2018 (year precision) — There is a habit of mind here that is worth writing down: Coilean will not leave the standby banks half done. (AP000087; `raw/appraisals/appraisals.jsonl#AP000087`; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
+- 2018 (year precision) — There is a habit of mind here that is worth writing down: Coilean will not leave the standby banks half done. / The difficulty this year has been the batteries, and I do not think it is want of effort. (AP000087; `raw/appraisals/appraisals.jsonl#AP000087`; concern: slow_or_difficult_start; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
+- 2020 (year precision) — Told him twice about the abseil inspections. (AP000088; `raw/appraisals/appraisals.jsonl#AP000088`; concern: directed_more_than_once). Manager testimony only, not competence or authorisation.
+- 2021 (year precision) — the standby banks done properly and no shortcuts. (AP000089; `raw/appraisals/appraisals.jsonl#AP000089`; support: performed_properly). Manager testimony only, not competence or authorisation.
 - 2022 (year precision) — There is a habit of mind here that is worth writing down: Coilean will not leave rope work half done. (AP000090; `raw/appraisals/appraisals.jsonl#AP000090`; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
 
 Limitations:
@@ -104,7 +106,7 @@ Credential position:
 - Dated Pass: MECS-5, completed 2023-09-10, supplied expiry 2028-05-25 (`raw/training/vendor-c-learnhub-2017-2026.json#LH500049`).
 - MECS-1: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500045`).
 - HVAP-02: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500046`).
-- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 1; later modules do not bridge missing earlier stages.
+- Conflict `consecutive_stage_not_established`: The supplied records establish a documented consecutive sequence through MECS-1; later recorded modules do not establish MECS-2. This does not determine the person's actual awarded stage.
 
 Initial selection action:
 
@@ -122,15 +124,15 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K0184 — Bearach Ormlaithe
 
-- Interview: `supported_technical_interview` — CL010442 (2026-05-07) records "Set the timing on No.2 after the pump was refitted, ran it up and checked exhaust temps."; CL010068 (2024-12-05) records "Lamp not lit, found the fuse gone. Renewed.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP000189, AP000198, AP000201 is retained with positive testimony; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL010442 (2026-05-07) records "Set the timing on No.2 after the pump was refitted, ran it up and checked exhaust temps."; CL010068 (2024-12-05) records "Lamp not lit, found the fuse gone. Renewed.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP000189, AP000198, AP000201 is retained with positive testimony in AP000189, AP000193, AP000196; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL010442, CL010068
-- Selected positive testimony: none selected
+- Selected positive testimony: AP000189, AP000193, AP000196
 - Selected adverse testimony: AP000189, AP000198, AP000201
 - Relevant evidence categories: electrical, mechanical
 - Full clean log review: 368 rows; 8 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 16 exact keeper-code-keyed rows; 13 rows not selected by the appraisal filter.
+- Appraisal processing: 16 exact keeper-code-keyed rows mechanically processed; 11 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
@@ -151,9 +153,11 @@ Evidence:
 
 Manager testimony selected as screening context:
 
-- 2008 (year precision) — Attention is drawn to a recurring shortfall in the engines. (AP000189; `raw/appraisals/appraisals.jsonl#AP000189`; concern: recurring_shortfall). Manager testimony only, not competence or authorisation.
+- 2008 (year precision) — Attention is drawn to a recurring shortfall in the engines. / Duties associated with the plant have been discharged without adverse comment. (AP000189; `raw/appraisals/appraisals.jsonl#AP000189`; support: without_adverse_comment; concern: recurring_shortfall). Manager testimony only, not competence or authorisation.
+- 2013 (year precision) — Good on the ironwork. (AP000193; `raw/appraisals/appraisals.jsonl#AP000193`; support: positive_short_form). Manager testimony only, not competence or authorisation.
+- 2017 (year precision) — Ormlaithe continues to apply themselves appropriately to the ironwork. / No formal ticket for the ironwork, which is an administrative matter rather than a capability one. (AP000196; `raw/appraisals/appraisals.jsonl#AP000196`; support: positive_application; decision-neutral context: ticket_administration). Manager testimony only, not competence or authorisation.
 - 2020 (year precision) — Weak on the engines. (AP000198; `raw/appraisals/appraisals.jsonl#AP000198`; concern: weakness). Manager testimony only, not competence or authorisation.
-- 2023 (year precision) — REVIEW 2023 Needs supervision on the ironwork. (AP000201; `raw/appraisals/appraisals.jsonl#AP000201`; concern: needs_supervision). Manager testimony only, not competence or authorisation.
+- 2023 (year precision) — REVIEW 2023 Needs supervision on the ironwork. / Attended the district course in the ironwork, though I am told the paperwork never came back. (AP000201; `raw/appraisals/appraisals.jsonl#AP000201`; concern: needs_supervision; decision-neutral context: technical_course_with_document_gap). Manager testimony only, not competence or authorisation.
 
 Limitations:
 
@@ -185,15 +189,15 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K0274 — Iarlaith O Niallghusa
 
-- Interview: `supported_technical_interview` — CL010515 (2026-08-07) records "Rebuilt the clockwork drive, cleaned forty years of gum out of the train."; CL010397 (2026-03-11) records "Tightened glands in the cable trunk by the stair.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP000489 is retained with positive testimony in AP000494; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL010515 (2026-08-07) records "Rebuilt the clockwork drive, cleaned forty years of gum out of the train."; CL010397 (2026-03-11) records "Tightened glands in the cable trunk by the stair.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP000489 is retained with positive testimony in AP000490, AP000494; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL010515, CL010397
-- Selected positive testimony: AP000494
+- Selected positive testimony: AP000490, AP000494
 - Selected adverse testimony: AP000489
 - Relevant evidence categories: electrical, fault_finding, mechanical
 - Full clean log review: 274 rows; 10 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 6 exact keeper-code-keyed rows; 4 rows not selected by the appraisal filter.
+- Appraisal processing: 6 exact keeper-code-keyed rows mechanically processed; 3 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
@@ -217,6 +221,7 @@ Evidence:
 Manager testimony selected as screening context:
 
 - 2006 (year precision) — Some deficiency has been noted in respect of the boards, which the keeper has been advised to address. (AP000489; `raw/appraisals/appraisals.jsonl#AP000489`; concern: specific_deficiency). Manager testimony only, not competence or authorisation.
+- 2009 (year precision) — Competent. / the distribution side in particular. (AP000490; `raw/appraisals/appraisals.jsonl#AP000490`; support: bounded_manual_competence_fragment). Manager testimony only, not competence or authorisation.
 - 2026 (year precision) — When the boards went wrong in the spring, Iarlaith was the one who sorted it out. (AP000494; `raw/appraisals/appraisals.jsonl#AP000494`; support: resolved_failure). Manager testimony only, not competence or authorisation.
 
 - Same-year timing uncertainty: AP000494 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
@@ -236,7 +241,7 @@ Credential position:
 - Expiry conflict: OSSC-FA Pass LH500295 supplies 2026-01-08 (expired at cutoff), while the nominal 4-year rule points to 2026-11-16 (current); issuer verification required (`raw/training/vendor-c-learnhub-2017-2026.json#LH500295`).
 - HVAP-03: Attended; `attended_not_passed` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500297`).
 - Conflict `expiry_rule_conflict`: At 2026-10-11, the supplied expiry says expired but the nominal scheme-rule date says current; issuer verification is required before relying on either date.
-- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 0; later modules do not bridge missing earlier stages.
+- Conflict `consecutive_stage_not_established`: The supplied records do not establish a consecutive Stage 1 award; later recorded modules do not fill that evidence gap. This describes the documented module sequence, not the person's actual awarded stage.
 
 Initial selection action:
 
@@ -254,19 +259,19 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K0303 — Ambrosan O Lachtnain
 
-- Interview: `supported_technical_interview` — CL009744 (2023-11-06) records "Rebuilt the clockwork drive, cleaned forty years of gum out of the train."; CL008870 (2020-11-15) records "Drive motor brushes and commutator dressed, rotation back to time.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP000556, AP000561, AP000562, AP000564 is retained with positive testimony in AP000551, AP000557; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL009744 (2023-11-06) records "Rebuilt the clockwork drive, cleaned forty years of gum out of the train."; CL008870 (2020-11-15) records "Drive motor brushes and commutator dressed, rotation back to time.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP000550, AP000552, AP000556, AP000560, AP000561, AP000562, AP000564 is retained with positive testimony in AP000550, AP000551, AP000554, AP000555, AP000557, AP000559, AP000561, AP000564; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL009744, CL008870
-- Selected positive testimony: AP000551, AP000557
-- Selected adverse testimony: AP000556, AP000561, AP000562, AP000564
+- Selected positive testimony: AP000550, AP000551, AP000554, AP000555, AP000557, AP000559, AP000561, AP000564
+- Selected adverse testimony: AP000550, AP000552, AP000556, AP000560, AP000561, AP000562, AP000564
 - Relevant evidence categories: electrical, fault_finding, mechanical
 - Full clean log review: 367 rows; 8 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 13 exact keeper-code-keyed rows; 6 rows not selected by the appraisal filter.
+- Appraisal processing: 13 exact keeper-code-keyed rows mechanically processed; 0 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
-- Discuss the selected adverse testimony in AP000556, AP000561, AP000562, AP000564 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+- Discuss the selected adverse testimony in AP000550, AP000552, AP000556, AP000560, AP000561, AP000562, AP000564 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
 - The permitted clean/manual attribution for CL009302 is not corroborated by the cited raw identifier; preserve that provenance limitation and do not use those rows alone.
 
 Category support:
@@ -285,13 +290,19 @@ Evidence:
 
 Manager testimony selected as screening context:
 
-- 2006 (year precision) — Ambrosan took on fault work without being asked and made a proper job of it. (AP000551; `raw/appraisals/appraisals.jsonl#AP000551`; support: made_proper_job). Manager testimony only, not competence or authorisation.
+- 2005 (year precision) — Quietly gets on with the AIS gear and gets it right. / A slow start on fault work, though much improved by the autumn. / Ambrosan would be the first to say chasing faults is not their strong suit, and we are working on it. (AP000550; `raw/appraisals/appraisals.jsonl#AP000550`; support: positive_application, positive_short_form; concern: slow_or_difficult_start, technical_not_strong_suit). Manager testimony only, not competence or authorisation.
+- 2006 (year precision) — Ambrosan took on fault work without being asked and made a proper job of it. / The younger men go to Ambrosan about the lamp and lens, which tells you everything. (AP000551; `raw/appraisals/appraisals.jsonl#AP000551`; support: made_proper_job, peer_reference). Manager testimony only, not competence or authorisation.
+- 2007 (year precision) — I have a concern about the aton telemetry that I do not want to overstate but will not leave unsaid. (AP000552; `raw/appraisals/appraisals.jsonl#AP000552`; concern: expressed_technical_concern). Manager testimony only, not competence or authorisation.
 - 2009 (year precision) — There is a habit of mind here that is worth writing down: Ambrosan will not leave the optic half done. (AP000553; `raw/appraisals/appraisals.jsonl#AP000553`; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
+- 2010 (year precision) — Performance in respect of the optic has been of a consistently satisfactory standard. / Attention to the AIS gear has been maintained throughout the reporting period. (AP000554; `raw/appraisals/appraisals.jsonl#AP000554`; support: maintained_or_within_tolerance, satisfactory_standard). Manager testimony only, not competence or authorisation.
+- 2011 (year precision) — Ó Lachtnain continues to apply themselves appropriately to the light itself. (AP000555; `raw/appraisals/appraisals.jsonl#AP000555`; support: positive_application). Manager testimony only, not competence or authorisation.
 - 2012 (year precision) — Needs supervision on diagnostics. (AP000556; `raw/appraisals/appraisals.jsonl#AP000556`; concern: needs_supervision). Manager testimony only, not competence or authorisation.
 - 2015 (year precision) — chasing faults to a good standard. (AP000557; `raw/appraisals/appraisals.jsonl#AP000557`; support: good_standard). Manager testimony only, not competence or authorisation.
-- 2019 (year precision) — the light itself needs work. (AP000561; `raw/appraisals/appraisals.jsonl#AP000561`; concern: needs_work). Manager testimony only, not competence or authorisation.
+- 2017 (year precision) — Competent. / the AIS gear in particular. (AP000559; `raw/appraisals/appraisals.jsonl#AP000559`; support: bounded_manual_competence_fragment). Manager testimony only, not competence or authorisation.
+- 2018 (year precision) — Told him twice about fault work. (AP000560; `raw/appraisals/appraisals.jsonl#AP000560`; concern: directed_more_than_once). Manager testimony only, not competence or authorisation.
+- 2019 (year precision) — fault work — no complaints. / the light itself needs work. / Holds the station authorisation for the light itself and it remains current. (AP000561; `raw/appraisals/appraisals.jsonl#AP000561`; support: without_adverse_comment; concern: needs_work; decision-neutral context: authorisation_status). Manager testimony only, not competence or authorisation.
 - 2021 (year precision) — Attention is drawn to a recurring shortfall in chasing faults. (AP000562; `raw/appraisals/appraisals.jsonl#AP000562`; concern: recurring_shortfall). Manager testimony only, not competence or authorisation.
-- 2023 (year precision) — Some deficiency has been noted in respect of the light itself, which the keeper has been advised to address. (AP000564; `raw/appraisals/appraisals.jsonl#AP000564`; concern: specific_deficiency). Manager testimony only, not competence or authorisation.
+- 2023 (year precision) — Some deficiency has been noted in respect of the light itself, which the keeper has been advised to address. / The keeper demonstrates an adequate working knowledge of diagnostics. (AP000564; `raw/appraisals/appraisals.jsonl#AP000564`; support: adequate_working_knowledge; concern: specific_deficiency). Manager testimony only, not competence or authorisation.
 
 Limitations:
 
@@ -330,7 +341,7 @@ Later qualification and mobilisation actions (only after selection progression):
 - Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, fault_finding, mechanical
 - Full clean log review: 320 rows; 5 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 0 exact keeper-code-keyed rows; 0 rows not selected by the appraisal filter.
+- Appraisal processing: 0 exact keeper-code-keyed rows mechanically processed; 0 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
@@ -352,6 +363,8 @@ Evidence:
 - 2001-05-13 — “Renewed fuse links, NO.2 way. All made off.” (CL002469; `raw/logbooks/era1-ocr/keimnalee-2001.txt#L162`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
 - 1994-03-25 — “Tightened glands in the cable trunk by the stair.” (CL000831; `raw/logbooks/era1-ocr/dunsaille-1994.txt#L163`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
 
+- Supplementary note: A 1993 Cnoclia note contains a damaged transcription naming Gearalt and saying the boards are the best in the district. Exact excerpt: “Gearalt is wasfe.d here. the boards is the best in the district and the stafioii does not need it.” (`raw/appraisals/station_manager_notes/1993-cnoclia-o-heidhneain.txt#L2`). The note body supplies the given name; the note's station/year context matches CNO:1993-1993 in the personnel row raw/personnel/cla_personnel_export.csv#L45, whose name is O HEIDHNEAIN G. The clean profile supplies the expanded name Gearalt Ó hEidhneain. Attribution uses those combined facts and not the filename alone. The supplied transcription is visibly corrupted and the technical meaning is not silently repaired. It is a historical interview lead, not proof of current practice, and it does not create an exact-code-keyed appraisal in appraisals.jsonl.
+
 Limitations:
 
 - `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
@@ -365,7 +378,7 @@ Credential position:
 - HVAP-04: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500366`).
 - MPMC-B: Attended; `attended_not_passed` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500367`).
 - HVAP-03: Attended; `attended_not_passed` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500368`).
-- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 0; later modules do not bridge missing earlier stages.
+- Conflict `consecutive_stage_not_established`: The supplied records do not establish a consecutive Stage 1 award; later recorded modules do not fill that evidence gap. This describes the documented module sequence, not the person's actual awarded stage.
 
 Initial selection action:
 
@@ -383,15 +396,15 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K0354 — Quillan O Fuarain
 
-- Interview: `supported_technical_interview` — CL007773 (2017-04-16) records "Tightened glands in the cable trunk by the stair."; CL004792 (2008-12-22) records "Ran No.2 set 0.5 hrs. Oil and water checked.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP000752, AP000753 is retained with positive testimony in AP000750; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL007773 (2017-04-16) records "Tightened glands in the cable trunk by the stair."; CL004792 (2008-12-22) records "Ran No.2 set 0.5 hrs. Oil and water checked.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP000752, AP000753 is retained with positive testimony in AP000743, AP000750, AP000752; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL007773, CL004792
-- Selected positive testimony: AP000750
+- Selected positive testimony: AP000743, AP000750, AP000752
 - Selected adverse testimony: AP000752, AP000753
 - Relevant evidence categories: electrical, mechanical
 - Full clean log review: 199 rows; 4 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 8 exact keeper-code-keyed rows; 5 rows not selected by the appraisal filter.
+- Appraisal processing: 8 exact keeper-code-keyed rows mechanically processed; 4 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
@@ -411,8 +424,9 @@ Evidence:
 
 Manager testimony selected as screening context:
 
+- 2005 (year precision) — Duties associated with the batteries have been discharged without adverse comment. (AP000743; `raw/appraisals/appraisals.jsonl#AP000743`; support: without_adverse_comment). Manager testimony only, not competence or authorisation.
 - 2013 (year precision) — It is noted that Quillan has maintained a proper standard in the standby banks. (AP000750; `raw/appraisals/appraisals.jsonl#AP000750`; support: good_standard). Manager testimony only, not competence or authorisation.
-- 2016 (year precision) — The standard achieved in defect reporting falls below that expected of the grade. (AP000752; `raw/appraisals/appraisals.jsonl#AP000752`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
+- 2016 (year precision) — The standard achieved in defect reporting falls below that expected of the grade. / Attention to the standby banks has been maintained throughout the reporting period. (AP000752; `raw/appraisals/appraisals.jsonl#AP000752`; support: maintained_or_within_tolerance; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
 - 2017 (year precision) — The standard achieved in inspection reports falls below that expected of the grade. (AP000753; `raw/appraisals/appraisals.jsonl#AP000753`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
 
 Limitations:
@@ -428,6 +442,7 @@ Credential position:
 - OSSC-FA: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500435`).
 - HVAP-03: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500434`).
 - Conflict `prerequisite_not_established`: A current OSSC-SS prerequisite is not established by the dated LearnHub rows supplied.
+- Conflict `clean_summary_detailed_module_disagreement`: The clean summary says this OSSC award is complete and valid in 2026 through 2030, while the latest supplied pre-cutoff detailed Pass for OSSC-FA (LH500435, expiry 2026-08-18) is expired at the scenario cutoff. Both source claims are preserved. Renewal or replacement evidence outside the supplied detailed records remains possible, so issuer verification is required and the award is not declared invalid.
 
 Initial selection action:
 
@@ -445,15 +460,19 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K0371 — Cianan Mac Lanngail
 
-- Interview: `supported_technical_interview` — CL010343 (2025-12-15) records "Checked continuity on the run to the fog hut."; CL010201 (2025-05-24) records "Changed oil and filters on no.3.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Positive testimony in AP000798 is an interview lead, not proof of competence. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL010343 (2025-12-15) records "Checked continuity on the run to the fog hut."; CL010201 (2025-05-24) records "Changed oil and filters on no.3.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP000798, AP000799 is retained with positive testimony in AP000797, AP000798; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL010343, CL010201
-- Selected positive testimony: AP000798
-- Selected adverse testimony: none selected
+- Selected positive testimony: AP000797, AP000798
+- Selected adverse testimony: AP000798, AP000799
 - Relevant evidence categories: electrical, fault_finding, mechanical
 - Full clean log review: 227 rows; 7 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 3 exact keeper-code-keyed rows; 1 row not selected by the appraisal filter.
+- Appraisal processing: 3 exact keeper-code-keyed rows mechanically processed; 0 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
+
+Unresolved questions retained for selection:
+
+- Discuss the selected adverse testimony in AP000798, AP000799 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
 
 Category support:
 
@@ -472,8 +491,9 @@ Evidence:
 
 Manager testimony selected as screening context:
 
-- 2024 (year precision) — Over the year Cianan has quietly become the station's go-to for the HV authorisation work. (AP000798; `raw/appraisals/appraisals.jsonl#AP000798`; support: go_to_person). Manager testimony only, not competence or authorisation.
-- 2025 (year precision) — About Cianan, 2025: There is a habit of mind here that is worth writing down: Cianan will not leave isolations on the 11kV half done. (AP000799; `raw/appraisals/appraisals.jsonl#AP000799`; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
+- 2013 (year precision) — Performance in respect of the HV authorisation work has been of a consistently satisfactory standard. / The thing I would put on record about Cianan is the winch. (AP000797; `raw/appraisals/appraisals.jsonl#AP000797`; support: satisfactory_standard; decision-neutral context: recorded_technical_observation). Manager testimony only, not competence or authorisation.
+- 2024 (year precision) — I have a concern about the winch that I do not want to overstate but will not leave unsaid. / Over the year Cianan has quietly become the station's go-to for the HV authorisation work. (AP000798; `raw/appraisals/appraisals.jsonl#AP000798`; support: go_to_person; concern: expressed_technical_concern). Manager testimony only, not competence or authorisation.
+- 2025 (year precision) — About Cianan, 2025: There is a habit of mind here that is worth writing down: Cianan will not leave isolations on the 11kV half done. / A slow start on diagnostics, though much improved by the autumn. (AP000799; `raw/appraisals/appraisals.jsonl#AP000799`; concern: slow_or_difficult_start; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
 
 Limitations:
 
@@ -490,7 +510,7 @@ Credential position:
 - OSSC-CS: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500469`).
 - OSSC-FF: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500470`).
 - MPMC-C: Attended; `attended_not_passed` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500472`).
-- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 1; later modules do not bridge missing earlier stages.
+- Conflict `consecutive_stage_not_established`: The supplied records establish a documented consecutive sequence through MECS-1; later recorded modules do not establish MECS-2. This does not determine the person's actual awarded stage.
 
 Initial selection action:
 
@@ -508,19 +528,19 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K0394 — Lugharn O Neascan
 
-- Interview: `supported_technical_interview` — CL009886 (2024-04-09) records "Renewed fuse links, no.3 way. All made off."; CL009816 (2024-02-06) records "Bled the fuel system after the filter change.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP000862 is retained with positive testimony in AP000863, AP000865; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL009886 (2024-04-09) records "Renewed fuse links, no.3 way. All made off."; CL009816 (2024-02-06) records "Bled the fuel system after the filter change.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP000862, AP000865 is retained with positive testimony in AP000862, AP000863, AP000864, AP000865; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL009886, CL009816
-- Selected positive testimony: AP000863, AP000865
-- Selected adverse testimony: AP000862
+- Selected positive testimony: AP000862, AP000863, AP000864, AP000865
+- Selected adverse testimony: AP000862, AP000865
 - Relevant evidence categories: electrical, mechanical
 - Full clean log review: 325 rows; 5 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 4 exact keeper-code-keyed rows; 1 row not selected by the appraisal filter.
+- Appraisal processing: 4 exact keeper-code-keyed rows mechanically processed; 0 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
-- Discuss the selected adverse testimony in AP000862 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+- Discuss the selected adverse testimony in AP000862, AP000865 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
 - Appraisals AP000865 have year-only 2026 dates, so their position relative to 2026-10-11 is unknown and they remain context only.
 
 Category support:
@@ -538,9 +558,10 @@ Evidence:
 
 Manager testimony selected as screening context:
 
-- 2020 (year precision) — Attention is drawn to a recurring shortfall in work on the gallery. (AP000862; `raw/appraisals/appraisals.jsonl#AP000862`; concern: recurring_shortfall). Manager testimony only, not competence or authorisation.
-- 2024 (year precision) — Over the year Lugharn has quietly become the station's go-to for height work. (AP000863; `raw/appraisals/appraisals.jsonl#AP000863`; support: go_to_person). Manager testimony only, not competence or authorisation.
-- 2026 (year precision) — It is noted that Lugharn has maintained a proper standard in height work. (AP000865; `raw/appraisals/appraisals.jsonl#AP000865`; support: good_standard). Manager testimony only, not competence or authorisation.
+- 2020 (year precision) — Ó Neascan continues to apply themselves appropriately to the light itself. / Attention is drawn to a recurring shortfall in work on the gallery. / I have a concern about the lamp and lens that I do not want to overstate but will not leave unsaid. (AP000862; `raw/appraisals/appraisals.jsonl#AP000862`; support: positive_application; concern: expressed_technical_concern, recurring_shortfall). Manager testimony only, not competence or authorisation.
+- 2024 (year precision) — I watched Lugharn work through the light itself in conditions I would not have chosen and it was done properly. / Over the year Lugharn has quietly become the station's go-to for height work. / Ó Neascan continues to apply themselves appropriately to radio work. (AP000863; `raw/appraisals/appraisals.jsonl#AP000863`; support: go_to_person, performed_properly, positive_application). Manager testimony only, not competence or authorisation.
+- 2025 (year precision) — radio work at a standard the rest of us measure ourselves against. (AP000864; `raw/appraisals/appraisals.jsonl#AP000864`; support: benchmark_standard). Manager testimony only, not competence or authorisation.
+- 2026 (year precision) — The difficulty this year has been radio work, and I do not think it is want of effort. / The standard achieved in work on the gallery is considered acceptable for the grade. / It is noted that Lugharn has maintained a proper standard in height work. (AP000865; `raw/appraisals/appraisals.jsonl#AP000865`; support: acceptable_for_grade, good_standard; concern: slow_or_difficult_start). Manager testimony only, not competence or authorisation.
 
 - Same-year timing uncertainty: AP000865 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
 
@@ -556,7 +577,7 @@ Credential position:
 - WAHS-1: Attended; `attended_not_passed` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500537`).
 - HVAP-01: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500538`).
 - OSSC-SS: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500539`).
-- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 0; later modules do not bridge missing earlier stages.
+- Conflict `consecutive_stage_not_established`: The supplied records do not establish a consecutive Stage 1 award; later recorded modules do not fill that evidence gap. This describes the documented module sequence, not the person's actual awarded stage.
 
 Initial selection action:
 
@@ -574,15 +595,15 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K0482 — Tadhgan Mac Deargain
 
-- Interview: `supported_technical_interview` — CL010082 (2024-12-16) records "Megger test on the NO.2 feeder, 11.2 V, condemned the cable and ran a temporary.". This is specific, attributed evidence of hands-on electrical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Positive testimony in AP001188 is an interview lead, not proof of competence. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL010082 (2024-12-16) records "Megger test on the NO.2 feeder, 11.2 V, condemned the cable and ran a temporary.". This is specific, attributed evidence of hands-on electrical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Positive testimony in AP001186, AP001187, AP001188, AP001189 is an interview lead, not proof of competence. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL010082
-- Selected positive testimony: AP001188
+- Selected positive testimony: AP001186, AP001187, AP001188, AP001189
 - Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, fault_finding
 - Full clean log review: 180 rows; 9 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 4 exact keeper-code-keyed rows; 3 rows not selected by the appraisal filter.
+- Appraisal processing: 4 exact keeper-code-keyed rows mechanically processed; 0 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Category support:
 
@@ -599,7 +620,10 @@ Evidence:
 
 Manager testimony selected as screening context:
 
+- 2004 (year precision) — I watched Tadhgan work through diagnostics in conditions I would not have chosen and it was done properly. (AP001186; `raw/appraisals/appraisals.jsonl#AP001186`; support: performed_properly). Manager testimony only, not competence or authorisation.
+- 2005 (year precision) — Tadhgan has been a real asset this year, particularly with the distribution side. (AP001187; `raw/appraisals/appraisals.jsonl#AP001187`; support: technical_asset_or_strength). Manager testimony only, not competence or authorisation.
 - 2020 (year precision) — It is noted that Tadhgan has maintained a proper standard in the control side of the sets. (AP001188; `raw/appraisals/appraisals.jsonl#AP001188`; support: good_standard). Manager testimony only, not competence or authorisation.
+- 2023 (year precision) — When the Nuallanish Head keeper does a job it is because they chose to do it rather than wait for the engineer, and in Tadhgan's case that has included fault work to a standard I have not seen bettered on the rocks. (AP001189; `raw/appraisals/appraisals.jsonl#AP001189`; support: technical_asset_or_strength). Manager testimony only, not competence or authorisation.
 
 Limitations:
 
@@ -626,15 +650,15 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K0525 — Hugheen Mordaunley
 
-- Interview: `supported_technical_interview` — CL010216 (2025-06-19) records "Checked continuity on the run to the fog hut."; CL006644 (2013-12-13) records "Bled the fuel system after the filter change.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP001352, AP001353 is retained with positive testimony in AP001348; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL010216 (2025-06-19) records "Checked continuity on the run to the fog hut."; CL006644 (2013-12-13) records "Bled the fuel system after the filter change.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP001352, AP001353 is retained with positive testimony in AP001348, AP001349; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL010216, CL006644
-- Selected positive testimony: AP001348
+- Selected positive testimony: AP001348, AP001349
 - Selected adverse testimony: AP001352, AP001353
 - Relevant evidence categories: electrical, fault_finding, mechanical
 - Full clean log review: 211 rows; 5 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 10 exact keeper-code-keyed rows; 7 rows not selected by the appraisal filter.
+- Appraisal processing: 10 exact keeper-code-keyed rows mechanically processed; 5 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
@@ -657,6 +681,8 @@ Evidence:
 Manager testimony selected as screening context:
 
 - 2006 (year precision) — When the aton telemetry went wrong in the spring, Hugheen was the one who sorted it out. (AP001348; `raw/appraisals/appraisals.jsonl#AP001348`; support: resolved_failure). Manager testimony only, not competence or authorisation.
+- 2009 (year precision) — work on the gallery done properly and no shortcuts. (AP001349; `raw/appraisals/appraisals.jsonl#AP001349`; support: performed_properly). Manager testimony only, not competence or authorisation.
+- 2013 (year precision) — Principal evidence relates to the aton telemetry. (AP001350; `raw/appraisals/appraisals.jsonl#AP001350`; decision-neutral context: framework_or_evidence_reference). Manager testimony only, not competence or authorisation.
 - 2015 (year precision) — Some deficiency has been noted in respect of the aton telemetry, which the keeper has been advised to address. (AP001352; `raw/appraisals/appraisals.jsonl#AP001352`; concern: specific_deficiency). Manager testimony only, not competence or authorisation.
 - 2016 (year precision) — Needs supervision on the aton telemetry. (AP001353; `raw/appraisals/appraisals.jsonl#AP001353`; concern: needs_supervision). Manager testimony only, not competence or authorisation.
 
@@ -671,7 +697,7 @@ Credential position:
 - Dated Pass: MECS-3, completed 2026-03-03, supplied expiry 2031-10-27 (`raw/training/vendor-c-learnhub-2017-2026.json#LH500819`).
 - OSSC-SS: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500814`).
 - OSSC-CS: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500815`).
-- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 0; later modules do not bridge missing earlier stages.
+- Conflict `consecutive_stage_not_established`: The supplied records do not establish a consecutive Stage 1 award; later recorded modules do not fill that evidence gap. This describes the documented module sequence, not the person's actual awarded stage.
 
 Initial selection action:
 
@@ -697,7 +723,7 @@ Later qualification and mobilisation actions (only after selection progression):
 - Selected adverse testimony: AP001433
 - Relevant evidence categories: electrical, mechanical
 - Full clean log review: 175 rows; 6 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 11 exact keeper-code-keyed rows; 9 rows not selected by the appraisal filter.
+- Appraisal processing: 11 exact keeper-code-keyed rows mechanically processed; 9 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
@@ -735,7 +761,8 @@ Credential position:
 - MECS-4: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500867`).
 - OSSC-HL: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500868`).
 - HVAP-04: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500869`).
-- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 0; later modules do not bridge missing earlier stages.
+- Conflict `clean_summary_detailed_module_disagreement`: The clean summary says this HVAP award is complete and valid in 2026 through 2029, while the latest supplied pre-cutoff detailed Pass for HVAP-04 (LH500869, expiry 2023-10-18) is expired at the scenario cutoff. Both source claims are preserved. Renewal or replacement evidence outside the supplied detailed records remains possible, so issuer verification is required and the award is not declared invalid.
+- Conflict `consecutive_stage_not_established`: The supplied records do not establish a consecutive Stage 1 award; later recorded modules do not fill that evidence gap. This describes the documented module sequence, not the person's actual awarded stage.
 
 Initial selection action:
 
@@ -753,15 +780,15 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K0566 — Garbhan O Riagain
 
-- Interview: `supported_technical_interview` — CL010043 (2024-11-01) records "Isolated no 1 transformer, earths applied both ends, PTW 46 issued to the contractor."; CL006319 (2012-12-27) records "Filter changed on the power pack.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL010043 (2024-11-01) records "Isolated no 1 transformer, earths applied both ends, PTW 46 issued to the contractor."; CL006319 (2012-12-27) records "Filter changed on the power pack.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Positive testimony in AP001447, AP001452 is an interview lead, not proof of competence. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL010043, CL006319
-- Selected positive testimony: none selected
+- Selected positive testimony: AP001447, AP001452
 - Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, fault_finding, mechanical, permit_or_isolation
 - Full clean log review: 260 rows; 4 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 7 exact keeper-code-keyed rows; 7 rows not selected by the appraisal filter.
+- Appraisal processing: 7 exact keeper-code-keyed rows mechanically processed; 5 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Category support:
 
@@ -776,6 +803,11 @@ Evidence:
 - 2002-09-08 — “Checked continuity on the run to the fog hut.” (CL002799; `raw/logbooks/era1-ocr/drumnahaan-2002.txt#L336`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
 - 2012-12-27 — “Filter changed on the power pack.” (CL006319; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#013100`; clean/manual attribution corroborated by raw keeper_code K0566).
 - 2011-09-07 — “Gas tested the fuel tank before entry.” (CL005829; `raw/logbooks/era2-keeperlog/KLOG2011.DAT#008899`; clean/manual attribution corroborated by raw keeper_code K0566).
+
+Manager testimony selected as screening context:
+
+- 2005 (year precision) — Performance in respect of switching work has been of a consistently satisfactory standard. (AP001447; `raw/appraisals/appraisals.jsonl#AP001447`; support: satisfactory_standard). Manager testimony only, not competence or authorisation.
+- 2013 (year precision) — isolations on the 11kV — no complaints. (AP001452; `raw/appraisals/appraisals.jsonl#AP001452`; support: without_adverse_comment). Manager testimony only, not competence or authorisation.
 
 Limitations:
 
@@ -805,15 +837,15 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K0586 — Gealbhan Nethercarn
 
-- Interview: `supported_technical_interview` — CL006901 (2014-08-13) records "Lamp not lit, found the fuse gone. Renewed.". This is specific, attributed evidence of hands-on electrical maintenance with transferable relevance to the O&M posting's plant-maintenance work. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL006901 (2014-08-13) records "Lamp not lit, found the fuse gone. Renewed.". This is specific, attributed evidence of hands-on electrical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Positive testimony in AP001516 is an interview lead, not proof of competence. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL006901
-- Selected positive testimony: none selected
+- Selected positive testimony: AP001516
 - Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, fault_finding
 - Full clean log review: 201 rows; 3 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 10 exact keeper-code-keyed rows; 10 rows not selected by the appraisal filter.
+- Appraisal processing: 10 exact keeper-code-keyed rows mechanically processed; 9 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Category support:
 
@@ -825,6 +857,10 @@ Evidence:
 - 1999-12-19 — “Checked continuity on the run to the fog hut.” (CL002089; `raw/logbooks/era1-ocr/hurlaven-1999.txt#L477`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
 - 2014-08-13 — “Lamp not lit, found the fuse gone. Renewed.” (CL006901; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#4299`; clean/manual attribution corroborated by raw name Gealbhan Nethercarn).
 - 2009-05-06 — “Changed the battery in the portable set.” (CL004932; `raw/logbooks/era2-keeperlog/KLOG2009.DAT#004553`; clean/manual attribution corroborated by raw keeper_code K0586).
+
+Manager testimony selected as screening context:
+
+- 2005 (year precision) — Nethercarn continues to apply themselves appropriately to the lantern glass. (AP001516; `raw/appraisals/appraisals.jsonl#AP001516`; support: positive_application). Manager testimony only, not competence or authorisation.
 
 Limitations:
 
@@ -838,7 +874,7 @@ Credential position:
 - HVAP-01: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500932`).
 - MECS-1: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500933`).
 - HVAP-03: Not achieved; `not_achieved` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500935`).
-- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 1; later modules do not bridge missing earlier stages.
+- Conflict `consecutive_stage_not_established`: The supplied records establish a documented consecutive sequence through MECS-1; later recorded modules do not establish MECS-2. This does not determine the person's actual awarded stage.
 
 Initial selection action:
 
@@ -856,19 +892,19 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K0589 — Eachann Westrayne
 
-- Interview: `supported_technical_interview` — CL008681 (2020-03-27) records "Changed oil and filters on no 2."; CL008008 (2017-12-28) records "Renewed fuse links, no 1 way. All made off.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP001528, AP001530 is retained with positive testimony in AP001533, AP001536; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL008681 (2020-03-27) records "Changed oil and filters on no 2."; CL008008 (2017-12-28) records "Renewed fuse links, no 1 way. All made off.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP001525, AP001528, AP001530, AP001531, AP001534, AP001536 is retained with positive testimony in AP001527, AP001531, AP001533, AP001536; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL008681, CL008008
-- Selected positive testimony: AP001533, AP001536
-- Selected adverse testimony: AP001528, AP001530
+- Selected positive testimony: AP001527, AP001531, AP001533, AP001536
+- Selected adverse testimony: AP001525, AP001528, AP001530, AP001531, AP001534, AP001536
 - Relevant evidence categories: electrical, fault_finding, mechanical
 - Full clean log review: 165 rows; 4 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 12 exact keeper-code-keyed rows; 8 rows not selected by the appraisal filter.
+- Appraisal processing: 12 exact keeper-code-keyed rows mechanically processed; 3 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
-- Discuss the selected adverse testimony in AP001528, AP001530 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+- Discuss the selected adverse testimony in AP001525, AP001528, AP001530, AP001531, AP001534, AP001536 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
 - Appraisals AP001536 have year-only 2026 dates, so their position relative to 2026-10-11 is unknown and they remain context only.
 
 Category support:
@@ -883,15 +919,23 @@ Evidence:
 - 2020-03-27 — “Changed oil and filters on no 2.” (CL008681; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#29766`; clean/manual attribution corroborated by raw payroll value 11453 normalized to 11453, matching clean payroll 0011453).
 - 2017-12-28 — “Renewed fuse links, no 1 way. All made off.” (CL008008; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#46820`; clean/manual attribution corroborated by raw name Eachann Westrayne).
 - 2014-02-04 — “Changed the battery in the portable set.” (CL006691; `raw/logbooks/era2-keeperlog/KLOG2014.DAT#000593`; clean/manual attribution corroborated by raw keeper_code K0589).
+  - Personnel chronology warning: The retained work is dated 2014-02-04, before the personnel export's precise joining date 2014-09-10. Earlier service, differing date definitions or a source error are possible, but none is established. The work and both joining-date claims are retained. Personnel source: `raw/personnel/cla_personnel_export.csv#L120`; clean date source: `clean/keepers.json#K0589/date_joined`.
 
 Manager testimony selected as screening context:
 
+- 2014 (year precision) — The difficulty this year has been height work, and I do not think it is want of effort. (AP001525; `raw/appraisals/appraisals.jsonl#AP001525`; concern: slow_or_difficult_start). Manager testimony only, not competence or authorisation.
+- 2016 (year precision) — Westrayne continues to apply themselves appropriately to work on the gallery. (AP001527; `raw/appraisals/appraisals.jsonl#AP001527`; support: positive_application). Manager testimony only, not competence or authorisation.
 - 2018 (year precision) — Needs supervision on height work. (AP001528; `raw/appraisals/appraisals.jsonl#AP001528`; concern: needs_supervision). Manager testimony only, not competence or authorisation.
 - 2020 (year precision) — Some deficiency has been noted in respect of work on the gallery, which the keeper has been advised to address. (AP001530; `raw/appraisals/appraisals.jsonl#AP001530`; concern: specific_deficiency). Manager testimony only, not competence or authorisation.
+- 2021 (year precision) — The keeper demonstrates an adequate working knowledge of work on the gallery. / Authorisation for work on the gallery lapsed during the year and has not been renewed. (AP001531; `raw/appraisals/appraisals.jsonl#AP001531`; support: adequate_working_knowledge; concern: authorisation_lapsed; decision-neutral context: authorisation_status). Manager testimony only, not competence or authorisation.
 - 2023 (year precision) — When the ironwork went wrong in the spring, Eachann was the one who sorted it out. (AP001533; `raw/appraisals/appraisals.jsonl#AP001533`; support: resolved_failure). Manager testimony only, not competence or authorisation.
-- 2026 (year precision) — When height work went wrong in the spring, Eachann was the one who sorted it out. (AP001536; `raw/appraisals/appraisals.jsonl#AP001536`; support: resolved_failure). Manager testimony only, not competence or authorisation.
+- 2024 (year precision) — On Eachann this year: I have a concern about staging work that I do not want to overstate but will not leave unsaid. (AP001534; `raw/appraisals/appraisals.jsonl#AP001534`; concern: expressed_technical_concern). Manager testimony only, not competence or authorisation.
+- 2025 (year precision) — The thing I would put on record about Eachann is height work. / Holds the station authorisation for height work and it remains current. (AP001535; `raw/appraisals/appraisals.jsonl#AP001535`; decision-neutral context: authorisation_status, recorded_technical_observation). Manager testimony only, not competence or authorisation.
+- 2026 (year precision) — Quietly gets on with the ironwork and gets it right. / When height work went wrong in the spring, Eachann was the one who sorted it out. / I have a concern about work on the gallery that I do not want to overstate but will not leave unsaid. (AP001536; `raw/appraisals/appraisals.jsonl#AP001536`; support: positive_application, positive_short_form, resolved_failure; concern: expressed_technical_concern). Manager testimony only, not competence or authorisation.
 
 - Same-year timing uncertainty: AP001536 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
+
+- Chronology conflict `retained_work_predates_precise_personnel_join_date`: The retained work is dated 2014-02-04, before the personnel export's precise joining date 2014-09-10. Earlier service, differing date definitions or a source error are possible, but none is established. The work and both joining-date claims are retained.
 
 Limitations:
 
@@ -922,15 +966,19 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K0592 — Fergal Mac Eibhleain
 
-- Interview: `supported_technical_interview` — CL008207 (2018-08-17) records "Traced and lifted an earth fault on the tower lighting ring, split the ring to find it."; CL008184 (2018-07-20) records "Drive motor brushes and commutator dressed, rotation back to time.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Positive testimony in AP001555, AP001557, AP001561, AP001563 is an interview lead, not proof of competence. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL008207 (2018-08-17) records "Traced and lifted an earth fault on the tower lighting ring, split the ring to find it."; CL008184 (2018-07-20) records "Drive motor brushes and commutator dressed, rotation back to time.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP001559, AP001560, AP001562 is retained with positive testimony in AP001555, AP001557, AP001561, AP001563; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL008207, CL008184
 - Selected positive testimony: AP001555, AP001557, AP001561, AP001563
-- Selected adverse testimony: none selected
+- Selected adverse testimony: AP001559, AP001560, AP001562
 - Relevant evidence categories: electrical, fault_finding, mechanical
 - Full clean log review: 316 rows; 10 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 8 exact keeper-code-keyed rows; 2 rows not selected by the appraisal filter.
+- Appraisal processing: 8 exact keeper-code-keyed rows mechanically processed; 0 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
+
+Unresolved questions retained for selection:
+
+- Discuss the selected adverse testimony in AP001559, AP001560, AP001562 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
 
 Category support:
 
@@ -949,11 +997,13 @@ Evidence:
 Manager testimony selected as screening context:
 
 - 2006 (year precision) — pumped systems is sound and that is the main thing. (AP001555; `raw/appraisals/appraisals.jsonl#AP001555`; support: sound). Manager testimony only, not competence or authorisation.
-- 2007 (year precision) — There is a habit of mind here that is worth writing down: Fergal will not leave the boards half done. (AP001556; `raw/appraisals/appraisals.jsonl#AP001556`; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
+- 2007 (year precision) — The thing I would put on record about Fergal is pumped systems. / There is a habit of mind here that is worth writing down: Fergal will not leave the boards half done. (AP001556; `raw/appraisals/appraisals.jsonl#AP001556`; decision-neutral context: careful_completion_testimony, recorded_technical_observation). Manager testimony only, not competence or authorisation.
 - 2010 (year precision) — When the light itself went wrong in the spring, Fergal was the one who sorted it out. / Over the year Fergal has quietly become the station's go-to for pumped systems. (AP001557; `raw/appraisals/appraisals.jsonl#AP001557`; support: go_to_person, resolved_failure). Manager testimony only, not competence or authorisation.
-- 2012 (year precision) — There is a habit of mind here that is worth writing down: Fergal will not leave the lamp and lens half done. (AP001559; `raw/appraisals/appraisals.jsonl#AP001559`; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
+- 2012 (year precision) — The difficulty this year has been the light itself, and I do not think it is want of effort. / There is a habit of mind here that is worth writing down: Fergal will not leave the lamp and lens half done. / I have a concern about pumped systems that I do not want to overstate but will not leave unsaid. / The thing I would put on record about Fergal is the pumps. (AP001559; `raw/appraisals/appraisals.jsonl#AP001559`; concern: expressed_technical_concern, slow_or_difficult_start; decision-neutral context: careful_completion_testimony, recorded_technical_observation). Manager testimony only, not competence or authorisation.
+- 2013 (year precision) — On Fergal: The difficulty this year has been the light itself, and I do not think it is want of effort. / I have a concern about pumped systems that I do not want to overstate but will not leave unsaid. (AP001560; `raw/appraisals/appraisals.jsonl#AP001560`; concern: expressed_technical_concern, slow_or_difficult_start). Manager testimony only, not competence or authorisation.
 - 2014 (year precision) — There is a habit of mind here that is worth writing down: Fergal will not leave switchgear work half done. / Over the year Fergal has quietly become the station's go-to for the pumps. (AP001561; `raw/appraisals/appraisals.jsonl#AP001561`; support: go_to_person; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
-- 2018 (year precision) — On Fergal this year: Good humoured, hard working, and genuinely capable at pumped systems. (AP001563; `raw/appraisals/appraisals.jsonl#AP001563`; support: explicit_capability). Manager testimony only, not competence or authorisation.
+- 2017 (year precision) — A slow start on the distribution side, though much improved by the autumn. (AP001562; `raw/appraisals/appraisals.jsonl#AP001562`; concern: slow_or_difficult_start). Manager testimony only, not competence or authorisation.
+- 2018 (year precision) — On Fergal this year: Good humoured, hard working, and genuinely capable at pumped systems. / The younger men go to Fergal about the lamp and lens, which tells you everything. (AP001563; `raw/appraisals/appraisals.jsonl#AP001563`; support: explicit_capability, peer_reference). Manager testimony only, not competence or authorisation.
 
 Limitations:
 
@@ -964,8 +1014,8 @@ Credential position:
 
 - No currently dated relevant LearnHub Pass was established at the cutoff.
 - MECS-2: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500972`).
-- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 2; later modules do not bridge missing earlier stages.
-- Future at cutoff and not used: LH500977.
+- Conflict `clean_training_temporal_reconciliation`: The clean summary records a year-only 2026 completion, but the uniquely corresponding detailed Pass LH500977 was completed on 2026-11-21, after 2026-10-11. It remains future evidence and is not treated as established at the cutoff.
+- Future at cutoff and not used: LH500977 — MECS-5, Pass, completed 2026-11-21 (`raw/training/vendor-c-learnhub-2017-2026.json#LH500977`).
 
 Initial selection action:
 
@@ -983,15 +1033,19 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K0641 — Eimhreann Nic Gormghaile
 
-- Interview: `supported_technical_interview` — CL009753 (2023-11-17) records "Renewed fuse links, no.1 way. All made off.". This is specific, attributed evidence of hands-on electrical maintenance with transferable relevance to the O&M posting's plant-maintenance work. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL009753 (2023-11-17) records "Renewed fuse links, no.1 way. All made off.". This is specific, attributed evidence of hands-on electrical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP001691 is retained with positive testimony in AP001695, AP001696; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL009753
-- Selected positive testimony: none selected
-- Selected adverse testimony: none selected
+- Selected positive testimony: AP001695, AP001696
+- Selected adverse testimony: AP001691
 - Relevant evidence categories: electrical, fault_finding
 - Full clean log review: 207 rows; 6 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 9 exact keeper-code-keyed rows; 9 rows not selected by the appraisal filter.
+- Appraisal processing: 9 exact keeper-code-keyed rows mechanically processed; 6 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
+
+Unresolved questions retained for selection:
+
+- Discuss the selected adverse testimony in AP001691 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
 
 Category support:
 
@@ -1006,6 +1060,12 @@ Evidence:
 - 2023-02-17 — “Rewired the changeover contactor arrangement, tested on both feeds and left in auto.” (CL009530; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#15089`; clean/manual attribution corroborated by raw payroll value 11450 normalized to 11450, matching clean payroll 0011450).
 - 2022-11-18 — “Battery checked on the beacon.” (CL009468; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#11761`; clean/manual attribution corroborated by raw payroll value 0011450 normalized to 11450, matching clean payroll 0011450).
 
+Manager testimony selected as screening context:
+
+- 2009 (year precision) — Still finding their feet with the distribution side, but the willingness is there. (AP001691; `raw/appraisals/appraisals.jsonl#AP001691`; concern: still_developing). Manager testimony only, not competence or authorisation.
+- 2021 (year precision) — I watched Eimhreann work through switchgear work in conditions I would not have chosen and it was done properly. (AP001695; `raw/appraisals/appraisals.jsonl#AP001695`; support: performed_properly). Manager testimony only, not competence or authorisation.
+- 2022 (year precision) — Eimhreann has been a real asset this year, particularly with the distribution side. (AP001696; `raw/appraisals/appraisals.jsonl#AP001696`; support: technical_asset_or_strength). Manager testimony only, not competence or authorisation.
+
 Limitations:
 
 - `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
@@ -1014,7 +1074,7 @@ Limitations:
 Credential position:
 
 - No currently dated relevant LearnHub Pass was established at the cutoff.
-- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 1; later modules do not bridge missing earlier stages.
+- Conflict `consecutive_stage_not_established`: The supplied records establish a documented consecutive sequence through MECS-1; later recorded modules do not establish MECS-2. This does not determine the person's actual awarded stage.
 
 Initial selection action:
 
@@ -1032,18 +1092,19 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K0650 — Duaghal Mac Ualghairg
 
-- Interview: `supported_technical_interview` — CL010452 (2026-05-20) records "Lamp not lit, found the fuse gone. Renewed."; CL009955 (2024-07-12) records "Rebuilt the clockwork drive, cleaned forty years of gum out of the train.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Positive testimony in AP001712, AP001713 is an interview lead, not proof of competence. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL010452 (2026-05-20) records "Lamp not lit, found the fuse gone. Renewed."; CL009955 (2024-07-12) records "Rebuilt the clockwork drive, cleaned forty years of gum out of the train.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP001713 is retained with positive testimony in AP001712, AP001713; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL010452, CL009955
 - Selected positive testimony: AP001712, AP001713
-- Selected adverse testimony: none selected
+- Selected adverse testimony: AP001713
 - Relevant evidence categories: electrical, fault_finding, mechanical
 - Full clean log review: 238 rows; 10 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 3 exact keeper-code-keyed rows; 1 row not selected by the appraisal filter.
+- Appraisal processing: 3 exact keeper-code-keyed rows mechanically processed; 0 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
+- Discuss the selected adverse testimony in AP001713 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
 - Appraisals AP001714 have year-only 2026 dates, so their position relative to 2026-10-11 is unknown and they remain context only.
 
 Category support:
@@ -1062,8 +1123,9 @@ Evidence:
 
 Manager testimony selected as screening context:
 
-- 2024 (year precision) — Duaghal took on fault work without being asked and made a proper job of it. (AP001712; `raw/appraisals/appraisals.jsonl#AP001712`; support: made_proper_job). Manager testimony only, not competence or authorisation.
-- 2025 (year precision) — Duaghal took on the light itself without being asked and made a proper job of it. / When chasing faults went wrong in the spring, Duaghal was the one who sorted it out. (AP001713; `raw/appraisals/appraisals.jsonl#AP001713`; support: made_proper_job, resolved_failure). Manager testimony only, not competence or authorisation.
+- 2024 (year precision) — Duaghal took on fault work without being asked and made a proper job of it. / Holds the station authorisation for fault work and it remains current. (AP001712; `raw/appraisals/appraisals.jsonl#AP001712`; support: made_proper_job; decision-neutral context: authorisation_status). Manager testimony only, not competence or authorisation.
+- 2025 (year precision) — Duaghal — 2025 The difficulty this year has been the optic, and I do not think it is want of effort. / Duaghal took on the light itself without being asked and made a proper job of it. / When chasing faults went wrong in the spring, Duaghal was the one who sorted it out. / No formal ticket for chasing faults, which is an administrative matter rather than a capability one. (AP001713; `raw/appraisals/appraisals.jsonl#AP001713`; support: made_proper_job, resolved_failure; concern: slow_or_difficult_start; decision-neutral context: ticket_administration). Manager testimony only, not competence or authorisation.
+- 2026 (year precision) — The thing I would put on record about Duaghal is the lamp and lens. (AP001714; `raw/appraisals/appraisals.jsonl#AP001714`; decision-neutral context: recorded_technical_observation). Manager testimony only, not competence or authorisation.
 
 - Same-year timing uncertainty: AP001714 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
 
@@ -1093,19 +1155,19 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K0663 — Lugharn O Niallghusa
 
-- Interview: `supported_technical_interview` — CL010471 (2026-07-02) records "Lamp changer stepping twice, dismantled the ratchet and dressed the pawl faces."; CL010451 (2026-05-17) records "Drive motor brushes and commutator dressed, rotation back to time.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP001757, AP001760 is retained with positive testimony in AP001755, AP001756, AP001758; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL010471 (2026-07-02) records "Lamp changer stepping twice, dismantled the ratchet and dressed the pawl faces."; CL010451 (2026-05-17) records "Drive motor brushes and commutator dressed, rotation back to time.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP001754, AP001757, AP001758, AP001759, AP001760 is retained with positive testimony in AP001753, AP001755, AP001756, AP001758; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL010471, CL010451
-- Selected positive testimony: AP001755, AP001756, AP001758
-- Selected adverse testimony: AP001757, AP001760
+- Selected positive testimony: AP001753, AP001755, AP001756, AP001758
+- Selected adverse testimony: AP001754, AP001757, AP001758, AP001759, AP001760
 - Relevant evidence categories: electrical, fault_finding, mechanical
 - Full clean log review: 240 rows; 7 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 10 exact keeper-code-keyed rows; 5 rows not selected by the appraisal filter.
+- Appraisal processing: 10 exact keeper-code-keyed rows mechanically processed; 1 row not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
-- Discuss the selected adverse testimony in AP001757, AP001760 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+- Discuss the selected adverse testimony in AP001754, AP001757, AP001758, AP001759, AP001760 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
 - Appraisals AP001760 have year-only 2026 dates, so their position relative to 2026-10-11 is unknown and they remain context only.
 
 Category support:
@@ -1124,10 +1186,14 @@ Evidence:
 
 Manager testimony selected as screening context:
 
-- 2016 (year precision) — Over the year Lugharn has quietly become the station's go-to for radio work. (AP001755; `raw/appraisals/appraisals.jsonl#AP001755`; support: go_to_person). Manager testimony only, not competence or authorisation.
-- 2017 (year precision) — Over the year Lugharn has quietly become the station's go-to for the optic. / There is a habit of mind here that is worth writing down: Lugharn will not leave the lamp and lens half done. (AP001756; `raw/appraisals/appraisals.jsonl#AP001756`; support: go_to_person; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
+- 2009 (year precision) — Supporting observation: the aton telemetry. (AP001751; `raw/appraisals/appraisals.jsonl#AP001751`; decision-neutral context: framework_or_evidence_reference). Manager testimony only, not competence or authorisation.
+- 2013 (year precision) — the lamp and lens — no complaints. (AP001753; `raw/appraisals/appraisals.jsonl#AP001753`; support: without_adverse_comment). Manager testimony only, not competence or authorisation.
+- 2015 (year precision) — An improvement objective relating to the VHF has been set for the coming year. (AP001754; `raw/appraisals/appraisals.jsonl#AP001754`; concern: technical_improvement_objective; decision-neutral context: technical_objective). Manager testimony only, not competence or authorisation.
+- 2016 (year precision) — I watched Lugharn work through the AIS gear in conditions I would not have chosen and it was done properly. / Over the year Lugharn has quietly become the station's go-to for radio work. (AP001755; `raw/appraisals/appraisals.jsonl#AP001755`; support: go_to_person, performed_properly). Manager testimony only, not competence or authorisation.
+- 2017 (year precision) — On Lugharn: I watched Lugharn work through the light itself in conditions I would not have chosen and it was done properly. / Over the year Lugharn has quietly become the station's go-to for the optic. / There is a habit of mind here that is worth writing down: Lugharn will not leave the lamp and lens half done. (AP001756; `raw/appraisals/appraisals.jsonl#AP001756`; support: go_to_person, performed_properly; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
 - 2018 (year precision) — the aton telemetry has to be checked behind him. (AP001757; `raw/appraisals/appraisals.jsonl#AP001757`; concern: work_checked_behind). Manager testimony only, not competence or authorisation.
-- 2022 (year precision) — Over the year Lugharn has quietly become the station's go-to for the lamp and lens. (AP001758; `raw/appraisals/appraisals.jsonl#AP001758`; support: go_to_person). Manager testimony only, not competence or authorisation.
+- 2022 (year precision) — Over the year Lugharn has quietly become the station's go-to for the lamp and lens. / Lugharn would be the first to say the optic is not their strong suit, and we are working on it. / Holds the station authorisation for the optic and it remains current. (AP001758; `raw/appraisals/appraisals.jsonl#AP001758`; support: go_to_person; concern: technical_not_strong_suit; decision-neutral context: authorisation_status). Manager testimony only, not competence or authorisation.
+- 2023 (year precision) — About Lugharn, 2023: The difficulty this year has been the AIS gear, and I do not think it is want of effort. / I have a concern about the VHF that I do not want to overstate but will not leave unsaid. (AP001759; `raw/appraisals/appraisals.jsonl#AP001759`; concern: expressed_technical_concern, slow_or_difficult_start). Manager testimony only, not competence or authorisation.
 - 2026 (year precision) — radio work has to be checked behind him. / No use at all on the aton telemetry and shows no sign of learning. (AP001760; `raw/appraisals/appraisals.jsonl#AP001760`; concern: no_use_and_not_learning, work_checked_behind). Manager testimony only, not competence or authorisation.
 
 - Same-year timing uncertainty: AP001760 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
@@ -1158,15 +1224,15 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K0664 — Bruaigh O Braoscan
 
-- Interview: `supported_technical_interview` — CL009911 (2024-05-12) records "Checked continuity on the run to the fog hut."; CL009694 (2023-09-06) records "Ran no.3 set 2 hrs. Oil and water checked.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Positive testimony in AP001767 is an interview lead, not proof of competence. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL009911 (2024-05-12) records "Checked continuity on the run to the fog hut."; CL009694 (2023-09-06) records "Ran no.3 set 2 hrs. Oil and water checked.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Positive testimony in AP001763, AP001767, AP001768 is an interview lead, not proof of competence. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL009911, CL009694
-- Selected positive testimony: AP001767
+- Selected positive testimony: AP001763, AP001767, AP001768
 - Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, fault_finding, mechanical
 - Full clean log review: 188 rows; 8 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 9 exact keeper-code-keyed rows; 8 rows not selected by the appraisal filter.
+- Appraisal processing: 9 exact keeper-code-keyed rows mechanically processed; 6 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
@@ -1188,7 +1254,9 @@ Evidence:
 
 Manager testimony selected as screening context:
 
+- 2012 (year precision) — Competency framework reference: satisfactory in the engines. (AP001763; `raw/appraisals/appraisals.jsonl#AP001763`; support: satisfactory_standard; decision-neutral context: framework_or_evidence_reference). Manager testimony only, not competence or authorisation.
 - 2021 (year precision) — the engines is sound and that is the main thing. (AP001767; `raw/appraisals/appraisals.jsonl#AP001767`; support: sound). Manager testimony only, not competence or authorisation.
+- 2022 (year precision) — Ó Braoscan continues to apply themselves appropriately to the main sets. (AP001768; `raw/appraisals/appraisals.jsonl#AP001768`; support: positive_application). Manager testimony only, not competence or authorisation.
 
 - Same-year timing uncertainty: AP001769 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
 
@@ -1219,15 +1287,15 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K0817 — Odhran O Luachra
 
-- Interview: `supported_technical_interview` — CL009476 (2022-11-24) records "Traced the nuisance low-volt alarm to a soft cell in the no.1 bank, replaced it."; CL008376 (2019-03-03) records "Compressor not making pressure, rings worn. Rebuilt the no 2 cylinder.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP002219, AP002225, AP002230 is retained with positive testimony; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL009476 (2022-11-24) records "Traced the nuisance low-volt alarm to a soft cell in the no.1 bank, replaced it."; CL008376 (2019-03-03) records "Compressor not making pressure, rings worn. Rebuilt the no 2 cylinder.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP002219, AP002225, AP002230 is retained with positive testimony in AP002220, AP002223, AP002227; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL009476, CL008376
-- Selected positive testimony: none selected
+- Selected positive testimony: AP002220, AP002223, AP002227
 - Selected adverse testimony: AP002219, AP002225, AP002230
 - Relevant evidence categories: electrical, fault_finding, mechanical
 - Full clean log review: 333 rows; 8 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 13 exact keeper-code-keyed rows; 10 rows not selected by the appraisal filter.
+- Appraisal processing: 13 exact keeper-code-keyed rows mechanically processed; 7 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
@@ -1249,8 +1317,11 @@ Evidence:
 
 Manager testimony selected as screening context:
 
-- 2005 (year precision) — Will not touch the AIS gear if he can get someone else to do it. (AP002219; `raw/appraisals/appraisals.jsonl#AP002219`; concern: avoids_work). Manager testimony only, not competence or authorisation.
+- 2005 (year precision) — Will not touch the AIS gear if he can get someone else to do it. / Attended the district course in the AIS gear, though I am told the paperwork never came back. (AP002219; `raw/appraisals/appraisals.jsonl#AP002219`; concern: avoids_work; decision-neutral context: technical_course_with_document_gap). Manager testimony only, not competence or authorisation.
+- 2006 (year precision) — Knows more about the batteries than the engineers do. (AP002220; `raw/appraisals/appraisals.jsonl#AP002220`; support: peer_reference, positive_short_form). Manager testimony only, not competence or authorisation.
+- 2011 (year precision) — Competency framework reference: satisfactory in the batteries. (AP002223; `raw/appraisals/appraisals.jsonl#AP002223`; support: satisfactory_standard; decision-neutral context: framework_or_evidence_reference). Manager testimony only, not competence or authorisation.
 - 2013 (year precision) — REVIEW 2013 Needs supervision on the fog signal. (AP002225; `raw/appraisals/appraisals.jsonl#AP002225`; concern: needs_supervision). Manager testimony only, not competence or authorisation.
+- 2015 (year precision) — Odhran — 2015 The younger men go to Odhran about the diaphone, which tells you everything. (AP002227; `raw/appraisals/appraisals.jsonl#AP002227`; support: peer_reference). Manager testimony only, not competence or authorisation.
 - 2020 (year precision) — No use at all on the aton telemetry and shows no sign of learning. (AP002230; `raw/appraisals/appraisals.jsonl#AP002230`; concern: no_use_and_not_learning). Manager testimony only, not competence or authorisation.
 
 Limitations:
@@ -1262,7 +1333,8 @@ Credential position:
 
 - Dated Pass: MPMC-C, completed 2022-08-09, supplied expiry 2027-11-21 (`raw/training/vendor-c-learnhub-2017-2026.json#LH501373`).
 - MPMC-B: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH501371`).
-- Future at cutoff and not used: LH501375.
+- Conflict `clean_training_temporal_reconciliation`: The clean summary records a year-only 2026 completion, but the uniquely corresponding detailed Pass LH501375 was completed on 2026-12-14, after 2026-10-11. It remains future evidence and is not treated as established at the cutoff.
+- Future at cutoff and not used: LH501375 — ANSM-O, Pass, completed 2026-12-14 (`raw/training/vendor-c-learnhub-2017-2026.json#LH501375`).
 
 Initial selection action:
 
@@ -1280,15 +1352,15 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K0847 — Aoife Ni Mhurchu
 
-- Interview: `supported_technical_interview` — CL008299 (2018-11-18) records "AVR on no.1 replaced and the volts set to 0.8 ohm, load-shared with No.1 properly after."; CL007737 (2017-03-19) records "Set the timing on No.1 after the pump was refitted, ran it up and checked exhaust temps.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Positive testimony in AP002309 is an interview lead, not proof of competence. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL008299 (2018-11-18) records "AVR on no.1 replaced and the volts set to 0.8 ohm, load-shared with No.1 properly after."; CL007737 (2017-03-19) records "Set the timing on No.1 after the pump was refitted, ran it up and checked exhaust temps.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Positive testimony in AP002307, AP002309 is an interview lead, not proof of competence. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL008299, CL007737
-- Selected positive testimony: AP002309
+- Selected positive testimony: AP002307, AP002309
 - Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, fault_finding, mechanical
 - Full clean log review: 297 rows; 10 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 6 exact keeper-code-keyed rows; 5 rows not selected by the appraisal filter.
+- Appraisal processing: 6 exact keeper-code-keyed rows mechanically processed; 4 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
@@ -1313,7 +1385,10 @@ Evidence:
 
 Manager testimony selected as screening context:
 
+- 2012 (year precision) — The standard achieved in the control side of the sets is considered acceptable for the grade. (AP002307; `raw/appraisals/appraisals.jsonl#AP002307`; support: acceptable_for_grade). Manager testimony only, not competence or authorisation.
 - 2014 (year precision) — I have come to rely on Aoife for the control side of the sets and have never been let down. / It is noted that Aoife has maintained a proper standard in chasing faults. (AP002309; `raw/appraisals/appraisals.jsonl#AP002309`; support: good_standard, trusted_by_manager). Manager testimony only, not competence or authorisation.
+
+- Supplementary note: A 2003 Portnalee manager note says the manager watched Aoife chase faults and describes the work as textbook. Exact excerpt: “Watched Aoife do chasing faults today. Textbook, except there is no textbook for it here.” (`raw/appraisals/station_manager_notes/2003-portnalee-ni-mhurchu.txt#L2`). The note body supplies the given name; the note's station/year context matches POR:2000-2004 in the personnel row raw/personnel/cla_personnel_export.csv#L176, whose name is NI MHURCHU A. The clean profile supplies the expanded name Aoife Ní Mhurchú. Attribution uses those combined facts and not the filename alone. Positive manager testimony only; it does not establish assessed competence, certification or current proficiency.
 
 Limitations:
 
@@ -1326,7 +1401,7 @@ Credential position:
 - Dated Pass: MPMC-B, completed 2026-07-16, supplied expiry 2031-11-20 (`raw/training/vendor-c-learnhub-2017-2026.json#LH501420`).
 - MECS-1: Attended; `attended_not_passed` (`raw/training/vendor-c-learnhub-2017-2026.json#LH501412`).
 - HVAP-03: Attended; `attended_not_passed` (`raw/training/vendor-c-learnhub-2017-2026.json#LH501419`).
-- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 0; later modules do not bridge missing earlier stages.
+- Conflict `consecutive_stage_not_established`: The supplied records do not establish a consecutive Stage 1 award; later recorded modules do not fill that evidence gap. This describes the documented module sequence, not the person's actual awarded stage.
 
 Initial selection action:
 
@@ -1344,19 +1419,19 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K0897 — Bearach Mac Teallach
 
-- Interview: `supported_technical_interview` — CL009512 (2023-01-26) records "Megger test on the No.2 feeder, 2.4 ohm, condemned the cable and ran a temporary."; CL008539 (2019-10-07) records "Changed oil and filters on no 1.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP002492 is retained with positive testimony; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL009512 (2023-01-26) records "Megger test on the No.2 feeder, 2.4 ohm, condemned the cable and ran a temporary."; CL008539 (2019-10-07) records "Changed oil and filters on no 1.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP002481, AP002489, AP002492 is retained with positive testimony in AP002482, AP002483, AP002488; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL009512, CL008539
-- Selected positive testimony: none selected
-- Selected adverse testimony: AP002492
+- Selected positive testimony: AP002482, AP002483, AP002488
+- Selected adverse testimony: AP002481, AP002489, AP002492
 - Relevant evidence categories: electrical, fault_finding, mechanical
 - Full clean log review: 170 rows; 7 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 11 exact keeper-code-keyed rows; 10 rows not selected by the appraisal filter.
+- Appraisal processing: 11 exact keeper-code-keyed rows mechanically processed; 5 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
-- Discuss the selected adverse testimony in AP002492 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+- Discuss the selected adverse testimony in AP002481, AP002489, AP002492 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
 
 Category support:
 
@@ -1374,6 +1449,11 @@ Evidence:
 
 Manager testimony selected as screening context:
 
+- 2010 (year precision) — An improvement objective relating to diagnostics has been set for the coming year. (AP002481; `raw/appraisals/appraisals.jsonl#AP002481`; concern: technical_improvement_objective; decision-neutral context: technical_objective). Manager testimony only, not competence or authorisation.
+- 2011 (year precision) — Attention to fault work has been maintained throughout the reporting period. / Duties associated with chasing faults have been discharged without adverse comment. (AP002482; `raw/appraisals/appraisals.jsonl#AP002482`; support: maintained_or_within_tolerance, without_adverse_comment). Manager testimony only, not competence or authorisation.
+- 2013 (year precision) — Section A: Performance The keeper demonstrates an adequate working knowledge of the main sets. / Mac Teallach continues to apply themselves appropriately to chasing faults. / Duties associated with fault work have been discharged without adverse comment. (AP002483; `raw/appraisals/appraisals.jsonl#AP002483`; support: adequate_working_knowledge, positive_application, without_adverse_comment). Manager testimony only, not competence or authorisation.
+- 2019 (year precision) — the main sets fine. / The keeper demonstrates an adequate working knowledge of the plant. (AP002488; `raw/appraisals/appraisals.jsonl#AP002488`; support: adequate_working_knowledge, positive_short_form). Manager testimony only, not competence or authorisation.
+- 2020 (year precision) — I have a concern about diagnostics that I do not want to overstate but will not leave unsaid. (AP002489; `raw/appraisals/appraisals.jsonl#AP002489`; concern: expressed_technical_concern). Manager testimony only, not competence or authorisation.
 - 2023 (year precision) — Gap identified in chasing faults. (AP002492; `raw/appraisals/appraisals.jsonl#AP002492`; concern: identified_gap). Manager testimony only, not competence or authorisation.
 
 Limitations:
@@ -1410,7 +1490,7 @@ Later qualification and mobilisation actions (only after selection progression):
 - Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, fault_finding, mechanical
 - Full clean log review: 325 rows; 8 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 1 exact keeper-code-keyed rows; 0 rows not selected by the appraisal filter.
+- Appraisal processing: 1 exact keeper-code-keyed rows mechanically processed; 0 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Category support:
 
@@ -1456,19 +1536,19 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K1231 — Joachima Ulverstane
 
-- Interview: `supported_technical_interview` — CL010320 (2025-11-15) records "Rewired the changeover contactor arrangement, tested on both feeds and left in auto."; CL008529 (2019-09-21) records "Ran no.2 set 4 hrs. Oil and water checked.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP003564, AP003566, AP003571 is retained with positive testimony in AP003567, AP003568, AP003571; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL010320 (2025-11-15) records "Rewired the changeover contactor arrangement, tested on both feeds and left in auto."; CL008529 (2019-09-21) records "Ran no.2 set 4 hrs. Oil and water checked.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP003564, AP003566, AP003571, AP003572 is retained with positive testimony in AP003563, AP003566, AP003567, AP003568, AP003569, AP003571, AP003576, AP003577; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL010320, CL008529
-- Selected positive testimony: AP003567, AP003568, AP003571
-- Selected adverse testimony: AP003564, AP003566, AP003571
+- Selected positive testimony: AP003563, AP003566, AP003567, AP003568, AP003569, AP003571, AP003576, AP003577
+- Selected adverse testimony: AP003564, AP003566, AP003571, AP003572
 - Relevant evidence categories: electrical, fault_finding, mechanical, permit_or_isolation
 - Full clean log review: 300 rows; 10 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 15 exact keeper-code-keyed rows; 10 rows not selected by the appraisal filter.
+- Appraisal processing: 15 exact keeper-code-keyed rows mechanically processed; 5 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
-- Discuss the selected adverse testimony in AP003564, AP003566, AP003571 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+- Discuss the selected adverse testimony in AP003564, AP003566, AP003571, AP003572 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
 
 Category support:
 
@@ -1488,11 +1568,16 @@ Evidence:
 
 Manager testimony selected as screening context:
 
+- 2009 (year precision) — Quietly gets on with the HV authorisation work and gets it right. (AP003563; `raw/appraisals/appraisals.jsonl#AP003563`; support: positive_application, positive_short_form). Manager testimony only, not competence or authorisation.
 - 2011 (year precision) — The standard achieved in the boards falls below that expected of the grade. (AP003564; `raw/appraisals/appraisals.jsonl#AP003564`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
-- 2013 (year precision) — The standard achieved in the distribution side falls below that expected of the grade. (AP003566; `raw/appraisals/appraisals.jsonl#AP003566`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
+- 2013 (year precision) — Ulverstane continues to apply themselves appropriately to the boards. / The standard achieved in the distribution side falls below that expected of the grade. (AP003566; `raw/appraisals/appraisals.jsonl#AP003566`; support: positive_application; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
 - 2014 (year precision) — Joachima — 2014 Joachima took on chasing faults without being asked and made a proper job of it. (AP003567; `raw/appraisals/appraisals.jsonl#AP003567`; support: made_proper_job). Manager testimony only, not competence or authorisation.
 - 2015 (year precision) — Good humoured, hard working, and genuinely capable at fault work. (AP003568; `raw/appraisals/appraisals.jsonl#AP003568`; support: explicit_capability). Manager testimony only, not competence or authorisation.
+- 2017 (year precision) — Section A: Performance Performance in respect of chasing faults has been of a consistently satisfactory standard. / Principal evidence relates to isolations on the 11kV. (AP003569; `raw/appraisals/appraisals.jsonl#AP003569`; support: satisfactory_standard; decision-neutral context: framework_or_evidence_reference). Manager testimony only, not competence or authorisation.
 - 2019 (year precision) — switchgear work has to be checked behind her. / fault work to a good standard. (AP003571; `raw/appraisals/appraisals.jsonl#AP003571`; support: good_standard; concern: work_checked_behind). Manager testimony only, not competence or authorisation.
+- 2020 (year precision) — Slow with fault work. (AP003572; `raw/appraisals/appraisals.jsonl#AP003572`; concern: slow_or_difficult_start). Manager testimony only, not competence or authorisation.
+- 2024 (year precision) — Knows chasing faults. / Attention to the standby banks has been maintained throughout the reporting period. (AP003576; `raw/appraisals/appraisals.jsonl#AP003576`; support: maintained_or_within_tolerance, positive_short_form). Manager testimony only, not competence or authorisation.
+- 2025 (year precision) — The standard achieved in switching work is considered acceptable for the grade. (AP003577; `raw/appraisals/appraisals.jsonl#AP003577`; support: acceptable_for_grade). Manager testimony only, not competence or authorisation.
 
 Limitations:
 
@@ -1527,7 +1612,7 @@ Later qualification and mobilisation actions (only after selection progression):
 - Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, fault_finding
 - Full clean log review: 231 rows; 6 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 1 exact keeper-code-keyed rows; 0 rows not selected by the appraisal filter.
+- Appraisal processing: 1 exact keeper-code-keyed rows mechanically processed; 0 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Category support:
 
@@ -1556,7 +1641,7 @@ Credential position:
 
 - No currently dated relevant LearnHub Pass was established at the cutoff.
 - LOSC-A: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502442`).
-- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 1; later modules do not bridge missing earlier stages.
+- Conflict `consecutive_stage_not_established`: The supplied records establish a documented consecutive sequence through MECS-1; later recorded modules do not establish MECS-2. This does not determine the person's actual awarded stage.
 
 Initial selection action:
 
@@ -1582,7 +1667,7 @@ Later qualification and mobilisation actions (only after selection progression):
 - Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, mechanical
 - Full clean log review: 288 rows; 6 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 6 exact keeper-code-keyed rows; 6 rows not selected by the appraisal filter.
+- Appraisal processing: 6 exact keeper-code-keyed rows mechanically processed; 5 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
@@ -1601,6 +1686,10 @@ Evidence:
 - 2001-09-19 — “Changed oil and filters on No.1.” (CL002551; `raw/logbooks/era1-ocr/fionnvarra-2001.txt#L388`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
 - 2001-04-17 — “Compressor not making pressure, rings worn. Rebuilt the no.2 cylinder.” (CL002447; `raw/logbooks/era1-ocr/fionnvarra-2001.txt#L160`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
 - 2000-04-17 — “Filter changed on the power pack.” (CL002191; `raw/logbooks/era1-ocr/fionnvarra-2000.txt#L254`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
+
+Manager testimony selected as screening context:
+
+- 2005 (year precision) — Supporting observation: the control side of the sets. (AP003743; `raw/appraisals/appraisals.jsonl#AP003743`; decision-neutral context: framework_or_evidence_reference). Manager testimony only, not competence or authorisation.
 
 - Same-year timing uncertainty: AP003748 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
 
@@ -1630,19 +1719,19 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K1345 — Dualta O hIarnain
 
-- Interview: `supported_technical_interview` — CL008356 (2019-02-17) records "Tightened glands in the cable trunk by the stair."; CL007631 (2016-11-03) records "Ran NO.2 set 6 hrs. Oil and water checked.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP003873, AP003877 is retained with positive testimony in AP003865, AP003870, AP003874; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL008356 (2019-02-17) records "Tightened glands in the cable trunk by the stair."; CL007631 (2016-11-03) records "Ran NO.2 set 6 hrs. Oil and water checked.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP003870, AP003873, AP003874, AP003876, AP003877 is retained with positive testimony in AP003865, AP003870, AP003872, AP003874, AP003875, AP003876, AP003877; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL008356, CL007631
-- Selected positive testimony: AP003865, AP003870, AP003874
-- Selected adverse testimony: AP003873, AP003877
+- Selected positive testimony: AP003865, AP003870, AP003872, AP003874, AP003875, AP003876, AP003877
+- Selected adverse testimony: AP003870, AP003873, AP003874, AP003876, AP003877
 - Relevant evidence categories: electrical, mechanical
 - Full clean log review: 209 rows; 8 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 13 exact keeper-code-keyed rows; 8 rows not selected by the appraisal filter.
+- Appraisal processing: 13 exact keeper-code-keyed rows mechanically processed; 5 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
-- Discuss the selected adverse testimony in AP003873, AP003877 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+- Discuss the selected adverse testimony in AP003870, AP003873, AP003874, AP003876, AP003877 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
 - Appraisals AP003877 have year-only 2026 dates, so their position relative to 2026-10-11 is unknown and they remain context only.
 
 Category support:
@@ -1661,10 +1750,13 @@ Evidence:
 Manager testimony selected as screening context:
 
 - 2008 (year precision) — When the winch went wrong in the spring, Dualta was the one who sorted it out. (AP003865; `raw/appraisals/appraisals.jsonl#AP003865`; support: resolved_failure). Manager testimony only, not competence or authorisation.
-- 2014 (year precision) — When lifting work went wrong in the spring, Dualta was the one who sorted it out. (AP003870; `raw/appraisals/appraisals.jsonl#AP003870`; support: resolved_failure). Manager testimony only, not competence or authorisation.
+- 2014 (year precision) — When lifting work went wrong in the spring, Dualta was the one who sorted it out. / The difficulty this year has been the winch, and I do not think it is want of effort. (AP003870; `raw/appraisals/appraisals.jsonl#AP003870`; support: resolved_failure; concern: slow_or_difficult_start). Manager testimony only, not competence or authorisation.
+- 2016 (year precision) — Annual objective relating to haulage gear closed as achieved. (AP003872; `raw/appraisals/appraisals.jsonl#AP003872`; support: objective_achieved; decision-neutral context: technical_objective). Manager testimony only, not competence or authorisation.
 - 2018 (year precision) — the derrick has to be checked behind him. (AP003873; `raw/appraisals/appraisals.jsonl#AP003873`; concern: work_checked_behind). Manager testimony only, not competence or authorisation.
-- 2019 (year precision) — When the derrick went wrong in the spring, Dualta was the one who sorted it out. (AP003874; `raw/appraisals/appraisals.jsonl#AP003874`; support: resolved_failure). Manager testimony only, not competence or authorisation.
-- 2026 (year precision) — lifting work has to be checked behind him. (AP003877; `raw/appraisals/appraisals.jsonl#AP003877`; concern: work_checked_behind). Manager testimony only, not competence or authorisation.
+- 2019 (year precision) — Still finding their feet with lifting work, but the willingness is there. / When the derrick went wrong in the spring, Dualta was the one who sorted it out. (AP003874; `raw/appraisals/appraisals.jsonl#AP003874`; support: resolved_failure; concern: still_developing). Manager testimony only, not competence or authorisation.
+- 2020 (year precision) — Dualta has been a real asset this year, particularly with the winch. (AP003875; `raw/appraisals/appraisals.jsonl#AP003875`; support: technical_asset_or_strength). Manager testimony only, not competence or authorisation.
+- 2021 (year precision) — I have a concern about haulage gear that I do not want to overstate but will not leave unsaid. / Quietly gets on with lifting work and gets it right. / The younger men go to Dualta about the winch, which tells you everything. (AP003876; `raw/appraisals/appraisals.jsonl#AP003876`; support: peer_reference, positive_application, positive_short_form; concern: expressed_technical_concern). Manager testimony only, not competence or authorisation.
+- 2026 (year precision) — lifting work has to be checked behind him. / I have a concern about the winch that I do not want to overstate but will not leave unsaid. / I watched Dualta work through the derrick in conditions I would not have chosen and it was done properly. (AP003877; `raw/appraisals/appraisals.jsonl#AP003877`; support: performed_properly; concern: expressed_technical_concern, work_checked_behind). Manager testimony only, not competence or authorisation.
 
 - Same-year timing uncertainty: AP003877 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
 
@@ -1681,7 +1773,7 @@ Credential position:
 - MECS-5: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502577`).
 - Expiry conflict: HVAP-04 Pass LH502579 supplies 2026-11-04 (current at cutoff), while the nominal 3-year rule points to 2026-01-14 (expired); issuer verification required (`raw/training/vendor-c-learnhub-2017-2026.json#LH502579`).
 - Conflict `expiry_rule_conflict`: At 2026-10-11, the supplied expiry says current but the nominal scheme-rule date says expired; issuer verification is required before relying on either date.
-- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 2; later modules do not bridge missing earlier stages.
+- Conflict `consecutive_stage_not_established`: The supplied records establish a documented consecutive sequence through MECS-2; later recorded modules do not establish MECS-3. This does not determine the person's actual awarded stage.
 
 Initial selection action:
 
@@ -1699,15 +1791,15 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K1363 — Ualaith Enfarrow
 
-- Interview: `supported_technical_interview` — CL009245 (2022-01-28) records "Filter changed on the power pack."; CL008995 (2021-04-21) records "Renewed fuse links, no.3 way. All made off.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL009245 (2022-01-28) records "Filter changed on the power pack."; CL008995 (2021-04-21) records "Renewed fuse links, no.3 way. All made off.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Positive testimony in AP003920 is an interview lead, not proof of competence. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL009245, CL008995
-- Selected positive testimony: none selected
+- Selected positive testimony: AP003920
 - Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, fault_finding, mechanical
 - Full clean log review: 252 rows; 6 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 6 exact keeper-code-keyed rows; 6 rows not selected by the appraisal filter.
+- Appraisal processing: 6 exact keeper-code-keyed rows mechanically processed; 5 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
@@ -1723,9 +1815,16 @@ Evidence:
 
 - 2002-05-08 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL002712; `raw/logbooks/era1-ocr/rinnaglas-2002.txt#L210`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
 - 1998-01-11 — “Checked continuity on the run to the fog hut.” (CL001473; `raw/logbooks/era1-ocr/moinnaskeog-1998.txt#L18`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
+  - Personnel chronology warning: The retained work is dated 1998-01-11, before the personnel export's precise joining date 1998-08-21. Earlier service, differing date definitions or a source error are possible, but none is established. The work and both joining-date claims are retained. Personnel source: `raw/personnel/cla_personnel_export.csv#L303`; clean date source: `clean/keepers.json#K1363/date_joined`.
 - 2023-09-16 — “Repaired the derrick luffing gear, new pin and bush turned up on station.” (CL009700; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#22883`; clean/manual attribution; raw payroll_reference 982128 conflicts with clean 0011920 and does not corroborate the person assignment).
 - 2022-01-28 — “Filter changed on the power pack.” (CL009245; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#1115`; clean/manual attribution corroborated by raw payroll value 0011920 normalized to 11920, matching clean payroll 0011920).
 - 2021-04-21 — “Renewed fuse links, no.3 way. All made off.” (CL008995; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#43595`; clean/manual attribution corroborated by raw payroll value 0011920 normalized to 11920, matching clean payroll 0011920).
+
+Manager testimony selected as screening context:
+
+- 2023 (year precision) — Knows lifting work. (AP003920; `raw/appraisals/appraisals.jsonl#AP003920`; support: positive_short_form). Manager testimony only, not competence or authorisation.
+
+- Chronology conflict `retained_work_predates_precise_personnel_join_date`: The retained work is dated 1998-01-11, before the personnel export's precise joining date 1998-08-21. Earlier service, differing date definitions or a source error are possible, but none is established. The work and both joining-date claims are retained.
 
 Limitations:
 
@@ -1740,7 +1839,7 @@ Credential position:
 - Dated Pass: MPMC-D, completed 2025-10-24, supplied expiry 2030-05-15 (`raw/training/vendor-c-learnhub-2017-2026.json#LH502606`).
 - Dated Pass: HVAP-04, completed 2026-04-27, supplied expiry 2029-12-16 (`raw/training/vendor-c-learnhub-2017-2026.json#LH502608`).
 - OSSC-CS: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502600`).
-- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 2; later modules do not bridge missing earlier stages.
+- Conflict `consecutive_stage_not_established`: The supplied records establish a documented consecutive sequence through MECS-2; later recorded modules do not establish MECS-3. This does not determine the person's actual awarded stage.
 
 Initial selection action:
 
@@ -1758,19 +1857,19 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K1374 — Aodhan O hAghmoir
 
-- Interview: `supported_technical_interview` — CL010559 (2026-10-08) records "Battery checked on the beacon."; CL009203 (2021-12-18) records "Changed oil and filters on no.2.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP003945, AP003949 is retained with positive testimony in AP003954; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL010559 (2026-10-08) records "Battery checked on the beacon."; CL009203 (2021-12-18) records "Changed oil and filters on no.2.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP003945, AP003949, AP003952 is retained with positive testimony in AP003951, AP003954; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL010559, CL009203
-- Selected positive testimony: AP003954
-- Selected adverse testimony: AP003945, AP003949
+- Selected positive testimony: AP003951, AP003954
+- Selected adverse testimony: AP003945, AP003949, AP003952
 - Relevant evidence categories: electrical, fault_finding, mechanical, permit_or_isolation
 - Full clean log review: 259 rows; 7 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 10 exact keeper-code-keyed rows; 6 rows not selected by the appraisal filter.
+- Appraisal processing: 10 exact keeper-code-keyed rows mechanically processed; 5 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
-- Discuss the selected adverse testimony in AP003945, AP003949 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+- Discuss the selected adverse testimony in AP003945, AP003949, AP003952 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
 - Appraisals AP003954 have year-only 2026 dates, so their position relative to 2026-10-11 is unknown and they remain context only.
 
 Category support:
@@ -1792,7 +1891,8 @@ Manager testimony selected as screening context:
 
 - 2007 (year precision) — Will not touch isolations on the 11kV if he can get someone else to do it. (AP003945; `raw/appraisals/appraisals.jsonl#AP003945`; concern: avoids_work). Manager testimony only, not competence or authorisation.
 - 2015 (year precision) — Will not touch the high voltage side if he can get someone else to do it. (AP003949; `raw/appraisals/appraisals.jsonl#AP003949`; concern: avoids_work). Manager testimony only, not competence or authorisation.
-- 2020 (year precision) — There is a habit of mind here that is worth writing down: Aodhan will not leave isolations on the 11kV half done. (AP003952; `raw/appraisals/appraisals.jsonl#AP003952`; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
+- 2019 (year precision) — Aodhan has been a real asset this year, particularly with switching work. (AP003951; `raw/appraisals/appraisals.jsonl#AP003951`; support: technical_asset_or_strength). Manager testimony only, not competence or authorisation.
+- 2020 (year precision) — Aodhan — 2020 I have a concern about switching work that I do not want to overstate but will not leave unsaid. / There is a habit of mind here that is worth writing down: Aodhan will not leave isolations on the 11kV half done. (AP003952; `raw/appraisals/appraisals.jsonl#AP003952`; concern: expressed_technical_concern; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
 - 2026 (year precision) — Over the year Aodhan has quietly become the station's go-to for the HV authorisation work. (AP003954; `raw/appraisals/appraisals.jsonl#AP003954`; support: go_to_person). Manager testimony only, not competence or authorisation.
 
 - Same-year timing uncertainty: AP003954 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
@@ -1813,6 +1913,8 @@ Credential position:
 - WAHS-2: Attended; `attended_not_passed` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502621`).
 - WAHS-3: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502623`).
 - MPMC-D: Attended; `attended_not_passed` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502624`).
+- Conflict `clean_summary_detailed_module_disagreement`: The clean summary says this HVAP award is complete and valid in 2026 through 2026, while the latest supplied pre-cutoff detailed Pass for HVAP-02 (LH502618, expiry 2023-12-03) is expired at the scenario cutoff. Both source claims are preserved. Renewal or replacement evidence outside the supplied detailed records remains possible, so issuer verification is required and the award is not declared invalid.
+- Conflict `clean_summary_detailed_module_disagreement`: The clean summary says this MECS award is complete and valid in 2026 through 2027, while the latest supplied pre-cutoff detailed Pass for MECS-1 (LH502615, expiry 2022-09-17) is expired at the scenario cutoff. Both source claims are preserved. Renewal or replacement evidence outside the supplied detailed records remains possible, so issuer verification is required and the award is not declared invalid.
 
 Initial selection action:
 
@@ -1830,18 +1932,19 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K1418 — Hurlan O Failbhe
 
-- Interview: `supported_technical_interview` — CL004517 (2008-02-24) records "Changed the battery in the portable set."; CL003898 (2006-03-09) records "Ran No.2 set 8 hrs. Oil and water checked.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL004517 (2008-02-24) records "Changed the battery in the portable set."; CL003898 (2006-03-09) records "Ran No.2 set 8 hrs. Oil and water checked.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP004062, AP004063 is retained with positive testimony; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL004517, CL003898
 - Selected positive testimony: none selected
-- Selected adverse testimony: none selected
+- Selected adverse testimony: AP004062, AP004063
 - Relevant evidence categories: electrical, fault_finding, mechanical
 - Full clean log review: 297 rows; 7 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 5 exact keeper-code-keyed rows; 5 rows not selected by the appraisal filter.
+- Appraisal processing: 5 exact keeper-code-keyed rows mechanically processed; 3 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
+- Discuss the selected adverse testimony in AP004062, AP004063 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
 - Appraisals AP004064 have year-only 2026 dates, so their position relative to 2026-10-11 is unknown and they remain context only.
 
 Category support:
@@ -1858,6 +1961,11 @@ Evidence:
 - 2006-03-09 — “Ran No.2 set 8 hrs. Oil and water checked.” (CL003898; `raw/logbooks/era2-keeperlog/KLOG2006.DAT#002534`; clean/manual attribution corroborated by raw keeper_code K1418).
 - 2003-03-04 — “Bled the fuel system after the filter change.” (CL002921; `raw/logbooks/era1-ocr/naomhog-2003.txt#L107`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
 
+Manager testimony selected as screening context:
+
+- 2008 (year precision) — The difficulty this year has been the plant, and I do not think it is want of effort. (AP004062; `raw/appraisals/appraisals.jsonl#AP004062`; concern: slow_or_difficult_start). Manager testimony only, not competence or authorisation.
+- 2009 (year precision) — A slow start on the engines, though much improved by the autumn. (AP004063; `raw/appraisals/appraisals.jsonl#AP004063`; concern: slow_or_difficult_start). Manager testimony only, not competence or authorisation.
+
 - Same-year timing uncertainty: AP004064 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
 
 Limitations:
@@ -1871,7 +1979,8 @@ Credential position:
 - MECS-2: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502691`).
 - OSSC-FA: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502692`).
 - MECS-3: Attended; `attended_not_passed` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502693`).
-- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 0; later modules do not bridge missing earlier stages.
+- Conflict `clean_summary_detailed_module_disagreement`: The clean summary says this OSSC award is complete and valid in 2026 through 2028, while the latest supplied pre-cutoff detailed Pass for OSSC-FA (LH502692, expiry 2024-05-18) is expired at the scenario cutoff. Both source claims are preserved. Renewal or replacement evidence outside the supplied detailed records remains possible, so issuer verification is required and the award is not declared invalid.
+- Conflict `consecutive_stage_not_established`: The supplied records do not establish a consecutive Stage 1 award; later recorded modules do not fill that evidence gap. This describes the documented module sequence, not the person's actual awarded stage.
 
 Initial selection action:
 
@@ -1889,19 +1998,19 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K1446 — Kelveen Sellanby
 
-- Interview: `supported_technical_interview` — CL010352 (2026-01-02) records "Traced the nuisance low-volt alarm to a soft cell in the NO.2 bank, replaced it."; CL010071 (2024-12-06) records "Bled the fuel system after the filter change.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP004147, AP004150 is retained with positive testimony; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL010352 (2026-01-02) records "Traced the nuisance low-volt alarm to a soft cell in the NO.2 bank, replaced it."; CL010071 (2024-12-06) records "Bled the fuel system after the filter change.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP004144, AP004146, AP004147, AP004150, AP004153 is retained with positive testimony in AP004145, AP004146, AP004149, AP004151; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL010352, CL010071
-- Selected positive testimony: none selected
-- Selected adverse testimony: AP004147, AP004150
+- Selected positive testimony: AP004145, AP004146, AP004149, AP004151
+- Selected adverse testimony: AP004144, AP004146, AP004147, AP004150, AP004153
 - Relevant evidence categories: electrical, fault_finding, mechanical
 - Full clean log review: 408 rows; 8 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 10 exact keeper-code-keyed rows; 8 rows not selected by the appraisal filter.
+- Appraisal processing: 10 exact keeper-code-keyed rows mechanically processed; 2 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
-- Discuss the selected adverse testimony in AP004147, AP004150 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+- Discuss the selected adverse testimony in AP004144, AP004146, AP004147, AP004150, AP004153 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
 - Appraisals AP004153 have year-only 2026 dates, so their position relative to 2026-10-11 is unknown and they remain context only.
 
 Category support:
@@ -1920,8 +2029,14 @@ Evidence:
 
 Manager testimony selected as screening context:
 
+- 2013 (year precision) — Slow with the standby banks. (AP004144; `raw/appraisals/appraisals.jsonl#AP004144`; concern: slow_or_difficult_start). Manager testimony only, not competence or authorisation.
+- 2016 (year precision) — the batteries within tolerance. / Competency framework reference: satisfactory in height work. (AP004145; `raw/appraisals/appraisals.jsonl#AP004145`; support: maintained_or_within_tolerance, satisfactory_standard; decision-neutral context: framework_or_evidence_reference). Manager testimony only, not competence or authorisation.
+- 2017 (year precision) — The keeper demonstrates an adequate working knowledge of the VHF. / Authorisation for the VHF lapsed during the year and has not been renewed. (AP004146; `raw/appraisals/appraisals.jsonl#AP004146`; support: adequate_working_knowledge; concern: authorisation_lapsed; decision-neutral context: authorisation_status). Manager testimony only, not competence or authorisation.
 - 2018 (year precision) — The standard achieved in height work falls below that expected of the grade. (AP004147; `raw/appraisals/appraisals.jsonl#AP004147`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
-- 2023 (year precision) — Needs supervision on the standby banks. / staging work needs work. (AP004150; `raw/appraisals/appraisals.jsonl#AP004150`; concern: needs_supervision, needs_work). Manager testimony only, not competence or authorisation.
+- 2020 (year precision) — The standard achieved in work on the gallery is considered acceptable for the grade. (AP004149; `raw/appraisals/appraisals.jsonl#AP004149`; support: acceptable_for_grade). Manager testimony only, not competence or authorisation.
+- 2023 (year precision) — Needs supervision on the standby banks. / Slow with the VHF. / staging work needs work. (AP004150; `raw/appraisals/appraisals.jsonl#AP004150`; concern: needs_supervision, needs_work, slow_or_difficult_start). Manager testimony only, not competence or authorisation.
+- 2024 (year precision) — radio work fine. (AP004151; `raw/appraisals/appraisals.jsonl#AP004151`; support: positive_short_form). Manager testimony only, not competence or authorisation.
+- 2026 (year precision) — An improvement objective relating to radio work has been set for the coming year. (AP004153; `raw/appraisals/appraisals.jsonl#AP004153`; concern: technical_improvement_objective; decision-neutral context: technical_objective). Manager testimony only, not competence or authorisation.
 
 - Same-year timing uncertainty: AP004153 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
 
@@ -1938,7 +2053,8 @@ Credential position:
 - MECS-3: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502753`).
 - MPMC-B: Attended; `attended_not_passed` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502755`).
 - Conflict `prerequisite_not_established`: A current OSSC-SS prerequisite is not established by the dated LearnHub rows supplied.
-- Conflict `consecutive_stage_not_established`: The defined cumulative stage is only Stage 1; later modules do not bridge missing earlier stages.
+- Conflict `clean_summary_detailed_module_disagreement`: The clean summary says this SMOC award is complete and valid in 2026 through 2027, while the latest supplied pre-cutoff detailed Pass for SMOC-MO (LH502752, expiry 2024-03-09) is expired at the scenario cutoff. Both source claims are preserved. Renewal or replacement evidence outside the supplied detailed records remains possible, so issuer verification is required and the award is not declared invalid.
+- Conflict `consecutive_stage_not_established`: The supplied records establish a documented consecutive sequence through MECS-1; later recorded modules do not establish MECS-2. This does not determine the person's actual awarded stage.
 
 Initial selection action:
 
@@ -1956,15 +2072,15 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K1468 — Ruadhan O Niallghusa
 
-- Interview: `supported_technical_interview` — CL010450 (2026-05-16) records "Set the timing on NO.2 after the pump was refitted, ran it up and checked exhaust temps."; CL010252 (2025-08-04) records "Lamp not lit, found the fuse gone. Renewed.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP004219 is retained with positive testimony; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL010450 (2026-05-16) records "Set the timing on NO.2 after the pump was refitted, ran it up and checked exhaust temps."; CL010252 (2025-08-04) records "Lamp not lit, found the fuse gone. Renewed.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP004219 is retained with positive testimony in AP004221; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL010450, CL010252
-- Selected positive testimony: none selected
+- Selected positive testimony: AP004221
 - Selected adverse testimony: AP004219
 - Relevant evidence categories: electrical, fault_finding, mechanical
 - Full clean log review: 200 rows; 13 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 3 exact keeper-code-keyed rows; 2 rows not selected by the appraisal filter.
+- Appraisal processing: 3 exact keeper-code-keyed rows mechanically processed; 1 row not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
@@ -1986,7 +2102,8 @@ Evidence:
 
 Manager testimony selected as screening context:
 
-- 2004 (year precision) — ANNUAL CONFIDENTIAL REPORT Some deficiency has been noted in respect of haulage gear, which the keeper has been advised to address. (AP004219; `raw/appraisals/appraisals.jsonl#AP004219`; concern: specific_deficiency). Manager testimony only, not competence or authorisation.
+- 2004 (year precision) — ANNUAL CONFIDENTIAL REPORT Some deficiency has been noted in respect of haulage gear, which the keeper has been advised to address. / Principal evidence relates to the control side of the sets. (AP004219; `raw/appraisals/appraisals.jsonl#AP004219`; concern: specific_deficiency; decision-neutral context: framework_or_evidence_reference). Manager testimony only, not competence or authorisation.
+- 2006 (year precision) — the main sets remains a strength. (AP004221; `raw/appraisals/appraisals.jsonl#AP004221`; support: technical_asset_or_strength). Manager testimony only, not competence or authorisation.
 
 Limitations:
 
@@ -2016,18 +2133,19 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K1474 — Ossian Mac Domhnallain
 
-- Interview: `supported_technical_interview` — CL007218 (2015-06-25) records "Renewed fuse links, no 2 way. All made off."; CL005945 (2012-01-05) records "Filter changed on the power pack.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL007218 (2015-06-25) records "Renewed fuse links, no 2 way. All made off."; CL005945 (2012-01-05) records "Filter changed on the power pack.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP004229, AP004233, AP004235 is retained with positive testimony in AP004227, AP004228, AP004231, AP004232; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL007218, CL005945
-- Selected positive testimony: none selected
-- Selected adverse testimony: none selected
+- Selected positive testimony: AP004227, AP004228, AP004231, AP004232
+- Selected adverse testimony: AP004229, AP004233, AP004235
 - Relevant evidence categories: electrical, fault_finding, mechanical
 - Full clean log review: 233 rows; 7 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 7 exact keeper-code-keyed rows; 7 rows not selected by the appraisal filter.
+- Appraisal processing: 7 exact keeper-code-keyed rows mechanically processed; 0 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
+- Discuss the selected adverse testimony in AP004229, AP004233, AP004235 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
 - The permitted clean/manual attribution for CL007339 is not corroborated by the cited raw identifier; preserve that provenance limitation and do not use those rows alone.
 
 Category support:
@@ -2043,6 +2161,16 @@ Evidence:
 - 2015-06-25 — “Renewed fuse links, no 2 way. All made off.” (CL007218; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#13546`; clean/manual attribution corroborated by raw name Ossian Mac Domhnalláin).
 - 2012-01-05 — “Filter changed on the power pack.” (CL005945; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#000173`; clean/manual attribution corroborated by raw keeper_code K1474).
 - 2011-07-18 — “Greased the compressor and checked the belts.” (CL005770; `raw/logbooks/era2-keeperlog/KLOG2011.DAT#007194`; clean/manual attribution corroborated by raw keeper_code K1474).
+
+Manager testimony selected as screening context:
+
+- 2007 (year precision) — height work — no complaints. (AP004227; `raw/appraisals/appraisals.jsonl#AP004227`; support: without_adverse_comment). Manager testimony only, not competence or authorisation.
+- 2008 (year precision) — Duties associated with the ironwork have been discharged without adverse comment. (AP004228; `raw/appraisals/appraisals.jsonl#AP004228`; support: without_adverse_comment). Manager testimony only, not competence or authorisation.
+- 2009 (year precision) — Slow with the hydraulics. (AP004229; `raw/appraisals/appraisals.jsonl#AP004229`; concern: slow_or_difficult_start). Manager testimony only, not competence or authorisation.
+- 2011 (year precision) — Performance in respect of the ironwork has been of a consistently satisfactory standard. (AP004231; `raw/appraisals/appraisals.jsonl#AP004231`; support: satisfactory_standard). Manager testimony only, not competence or authorisation.
+- 2012 (year precision) — the ironwork well handled this year. / Duties associated with the lantern glass have been discharged without adverse comment. (AP004232; `raw/appraisals/appraisals.jsonl#AP004232`; support: positive_short_form, without_adverse_comment). Manager testimony only, not competence or authorisation.
+- 2013 (year precision) — Slow with the lantern glass. (AP004233; `raw/appraisals/appraisals.jsonl#AP004233`; concern: slow_or_difficult_start). Manager testimony only, not competence or authorisation.
+- 2015 (year precision) — Told him twice about the hydraulics. (AP004235; `raw/appraisals/appraisals.jsonl#AP004235`; concern: directed_more_than_once). Manager testimony only, not competence or authorisation.
 
 Limitations:
 
@@ -2070,19 +2198,19 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K1483 — Eachann O Preachain
 
-- Interview: `supported_technical_interview` — CL007775 (2017-04-19) records "Compressor not making pressure, rings worn. Rebuilt the No.1 cylinder."; CL000410 (1990-11-07) records "Changed the battery in the portable set.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP004258 is retained with positive testimony; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL007775 (2017-04-19) records "Compressor not making pressure, rings worn. Rebuilt the No.1 cylinder."; CL000410 (1990-11-07) records "Changed the battery in the portable set.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP004256, AP004258 is retained with positive testimony; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL007775, CL000410
 - Selected positive testimony: none selected
-- Selected adverse testimony: AP004258
+- Selected adverse testimony: AP004256, AP004258
 - Relevant evidence categories: electrical, mechanical
 - Full clean log review: 268 rows; 3 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 4 exact keeper-code-keyed rows; 3 rows not selected by the appraisal filter.
+- Appraisal processing: 4 exact keeper-code-keyed rows mechanically processed; 2 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
-- Discuss the selected adverse testimony in AP004258 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+- Discuss the selected adverse testimony in AP004256, AP004258 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
 
 Category support:
 
@@ -2097,6 +2225,7 @@ Evidence:
 
 Manager testimony selected as screening context:
 
+- 2017 (year precision) — The difficulty this year has been the diaphone, and I do not think it is want of effort. (AP004256; `raw/appraisals/appraisals.jsonl#AP004256`; concern: slow_or_difficult_start). Manager testimony only, not competence or authorisation.
 - 2019 (year precision) — the fog signal has to be checked behind him. (AP004258; `raw/appraisals/appraisals.jsonl#AP004258`; concern: work_checked_behind). Manager testimony only, not competence or authorisation.
 
 Limitations:
@@ -2110,6 +2239,7 @@ Credential position:
 - LOSC-P: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502827`).
 - HVAP-02: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH502826`).
 - Conflict `prerequisite_chronology_not_established`: The supplied rows do not establish both prerequisite passes on or before LOSC-P; an earlier unrepresented pass remains possible.
+- Conflict `clean_summary_detailed_module_disagreement`: The clean summary says this LOSC award is complete and valid in 2026 through 2028, while the latest supplied pre-cutoff detailed Pass for LOSC-P (LH502827, expiry 2022-11-19) is expired at the scenario cutoff. Both source claims are preserved. Renewal or replacement evidence outside the supplied detailed records remains possible, so issuer verification is required and the award is not declared invalid.
 
 Initial selection action:
 
@@ -2127,15 +2257,15 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K1511 — Jarlath Drenmore
 
-- Interview: `supported_technical_interview` — CL010561 (2026-10-10) records "Rewired the changeover contactor arrangement, tested on both feeds and left in auto.". This is specific, attributed evidence of hands-on electrical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP004317 is retained with positive testimony in AP004320; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL010561 (2026-10-10) records "Rewired the changeover contactor arrangement, tested on both feeds and left in auto.". This is specific, attributed evidence of hands-on electrical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP004317 is retained with positive testimony in AP004314, AP004315, AP004319, AP004320, AP004321, AP004322; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL010561
-- Selected positive testimony: AP004320
+- Selected positive testimony: AP004314, AP004315, AP004319, AP004320, AP004321, AP004322
 - Selected adverse testimony: AP004317
 - Relevant evidence categories: electrical, fault_finding
 - Full clean log review: 171 rows; 8 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 8 exact keeper-code-keyed rows; 6 rows not selected by the appraisal filter.
+- Appraisal processing: 8 exact keeper-code-keyed rows mechanically processed; 1 row not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
@@ -2158,8 +2288,13 @@ Evidence:
 
 Manager testimony selected as screening context:
 
+- 2006 (year precision) — I watched Jarlath work through diagnostics in conditions I would not have chosen and it was done properly. (AP004314; `raw/appraisals/appraisals.jsonl#AP004314`; support: performed_properly). Manager testimony only, not competence or authorisation.
+- 2007 (year precision) — Gets on with fault work without a fuss. (AP004315; `raw/appraisals/appraisals.jsonl#AP004315`; support: positive_short_form). Manager testimony only, not competence or authorisation.
 - 2010 (year precision) — Weak on the distribution side. (AP004317; `raw/appraisals/appraisals.jsonl#AP004317`; concern: weakness). Manager testimony only, not competence or authorisation.
+- 2015 (year precision) — APPRAISAL 2015 Annual objective relating to the control side of the sets closed as achieved. (AP004319; `raw/appraisals/appraisals.jsonl#AP004319`; support: objective_achieved; decision-neutral context: technical_objective). Manager testimony only, not competence or authorisation.
 - 2018 (year precision) — switchgear work is sound and that is the main thing. (AP004320; `raw/appraisals/appraisals.jsonl#AP004320`; support: sound). Manager testimony only, not competence or authorisation.
+- 2022 (year precision) — Duties associated with the distribution side have been discharged without adverse comment. (AP004321; `raw/appraisals/appraisals.jsonl#AP004321`; support: without_adverse_comment). Manager testimony only, not competence or authorisation.
+- 2026 (year precision) — Gets on with the boards without a fuss. (AP004322; `raw/appraisals/appraisals.jsonl#AP004322`; support: positive_short_form). Manager testimony only, not competence or authorisation.
 
 - Same-year timing uncertainty: AP004322 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
 
@@ -2191,19 +2326,19 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K1538 — Oileann Ni Gharbhail
 
-- Interview: `supported_technical_interview` — CL007925 (2017-10-13) records "Changed oil and filters on no 2."; CL007686 (2017-01-11) records "Megger test on the No.1 feeder, 3.6 bar, condemned the cable and ran a temporary.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP004422 is retained with positive testimony in AP004418; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL007925 (2017-10-13) records "Changed oil and filters on no 2."; CL007686 (2017-01-11) records "Megger test on the No.1 feeder, 3.6 bar, condemned the cable and ran a temporary.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP004419, AP004422 is retained with positive testimony in AP004418, AP004421; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL007925, CL007686
-- Selected positive testimony: AP004418
-- Selected adverse testimony: AP004422
+- Selected positive testimony: AP004418, AP004421
+- Selected adverse testimony: AP004419, AP004422
 - Relevant evidence categories: electrical, fault_finding, mechanical, permit_or_isolation
 - Full clean log review: 369 rows; 11 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 8 exact keeper-code-keyed rows; 6 rows not selected by the appraisal filter.
+- Appraisal processing: 8 exact keeper-code-keyed rows mechanically processed; 3 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Unresolved questions retained for selection:
 
-- Discuss the selected adverse testimony in AP004422 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
+- Discuss the selected adverse testimony in AP004419, AP004422 alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto.
 
 Category support:
 
@@ -2223,13 +2358,18 @@ Evidence:
 
 Manager testimony selected as screening context:
 
-- 2013 (year precision) — There is a habit of mind here that is worth writing down: Oileann will not leave the high voltage side half done. / Over the year Oileann has quietly become the station's go-to for switching work. / When the boards went wrong in the spring, Oileann was the one who sorted it out. (AP004418; `raw/appraisals/appraisals.jsonl#AP004418`; support: go_to_person, resolved_failure; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
+- 2013 (year precision) — There is a habit of mind here that is worth writing down: Oileann will not leave the high voltage side half done. / Over the year Oileann has quietly become the station's go-to for switching work. / I watched Oileann work through fault work in conditions I would not have chosen and it was done properly. / When the boards went wrong in the spring, Oileann was the one who sorted it out. (AP004418; `raw/appraisals/appraisals.jsonl#AP004418`; support: go_to_person, performed_properly, resolved_failure; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
+- 2014 (year precision) — APPRAISAL 2014 Referred to District Training for remedial input on the control side of the sets. / Authorisation for the control side of the sets lapsed during the year and has not been renewed. (AP004419; `raw/appraisals/appraisals.jsonl#AP004419`; concern: authorisation_lapsed, remedial_input; decision-neutral context: authorisation_status). Manager testimony only, not competence or authorisation.
+- 2015 (year precision) — Principal evidence relates to chasing faults. (AP004420; `raw/appraisals/appraisals.jsonl#AP004420`; decision-neutral context: framework_or_evidence_reference). Manager testimony only, not competence or authorisation.
+- 2016 (year precision) — PERFORMANCE MANAGEMENT RECORD Annual objective relating to diagnostics closed as achieved. (AP004421; `raw/appraisals/appraisals.jsonl#AP004421`; support: objective_achieved; decision-neutral context: technical_objective). Manager testimony only, not competence or authorisation.
 - 2017 (year precision) — Gap identified in isolations on the 11kV. (AP004422; `raw/appraisals/appraisals.jsonl#AP004422`; concern: identified_gap). Manager testimony only, not competence or authorisation.
 
-- Supplementary note: A 2011 manager note records generator-control fault-finding and years of station high-voltage switching; clean entry CL006360 records work on an 11 kV board. (`raw/appraisals/station_manager_notes/2011-nevisbeg-keeper-note.txt#L3,L7,L9,L11`). The note names NI GHARBHAIL O/Oileann and the personnel export has one exact NI GHARBHAIL O match. The clean profile places K1538 at Nevisbeg in 2011, but the note's claimed eleven-year station tenure conflicts with the recorded chronology. This is an interview lead, not an authorisation.
+- Supplementary note: A 2011 manager note records generator-control fault-finding, years of station high-voltage switching and a claim that an internal authorisation under an unspecified earlier surname was lost with records in the 1997 changeover; clean entry CL006360 records work on an 11 kV board. Exact excerpt: “She does the high voltage switching on this station and has done for years. She is the only person here I would let near it unsupervised. There is no ticket for it that anyone would recognise, because the internal authorisation was issued under an earlier surname at a station whose training records went in the 1997 changeover, and she has never once made a fuss about that.” (`raw/appraisals/station_manager_notes/2011-nevisbeg-keeper-note.txt#L3,L7,L9,L11`). The note names NI GHARBHAIL O/Oileann and the personnel row raw/personnel/cla_personnel_export.csv#L341 has one exact NI GHARBHAIL O match and a 2009-2017 Nevisbeg posting. The clean profile also places K1538 at Nevisbeg in 2011, but the note's tenure and authorisation chronology conflicts remain unresolved. The note is testimony, not a current authorisation or proof of eligibility. If a separate AP route later becomes relevant, documentary recovery may be explored conditionally; no outcome is assumed.
 - Hand-check entry: 2013-02-03 — “Took the 11kV board off, worked the sequence myself, the supernumerary witnessing.” (CL006360; `raw/logbooks/era2-keeperlog/KLOG2013.DAT#001138`).
 
-- Chronology conflict `oileann_station_tenure_conflict`: The 2011 note says Oileann had been at Nevisbeg for eleven years (implying about 2000), while the clean profile records joining in 1998 and a Nevisbeg posting beginning in 2009. The testimony is retained as an interview lead, but its station-tenure chronology is not established.
+- Chronology conflict `oileann_station_tenure_conflict`: The 2011 note says Oileann had been at Nevisbeg for eleven years (implying about 2000), while the personnel export records joining on 1998-08-05 and a Nevisbeg posting beginning in 2009. The clean profile gives only 1998-01-01 as a year-level joining date. The testimony is retained as an interview lead, but its station-tenure chronology is not established.
+
+- Chronology conflict `oileann_authorisation_employment_chronology_question`: The note claims an internal authorisation under an unspecified earlier surname was lost with station records in the 1997 changeover, while the personnel export records a joining date of 1998-08-05. If the claimed authorisation necessarily predates the changeover, it would appear to predate recorded employment; that is an inference requiring clarification, not an established contradiction or an invitation to invent an earlier surname.
 
 Limitations:
 
@@ -2257,15 +2397,15 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K0478 — Ossian O Raghnaill
 
-- Interview: `targeted_screening_first` — CL010541 (2026-09-20) records "Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.". This is specific, attributed evidence of hands-on electrical maintenance with transferable relevance to the O&M posting's plant-maintenance work. However, material contradiction in AP001159, AP001160, AP001162, AP001165: Attributed electrical and isolation logs sit alongside repeated, directly conflicting testimony about switching, distribution and switchgear work, including both 'go-to' and shortfall/checking claims. The records establish activity but leave its responsibility and quality materially unresolved. Clarification is needed before a technical interview; neither source is silently preferred.
+- Interview: `targeted_screening_first` — CL010541 (2026-09-20) records "Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.". This is specific, attributed evidence of hands-on electrical maintenance with transferable relevance to the O&M posting's plant-maintenance work. However, material contradiction in AP001159, AP001160, AP001162, AP001165: Attributed electrical and isolation logs sit alongside repeated, directly conflicting testimony about switching, distribution and switchgear work, including both 'go-to' and shortfall/checking claims. The records establish activity but leave its responsibility and quality materially unresolved. Positive station-note testimony in raw/appraisals/station_manager_notes/2017-raheenvarra-o-raghnaill.txt#L2 is also retained, but it does not prove authorisation or silently resolve later concerns. Clarification is needed before a technical interview; neither source is silently preferred.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL010541
-- Selected positive testimony: AP001157, AP001159, AP001166, AP001167
-- Selected adverse testimony: AP001159, AP001160, AP001162, AP001165
+- Selected positive testimony: AP001157, AP001159, AP001161, AP001165, AP001166, AP001167
+- Selected adverse testimony: AP001159, AP001160, AP001161, AP001162, AP001165
 - Relevant evidence categories: electrical, fault_finding, permit_or_isolation
 - Full clean log review: 192 rows; 6 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 8 exact keeper-code-keyed rows; 1 row not selected by the appraisal filter.
+- Appraisal processing: 8 exact keeper-code-keyed rows mechanically processed; 0 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 - Material unresolved core issue: Attributed electrical and isolation logs sit alongside repeated, directly conflicting testimony about switching, distribution and switchgear work, including both 'go-to' and shortfall/checking claims. The records establish activity but leave its responsibility and quality materially unresolved.
 
@@ -2293,12 +2433,15 @@ Manager testimony selected as screening context:
 - 2014 (year precision) — On Ossian this year: When switching work went wrong in the spring, Ossian was the one who sorted it out. (AP001157; `raw/appraisals/appraisals.jsonl#AP001157`; support: resolved_failure). Manager testimony only, not competence or authorisation.
 - 2017 (year precision) — Attention is drawn to a recurring shortfall in switching work. / Over the year Ossian has quietly become the station's go-to for isolations on the 11kV. (AP001159; `raw/appraisals/appraisals.jsonl#AP001159`; support: go_to_person; concern: recurring_shortfall). Manager testimony only, not competence or authorisation.
 - 2018 (year precision) — The standard achieved in the distribution side falls below that expected of the grade. (AP001160; `raw/appraisals/appraisals.jsonl#AP001160`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
-- 2021 (year precision) — the distribution side has to be checked behind him. (AP001162; `raw/appraisals/appraisals.jsonl#AP001162`; concern: work_checked_behind). Manager testimony only, not competence or authorisation.
-- 2024 (year precision) — Some deficiency has been noted in respect of switchgear work, which the keeper has been advised to address. (AP001165; `raw/appraisals/appraisals.jsonl#AP001165`; concern: specific_deficiency). Manager testimony only, not competence or authorisation.
+- 2020 (year precision) — An improvement objective relating to the high voltage side has been set for the coming year. / The standard achieved in the distribution side is considered acceptable for the grade. / Attended the district course in the distribution side, though I am told the paperwork never came back. (AP001161; `raw/appraisals/appraisals.jsonl#AP001161`; support: acceptable_for_grade; concern: technical_improvement_objective; decision-neutral context: technical_course_with_document_gap, technical_objective). Manager testimony only, not competence or authorisation.
+- 2021 (year precision) — The thing I would put on record about Ossian is the lantern glass. / the distribution side has to be checked behind him. (AP001162; `raw/appraisals/appraisals.jsonl#AP001162`; concern: work_checked_behind; decision-neutral context: recorded_technical_observation). Manager testimony only, not competence or authorisation.
+- 2024 (year precision) — Ó Raghnaill continues to apply themselves appropriately to fault work. / Some deficiency has been noted in respect of switchgear work, which the keeper has been advised to address. (AP001165; `raw/appraisals/appraisals.jsonl#AP001165`; support: positive_application; concern: specific_deficiency). Manager testimony only, not competence or authorisation.
 - 2025 (year precision) — Good humoured, hard working, and genuinely capable at the lantern glass. (AP001166; `raw/appraisals/appraisals.jsonl#AP001166`; support: explicit_capability). Manager testimony only, not competence or authorisation.
 - 2026 (year precision) — Good humoured, hard working, and genuinely capable at the boards. (AP001167; `raw/appraisals/appraisals.jsonl#AP001167`; support: explicit_capability). Manager testimony only, not competence or authorisation.
 
 - Same-year timing uncertainty: AP001167 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
+
+- Supplementary note: A 2017 Raheenvarra manager note says the manager watched Ossian perform 11 kV isolations and describes the work as textbook. Exact excerpt: “Watched Ossian do isolations on the 11kV today. Textbook, except there is no textbook for it here.” (`raw/appraisals/station_manager_notes/2017-raheenvarra-o-raghnaill.txt#L2`). The note body supplies the given name; the note's station/year context matches RAH:2016-2017 in the personnel row raw/personnel/cla_personnel_export.csv#L91, whose name is O RAGHNAILL O. The clean profile supplies the expanded name Ossian Ó Raghnaill. Attribution uses those combined facts and not the filename alone. Positive manager testimony only. It does not prove current or historical authorisation and does not establish that later switching or switchgear concerns were resolved.
 
 Limitations:
 
@@ -2331,11 +2474,11 @@ Later qualification and mobilisation actions (only after selection progression):
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL009921, CL005994
-- Selected positive testimony: AP003484, AP003485, AP003489, AP003490, AP003494, AP003497
-- Selected adverse testimony: AP003496
+- Selected positive testimony: AP003484, AP003485, AP003489, AP003490, AP003493, AP003494, AP003495, AP003497
+- Selected adverse testimony: AP003496, AP003497
 - Relevant evidence categories: electrical, mechanical
 - Full clean log review: 332 rows; 3 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 13 exact keeper-code-keyed rows; 6 rows not selected by the appraisal filter.
+- Appraisal processing: 13 exact keeper-code-keyed rows mechanically processed; 4 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 - Material unresolved core issue: Four attributed hands-on records, including motor-brush and commutator maintenance, conflict with AP003496's direct statement that the manager had not observed the plant work suggested by the record and that two requests for assistance were avoided.
 
@@ -2361,9 +2504,11 @@ Manager testimony selected as screening context:
 - 2007 (year precision) — When the optic went wrong in the spring, Tomaltach was the one who sorted it out. / Over the year Tomaltach has quietly become the station's go-to for the lamp and lens. (AP003485; `raw/appraisals/appraisals.jsonl#AP003485`; support: go_to_person, resolved_failure). Manager testimony only, not competence or authorisation.
 - 2011 (year precision) — There is a habit of mind here that is worth writing down: Tomaltach will not leave the light itself half done. / When the optic went wrong in the spring, Tomaltach was the one who sorted it out. (AP003489; `raw/appraisals/appraisals.jsonl#AP003489`; support: resolved_failure; decision-neutral context: careful_completion_testimony). Manager testimony only, not competence or authorisation.
 - 2012 (year precision) — Over the year Tomaltach has quietly become the station's go-to for the lamp and lens. (AP003490; `raw/appraisals/appraisals.jsonl#AP003490`; support: go_to_person). Manager testimony only, not competence or authorisation.
-- 2020 (year precision) — I have come to rely on Tomaltach for the optic and have never been let down. (AP003494; `raw/appraisals/appraisals.jsonl#AP003494`; support: trusted_by_manager). Manager testimony only, not competence or authorisation.
+- 2019 (year precision) — Competency framework reference: satisfactory in the optic. (AP003493; `raw/appraisals/appraisals.jsonl#AP003493`; support: satisfactory_standard; decision-neutral context: framework_or_evidence_reference). Manager testimony only, not competence or authorisation.
+- 2020 (year precision) — I have come to rely on Tomaltach for the optic and have never been let down. / I watched Tomaltach work through inspection reports in conditions I would not have chosen and it was done properly. / Holds the station authorisation for inspection reports and it remains current. (AP003494; `raw/appraisals/appraisals.jsonl#AP003494`; support: performed_properly, trusted_by_manager; decision-neutral context: authorisation_status). Manager testimony only, not competence or authorisation.
+- 2022 (year precision) — Quietly gets on with the lamp and lens and gets it right. (AP003495; `raw/appraisals/appraisals.jsonl#AP003495`; support: positive_application, positive_short_form). Manager testimony only, not competence or authorisation.
 - 2024 (year precision) — He has not, to my knowledge, carried out any of the plant work the certificates would suggest, and on the two occasions I have asked him to assist he has found reasons not to. (AP003496; `raw/appraisals/appraisals.jsonl#AP003496`; concern: avoids_work, experience_disputed). Manager testimony only, not competence or authorisation.
-- 2025 (year precision) — Tomaltach — 2025 Tomaltach took on the lamp and lens without being asked and made a proper job of it. / I have come to rely on Tomaltach for defect reporting and have never been let down. (AP003497; `raw/appraisals/appraisals.jsonl#AP003497`; support: made_proper_job, trusted_by_manager). Manager testimony only, not competence or authorisation.
+- 2025 (year precision) — Tomaltach — 2025 Tomaltach took on the lamp and lens without being asked and made a proper job of it. / The difficulty this year has been the optic, and I do not think it is want of effort. / I have come to rely on Tomaltach for defect reporting and have never been let down. (AP003497; `raw/appraisals/appraisals.jsonl#AP003497`; support: made_proper_job, trusted_by_manager; concern: slow_or_difficult_start). Manager testimony only, not competence or authorisation.
 
 Limitations:
 
@@ -2399,8 +2544,14 @@ Credential position:
 - Conflict `expiry_rule_conflict`: At 2026-10-11, the supplied expiry says current but the nominal scheme-rule date says expired; issuer verification is required before relying on either date.
 - Conflict `prerequisite_not_established`: A current OSSC-SS prerequisite is not established by the dated LearnHub rows supplied.
 - Conflict `prerequisite_not_established`: A current OSSC-SS prerequisite is not established by the dated LearnHub rows supplied.
+- Conflict `clean_training_temporal_reconciliation`: The clean summary records a year-only 2026 completion, but the uniquely corresponding detailed Pass LH502324 was completed on 2026-11-23, after 2026-10-11. It remains future evidence and is not treated as established at the cutoff.
 - Conflict `prerequisite_chronology_not_established`: The supplied rows do not establish both prerequisite passes on or before LOSC-P; an earlier unrepresented pass remains possible.
-- Future at cutoff and not used: LH502324.
+- Conflict `clean_summary_detailed_module_disagreement`: The clean summary says this MECS award is complete and valid in 2026 through 2027, while the latest supplied pre-cutoff detailed Pass for MECS-1 (LH502291, expiry 2024-03-11), MECS-4 (LH502292, expiry 2024-02-27), MECS-5 (LH502293, expiry 2024-04-17) is expired at the scenario cutoff. Both source claims are preserved. Renewal or replacement evidence outside the supplied detailed records remains possible, so issuer verification is required and the award is not declared invalid.
+- Conflict `clean_summary_detailed_module_disagreement`: The clean summary says this OSSC award is complete and valid in 2026 through 2029, while the latest supplied pre-cutoff detailed Pass for OSSC-CS (LH502303, expiry 2026-06-22), OSSC-FA (LH502298, expiry 2025-08-01), OSSC-HL (LH502304, expiry 2026-07-22) is expired at the scenario cutoff. Both source claims are preserved. Renewal or replacement evidence outside the supplied detailed records remains possible, so issuer verification is required and the award is not declared invalid.
+- Conflict `clean_summary_detailed_module_disagreement`: The clean summary says this WAHS award is complete and valid in 2026 through 2028, while the latest supplied pre-cutoff detailed Pass for WAHS-2 (LH502300, expiry 2024-10-27) is expired at the scenario cutoff. Both source claims are preserved. Renewal or replacement evidence outside the supplied detailed records remains possible, so issuer verification is required and the award is not declared invalid.
+- Conflict `clean_summary_detailed_module_disagreement`: The clean summary says this SMOC award is complete and valid in 2026 through 2030, while the latest supplied pre-cutoff detailed Pass for SMOC-NV (LH502294, expiry 2024-08-14) is expired at the scenario cutoff. Both source claims are preserved. Renewal or replacement evidence outside the supplied detailed records remains possible, so issuer verification is required and the award is not declared invalid.
+- Conflict `clean_summary_detailed_module_disagreement`: The clean summary says this LOSC award is complete and valid in 2026 through 2028, while the latest supplied pre-cutoff detailed Pass for LOSC-A (LH502309, expiry 2026-07-16) is expired at the scenario cutoff. Both source claims are preserved. Renewal or replacement evidence outside the supplied detailed records remains possible, so issuer verification is required and the award is not declared invalid.
+- Future at cutoff and not used: LH502324 — ANSM-C, Pass, completed 2026-11-23 (`raw/training/vendor-c-learnhub-2017-2026.json#LH502324`).
 
 Initial selection action:
 
@@ -2426,7 +2577,7 @@ Later qualification and mobilisation actions (only after selection progression):
 - Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, mechanical
 - Full clean log review: 374 rows; 7 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 0 exact keeper-code-keyed rows; 0 rows not selected by the appraisal filter.
+- Appraisal processing: 0 exact keeper-code-keyed rows mechanically processed; 0 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Category support:
 
@@ -2458,7 +2609,7 @@ No current credential, training or mobilisation pathway is assessed for this lea
 - Selected adverse testimony: none selected
 - Relevant evidence categories: electrical, mechanical, permit_or_isolation
 - Full clean log review: 353 rows; 9 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal review: 0 exact keeper-code-keyed rows; 0 rows not selected by the appraisal filter.
+- Appraisal processing: 0 exact keeper-code-keyed rows mechanically processed; 0 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
 Category support:
 

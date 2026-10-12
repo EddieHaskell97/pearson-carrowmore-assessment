@@ -28,6 +28,9 @@ HVAP_POSTING = ROOT + "employers/carrowmore-array-hv-authorised-person.md"
 CURRENT = ROOT + "raw/personnel/cla_personnel_export.csv"
 LEAVERS = ROOT + "raw/personnel/cla_personnel_leavers.csv"
 OILEANN_NOTE = ROOT + "raw/appraisals/station_manager_notes/2011-nevisbeg-keeper-note.txt"
+OSSIAN_NOTE = ROOT + "raw/appraisals/station_manager_notes/2017-raheenvarra-o-raghnaill.txt"
+AOIFE_NOTE = ROOT + "raw/appraisals/station_manager_notes/2003-portnalee-ni-mhurchu.txt"
+GEARALT_NOTE = ROOT + "raw/appraisals/station_manager_notes/1993-cnoclia-o-heidhneain.txt"
 APPRAISALS = ROOT + "raw/appraisals/appraisals.jsonl"
 
 EXPECTED_ARCHIVE_HASH = "59f12ea4dfb43d311429fdd34c207517c2ffefbf917e4cdfe9737ca5776270f5"
@@ -41,6 +44,9 @@ EXPECTED_MEMBER_HASHES = {
     CURRENT: "14ba3653d9ab29b86b273cb7016dba574d840729de85d5b0eac367ed3170b4c7",
     LEAVERS: "920f7a76d3710ac08a56d7bf9ac0de83cf65f5525e8c7a1dfc905b517d2d9a0a",
     OILEANN_NOTE: "767fa1decaafb6e56556ca7416b069e07cebf85a2cbd5d3c2d661df85d08adc4",
+    OSSIAN_NOTE: "73bc6dcec14edcc1b42e803c904ca086a714be12b5075793e25d9fa89a18137b",
+    AOIFE_NOTE: "33d00afd7dc17fc35c297e429fbc31320296dc4147daf2043da961d9abe4168a",
+    GEARALT_NOTE: "d0a5b692ea7d327981725628c0301c10c3c0e08135f358ee6145620ee4cfbe23",
     APPRAISALS: "c19ba6216619c0c4d103b5dd7d99edb49f9722fba94a6eb9de824adfba1488d1",
 }
 
@@ -144,6 +150,14 @@ APPRAISAL_CONCERN_PATTERNS = {
     "no_use_and_not_learning": re.compile(r"\bno use at all\b.*\bshows no sign of learning\b", re.I),
     "avoids_work": re.compile(r"\bwill not touch\b|\bfound reasons not to\b", re.I),
     "experience_disputed": re.compile(r"\bhas not, to my knowledge, carried out any of the plant work\b", re.I),
+    "technical_improvement_objective": re.compile(r"\bimprovement objective relating to\b", re.I),
+    "slow_or_difficult_start": re.compile(r"\bslow (?:with|start on)\b|\bthe difficulty this year has been\b", re.I),
+    "directed_more_than_once": re.compile(r"\btold (?:him|her|them) twice about\b", re.I),
+    "technical_not_strong_suit": re.compile(r"\bnot (?:his|her|their) strong suit\b", re.I),
+    "authorisation_lapsed": re.compile(r"\bauthorisation for\b.*\blapsed\b.*\bnot been renewed\b", re.I),
+    "remedial_input": re.compile(r"\breferred to district training for remedial input\b", re.I),
+    "expressed_technical_concern": re.compile(r"\bI have a concern about\b", re.I),
+    "still_developing": re.compile(r"\bstill finding (?:his|her|their) feet with\b", re.I),
 }
 APPRAISAL_SUPPORT_PATTERNS = {
     "go_to_person": re.compile(r"\bstation['’]s go-to\b", re.I),
@@ -153,11 +167,46 @@ APPRAISAL_SUPPORT_PATTERNS = {
     "explicit_capability": re.compile(r"\bgenuinely capable\b|\bcompetent\b", re.I),
     "good_standard": re.compile(r"\bto a good standard\b|\bproper standard\b", re.I),
     "sound": re.compile(r"\bis sound\b", re.I),
+    "acceptable_for_grade": re.compile(r"\bconsidered acceptable for the grade\b", re.I),
+    "performed_properly": re.compile(r"\b(?:was |were )?done properly\b|\bperformed properly\b", re.I),
+    "satisfactory_standard": re.compile(r"\b(?:consistently |very )?satisfactory(?: standard| indeed)?\b", re.I),
+    "adequate_working_knowledge": re.compile(r"\badequate working knowledge\b", re.I),
+    "without_adverse_comment": re.compile(r"\bwithout adverse comment\b|\bno complaints\b", re.I),
+    "positive_application": re.compile(r"\bapply themselves appropriately\b|\bgets it right\b|\bquietly gets on with\b", re.I),
+    "technical_asset_or_strength": re.compile(r"\breal asset\b|\bremains a strength\b|\bstandard I have not seen bettered\b", re.I),
+    "objective_achieved": re.compile(r"\bobjective relating to\b.*\bclosed as achieved\b", re.I),
+    "peer_reference": re.compile(r"\bthe younger men go to\b|\bknows more about\b.*\bthan the engineers\b", re.I),
+    "maintained_or_within_tolerance": re.compile(r"\battention to\b.*\bmaintained throughout\b|\bwithin tolerance\b", re.I),
+    "positive_short_form": re.compile(r"\b(?:good on|well handled|gets on with|knows)\b|\bfine\b", re.I),
+    "benchmark_standard": re.compile(r"\bat a standard the rest of us measure ourselves against\b", re.I),
 }
 APPRAISAL_CONTEXT_PATTERNS = {
     # Retain useful corroborating or contrary context without allowing these
     # phrases alone to change the decision gate.
     "careful_completion_testimony": re.compile(r"\bwill not leave\b.*\bhalf done\b", re.I),
+    "technical_course_with_document_gap": re.compile(r"\battended the district course\b.*\bpaperwork never came back\b", re.I),
+    "technical_objective": re.compile(r"\b(?:improvement|annual) objective relating to\b", re.I),
+    "authorisation_status": re.compile(r"\bauthorisation for\b.*\b(?:lapsed|remains current)\b", re.I),
+    "framework_or_evidence_reference": re.compile(r"\bcompetency framework reference\b|\b(?:supporting observation|principal evidence)(?:\s*:| relates to)", re.I),
+    "ticket_administration": re.compile(r"\bno formal ticket\b.*\badministrative matter\b", re.I),
+    "recorded_technical_observation": re.compile(r"\bthe thing I would put on record about\b", re.I),
+}
+
+# Two synthetic appraisal rows split a positive assessment from its technical
+# object with a full stop ("Competent. the ... in particular."). These exact,
+# hand-reviewed exceptions preserve that local relationship without weakening
+# the same-sentence rule for unrelated praise or criticism elsewhere.
+APPRAISAL_MANUAL_SELECTIONS = {
+    "AP000490": {
+        "excerpts": ["Competent.", "the distribution side in particular."],
+        "topics": ["electrical_or_controls"],
+        "support_signals": ["bounded_manual_competence_fragment"],
+    },
+    "AP000559": {
+        "excerpts": ["Competent.", "the AIS gear in particular."],
+        "topics": ["adjacent_station_technical"],
+        "support_signals": ["bounded_manual_competence_fragment"],
+    },
 }
 
 PRIMARY_APPRAISAL_TOPICS = {
@@ -201,7 +250,11 @@ def verify_inputs(zip_path: Path, zf: zipfile.ZipFile) -> dict:
 
 def parse_personnel(zf: zipfile.ZipFile, member: str) -> list[dict]:
     text = zf.read(member).decode("utf-8-sig")
-    return list(csv.DictReader(io.StringIO(text)))
+    rows = []
+    for line_number, row in enumerate(csv.DictReader(io.StringIO(text)), start=2):
+        row["_source_reference"] = f"{member.removeprefix(ROOT)}#L{line_number}"
+        rows.append(row)
+    return rows
 
 
 def canonical_name(value: str | None) -> str | None:
@@ -386,6 +439,7 @@ def normalized_work_template(text: str) -> str:
 def work_evidence_record(
     zf: zipfile.ZipFile,
     keeper: dict,
+    personnel: dict,
     entry: dict,
     categories: list[str],
     score: int,
@@ -393,6 +447,23 @@ def work_evidence_record(
     corroboration = raw_corroboration(zf, entry, keeper)
     if not corroboration["resolved"]:
         raise ValueError(f"unresolved source reference {entry['source_record']}")
+    work_date = parse_date(entry["date"])
+    personnel_join_date = parse_date(personnel.get("date_joined"))
+    chronology = {
+        "status": "work_not_before_precise_personnel_join_date",
+        "work_date": entry["date"],
+        "precise_personnel_join_date": personnel.get("date_joined"),
+        "clean_profile_join_date": keeper.get("date_joined"),
+        "personnel_source_reference": personnel["_source_reference"],
+        "clean_source_reference": f"clean/keepers.json#{keeper['keeper_code']}/date_joined",
+    }
+    if personnel_join_date and work_date < personnel_join_date:
+        chronology["status"] = "unresolved_work_predates_precise_personnel_join_date"
+        chronology["finding"] = (
+            f"The retained work is dated {entry['date']}, before the personnel export's precise joining date "
+            f"{personnel['date_joined']}. Earlier service, differing date definitions or a source error are possible, "
+            "but none is established. The work and both joining-date claims are retained."
+        )
     return {
         "entry_id": entry["entry_id"],
         "date": entry["date"],
@@ -406,11 +477,12 @@ def work_evidence_record(
         "measurement_quality_flags": measurement_quality_flags(entry["text"]),
         "selection_score": score,
         "template_key": normalized_work_template(entry["text"]),
+        "personnel_chronology": chronology,
     }
 
 
 def select_work_evidence(
-    zf: zipfile.ZipFile, keeper: dict, entries: list[dict], as_of: date
+    zf: zipfile.ZipFile, keeper: dict, personnel: dict, entries: list[dict], as_of: date
 ) -> tuple[list[dict], dict]:
     """Review the complete clean history, then return a readable evidence sample."""
     candidates = []
@@ -449,7 +521,7 @@ def select_work_evidence(
         normalized = normalized_work_template(entry["text"])
         if normalized in normalized_seen:
             continue
-        distinct.append(work_evidence_record(zf, keeper, entry, categories, score))
+        distinct.append(work_evidence_record(zf, keeper, personnel, entry, categories, score))
         normalized_seen.add(normalized)
 
     # Five examples are normally sufficient for readability. K1200's four
@@ -459,8 +531,10 @@ def select_work_evidence(
     if keeper["keeper_code"] == "K1200":
         required = []
         for entry_id in K1200_MATERIAL_LOG_IDS:
+            if entry_id not in material_display_candidates:
+                continue
             score, _, entry, categories = material_display_candidates[entry_id]
-            required.append(work_evidence_record(zf, keeper, entry, categories, score))
+            required.append(work_evidence_record(zf, keeper, personnel, entry, categories, score))
         chosen = required + [row for row in chosen if row["entry_id"] not in K1200_MATERIAL_LOG_IDS]
         chosen = chosen[: max(5, len(required))]
 
@@ -496,14 +570,17 @@ def select_work_evidence(
 
 
 def build_appraisal_review(rows: list[dict], as_of: date) -> dict:
-    """Review exact keeper-code-keyed appraisals without name-only inference."""
-    reviewed_ids, relevant, future_ids, same_year_uncertain = [], [], [], []
+    """Process exact-code appraisals and select bounded technical testimony."""
+    processed_ids, relevant, future_ids, future_relevant_ids, same_year_uncertain = [], [], [], [], []
+    technical_topic_candidate_ids = []
     for row in sorted(rows, key=lambda item: (item["year"], item["record_id"])):
-        reviewed_ids.append(row["record_id"])
+        processed_ids.append(row["record_id"])
         relevant_sentences, topic_set, concern_set, support_set, context_set = [], set(), set(), set(), set()
+        has_technical_topic = False
         for sentence in re.split(r"(?<=[.!?])\s+|\n+", row["text"]):
             sentence = sentence.strip()
             sentence_topics = {name for name, pattern in APPRAISAL_TOPIC_PATTERNS.items() if pattern.search(sentence)}
+            has_technical_topic = has_technical_topic or bool(sentence_topics)
             sentence_concerns = {name for name, pattern in APPRAISAL_CONCERN_PATTERNS.items() if pattern.search(sentence)}
             sentence_supports = {name for name, pattern in APPRAISAL_SUPPORT_PATTERNS.items() if pattern.search(sentence)}
             sentence_context = {name for name, pattern in APPRAISAL_CONTEXT_PATTERNS.items() if pattern.search(sentence)}
@@ -516,6 +593,18 @@ def build_appraisal_review(rows: list[dict], as_of: date) -> dict:
                 concern_set.update(sentence_concerns)
                 support_set.update(sentence_supports)
                 context_set.update(sentence_context)
+        manual = APPRAISAL_MANUAL_SELECTIONS.get(row["record_id"])
+        if manual:
+            for excerpt in manual["excerpts"]:
+                if excerpt not in row["text"]:
+                    raise ValueError(f"manual appraisal excerpt changed for {row['record_id']}")
+                if excerpt not in relevant_sentences:
+                    relevant_sentences.append(excerpt)
+            topic_set.update(manual["topics"])
+            support_set.update(manual["support_signals"])
+            has_technical_topic = True
+        if has_technical_topic:
+            technical_topic_candidate_ids.append(row["record_id"])
         topics = sorted(topic_set)
         concerns = sorted(concern_set)
         supports = sorted(support_set)
@@ -529,24 +618,26 @@ def build_appraisal_review(rows: list[dict], as_of: date) -> dict:
         else:
             temporal_use = "pre_cutoff_year"
         if topics and (concerns or supports or context):
-            relevant.append(
-                {
-                    "record_id": row["record_id"],
-                    "year": row["year"],
-                    "date_precision": "year",
-                    "station_code": row["station"],
-                    "role_relevant_excerpt": relevant_sentences,
-                    "source_text_sha256": sha256(row["text"].encode("utf-8")),
-                    "source_reference": f"raw/appraisals/appraisals.jsonl#{row['record_id']}",
-                    "attribution": "exact_keeper_code",
-                    "topics": topics,
-                    "support_signals": supports,
-                    "concern_signals": concerns,
-                    "context_signals": context,
-                    "decision_time_treatment": temporal_use,
-                    "evidence_limit": "Manager testimony; useful for screening questions but not proof of competence, authorisation or the date of an event within the year.",
-                }
-            )
+            selected = {
+                "record_id": row["record_id"],
+                "year": row["year"],
+                "date_precision": "year",
+                "station_code": row["station"],
+                "role_relevant_excerpt": relevant_sentences,
+                "source_text_sha256": sha256(row["text"].encode("utf-8")),
+                "source_reference": f"raw/appraisals/appraisals.jsonl#{row['record_id']}",
+                "attribution": "exact_keeper_code",
+                "topics": topics,
+                "support_signals": supports,
+                "concern_signals": concerns,
+                "context_signals": context,
+                "decision_time_treatment": temporal_use,
+                "evidence_limit": "Manager testimony; useful for screening questions but not proof of competence, authorisation or the date of an event within the year.",
+            }
+            if temporal_use == "future_year_not_used":
+                future_relevant_ids.append(row["record_id"])
+            else:
+                relevant.append(selected)
     pre_cutoff_adverse = [
         row
         for row in relevant
@@ -568,11 +659,14 @@ def build_appraisal_review(rows: list[dict], as_of: date) -> dict:
     ]
     return {
         "attribution_rule": "Only rows carrying this profile's exact keeper_code were attached. Null-key and name-only rows were not guessed.",
-        "keyed_rows_reviewed": len(rows),
-        "reviewed_record_ids": reviewed_ids,
+        "processing_and_review_scope": "Every exact-code row was mechanically processed. The bounded manual review covered technical-topic candidates and named omissions used to refine the selector; this is not a claim of complete semantic human review of every appraisal sentence.",
+        "keyed_rows_processed": len(rows),
+        "processed_record_ids": processed_ids,
+        "technical_topic_candidate_record_ids": technical_topic_candidate_ids,
         "role_relevant_testimony": relevant,
         "role_relevant_testimony_count": len(relevant),
         "future_year_record_ids_not_used": future_ids,
+        "future_role_relevant_record_ids_not_used": future_relevant_ids,
         "same_year_record_ids_timing_uncertain": same_year_uncertain,
         "pre_cutoff_adverse_testimony_ids": [row["record_id"] for row in pre_cutoff_adverse],
         "same_year_adverse_testimony_ids": [row["record_id"] for row in same_year_adverse],
@@ -588,9 +682,73 @@ def build_appraisal_review(rows: list[dict], as_of: date) -> dict:
             for row in relevant
             if row["record_id"] not in {item["record_id"] for item in strong_support}
         ],
-        "rows_not_selected_by_appraisal_filter": len(rows) - len(relevant),
+        "rows_not_selected_by_appraisal_filter": len(rows) - len(relevant) - len(future_relevant_ids),
         "unmatched_row_label": "not selected by the appraisal filter",
     }
+
+
+STATION_NOTE_SELECTIONS = {
+    "K0478": {
+        "member": OSSIAN_NOTE,
+        "line": 2,
+        "exact_text": "Watched Ossian do isolations on the 11kV today. Textbook, except there is no textbook for it here.",
+        "station_posting": "RAH:2016-2017",
+        "personnel_name": "O RAGHNAILL O",
+        "claim": "A 2017 Raheenvarra manager note says the manager watched Ossian perform 11 kV isolations and describes the work as textbook.",
+        "limit": "Positive manager testimony only. It does not prove current or historical authorisation and does not establish that later switching or switchgear concerns were resolved.",
+    },
+    "K0847": {
+        "member": AOIFE_NOTE,
+        "line": 2,
+        "exact_text": "Watched Aoife do chasing faults today. Textbook, except there is no textbook for it here.",
+        "station_posting": "POR:2000-2004",
+        "personnel_name": "NI MHURCHU A",
+        "claim": "A 2003 Portnalee manager note says the manager watched Aoife chase faults and describes the work as textbook.",
+        "limit": "Positive manager testimony only; it does not establish assessed competence, certification or current proficiency.",
+    },
+    "K0310": {
+        "member": GEARALT_NOTE,
+        "line": 2,
+        "exact_text": "Gearalt is wasfe.d here. the boards is the best in the district and the stafioii does not need it.",
+        "station_posting": "CNO:1993-1993",
+        "personnel_name": "O HEIDHNEAIN G",
+        "claim": "A 1993 Cnoclia note contains a damaged transcription naming Gearalt and saying the boards are the best in the district.",
+        "limit": "The supplied transcription is visibly corrupted and the technical meaning is not silently repaired. It is a historical interview lead, not proof of current practice, and it does not create an exact-code-keyed appraisal in appraisals.jsonl.",
+    },
+}
+
+
+def station_note_evidence(zf: zipfile.ZipFile, keeper: dict, personnel: dict) -> list[dict]:
+    rule = STATION_NOTE_SELECTIONS.get(keeper["keeper_code"])
+    if not rule:
+        return []
+    lines = zf.read(rule["member"]).decode("utf-8").splitlines()
+    exact_text = lines[rule["line"] - 1]
+    if exact_text != rule["exact_text"]:
+        raise ValueError(f"station-note text changed for {keeper['keeper_code']}")
+    if personnel["name"] != rule["personnel_name"] or rule["station_posting"] not in personnel["station_postings"]:
+        raise ValueError(f"station-note personnel attribution failed for {keeper['keeper_code']}")
+    source = f"{rule['member'].removeprefix(ROOT)}#L{rule['line']}"
+    return [
+        {
+            "claim": rule["claim"],
+            "exact_excerpt": exact_text,
+            "source_reference": source,
+            "source_text_sha256": sha256(zf.read(rule["member"])),
+            "attribution": "bounded_name_station_year_corroboration",
+            "attribution_basis": (
+                f"The note body supplies the given name; the note's station/year context matches {rule['station_posting']} in "
+                f"the personnel row {personnel['_source_reference']}, whose name is {personnel['name']}. The clean profile "
+                f"supplies the expanded name {keeper['name']}. Attribution uses those combined facts and not the filename alone."
+            ),
+            "attribution_sources": [
+                personnel["_source_reference"],
+                f"clean/keepers.json#{keeper['keeper_code']}",
+            ],
+            "use": "interview_lead_only",
+            "evidence_limit": rule["limit"],
+        }
+    ]
 
 
 def training_status(record: dict, as_of: date) -> str:
@@ -617,8 +775,10 @@ def add_years(value: date, years: int) -> date:
         return value.replace(year=value.year + years, day=28)
 
 
-def build_training(keeper: dict, learnhub_rows: list[dict], scheme_map: dict, as_of: date) -> tuple[list[dict], list[dict]]:
-    claims, future = [], []
+def build_training(
+    keeper: dict, learnhub_rows: list[dict], scheme_map: dict, as_of: date
+) -> tuple[list[dict], list[dict], list[dict]]:
+    claims, future, all_claims = [], [], []
     for row in sorted(learnhub_rows, key=lambda x: (x.get("completed_on") or "", x["id"])):
         module = row.get("scheme_module") or ""
         status = training_status(row, as_of)
@@ -653,26 +813,103 @@ def build_training(keeper: dict, learnhub_rows: list[dict], scheme_map: dict, as
             }
             if claim["expiry_comparison"]["cutoff_status_disagrees"]:
                 claim["status_at_cutoff"] = "pass_expiry_conflict_at_cutoff"
+        all_claims.append(claim)
         if claim["status_at_cutoff"] == "future_at_cutoff":
             future.append(claim)
         elif module.startswith(RELEVANT_TRAINING_PREFIXES):
             claims.append(claim)
-    return claims, future
+    return claims, future, all_claims
 
 
 def current_module(claims: list[dict], module: str) -> bool:
     return any(c["module"] == module and c["status_at_cutoff"] == "pass_current_at_cutoff" for c in claims)
 
 
-def clean_completed_modules(keeper: dict, scheme: str) -> set[str]:
-    return {
+def reconcile_clean_training_claims(keeper: dict, all_claims: list[dict], as_of: date) -> list[dict]:
+    """Reconcile year-only clean completions to uniquely matching detailed Passes."""
+    reconciliation = []
+    for clean in keeper.get("training_records", []):
+        if clean.get("outcome") != "completed":
+            continue
+        module = clean["module"]
+        matches = [
+            claim
+            for claim in all_claims
+            if claim["module"] == module
+            and claim["outcome"] == "Pass"
+            and claim.get("completed_on")
+            and parse_date(claim["completed_on"]).year == clean["year"]
+        ]
+        source_reference = f"clean/keepers.json#{keeper['keeper_code']}/training_records/{module}/{clean['year']}"
+        item = {
+            "scheme": clean["scheme"],
+            "module": module,
+            "clean_claim": {"year": clean["year"], "outcome": clean["outcome"], "source_reference": source_reference},
+            "matching_detailed_record_ids": [claim["record_id"] for claim in matches],
+        }
+        if len(matches) == 1:
+            detailed = matches[0]
+            item["matched_detailed_record"] = detailed
+            if detailed["status_at_cutoff"] == "future_at_cutoff":
+                item["temporal_status"] = "future_detailed_pass_not_established_at_cutoff"
+                item["finding"] = (
+                    f"The clean summary records a year-only {clean['year']} completion, but the uniquely corresponding "
+                    f"detailed Pass {detailed['record_id']} was completed on {detailed['completed_on']}, after "
+                    f"{as_of.isoformat()}. It remains future evidence and is not treated as established at the cutoff."
+                )
+            else:
+                item["temporal_status"] = "established_by_matched_pre_cutoff_detailed_pass"
+                item["finding"] = f"Detailed Pass {detailed['record_id']} establishes this completion by the cutoff."
+        elif len(matches) > 1:
+            item["temporal_status"] = "multiple_detailed_matches_timing_unresolved"
+            item["finding"] = "Multiple same-year detailed Passes match the clean claim, so no single record is silently chosen."
+        elif clean["year"] < as_of.year:
+            item["temporal_status"] = "established_before_cutoff_by_clean_year_only_claim"
+            item["finding"] = "The clean claim's year is wholly before the cutoff; no corresponding detailed Pass was identified."
+        elif clean["year"] > as_of.year:
+            item["temporal_status"] = "future_clean_year_only_claim_not_established"
+            item["finding"] = "The clean claim's year is after the cutoff and is not treated as established."
+        else:
+            item["temporal_status"] = "same_year_clean_claim_timing_unknown"
+            item["finding"] = (
+                f"The clean claim supplies only {clean['year']}; without a reliable corresponding detailed date, its position "
+                f"relative to {as_of.isoformat()} is unknown and it is not treated as established."
+            )
+        reconciliation.append(item)
+    return reconciliation
+
+
+def established_completed_modules(
+    reconciliation: list[dict], all_claims: list[dict], scheme: str, as_of: date
+) -> set[str]:
+    established = {
         row["module"]
-        for row in keeper.get("training_records", [])
-        if row.get("scheme") == scheme and row.get("outcome") == "completed"
+        for row in reconciliation
+        if row["scheme"] == scheme
+        and row["temporal_status"] in {
+            "established_by_matched_pre_cutoff_detailed_pass",
+            "established_before_cutoff_by_clean_year_only_claim",
+        }
     }
+    established.update(
+        claim["module"]
+        for claim in all_claims
+        if claim["module"].startswith(scheme + "-")
+        and claim["outcome"] == "Pass"
+        and claim.get("completed_on")
+        and parse_date(claim["completed_on"]) <= as_of
+    )
+    return established
 
 
-def credential_conflicts(keeper: dict, claims: list[dict], as_of: date) -> list[dict]:
+def credential_conflicts(
+    keeper: dict,
+    claims: list[dict],
+    all_claims: list[dict],
+    clean_training_reconciliation: list[dict],
+    clean_certification_summaries: list[dict],
+    as_of: date,
+) -> list[dict]:
     conflicts = []
     for claim in claims:
         comparison = claim.get("expiry_comparison")
@@ -704,6 +941,26 @@ def credential_conflicts(keeper: dict, claims: list[dict], as_of: date) -> list[
                     ],
                 }
             )
+    for row in clean_training_reconciliation:
+        if row["temporal_status"] in {
+            "future_detailed_pass_not_established_at_cutoff",
+            "future_clean_year_only_claim_not_established",
+            "same_year_clean_claim_timing_unknown",
+            "multiple_detailed_matches_timing_unresolved",
+        }:
+            refs = [row["clean_claim"]["source_reference"]]
+            if row.get("matched_detailed_record"):
+                refs.append(row["matched_detailed_record"]["source_reference"])
+            conflicts.append(
+                {
+                    "code": "clean_training_temporal_reconciliation",
+                    "scheme": row["scheme"],
+                    "module": row["module"],
+                    "claim": f"The clean training history records {row['module']} completed in {row['clean_claim']['year']}.",
+                    "finding": row["finding"],
+                    "source_references": refs,
+                }
+            )
     losc = {c["module"]: c for c in claims if c["module"].startswith("LOSC-") and c["outcome"] == "Pass"}
     if "LOSC-P" in losc:
         p_date = losc["LOSC-P"].get("completed_on") or "9999-12-31"
@@ -717,7 +974,24 @@ def credential_conflicts(keeper: dict, claims: list[dict], as_of: date) -> list[
                     "source_references": [losc["LOSC-P"]["source_reference"], "employers/certification_schemes.json#LOSC"],
                 }
             )
-    completed_mecs = clean_completed_modules(keeper, "MECS")
+    for summary in clean_certification_summaries:
+        reconciliation = summary["source_summary_reconciliation"]
+        if reconciliation["status"] == "unresolved_clean_summary_detailed_pass_disagreement":
+            conflicts.append(
+                {
+                    "code": "clean_summary_detailed_module_disagreement",
+                    "scheme": summary["scheme"],
+                    "record_ids": reconciliation["expired_detailed_pass_record_ids"],
+                    "claim": (
+                        f"The clean {summary['scheme']} summary claims complete={summary['complete']}, "
+                        f"valid_2026={summary['valid_2026']} and expires_year={summary['expires_year']}."
+                    ),
+                    "finding": reconciliation["finding"],
+                    "source_references": [summary["source_reference"]]
+                    + [row["source_reference"] for row in summary["detailed_module_reconciliation"] if row.get("record_id") in reconciliation["expired_detailed_pass_record_ids"]],
+                }
+            )
+    completed_mecs = established_completed_modules(clean_training_reconciliation, all_claims, "MECS", as_of)
     highest = 0
     for stage in range(1, 6):
         if f"MECS-{stage}" in completed_mecs:
@@ -726,13 +1000,29 @@ def credential_conflicts(keeper: dict, claims: list[dict], as_of: date) -> list[
             break
     later = sorted(m for m in completed_mecs if int(m.split("-")[1]) > highest)
     if later:
+        if highest == 0:
+            finding = (
+                "The supplied records do not establish a consecutive Stage 1 award; later recorded modules do not fill "
+                "that evidence gap. This describes the documented module sequence, not the person's actual awarded stage."
+            )
+        else:
+            finding = (
+                f"The supplied records establish a documented consecutive sequence through MECS-{highest}; later recorded "
+                f"modules do not establish MECS-{highest + 1}. This does not determine the person's actual awarded stage."
+            )
         conflicts.append(
             {
                 "code": "consecutive_stage_not_established",
                 "scheme": "MECS",
-                "claim": f"Completed modules include {', '.join(sorted(completed_mecs))}.",
-                "finding": f"The defined cumulative stage is only Stage {highest}; later modules do not bridge missing earlier stages.",
-                "source_references": [f"clean/keepers.json#{keeper['keeper_code']}/training_records", "employers/certification_schemes.json#MECS"],
+                "claim": f"Pre-cutoff supplied records establish completed modules {', '.join(sorted(completed_mecs))}.",
+                "documented_consecutive_sequence_through": f"MECS-{highest}" if highest else None,
+                "later_recorded_modules": later,
+                "finding": finding,
+                "source_references": [
+                    f"clean/keepers.json#{keeper['keeper_code']}/training_records",
+                    "raw/training/vendor-c-learnhub-2017-2026.json",
+                    "employers/certification_schemes.json#MECS",
+                ],
             }
         )
     return conflicts
@@ -750,10 +1040,75 @@ def provisional_safety_mapping(claims: list[dict]) -> dict:
     }
 
 
-def clean_summaries(keeper: dict) -> list[dict]:
+def clean_summaries(keeper: dict, all_claims: list[dict], as_of: date) -> list[dict]:
     relevant = {"OSSC", "WAHS", "MECS", "MPMC", "HVAP", "SMOC", "LOSC"}
-    return [
-        {
+    summaries = []
+    for c in keeper.get("certifications", []):
+        if c.get("scheme") not in relevant:
+            continue
+        detailed = []
+        for module in c.get("modules_held", []):
+            passes = [
+                claim
+                for claim in all_claims
+                if claim["module"] == module
+                and claim["outcome"] == "Pass"
+                and claim.get("completed_on")
+                and parse_date(claim["completed_on"]) <= as_of
+            ]
+            latest = max(passes, key=lambda claim: (claim["completed_on"], claim["record_id"])) if passes else None
+            if not latest:
+                detailed.append(
+                    {
+                        "module": module,
+                        "status": "no_matched_pre_cutoff_detailed_pass",
+                        "finding": "No dated pre-cutoff detailed Pass was matched; this is missing evidence, not proof that no Pass exists.",
+                    }
+                )
+                continue
+            supplied_expiry = parse_date(latest.get("expires_on"))
+            status = (
+                "supplied_pass_expired_at_cutoff"
+                if supplied_expiry and supplied_expiry < as_of
+                else "supplied_pass_current_at_cutoff"
+                if supplied_expiry
+                else "supplied_pass_has_no_expiry"
+            )
+            detailed.append(
+                {
+                    "module": module,
+                    "record_id": latest["record_id"],
+                    "completed_on": latest["completed_on"],
+                    "expires_on": latest.get("expires_on"),
+                    "status": status,
+                    "source_reference": latest["source_reference"],
+                }
+            )
+        expired = [row for row in detailed if row["status"] == "supplied_pass_expired_at_cutoff"]
+        if as_of.year == 2026 and c.get("valid_2026") and expired:
+            source_reconciliation = {
+                "status": "unresolved_clean_summary_detailed_pass_disagreement",
+                "expired_detailed_pass_record_ids": [row["record_id"] for row in expired],
+                "finding": (
+                    f"The clean summary says this {c['scheme']} award is complete and valid in 2026 through "
+                    f"{c.get('expires_year')}, while the latest supplied pre-cutoff detailed Pass for "
+                    + ", ".join(f"{row['module']} ({row['record_id']}, expiry {row['expires_on']})" for row in expired)
+                    + " is expired at the scenario cutoff. Both source claims are preserved. Renewal or replacement evidence outside the supplied detailed records remains possible, so issuer verification is required and the award is not declared invalid."
+                ),
+            }
+        elif as_of.year != 2026:
+            source_reconciliation = {
+                "status": "clean_2026_validity_claim_not_compared_to_alternate_year",
+                "expired_detailed_pass_record_ids": [],
+                "finding": "The clean field is specifically a 2026 validity claim and is not reinterpreted as a claim about this alternate scenario year.",
+            }
+        else:
+            source_reconciliation = {
+                "status": "no_material_disagreement_identified_from_matched_detailed_passes",
+                "expired_detailed_pass_record_ids": [],
+                "finding": "No clean-validity versus latest matched detailed-Pass expiry disagreement was identified at the cutoff; missing detailed records remain missing evidence.",
+            }
+        summaries.append({
             "scheme": c["scheme"],
             "modules_held": c.get("modules_held", []),
             "modules_missing": c.get("modules_missing", []),
@@ -763,14 +1118,20 @@ def clean_summaries(keeper: dict) -> list[dict]:
             "valid_2026": c.get("valid_2026"),
             "status": "clean_summary_claim_not_independent_verification",
             "source_reference": f"clean/keepers.json#{keeper['keeper_code']}/certifications/{c['scheme']}",
-        }
-        for c in keeper.get("certifications", [])
-        if c.get("scheme") in relevant
-    ]
+            "detailed_module_reconciliation": detailed,
+            "source_summary_reconciliation": source_reconciliation,
+        })
+    return summaries
 
 
 def individual_policy_review(
-    keeper: dict, evidence: list[dict], work_review: dict, appraisal_review: dict, is_current: bool
+    keeper: dict,
+    evidence: list[dict],
+    work_review: dict,
+    appraisal_review: dict,
+    supplementary_evidence: list[dict],
+    is_current: bool,
+    as_of: date,
 ) -> tuple[str, str, dict, dict]:
     """Apply the approved qualitative policy after an explicit per-profile review."""
     categories = work_review["category_coverage"]
@@ -808,7 +1169,15 @@ def individual_policy_review(
         for row in evidence
         if row["raw_corroboration"]["identity_provenance"]["corroboration"] == "conflicts"
     ]
-    material = MATERIAL_CORE_CONTRADICTIONS.get(keeper["keeper_code"])
+    available_appraisal_ids = {row["record_id"] for row in appraisal_review["role_relevant_testimony"]}
+    material_rule = MATERIAL_CORE_CONTRADICTIONS.get(keeper["keeper_code"])
+    material_ids = [record_id for record_id in material_rule["record_ids"] if record_id in available_appraisal_ids] if material_rule else []
+    material = ({**material_rule, "record_ids": material_ids} if material_rule and material_ids else None)
+    if material and keeper["keeper_code"] == "K0478" and "AP001165" not in material_ids:
+        material["clarification"] = (
+            "Before a technical interview, clarify what switching and distribution work Ossian personally performed and what checking was required."
+        )
+    supplementary_sources = [row["source_reference"] for row in supplementary_evidence]
     unresolved_questions = []
     if material:
         unresolved_questions.append(material["clarification"])
@@ -820,13 +1189,13 @@ def individual_policy_review(
         unresolved_questions.append(
             f"The permitted clean/manual attribution for {', '.join(raw_conflict_ids)} is not corroborated by the cited raw identifier; preserve that provenance limitation and do not use those rows alone."
         )
-    if not appraisal_review["reviewed_record_ids"] and is_current:
+    if not appraisal_review["processed_record_ids"] and is_current:
         unresolved_questions.append(
             "No exact keeper-code-keyed appraisal is supplied; this is an evidence gap, not a clean performance finding."
         )
     if same_year_ids:
         unresolved_questions.append(
-            f"Appraisals {', '.join(same_year_ids)} have year-only 2026 dates, so their position relative to 2026-10-11 is unknown and they remain context only."
+            f"Appraisals {', '.join(same_year_ids)} have year-only {as_of.year} dates, so their position relative to {as_of.isoformat()} is unknown and they remain context only."
         )
     if keeper["keeper_code"] == "K0310":
         unresolved_questions.append(
@@ -861,8 +1230,13 @@ def individual_policy_review(
         )
         if material:
             recommendation = "targeted_screening_first"
+            supplementary_clause = (
+                f" Positive station-note testimony in {', '.join(supplementary_sources)} is also retained, but it does not prove authorisation or silently resolve later concerns."
+                if supplementary_sources else ""
+            )
             reason = (
-                f"{examples}. {relevance} However, material contradiction in {', '.join(material['record_ids'])}: {material['finding']} Clarification is needed before a technical interview; neither source is silently preferred."
+                f"{examples}. {relevance} However, material contradiction in {', '.join(material['record_ids'])}: {material['finding']}"
+                f"{supplementary_clause} Clarification is needed before a technical interview; neither source is silently preferred."
             )
             selection_action = material["clarification"]
             summary_uncertainty = f"Material core contradiction: {', '.join(material['record_ids'])}"
@@ -886,10 +1260,10 @@ def individual_policy_review(
             if keeper["keeper_code"] == "K0310":
                 summary_uncertainty = "Historical evidence only; logs end 2012 and no keyed appraisal"
             elif same_year_ids:
-                summary_uncertainty = "Year-only 2026 appraisal timing is uncertain"
+                summary_uncertainty = f"Year-only {as_of.year} appraisal timing is uncertain"
             elif adverse_ids:
                 summary_uncertainty = f"Adverse testimony retained for interview: {', '.join(adverse_ids)}"
-            elif not appraisal_review["reviewed_record_ids"]:
+            elif not appraisal_review["processed_record_ids"]:
                 summary_uncertainty = "No keyed appraisal; no clean-record inference"
             else:
                 summary_uncertainty = "Competence and mobilisation remain unestablished"
@@ -901,7 +1275,7 @@ def individual_policy_review(
         "category_coverage": categories,
         "selected_positive_testimony_ids": positive_ids,
         "selected_adverse_testimony_ids": adverse_ids,
-        "same_year_2026_timing_uncertain_ids": same_year_ids,
+        "same_year_timing_uncertain_ids": same_year_ids,
         "material_core_contradiction_ids": material["record_ids"] if material else [],
         "ranking_used": False,
         "numerical_interview_threshold_used": False,
@@ -910,12 +1284,13 @@ def individual_policy_review(
             "supported_technical_interview": "Specific attributed evidence supports plausible hands-on mechanical or electrical maintenance experience; adverse, sparse or old evidence is discussed but is not an automatic veto.",
             "targeted_screening_first": "A named material attribution problem or contradiction concerning the core experience claim must be clarified before a technical interview.",
             "insufficient_evidence": "The bounded sources do not establish essential hands-on mechanical or electrical maintenance; missing records are not proof that the person lacks experience.",
-            "year_precision": "A 2026 year-only appraisal is context only because its position relative to 2026-10-11 is unknown.",
+            "year_precision": f"A {as_of.year} year-only appraisal is context only because its position relative to {as_of.isoformat()} is unknown.",
         },
     }
     review = {
         "supporting_core_work_ids": criteria["supporting_core_work_ids"],
         "positive_testimony_ids": positive_ids,
+        "positive_supplementary_sources": supplementary_sources,
         "adverse_testimony_ids": adverse_ids,
         "material_unresolved_issue": material["finding"] if material else None,
         "unresolved_questions": unresolved_questions,
@@ -982,15 +1357,18 @@ def ordered_actions(
     return initial, later
 
 
-def evaluate_keeper(zf, keeper, entries, appraisal_rows, learnhub_rows, scheme_map, as_of):
-    evidence, work_review = select_work_evidence(zf, keeper, entries, as_of)
+def evaluate_keeper(zf, keeper, personnel, entries, appraisal_rows, learnhub_rows, scheme_map, as_of):
+    evidence, work_review = select_work_evidence(zf, keeper, personnel, entries, as_of)
     appraisal_review = build_appraisal_review(appraisal_rows, as_of) if keeper["status"] == "current" else {
         "attribution_rule": "Leaver appraisals were not assessed because the person is outside the current cohort.",
-        "keyed_rows_reviewed": 0,
-        "reviewed_record_ids": [],
+        "processing_and_review_scope": "Leaver appraisals were not processed because the person is outside the current cohort.",
+        "keyed_rows_processed": 0,
+        "processed_record_ids": [],
+        "technical_topic_candidate_record_ids": [],
         "role_relevant_testimony": [],
         "role_relevant_testimony_count": 0,
         "future_year_record_ids_not_used": [],
+        "future_role_relevant_record_ids_not_used": [],
         "same_year_record_ids_timing_uncertain": [],
         "pre_cutoff_adverse_testimony_ids": [],
         "same_year_adverse_testimony_ids": [],
@@ -1001,8 +1379,17 @@ def evaluate_keeper(zf, keeper, entries, appraisal_rows, learnhub_rows, scheme_m
         "rows_not_selected_by_appraisal_filter": 0,
         "unmatched_row_label": "not selected by the appraisal filter",
     }
-    claims, future = build_training(keeper, learnhub_rows, scheme_map, as_of)
-    conflicts = credential_conflicts(keeper, claims, as_of)
+    claims, future, all_claims = build_training(keeper, learnhub_rows, scheme_map, as_of)
+    clean_training_reconciliation = reconcile_clean_training_claims(keeper, all_claims, as_of)
+    certification_summaries = clean_summaries(keeper, all_claims, as_of)
+    conflicts = credential_conflicts(
+        keeper,
+        claims,
+        all_claims,
+        clean_training_reconciliation,
+        certification_summaries,
+        as_of,
+    )
     coverage = provisional_safety_mapping(claims)
     categories = work_review["category_coverage"]
     category_evidence = []
@@ -1018,9 +1405,10 @@ def evaluate_keeper(zf, keeper, entries, appraisal_rows, learnhub_rows, scheme_m
             }
         )
     is_current = keeper["status"] == "current"
+    supplementary = station_note_evidence(zf, keeper, personnel) if is_current else []
 
     recommendation, reason, recommendation_criteria, policy_review = individual_policy_review(
-        keeper, evidence, work_review, appraisal_review, is_current
+        keeper, evidence, work_review, appraisal_review, supplementary, is_current, as_of
     )
     eligibility = (
         "not_assessed_outside_current_cohort"
@@ -1039,7 +1427,7 @@ def evaluate_keeper(zf, keeper, entries, appraisal_rows, learnhub_rows, scheme_m
     if is_current:
         limitations.append({"code": "medical_not_supplied", "text": "No current offshore medical evidence is present in the bounded sources."})
     if keeper["keeper_code"] == "K0310":
-        if appraisal_review["reviewed_record_ids"]:
+        if appraisal_review["processed_record_ids"]:
             raise ValueError("K0310 unexpectedly has a keyed appraisal")
         history_end = work_review["history_date_range_at_cutoff"][1]
         limitations.append(
@@ -1048,17 +1436,37 @@ def evaluate_keeper(zf, keeper, entries, appraisal_rows, learnhub_rows, scheme_m
                 "text": f"Supplied clean logs end on {history_end} and no exact keeper-code-keyed appraisal is present. This is a historical-evidence limitation only; no recency threshold is applied and it does not automatically reject the person.",
             }
         )
-    supplementary = []
     chronology_conflicts = []
+    for item in evidence:
+        chronology = item["personnel_chronology"]
+        if chronology["status"] == "unresolved_work_predates_precise_personnel_join_date":
+            chronology_conflicts.append(
+                {
+                    "code": "retained_work_predates_precise_personnel_join_date",
+                    "entry_id": item["entry_id"],
+                    "finding": chronology["finding"],
+                    "source_references": [
+                        item["source_reference"],
+                        chronology["personnel_source_reference"],
+                        chronology["clean_source_reference"],
+                    ],
+                }
+            )
     if keeper["keeper_code"] == "K1538":
         switching_entry = next(e for e in entries if e["entry_id"] == "CL006360")
         switching_raw = raw_corroboration(zf, switching_entry, keeper)
         if not switching_raw["resolved"]:
             raise ValueError("unresolved Oileann hand-check citation CL006360")
+        oileann_lines = zf.read(OILEANN_NOTE).decode("utf-8").splitlines()
+        authorisation_excerpt = "She does the high voltage switching on this station and has done for years. She is the only person here I would let near it unsupervised. There is no ticket for it that anyone would recognise, because the internal authorisation was issued under an earlier surname at a station whose training records went in the 1997 changeover, and she has never once made a fuss about that."
+        if oileann_lines[10] != authorisation_excerpt:
+            raise ValueError("Oileann authorisation note text changed")
         supplementary.append(
             {
-                "claim": "A 2011 manager note records generator-control fault-finding and years of station high-voltage switching; clean entry CL006360 records work on an 11 kV board.",
+                "claim": "A 2011 manager note records generator-control fault-finding, years of station high-voltage switching and a claim that an internal authorisation under an unspecified earlier surname was lost with records in the 1997 changeover; clean entry CL006360 records work on an 11 kV board.",
+                "exact_excerpt": authorisation_excerpt,
                 "source_reference": "raw/appraisals/station_manager_notes/2011-nevisbeg-keeper-note.txt#L3,L7,L9,L11",
+                "source_text_sha256": sha256(zf.read(OILEANN_NOTE)),
                 "supporting_entry": {
                     "entry_id": switching_entry["entry_id"],
                     "date": switching_entry["date"],
@@ -1067,18 +1475,31 @@ def evaluate_keeper(zf, keeper, entries, appraisal_rows, learnhub_rows, scheme_m
                     "attribution": "clean_manual_attribution",
                     "raw_corroboration": switching_raw,
                 },
-                "attribution_basis": "The note names NI GHARBHAIL O/Oileann and the personnel export has one exact NI GHARBHAIL O match. The clean profile places K1538 at Nevisbeg in 2011, but the note's claimed eleven-year station tenure conflicts with the recorded chronology.",
-                "use": "interview_lead_only",
+                "attribution_basis": f"The note names NI GHARBHAIL O/Oileann and the personnel row {personnel['_source_reference']} has one exact NI GHARBHAIL O match and a 2009-2017 Nevisbeg posting. The clean profile also places K1538 at Nevisbeg in 2011, but the note's tenure and authorisation chronology conflicts remain unresolved.",
+                "attribution_sources": [personnel["_source_reference"], "clean/keepers.json#K1538"],
+                "use": "interview_and_conditional_document_recovery_lead_only",
+                "evidence_limit": "The note is testimony, not a current authorisation or proof of eligibility. If a separate AP route later becomes relevant, documentary recovery may be explored conditionally; no outcome is assumed.",
             }
         )
         chronology_conflicts.append(
             {
                 "code": "oileann_station_tenure_conflict",
-                "finding": "The 2011 note says Oileann had been at Nevisbeg for eleven years (implying about 2000), while the clean profile records joining in 1998 and a Nevisbeg posting beginning in 2009. The testimony is retained as an interview lead, but its station-tenure chronology is not established.",
+                "finding": f"The 2011 note says Oileann had been at Nevisbeg for eleven years (implying about 2000), while the personnel export records joining on {personnel['date_joined']} and a Nevisbeg posting beginning in 2009. The clean profile gives only 1998-01-01 as a year-level joining date. The testimony is retained as an interview lead, but its station-tenure chronology is not established.",
                 "source_references": [
                     "raw/appraisals/station_manager_notes/2011-nevisbeg-keeper-note.txt#L2,L3,L7",
+                    personnel["_source_reference"],
                     "clean/keepers.json#K1538/date_joined",
                     "clean/keepers.json#K1538/postings/NEV",
+                ],
+            }
+        )
+        chronology_conflicts.append(
+            {
+                "code": "oileann_authorisation_employment_chronology_question",
+                "finding": f"The note claims an internal authorisation under an unspecified earlier surname was lost with station records in the 1997 changeover, while the personnel export records a joining date of {personnel['date_joined']}. If the claimed authorisation necessarily predates the changeover, it would appear to predate recorded employment; that is an inference requiring clarification, not an established contradiction or an invitation to invent an earlier surname.",
+                "source_references": [
+                    "raw/appraisals/station_manager_notes/2011-nevisbeg-keeper-note.txt#L11",
+                    personnel["_source_reference"],
                 ],
             }
         )
@@ -1106,7 +1527,8 @@ def evaluate_keeper(zf, keeper, entries, appraisal_rows, learnhub_rows, scheme_m
         "experience_categories": categories,
         "experience_category_evidence": category_evidence,
         "credential_claims": claims,
-        "clean_certification_summaries": clean_summaries(keeper),
+        "clean_training_claim_reconciliation": clean_training_reconciliation,
+        "clean_certification_summaries": certification_summaries,
         "credential_conflicts": conflicts,
         "future_evidence_not_used": future,
         "provisional_safety_coverage_mapping": coverage,
@@ -1168,7 +1590,7 @@ def markdown_report(payload: dict) -> str:
             f"- Selected adverse testimony: {', '.join(row['individual_policy_review']['adverse_testimony_ids']) or 'none selected'}",
             f"- Relevant evidence categories: {', '.join(row['experience_categories']) or 'none found'}",
             f"- Full clean log review: {row['work_history_review']['source_entry_count']} rows; {row['work_history_review']['distinct_qualifying_examples']} distinct relevant patterns after template collapse (descriptive only; not an interview threshold).",
-            f"- Appraisal review: {row['appraisal_review']['keyed_rows_reviewed']} exact keeper-code-keyed rows; {appraisal_unmatched} {appraisal_row_word} not selected by the appraisal filter.",
+            f"- Appraisal processing: {row['appraisal_review']['keyed_rows_processed']} exact keeper-code-keyed rows mechanically processed; {appraisal_unmatched} {appraisal_row_word} not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.",
             "",
         ])
         if row["individual_policy_review"]["material_unresolved_issue"]:
@@ -1202,6 +1624,9 @@ def markdown_report(payload: dict) -> str:
                 else:
                     attribution = "clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated"
                 lines.append(f"- {e['date']} — “{e['text']}” ({e['entry_id']}; `{e['source_reference']}`; {attribution}).")
+                chronology = e["personnel_chronology"]
+                if chronology["status"] == "unresolved_work_predates_precise_personnel_join_date":
+                    lines.append(f"  - Personnel chronology warning: {chronology['finding']} Personnel source: `{chronology['personnel_source_reference']}`; clean date source: `{chronology['clean_source_reference']}`.")
                 for flag in e["measurement_quality_flags"]:
                     lines.append(f"  - Measurement warning `{flag['code']}`: {flag['finding']} Observed: `{flag['observed']}`.")
             lines.append("")
@@ -1221,10 +1646,11 @@ def markdown_report(payload: dict) -> str:
             lines.append("")
         uncertain_appraisals = row["appraisal_review"]["same_year_record_ids_timing_uncertain"]
         if uncertain_appraisals:
-            lines.append(f"- Same-year timing uncertainty: {', '.join(uncertain_appraisals)} are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.")
+            lines.append(f"- Same-year timing uncertainty: {', '.join(uncertain_appraisals)} are dated only to {payload['as_of'][:4]}, so they are context-only and do not establish a fact before {payload['as_of']}.")
             lines.append("")
         for e in row["supplementary_evidence"]:
-            lines.append(f"- Supplementary note: {e['claim']} (`{e['source_reference']}`). {e['attribution_basis']} This is an interview lead, not an authorisation.")
+            exact_excerpt = f" Exact excerpt: “{e['exact_excerpt']}”" if e.get("exact_excerpt") else ""
+            lines.append(f"- Supplementary note: {e['claim']}{exact_excerpt} (`{e['source_reference']}`). {e['attribution_basis']} {e.get('evidence_limit', 'This is an interview lead, not an authorisation.')}")
             if e.get("supporting_entry"):
                 s = e["supporting_entry"]
                 lines.append(f"- Hand-check entry: {s['date']} — “{s['text']}” ({s['entry_id']}; `{s['source_reference']}`).")
@@ -1257,8 +1683,11 @@ def markdown_report(payload: dict) -> str:
         for c in row["credential_conflicts"]:
             lines.append(f"- Conflict `{c['code']}`: {c['finding']}")
         if row["future_evidence_not_used"]:
-            ids = ", ".join(x["record_id"] for x in row["future_evidence_not_used"])
-            lines.append(f"- Future at cutoff and not used: {ids}.")
+            for future in row["future_evidence_not_used"]:
+                lines.append(
+                    f"- Future at cutoff and not used: {future['record_id']} — {future['module'] or future['title']}, "
+                    f"{future['outcome']}, completed {future['completed_on']} (`{future['source_reference']}`)."
+                )
         lines.extend(["", "Initial selection action:", ""])
         for action in row["initial_selection_actions"]:
             lines.append(f"- {action}")
@@ -1284,6 +1713,7 @@ def build(zip_path: Path, as_of: date) -> dict:
             raise ValueError("clean subset is not the expected 38 current / 2 left")
         current_ids = {r["keeper_code"] for r in current_people}
         leaver_ids = {r["keeper_code"] for r in leavers}
+        personnel_by_id = {row["keeper_code"]: row for row in current_people + leavers}
         for k in keepers:
             expected = current_ids if k["status"] == "current" else leaver_ids
             if k["keeper_code"] not in expected:
@@ -1304,6 +1734,7 @@ def build(zip_path: Path, as_of: date) -> dict:
             evaluate_keeper(
                 zf,
                 k,
+                personnel_by_id[k["keeper_code"]],
                 by_keeper_logs[k["keeper_code"]],
                 by_keeper_appraisals[k["keeper_code"]],
                 by_keeper_training[k["keeper_code"]],
@@ -1313,8 +1744,24 @@ def build(zip_path: Path, as_of: date) -> dict:
             for k in sorted(keepers, key=lambda x: x["keeper_code"])
         ]
     counts = Counter(c["interview_recommendation"] for c in candidates)
+    summary_disagreements = [
+        summary
+        for candidate in candidates
+        if candidate["cohort_status"] == "current_redeployment_cohort"
+        for summary in candidate["clean_certification_summaries"]
+        if summary["source_summary_reconciliation"]["status"] == "unresolved_clean_summary_detailed_pass_disagreement"
+    ]
+    disagreement_people = {
+        candidate["keeper_code"]
+        for candidate in candidates
+        if candidate["cohort_status"] == "current_redeployment_cohort"
+        if any(
+            summary["source_summary_reconciliation"]["status"] == "unresolved_clean_summary_detailed_pass_disagreement"
+            for summary in candidate["clean_certification_summaries"]
+        )
+    }
     return {
-        "schema_version": 5,
+        "schema_version": 6,
         "dataset": "synthetic Carrowmore Pearson assessment pack",
         "as_of": as_of.isoformat(),
         "scope": "Permitted 40-profile clean subset; 38 current keepers assessed and two leavers explicitly retained outside the current cohort.",
@@ -1364,19 +1811,28 @@ def build(zip_path: Path, as_of: date) -> dict:
             "appraisal_source_rows": len(appraisals),
             "appraisal_rows_with_keeper_code": sum(bool(row.get("keeper_code")) for row in appraisals),
             "appraisal_rows_without_keeper_code_unattached": sum(not row.get("keeper_code") for row in appraisals),
-            "appraisal_rows_reviewed_for_current_cohort": sum(c["appraisal_review"]["keyed_rows_reviewed"] for c in candidates),
+            "appraisal_rows_processed_for_current_cohort": sum(c["appraisal_review"]["keyed_rows_processed"] for c in candidates),
+            "appraisal_technical_topic_candidate_rows": sum(len(c["appraisal_review"]["technical_topic_candidate_record_ids"]) for c in candidates),
+            "appraisal_rows_selected_for_role_relevant_testimony": sum(c["appraisal_review"]["role_relevant_testimony_count"] for c in candidates),
+            "clean_summary_detailed_pass_disagreement_summaries": len(summary_disagreements),
+            "clean_summary_detailed_pass_expired_records": sum(
+                len(summary["source_summary_reconciliation"]["expired_detailed_pass_record_ids"])
+                for summary in summary_disagreements
+            ),
+            "current_people_with_clean_summary_disagreement": len(disagreement_people),
         },
         "method": {
             "work_evidence": "Every clean log entry for each profile is reviewed. An entry normally needs an explicit maintenance action plus an electrical or mechanical plant term; superficial numeric, measurement and equivalent permit/PTW/permit-bk workflow variants are collapsed only for diversity counting. The strongest examples and at least one exact cited record for every claimed category are shown, except named material records needed to explain a conflict. Counts, hours and repetition are not competence.",
-            "appraisals": "Every appraisal carrying an exact current-cohort keeper_code is reviewed. Name-only/null-key rows are not attached. Only role-relevant testimony is repeated. Year-only 2026 records are context-only because their timing relative to 2026-10-11 is unknown; future years are excluded from conclusions.",
+            "appraisals": "Every appraisal carrying an exact current-cohort keeper_code is mechanically processed. A bounded manual review covered technical-topic candidates and named omissions used to refine the same-sentence selector; this is not a claim of complete semantic human review of all 305 rows. Name-only/null-key rows are not attached. Year-only records matching the scenario year are context-only; future years are excluded from testimony and conclusions.",
             "decision_categories": "supported_technical_interview; targeted_screening_first; insufficient_evidence; outside_current_redeployment_cohort. Every current profile is reviewed individually; no score, rank, numerical workflow threshold, adverse-appraisal window or keyword veto decides the category.",
             "supported_technical_interview": "Specific attributed evidence supports plausible hands-on mechanical or electrical maintenance. The reason explains the activity and transferable relevance; adverse, sparse or old evidence alone is not a veto.",
             "targeted_screening_first": "A named material unresolved attribution problem or contradiction concerning the core experience claim requires clarification before a technical interview.",
             "insufficient_evidence": "The bounded sources do not establish essential hands-on mechanical or electrical maintenance. Missing evidence is not a finding that the person lacks experience.",
-            "training": "Dated LearnHub outcome and supplied expiry are evaluated at the explicit cutoff. Pass, Attended and Not achieved remain distinct. Nominal fictional-scheme dates are consistency checks only; issuer verification is required where they conflict with supplied expiries.",
+            "training": "Dated LearnHub outcome and supplied expiry are evaluated at the explicit cutoff. Pass, Attended and Not achieved remain distinct. Year-only clean completions are reconciled to reliable detailed dates before derived module sequences are stated. Clean validity summaries and detailed module expiries remain separate source claims. Nominal fictional-scheme dates are consistency checks only; issuer verification is required where sources disagree.",
             "height_mapping": "OSSC-SS/FF/FA plus WAHS-1 is a provisional record mapping only. Employer/issuer acceptance and climbing/rescue scope are not supplied and must be confirmed.",
             "identity": "Raw keeper codes, payroll references and names are identified separately. Integer-like payroll values may be normalized across leading-zero, decimal and scientific notation only; absent or conflicting identifiers remain explicit and clean attribution is never rewritten.",
             "action_dependencies": "Issuer verification precedes spending decisions; working-condition willingness is confirmed before courses; medical clearance precedes OSSC; verified OSSC-SS precedes WAHS. The posting funds renewals but does not define renewal routes or promise first-time training funding. Proposed employer checks are labelled recommendations.",
+            "alternate_date_boundary": "The supplied current/leaver roster is a snapshot, not a reconstructed historical workforce. The explicit scenario date filters work, appraisal and training evidence; it does not reconstruct prior employment status.",
         },
         "candidates": candidates,
     }

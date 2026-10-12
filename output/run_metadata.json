@@ -1,5 +1,5 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "dataset_context": "Entirely synthetic data supplied for a Pearson job-application assessment",
   "scenario_as_of": "2026-10-11",
   "interpreter": "C:\\Users\\George\\.conda\\envs\\carrowmore-ml\\python.exe",
@@ -8,11 +8,13 @@
   "source_archive_sha256": "59f12ea4dfb43d311429fdd34c207517c2ffefbf917e4cdfe9737ca5776270f5",
   "appraisals_member_sha256": "c19ba6216619c0c4d103b5dd7d99edb49f9722fba94a6eb9de824adfba1488d1",
   "evaluator_command": "python src/array_om_evaluator.py --source-zip ../data/carrowmore-data-pack.zip --as-of 2026-10-11 --output-dir output",
-  "qa_command": "python qa/independent_qa.py --source-zip ../data/carrowmore-data-pack.zip --results output/recommendations.json --report output/qa_report.json",
+  "qa_command": "python qa/independent_qa.py --source-zip ../data/carrowmore-data-pack.zip --results output/recommendations.json --alternate-results <temporary-alternate-dir>/recommendations.json --report output/qa_report.json",
   "determinism_check": {
     "repeat_run_json_identical": true,
     "repeat_run_markdown_identical": true,
-    "repeat_run_qa_report_identical": true
+    "repeat_run_qa_report_identical": true,
+    "repeat_alternate_json_identical": true,
+    "repeat_alternate_markdown_identical": true
   },
   "required_as_of_check": {
     "missing_argument_exit_code": 2,
@@ -20,7 +22,7 @@
   },
   "qa": {
     "status": "PASS",
-    "passed": 6389,
+    "passed": 7455,
     "failed": 0,
     "prepared_cases": 10,
     "earlier_bounded_correction_areas": 7,
@@ -45,7 +47,15 @@
       "year-only 2026 appraisal uncertainty",
       "O&M versus separate HV Authorised Person provenance",
       "provisional OSSC/WAHS mapping and recommended checks",
-      "faithful UTF-8 category-support rendering"
+      "faithful UTF-8 category-support rendering",
+      "clean year-only versus detailed-date training reconciliation",
+      "bounded technical appraisal selection and named omitted sentences",
+      "station-note text and personnel attribution",
+      "clean-summary versus latest detailed-Pass reconciliation",
+      "qualified MECS module-sequence wording",
+      "precise personnel chronology conflicts",
+      "K1538 authorisation and employment chronology",
+      "alternate-date display cutoff regression"
     ]
   },
   "decision_quality_correction_effort": {
@@ -201,15 +211,71 @@
     "elapsed_hms": "00:14:31",
     "candidate_effort": "George's previously reported two-to-four-hour assessment effort remains separate; this agent interval does not replace it."
   },
+  "bounded_source_to_output_correction": {
+    "baseline_commit": "169502b09bf444d2329775feae3fa84e7b883081",
+    "source_archive_sha256": "59f12ea4dfb43d311429fdd34c207517c2ffefbf917e4cdfe9737ca5776270f5",
+    "scenario_as_of": "2026-10-11",
+    "result_counts": {
+      "supported_technical_interview": 36,
+      "targeted_screening_first": 2,
+      "insufficient_evidence": 0,
+      "outside_current_redeployment_cohort": 2
+    },
+    "disposition_changes": [],
+    "unchanged_targeted_rationale_updates": {
+      "K0478": "The positive 2017 Raheenvarra station note and AP001161 are now retained alongside the attributed electrical/isolation records and the unresolved AP001159/AP001160/AP001162/AP001165 testimony; the note is not authorisation and does not resolve the later concerns.",
+      "K1200": "The existing CL005994/AP003496 material contradiction remains the targeted-screen basis."
+    },
+    "training_temporal_reconciliation": {
+      "K0592_MECS_5": "Clean year-only completion matched uniquely to future Pass LH500977 on 2026-11-21; not established at the cutoff.",
+      "clean_summary_disagreement_summaries": 12,
+      "expired_detailed_pass_records": 16,
+      "affected_current_people": 7
+    },
+    "appraisal_processing": {
+      "exact_code_rows_mechanically_processed": 305,
+      "technical_topic_candidates_bounded_manual_review": 180,
+      "role_relevant_rows_selected": 180,
+      "rows_not_selected": 125,
+      "named_repairs": ["AP001161", "AP003577", "AP002307", "AP001695"]
+    },
+    "station_notes_added": {
+      "K0478": "raw/appraisals/station_manager_notes/2017-raheenvarra-o-raghnaill.txt#L2",
+      "K0847": "raw/appraisals/station_manager_notes/2003-portnalee-ni-mhurchu.txt#L2",
+      "K0310": "raw/appraisals/station_manager_notes/1993-cnoclia-o-heidhneain.txt#L2"
+    },
+    "personnel_chronology_conflicts": {
+      "K0589": "CL006691 dated 2014-02-04 versus personnel join 2014-09-10",
+      "K1363": "CL001473 dated 1998-01-11 versus personnel join 1998-08-21",
+      "K1538": "2011 note tenure and lost-1997-authorisation claims retained alongside personnel join 1998-08-05 and Nevisbeg posting from 2009"
+    },
+    "alternate_date_regression": {
+      "as_of": "2023-01-01",
+      "status": "PASS",
+      "roster_boundary": "supplied snapshot; evidence filtered without historical workforce reconstruction",
+      "json_sha256": "6761496ef7c40dd13959d30765a6f15a1c5a96a9f1beec4439ff542a82c67d95",
+      "markdown_sha256": "28946b88a9a84bac8a61b07210654ae7a8c9d2e97bd0f9ae4cc7084f932914ed",
+      "artifact_retained": false
+    },
+    "original_pearson_brief": "Absent from the current workspace; not reconstructed and not claimed as inspected during this pass."
+  },
+  "bounded_source_to_output_correction_effort": {
+    "measurement_scope": "Active bounded correction work from baseline/interpreter/archive verification through final and alternate generation, independent QA, missing-date, UTF-8 and repeatability checks; metadata and local Git bookkeeping followed and are excluded.",
+    "started_at": "2026-10-12T10:11:37.2066631-04:00",
+    "finished_at": "2026-10-12T10:26:31.3565049-04:00",
+    "elapsed_seconds": 894,
+    "elapsed_hms": "00:14:54",
+    "candidate_effort": "George's reported two-to-four-hour assessment estimate remains separate and unchanged."
+  },
   "sha256": {
-    "README.md": "254dbaa7a65b7b279378d780e22b23436ffcd537ed18cc1b0b0d6fe98afb427c",
-    "WRITTEN_EXPLANATION.md": "8bb1c04a8f5c4afa7d19efeef1408f1be620d2e481ebfbc93fa076a6bf9e6a55",
+    "README.md": "afd6b8c5fbe104f7b1122993d86aef7a8ef49b5ff1e350440fdfe08d0678f356",
+    "WRITTEN_EXPLANATION.md": "a8e8a6ee2596b2c56f1c1937ae55b00877f1d612b7daa749054039c9c38419d7",
     "docs/DEVELOPMENT_HISTORY.md": "e062a5e4babb6a03d6bbc90bf8832659f2be41cd0655e342692d289575463a4d",
-    "SOURCE_FINGERPRINTS.json": "a3aa3401d247366e44ba1821ace45c00fcc57f189f00114d6c6c9d423398943c",
-    "src/array_om_evaluator.py": "75f601fe8342f1cc5622e5325ff06ce590c027029ea302f042872e47f536766e",
-    "qa/independent_qa.py": "d501478e68b31255ed5c313c2f9edba05883c69908d331b7e665fdcd20fc02db",
-    "output/recommendations.json": "db1be646b8765a147e5e9ab2b44681e5c31773209292dee0d65977962c4f40c1",
-    "output/recommendations.md": "75d7fa3e5634388a27d17a01bd979a825652ab0c26f540c8b28d50905ee96e0b",
-    "output/qa_report.json": "c076cb4882e287802fbbc053f24930d6d109159e537e9252054737916c08ed12"
+    "SOURCE_FINGERPRINTS.json": "aa848f85d4a9ac1268cac3332e94085862db90e80e631129337cb22fcc5b6658",
+    "src/array_om_evaluator.py": "0ebc90e7ff47270ab598a8a25ef16b53bed80f9c6789260da3064463290fe2f5",
+    "qa/independent_qa.py": "227b6e06a29f38af46100396ce35454c584420af63ced3e0c6d9c8772443a097",
+    "output/recommendations.json": "d8df69f06d3668682da34a44550f75a31edf2d3c7a7c44511cd40c6143f10903",
+    "output/recommendations.md": "8800f0b95bf8f56d662e091a26b02d44e5e343f085a2a26d7944b7ca8db06a2e",
+    "output/qa_report.json": "d6827aa2faa1e35f8ca2b268c8fc760ad53ad765a478728a770c8131b3f2278f"
   }
 }

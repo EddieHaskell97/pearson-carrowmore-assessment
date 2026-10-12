@@ -32,6 +32,9 @@ EXPECTED = {
     ROOT + "raw/personnel/cla_personnel_export.csv": "14ba3653d9ab29b86b273cb7016dba574d840729de85d5b0eac367ed3170b4c7",
     ROOT + "raw/personnel/cla_personnel_leavers.csv": "920f7a76d3710ac08a56d7bf9ac0de83cf65f5525e8c7a1dfc905b517d2d9a0a",
     ROOT + "raw/appraisals/station_manager_notes/2011-nevisbeg-keeper-note.txt": "767fa1decaafb6e56556ca7416b069e07cebf85a2cbd5d3c2d661df85d08adc4",
+    ROOT + "raw/appraisals/station_manager_notes/2017-raheenvarra-o-raghnaill.txt": "73bc6dcec14edcc1b42e803c904ca086a714be12b5075793e25d9fa89a18137b",
+    ROOT + "raw/appraisals/station_manager_notes/2003-portnalee-ni-mhurchu.txt": "33d00afd7dc17fc35c297e429fbc31320296dc4147daf2043da961d9abe4168a",
+    ROOT + "raw/appraisals/station_manager_notes/1993-cnoclia-o-heidhneain.txt": "d0a5b692ea7d327981725628c0301c10c3c0e08135f358ee6145620ee4cfbe23",
     ROOT + "raw/appraisals/appraisals.jsonl": "c19ba6216619c0c4d103b5dd7d99edb49f9722fba94a6eb9de824adfba1488d1",
 }
 ARCHIVE_HASH = "59f12ea4dfb43d311429fdd34c207517c2ffefbf917e4cdfe9737ca5776270f5"
@@ -165,7 +168,7 @@ def has_conflict(candidate: dict, code: str, scheme: str | None = None) -> bool:
     return any(c["code"] == code and (scheme is None or c.get("scheme") == scheme) for c in candidate["credential_conflicts"])
 
 
-def run(zip_path: Path, results_path: Path) -> dict:
+def run(zip_path: Path, results_path: Path, alternate_results_path: Path | None = None) -> dict:
     checks = Checks()
     results_bytes = results_path.read_bytes()
     output = json.loads(results_bytes.decode("utf-8"))
@@ -196,7 +199,7 @@ def run(zip_path: Path, results_path: Path) -> dict:
         scheme_map = {s["code"]: s for s in schemes}
 
         checks.equal("explicit scenario date", output["as_of"], "2026-10-11")
-        checks.equal("output schema version", output["schema_version"], 5)
+        checks.equal("output schema version", output["schema_version"], 6)
         checks.equal("40 unique output profiles", len(candidates), 40)
         checks.equal("output IDs equal clean-subset IDs", set(candidates), set(keepers_by_id))
         checks.equal("clean cohort split", Counter(k["status"] for k in keepers), Counter({"current": 38, "left": 2}))
@@ -469,8 +472,8 @@ def run(zip_path: Path, results_path: Path) -> dict:
         checks.equal("appraisal null-key rows left unattached", sum(not row.get("keeper_code") for row in appraisals), 1728)
         checks.equal("current-cohort keyed appraisal rows reviewed", len(current_appraisals), 305)
         checks.equal("current profiles with keyed appraisals", len({row["keeper_code"] for row in current_appraisals}), 37)
-        checks.equal("output current appraisal reviewed count", output["summary"]["appraisal_rows_reviewed_for_current_cohort"], 305)
-        checks.equal("K0310 has no keyed appraisal", candidates["K0310"]["appraisal_review"]["reviewed_record_ids"], [])
+        checks.equal("output current appraisal processed count", output["summary"]["appraisal_rows_processed_for_current_cohort"], 305)
+        checks.equal("K0310 has no keyed appraisal", candidates["K0310"]["appraisal_review"]["processed_record_ids"], [])
         k0310_logs = [row for row in logs if row["keeper_code"] == "K0310"]
         checks.equal("K0310 supplied logs end in 2012", max(row["date"] for row in k0310_logs), "2012-12-21")
         k0310_limit = next((item for item in candidates["K0310"]["limitations"] if item["code"] == "historical_evidence_only"), None)
@@ -497,8 +500,8 @@ def run(zip_path: Path, results_path: Path) -> dict:
 
             source_rows = sorted(appraisals_by_keeper.get(keeper_code, []), key=lambda row: (row["year"], row["record_id"]))
             appraisal_review = candidate["appraisal_review"]
-            checks.equal(f"exact keyed appraisal IDs reviewed: {keeper_code}", appraisal_review["reviewed_record_ids"], [row["record_id"] for row in source_rows])
-            checks.equal(f"keyed appraisal count reviewed: {keeper_code}", appraisal_review["keyed_rows_reviewed"], len(source_rows))
+            checks.equal(f"exact keyed appraisal IDs processed: {keeper_code}", appraisal_review["processed_record_ids"], [row["record_id"] for row in source_rows])
+            checks.equal(f"keyed appraisal count processed: {keeper_code}", appraisal_review["keyed_rows_processed"], len(source_rows))
             checks.equal(f"same-year appraisal IDs: {keeper_code}", appraisal_review["same_year_record_ids_timing_uncertain"], [row["record_id"] for row in source_rows if row["year"] == 2026])
             checks.equal(f"future-year appraisal IDs: {keeper_code}", appraisal_review["future_year_record_ids_not_used"], [row["record_id"] for row in source_rows if row["year"] > 2026])
             for item in appraisal_review["role_relevant_testimony"]:
@@ -513,6 +516,161 @@ def run(zip_path: Path, results_path: Path) -> dict:
                 checks.check(f"appraisal omits irrelevant identity fields: {item['record_id']}", "manager" not in item and "keeper_name" not in item)
                 if source["year"] == 2026:
                     checks.equal(f"same-year appraisal context only: {item['record_id']}", item["decision_time_treatment"], "same_year_timing_uncertain_context_only")
+
+        # Bounded correction: named appraisal omissions are retained exactly,
+        # with same-record support, concern and improvement context together.
+        appraisal_additions = {
+            "AP001161": (
+                "K0478",
+                [
+                    "An improvement objective relating to the high voltage side has been set for the coming year.",
+                    "The standard achieved in the distribution side is considered acceptable for the grade.",
+                    "Attended the district course in the distribution side, though I am told the paperwork never came back.",
+                ],
+            ),
+            "AP003577": ("K1231", ["The standard achieved in switching work is considered acceptable for the grade."]),
+            "AP002307": ("K0847", ["The standard achieved in the control side of the sets is considered acceptable for the grade."]),
+            "AP001695": ("K0641", ["I watched Eimhreann work through switchgear work in conditions I would not have chosen and it was done properly."]),
+        }
+        for record_id, (keeper_code, exact_excerpts) in appraisal_additions.items():
+            source = appraisals_by_id[record_id]
+            selected = next(
+                (row for row in candidates[keeper_code]["appraisal_review"]["role_relevant_testimony"] if row["record_id"] == record_id),
+                None,
+            )
+            checks.equal(f"appraisal correction exact keeper: {record_id}", source["keeper_code"], keeper_code)
+            checks.check(f"appraisal correction selected: {record_id}", selected is not None)
+            if selected:
+                checks.check(f"appraisal correction exact excerpts: {record_id}", all(excerpt in selected["role_relevant_excerpt"] and excerpt in source["text"] for excerpt in exact_excerpts))
+                checks.equal(f"appraisal correction source hash: {record_id}", selected["source_text_sha256"], digest(source["text"].encode("utf-8")))
+                checks.check(f"appraisal correction support retained: {record_id}", bool(selected["support_signals"]))
+        ap001161 = next(row for row in candidates["K0478"]["appraisal_review"]["role_relevant_testimony"] if row["record_id"] == "AP001161")
+        checks.check("AP001161 support concern and improvement retained together", bool(ap001161["support_signals"]) and bool(ap001161["concern_signals"]) and bool(ap001161["context_signals"]))
+        checks.check(
+            "appraisal processing scope is honest",
+            all(
+                "mechanically processed" in candidate["appraisal_review"]["processing_and_review_scope"]
+                and "not a claim of complete semantic human review" in candidate["appraisal_review"]["processing_and_review_scope"]
+                for candidate in candidates.values()
+                if candidate["cohort_status"] == "current_redeployment_cohort"
+            ),
+        )
+        checks.equal(
+            "output selected appraisal count derived from profiles",
+            output["summary"]["appraisal_rows_selected_for_role_relevant_testimony"],
+            sum(candidate["appraisal_review"]["role_relevant_testimony_count"] for candidate in candidates.values()),
+        )
+
+        # Bounded correction: station-note excerpts are exact and attributed by
+        # body name plus personnel station/year, never by filename alone.
+        station_notes = {
+            "K0478": ("2017-raheenvarra-o-raghnaill.txt", 2, "Watched Ossian do isolations on the 11kV today. Textbook, except there is no textbook for it here.", "RAH:2016-2017"),
+            "K0847": ("2003-portnalee-ni-mhurchu.txt", 2, "Watched Aoife do chasing faults today. Textbook, except there is no textbook for it here.", "POR:2000-2004"),
+            "K0310": ("1993-cnoclia-o-heidhneain.txt", 2, "Gearalt is wasfe.d here. the boards is the best in the district and the stafioii does not need it.", "CNO:1993-1993"),
+        }
+        personnel_by_id = {row["keeper_code"]: row for row in current_rows}
+        for keeper_code, (filename, line_number, exact_excerpt, posting_fragment) in station_notes.items():
+            member = ROOT + "raw/appraisals/station_manager_notes/" + filename
+            source_lines = zf.read(member).decode("utf-8").splitlines()
+            checks.equal(f"station note exact source line: {keeper_code}", source_lines[line_number - 1], exact_excerpt)
+            checks.check(f"station note personnel posting aligns: {keeper_code}", posting_fragment in personnel_by_id[keeper_code]["station_postings"])
+            note = next((row for row in candidates[keeper_code]["supplementary_evidence"] if row["source_reference"].endswith(f"{filename}#L{line_number}")), None)
+            checks.check(f"station note emitted: {keeper_code}", note is not None)
+            if note:
+                checks.equal(f"station note exact excerpt emitted: {keeper_code}", note["exact_excerpt"], exact_excerpt)
+                checks.equal(f"station note source hash: {keeper_code}", note["source_text_sha256"], digest(zf.read(member)))
+                checks.check(f"station note attribution not filename-only: {keeper_code}", "not the filename alone" in note["attribution_basis"] and len(note["attribution_sources"]) == 2)
+                checks.check(f"station note limitation retained: {keeper_code}", "not" in note["evidence_limit"].lower())
+        checks.check("K0478 positive station note included in targeted rationale", "2017-raheenvarra-o-raghnaill.txt#L2" in candidates["K0478"]["recommendation_reason"])
+        checks.equal("K0478 disposition reassessed without automatic change", candidates["K0478"]["interview_recommendation"], "targeted_screening_first")
+
+        # Bounded correction: independently reconcile clean valid-in-2026
+        # summaries to the latest supplied pre-cutoff detailed Pass per module.
+        cutoff = date(2026, 10, 11)
+        latest_pass = {}
+        for row in learnhub:
+            if row.get("outcome") != "Pass" or not row.get("completed_on") or date.fromisoformat(row["completed_on"]) > cutoff:
+                continue
+            key = (row["keeper_code"], row.get("scheme_module"))
+            if key not in latest_pass or (row["completed_on"], row["id"]) > (latest_pass[key]["completed_on"], latest_pass[key]["id"]):
+                latest_pass[key] = row
+        expected_summary_disagreements = {}
+        for keeper in keepers:
+            if keeper["status"] != "current":
+                continue
+            for certification in keeper.get("certifications", []):
+                if not certification.get("valid_2026"):
+                    continue
+                expired = []
+                for module in certification.get("modules_held", []):
+                    detailed = latest_pass.get((keeper["keeper_code"], module))
+                    if detailed and detailed.get("expires_on") and date.fromisoformat(detailed["expires_on"]) < cutoff:
+                        expired.append(detailed["id"])
+                if expired:
+                    expected_summary_disagreements[(keeper["keeper_code"], certification["scheme"])] = expired
+        checks.equal("clean-summary disagreement count derived", len(expected_summary_disagreements), 12)
+        checks.equal("clean-summary expired detailed records derived", sum(len(ids) for ids in expected_summary_disagreements.values()), 16)
+        checks.equal("clean-summary affected current people derived", len({key[0] for key in expected_summary_disagreements}), 7)
+        checks.equal("output clean-summary disagreement summaries", output["summary"]["clean_summary_detailed_pass_disagreement_summaries"], len(expected_summary_disagreements))
+        checks.equal("output clean-summary expired records", output["summary"]["clean_summary_detailed_pass_expired_records"], sum(len(ids) for ids in expected_summary_disagreements.values()))
+        checks.equal("output clean-summary affected people", output["summary"]["current_people_with_clean_summary_disagreement"], len({key[0] for key in expected_summary_disagreements}))
+        for (keeper_code, scheme), record_ids in expected_summary_disagreements.items():
+            summary = next(row for row in candidates[keeper_code]["clean_certification_summaries"] if row["scheme"] == scheme)
+            reconciliation = summary["source_summary_reconciliation"]
+            checks.equal(f"clean-summary disagreement status: {keeper_code}/{scheme}", reconciliation["status"], "unresolved_clean_summary_detailed_pass_disagreement")
+            checks.equal(f"clean-summary exact expired records: {keeper_code}/{scheme}", reconciliation["expired_detailed_pass_record_ids"], record_ids)
+            checks.check(f"clean-summary uncertainty wording: {keeper_code}/{scheme}", "remains possible" in reconciliation["finding"] and "not declared invalid" in reconciliation["finding"])
+            conflict = next((row for row in candidates[keeper_code]["credential_conflicts"] if row["code"] == "clean_summary_detailed_module_disagreement" and row["scheme"] == scheme), None)
+            checks.check(f"clean-summary conflict emitted: {keeper_code}/{scheme}", conflict is not None)
+            if conflict:
+                checks.equal(f"clean-summary conflict exact record IDs: {keeper_code}/{scheme}", conflict["record_ids"], record_ids)
+
+        # K0592's future MECS-5 detail must override the temporal inference
+        # from its year-only clean completion for all derived stage claims.
+        lh500977 = training_by_id["LH500977"]
+        checks.equal("K0592 future MECS-5 source", (lh500977["keeper_code"], lh500977["scheme_module"], lh500977["outcome"], lh500977["completed_on"]), ("K0592", "MECS-5", "Pass", "2026-11-21"))
+        checks.check("K0592 future MECS-5 remains visible", any(row["record_id"] == "LH500977" and row["status_at_cutoff"] == "future_at_cutoff" for row in candidates["K0592"]["future_evidence_not_used"]))
+        k0592_reconciliation = next(row for row in candidates["K0592"]["clean_training_claim_reconciliation"] if row["module"] == "MECS-5" and row["clean_claim"]["year"] == 2026)
+        checks.equal("K0592 clean MECS-5 temporal reconciliation", k0592_reconciliation["temporal_status"], "future_detailed_pass_not_established_at_cutoff")
+        checks.equal("K0592 clean MECS-5 exact detailed match", k0592_reconciliation["matching_detailed_record_ids"], ["LH500977"])
+        checks.check("K0592 future MECS-5 absent from derived stage claims", all("MECS-5" not in row.get("claim", "") and "MECS-5" not in row.get("later_recorded_modules", []) for row in candidates["K0592"]["credential_conflicts"] if row["code"] == "consecutive_stage_not_established"))
+
+        for candidate in candidates.values():
+            for conflict in candidate["credential_conflicts"]:
+                if conflict["code"] != "consecutive_stage_not_established":
+                    continue
+                checks.check(f"MECS wording avoids invented Stage 0: {candidate['keeper_code']}", "Stage 0" not in conflict["finding"] and "only Stage" not in conflict["finding"])
+                if conflict["documented_consecutive_sequence_through"]:
+                    checks.check(f"MECS established sequence qualified: {candidate['keeper_code']}", "documented consecutive sequence" in conflict["finding"] and "actual awarded stage" in conflict["finding"])
+                else:
+                    checks.check(f"MECS absent Stage 1 qualified: {candidate['keeper_code']}", "do not establish a consecutive Stage 1 award" in conflict["finding"])
+
+        # Precise personnel chronology is checked for every displayed record.
+        precise_join = {row["keeper_code"]: date.fromisoformat(row["date_joined"]) for row in current_rows if row.get("date_joined")}
+        expected_prejoin = {
+            (candidate["keeper_code"], evidence["entry_id"])
+            for candidate in candidates.values()
+            if candidate["cohort_status"] == "current_redeployment_cohort"
+            for evidence in candidate["relevant_experience"]
+            if date.fromisoformat(evidence["date"]) < precise_join[candidate["keeper_code"]]
+        }
+        checks.equal("retained work before precise join independently derived", expected_prejoin, {("K0589", "CL006691"), ("K1363", "CL001473")})
+        for candidate in candidates.values():
+            for evidence in candidate["relevant_experience"]:
+                expected_status = "unresolved_work_predates_precise_personnel_join_date" if (candidate["keeper_code"], evidence["entry_id"]) in expected_prejoin else "work_not_before_precise_personnel_join_date"
+                checks.equal(f"personnel chronology status: {candidate['keeper_code']}/{evidence['entry_id']}", evidence["personnel_chronology"]["status"], expected_status)
+        for keeper_code, entry_id in expected_prejoin:
+            conflict = next((row for row in candidates[keeper_code]["identity_and_chronology_conflicts"] if row.get("entry_id") == entry_id), None)
+            checks.check(f"pre-join conflict emitted: {keeper_code}/{entry_id}", conflict is not None)
+            if conflict:
+                checks.check(f"pre-join alternatives remain unresolved: {keeper_code}/{entry_id}", all(fragment in conflict["finding"] for fragment in ("Earlier service", "differing date definitions", "source error", "none is established")))
+
+        k1538_personnel = personnel_by_id["K1538"]
+        checks.equal("K1538 precise personnel join retained", k1538_personnel["date_joined"], "1998-08-05")
+        oileann_authorisation = next(row for row in candidates["K1538"]["identity_and_chronology_conflicts"] if row["code"] == "oileann_authorisation_employment_chronology_question")
+        checks.check("K1538 lost authorisation claim preserved", all(fragment in oileann_authorisation["finding"] for fragment in ("1997 changeover", "1998-08-05", "inference requiring clarification", "unspecified earlier surname")))
+        oileann_note_output = next(row for row in candidates["K1538"]["supplementary_evidence"] if "2011-nevisbeg-keeper-note" in row["source_reference"])
+        checks.check("K1538 conditional document recovery only", "conditional" in oileann_note_output["evidence_limit"].lower() and "not a current authorisation" in oileann_note_output["evidence_limit"])
 
         allowed_decisions = {
             "supported_technical_interview",
@@ -737,14 +895,14 @@ def run(zip_path: Path, results_path: Path) -> dict:
             checks.equal(
                 f"unmatched appraisal filter count: {candidate['keeper_code']}",
                 review["rows_not_selected_by_appraisal_filter"],
-                review["keyed_rows_reviewed"] - review["role_relevant_testimony_count"],
+                review["keyed_rows_processed"] - review["role_relevant_testimony_count"] - len(review["future_role_relevant_record_ids_not_used"]),
             )
 
         # Named policy cases are checked against exact records, not counts.
         k1345_review = candidates["K1345"]["individual_policy_review"]
         checks.equal("K1345 supported after individual review", candidates["K1345"]["interview_recommendation"], "supported_technical_interview")
-        checks.equal("K1345 positive testimony retained", set(k1345_review["positive_testimony_ids"]), {"AP003865", "AP003870", "AP003874"})
-        checks.equal("K1345 adverse testimony retained", set(k1345_review["adverse_testimony_ids"]), {"AP003873", "AP003877"})
+        checks.check("K1345 positive testimony retained", {"AP003865", "AP003870", "AP003874"} <= set(k1345_review["positive_testimony_ids"]))
+        checks.check("K1345 adverse testimony retained", {"AP003873", "AP003877"} <= set(k1345_review["adverse_testimony_ids"]))
         checks.check("K1345 2026 appraisal remains timing-uncertain", "AP003877" in candidates["K1345"]["appraisal_review"]["same_year_record_ids_timing_uncertain"])
         checks.check("K1345 action asks interview questions", candidates["K1345"]["initial_selection_actions"][0].startswith("Invite to a structured technical interview"))
 
@@ -771,9 +929,28 @@ def run(zip_path: Path, results_path: Path) -> dict:
         checks.check("OSSC definition has no height module", all("height" not in m["name"].lower() for m in scheme_map["OSSC"]["modules"]))
         checks.check("WAHS definition contains height module", any(m["code"] == "WAHS-1" for m in scheme_map["WAHS"]["modules"]))
 
+        if alternate_results_path is not None:
+            alternate = json.loads(alternate_results_path.read_text(encoding="utf-8"))
+            checks.equal("alternate scenario date", alternate["as_of"], "2023-01-01")
+            checks.equal("alternate output schema", alternate["schema_version"], 6)
+            alternate_candidates = {row["keeper_code"]: row for row in alternate["candidates"]}
+            checks.equal("alternate roster remains supplied snapshot", set(alternate_candidates), set(candidates))
+            checks.check(
+                "alternate K1200 display respects evidence cutoff",
+                all(date.fromisoformat(row["date"]) <= date(2023, 1, 1) for row in alternate_candidates["K1200"]["relevant_experience"]),
+            )
+            checks.check(
+                "alternate K1200 later display exception omitted",
+                "CL009921" not in {row["entry_id"] for row in alternate_candidates["K1200"]["relevant_experience"]},
+            )
+            checks.check(
+                "alternate boundary documented",
+                "snapshot" in alternate["method"]["alternate_date_boundary"] and "does not reconstruct" in alternate["method"]["alternate_date_boundary"],
+            )
+
     failed = [item for item in checks.items if not item["passed"]]
     return {
-        "schema_version": 5,
+        "schema_version": 6,
         "independence": "Reads the ZIP, appraisal JSONL and generated outputs directly; does not import evaluator code or recompute its recommendation policy.",
         "source_archive_sha256": digest(zip_path.read_bytes()),
         "recommendations_sha256": digest(results_bytes),
@@ -791,9 +968,14 @@ def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source-zip", type=Path, required=True)
     parser.add_argument("--results", type=Path, required=True)
+    parser.add_argument("--alternate-results", type=Path)
     parser.add_argument("--report", type=Path, required=True)
     args = parser.parse_args(argv)
-    report = run(args.source_zip.resolve(), args.results.resolve())
+    report = run(
+        args.source_zip.resolve(),
+        args.results.resolve(),
+        args.alternate_results.resolve() if args.alternate_results else None,
+    )
     args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(json.dumps({k: report[k] for k in ("status", "checks", "passed", "failed", "recommendations_sha256")}, indent=2))

@@ -50,16 +50,25 @@ python src/array_om_evaluator.py \
 
 The program verifies the archive SHA-256, 1,447-member inventory, and every selected member fingerprint before producing output. A missing or malformed `--as-of` is an error.
 
-Run independent QA separately after generation:
+Run the alternate-date regression and independent QA separately after final generation:
 
 ```powershell
+$alternateCheck = Join-Path $env:TEMP 'carrowmore-assessment-alt-20230101'
+& 'C:\Users\George\.conda\envs\carrowmore-ml\python.exe' src\array_om_evaluator.py `
+  --source-zip ..\data\carrowmore-data-pack.zip `
+  --as-of 2023-01-01 `
+  --output-dir $alternateCheck
+
 & 'C:\Users\George\.conda\envs\carrowmore-ml\python.exe' qa\independent_qa.py `
   --source-zip ..\data\carrowmore-data-pack.zip `
   --results output\recommendations.json `
+  --alternate-results "$alternateCheck\recommendations.json" `
   --report output\qa_report.json
+
+Remove-Item -LiteralPath $alternateCheck -Recurse -Force
 ```
 
-The verified package QA run passed **6,389/6,389 checks**, including the ten cases defined before implementation, the earlier correction areas, every current profile's exact core citation, the absence of numerical/adverse-appraisal gates, the two material-contradiction cases, year-only 2026 handling, source-bound requirement provenance, faithful UTF-8 Markdown, per-profile evidence rendering, workflow canonicalization and category-to-record citations. The QA program reads the ZIP and output directly and never imports the evaluator or recomputes its recommendation policy.
+The verified package QA run passed **7,455/7,455 checks**, including the ten cases defined before implementation, the earlier correction areas, exact appraisal and station-note passages, cutoff-safe clean/detailed training reconciliation, all clean-summary/module disagreements, precise personnel chronology, the alternate-date regression, faithful UTF-8 Markdown, per-profile evidence rendering, workflow canonicalization and category-to-record citations. The QA program reads the ZIP and output directly and never imports the evaluator or recomputes its recommendation policy.
 
 ## What the output means
 
@@ -70,7 +79,7 @@ Each profile keeps these concepts separate:
 - `work_history_review`: proof that the complete clean history was reviewed, with row counts, cutoff handling and template-collapsed diversity;
 - `relevant_experience`: exact clean log text, date, entry ID, raw source reference, identity provenance, raw corroboration and measurement warnings;
 - `experience_category_evidence`: one exact displayed work record supporting every claimed experience category;
-- `appraisal_review`: every exact keeper-code-keyed appraisal ID reviewed, role-relevant exact excerpts and source-text hashes, with null-key/name-only rows deliberately unattached;
+- `appraisal_review`: every exact keeper-code-keyed appraisal ID mechanically processed, plus the bounded hand-reviewed technical-topic selection, exact excerpts and source-text hashes; null-key/name-only rows remain unattached;
 - `application_eligibility`: whether the supplied evidence establishes the posting's application position;
 - `mobilisation_readiness`: whether every safety, medical and employer gate is established;
 - `credential_claims`: dated LearnHub rows with Pass, Attended and Not achieved preserved exactly;
@@ -81,15 +90,17 @@ Each profile keeps these concepts separate:
 
 The evaluator reviews every clean log row for every profile. Its extractor looks for an explicit maintenance action plus an electrical or mechanical plant term. Superficial numeric, measurement-value/unit, and equivalent `permit` / `PTW` / `permit bk.` transformer-isolation variants are collapsed only for a descriptive workflow count; original events and citations remain unchanged. The strongest examples plus at least one exact record for every claimed category are displayed. All four named K1200 records remain visible, while their display exceptions do not create extra pattern identities. Counts, dates and canonical workflows describe the bounded evidence but do not decide interview support. Hours, grade and tags are never treated as competence. There is no minimum pattern count, recency cutoff, confidence score, keyword veto or automatic adverse-appraisal window.
 
-The previously omitted `raw/appraisals/appraisals.jsonl` is now part of the verified input contract (SHA-256 `c19ba6216619c0c4d103b5dd7d99edb49f9722fba94a6eb9de824adfba1488d1`). It contains 4,422 rows: 2,694 have a keeper code, 1,728 do not, and 305 are exactly keyed to 37 current profiles. Only exact `keeper_code` joins are allowed; null-key/name-only records are not guessed. All 305 are reviewed. Rows outside the narrow excerpt selector are labelled **not selected by the appraisal filter**, not declared irrelevant. The selected context now expressly includes K0147/AP000090's positive rope-work testimony and K0354/AP000752/AP000753's reporting concerns; those excerpts do not independently promote or reject either person. Full source-text hashes make excerpts checkable without reproducing unmatched narrative. Appraisal years remain year precision: 2026 records are context-only because their position relative to 2026-10-11 is unknown.
+The previously omitted `raw/appraisals/appraisals.jsonl` is part of the verified input contract (SHA-256 `c19ba6216619c0c4d103b5dd7d99edb49f9722fba94a6eb9de824adfba1488d1`). It contains 4,422 rows: 2,694 have a keeper code, 1,728 do not, and 305 are exactly keyed to 37 current profiles. Only exact `keeper_code` joins are allowed; null-key/name-only records are not guessed. All 305 rows are mechanically processed; that is not presented as complete semantic human review. A bounded manual review of previously unselected technical-topic candidates expanded the exact same-sentence selector. All 180 technical-topic candidate rows are now selected, while the remaining 125 are labelled **not selected by the appraisal filter**, not declared irrelevant. Named repairs include K0478/AP001161, K1231/AP003577, K0847/AP002307 and K0641/AP001695. Positive, adverse, improvement and authorisation context stays together, and year-only 2026 records remain timing-uncertain.
 
-K1200 illustrates the corrected decision contract. CL005994, CL007505, CL009097 and CL009921 record hands-on activity, but AP003496 directly disputes the plant work suggested by the records and records avoided assistance requests. K0478's attributed electrical/isolation logs likewise conflict materially with AP001159, AP001160, AP001162 and AP001165 about switching, distribution and switchgear work. Neither source silently wins, so those two profiles receive `targeted_screening_first`. The other 36 current profiles have specific attributed mechanical or electrical maintenance evidence and receive supported interviews; positive and adverse testimony is retained as interview context rather than an automatic gate.
+K1200 illustrates the corrected decision contract. CL005994, CL007505, CL009097 and CL009921 record hands-on activity, but AP003496 directly disputes the plant work suggested by the records and records avoided assistance requests. K0478's attributed electrical/isolation logs likewise conflict materially with AP001159, AP001160, AP001162 and AP001165 about switching, distribution and switchgear work. The positive 2017 Raheenvarra note and AP001161 are now retained too; they do not prove authorisation or silently resolve later concerns. Neither source silently wins, so those two profiles receive `targeted_screening_first`. The other 36 current profiles have specific attributed mechanical or electrical maintenance evidence and receive supported interviews.
 
-Credential status preserves each supplied LearnHub outcome and expiry. The output separately calculates the nominal date implied by the fictional scheme's stated renewal years as a consistency check. If those two dates produce different status at the cutoff, the claim is marked unresolved and issuer verification is required; neither date silently wins. `Pass`, `Attended`, and `Not achieved` remain different. The OSSC-SS/FF/FA and WAHS-1 record mapping is provisional because employer acceptance and climbing/rescue coverage are not specified. No GWO duration or external policy is imported as a binding Carrowmore rule.
+Credential status preserves each supplied LearnHub outcome and expiry. Year-only clean training claims are reconciled against uniquely matching detailed dates before derived module sequences are stated. For K0592, the clean 2026 MECS-5 completion maps to LH500977 on 2026-11-21, so it remains future evidence at the cutoff and is not asserted as established. Independent comparison also found 12 clean complete/valid summaries whose latest supplied pre-cutoff Pass evidence includes 16 expired module records across seven current people. Both claims remain visible: renewal outside the supplied detailed records is possible, so the output requests issuer verification rather than declaring an award invalid. MECS wording describes the documented consecutive sequence and never invents “Stage 0” or claims the person's actual awarded stage.
+
+The output separately calculates nominal dates implied by the fictional scheme's renewal years as consistency checks. `Pass`, `Attended`, `Not achieved`, missing evidence, clean-summary disagreement and nominal-date disagreement remain distinct. The OSSC-SS/FF/FA and WAHS-1 record mapping is provisional because employer acceptance and climbing/rescue coverage are not specified. No GWO duration or external policy is imported as a binding Carrowmore rule.
 
 The O&M posting requires hands-on mechanical **or** electrical experience. The separate HV Authorised Person posting's HVAP, switching-experience, AP-interview and familiarisation conditions are not imported as O&M interview gates. The HVAP scheme's insurer note leaves a scope ambiguity that requires employer clarification. Permit, isolation and practical checks in later actions are labelled recommended employer verification unless the supplied posting expressly requires them for a separate appointment. The original Pearson brief is not currently present in this workspace; its recorded SHA-256 and the audit findings from the copy inspected during the rules audit are preserved rather than reconstructed.
 
-Identity provenance distinguishes raw keeper codes, payroll references, names and absent identifiers. Integer-like payroll values are normalized across leading-zero, decimal and scientific notation without adding digits; for example, raw `1.1245E+04` corroborates K0147's clean `0011245`. Conflicting identifiers remain visible and clean/manual attribution remains explicit. Era-3 CSV row numbers include the header; era-2 citations use file plus record ID; era-1 citations use physical lines.
+Identity provenance distinguishes raw keeper codes, payroll references, names and absent identifiers. Integer-like payroll values are normalized across leading-zero, decimal and scientific notation without adding digits; for example, raw `1.1245E+04` corroborates K0147's clean `0011245`. Conflicting identifiers remain visible and clean/manual attribution remains explicit. Precise personnel dates are also checked against every retained work record: K0589/CL006691 and K1363/CL001473 predate the personnel export's joining dates, so both dates and their citations remain as unresolved discrepancies rather than deleting the work. Era-3 CSV row numbers include the header; era-2 citations use file plus record ID; era-1 citations use physical lines.
 
 Quoted measurement anomalies are retained verbatim and flagged. Megger readings in `psi`/`bar`, pump delivery in volts and AVR voltage settings in ohms support only that an activity was recorded; their numerical measurements are not treated as reliable and no repair is invented.
 
@@ -120,7 +131,8 @@ The source archive is not duplicated inside this repository. Supply its path wit
 - Exact course availability, duration, price and fastest completion route are not in the sources and remain unknown.
 - Work narratives support interview questions. They do not establish assessed competence, an appointment, current authorisation, or qualifying experience duration.
 - Appraisals are manager testimony, sometimes internally conflicting and sometimes templated. They can define screening questions but do not establish competence or current authorisation.
-- K1538's manager testimony remains an interview lead. Eleven years at Nevisbeg by 2011 implies a start around 2000, while the structured posting begins in 2009. The 1998 joining date is not itself contradictory.
+- K1538's manager testimony remains an interview lead. Eleven years at Nevisbeg by 2011 implies a start around 2000, while the structured posting begins in 2009. The note also claims an authorisation under an unspecified earlier surname was lost in the 1997 changeover, while the personnel export records joining on 1998-08-05. Any pre-employment implication requires clarification; no surname, eligibility or authorisation is inferred.
+- An alternate `--as-of` filters evidence but does not reconstruct the historical workforce. Current/leaver status remains the supplied roster snapshot.
 - Unicode is preserved from the source. Where the supplied pack itself contains a replacement character, the JSON retains it and the readable report uses the supplied ASCII name where available.
 
 See [WRITTEN_EXPLANATION.md](WRITTEN_EXPLANATION.md) for the required design reflection and effort statement.
