@@ -267,9 +267,26 @@
     "elapsed_hms": "00:14:54",
     "candidate_effort": "George's reported two-to-four-hour assessment estimate remains separate and unchanged."
   },
+  "candidate_effort_final_confirmation": {
+    "status": "reported_by_George",
+    "assessment_specific_hours": 3.5,
+    "assessment_specific_minutes": 210,
+    "personal_ml_sql_learning_minutes_excluded": 30,
+    "scope": "Assessment-specific work and review; the personal learning exercise and agent execution timers are recorded separately.",
+    "supersedes_earlier_approximate_candidate_effort_range": true
+  },
+  "documentation_finalization": {
+    "date": "2026-10-13",
+    "baseline_commit": "75d4122a923df25697906aa7733318380f085d42",
+    "supplied_review_zip_sha256": "5b87360397ee8050f9a5ca65de590671a6dd4b9c5a551a561f8317599e7fed2e",
+    "scope": "README reviewer introduction and final first-person reflection; documentation metadata updated. Evaluator, QA code, generated candidate answers, generated QA report and source fingerprints unchanged.",
+    "production_tradeoff": "Replace vocabulary-only skill interpretation and hardcoded person-specific judgments as scope expands; retain useful deterministic parsing, normalization, source provenance, exact citations, explicit dates and auditable employer requirements.",
+    "qa_scope": "No evaluator rerun for this documentation-only change. Existing reported QA and repeat-run checks describe the recorded generation; fresh cross-platform QA can differ in check order without changing outcomes.",
+    "publication_or_submission_authorised": false
+  },
   "sha256": {
-    "README.md": "afd6b8c5fbe104f7b1122993d86aef7a8ef49b5ff1e350440fdfe08d0678f356",
-    "WRITTEN_EXPLANATION.md": "a8e8a6ee2596b2c56f1c1937ae55b00877f1d612b7daa749054039c9c38419d7",
+    "README.md": "648786e9f536e553fd91a22d9f3aa627f00bd4aaf8733521afa25068b5231abe",
+    "WRITTEN_EXPLANATION.md": "c80848d41f9522330e1927b798142b819b9832062cbb2b50f9d52439d7c2d11b",
     "docs/DEVELOPMENT_HISTORY.md": "e062a5e4babb6a03d6bbc90bf8832659f2be41cd0655e342692d289575463a4d",
     "SOURCE_FINGERPRINTS.json": "aa848f85d4a9ac1268cac3332e94085862db90e80e631129337cb22fcc5b6658",
     "src/array_om_evaluator.py": "0ebc90e7ff47270ab598a8a25ef16b53bed80f9c6789260da3064463290fe2f5",
