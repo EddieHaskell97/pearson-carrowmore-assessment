@@ -12,9 +12,12 @@
   "determinism_check": {
     "repeat_run_json_identical": true,
     "repeat_run_markdown_identical": true,
+    "repeat_run_decision_brief_identical": true,
     "repeat_run_qa_report_identical": true,
     "repeat_alternate_json_identical": true,
-    "repeat_alternate_markdown_identical": true
+    "repeat_alternate_markdown_identical": true,
+    "repeat_alternate_decision_brief_identical": true,
+    "python_hash_seeds": [1, 73]
   },
   "required_as_of_check": {
     "missing_argument_exit_code": 2,
@@ -22,7 +25,7 @@
   },
   "qa": {
     "status": "PASS",
-    "passed": 7455,
+    "passed": 8724,
     "failed": 0,
     "prepared_cases": 10,
     "earlier_bounded_correction_areas": 7,
@@ -43,7 +46,7 @@
       "K0310 historical-evidence limitation",
       "individual qualitative policy review for every current profile",
       "no numerical interview threshold or automatic appraisal gate",
-      "exact material-contradiction sources for K0478 and K1200",
+      "K0478 reviewed interview probe versus K1200 material contradiction",
       "year-only 2026 appraisal uncertainty",
       "O&M versus separate HV Authorised Person provenance",
       "provisional OSSC/WAHS mapping and recommended checks",
@@ -55,7 +58,13 @@
       "qualified MECS module-sequence wording",
       "precise personnel chronology conflicts",
       "K1538 authorisation and employment chronology",
-      "alternate-date display cutoff regression"
+      "alternate-date display cutoff regression",
+      "operator queue roster, source ownership and person-specific actions",
+      "source-derived issuer reconciliation queue",
+      "hash-seed-independent QA ordering",
+      "all 38 GitHub-rendered profile navigation targets",
+      "source-derived candidate-specific question focus",
+      "complete operator attribution and measurement-warning coverage"
     ]
   },
   "decision_quality_correction_effort": {
@@ -284,15 +293,102 @@
     "qa_scope": "No evaluator rerun for this documentation-only change. Existing reported QA and repeat-run checks describe the recorded generation; fresh cross-platform QA can differ in check order without changing outcomes.",
     "publication_or_submission_authorised": false
   },
+  "final_evidence_to_action_correction": {
+    "date": "2026-10-13",
+    "baseline_commit": "5e41bc60951ab745c6f69e2d50a6080caa7ccd06",
+    "original_pearson_brief": "Absent from the current workspace; verified requirements were used and absence is disclosed without reconstructing the document.",
+    "product_decision_contract": "For each of the 38 current keepers, show what experience is evidenced, what uncertainty materially affects progression, and the next justified step now; show training, medical and authorisation only as conditional later gates.",
+    "result_counts": {
+      "supported_technical_interview": 37,
+      "targeted_screening_first": 1,
+      "insufficient_evidence": 0,
+      "outside_current_redeployment_cohort": 2
+    },
+    "disposition_changes": [
+      {
+        "keeper_code": "K0478",
+        "before": "targeted_screening_first",
+        "after": "supported_technical_interview",
+        "reason": "CL010541, CL010398 and CL010466 corroborate relevant electrical activity. AP001159, AP001160, AP001161, AP001162, AP001165 and time-uncertain AP001167 supply work-quality, checking and safety questions but do not directly dispute that all cited maintenance activity occurred."
+      }
+    ],
+    "unchanged_targeted_case": {
+      "keeper_code": "K1200",
+      "disposition": "targeted_screening_first",
+      "reason": "AP003496 directly disputes the personal plant work suggested by the attributed records. CL009921 remains displayed context only, has no derived category and does not count as a qualifying pattern."
+    },
+    "operator_artifact": "output/decision_brief.md",
+    "certification_reconciliation": {
+      "conflicting_clean_summaries": 12,
+      "expired_detailed_pass_records": 16,
+      "affected_current_people": ["K0354", "K0561", "K1200", "K1374", "K1418", "K1446", "K1483"],
+      "K1200_summary_disagreements": 5,
+      "K1200_expired_detailed_records": 9,
+      "interpretation": "Neutral issuer-verification queue; neither supplied claim is silently declared authoritative."
+    },
+    "alternate_date_regression": {
+      "as_of": "2023-01-01",
+      "status": "PASS",
+      "json_sha256": "da46174887950c389b35f17d9ad5ad82ddd23889ced4d5d45391c125ad382e5c",
+      "markdown_sha256": "cbbacad3a4c5bd449ee3cf7a13d49dbfeeb95aa11a0e80d626184413d31078cc",
+      "decision_brief_sha256": "cbf03f0d88096ae84ee6ba3449f3d1e00ba08d1b134636f5ed55b887bb0d8dfb",
+      "artifact_retained": false
+    },
+    "reproducibility": {
+      "python_hash_seeds": [1, 73],
+      "current_json_sha256": "b243b5547c3cb071372fc5bfd565a4ef716fc316eb795dd754ce1d64921bfe58",
+      "current_markdown_sha256": "242693294ee01d3a47ff9cfaa0a916cfc5e3bf5c3acd4507dc855a622588743a",
+      "current_decision_brief_sha256": "ebd4cabbdf793a7579fcb1f57047e805c93f8e881190f1d3c1b70f0bf672c195",
+      "qa_report_sha256": "3b39f309a1b7766a11757d4751db24bdfffefb49a7d0bd30486358c640fb86de",
+      "byte_identical_across_seeds": true
+    },
+    "effort_statement": "George's reported 3.5-hour original assessment-specific effort remains historical. Later post-submission corrections are not retroactively included; agent execution timing is not candidate effort.",
+    "publication_or_submission_authorised": false
+  },
+  "publication_blocker_correction": {
+    "date": "2026-10-13",
+    "scope": "Correct operator navigation, replace generic questions with source-specific technical probes, and surface evidence-quality warnings without changing the approved decision policy.",
+    "navigation": {
+      "current_profile_links": 38,
+      "resolved_exactly_once": 38,
+      "method": "Fragments are derived from the exact rendered profile heading using GitHub-style punctuation removal and whitespace replacement."
+    },
+    "operator_questions": {
+      "source_derived_focuses": ["electrical isolation", "fault diagnosis", "testing", "control systems", "mechanical overhaul", "routine mechanical service", "electrical maintenance", "mechanical maintenance"],
+      "truncated_questions": 0,
+      "K0478_reviewed_probe_preserved": true,
+      "K1200_direct_experience_contradiction_preserved": true
+    },
+    "evidence_quality": {
+      "states": ["raw identity corroborated", "clean/manual attribution with raw identity absent", "raw identity conflict", "measurement anomaly requiring clarification"],
+      "named_cases_checked": ["K0482", "K0847", "K1055", "K1302", "K1483", "K1538"],
+      "source_text_rewritten": false,
+      "automatic_rejection_added": false
+    },
+    "result_counts": {
+      "supported_technical_interview": 37,
+      "targeted_screening_first": 1,
+      "insufficient_evidence": 0,
+      "outside_current_redeployment_cohort": 2
+    },
+    "issuer_queue": {
+      "affected_current_people": 7,
+      "conflicting_clean_summaries": 12,
+      "expired_detailed_pass_records": 16,
+      "language": "neutral issuer verification"
+    },
+    "publication_or_submission_authorised": false
+  },
   "sha256": {
-    "README.md": "648786e9f536e553fd91a22d9f3aa627f00bd4aaf8733521afa25068b5231abe",
-    "WRITTEN_EXPLANATION.md": "c80848d41f9522330e1927b798142b819b9832062cbb2b50f9d52439d7c2d11b",
+    "README.md": "8b83886cfac3ab15870b1170fc64c43b3291951c60a691d164620a109607e981",
+    "WRITTEN_EXPLANATION.md": "ed8411bdbedbe63f3cce46c819996d224321c207c9c5e394a83a39aff58ff669",
     "docs/DEVELOPMENT_HISTORY.md": "e062a5e4babb6a03d6bbc90bf8832659f2be41cd0655e342692d289575463a4d",
     "SOURCE_FINGERPRINTS.json": "aa848f85d4a9ac1268cac3332e94085862db90e80e631129337cb22fcc5b6658",
-    "src/array_om_evaluator.py": "0ebc90e7ff47270ab598a8a25ef16b53bed80f9c6789260da3064463290fe2f5",
-    "qa/independent_qa.py": "227b6e06a29f38af46100396ce35454c584420af63ced3e0c6d9c8772443a097",
-    "output/recommendations.json": "d8df69f06d3668682da34a44550f75a31edf2d3c7a7c44511cd40c6143f10903",
-    "output/recommendations.md": "8800f0b95bf8f56d662e091a26b02d44e5e343f085a2a26d7944b7ca8db06a2e",
-    "output/qa_report.json": "d6827aa2faa1e35f8ca2b268c8fc760ad53ad765a478728a770c8131b3f2278f"
+    "src/array_om_evaluator.py": "74d965007f90938e7ec59d405cf639872f616d495f07ae14429757bb2729f690",
+    "qa/independent_qa.py": "aa43d0270e2e3b9a7672929475763932430491c3612fc99819fd2386ec9b03e2",
+    "output/recommendations.json": "b243b5547c3cb071372fc5bfd565a4ef716fc316eb795dd754ce1d64921bfe58",
+    "output/recommendations.md": "242693294ee01d3a47ff9cfaa0a916cfc5e3bf5c3acd4507dc855a622588743a",
+    "output/decision_brief.md": "ebd4cabbdf793a7579fcb1f57047e805c93f8e881190f1d3c1b70f0bf672c195",
+    "output/qa_report.json": "3b39f309a1b7766a11757d4751db24bdfffefb49a7d0bd30486358c640fb86de"
   }
 }

@@ -103,15 +103,22 @@ ESSENTIAL_MODULES = {
 # bounded, person-by-person policy review. They are explicit reviewed source
 # cases, not keyword triggers, scores, time windows or numerical thresholds.
 MATERIAL_CORE_CONTRADICTIONS = {
-    "K0478": {
-        "record_ids": ["AP001159", "AP001160", "AP001162", "AP001165"],
-        "finding": "Attributed electrical and isolation logs sit alongside repeated, directly conflicting testimony about switching, distribution and switchgear work, including both 'go-to' and shortfall/checking claims. The records establish activity but leave its responsibility and quality materially unresolved.",
-        "clarification": "Before a technical interview, clarify what switching and distribution work Ossian personally performed, what checking was required, and whether the 2024 switchgear deficiency was resolved. Preserve the 2026 praise as time-uncertain context rather than treating it as a resolution.",
-    },
     "K1200": {
         "record_ids": ["AP003496"],
-        "finding": "Four attributed hands-on records, including motor-brush and commutator maintenance, conflict with AP003496's direct statement that the manager had not observed the plant work suggested by the record and that two requests for assistance were avoided.",
+        "finding": "Attributed motor-brush, commutator and optic-mechanism records conflict with AP003496's direct statement that the manager had not observed the plant work suggested by the record and that two requests for assistance were avoided.",
         "clarification": "Before a technical interview, establish which work Tomaltach performed personally, whether the optic and clockwork activities meet the employer's plant-maintenance criterion, and why AP003496 differs from the logs and other manager testimony.",
+    },
+}
+
+# Reviewed questions that belong in a technical interview but do not dispute
+# that the cited maintenance activity occurred. Keeping these separate from
+# MATERIAL_CORE_CONTRADICTIONS prevents quality/supervision concerns from
+# silently becoming pre-interview attribution gates.
+REVIEWED_INTERVIEW_PROBES = {
+    "K0478": {
+        "record_ids": ["AP001159", "AP001160", "AP001161", "AP001162", "AP001165", "AP001167"],
+        "finding": "The corroborated electrical records establish activity, while the appraisals retain mixed evidence about work quality, checking and consistency. Those concerns require concrete technical and safety questions, not denial of an interview.",
+        "question": "At technical interview, ask Ossian to walk through CL010541 and CL010398: his personal responsibility, isolation and proving-dead steps, fault diagnosis, independent checks, and how the 2024 switchgear deficiency in AP001165 was addressed. Treat AP001167 as time-uncertain context and do not infer current HV authorisation.",
     },
 }
 
@@ -313,13 +320,14 @@ def identity_provenance(identifier_type: str, raw_value: str | None, keeper: dic
 def measurement_quality_flags(text: str) -> list[dict]:
     flags = []
     if re.search(r"\bmegger\b", text, re.I):
-        match = re.search(r"\b\d+(?:\.\d+)?\s*(psi|bar)\b", text, re.I)
+        match = re.search(r"\b\d+(?:\.\d+)?\s*(psi|bar|V|volts?)\b", text, re.I)
         if match:
+            unit_kind = "pressure" if match.group(1).lower() in {"psi", "bar"} else "electrical-potential"
             flags.append(
                 {
                     "code": "inconsistent_measurement_unit",
                     "observed": match.group(0),
-                    "finding": "The quoted Megger reading uses a pressure unit, so the activity is retained but the numerical measurement is unreliable.",
+                    "finding": f"The quoted Megger result uses a {unit_kind} unit rather than an insulation-resistance unit, so the activity is retained but the numerical measurement is unreliable.",
                 }
             )
     if re.search(r"\bpump\b.*\bdelivery\b", text, re.I):
@@ -443,6 +451,8 @@ def work_evidence_record(
     entry: dict,
     categories: list[str],
     score: int,
+    evidence_role: str = "qualifying_work_example",
+    interpretation_provenance: dict | None = None,
 ) -> dict:
     corroboration = raw_corroboration(zf, entry, keeper)
     if not corroboration["resolved"]:
@@ -477,6 +487,8 @@ def work_evidence_record(
         "measurement_quality_flags": measurement_quality_flags(entry["text"]),
         "selection_score": score,
         "template_key": normalized_work_template(entry["text"]),
+        "evidence_role": evidence_role,
+        "interpretation_provenance": interpretation_provenance,
         "personnel_chronology": chronology,
     }
 
@@ -504,14 +516,15 @@ def select_work_evidence(
             if required_k1200:
                 material_display_candidates[entry["entry_id"]] = candidate
         elif required_k1200:
-            display_categories = categories + (["mechanical"] if "mechanical" not in categories else [])
-            display_score = 2 * len({"electrical", "mechanical", "fault_finding", "permit_or_isolation"} & set(display_categories))
-            display_score += len(set(display_categories))
+            # Retain this reviewed event because AP003496 disputes what the
+            # broader history represents. It remains context-only: the text
+            # does not silently gain a mechanical category and does not enter
+            # the qualifying-pattern or recommendation evidence sets.
             material_display_candidates[entry["entry_id"]] = (
-                display_score,
+                0,
                 entry["date"],
                 entry,
-                display_categories,
+                categories,
             )
     candidates.sort(key=lambda item: (item[0], item[1], item[2]["entry_id"]), reverse=True)
     distinct, normalized_seen = [], set()
@@ -534,7 +547,25 @@ def select_work_evidence(
             if entry_id not in material_display_candidates:
                 continue
             score, _, entry, categories = material_display_candidates[entry_id]
-            required.append(work_evidence_record(zf, keeper, personnel, entry, categories, score))
+            normally_qualifies = any(item[2]["entry_id"] == entry_id for item in candidates)
+            required.append(
+                work_evidence_record(
+                    zf,
+                    keeper,
+                    personnel,
+                    entry,
+                    categories,
+                    score,
+                    evidence_role="qualifying_work_example" if normally_qualifies else "material_context_only",
+                    interpretation_provenance=None
+                    if normally_qualifies
+                    else {
+                        "type": "reviewed_display_context",
+                        "reason": "Retained because AP003496 directly disputes what K1200's plant-work history represents.",
+                        "limit": "The record is not assigned a mechanical or electrical category, is not counted as a qualifying pattern and does not independently support the interview disposition.",
+                    },
+                )
+            )
         chosen = required + [row for row in chosen if row["entry_id"] not in K1200_MATERIAL_LOG_IDS]
         chosen = chosen[: max(5, len(required))]
 
@@ -1173,14 +1204,30 @@ def individual_policy_review(
     material_rule = MATERIAL_CORE_CONTRADICTIONS.get(keeper["keeper_code"])
     material_ids = [record_id for record_id in material_rule["record_ids"] if record_id in available_appraisal_ids] if material_rule else []
     material = ({**material_rule, "record_ids": material_ids} if material_rule and material_ids else None)
-    if material and keeper["keeper_code"] == "K0478" and "AP001165" not in material_ids:
-        material["clarification"] = (
-            "Before a technical interview, clarify what switching and distribution work Ossian personally performed and what checking was required."
+    probe_rule = REVIEWED_INTERVIEW_PROBES.get(keeper["keeper_code"])
+    probe_ids = [record_id for record_id in probe_rule["record_ids"] if record_id in available_appraisal_ids] if probe_rule else []
+    reviewed_probe = ({**probe_rule, "record_ids": probe_ids} if probe_rule and probe_ids else None)
+    if reviewed_probe and keeper["keeper_code"] == "K0478":
+        preferred_probe_ids = ("CL010541", "CL010398", "CL010466")
+        probe_work = [row for entry_id in preferred_probe_ids for row in evidence if row["entry_id"] == entry_id][:2]
+        if not probe_work:
+            probe_work = selected
+        cited_work = ", ".join(row["entry_id"] for row in probe_work)
+        question = (
+            f"At technical interview, ask Ossian to walk through {cited_work}: his personal responsibility, isolation and proving-dead steps, "
+            "fault diagnosis, independent checks, and how he verified the outcome."
         )
+        if "AP001165" in probe_ids:
+            question += " Ask how the 2024 switchgear deficiency in AP001165 was addressed."
+        if "AP001167" in probe_ids:
+            question += " Treat AP001167 as time-uncertain context and do not infer current HV authorisation."
+        reviewed_probe["question"] = question
     supplementary_sources = [row["source_reference"] for row in supplementary_evidence]
     unresolved_questions = []
     if material:
         unresolved_questions.append(material["clarification"])
+    elif reviewed_probe:
+        unresolved_questions.append(reviewed_probe["question"])
     elif adverse_ids:
         unresolved_questions.append(
             f"Discuss the selected adverse testimony in {', '.join(adverse_ids)} alongside the cited work and any positive testimony; it is a question for the interview, not an automatic veto."
@@ -1251,22 +1298,33 @@ def individual_policy_review(
                 )
             elif positive_ids:
                 appraisal_clause = f" Positive testimony in {', '.join(positive_ids)} is an interview lead, not proof of competence."
+            supplementary_clause = (
+                f" Positive station-note testimony in {', '.join(supplementary_sources)} is retained as an interview lead, not proof of current or historical authorisation."
+                if supplementary_sources else ""
+            )
             reason = (
-                f"{examples}. {relevance}{appraisal_clause} A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding."
+                f"{examples}. {relevance}{appraisal_clause}{supplementary_clause} A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding."
             )
-            selection_action = (
-                f"Invite to a structured technical interview using {', '.join(row['entry_id'] for row in selected)} and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome."
-            )
-            if keeper["keeper_code"] == "K0310":
-                summary_uncertainty = "Historical evidence only; logs end 2012 and no keyed appraisal"
-            elif same_year_ids:
-                summary_uncertainty = f"Year-only {as_of.year} appraisal timing is uncertain"
-            elif adverse_ids:
-                summary_uncertainty = f"Adverse testimony retained for interview: {', '.join(adverse_ids)}"
-            elif not appraisal_review["processed_record_ids"]:
-                summary_uncertainty = "No keyed appraisal; no clean-record inference"
+            if reviewed_probe:
+                reason += f" Reviewed interview focus ({', '.join(reviewed_probe['record_ids'])}): {reviewed_probe['finding']}"
+                selection_action = reviewed_probe["question"]
+                summary_uncertainty = f"Work-quality and checking questions retained for interview: {', '.join(reviewed_probe['record_ids'])}"
             else:
-                summary_uncertainty = "Competence and mobilisation remain unestablished"
+                selected_activity = " / ".join(f"{row['entry_id']}: {row['text']}" for row in selected)
+                selection_action = (
+                    f"Invite to a structured technical interview using {selected_activity}. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified."
+                )
+            if not reviewed_probe:
+                if keeper["keeper_code"] == "K0310":
+                    summary_uncertainty = "Historical evidence only; logs end 2012 and no keyed appraisal"
+                elif same_year_ids:
+                    summary_uncertainty = f"Year-only {as_of.year} appraisal timing is uncertain"
+                elif adverse_ids:
+                    summary_uncertainty = f"Adverse testimony retained for interview: {', '.join(adverse_ids)}"
+                elif not appraisal_review["processed_record_ids"]:
+                    summary_uncertainty = "No keyed appraisal; no clean-record inference"
+                else:
+                    summary_uncertainty = "Competence and mobilisation remain unestablished"
 
     criteria = {
         "reviewed_individually": True,
@@ -1277,6 +1335,7 @@ def individual_policy_review(
         "selected_adverse_testimony_ids": adverse_ids,
         "same_year_timing_uncertain_ids": same_year_ids,
         "material_core_contradiction_ids": material["record_ids"] if material else [],
+        "reviewed_interview_probe_ids": reviewed_probe["record_ids"] if reviewed_probe else [],
         "ranking_used": False,
         "numerical_interview_threshold_used": False,
         "automatic_adverse_appraisal_gate_used": False,
@@ -1293,6 +1352,7 @@ def individual_policy_review(
         "positive_supplementary_sources": supplementary_sources,
         "adverse_testimony_ids": adverse_ids,
         "material_unresolved_issue": material["finding"] if material else None,
+        "reviewed_interview_probe": reviewed_probe["finding"] if reviewed_probe else None,
         "unresolved_questions": unresolved_questions,
         "summary_uncertainty": summary_uncertainty,
         "selection_action": selection_action,
@@ -1580,7 +1640,7 @@ def markdown_report(payload: dict) -> str:
         appraisal_unmatched = row["appraisal_review"]["rows_not_selected_by_appraisal_filter"]
         appraisal_row_word = "row" if appraisal_unmatched == 1 else "rows"
         lines.extend([
-            f"## {row['keeper_code']} — {row['name_ascii'] or row['name']}",
+            f"## {detailed_profile_heading(row)}",
             "",
             f"- Interview: `{row['interview_recommendation']}` — {row['recommendation_reason']}",
             f"- Application eligibility: `{row['application_eligibility']}`",
@@ -1623,7 +1683,10 @@ def markdown_report(payload: dict) -> str:
                     attribution = f"clean/manual attribution; raw {identity['identifier_type']} {identity['raw_value']} conflicts with clean {identity['expected_value']} and does not corroborate the person assignment"
                 else:
                     attribution = "clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated"
-                lines.append(f"- {e['date']} — “{e['text']}” ({e['entry_id']}; `{e['source_reference']}`; {attribution}).")
+                role_note = ""
+                if e.get("evidence_role") == "material_context_only":
+                    role_note = " Context only: retained for the named source contradiction; it is not assigned a mechanical/electrical category and does not independently support the disposition."
+                lines.append(f"- {e['date']} — “{e['text']}” ({e['entry_id']}; `{e['source_reference']}`; {attribution}).{role_note}")
                 chronology = e["personnel_chronology"]
                 if chronology["status"] == "unresolved_work_predates_precise_personnel_join_date":
                     lines.append(f"  - Personnel chronology warning: {chronology['finding']} Personnel source: `{chronology['personnel_source_reference']}`; clean date source: `{chronology['clean_source_reference']}`.")
@@ -1695,6 +1758,298 @@ def markdown_report(payload: dict) -> str:
         for action in row["later_qualification_and_mobilisation_actions"]:
             lines.append(f"- {action}")
         lines.append("")
+    return "\n".join(lines) + "\n"
+
+
+def compact_markdown(value: str, limit: int = 190) -> str:
+    value = re.sub(r"\s+", " ", value).strip().replace("|", "\\|")
+    return value if len(value) <= limit else value[: limit - 1].rstrip() + "…"
+
+
+def detailed_profile_heading(candidate: dict) -> str:
+    return f"{candidate['keeper_code']} — {candidate['name_ascii'] or candidate['name']}"
+
+
+def github_heading_anchor(heading: str) -> str:
+    """Match GitHub's rendered-heading fragment rules for this ASCII-labelled report."""
+    normalized = unicodedata.normalize("NFKC", heading.strip().lower())
+    kept = []
+    for character in normalized:
+        if character.isalnum() or character in {"-", "_"} or character.isspace():
+            kept.append(character)
+    return "".join("-" if character.isspace() else character for character in kept)
+
+
+def detailed_profile_anchor(candidate: dict) -> str:
+    return github_heading_anchor(detailed_profile_heading(candidate))
+
+
+def work_probe_focus(evidence: dict) -> tuple[str, str]:
+    """Return a source-bounded interview focus without asserting competence."""
+    text = evidence["text"].lower()
+    categories = set(evidence["categories"])
+    if "permit_or_isolation" in categories or re.search(r"\b(isolat|permit|ptw|earthed|proved dead)", text):
+        return "electrical isolation", "explain the isolation boundary, proving-dead or earthing controls, and permit handback"
+    if re.search(r"\b(avr|relay|contactor|control|battery|charger|switchgear|load[- ]shared?)\b", text):
+        return "control systems", "explain the defect or setting basis, the change made, and the functional or load-sharing check"
+    if "mechanical" in categories and re.search(r"\b(rebuilt|rebuild|overhaul|repaired|dressed|refitted|stripped|renewed)\b", text):
+        return "mechanical overhaul", "explain the diagnosed defect, components worked on, and post-reassembly run checks"
+    if "mechanical" in categories and re.search(r"\b(oil|filter|greas|belt|servic)\b", text):
+        return "routine mechanical service", "explain the condition checks, work completed, and return-to-service checks"
+    if re.search(r"\b(megger|continuity|tested?|checked?)\b", text):
+        return "testing", "explain the test method, expected criterion, and how the recorded result was interpreted"
+    if "fault_finding" in categories or re.search(r"\b(fault|traced?|diagnos|trip)\b", text):
+        return "fault diagnosis", "explain the fault hypothesis, observations that isolated the cause, and the post-work check"
+    if "electrical" in categories:
+        return "electrical maintenance", "explain the safe isolation, work completed, and functional verification"
+    return "mechanical maintenance", "explain the maintenance need, work completed, and functional verification"
+
+
+def candidate_specific_probe(candidate: dict, core_rows: list[dict]) -> str:
+    if candidate["keeper_code"] == "K0478":
+        return (
+            "CL010541 and CL010398 — fault diagnosis and electrical isolation: explain the isolation and proving-dead sequence, "
+            "how the earth fault was located, the independent outcome checks, and how AP001165's switchgear deficiency was addressed. "
+            "AP001167 is time-uncertain; do not infer current HV authorisation."
+        )
+    if candidate["keeper_code"] == "K1200":
+        activities = " and ".join(
+            f"{row['entry_id']} — {work_probe_focus(row)[0]}" for row in core_rows
+        )
+        return (
+            f"{activities} — personal experience clarification: establish what Tomaltach performed personally, whether the optic and "
+            "clockwork work meets the plant-maintenance criterion, and why AP003496 differs from the logs and other testimony."
+        )
+
+    grouped = {}
+    for row in core_rows:
+        label, question = work_probe_focus(row)
+        grouped.setdefault((label, question), []).append(row["entry_id"])
+    clauses = [
+        f"{' and '.join(entry_ids)} — {label}: {question}"
+        for (label, question), entry_ids in grouped.items()
+    ]
+    if candidate["keeper_code"] == "K0310":
+        clauses.append("What later work demonstrates current practice, given that the supplied logs end in 2012?")
+    return "; ".join(clauses) + "."
+
+
+def evidence_quality_status(evidence: dict) -> str:
+    identity = evidence["raw_corroboration"]["identity_provenance"]
+    if identity["corroboration"] == "corroborates":
+        parts = ["raw identity corroborated"]
+    elif identity["corroboration"] == "conflicts":
+        parts = [f"raw {identity['identifier_type']} conflicts with clean attribution — verify person"]
+    else:
+        parts = ["clean/manual attribution; raw identity absent — verify person"]
+    for flag in evidence["measurement_quality_flags"]:
+        parts.append(f"measurement anomaly `{flag['observed']}` — clarify value/unit")
+    return f"{evidence['entry_id']}: " + "; ".join(parts)
+
+
+def certification_disagreements(payload: dict) -> list[dict]:
+    rows = []
+    for candidate in payload["candidates"]:
+        if candidate["cohort_status"] != "current_redeployment_cohort":
+            continue
+        for summary in candidate["clean_certification_summaries"]:
+            reconciliation = summary["source_summary_reconciliation"]
+            if reconciliation["status"] != "unresolved_clean_summary_detailed_pass_disagreement":
+                continue
+            rows.append(
+                {
+                    "keeper_code": candidate["keeper_code"],
+                    "name": candidate["name_ascii"] or candidate["name"],
+                    "scheme": summary["scheme"],
+                    "clean_claim": (
+                        f"complete={summary['complete']}, valid_2026={summary['valid_2026']}, "
+                        f"expires_year={summary['expires_year']}"
+                    ),
+                    "clean_source_reference": summary["source_reference"],
+                    "expired_record_ids": reconciliation["expired_detailed_pass_record_ids"],
+                    "finding": reconciliation["finding"],
+                }
+            )
+    return sorted(rows, key=lambda row: (row["keeper_code"], row["scheme"]))
+
+
+def decision_brief(payload: dict) -> str:
+    """Render the operator's short evidence-to-action view from canonical candidate data."""
+    summary = payload["summary"]
+    current = sorted(
+        (row for row in payload["candidates"] if row["cohort_status"] == "current_redeployment_cohort"),
+        key=lambda row: row["keeper_code"],
+    )
+    leavers = sorted(
+        row["keeper_code"] for row in payload["candidates"] if row["cohort_status"] == "leaver_outside_current_cohort"
+    )
+    disagreements = certification_disagreements(payload)
+    disagreement_people = sorted({row["keeper_code"] for row in disagreements})
+    expired_record_count = sum(len(row["expired_record_ids"]) for row in disagreements)
+    chronology_people = sorted(
+        row["keeper_code"] for row in current if row["identity_and_chronology_conflicts"]
+    )
+    targeted = sorted(
+        row["keeper_code"] for row in current if row["interview_recommendation"] == "targeted_screening_first"
+    )
+    targeted_count = summary["targeted_screening_first"]
+    targeted_people_label = f"{targeted_count} {'person' if targeted_count == 1 else 'people'}"
+    targeted_clarification_label = f"{targeted_count} targeted evidence {'clarification' if targeted_count == 1 else 'clarifications'}"
+
+    lines = [
+        "# Carrowmore Array O&M redeployment decision brief",
+        "",
+        "> Synthetic Pearson assessment data. This is an evidence-to-action prototype, not an employment decision, competence assessment or mobilisation approval.",
+        "",
+        f"Scenario date: **{payload['as_of']}**",
+        "",
+        "## A. Immediate answer and boundary",
+        "",
+        f"The permitted subset contains **{summary['profiles']} profiles: {summary['current']} current keepers and {summary['leavers']} leavers ({', '.join(leavers)}) outside the current redeployment cohort**. It is not a best-40 selection from all 340 personnel and is not representative of the full workforce.",
+        "",
+        f"The evidence supports **{summary['supported_technical_interview']} technical interviews**, **{targeted_clarification_label}** and **{summary['insufficient_evidence']} insufficient-evidence outcomes** among current keepers. These are next-step decisions, not hiring approvals. No person is declared competent, fully eligible, medically fit, authorised or mobilisation-ready.",
+        "",
+        "**Product decision contract:** For each of the 38 current keepers, show what experience is evidenced, what uncertainty materially affects progression, and the next justified step now; show training, medical and authorisation only as conditional later gates.",
+        "",
+        "The user is a redeployment officer assigning evidence-review work. Unlike a keyword search, this brief joins each activity to a person and exact source, retains contradictory testimony, respects the scenario cutoff and turns uncertainty into a named verification task.",
+        "",
+        "## B. Cohort action summary",
+        "",
+        "These work items are orthogonal; a person may appear in more than one. They are not score buckets or a ranking.",
+        "",
+        "| Work item | Current people / records | Operator action |",
+        "|---|---:|---|",
+        f"| Interview with person-specific verification | {summary['supported_technical_interview']} people | Use the exact work records and probe in the queue below; test personal responsibility, safe method and verified outcome. |",
+        f"| Targeted core-experience clarification | {targeted_people_label} ({', '.join(targeted) or 'none'}) | Resolve the cited occurrence/attribution contradiction before technical interview. |",
+        f"| Identity or chronology reconciliation | {len(chronology_people)} people ({', '.join(chronology_people) or 'none'}) | Preserve both claims and resolve the cited source/date discrepancy; do not delete the work record. |",
+        f"| Clean-summary versus detailed-Pass reconciliation | {len(disagreement_people)} people; {len(disagreements)} summaries; {expired_record_count} expired detailed records | Send the paired claims and record IDs to the issuer; do not declare the award invalid or prescribe training from the mismatch alone. |",
+        f"| Later conditional safety, medical and permission gates | {len(current)} people | Only after selection progression: verify certificates and willingness, then medical prerequisites, safety coverage and employer checks. |",
+        "",
+        "## C. Actionable queue for all 38 current people",
+        "",
+        "Stable by keeper code; no ranking is implied. Detailed quotations, provenance and later conditional actions remain in [recommendations.md](recommendations.md).",
+        "",
+        "| Keeper | Substantiated transferable activity | Disposition | Specific probe / clarification | Evidence quality | Other verification | Next action now |",
+        "|---|---|---|---|---|---|---|",
+    ]
+
+    for candidate in current:
+        evidence_by_id = {row["entry_id"]: row for row in candidate["relevant_experience"]}
+        core_ids = candidate["individual_policy_review"]["supporting_core_work_ids"]
+        core_rows = [evidence_by_id[entry_id] for entry_id in core_ids if entry_id in evidence_by_id]
+        activity = "; ".join(
+            f"{row['entry_id']}: {compact_markdown(row['text'], 92)}" for row in core_rows[:2]
+        ) or "No essential hands-on example established"
+        probe = candidate_specific_probe(candidate, core_rows) if core_rows else candidate["initial_selection_actions"][0]
+        cited_rows = list(core_rows)
+        cited_ids = {row["entry_id"] for row in cited_rows}
+        for entry_id in re.findall(r"CL\d{6}", probe):
+            if entry_id in evidence_by_id and entry_id not in cited_ids:
+                cited_rows.append(evidence_by_id[entry_id])
+                cited_ids.add(entry_id)
+        evidence_quality = "<br>".join(evidence_quality_status(row) for row in cited_rows)
+
+        verification = []
+        if candidate["identity_and_chronology_conflicts"]:
+            verification.append(
+                "source/chronology: " + ", ".join(row["code"] for row in candidate["identity_and_chronology_conflicts"])
+            )
+        candidate_disagreements = [row for row in disagreements if row["keeper_code"] == candidate["keeper_code"]]
+        if candidate_disagreements:
+            verification.append(
+                "issuer: " + ", ".join(
+                    f"{row['scheme']} ({'/'.join(row['expired_record_ids'])})" for row in candidate_disagreements
+                )
+            )
+        future_ids = [row["record_id"] for row in candidate["future_evidence_not_used"]]
+        if future_ids:
+            verification.append("future-at-cutoff evidence not usable: " + ", ".join(future_ids))
+        if not verification:
+            verification.append("personal responsibility and outcome; credentials, medical fitness and work-condition acceptance remain unestablished")
+
+        if candidate["interview_recommendation"] == "supported_technical_interview":
+            next_action = "Run the cited technical interview"
+        elif candidate["interview_recommendation"] == "targeted_screening_first":
+            next_action = "Resolve the cited core-experience contradiction"
+        else:
+            next_action = "Request one specific attributable plant-maintenance example"
+        anchor = detailed_profile_anchor(candidate)
+        keeper = f"[{candidate['keeper_code']} / {candidate['name_ascii'] or candidate['name']}](recommendations.md#{anchor})"
+        lines.append(
+            f"| {keeper} | {compact_markdown(activity)} | `{candidate['interview_recommendation']}` | "
+            f"{compact_markdown(probe, 360)} | {evidence_quality} | "
+            f"{compact_markdown('; '.join(verification), 220)} | {next_action} |"
+        )
+
+    by_code = {row["keeper_code"]: row for row in current}
+    k0478 = by_code["K0478"]
+    k1200 = by_code["K1200"]
+    certification_case = next((row for row in disagreements if row["keeper_code"] == "K0354"), disagreements[0] if disagreements else None)
+    k0592_future = next(row for row in by_code["K0592"]["future_evidence_not_used"] if row["record_id"] == "LH500977")
+    k0478_core = ", ".join(k0478["individual_policy_review"]["supporting_core_work_ids"])
+    k0478_probe_ids = ", ".join(k0478["recommendation_criteria"]["reviewed_interview_probe_ids"])
+    k1200_qualifying = [row["entry_id"] for row in k1200["relevant_experience"] if row["evidence_role"] == "qualifying_work_example"]
+    k1200_context = [row["entry_id"] for row in k1200["relevant_experience"] if row["evidence_role"] == "material_context_only"]
+    k1200_material_ids = k1200["recommendation_criteria"]["material_core_contradiction_ids"]
+    if k1200_material_ids:
+        k1200_case_title = "### K1200 — direct dispute about personal plant experience"
+        k1200_case_finding = f"{', '.join(k1200_material_ids)} directly disputes the plant work suggested by the records."
+    else:
+        k1200_case_title = "### K1200 — experience evidence available without a cutoff-date contradiction"
+        k1200_case_finding = "No named material core-experience contradiction is available at this scenario cutoff."
+    lines.extend(
+        [
+            "",
+            "## D. Selected cases showing different operator actions",
+            "",
+            "### K0478 — experience established; quality and safety tested in interview",
+            "",
+            f"Corroborated electrical work {k0478_core} supports interview. Reviewed appraisal evidence {k0478_probe_ids} retains the quality/checking evidence available at this cutoff, and the 2017 Raheenvarra note is positive testimony rather than authorisation. **Action:** {k0478['initial_selection_actions'][0]}",
+            "",
+            k1200_case_title,
+            "",
+            f"Qualifying records available at the cutoff are {', '.join(k1200_qualifying)}. Context-only records are {', '.join(k1200_context) or 'none'} and gain no silent mechanical or electrical category. {k1200_case_finding} **Action:** {k1200['initial_selection_actions'][0]}",
+            "",
+            "### K0592 — future evidence cannot cross the scenario cutoff",
+            "",
+            f"{k0592_future['record_id']} records a {k0592_future['module']} Pass completed {k0592_future['completed_on']}, after {payload['as_of']} ({k0592_future['source_reference']}). **Action:** keep it visible as future evidence but do not use it to establish the person's position at the scenario date.",
+            "",
+            "## E. Systemic evidence-reconciliation opportunity",
+            "",
+            f"Independent derivation from the generated candidate records finds **{len(disagreements)} conflicting clean certification summaries, {expired_record_count} expired detailed Pass records and {len(disagreement_people)} affected current people**: {', '.join(disagreement_people)}. K1200 accounts for {sum(row['keeper_code'] == 'K1200' for row in disagreements)} summary disagreements and {sum(len(row['expired_record_ids']) for row in disagreements if row['keeper_code'] == 'K1200')} expired records. This concentration is reported, not generalized to the full workforce.",
+            "",
+            "| Keeper / scheme | Clean summary claim | Expired detailed Pass IDs | Neutral next action |",
+            "|---|---|---|---|",
+        ]
+    )
+    if certification_case:
+        lines[lines.index("### K0592 — future evidence cannot cross the scenario cutoff"):lines.index("### K0592 — future evidence cannot cross the scenario cutoff")] = [
+            f"### {certification_case['keeper_code']} — clean certification claim needs issuer reconciliation",
+            "",
+            f"The clean {certification_case['scheme']} summary ({certification_case['clean_source_reference']}) says {certification_case['clean_claim']}, while detailed Pass {', '.join(certification_case['expired_record_ids'])} is expired at the cutoff. **Action:** give both claims to the issuer; renewal outside the supplied detail remains possible, so do not declare the award invalid or prescribe training yet.",
+            "",
+        ]
+    for row in disagreements:
+        lines.append(
+            f"| {row['keeper_code']} / {row['scheme']} | {row['clean_claim']} (`{row['clean_source_reference']}`) | "
+            f"{', '.join(row['expired_record_ids'])} | Ask the issuer for current documentary evidence; retain both claims until resolved. |"
+        )
+    lines.extend(
+        [
+            "",
+            "## F. Conditional progression and limitations",
+            "",
+            "1. Complete the interview or targeted evidence clarification first.",
+            "2. If progression remains supported, verify original certificates and reconcile competing source claims with the issuer before spending on training.",
+            "3. Confirm willingness for tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern.",
+            "4. Establish medical fitness before OSSC training or mobilisation, then confirm the employer-accepted offshore-safety, climbing and rescue package and its prerequisites.",
+            "5. Treat permit, isolation and practical checks as recommended employer verification unless an express requirement applies. The separate HV Authorised Person appointment is not imported as an O&M interview gate.",
+            "",
+            "Training duration, price, availability, current medical fitness, willingness, competence and authorisation remain unknown or unestablished unless an exact source says otherwise. Nominal fictional-scheme expiry calculations are consistency checks, not substituted authoritative dates.",
+            "",
+            "The original Pearson brief DOCX is not present in this workspace. This artifact follows the verified requirements recorded for the assessment and does not claim the brief was reread during this correction.",
+        ]
+    )
     return "\n".join(lines) + "\n"
 
 
@@ -1848,9 +2203,16 @@ def main(argv=None) -> int:
     args.output_dir.mkdir(parents=True, exist_ok=True)
     json_path = args.output_dir / "recommendations.json"
     md_path = args.output_dir / "recommendations.md"
+    brief_path = args.output_dir / "decision_brief.md"
     json_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     md_path.write_text(markdown_report(payload), encoding="utf-8")
-    print(json.dumps({"json": str(json_path), "markdown": str(md_path), "summary": payload["summary"]}, indent=2))
+    brief_path.write_text(decision_brief(payload), encoding="utf-8")
+    print(
+        json.dumps(
+            {"json": str(json_path), "markdown": str(md_path), "decision_brief": str(brief_path), "summary": payload["summary"]},
+            indent=2,
+        )
+    )
     return 0
 
 

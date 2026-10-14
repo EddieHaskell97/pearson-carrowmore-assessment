@@ -103,6 +103,35 @@ def normalize_name(value: str | None) -> str | None:
     return "".join(c.lower() for c in value if c.isalnum() and not unicodedata.combining(c))
 
 
+def github_heading_slug(heading: str) -> str:
+    """Independent GitHub-style slug for the report's ASCII profile headings."""
+    normalized = unicodedata.normalize("NFKC", heading.strip().lower())
+    kept = [
+        character
+        for character in normalized
+        if character.isalnum() or character in {"-", "_"} or character.isspace()
+    ]
+    return "".join("-" if character.isspace() else character for character in kept)
+
+
+def expected_probe_focus(text: str, categories: set[str]) -> str:
+    """Derive the expected operator-question topic directly from source text."""
+    lowered = text.lower()
+    if "permit_or_isolation" in categories or re.search(r"\b(isolat|permit|ptw|earthed|proved dead)", lowered):
+        return "electrical isolation"
+    if re.search(r"\b(avr|relay|contactor|control|battery|charger|switchgear|load[- ]shared?)\b", lowered):
+        return "control systems"
+    if "mechanical" in categories and re.search(r"\b(rebuilt|rebuild|overhaul|repaired|dressed|refitted|stripped|renewed)\b", lowered):
+        return "mechanical overhaul"
+    if "mechanical" in categories and re.search(r"\b(oil|filter|greas|belt|servic)\b", lowered):
+        return "routine mechanical service"
+    if re.search(r"\b(megger|continuity|tested?|checked?)\b", lowered):
+        return "testing"
+    if "fault_finding" in categories or re.search(r"\b(fault|traced?|diagnos|trip)\b", lowered):
+        return "fault diagnosis"
+    return "electrical maintenance" if "electrical" in categories else "mechanical maintenance"
+
+
 def canonical_work_pattern(text: str) -> str:
     """Independent normalization for superficial numeric/measurement variants."""
     value = text.lower()
@@ -393,7 +422,7 @@ def run(zip_path: Path, results_path: Path, alternate_results_path: Path | None 
         # Correction pass 3: suspect measurements remain verbatim but are not trusted numerically.
         def expected_measurement_warning(text):
             return bool(
-                (re.search(r"\bmegger\b", text, re.I) and re.search(r"\b\d+(?:\.\d+)?\s*(psi|bar)\b", text, re.I))
+                (re.search(r"\bmegger\b", text, re.I) and re.search(r"\b\d+(?:\.\d+)?\s*(psi|bar|V|volts?)\b", text, re.I))
                 or (re.search(r"\bpump\b.*\bdelivery\b", text, re.I) and re.search(r"\b\d+(?:\.\d+)?\s*(V|volts?)\b", text, re.I))
                 or (re.search(r"\bAVR\b", text, re.I) and re.search(r"\bvolts?\s+set\b", text, re.I) and re.search(r"\b\d+(?:\.\d+)?\s*ohms?\b", text, re.I))
             )
@@ -581,8 +610,8 @@ def run(zip_path: Path, results_path: Path, alternate_results_path: Path | None 
                 checks.equal(f"station note source hash: {keeper_code}", note["source_text_sha256"], digest(zf.read(member)))
                 checks.check(f"station note attribution not filename-only: {keeper_code}", "not the filename alone" in note["attribution_basis"] and len(note["attribution_sources"]) == 2)
                 checks.check(f"station note limitation retained: {keeper_code}", "not" in note["evidence_limit"].lower())
-        checks.check("K0478 positive station note included in targeted rationale", "2017-raheenvarra-o-raghnaill.txt#L2" in candidates["K0478"]["recommendation_reason"])
-        checks.equal("K0478 disposition reassessed without automatic change", candidates["K0478"]["interview_recommendation"], "targeted_screening_first")
+        checks.check("K0478 positive station note retained in interview rationale", "2017-raheenvarra-o-raghnaill.txt#L2" in candidates["K0478"]["recommendation_reason"])
+        checks.equal("K0478 quality concerns do not deny interview", candidates["K0478"]["interview_recommendation"], "supported_technical_interview")
 
         # Bounded correction: independently reconcile clean valid-in-2026
         # summaries to the latest supplied pre-cutoff detailed Pass per module.
@@ -659,7 +688,7 @@ def run(zip_path: Path, results_path: Path, alternate_results_path: Path | None 
             for evidence in candidate["relevant_experience"]:
                 expected_status = "unresolved_work_predates_precise_personnel_join_date" if (candidate["keeper_code"], evidence["entry_id"]) in expected_prejoin else "work_not_before_precise_personnel_join_date"
                 checks.equal(f"personnel chronology status: {candidate['keeper_code']}/{evidence['entry_id']}", evidence["personnel_chronology"]["status"], expected_status)
-        for keeper_code, entry_id in expected_prejoin:
+        for keeper_code, entry_id in sorted(expected_prejoin):
             conflict = next((row for row in candidates[keeper_code]["identity_and_chronology_conflicts"] if row.get("entry_id") == entry_id), None)
             checks.check(f"pre-join conflict emitted: {keeper_code}/{entry_id}", conflict is not None)
             if conflict:
@@ -700,28 +729,43 @@ def run(zip_path: Path, results_path: Path, alternate_results_path: Path | None 
             checks.check(f"named appraisal retained as adverse testimony: {record_id}", record_id in candidates[keeper_code]["appraisal_review"]["selected_adverse_testimony_ids"])
 
         # Approved qualitative policy: patterns and appraisal matches remain
-        # descriptive. Only the two explicitly reviewed material core
-        # contradictions require clarification before a technical interview.
-        checks.equal(
-            "only material core contradictions are targeted",
-            {candidate["keeper_code"] for candidate in candidates.values() if candidate["interview_recommendation"] == "targeted_screening_first"},
-            {"K0478", "K1200"},
-        )
+        # descriptive. A targeted screen must be supported by an inspectable,
+        # same-person material contradiction; quality concerns alone remain
+        # technical-interview questions rather than a pre-interview gate.
+        targeted_candidates = [
+            candidate for candidate in candidates.values()
+            if candidate["interview_recommendation"] == "targeted_screening_first"
+        ]
+        checks.check("every targeted screen has a named material contradiction", all(candidate["recommendation_criteria"]["material_core_contradiction_ids"] for candidate in targeted_candidates))
+        for candidate in targeted_candidates:
+            for record_id in candidate["recommendation_criteria"]["material_core_contradiction_ids"]:
+                checks.check(f"targeted contradiction source exists: {candidate['keeper_code']}/{record_id}", record_id in appraisals_by_id)
+                if record_id in appraisals_by_id:
+                    checks.equal(f"targeted contradiction belongs to keeper: {candidate['keeper_code']}/{record_id}", appraisals_by_id[record_id]["keeper_code"], candidate["keeper_code"])
+                checks.check(f"targeted contradiction is explained: {candidate['keeper_code']}/{record_id}", record_id in candidate["recommendation_reason"] and record_id in candidate["initial_selection_actions"][0])
         checks.equal(
             "no current profile is insufficient on the bounded evidence",
             {candidate["keeper_code"] for candidate in candidates.values() if candidate["interview_recommendation"] == "insufficient_evidence"},
             set(),
         )
-        material_cases = {
-            "K0478": {"AP001159", "AP001160", "AP001162", "AP001165"},
-            "K1200": {"AP003496"},
-        }
+        material_cases = {"K1200": {"AP003496"}}
         for keeper_code, record_ids in material_cases.items():
             candidate = candidates[keeper_code]
             checks.equal(f"material contradiction IDs exact: {keeper_code}", set(candidate["recommendation_criteria"]["material_core_contradiction_ids"]), record_ids)
             checks.check(f"material contradiction explained: {keeper_code}", bool(candidate["individual_policy_review"]["material_unresolved_issue"]))
             checks.check(f"material clarification before interview: {keeper_code}", "Before a technical interview" in candidate["initial_selection_actions"][0])
             checks.check(f"material sources retained in reason: {keeper_code}", all(record_id in candidate["recommendation_reason"] for record_id in record_ids))
+
+        k0478 = candidates["K0478"]
+        k0478_work_ids = {"CL010541", "CL010398", "CL010466"}
+        k0478_appraisal_ids = {"AP001159", "AP001160", "AP001161", "AP001162", "AP001165", "AP001167"}
+        checks.check("K0478 exact corroborated work records exist", all(logs_by_id[record_id]["keeper_code"] == "K0478" for record_id in k0478_work_ids))
+        checks.check("K0478 corroborated work remains displayed", k0478_work_ids <= {row["entry_id"] for row in k0478["relevant_experience"]})
+        checks.equal("K0478 has no material occurrence contradiction", k0478["recommendation_criteria"]["material_core_contradiction_ids"], [])
+        checks.equal("K0478 reviewed interview-probe sources exact", set(k0478["recommendation_criteria"]["reviewed_interview_probe_ids"]), k0478_appraisal_ids)
+        checks.check("K0478 probe sources belong to keeper", all(appraisals_by_id[record_id]["keeper_code"] == "K0478" for record_id in k0478_appraisal_ids))
+        checks.check("K0478 interview probe is concrete and source-linked", all(fragment in k0478["initial_selection_actions"][0] for fragment in ("CL010541", "CL010398", "isolation", "proving-dead", "AP001165")))
+        checks.check("K0478 current authorisation not inferred", "do not infer current HV authorisation" in k0478["initial_selection_actions"][0])
 
         supported_despite_old_gates = {
             "K0566": 4,
@@ -804,6 +848,140 @@ def run(zip_path: Path, results_path: Path, alternate_results_path: Path | None 
                 if candidate["keeper_code"] == "K0310" and k0310_limit:
                     checks.check("K0310 historical limitation rendered in Markdown", k0310_limit["text"] in section)
 
+        # The concise operator brief is generated from the canonical candidate
+        # records. Independently verify its roster, citations and reconciliation
+        # queue rather than accepting a duplicated constant or hand-written list.
+        brief_path = results_path.with_name("decision_brief.md")
+        checks.check("operator decision brief exists", brief_path.is_file())
+        if brief_path.is_file():
+            brief = brief_path.read_text(encoding="utf-8")
+            required_sections = [
+                "## A. Immediate answer and boundary",
+                "## B. Cohort action summary",
+                "## C. Actionable queue for all 38 current people",
+                "## D. Selected cases showing different operator actions",
+                "## E. Systemic evidence-reconciliation opportunity",
+                "## F. Conditional progression and limitations",
+            ]
+            section_positions = [brief.find(section) for section in required_sections]
+            checks.check("operator brief sections are present and ordered", all(position >= 0 for position in section_positions) and section_positions == sorted(section_positions))
+            checks.check("operator brief states bounded product contract", "For each of the 38 current keepers, show what experience is evidenced, what uncertainty materially affects progression, and the next justified step now" in brief)
+            checks.check("operator brief states non-ranking boundary", "no ranking is implied" in brief and "not a best-40 selection from all 340" in brief)
+            checks.check("operator brief separates readiness claims", all(fragment in brief for fragment in ("not hiring approvals", "medically fit", "authorised", "mobilisation-ready")))
+            checks.check("operator brief keeps HV appointment separate", "separate HV Authorised Person appointment is not imported as an O&M interview gate" in brief)
+
+            queue_rows = {}
+            for line in brief.splitlines():
+                match = re.match(r"^\| \[(K\d{4}) / [^]]+\]\(recommendations\.md#[^)]+\) \|", line)
+                if match:
+                    queue_rows.setdefault(match.group(1), []).append(line)
+            detailed_markdown = markdown_path.read_text(encoding="utf-8")
+            profile_headings = re.findall(r"^## (K\d{4} — .+)$", detailed_markdown, flags=re.M)
+            current_ids = {keeper["keeper_code"] for keeper in keepers if keeper["status"] == "current"}
+            leaver_ids = {keeper["keeper_code"] for keeper in keepers if keeper["status"] == "left"}
+            checks.equal("operator queue contains exact current roster", set(queue_rows), current_ids)
+            checks.check("every current keeper appears exactly once in operator queue", all(len(rows) == 1 for rows in queue_rows.values()))
+            checks.check("leavers absent from active operator queue", leaver_ids.isdisjoint(queue_rows))
+            queue_warning_people = set()
+            for keeper_code in sorted(current_ids):
+                if keeper_code not in queue_rows:
+                    continue
+                row = queue_rows[keeper_code][0]
+                candidate = candidates[keeper_code]
+                core_ids = candidate["individual_policy_review"]["supporting_core_work_ids"]
+                cells = [cell.strip() for cell in re.split(r"(?<!\\)\|", row.strip().strip("|"))]
+                checks.equal(f"operator row column count: {keeper_code}", len(cells), 7)
+                if len(cells) != 7:
+                    continue
+                keeper_cell, activity_cell, disposition_cell, probe_cell, quality_cell, verification_cell, action_cell = cells
+                checks.check(f"operator row cites core evidence: {keeper_code}", bool(core_ids) and all(record_id in row for record_id in core_ids))
+                checks.check(f"operator row states exact disposition: {keeper_code}", candidate["interview_recommendation"] in row)
+                checks.check(f"operator question cites every core record: {keeper_code}", all(record_id in probe_cell for record_id in core_ids))
+                checks.check(f"operator question is not truncated: {keeper_code}", "…" not in probe_cell and len(probe_cell) <= 360, f"length={len(probe_cell)}")
+                checks.check(f"generic operator question removed: {keeper_code}", "ask what they personally did, the safe method" not in probe_cell)
+
+                link = re.search(r"\]\(recommendations\.md#([^)]+)\)", keeper_cell)
+                checks.check(f"operator profile link parses: {keeper_code}", link is not None)
+                if link:
+                    fragment = link.group(1)
+                    keeper_headings = [heading for heading in profile_headings if heading.startswith(keeper_code + " — ")]
+                    checks.equal(f"exactly one detailed heading for link: {keeper_code}", len(keeper_headings), 1)
+                    if keeper_headings:
+                        checks.equal(f"operator link uses rendered GitHub fragment: {keeper_code}", fragment, github_heading_slug(keeper_headings[0]))
+                    resolved = [heading for heading in profile_headings if github_heading_slug(heading) == fragment]
+                    checks.equal(f"operator link resolves exactly one heading: {keeper_code}", len(resolved), 1)
+                    if resolved:
+                        checks.check(f"operator link resolves correct keeper: {keeper_code}", resolved[0].startswith(keeper_code + " — "))
+
+                evidence_by_id = {item["entry_id"]: item for item in candidate["relevant_experience"]}
+                for record_id in core_ids:
+                    evidence = evidence_by_id[record_id]
+                    expected_focus = expected_probe_focus(evidence["text"], set(evidence["categories"]))
+                    checks.check(f"operator question focus follows source: {keeper_code}/{record_id}", expected_focus in probe_cell, expected_focus)
+
+                cited_work_ids = set(re.findall(r"CL\d{6}", activity_cell + " " + probe_cell))
+                quality_ids = set(re.findall(r"CL\d{6}", quality_cell))
+                checks.equal(f"operator evidence-quality coverage exact: {keeper_code}", quality_ids, cited_work_ids)
+                expected_measurement_count = 0
+                expected_identity_warning_count = 0
+                for record_id in sorted(cited_work_ids):
+                    evidence = evidence_by_id.get(record_id)
+                    checks.check(f"operator cited work is displayed evidence: {keeper_code}/{record_id}", evidence is not None)
+                    if not evidence:
+                        continue
+                    identity = evidence["raw_corroboration"]["identity_provenance"]
+                    if identity["corroboration"] == "corroborates":
+                        expected_identity_text = f"{record_id}: raw identity corroborated"
+                    elif identity["corroboration"] == "conflicts":
+                        expected_identity_text = f"{record_id}: raw {identity['identifier_type']} conflicts with clean attribution"
+                        expected_identity_warning_count += 1
+                        queue_warning_people.add(keeper_code)
+                    else:
+                        expected_identity_text = f"{record_id}: clean/manual attribution; raw identity absent"
+                        expected_identity_warning_count += 1
+                        queue_warning_people.add(keeper_code)
+                    checks.check(f"operator attribution status exact: {keeper_code}/{record_id}", expected_identity_text in quality_cell)
+                    for flag in evidence["measurement_quality_flags"]:
+                        expected_measurement_count += 1
+                        queue_warning_people.add(keeper_code)
+                        checks.check(f"operator measurement warning exact: {keeper_code}/{record_id}", "measurement anomaly" in quality_cell and flag["observed"] in quality_cell)
+                checks.equal(f"operator measurement-warning count exact: {keeper_code}", quality_cell.count("measurement anomaly"), expected_measurement_count)
+                checks.equal(f"operator identity-warning count exact: {keeper_code}", quality_cell.count("verify person"), expected_identity_warning_count)
+
+                for record_id in re.findall(r"(?:CL|AP|LH)\d{6}", row):
+                    source = logs_by_id.get(record_id) or appraisals_by_id.get(record_id) or training_by_id.get(record_id)
+                    checks.check(f"operator row citation exists: {keeper_code}/{record_id}", source is not None)
+                    if source:
+                        source_keeper = source.get("keeper_code")
+                        checks.equal(f"operator row citation keeper: {keeper_code}/{record_id}", source_keeper, keeper_code)
+
+            checks.check(
+                "named operator evidence-quality cases surfaced",
+                {"K0482", "K0847", "K1055", "K1302", "K1483", "K1538"} <= queue_warning_people,
+                sorted(queue_warning_people),
+            )
+
+            checks.check("K0478 operator task is concrete", all(fragment in queue_rows["K0478"][0] for fragment in ("CL010541", "CL010398", "AP001165", "proving-dead")))
+            checks.check("K1200 operator task retains direct dispute", all(fragment in queue_rows["K1200"][0] for fragment in ("CL005994", "AP003496", "Resolve the cited core-experience contradiction")))
+
+            affected_people = {key[0] for key in expected_summary_disagreements}
+            expected_people = {"K0354", "K0561", "K1200", "K1374", "K1418", "K1446", "K1483"}
+            checks.equal("issuer queue affected set independently derived", affected_people, expected_people)
+            for (keeper_code, scheme), record_ids in expected_summary_disagreements.items():
+                checks.check(
+                    f"issuer queue retains competing records: {keeper_code}/{scheme}",
+                    f"| {keeper_code} / {scheme} |" in brief and all(record_id in brief for record_id in record_ids),
+                )
+            k1200_summary_count = sum(keeper_code == "K1200" for keeper_code, _ in expected_summary_disagreements)
+            k1200_expired_count = sum(len(record_ids) for (keeper_code, _), record_ids in expected_summary_disagreements.items() if keeper_code == "K1200")
+            checks.equal("K1200 issuer disagreement concentration derived", (k1200_summary_count, k1200_expired_count), (5, 9))
+            checks.check("K1200 issuer concentration faithfully rendered", f"K1200 accounts for {k1200_summary_count} summary disagreements and {k1200_expired_count} expired records" in brief)
+            checks.check("issuer queue remains neutral", "do not declare the award invalid or prescribe training from the mismatch alone" in brief)
+
+            all_brief_ids = set(re.findall(r"(?:CL|AP|LH)\d{6}", brief))
+            all_source_ids = set(logs_by_id) | set(appraisals_by_id) | set(training_by_id)
+            checks.check("all operator brief record IDs exist in source", all_brief_ids <= all_source_ids, sorted(all_brief_ids - all_source_ids))
+
         # Repair 2: value/unit variants canonicalize together, while K1200's
         # four display exceptions remain visible without ID-based identities.
         measurement_variants = [logs_by_id[entry_id]["text"] for entry_id in ("CL006460", "CL007701", "CL009081")]
@@ -821,6 +999,12 @@ def run(zip_path: Path, results_path: Path, alternate_results_path: Path | None 
         for evidence in k1200["relevant_experience"]:
             checks.equal(f"K1200 displayed record uses canonical text key: {evidence['entry_id']}", evidence["template_key"], canonical_work_pattern(logs_by_id[evidence["entry_id"]]["text"]))
         checks.check("K1200 display-only mercury record not counted as canonical decision pattern", canonical_work_pattern(logs_by_id["CL009921"]["text"]) not in k1200_review["canonical_pattern_keys"])
+        k1200_context = next(row for row in k1200["relevant_experience"] if row["entry_id"] == "CL009921")
+        checks.equal("K1200 context record has no derived categories", k1200_context["categories"], [])
+        checks.equal("K1200 context record role explicit", k1200_context["evidence_role"], "material_context_only")
+        checks.equal("K1200 context interpretation provenance explicit", k1200_context["interpretation_provenance"]["type"], "reviewed_display_context")
+        checks.check("K1200 context record excluded from core support", "CL009921" not in k1200["individual_policy_review"]["supporting_core_work_ids"])
+        checks.check("K1200 context record supplies no category claim", all(item["entry_id"] != "CL009921" for item in k1200["experience_category_evidence"]))
 
         # Recompute the permit-family collapse directly from the source. This
         # verifies the observed K0566 effect without importing evaluator code
@@ -947,6 +1131,12 @@ def run(zip_path: Path, results_path: Path, alternate_results_path: Path | None 
                 "alternate boundary documented",
                 "snapshot" in alternate["method"]["alternate_date_boundary"] and "does not reconstruct" in alternate["method"]["alternate_date_boundary"],
             )
+            alternate_brief_path = alternate_results_path.with_name("decision_brief.md")
+            checks.check("alternate operator brief exists", alternate_brief_path.is_file())
+            if alternate_brief_path.is_file():
+                alternate_brief = alternate_brief_path.read_text(encoding="utf-8")
+                checks.check("alternate K1200 case excludes later contradiction", "No named material core-experience contradiction is available at this scenario cutoff" in alternate_brief and "AP003496 directly disputes" not in alternate_brief)
+                checks.check("alternate certification case follows cutoff", "clean certification claim needs issuer reconciliation" not in alternate_brief and "0 conflicting clean certification summaries" in alternate_brief)
 
     failed = [item for item in checks.items if not item["passed"]]
     return {

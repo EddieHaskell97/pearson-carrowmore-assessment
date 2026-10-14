@@ -2,9 +2,9 @@
   "schema_version": 6,
   "independence": "Reads the ZIP, appraisal JSONL and generated outputs directly; does not import evaluator code or recompute its recommendation policy.",
   "source_archive_sha256": "59f12ea4dfb43d311429fdd34c207517c2ffefbf917e4cdfe9737ca5776270f5",
-  "recommendations_sha256": "d8df69f06d3668682da34a44550f75a31edf2d3c7a7c44511cd40c6143f10903",
-  "checks": 7455,
-  "passed": 7455,
+  "recommendations_sha256": "b243b5547c3cb071372fc5bfd565a4ef716fc316eb795dd754ce1d64921bfe58",
+  "checks": 8724,
+  "passed": 8724,
   "failed": 0,
   "status": "PASS",
   "failures": [],
@@ -16766,17 +16766,17 @@
       "detail": ""
     },
     {
-      "check": "core evidence displayed: K1200/CL009921",
+      "check": "core evidence displayed: K1200/CL009097",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "core evidence cited in reason: K1200/CL009921",
+      "check": "core evidence cited in reason: K1200/CL009097",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "core evidence is mechanical or electrical: K1200/CL009921",
+      "check": "core evidence is mechanical or electrical: K1200/CL009097",
       "passed": true,
       "detail": ""
     },
@@ -17888,7 +17888,17 @@
     {
       "check": "measurement warning status: CL010082",
       "passed": true,
-      "detail": "expected=False; actual=False"
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "measurement quote preserved: CL010082",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "measurement not treated as reliable: CL010082",
+      "passed": true,
+      "detail": ""
     },
     {
       "check": "measurement warning status: CL009526",
@@ -18333,7 +18343,17 @@
     {
       "check": "measurement warning status: CL007632",
       "passed": true,
-      "detail": "expected=False; actual=False"
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "measurement quote preserved: CL007632",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "measurement not treated as reliable: CL007632",
+      "passed": true,
+      "detail": ""
     },
     {
       "check": "measurement warning status: CL010320",
@@ -18643,7 +18663,17 @@
     {
       "check": "measurement warning status: CL010534",
       "passed": true,
-      "detail": "expected=False; actual=False"
+      "detail": "expected=True; actual=True"
+    },
+    {
+      "check": "measurement quote preserved: CL010534",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "measurement not treated as reliable: CL010534",
+      "passed": true,
+      "detail": ""
     },
     {
       "check": "measurement warning status: CL009253",
@@ -30111,14 +30141,14 @@
       "detail": ""
     },
     {
-      "check": "K0478 positive station note included in targeted rationale",
+      "check": "K0478 positive station note retained in interview rationale",
       "passed": true,
       "detail": ""
     },
     {
-      "check": "K0478 disposition reassessed without automatic change",
+      "check": "K0478 quality concerns do not deny interview",
       "passed": true,
-      "detail": "expected='targeted_screening_first'; actual='targeted_screening_first'"
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
     },
     {
       "check": "clean-summary disagreement count derived",
@@ -31658,7 +31688,7 @@
     {
       "check": "decision summary matches profiles",
       "passed": true,
-      "detail": "expected={\"insufficient_evidence\": 0, \"outside_current_redeployment_cohort\": 2, \"supported_technical_interview\": 36, \"targeted_screening_first\": 2}; actual={\"outside_current_redeployment_cohort\": 2, \"supported_technical_interview\": 36, \"targeted_screening_first\": 2}"
+      "detail": "expected={\"insufficient_evidence\": 0, \"outside_current_redeployment_cohort\": 2, \"supported_technical_interview\": 37, \"targeted_screening_first\": 1}; actual={\"outside_current_redeployment_cohort\": 2, \"supported_technical_interview\": 37, \"targeted_screening_first\": 1}"
     },
     {
       "check": "named appraisal keeper: AP003496",
@@ -31736,34 +31766,29 @@
       "detail": ""
     },
     {
-      "check": "only material core contradictions are targeted",
+      "check": "every targeted screen has a named material contradiction",
       "passed": true,
-      "detail": "expected=['K0478', 'K1200']; actual=['K0478', 'K1200']"
+      "detail": ""
+    },
+    {
+      "check": "targeted contradiction source exists: K1200/AP003496",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "targeted contradiction belongs to keeper: K1200/AP003496",
+      "passed": true,
+      "detail": "expected='K1200'; actual='K1200'"
+    },
+    {
+      "check": "targeted contradiction is explained: K1200/AP003496",
+      "passed": true,
+      "detail": ""
     },
     {
       "check": "no current profile is insufficient on the bounded evidence",
       "passed": true,
       "detail": "expected=[]; actual=[]"
-    },
-    {
-      "check": "material contradiction IDs exact: K0478",
-      "passed": true,
-      "detail": "expected=['AP001159', 'AP001160', 'AP001162', 'AP001165']; actual=['AP001159', 'AP001160', 'AP001162', 'AP001165']"
-    },
-    {
-      "check": "material contradiction explained: K0478",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "material clarification before interview: K0478",
-      "passed": true,
-      "detail": ""
-    },
-    {
-      "check": "material sources retained in reason: K0478",
-      "passed": true,
-      "detail": ""
     },
     {
       "check": "material contradiction IDs exact: K1200",
@@ -31782,6 +31807,41 @@
     },
     {
       "check": "material sources retained in reason: K1200",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "K0478 exact corroborated work records exist",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "K0478 corroborated work remains displayed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "K0478 has no material occurrence contradiction",
+      "passed": true,
+      "detail": "expected=[]; actual=[]"
+    },
+    {
+      "check": "K0478 reviewed interview-probe sources exact",
+      "passed": true,
+      "detail": "expected=['AP001159', 'AP001160', 'AP001161', 'AP001162', 'AP001165', 'AP001167']; actual=['AP001159', 'AP001160', 'AP001161', 'AP001162', 'AP001165', 'AP001167']"
+    },
+    {
+      "check": "K0478 probe sources belong to keeper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "K0478 interview probe is concrete and source-linked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "K0478 current authorisation not inferred",
       "passed": true,
       "detail": ""
     },
@@ -31912,6 +31972,11 @@
     },
     {
       "check": "non-material adverse testimony does not decide disposition: K0394",
+      "passed": true,
+      "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
+    },
+    {
+      "check": "non-material adverse testimony does not decide disposition: K0478",
       "passed": true,
       "detail": "expected='supported_technical_interview'; actual='supported_technical_interview'"
     },
@@ -32822,6 +32887,11 @@
     },
     {
       "check": "Markdown attribution in own section: CL010082",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Markdown measurement warning in own section: CL010082",
       "passed": true,
       "detail": ""
     },
@@ -34231,6 +34301,11 @@
       "detail": ""
     },
     {
+      "check": "Markdown measurement warning in own section: CL007632",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown retained experience in own section: CL010320",
       "passed": true,
       "detail": ""
@@ -35206,6 +35281,11 @@
       "detail": ""
     },
     {
+      "check": "Markdown measurement warning in own section: CL010534",
+      "passed": true,
+      "detail": ""
+    },
+    {
       "check": "Markdown retained experience in own section: CL009253",
       "passed": true,
       "detail": ""
@@ -35366,6 +35446,6238 @@
       "detail": ""
     },
     {
+      "check": "operator decision brief exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator brief sections are present and ordered",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator brief states bounded product contract",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator brief states non-ranking boundary",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator brief separates readiness claims",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator brief keeps HV appointment separate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator queue contains exact current roster",
+      "passed": true,
+      "detail": "expected=['K0147', 'K0184', 'K0274', 'K0303', 'K0310', 'K0354', 'K0371', 'K0394', 'K0478', 'K0482', 'K0525', 'K0561', 'K0566', 'K0586', 'K0589', 'K0592', 'K0641', 'K0650', 'K0663', 'K0664', 'K0817', 'K0847', 'K0897', 'K1055', 'K1200', 'K1231', 'K1281', 'K1302', 'K1345', 'K1363', 'K1374', 'K1418', 'K1446', 'K1468', 'K1474', 'K1483', 'K1511', 'K1538']; actual=['K0147', 'K0184', 'K0274', 'K0303', 'K0310', 'K0354', 'K0371', 'K0394', 'K0478', 'K0482', 'K0525', 'K0561', 'K0566', 'K0586', 'K0589', 'K0592', 'K0641', 'K0650', 'K0663', 'K0664', 'K0817', 'K0847', 'K0897', 'K1055', 'K1200', 'K1231', 'K1281', 'K1302', 'K1345', 'K1363', 'K1374', 'K1418', 'K1446', 'K1468', 'K1474', 'K1483', 'K1511', 'K1538']"
+    },
+    {
+      "check": "every current keeper appears exactly once in operator queue",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "leavers absent from active operator queue",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row column count: K0147",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K0147",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K0147",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K0147",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K0147",
+      "passed": true,
+      "detail": "length=235"
+    },
+    {
+      "check": "generic operator question removed: K0147",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K0147",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K0147",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K0147",
+      "passed": true,
+      "detail": "expected='k0147--coilean-o-caomhthaigh'; actual='k0147--coilean-o-caomhthaigh'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K0147",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K0147",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K0147/CL010280",
+      "passed": true,
+      "detail": "fault diagnosis"
+    },
+    {
+      "check": "operator question focus follows source: K0147/CL009116",
+      "passed": true,
+      "detail": "routine mechanical service"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K0147",
+      "passed": true,
+      "detail": "expected=['CL009116', 'CL010280']; actual=['CL009116', 'CL010280']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0147/CL009116",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0147/CL009116",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0147/CL010280",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0147/CL010280",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K0147",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K0147",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K0147/CL010280",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0147/CL010280",
+      "passed": true,
+      "detail": "expected='K0147'; actual='K0147'"
+    },
+    {
+      "check": "operator row citation exists: K0147/CL009116",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0147/CL009116",
+      "passed": true,
+      "detail": "expected='K0147'; actual='K0147'"
+    },
+    {
+      "check": "operator row citation exists: K0147/CL010280",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0147/CL010280",
+      "passed": true,
+      "detail": "expected='K0147'; actual='K0147'"
+    },
+    {
+      "check": "operator row citation exists: K0147/CL009116",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0147/CL009116",
+      "passed": true,
+      "detail": "expected='K0147'; actual='K0147'"
+    },
+    {
+      "check": "operator row citation exists: K0147/CL010280",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0147/CL010280",
+      "passed": true,
+      "detail": "expected='K0147'; actual='K0147'"
+    },
+    {
+      "check": "operator row citation exists: K0147/CL009116",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0147/CL009116",
+      "passed": true,
+      "detail": "expected='K0147'; actual='K0147'"
+    },
+    {
+      "check": "operator row column count: K0184",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K0184",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K0184",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K0184",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K0184",
+      "passed": true,
+      "detail": "length=223"
+    },
+    {
+      "check": "generic operator question removed: K0184",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K0184",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K0184",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K0184",
+      "passed": true,
+      "detail": "expected='k0184--bearach-ormlaithe'; actual='k0184--bearach-ormlaithe'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K0184",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K0184",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K0184/CL010442",
+      "passed": true,
+      "detail": "mechanical overhaul"
+    },
+    {
+      "check": "operator question focus follows source: K0184/CL010068",
+      "passed": true,
+      "detail": "electrical maintenance"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K0184",
+      "passed": true,
+      "detail": "expected=['CL010068', 'CL010442']; actual=['CL010068', 'CL010442']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0184/CL010068",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0184/CL010068",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0184/CL010442",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0184/CL010442",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K0184",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K0184",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K0184/CL010442",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0184/CL010442",
+      "passed": true,
+      "detail": "expected='K0184'; actual='K0184'"
+    },
+    {
+      "check": "operator row citation exists: K0184/CL010068",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0184/CL010068",
+      "passed": true,
+      "detail": "expected='K0184'; actual='K0184'"
+    },
+    {
+      "check": "operator row citation exists: K0184/CL010442",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0184/CL010442",
+      "passed": true,
+      "detail": "expected='K0184'; actual='K0184'"
+    },
+    {
+      "check": "operator row citation exists: K0184/CL010068",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0184/CL010068",
+      "passed": true,
+      "detail": "expected='K0184'; actual='K0184'"
+    },
+    {
+      "check": "operator row citation exists: K0184/CL010442",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0184/CL010442",
+      "passed": true,
+      "detail": "expected='K0184'; actual='K0184'"
+    },
+    {
+      "check": "operator row citation exists: K0184/CL010068",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0184/CL010068",
+      "passed": true,
+      "detail": "expected='K0184'; actual='K0184'"
+    },
+    {
+      "check": "operator row column count: K0274",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K0274",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K0274",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K0274",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K0274",
+      "passed": true,
+      "detail": "length=223"
+    },
+    {
+      "check": "generic operator question removed: K0274",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K0274",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K0274",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K0274",
+      "passed": true,
+      "detail": "expected='k0274--iarlaith-o-niallghusa'; actual='k0274--iarlaith-o-niallghusa'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K0274",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K0274",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K0274/CL010515",
+      "passed": true,
+      "detail": "mechanical overhaul"
+    },
+    {
+      "check": "operator question focus follows source: K0274/CL010397",
+      "passed": true,
+      "detail": "electrical maintenance"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K0274",
+      "passed": true,
+      "detail": "expected=['CL010397', 'CL010515']; actual=['CL010397', 'CL010515']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0274/CL010397",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0274/CL010397",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0274/CL010515",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0274/CL010515",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K0274",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K0274",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K0274/CL010515",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0274/CL010515",
+      "passed": true,
+      "detail": "expected='K0274'; actual='K0274'"
+    },
+    {
+      "check": "operator row citation exists: K0274/CL010397",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0274/CL010397",
+      "passed": true,
+      "detail": "expected='K0274'; actual='K0274'"
+    },
+    {
+      "check": "operator row citation exists: K0274/CL010515",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0274/CL010515",
+      "passed": true,
+      "detail": "expected='K0274'; actual='K0274'"
+    },
+    {
+      "check": "operator row citation exists: K0274/CL010397",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0274/CL010397",
+      "passed": true,
+      "detail": "expected='K0274'; actual='K0274'"
+    },
+    {
+      "check": "operator row citation exists: K0274/CL010515",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0274/CL010515",
+      "passed": true,
+      "detail": "expected='K0274'; actual='K0274'"
+    },
+    {
+      "check": "operator row citation exists: K0274/CL010397",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0274/CL010397",
+      "passed": true,
+      "detail": "expected='K0274'; actual='K0274'"
+    },
+    {
+      "check": "operator row column count: K0303",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K0303",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K0303",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K0303",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K0303",
+      "passed": true,
+      "detail": "length=128"
+    },
+    {
+      "check": "generic operator question removed: K0303",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K0303",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K0303",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K0303",
+      "passed": true,
+      "detail": "expected='k0303--ambrosan-o-lachtnain'; actual='k0303--ambrosan-o-lachtnain'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K0303",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K0303",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K0303/CL009744",
+      "passed": true,
+      "detail": "mechanical overhaul"
+    },
+    {
+      "check": "operator question focus follows source: K0303/CL008870",
+      "passed": true,
+      "detail": "mechanical overhaul"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K0303",
+      "passed": true,
+      "detail": "expected=['CL008870', 'CL009744']; actual=['CL008870', 'CL009744']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0303/CL008870",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0303/CL008870",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0303/CL009744",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0303/CL009744",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K0303",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K0303",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K0303/CL009744",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0303/CL009744",
+      "passed": true,
+      "detail": "expected='K0303'; actual='K0303'"
+    },
+    {
+      "check": "operator row citation exists: K0303/CL008870",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0303/CL008870",
+      "passed": true,
+      "detail": "expected='K0303'; actual='K0303'"
+    },
+    {
+      "check": "operator row citation exists: K0303/CL009744",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0303/CL009744",
+      "passed": true,
+      "detail": "expected='K0303'; actual='K0303'"
+    },
+    {
+      "check": "operator row citation exists: K0303/CL008870",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0303/CL008870",
+      "passed": true,
+      "detail": "expected='K0303'; actual='K0303'"
+    },
+    {
+      "check": "operator row citation exists: K0303/CL009744",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0303/CL009744",
+      "passed": true,
+      "detail": "expected='K0303'; actual='K0303'"
+    },
+    {
+      "check": "operator row citation exists: K0303/CL008870",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0303/CL008870",
+      "passed": true,
+      "detail": "expected='K0303'; actual='K0303'"
+    },
+    {
+      "check": "operator row column count: K0310",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K0310",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K0310",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K0310",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K0310",
+      "passed": true,
+      "detail": "length=328"
+    },
+    {
+      "check": "generic operator question removed: K0310",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K0310",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K0310",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K0310",
+      "passed": true,
+      "detail": "expected='k0310--gearalt-o-heidhneain'; actual='k0310--gearalt-o-heidhneain'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K0310",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K0310",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K0310/CL005658",
+      "passed": true,
+      "detail": "control systems"
+    },
+    {
+      "check": "operator question focus follows source: K0310/CL005313",
+      "passed": true,
+      "detail": "routine mechanical service"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K0310",
+      "passed": true,
+      "detail": "expected=['CL005313', 'CL005658']; actual=['CL005313', 'CL005658']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0310/CL005313",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0310/CL005313",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0310/CL005658",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0310/CL005658",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K0310",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K0310",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K0310/CL005658",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0310/CL005658",
+      "passed": true,
+      "detail": "expected='K0310'; actual='K0310'"
+    },
+    {
+      "check": "operator row citation exists: K0310/CL005313",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0310/CL005313",
+      "passed": true,
+      "detail": "expected='K0310'; actual='K0310'"
+    },
+    {
+      "check": "operator row citation exists: K0310/CL005658",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0310/CL005658",
+      "passed": true,
+      "detail": "expected='K0310'; actual='K0310'"
+    },
+    {
+      "check": "operator row citation exists: K0310/CL005313",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0310/CL005313",
+      "passed": true,
+      "detail": "expected='K0310'; actual='K0310'"
+    },
+    {
+      "check": "operator row citation exists: K0310/CL005658",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0310/CL005658",
+      "passed": true,
+      "detail": "expected='K0310'; actual='K0310'"
+    },
+    {
+      "check": "operator row citation exists: K0310/CL005313",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0310/CL005313",
+      "passed": true,
+      "detail": "expected='K0310'; actual='K0310'"
+    },
+    {
+      "check": "operator row column count: K0354",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K0354",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K0354",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K0354",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K0354",
+      "passed": true,
+      "detail": "length=222"
+    },
+    {
+      "check": "generic operator question removed: K0354",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K0354",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K0354",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K0354",
+      "passed": true,
+      "detail": "expected='k0354--quillan-o-fuarain'; actual='k0354--quillan-o-fuarain'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K0354",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K0354",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K0354/CL007773",
+      "passed": true,
+      "detail": "electrical maintenance"
+    },
+    {
+      "check": "operator question focus follows source: K0354/CL004792",
+      "passed": true,
+      "detail": "routine mechanical service"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K0354",
+      "passed": true,
+      "detail": "expected=['CL004792', 'CL007773']; actual=['CL004792', 'CL007773']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0354/CL004792",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0354/CL004792",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0354/CL007773",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0354/CL007773",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K0354",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K0354",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K0354/CL007773",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0354/CL007773",
+      "passed": true,
+      "detail": "expected='K0354'; actual='K0354'"
+    },
+    {
+      "check": "operator row citation exists: K0354/CL004792",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0354/CL004792",
+      "passed": true,
+      "detail": "expected='K0354'; actual='K0354'"
+    },
+    {
+      "check": "operator row citation exists: K0354/CL007773",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0354/CL007773",
+      "passed": true,
+      "detail": "expected='K0354'; actual='K0354'"
+    },
+    {
+      "check": "operator row citation exists: K0354/CL004792",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0354/CL004792",
+      "passed": true,
+      "detail": "expected='K0354'; actual='K0354'"
+    },
+    {
+      "check": "operator row citation exists: K0354/CL007773",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0354/CL007773",
+      "passed": true,
+      "detail": "expected='K0354'; actual='K0354'"
+    },
+    {
+      "check": "operator row citation exists: K0354/CL004792",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0354/CL004792",
+      "passed": true,
+      "detail": "expected='K0354'; actual='K0354'"
+    },
+    {
+      "check": "operator row citation exists: K0354/LH500435",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0354/LH500435",
+      "passed": true,
+      "detail": "expected='K0354'; actual='K0354'"
+    },
+    {
+      "check": "operator row column count: K0371",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K0371",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K0371",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K0371",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K0371",
+      "passed": true,
+      "detail": "length=224"
+    },
+    {
+      "check": "generic operator question removed: K0371",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K0371",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K0371",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K0371",
+      "passed": true,
+      "detail": "expected='k0371--cianan-mac-lanngail'; actual='k0371--cianan-mac-lanngail'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K0371",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K0371",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K0371/CL010343",
+      "passed": true,
+      "detail": "testing"
+    },
+    {
+      "check": "operator question focus follows source: K0371/CL010201",
+      "passed": true,
+      "detail": "routine mechanical service"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K0371",
+      "passed": true,
+      "detail": "expected=['CL010201', 'CL010343']; actual=['CL010201', 'CL010343']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0371/CL010201",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0371/CL010201",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0371/CL010343",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0371/CL010343",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K0371",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K0371",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K0371/CL010343",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0371/CL010343",
+      "passed": true,
+      "detail": "expected='K0371'; actual='K0371'"
+    },
+    {
+      "check": "operator row citation exists: K0371/CL010201",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0371/CL010201",
+      "passed": true,
+      "detail": "expected='K0371'; actual='K0371'"
+    },
+    {
+      "check": "operator row citation exists: K0371/CL010343",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0371/CL010343",
+      "passed": true,
+      "detail": "expected='K0371'; actual='K0371'"
+    },
+    {
+      "check": "operator row citation exists: K0371/CL010201",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0371/CL010201",
+      "passed": true,
+      "detail": "expected='K0371'; actual='K0371'"
+    },
+    {
+      "check": "operator row citation exists: K0371/CL010343",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0371/CL010343",
+      "passed": true,
+      "detail": "expected='K0371'; actual='K0371'"
+    },
+    {
+      "check": "operator row citation exists: K0371/CL010201",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0371/CL010201",
+      "passed": true,
+      "detail": "expected='K0371'; actual='K0371'"
+    },
+    {
+      "check": "operator row column count: K0394",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K0394",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K0394",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K0394",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K0394",
+      "passed": true,
+      "detail": "length=222"
+    },
+    {
+      "check": "generic operator question removed: K0394",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K0394",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K0394",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K0394",
+      "passed": true,
+      "detail": "expected='k0394--lugharn-o-neascan'; actual='k0394--lugharn-o-neascan'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K0394",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K0394",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K0394/CL009886",
+      "passed": true,
+      "detail": "electrical maintenance"
+    },
+    {
+      "check": "operator question focus follows source: K0394/CL009816",
+      "passed": true,
+      "detail": "routine mechanical service"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K0394",
+      "passed": true,
+      "detail": "expected=['CL009816', 'CL009886']; actual=['CL009816', 'CL009886']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0394/CL009816",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0394/CL009816",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0394/CL009886",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0394/CL009886",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K0394",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K0394",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K0394/CL009886",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0394/CL009886",
+      "passed": true,
+      "detail": "expected='K0394'; actual='K0394'"
+    },
+    {
+      "check": "operator row citation exists: K0394/CL009816",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0394/CL009816",
+      "passed": true,
+      "detail": "expected='K0394'; actual='K0394'"
+    },
+    {
+      "check": "operator row citation exists: K0394/CL009886",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0394/CL009886",
+      "passed": true,
+      "detail": "expected='K0394'; actual='K0394'"
+    },
+    {
+      "check": "operator row citation exists: K0394/CL009816",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0394/CL009816",
+      "passed": true,
+      "detail": "expected='K0394'; actual='K0394'"
+    },
+    {
+      "check": "operator row citation exists: K0394/CL009886",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0394/CL009886",
+      "passed": true,
+      "detail": "expected='K0394'; actual='K0394'"
+    },
+    {
+      "check": "operator row citation exists: K0394/CL009816",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0394/CL009816",
+      "passed": true,
+      "detail": "expected='K0394'; actual='K0394'"
+    },
+    {
+      "check": "operator row column count: K0478",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K0478",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K0478",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K0478",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K0478",
+      "passed": true,
+      "detail": "length=302"
+    },
+    {
+      "check": "generic operator question removed: K0478",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K0478",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K0478",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K0478",
+      "passed": true,
+      "detail": "expected='k0478--ossian-o-raghnaill'; actual='k0478--ossian-o-raghnaill'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K0478",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K0478",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K0478/CL010541",
+      "passed": true,
+      "detail": "fault diagnosis"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K0478",
+      "passed": true,
+      "detail": "expected=['CL010398', 'CL010541']; actual=['CL010398', 'CL010541']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0478/CL010398",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0478/CL010398",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0478/CL010541",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0478/CL010541",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K0478",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K0478",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K0478/CL010541",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0478/CL010541",
+      "passed": true,
+      "detail": "expected='K0478'; actual='K0478'"
+    },
+    {
+      "check": "operator row citation exists: K0478/CL010541",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0478/CL010541",
+      "passed": true,
+      "detail": "expected='K0478'; actual='K0478'"
+    },
+    {
+      "check": "operator row citation exists: K0478/CL010398",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0478/CL010398",
+      "passed": true,
+      "detail": "expected='K0478'; actual='K0478'"
+    },
+    {
+      "check": "operator row citation exists: K0478/AP001165",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0478/AP001165",
+      "passed": true,
+      "detail": "expected='K0478'; actual='K0478'"
+    },
+    {
+      "check": "operator row citation exists: K0478/AP001167",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0478/AP001167",
+      "passed": true,
+      "detail": "expected='K0478'; actual='K0478'"
+    },
+    {
+      "check": "operator row citation exists: K0478/CL010541",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0478/CL010541",
+      "passed": true,
+      "detail": "expected='K0478'; actual='K0478'"
+    },
+    {
+      "check": "operator row citation exists: K0478/CL010398",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0478/CL010398",
+      "passed": true,
+      "detail": "expected='K0478'; actual='K0478'"
+    },
+    {
+      "check": "operator row column count: K0482",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K0482",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K0482",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K0482",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K0482",
+      "passed": true,
+      "detail": "length=109"
+    },
+    {
+      "check": "generic operator question removed: K0482",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K0482",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K0482",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K0482",
+      "passed": true,
+      "detail": "expected='k0482--tadhgan-mac-deargain'; actual='k0482--tadhgan-mac-deargain'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K0482",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K0482",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K0482/CL010082",
+      "passed": true,
+      "detail": "testing"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K0482",
+      "passed": true,
+      "detail": "expected=['CL010082']; actual=['CL010082']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0482/CL010082",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0482/CL010082",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement warning exact: K0482/CL010082",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K0482",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator identity-warning count exact: K0482",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K0482/CL010082",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0482/CL010082",
+      "passed": true,
+      "detail": "expected='K0482'; actual='K0482'"
+    },
+    {
+      "check": "operator row citation exists: K0482/CL010082",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0482/CL010082",
+      "passed": true,
+      "detail": "expected='K0482'; actual='K0482'"
+    },
+    {
+      "check": "operator row citation exists: K0482/CL010082",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0482/CL010082",
+      "passed": true,
+      "detail": "expected='K0482'; actual='K0482'"
+    },
+    {
+      "check": "operator row column count: K0525",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K0525",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K0525",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K0525",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K0525",
+      "passed": true,
+      "detail": "length=224"
+    },
+    {
+      "check": "generic operator question removed: K0525",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K0525",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K0525",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K0525",
+      "passed": true,
+      "detail": "expected='k0525--hugheen-mordaunley'; actual='k0525--hugheen-mordaunley'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K0525",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K0525",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K0525/CL010216",
+      "passed": true,
+      "detail": "testing"
+    },
+    {
+      "check": "operator question focus follows source: K0525/CL006644",
+      "passed": true,
+      "detail": "routine mechanical service"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K0525",
+      "passed": true,
+      "detail": "expected=['CL006644', 'CL010216']; actual=['CL006644', 'CL010216']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0525/CL006644",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0525/CL006644",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0525/CL010216",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0525/CL010216",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K0525",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K0525",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K0525/CL010216",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0525/CL010216",
+      "passed": true,
+      "detail": "expected='K0525'; actual='K0525'"
+    },
+    {
+      "check": "operator row citation exists: K0525/CL006644",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0525/CL006644",
+      "passed": true,
+      "detail": "expected='K0525'; actual='K0525'"
+    },
+    {
+      "check": "operator row citation exists: K0525/CL010216",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0525/CL010216",
+      "passed": true,
+      "detail": "expected='K0525'; actual='K0525'"
+    },
+    {
+      "check": "operator row citation exists: K0525/CL006644",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0525/CL006644",
+      "passed": true,
+      "detail": "expected='K0525'; actual='K0525'"
+    },
+    {
+      "check": "operator row citation exists: K0525/CL010216",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0525/CL010216",
+      "passed": true,
+      "detail": "expected='K0525'; actual='K0525'"
+    },
+    {
+      "check": "operator row citation exists: K0525/CL006644",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0525/CL006644",
+      "passed": true,
+      "detail": "expected='K0525'; actual='K0525'"
+    },
+    {
+      "check": "operator row column count: K0561",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K0561",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K0561",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K0561",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K0561",
+      "passed": true,
+      "detail": "length=233"
+    },
+    {
+      "check": "generic operator question removed: K0561",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K0561",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K0561",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K0561",
+      "passed": true,
+      "detail": "expected='k0561--muirgheal-holmthwaite'; actual='k0561--muirgheal-holmthwaite'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K0561",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K0561",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K0561/CL008741",
+      "passed": true,
+      "detail": "mechanical maintenance"
+    },
+    {
+      "check": "operator question focus follows source: K0561/CL007052",
+      "passed": true,
+      "detail": "control systems"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K0561",
+      "passed": true,
+      "detail": "expected=['CL007052', 'CL008741']; actual=['CL007052', 'CL008741']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0561/CL007052",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0561/CL007052",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0561/CL008741",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0561/CL008741",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K0561",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K0561",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K0561/CL008741",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0561/CL008741",
+      "passed": true,
+      "detail": "expected='K0561'; actual='K0561'"
+    },
+    {
+      "check": "operator row citation exists: K0561/CL007052",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0561/CL007052",
+      "passed": true,
+      "detail": "expected='K0561'; actual='K0561'"
+    },
+    {
+      "check": "operator row citation exists: K0561/CL008741",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0561/CL008741",
+      "passed": true,
+      "detail": "expected='K0561'; actual='K0561'"
+    },
+    {
+      "check": "operator row citation exists: K0561/CL007052",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0561/CL007052",
+      "passed": true,
+      "detail": "expected='K0561'; actual='K0561'"
+    },
+    {
+      "check": "operator row citation exists: K0561/CL008741",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0561/CL008741",
+      "passed": true,
+      "detail": "expected='K0561'; actual='K0561'"
+    },
+    {
+      "check": "operator row citation exists: K0561/CL007052",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0561/CL007052",
+      "passed": true,
+      "detail": "expected='K0561'; actual='K0561'"
+    },
+    {
+      "check": "operator row citation exists: K0561/LH500869",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0561/LH500869",
+      "passed": true,
+      "detail": "expected='K0561'; actual='K0561'"
+    },
+    {
+      "check": "operator row column count: K0566",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K0566",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K0566",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K0566",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K0566",
+      "passed": true,
+      "detail": "length=235"
+    },
+    {
+      "check": "generic operator question removed: K0566",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K0566",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K0566",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K0566",
+      "passed": true,
+      "detail": "expected='k0566--garbhan-o-riagain'; actual='k0566--garbhan-o-riagain'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K0566",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K0566",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K0566/CL010043",
+      "passed": true,
+      "detail": "electrical isolation"
+    },
+    {
+      "check": "operator question focus follows source: K0566/CL006319",
+      "passed": true,
+      "detail": "routine mechanical service"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K0566",
+      "passed": true,
+      "detail": "expected=['CL006319', 'CL010043']; actual=['CL006319', 'CL010043']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0566/CL006319",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0566/CL006319",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0566/CL010043",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0566/CL010043",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K0566",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K0566",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K0566/CL010043",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0566/CL010043",
+      "passed": true,
+      "detail": "expected='K0566'; actual='K0566'"
+    },
+    {
+      "check": "operator row citation exists: K0566/CL006319",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0566/CL006319",
+      "passed": true,
+      "detail": "expected='K0566'; actual='K0566'"
+    },
+    {
+      "check": "operator row citation exists: K0566/CL010043",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0566/CL010043",
+      "passed": true,
+      "detail": "expected='K0566'; actual='K0566'"
+    },
+    {
+      "check": "operator row citation exists: K0566/CL006319",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0566/CL006319",
+      "passed": true,
+      "detail": "expected='K0566'; actual='K0566'"
+    },
+    {
+      "check": "operator row citation exists: K0566/CL010043",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0566/CL010043",
+      "passed": true,
+      "detail": "expected='K0566'; actual='K0566'"
+    },
+    {
+      "check": "operator row citation exists: K0566/CL006319",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0566/CL006319",
+      "passed": true,
+      "detail": "expected='K0566'; actual='K0566'"
+    },
+    {
+      "check": "operator row column count: K0586",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K0586",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K0586",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K0586",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K0586",
+      "passed": true,
+      "detail": "length=107"
+    },
+    {
+      "check": "generic operator question removed: K0586",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K0586",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K0586",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K0586",
+      "passed": true,
+      "detail": "expected='k0586--gealbhan-nethercarn'; actual='k0586--gealbhan-nethercarn'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K0586",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K0586",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K0586/CL006901",
+      "passed": true,
+      "detail": "electrical maintenance"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K0586",
+      "passed": true,
+      "detail": "expected=['CL006901']; actual=['CL006901']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0586/CL006901",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0586/CL006901",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K0586",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K0586",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K0586/CL006901",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0586/CL006901",
+      "passed": true,
+      "detail": "expected='K0586'; actual='K0586'"
+    },
+    {
+      "check": "operator row citation exists: K0586/CL006901",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0586/CL006901",
+      "passed": true,
+      "detail": "expected='K0586'; actual='K0586'"
+    },
+    {
+      "check": "operator row citation exists: K0586/CL006901",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0586/CL006901",
+      "passed": true,
+      "detail": "expected='K0586'; actual='K0586'"
+    },
+    {
+      "check": "operator row column count: K0589",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K0589",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K0589",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K0589",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K0589",
+      "passed": true,
+      "detail": "length=222"
+    },
+    {
+      "check": "generic operator question removed: K0589",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K0589",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K0589",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K0589",
+      "passed": true,
+      "detail": "expected='k0589--eachann-westrayne'; actual='k0589--eachann-westrayne'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K0589",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K0589",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K0589/CL008681",
+      "passed": true,
+      "detail": "routine mechanical service"
+    },
+    {
+      "check": "operator question focus follows source: K0589/CL008008",
+      "passed": true,
+      "detail": "electrical maintenance"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K0589",
+      "passed": true,
+      "detail": "expected=['CL008008', 'CL008681']; actual=['CL008008', 'CL008681']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0589/CL008008",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0589/CL008008",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0589/CL008681",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0589/CL008681",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K0589",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K0589",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K0589/CL008681",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0589/CL008681",
+      "passed": true,
+      "detail": "expected='K0589'; actual='K0589'"
+    },
+    {
+      "check": "operator row citation exists: K0589/CL008008",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0589/CL008008",
+      "passed": true,
+      "detail": "expected='K0589'; actual='K0589'"
+    },
+    {
+      "check": "operator row citation exists: K0589/CL008681",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0589/CL008681",
+      "passed": true,
+      "detail": "expected='K0589'; actual='K0589'"
+    },
+    {
+      "check": "operator row citation exists: K0589/CL008008",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0589/CL008008",
+      "passed": true,
+      "detail": "expected='K0589'; actual='K0589'"
+    },
+    {
+      "check": "operator row citation exists: K0589/CL008681",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0589/CL008681",
+      "passed": true,
+      "detail": "expected='K0589'; actual='K0589'"
+    },
+    {
+      "check": "operator row citation exists: K0589/CL008008",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0589/CL008008",
+      "passed": true,
+      "detail": "expected='K0589'; actual='K0589'"
+    },
+    {
+      "check": "operator row column count: K0592",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K0592",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K0592",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K0592",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K0592",
+      "passed": true,
+      "detail": "length=236"
+    },
+    {
+      "check": "generic operator question removed: K0592",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K0592",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K0592",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K0592",
+      "passed": true,
+      "detail": "expected='k0592--fergal-mac-eibhleain'; actual='k0592--fergal-mac-eibhleain'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K0592",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K0592",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K0592/CL008207",
+      "passed": true,
+      "detail": "fault diagnosis"
+    },
+    {
+      "check": "operator question focus follows source: K0592/CL008184",
+      "passed": true,
+      "detail": "mechanical overhaul"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K0592",
+      "passed": true,
+      "detail": "expected=['CL008184', 'CL008207']; actual=['CL008184', 'CL008207']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0592/CL008184",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0592/CL008184",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0592/CL008207",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0592/CL008207",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K0592",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K0592",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K0592/CL008207",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0592/CL008207",
+      "passed": true,
+      "detail": "expected='K0592'; actual='K0592'"
+    },
+    {
+      "check": "operator row citation exists: K0592/CL008184",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0592/CL008184",
+      "passed": true,
+      "detail": "expected='K0592'; actual='K0592'"
+    },
+    {
+      "check": "operator row citation exists: K0592/CL008207",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0592/CL008207",
+      "passed": true,
+      "detail": "expected='K0592'; actual='K0592'"
+    },
+    {
+      "check": "operator row citation exists: K0592/CL008184",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0592/CL008184",
+      "passed": true,
+      "detail": "expected='K0592'; actual='K0592'"
+    },
+    {
+      "check": "operator row citation exists: K0592/CL008207",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0592/CL008207",
+      "passed": true,
+      "detail": "expected='K0592'; actual='K0592'"
+    },
+    {
+      "check": "operator row citation exists: K0592/CL008184",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0592/CL008184",
+      "passed": true,
+      "detail": "expected='K0592'; actual='K0592'"
+    },
+    {
+      "check": "operator row citation exists: K0592/LH500977",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0592/LH500977",
+      "passed": true,
+      "detail": "expected='K0592'; actual='K0592'"
+    },
+    {
+      "check": "operator row column count: K0641",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K0641",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K0641",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K0641",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K0641",
+      "passed": true,
+      "detail": "length=107"
+    },
+    {
+      "check": "generic operator question removed: K0641",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K0641",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K0641",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K0641",
+      "passed": true,
+      "detail": "expected='k0641--eimhreann-nic-gormghaile'; actual='k0641--eimhreann-nic-gormghaile'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K0641",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K0641",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K0641/CL009753",
+      "passed": true,
+      "detail": "electrical maintenance"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K0641",
+      "passed": true,
+      "detail": "expected=['CL009753']; actual=['CL009753']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0641/CL009753",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0641/CL009753",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K0641",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K0641",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K0641/CL009753",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0641/CL009753",
+      "passed": true,
+      "detail": "expected='K0641'; actual='K0641'"
+    },
+    {
+      "check": "operator row citation exists: K0641/CL009753",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0641/CL009753",
+      "passed": true,
+      "detail": "expected='K0641'; actual='K0641'"
+    },
+    {
+      "check": "operator row citation exists: K0641/CL009753",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0641/CL009753",
+      "passed": true,
+      "detail": "expected='K0641'; actual='K0641'"
+    },
+    {
+      "check": "operator row column count: K0650",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K0650",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K0650",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K0650",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K0650",
+      "passed": true,
+      "detail": "length=223"
+    },
+    {
+      "check": "generic operator question removed: K0650",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K0650",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K0650",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K0650",
+      "passed": true,
+      "detail": "expected='k0650--duaghal-mac-ualghairg'; actual='k0650--duaghal-mac-ualghairg'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K0650",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K0650",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K0650/CL010452",
+      "passed": true,
+      "detail": "electrical maintenance"
+    },
+    {
+      "check": "operator question focus follows source: K0650/CL009955",
+      "passed": true,
+      "detail": "mechanical overhaul"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K0650",
+      "passed": true,
+      "detail": "expected=['CL009955', 'CL010452']; actual=['CL009955', 'CL010452']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0650/CL009955",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0650/CL009955",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0650/CL010452",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0650/CL010452",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K0650",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K0650",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K0650/CL010452",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0650/CL010452",
+      "passed": true,
+      "detail": "expected='K0650'; actual='K0650'"
+    },
+    {
+      "check": "operator row citation exists: K0650/CL009955",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0650/CL009955",
+      "passed": true,
+      "detail": "expected='K0650'; actual='K0650'"
+    },
+    {
+      "check": "operator row citation exists: K0650/CL010452",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0650/CL010452",
+      "passed": true,
+      "detail": "expected='K0650'; actual='K0650'"
+    },
+    {
+      "check": "operator row citation exists: K0650/CL009955",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0650/CL009955",
+      "passed": true,
+      "detail": "expected='K0650'; actual='K0650'"
+    },
+    {
+      "check": "operator row citation exists: K0650/CL010452",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0650/CL010452",
+      "passed": true,
+      "detail": "expected='K0650'; actual='K0650'"
+    },
+    {
+      "check": "operator row citation exists: K0650/CL009955",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0650/CL009955",
+      "passed": true,
+      "detail": "expected='K0650'; actual='K0650'"
+    },
+    {
+      "check": "operator row column count: K0663",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K0663",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K0663",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K0663",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K0663",
+      "passed": true,
+      "detail": "length=128"
+    },
+    {
+      "check": "generic operator question removed: K0663",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K0663",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K0663",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K0663",
+      "passed": true,
+      "detail": "expected='k0663--lugharn-o-niallghusa'; actual='k0663--lugharn-o-niallghusa'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K0663",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K0663",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K0663/CL010471",
+      "passed": true,
+      "detail": "mechanical overhaul"
+    },
+    {
+      "check": "operator question focus follows source: K0663/CL010451",
+      "passed": true,
+      "detail": "mechanical overhaul"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K0663",
+      "passed": true,
+      "detail": "expected=['CL010451', 'CL010471']; actual=['CL010451', 'CL010471']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0663/CL010451",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0663/CL010451",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0663/CL010471",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0663/CL010471",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K0663",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K0663",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K0663/CL010471",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0663/CL010471",
+      "passed": true,
+      "detail": "expected='K0663'; actual='K0663'"
+    },
+    {
+      "check": "operator row citation exists: K0663/CL010451",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0663/CL010451",
+      "passed": true,
+      "detail": "expected='K0663'; actual='K0663'"
+    },
+    {
+      "check": "operator row citation exists: K0663/CL010471",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0663/CL010471",
+      "passed": true,
+      "detail": "expected='K0663'; actual='K0663'"
+    },
+    {
+      "check": "operator row citation exists: K0663/CL010451",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0663/CL010451",
+      "passed": true,
+      "detail": "expected='K0663'; actual='K0663'"
+    },
+    {
+      "check": "operator row citation exists: K0663/CL010471",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0663/CL010471",
+      "passed": true,
+      "detail": "expected='K0663'; actual='K0663'"
+    },
+    {
+      "check": "operator row citation exists: K0663/CL010451",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0663/CL010451",
+      "passed": true,
+      "detail": "expected='K0663'; actual='K0663'"
+    },
+    {
+      "check": "operator row column count: K0664",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K0664",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K0664",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K0664",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K0664",
+      "passed": true,
+      "detail": "length=224"
+    },
+    {
+      "check": "generic operator question removed: K0664",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K0664",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K0664",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K0664",
+      "passed": true,
+      "detail": "expected='k0664--bruaigh-o-braoscan'; actual='k0664--bruaigh-o-braoscan'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K0664",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K0664",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K0664/CL009911",
+      "passed": true,
+      "detail": "testing"
+    },
+    {
+      "check": "operator question focus follows source: K0664/CL009694",
+      "passed": true,
+      "detail": "routine mechanical service"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K0664",
+      "passed": true,
+      "detail": "expected=['CL009694', 'CL009911']; actual=['CL009694', 'CL009911']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0664/CL009694",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0664/CL009694",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0664/CL009911",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0664/CL009911",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K0664",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K0664",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K0664/CL009911",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0664/CL009911",
+      "passed": true,
+      "detail": "expected='K0664'; actual='K0664'"
+    },
+    {
+      "check": "operator row citation exists: K0664/CL009694",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0664/CL009694",
+      "passed": true,
+      "detail": "expected='K0664'; actual='K0664'"
+    },
+    {
+      "check": "operator row citation exists: K0664/CL009911",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0664/CL009911",
+      "passed": true,
+      "detail": "expected='K0664'; actual='K0664'"
+    },
+    {
+      "check": "operator row citation exists: K0664/CL009694",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0664/CL009694",
+      "passed": true,
+      "detail": "expected='K0664'; actual='K0664'"
+    },
+    {
+      "check": "operator row citation exists: K0664/CL009911",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0664/CL009911",
+      "passed": true,
+      "detail": "expected='K0664'; actual='K0664'"
+    },
+    {
+      "check": "operator row citation exists: K0664/CL009694",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0664/CL009694",
+      "passed": true,
+      "detail": "expected='K0664'; actual='K0664'"
+    },
+    {
+      "check": "operator row column count: K0817",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K0817",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K0817",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K0817",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K0817",
+      "passed": true,
+      "detail": "length=236"
+    },
+    {
+      "check": "generic operator question removed: K0817",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K0817",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K0817",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K0817",
+      "passed": true,
+      "detail": "expected='k0817--odhran-o-luachra'; actual='k0817--odhran-o-luachra'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K0817",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K0817",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K0817/CL009476",
+      "passed": true,
+      "detail": "fault diagnosis"
+    },
+    {
+      "check": "operator question focus follows source: K0817/CL008376",
+      "passed": true,
+      "detail": "mechanical overhaul"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K0817",
+      "passed": true,
+      "detail": "expected=['CL008376', 'CL009476']; actual=['CL008376', 'CL009476']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0817/CL008376",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0817/CL008376",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0817/CL009476",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0817/CL009476",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K0817",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K0817",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K0817/CL009476",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0817/CL009476",
+      "passed": true,
+      "detail": "expected='K0817'; actual='K0817'"
+    },
+    {
+      "check": "operator row citation exists: K0817/CL008376",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0817/CL008376",
+      "passed": true,
+      "detail": "expected='K0817'; actual='K0817'"
+    },
+    {
+      "check": "operator row citation exists: K0817/CL009476",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0817/CL009476",
+      "passed": true,
+      "detail": "expected='K0817'; actual='K0817'"
+    },
+    {
+      "check": "operator row citation exists: K0817/CL008376",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0817/CL008376",
+      "passed": true,
+      "detail": "expected='K0817'; actual='K0817'"
+    },
+    {
+      "check": "operator row citation exists: K0817/CL009476",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0817/CL009476",
+      "passed": true,
+      "detail": "expected='K0817'; actual='K0817'"
+    },
+    {
+      "check": "operator row citation exists: K0817/CL008376",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0817/CL008376",
+      "passed": true,
+      "detail": "expected='K0817'; actual='K0817'"
+    },
+    {
+      "check": "operator row citation exists: K0817/LH501375",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0817/LH501375",
+      "passed": true,
+      "detail": "expected='K0817'; actual='K0817'"
+    },
+    {
+      "check": "operator row column count: K0847",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K0847",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K0847",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K0847",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K0847",
+      "passed": true,
+      "detail": "length=239"
+    },
+    {
+      "check": "generic operator question removed: K0847",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K0847",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K0847",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K0847",
+      "passed": true,
+      "detail": "expected='k0847--aoife-ni-mhurchu'; actual='k0847--aoife-ni-mhurchu'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K0847",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K0847",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K0847/CL008299",
+      "passed": true,
+      "detail": "control systems"
+    },
+    {
+      "check": "operator question focus follows source: K0847/CL007737",
+      "passed": true,
+      "detail": "mechanical overhaul"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K0847",
+      "passed": true,
+      "detail": "expected=['CL007737', 'CL008299']; actual=['CL007737', 'CL008299']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0847/CL007737",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0847/CL007737",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0847/CL008299",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0847/CL008299",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement warning exact: K0847/CL008299",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K0847",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator identity-warning count exact: K0847",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator row citation exists: K0847/CL008299",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0847/CL008299",
+      "passed": true,
+      "detail": "expected='K0847'; actual='K0847'"
+    },
+    {
+      "check": "operator row citation exists: K0847/CL007737",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0847/CL007737",
+      "passed": true,
+      "detail": "expected='K0847'; actual='K0847'"
+    },
+    {
+      "check": "operator row citation exists: K0847/CL008299",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0847/CL008299",
+      "passed": true,
+      "detail": "expected='K0847'; actual='K0847'"
+    },
+    {
+      "check": "operator row citation exists: K0847/CL007737",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0847/CL007737",
+      "passed": true,
+      "detail": "expected='K0847'; actual='K0847'"
+    },
+    {
+      "check": "operator row citation exists: K0847/CL008299",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0847/CL008299",
+      "passed": true,
+      "detail": "expected='K0847'; actual='K0847'"
+    },
+    {
+      "check": "operator row citation exists: K0847/CL007737",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0847/CL007737",
+      "passed": true,
+      "detail": "expected='K0847'; actual='K0847'"
+    },
+    {
+      "check": "operator row column count: K0897",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K0897",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K0897",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K0897",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K0897",
+      "passed": true,
+      "detail": "length=224"
+    },
+    {
+      "check": "generic operator question removed: K0897",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K0897",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K0897",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K0897",
+      "passed": true,
+      "detail": "expected='k0897--bearach-mac-teallach'; actual='k0897--bearach-mac-teallach'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K0897",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K0897",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K0897/CL009512",
+      "passed": true,
+      "detail": "testing"
+    },
+    {
+      "check": "operator question focus follows source: K0897/CL008539",
+      "passed": true,
+      "detail": "routine mechanical service"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K0897",
+      "passed": true,
+      "detail": "expected=['CL008539', 'CL009512']; actual=['CL008539', 'CL009512']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0897/CL008539",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0897/CL008539",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K0897/CL009512",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K0897/CL009512",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K0897",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K0897",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K0897/CL009512",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0897/CL009512",
+      "passed": true,
+      "detail": "expected='K0897'; actual='K0897'"
+    },
+    {
+      "check": "operator row citation exists: K0897/CL008539",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0897/CL008539",
+      "passed": true,
+      "detail": "expected='K0897'; actual='K0897'"
+    },
+    {
+      "check": "operator row citation exists: K0897/CL009512",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0897/CL009512",
+      "passed": true,
+      "detail": "expected='K0897'; actual='K0897'"
+    },
+    {
+      "check": "operator row citation exists: K0897/CL008539",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0897/CL008539",
+      "passed": true,
+      "detail": "expected='K0897'; actual='K0897'"
+    },
+    {
+      "check": "operator row citation exists: K0897/CL009512",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0897/CL009512",
+      "passed": true,
+      "detail": "expected='K0897'; actual='K0897'"
+    },
+    {
+      "check": "operator row citation exists: K0897/CL008539",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K0897/CL008539",
+      "passed": true,
+      "detail": "expected='K0897'; actual='K0897'"
+    },
+    {
+      "check": "operator row column count: K1055",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K1055",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K1055",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K1055",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K1055",
+      "passed": true,
+      "detail": "length=239"
+    },
+    {
+      "check": "generic operator question removed: K1055",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K1055",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K1055",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K1055",
+      "passed": true,
+      "detail": "expected='k1055--tailte-ni-chuirrin'; actual='k1055--tailte-ni-chuirrin'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K1055",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K1055",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K1055/CL003053",
+      "passed": true,
+      "detail": "mechanical overhaul"
+    },
+    {
+      "check": "operator question focus follows source: K1055/CL001961",
+      "passed": true,
+      "detail": "control systems"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K1055",
+      "passed": true,
+      "detail": "expected=['CL001961', 'CL003053']; actual=['CL001961', 'CL003053']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1055/CL001961",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1055/CL001961",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1055/CL003053",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1055/CL003053",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K1055",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K1055",
+      "passed": true,
+      "detail": "expected=2; actual=2"
+    },
+    {
+      "check": "operator row citation exists: K1055/CL003053",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1055/CL003053",
+      "passed": true,
+      "detail": "expected='K1055'; actual='K1055'"
+    },
+    {
+      "check": "operator row citation exists: K1055/CL001961",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1055/CL001961",
+      "passed": true,
+      "detail": "expected='K1055'; actual='K1055'"
+    },
+    {
+      "check": "operator row citation exists: K1055/CL003053",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1055/CL003053",
+      "passed": true,
+      "detail": "expected='K1055'; actual='K1055'"
+    },
+    {
+      "check": "operator row citation exists: K1055/CL001961",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1055/CL001961",
+      "passed": true,
+      "detail": "expected='K1055'; actual='K1055'"
+    },
+    {
+      "check": "operator row citation exists: K1055/CL003053",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1055/CL003053",
+      "passed": true,
+      "detail": "expected='K1055'; actual='K1055'"
+    },
+    {
+      "check": "operator row citation exists: K1055/CL001961",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1055/CL001961",
+      "passed": true,
+      "detail": "expected='K1055'; actual='K1055'"
+    },
+    {
+      "check": "operator row column count: K1200",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K1200",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K1200",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K1200",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K1200",
+      "passed": true,
+      "detail": "length=285"
+    },
+    {
+      "check": "generic operator question removed: K1200",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K1200",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K1200",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K1200",
+      "passed": true,
+      "detail": "expected='k1200--tomaltach-yarrowfell'; actual='k1200--tomaltach-yarrowfell'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K1200",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K1200",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K1200/CL009097",
+      "passed": true,
+      "detail": "mechanical overhaul"
+    },
+    {
+      "check": "operator question focus follows source: K1200/CL005994",
+      "passed": true,
+      "detail": "mechanical overhaul"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K1200",
+      "passed": true,
+      "detail": "expected=['CL005994', 'CL009097']; actual=['CL005994', 'CL009097']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1200/CL005994",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1200/CL005994",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1200/CL009097",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1200/CL009097",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K1200",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K1200",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K1200/CL009097",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1200/CL009097",
+      "passed": true,
+      "detail": "expected='K1200'; actual='K1200'"
+    },
+    {
+      "check": "operator row citation exists: K1200/CL005994",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1200/CL005994",
+      "passed": true,
+      "detail": "expected='K1200'; actual='K1200'"
+    },
+    {
+      "check": "operator row citation exists: K1200/CL009097",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1200/CL009097",
+      "passed": true,
+      "detail": "expected='K1200'; actual='K1200'"
+    },
+    {
+      "check": "operator row citation exists: K1200/CL005994",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1200/CL005994",
+      "passed": true,
+      "detail": "expected='K1200'; actual='K1200'"
+    },
+    {
+      "check": "operator row citation exists: K1200/AP003496",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1200/AP003496",
+      "passed": true,
+      "detail": "expected='K1200'; actual='K1200'"
+    },
+    {
+      "check": "operator row citation exists: K1200/CL009097",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1200/CL009097",
+      "passed": true,
+      "detail": "expected='K1200'; actual='K1200'"
+    },
+    {
+      "check": "operator row citation exists: K1200/CL005994",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1200/CL005994",
+      "passed": true,
+      "detail": "expected='K1200'; actual='K1200'"
+    },
+    {
+      "check": "operator row citation exists: K1200/LH502309",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1200/LH502309",
+      "passed": true,
+      "detail": "expected='K1200'; actual='K1200'"
+    },
+    {
+      "check": "operator row citation exists: K1200/LH502291",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1200/LH502291",
+      "passed": true,
+      "detail": "expected='K1200'; actual='K1200'"
+    },
+    {
+      "check": "operator row citation exists: K1200/LH502292",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1200/LH502292",
+      "passed": true,
+      "detail": "expected='K1200'; actual='K1200'"
+    },
+    {
+      "check": "operator row citation exists: K1200/LH502293",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1200/LH502293",
+      "passed": true,
+      "detail": "expected='K1200'; actual='K1200'"
+    },
+    {
+      "check": "operator row citation exists: K1200/LH502303",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1200/LH502303",
+      "passed": true,
+      "detail": "expected='K1200'; actual='K1200'"
+    },
+    {
+      "check": "operator row citation exists: K1200/LH502298",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1200/LH502298",
+      "passed": true,
+      "detail": "expected='K1200'; actual='K1200'"
+    },
+    {
+      "check": "operator row citation exists: K1200/LH502304",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1200/LH502304",
+      "passed": true,
+      "detail": "expected='K1200'; actual='K1200'"
+    },
+    {
+      "check": "operator row citation exists: K1200/LH502294",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1200/LH502294",
+      "passed": true,
+      "detail": "expected='K1200'; actual='K1200'"
+    },
+    {
+      "check": "operator row citation exists: K1200/LH502300",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1200/LH502300",
+      "passed": true,
+      "detail": "expected='K1200'; actual='K1200'"
+    },
+    {
+      "check": "operator row citation exists: K1200/LH502324",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1200/LH502324",
+      "passed": true,
+      "detail": "expected='K1200'; actual='K1200'"
+    },
+    {
+      "check": "operator row column count: K1231",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K1231",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K1231",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K1231",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K1231",
+      "passed": true,
+      "detail": "length=238"
+    },
+    {
+      "check": "generic operator question removed: K1231",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K1231",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K1231",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K1231",
+      "passed": true,
+      "detail": "expected='k1231--joachima-ulverstane'; actual='k1231--joachima-ulverstane'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K1231",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K1231",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K1231/CL010320",
+      "passed": true,
+      "detail": "control systems"
+    },
+    {
+      "check": "operator question focus follows source: K1231/CL008529",
+      "passed": true,
+      "detail": "routine mechanical service"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K1231",
+      "passed": true,
+      "detail": "expected=['CL008529', 'CL010320']; actual=['CL008529', 'CL010320']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1231/CL008529",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1231/CL008529",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1231/CL010320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1231/CL010320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K1231",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K1231",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K1231/CL010320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1231/CL010320",
+      "passed": true,
+      "detail": "expected='K1231'; actual='K1231'"
+    },
+    {
+      "check": "operator row citation exists: K1231/CL008529",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1231/CL008529",
+      "passed": true,
+      "detail": "expected='K1231'; actual='K1231'"
+    },
+    {
+      "check": "operator row citation exists: K1231/CL010320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1231/CL010320",
+      "passed": true,
+      "detail": "expected='K1231'; actual='K1231'"
+    },
+    {
+      "check": "operator row citation exists: K1231/CL008529",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1231/CL008529",
+      "passed": true,
+      "detail": "expected='K1231'; actual='K1231'"
+    },
+    {
+      "check": "operator row citation exists: K1231/CL010320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1231/CL010320",
+      "passed": true,
+      "detail": "expected='K1231'; actual='K1231'"
+    },
+    {
+      "check": "operator row citation exists: K1231/CL008529",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1231/CL008529",
+      "passed": true,
+      "detail": "expected='K1231'; actual='K1231'"
+    },
+    {
+      "check": "operator row column count: K1281",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K1281",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K1281",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K1281",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K1281",
+      "passed": true,
+      "detail": "length=123"
+    },
+    {
+      "check": "generic operator question removed: K1281",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K1281",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K1281",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K1281",
+      "passed": true,
+      "detail": "expected='k1281--fearghal-nethercarn'; actual='k1281--fearghal-nethercarn'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K1281",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K1281",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K1281/CL008233",
+      "passed": true,
+      "detail": "control systems"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K1281",
+      "passed": true,
+      "detail": "expected=['CL008233']; actual=['CL008233']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1281/CL008233",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1281/CL008233",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K1281",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K1281",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K1281/CL008233",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1281/CL008233",
+      "passed": true,
+      "detail": "expected='K1281'; actual='K1281'"
+    },
+    {
+      "check": "operator row citation exists: K1281/CL008233",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1281/CL008233",
+      "passed": true,
+      "detail": "expected='K1281'; actual='K1281'"
+    },
+    {
+      "check": "operator row citation exists: K1281/CL008233",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1281/CL008233",
+      "passed": true,
+      "detail": "expected='K1281'; actual='K1281'"
+    },
+    {
+      "check": "operator row column count: K1302",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K1302",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K1302",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K1302",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K1302",
+      "passed": true,
+      "detail": "length=238"
+    },
+    {
+      "check": "generic operator question removed: K1302",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K1302",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K1302",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K1302",
+      "passed": true,
+      "detail": "expected='k1302--uaithne-mac-bruachail'; actual='k1302--uaithne-mac-bruachail'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K1302",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K1302",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K1302/CL004774",
+      "passed": true,
+      "detail": "control systems"
+    },
+    {
+      "check": "operator question focus follows source: K1302/CL002551",
+      "passed": true,
+      "detail": "routine mechanical service"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K1302",
+      "passed": true,
+      "detail": "expected=['CL002551', 'CL004774']; actual=['CL002551', 'CL004774']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1302/CL002551",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1302/CL002551",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1302/CL004774",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1302/CL004774",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement warning exact: K1302/CL004774",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K1302",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator identity-warning count exact: K1302",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator row citation exists: K1302/CL004774",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1302/CL004774",
+      "passed": true,
+      "detail": "expected='K1302'; actual='K1302'"
+    },
+    {
+      "check": "operator row citation exists: K1302/CL002551",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1302/CL002551",
+      "passed": true,
+      "detail": "expected='K1302'; actual='K1302'"
+    },
+    {
+      "check": "operator row citation exists: K1302/CL004774",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1302/CL004774",
+      "passed": true,
+      "detail": "expected='K1302'; actual='K1302'"
+    },
+    {
+      "check": "operator row citation exists: K1302/CL002551",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1302/CL002551",
+      "passed": true,
+      "detail": "expected='K1302'; actual='K1302'"
+    },
+    {
+      "check": "operator row citation exists: K1302/CL004774",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1302/CL004774",
+      "passed": true,
+      "detail": "expected='K1302'; actual='K1302'"
+    },
+    {
+      "check": "operator row citation exists: K1302/CL002551",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1302/CL002551",
+      "passed": true,
+      "detail": "expected='K1302'; actual='K1302'"
+    },
+    {
+      "check": "operator row column count: K1345",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K1345",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K1345",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K1345",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K1345",
+      "passed": true,
+      "detail": "length=222"
+    },
+    {
+      "check": "generic operator question removed: K1345",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K1345",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K1345",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K1345",
+      "passed": true,
+      "detail": "expected='k1345--dualta-o-hiarnain'; actual='k1345--dualta-o-hiarnain'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K1345",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K1345",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K1345/CL008356",
+      "passed": true,
+      "detail": "electrical maintenance"
+    },
+    {
+      "check": "operator question focus follows source: K1345/CL007631",
+      "passed": true,
+      "detail": "routine mechanical service"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K1345",
+      "passed": true,
+      "detail": "expected=['CL007631', 'CL008356']; actual=['CL007631', 'CL008356']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1345/CL007631",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1345/CL007631",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1345/CL008356",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1345/CL008356",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K1345",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K1345",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K1345/CL008356",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1345/CL008356",
+      "passed": true,
+      "detail": "expected='K1345'; actual='K1345'"
+    },
+    {
+      "check": "operator row citation exists: K1345/CL007631",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1345/CL007631",
+      "passed": true,
+      "detail": "expected='K1345'; actual='K1345'"
+    },
+    {
+      "check": "operator row citation exists: K1345/CL008356",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1345/CL008356",
+      "passed": true,
+      "detail": "expected='K1345'; actual='K1345'"
+    },
+    {
+      "check": "operator row citation exists: K1345/CL007631",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1345/CL007631",
+      "passed": true,
+      "detail": "expected='K1345'; actual='K1345'"
+    },
+    {
+      "check": "operator row citation exists: K1345/CL008356",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1345/CL008356",
+      "passed": true,
+      "detail": "expected='K1345'; actual='K1345'"
+    },
+    {
+      "check": "operator row citation exists: K1345/CL007631",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1345/CL007631",
+      "passed": true,
+      "detail": "expected='K1345'; actual='K1345'"
+    },
+    {
+      "check": "operator row column count: K1363",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K1363",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K1363",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K1363",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K1363",
+      "passed": true,
+      "detail": "length=222"
+    },
+    {
+      "check": "generic operator question removed: K1363",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K1363",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K1363",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K1363",
+      "passed": true,
+      "detail": "expected='k1363--ualaith-enfarrow'; actual='k1363--ualaith-enfarrow'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K1363",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K1363",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K1363/CL009245",
+      "passed": true,
+      "detail": "routine mechanical service"
+    },
+    {
+      "check": "operator question focus follows source: K1363/CL008995",
+      "passed": true,
+      "detail": "electrical maintenance"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K1363",
+      "passed": true,
+      "detail": "expected=['CL008995', 'CL009245']; actual=['CL008995', 'CL009245']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1363/CL008995",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1363/CL008995",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1363/CL009245",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1363/CL009245",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K1363",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K1363",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K1363/CL009245",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1363/CL009245",
+      "passed": true,
+      "detail": "expected='K1363'; actual='K1363'"
+    },
+    {
+      "check": "operator row citation exists: K1363/CL008995",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1363/CL008995",
+      "passed": true,
+      "detail": "expected='K1363'; actual='K1363'"
+    },
+    {
+      "check": "operator row citation exists: K1363/CL009245",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1363/CL009245",
+      "passed": true,
+      "detail": "expected='K1363'; actual='K1363'"
+    },
+    {
+      "check": "operator row citation exists: K1363/CL008995",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1363/CL008995",
+      "passed": true,
+      "detail": "expected='K1363'; actual='K1363'"
+    },
+    {
+      "check": "operator row citation exists: K1363/CL009245",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1363/CL009245",
+      "passed": true,
+      "detail": "expected='K1363'; actual='K1363'"
+    },
+    {
+      "check": "operator row citation exists: K1363/CL008995",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1363/CL008995",
+      "passed": true,
+      "detail": "expected='K1363'; actual='K1363'"
+    },
+    {
+      "check": "operator row column count: K1374",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K1374",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K1374",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K1374",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K1374",
+      "passed": true,
+      "detail": "length=238"
+    },
+    {
+      "check": "generic operator question removed: K1374",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K1374",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K1374",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K1374",
+      "passed": true,
+      "detail": "expected='k1374--aodhan-o-haghmoir'; actual='k1374--aodhan-o-haghmoir'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K1374",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K1374",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K1374/CL010559",
+      "passed": true,
+      "detail": "control systems"
+    },
+    {
+      "check": "operator question focus follows source: K1374/CL009203",
+      "passed": true,
+      "detail": "routine mechanical service"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K1374",
+      "passed": true,
+      "detail": "expected=['CL009203', 'CL010559']; actual=['CL009203', 'CL010559']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1374/CL009203",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1374/CL009203",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1374/CL010559",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1374/CL010559",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K1374",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K1374",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K1374/CL010559",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1374/CL010559",
+      "passed": true,
+      "detail": "expected='K1374'; actual='K1374'"
+    },
+    {
+      "check": "operator row citation exists: K1374/CL009203",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1374/CL009203",
+      "passed": true,
+      "detail": "expected='K1374'; actual='K1374'"
+    },
+    {
+      "check": "operator row citation exists: K1374/CL010559",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1374/CL010559",
+      "passed": true,
+      "detail": "expected='K1374'; actual='K1374'"
+    },
+    {
+      "check": "operator row citation exists: K1374/CL009203",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1374/CL009203",
+      "passed": true,
+      "detail": "expected='K1374'; actual='K1374'"
+    },
+    {
+      "check": "operator row citation exists: K1374/CL010559",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1374/CL010559",
+      "passed": true,
+      "detail": "expected='K1374'; actual='K1374'"
+    },
+    {
+      "check": "operator row citation exists: K1374/CL009203",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1374/CL009203",
+      "passed": true,
+      "detail": "expected='K1374'; actual='K1374'"
+    },
+    {
+      "check": "operator row citation exists: K1374/LH502618",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1374/LH502618",
+      "passed": true,
+      "detail": "expected='K1374'; actual='K1374'"
+    },
+    {
+      "check": "operator row citation exists: K1374/LH502615",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1374/LH502615",
+      "passed": true,
+      "detail": "expected='K1374'; actual='K1374'"
+    },
+    {
+      "check": "operator row column count: K1418",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K1418",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K1418",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K1418",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K1418",
+      "passed": true,
+      "detail": "length=238"
+    },
+    {
+      "check": "generic operator question removed: K1418",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K1418",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K1418",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K1418",
+      "passed": true,
+      "detail": "expected='k1418--hurlan-o-failbhe'; actual='k1418--hurlan-o-failbhe'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K1418",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K1418",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K1418/CL004517",
+      "passed": true,
+      "detail": "control systems"
+    },
+    {
+      "check": "operator question focus follows source: K1418/CL003898",
+      "passed": true,
+      "detail": "routine mechanical service"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K1418",
+      "passed": true,
+      "detail": "expected=['CL003898', 'CL004517']; actual=['CL003898', 'CL004517']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1418/CL003898",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1418/CL003898",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1418/CL004517",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1418/CL004517",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K1418",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K1418",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K1418/CL004517",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1418/CL004517",
+      "passed": true,
+      "detail": "expected='K1418'; actual='K1418'"
+    },
+    {
+      "check": "operator row citation exists: K1418/CL003898",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1418/CL003898",
+      "passed": true,
+      "detail": "expected='K1418'; actual='K1418'"
+    },
+    {
+      "check": "operator row citation exists: K1418/CL004517",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1418/CL004517",
+      "passed": true,
+      "detail": "expected='K1418'; actual='K1418'"
+    },
+    {
+      "check": "operator row citation exists: K1418/CL003898",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1418/CL003898",
+      "passed": true,
+      "detail": "expected='K1418'; actual='K1418'"
+    },
+    {
+      "check": "operator row citation exists: K1418/CL004517",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1418/CL004517",
+      "passed": true,
+      "detail": "expected='K1418'; actual='K1418'"
+    },
+    {
+      "check": "operator row citation exists: K1418/CL003898",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1418/CL003898",
+      "passed": true,
+      "detail": "expected='K1418'; actual='K1418'"
+    },
+    {
+      "check": "operator row citation exists: K1418/LH502692",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1418/LH502692",
+      "passed": true,
+      "detail": "expected='K1418'; actual='K1418'"
+    },
+    {
+      "check": "operator row column count: K1446",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K1446",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K1446",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K1446",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K1446",
+      "passed": true,
+      "detail": "length=235"
+    },
+    {
+      "check": "generic operator question removed: K1446",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K1446",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K1446",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K1446",
+      "passed": true,
+      "detail": "expected='k1446--kelveen-sellanby'; actual='k1446--kelveen-sellanby'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K1446",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K1446",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K1446/CL010352",
+      "passed": true,
+      "detail": "fault diagnosis"
+    },
+    {
+      "check": "operator question focus follows source: K1446/CL010071",
+      "passed": true,
+      "detail": "routine mechanical service"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K1446",
+      "passed": true,
+      "detail": "expected=['CL010071', 'CL010352']; actual=['CL010071', 'CL010352']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1446/CL010071",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1446/CL010071",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1446/CL010352",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1446/CL010352",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K1446",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K1446",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K1446/CL010352",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1446/CL010352",
+      "passed": true,
+      "detail": "expected='K1446'; actual='K1446'"
+    },
+    {
+      "check": "operator row citation exists: K1446/CL010071",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1446/CL010071",
+      "passed": true,
+      "detail": "expected='K1446'; actual='K1446'"
+    },
+    {
+      "check": "operator row citation exists: K1446/CL010352",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1446/CL010352",
+      "passed": true,
+      "detail": "expected='K1446'; actual='K1446'"
+    },
+    {
+      "check": "operator row citation exists: K1446/CL010071",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1446/CL010071",
+      "passed": true,
+      "detail": "expected='K1446'; actual='K1446'"
+    },
+    {
+      "check": "operator row citation exists: K1446/CL010352",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1446/CL010352",
+      "passed": true,
+      "detail": "expected='K1446'; actual='K1446'"
+    },
+    {
+      "check": "operator row citation exists: K1446/CL010071",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1446/CL010071",
+      "passed": true,
+      "detail": "expected='K1446'; actual='K1446'"
+    },
+    {
+      "check": "operator row citation exists: K1446/LH502752",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1446/LH502752",
+      "passed": true,
+      "detail": "expected='K1446'; actual='K1446'"
+    },
+    {
+      "check": "operator row column count: K1468",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K1468",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K1468",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K1468",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K1468",
+      "passed": true,
+      "detail": "length=223"
+    },
+    {
+      "check": "generic operator question removed: K1468",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K1468",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K1468",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K1468",
+      "passed": true,
+      "detail": "expected='k1468--ruadhan-o-niallghusa'; actual='k1468--ruadhan-o-niallghusa'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K1468",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K1468",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K1468/CL010450",
+      "passed": true,
+      "detail": "mechanical overhaul"
+    },
+    {
+      "check": "operator question focus follows source: K1468/CL010252",
+      "passed": true,
+      "detail": "electrical maintenance"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K1468",
+      "passed": true,
+      "detail": "expected=['CL010252', 'CL010450']; actual=['CL010252', 'CL010450']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1468/CL010252",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1468/CL010252",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1468/CL010450",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1468/CL010450",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K1468",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K1468",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K1468/CL010450",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1468/CL010450",
+      "passed": true,
+      "detail": "expected='K1468'; actual='K1468'"
+    },
+    {
+      "check": "operator row citation exists: K1468/CL010252",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1468/CL010252",
+      "passed": true,
+      "detail": "expected='K1468'; actual='K1468'"
+    },
+    {
+      "check": "operator row citation exists: K1468/CL010450",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1468/CL010450",
+      "passed": true,
+      "detail": "expected='K1468'; actual='K1468'"
+    },
+    {
+      "check": "operator row citation exists: K1468/CL010252",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1468/CL010252",
+      "passed": true,
+      "detail": "expected='K1468'; actual='K1468'"
+    },
+    {
+      "check": "operator row citation exists: K1468/CL010450",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1468/CL010450",
+      "passed": true,
+      "detail": "expected='K1468'; actual='K1468'"
+    },
+    {
+      "check": "operator row citation exists: K1468/CL010252",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1468/CL010252",
+      "passed": true,
+      "detail": "expected='K1468'; actual='K1468'"
+    },
+    {
+      "check": "operator row column count: K1474",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K1474",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K1474",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K1474",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K1474",
+      "passed": true,
+      "detail": "length=222"
+    },
+    {
+      "check": "generic operator question removed: K1474",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K1474",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K1474",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K1474",
+      "passed": true,
+      "detail": "expected='k1474--ossian-mac-domhnallain'; actual='k1474--ossian-mac-domhnallain'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K1474",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K1474",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K1474/CL007218",
+      "passed": true,
+      "detail": "electrical maintenance"
+    },
+    {
+      "check": "operator question focus follows source: K1474/CL005945",
+      "passed": true,
+      "detail": "routine mechanical service"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K1474",
+      "passed": true,
+      "detail": "expected=['CL005945', 'CL007218']; actual=['CL005945', 'CL007218']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1474/CL005945",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1474/CL005945",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1474/CL007218",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1474/CL007218",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K1474",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K1474",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K1474/CL007218",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1474/CL007218",
+      "passed": true,
+      "detail": "expected='K1474'; actual='K1474'"
+    },
+    {
+      "check": "operator row citation exists: K1474/CL005945",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1474/CL005945",
+      "passed": true,
+      "detail": "expected='K1474'; actual='K1474'"
+    },
+    {
+      "check": "operator row citation exists: K1474/CL007218",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1474/CL007218",
+      "passed": true,
+      "detail": "expected='K1474'; actual='K1474'"
+    },
+    {
+      "check": "operator row citation exists: K1474/CL005945",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1474/CL005945",
+      "passed": true,
+      "detail": "expected='K1474'; actual='K1474'"
+    },
+    {
+      "check": "operator row citation exists: K1474/CL007218",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1474/CL007218",
+      "passed": true,
+      "detail": "expected='K1474'; actual='K1474'"
+    },
+    {
+      "check": "operator row citation exists: K1474/CL005945",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1474/CL005945",
+      "passed": true,
+      "detail": "expected='K1474'; actual='K1474'"
+    },
+    {
+      "check": "operator row column count: K1483",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K1483",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K1483",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K1483",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K1483",
+      "passed": true,
+      "detail": "length=239"
+    },
+    {
+      "check": "generic operator question removed: K1483",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K1483",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K1483",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K1483",
+      "passed": true,
+      "detail": "expected='k1483--eachann-o-preachain'; actual='k1483--eachann-o-preachain'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K1483",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K1483",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K1483/CL007775",
+      "passed": true,
+      "detail": "mechanical overhaul"
+    },
+    {
+      "check": "operator question focus follows source: K1483/CL000410",
+      "passed": true,
+      "detail": "control systems"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K1483",
+      "passed": true,
+      "detail": "expected=['CL000410', 'CL007775']; actual=['CL000410', 'CL007775']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1483/CL000410",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1483/CL000410",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1483/CL007775",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1483/CL007775",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K1483",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K1483",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator row citation exists: K1483/CL007775",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1483/CL007775",
+      "passed": true,
+      "detail": "expected='K1483'; actual='K1483'"
+    },
+    {
+      "check": "operator row citation exists: K1483/CL000410",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1483/CL000410",
+      "passed": true,
+      "detail": "expected='K1483'; actual='K1483'"
+    },
+    {
+      "check": "operator row citation exists: K1483/CL007775",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1483/CL007775",
+      "passed": true,
+      "detail": "expected='K1483'; actual='K1483'"
+    },
+    {
+      "check": "operator row citation exists: K1483/CL000410",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1483/CL000410",
+      "passed": true,
+      "detail": "expected='K1483'; actual='K1483'"
+    },
+    {
+      "check": "operator row citation exists: K1483/CL007775",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1483/CL007775",
+      "passed": true,
+      "detail": "expected='K1483'; actual='K1483'"
+    },
+    {
+      "check": "operator row citation exists: K1483/CL000410",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1483/CL000410",
+      "passed": true,
+      "detail": "expected='K1483'; actual='K1483'"
+    },
+    {
+      "check": "operator row citation exists: K1483/LH502827",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1483/LH502827",
+      "passed": true,
+      "detail": "expected='K1483'; actual='K1483'"
+    },
+    {
+      "check": "operator row column count: K1511",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K1511",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K1511",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K1511",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K1511",
+      "passed": true,
+      "detail": "length=123"
+    },
+    {
+      "check": "generic operator question removed: K1511",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K1511",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K1511",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K1511",
+      "passed": true,
+      "detail": "expected='k1511--jarlath-drenmore'; actual='k1511--jarlath-drenmore'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K1511",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K1511",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K1511/CL010561",
+      "passed": true,
+      "detail": "control systems"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K1511",
+      "passed": true,
+      "detail": "expected=['CL010561']; actual=['CL010561']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1511/CL010561",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1511/CL010561",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K1511",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator identity-warning count exact: K1511",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K1511/CL010561",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1511/CL010561",
+      "passed": true,
+      "detail": "expected='K1511'; actual='K1511'"
+    },
+    {
+      "check": "operator row citation exists: K1511/CL010561",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1511/CL010561",
+      "passed": true,
+      "detail": "expected='K1511'; actual='K1511'"
+    },
+    {
+      "check": "operator row citation exists: K1511/CL010561",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1511/CL010561",
+      "passed": true,
+      "detail": "expected='K1511'; actual='K1511'"
+    },
+    {
+      "check": "operator row column count: K1538",
+      "passed": true,
+      "detail": "expected=7; actual=7"
+    },
+    {
+      "check": "operator row cites core evidence: K1538",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row states exact disposition: K1538",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question cites every core record: K1538",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question is not truncated: K1538",
+      "passed": true,
+      "detail": "length=224"
+    },
+    {
+      "check": "generic operator question removed: K1538",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator profile link parses: K1538",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "exactly one detailed heading for link: K1538",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link uses rendered GitHub fragment: K1538",
+      "passed": true,
+      "detail": "expected='k1538--oileann-ni-gharbhail'; actual='k1538--oileann-ni-gharbhail'"
+    },
+    {
+      "check": "operator link resolves exactly one heading: K1538",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator link resolves correct keeper: K1538",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator question focus follows source: K1538/CL007925",
+      "passed": true,
+      "detail": "routine mechanical service"
+    },
+    {
+      "check": "operator question focus follows source: K1538/CL007686",
+      "passed": true,
+      "detail": "testing"
+    },
+    {
+      "check": "operator evidence-quality coverage exact: K1538",
+      "passed": true,
+      "detail": "expected=['CL007686', 'CL007925']; actual=['CL007686', 'CL007925']"
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1538/CL007686",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1538/CL007686",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement warning exact: K1538/CL007686",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator cited work is displayed evidence: K1538/CL007925",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator attribution status exact: K1538/CL007925",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator measurement-warning count exact: K1538",
+      "passed": true,
+      "detail": "expected=1; actual=1"
+    },
+    {
+      "check": "operator identity-warning count exact: K1538",
+      "passed": true,
+      "detail": "expected=0; actual=0"
+    },
+    {
+      "check": "operator row citation exists: K1538/CL007925",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1538/CL007925",
+      "passed": true,
+      "detail": "expected='K1538'; actual='K1538'"
+    },
+    {
+      "check": "operator row citation exists: K1538/CL007686",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1538/CL007686",
+      "passed": true,
+      "detail": "expected='K1538'; actual='K1538'"
+    },
+    {
+      "check": "operator row citation exists: K1538/CL007925",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1538/CL007925",
+      "passed": true,
+      "detail": "expected='K1538'; actual='K1538'"
+    },
+    {
+      "check": "operator row citation exists: K1538/CL007686",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1538/CL007686",
+      "passed": true,
+      "detail": "expected='K1538'; actual='K1538'"
+    },
+    {
+      "check": "operator row citation exists: K1538/CL007925",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1538/CL007925",
+      "passed": true,
+      "detail": "expected='K1538'; actual='K1538'"
+    },
+    {
+      "check": "operator row citation exists: K1538/CL007686",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "operator row citation keeper: K1538/CL007686",
+      "passed": true,
+      "detail": "expected='K1538'; actual='K1538'"
+    },
+    {
+      "check": "named operator evidence-quality cases surfaced",
+      "passed": true,
+      "detail": [
+        "K0482",
+        "K0847",
+        "K1055",
+        "K1302",
+        "K1483",
+        "K1538"
+      ]
+    },
+    {
+      "check": "K0478 operator task is concrete",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "K1200 operator task retains direct dispute",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "issuer queue affected set independently derived",
+      "passed": true,
+      "detail": "expected=['K0354', 'K0561', 'K1200', 'K1374', 'K1418', 'K1446', 'K1483']; actual=['K0354', 'K0561', 'K1200', 'K1374', 'K1418', 'K1446', 'K1483']"
+    },
+    {
+      "check": "issuer queue retains competing records: K0354/OSSC",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "issuer queue retains competing records: K0561/HVAP",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "issuer queue retains competing records: K1200/MECS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "issuer queue retains competing records: K1200/OSSC",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "issuer queue retains competing records: K1200/WAHS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "issuer queue retains competing records: K1200/SMOC",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "issuer queue retains competing records: K1200/LOSC",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "issuer queue retains competing records: K1374/HVAP",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "issuer queue retains competing records: K1374/MECS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "issuer queue retains competing records: K1418/OSSC",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "issuer queue retains competing records: K1446/SMOC",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "issuer queue retains competing records: K1483/LOSC",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "K1200 issuer disagreement concentration derived",
+      "passed": true,
+      "detail": "expected=(5, 9); actual=(5, 9)"
+    },
+    {
+      "check": "K1200 issuer concentration faithfully rendered",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "issuer queue remains neutral",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "all operator brief record IDs exist in source",
+      "passed": true,
+      "detail": []
+    },
+    {
       "check": "measurement value/unit variants share one canonical pattern",
       "passed": true,
       "detail": "expected=1; actual=1"
@@ -35412,6 +41724,31 @@
     },
     {
       "check": "K1200 display-only mercury record not counted as canonical decision pattern",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "K1200 context record has no derived categories",
+      "passed": true,
+      "detail": "expected=[]; actual=[]"
+    },
+    {
+      "check": "K1200 context record role explicit",
+      "passed": true,
+      "detail": "expected='material_context_only'; actual='material_context_only'"
+    },
+    {
+      "check": "K1200 context interpretation provenance explicit",
+      "passed": true,
+      "detail": "expected='reviewed_display_context'; actual='reviewed_display_context'"
+    },
+    {
+      "check": "K1200 context record excluded from core support",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "K1200 context record supplies no category claim",
       "passed": true,
       "detail": ""
     },
@@ -37282,6 +43619,21 @@
     },
     {
       "check": "alternate boundary documented",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "alternate operator brief exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "alternate K1200 case excludes later contradiction",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "alternate certification case follows cutoff",
       "passed": true,
       "detail": ""
     }

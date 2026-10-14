@@ -4,7 +4,7 @@
 
 Scenario date: **2026-10-11**  
 Subset: **40 profiles — 38 current keepers and 2 leavers outside the redeployment cohort**  
-Results: **36 supported technical interview, 2 targeted screening first, 0 insufficient evidence; 2 outside the current cohort**
+Results: **37 supported technical interview, 1 targeted screening first, 0 insufficient evidence; 2 outside the current cohort**
 
 Interview potential is deliberately separate from application eligibility and mobilisation readiness. No person is marked mobilisation-ready because medical fitness and direct acceptance of height/boat/enclosed-space conditions are not supplied.
 
@@ -22,7 +22,7 @@ Requirement provenance: the O&M posting requires hands-on mechanical **or** elec
 | K0354 / Quillan O Fuarain | `supported_technical_interview` | CL007773, CL005691, AP000743 | Adverse testimony retained for interview: AP000752, AP000753 | Structured technical interview |
 | K0371 / Cianan Mac Lanngail | `supported_technical_interview` | CL010343, CL006460, AP000797 | Adverse testimony retained for interview: AP000798, AP000799 | Structured technical interview |
 | K0394 / Lugharn O Neascan | `supported_technical_interview` | CL009886, CL009816, AP000862 | Year-only 2026 appraisal timing is uncertain | Structured technical interview |
-| K0478 / Ossian O Raghnaill | `targeted_screening_first` | CL010541, CL010398, AP001157 | Material core contradiction: AP001159, AP001160, AP001162, AP001165 | Targeted evidence screen |
+| K0478 / Ossian O Raghnaill | `supported_technical_interview` | CL010541, CL010398, AP001157 | Work-quality and checking questions retained for interview: AP001159, AP001160, AP001161, AP001162, AP001165, AP001167 | Structured technical interview |
 | K0482 / Tadhgan Mac Deargain | `supported_technical_interview` | CL010082, CL009526, AP001186 | Competence and mobilisation remain unestablished | Structured technical interview |
 | K0525 / Hugheen Mordaunley | `supported_technical_interview` | CL010216, CL007269, AP001349 | Adverse testimony retained for interview: AP001352, AP001353 | Structured technical interview |
 | K0561 / Muirgheal Holmthwaite | `supported_technical_interview` | CL008741, CL008494, AP001428 | Adverse testimony retained for interview: AP001433 | Structured technical interview |
@@ -110,7 +110,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL010280, CL009116 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL010280: Traced the nuisance low-volt alarm to a soft cell in the no 1 bank, replaced it. / CL009116: Changed oil and filters on no.3.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -175,7 +175,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL010442, CL010068 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL010442: Set the timing on No.2 after the pump was refitted, ran it up and checked exhaust temps. / CL010068: Lamp not lit, found the fuse gone. Renewed.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -245,7 +245,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL010515, CL010397 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL010515: Rebuilt the clockwork drive, cleaned forty years of gum out of the train. / CL010397: Tightened glands in the cable trunk by the stair.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -319,7 +319,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL009744, CL008870 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL009744: Rebuilt the clockwork drive, cleaned forty years of gum out of the train. / CL008870: Drive motor brushes and commutator dressed, rotation back to time.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -333,7 +333,7 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K0310 — Gearalt O hEidhneain
 
-- Interview: `supported_technical_interview` — CL005658 (2011-04-09) records "Rewired the changeover contactor arrangement, tested on both feeds and left in auto."; CL005313 (2010-05-02) records "Changed oil and filters on no 2.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL005658 (2011-04-09) records "Rewired the changeover contactor arrangement, tested on both feeds and left in auto."; CL005313 (2010-05-02) records "Changed oil and filters on no 2.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Positive station-note testimony in raw/appraisals/station_manager_notes/1993-cnoclia-o-heidhneain.txt#L2 is retained as an interview lead, not proof of current or historical authorisation. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL005658, CL005313
@@ -382,7 +382,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL005658, CL005313 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL005658: Rewired the changeover contactor arrangement, tested on both feeds and left in auto. / CL005313: Changed oil and filters on no 2.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -446,7 +446,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL007773, CL004792 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL007773: Tightened glands in the cable trunk by the stair. / CL004792: Ran No.2 set 0.5 hrs. Oil and water checked.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -484,7 +484,7 @@ Evidence:
 
 - 2025-12-15 — “Checked continuity on the run to the fog hut.” (CL010343; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#52159`; clean/manual attribution corroborated by raw payroll value 0011092 normalized to 11092, matching clean payroll 0011092).
 - 2013-05-20 — “Megger test on the no 2 feeder, 3.6 bar, condemned the cable and ran a temporary.” (CL006460; `raw/logbooks/era2-keeperlog/KLOG2013.DAT#004959`; clean/manual attribution corroborated by raw keeper_code K0371).
-  - Measurement warning `inconsistent_measurement_unit`: The quoted Megger reading uses a pressure unit, so the activity is retained but the numerical measurement is unreliable. Observed: `3.6 bar`.
+  - Measurement warning `inconsistent_measurement_unit`: The quoted Megger result uses a pressure unit rather than an insulation-resistance unit, so the activity is retained but the numerical measurement is unreliable. Observed: `3.6 bar`.
 - 2025-05-24 — “Changed oil and filters on no.3.” (CL010201; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#44788`; clean/manual attribution corroborated by raw payroll value 0011092 normalized to 11092, matching clean payroll 0011092).
 - 2013-06-07 — “Gearbox stripped on the winch, 4 teeth found broken. Replaced the wheel.” (CL006471; `raw/logbooks/era2-keeperlog/KLOG2013.DAT#005498`; clean/manual attribution corroborated by raw keeper_code K0371).
 - 2001-08-22 — “Load tested the winch and the landing gear to the annual figure and certified the log.” (CL002538; `raw/logbooks/era1-ocr/ornabaig-2001.txt#L304`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
@@ -514,7 +514,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL010343, CL010201 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL010343: Checked continuity on the run to the fog hut. / CL010201: Changed oil and filters on no.3.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -581,7 +581,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL009886, CL009816 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL009886: Renewed fuse links, no.3 way. All made off. / CL009816: Bled the fuel system after the filter change.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -591,6 +591,77 @@ Later qualification and mobilisation actions (only after selection progression):
 - Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
 - After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: the supplied Pass is expired (LH500539); ask the issuer which renewal, assessment or training route applies. The posting says the employer funds renewals, but it does not define the route or promise first-time training funding. OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
 - After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: Attended in LH500537 is not a Pass; establish the required passed assessment if progression is approved (first-time funding is not promised).
+- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
+
+## K0478 — Ossian O Raghnaill
+
+- Interview: `supported_technical_interview` — CL010541 (2026-09-20) records "Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.". This is specific, attributed evidence of hands-on electrical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Adverse testimony in AP001159, AP001160, AP001161, AP001162, AP001165 is retained with positive testimony in AP001157, AP001159, AP001161, AP001165, AP001166, AP001167; it supplies interview questions but does not erase the attributed activity or automatically bar an interview. Positive station-note testimony in raw/appraisals/station_manager_notes/2017-raheenvarra-o-raghnaill.txt#L2 is retained as an interview lead, not proof of current or historical authorisation. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding. Reviewed interview focus (AP001159, AP001160, AP001161, AP001162, AP001165, AP001167): The corroborated electrical records establish activity, while the appraisals retain mixed evidence about work quality, checking and consistency. Those concerns require concrete technical and safety questions, not denial of an interview.
+- Application eligibility: `plausible_but_essential_evidence_incomplete`
+- Mobilisation readiness: `not_established`
+- Core work records used for interview policy: CL010541
+- Selected positive testimony: AP001157, AP001159, AP001161, AP001165, AP001166, AP001167
+- Selected adverse testimony: AP001159, AP001160, AP001161, AP001162, AP001165
+- Relevant evidence categories: electrical, fault_finding, permit_or_isolation
+- Full clean log review: 192 rows; 6 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
+- Appraisal processing: 8 exact keeper-code-keyed rows mechanically processed; 0 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
+
+Unresolved questions retained for selection:
+
+- At technical interview, ask Ossian to walk through CL010541, CL010398: his personal responsibility, isolation and proving-dead steps, fault diagnosis, independent checks, and how he verified the outcome. Ask how the 2024 switchgear deficiency in AP001165 was addressed. Treat AP001167 as time-uncertain context and do not infer current HV authorisation.
+- Appraisals AP001167 have year-only 2026 dates, so their position relative to 2026-10-11 is unknown and they remain context only.
+
+Category support:
+
+- `electrical` — 2026-09-20 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL010541; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62613`).
+- `fault_finding` — 2026-09-20 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL010541; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62613`).
+- `permit_or_isolation` — 2026-03-11 — “Isolated NO.2 transformer, earths applied both ends, permit 1102 issued to the contractor.” (CL010398; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#55458`).
+
+Evidence:
+
+- 2026-09-20 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL010541; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62613`; clean/manual attribution corroborated by raw payroll value 0011722 normalized to 11722, matching clean payroll 0011722).
+- 2026-03-11 — “Isolated NO.2 transformer, earths applied both ends, permit 1102 issued to the contractor.” (CL010398; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#55458`; clean/manual attribution corroborated by raw payroll value 0011722 normalized to 11722, matching clean payroll 0011722).
+- 2026-06-23 — “Rewired the changeover contactor arrangement, tested on both feeds and left in auto.” (CL010466; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#59328`; clean/manual attribution corroborated by raw payroll value 0011722 normalized to 11722, matching clean payroll 0011722).
+- 2022-12-08 — “Tightened glands in the cable trunk by the stair.” (CL009483; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#12500`; clean/manual attribution corroborated by raw payroll value 0011722 normalized to 11722, matching clean payroll 0011722).
+- 2022-01-13 — “Renewed fuse links, no.1 way. All made off.” (CL009227; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#483`; clean/manual attribution corroborated by raw payroll value 1.1722E+04 normalized to 11722, matching clean payroll 0011722).
+
+Manager testimony selected as screening context:
+
+- 2014 (year precision) — On Ossian this year: When switching work went wrong in the spring, Ossian was the one who sorted it out. (AP001157; `raw/appraisals/appraisals.jsonl#AP001157`; support: resolved_failure). Manager testimony only, not competence or authorisation.
+- 2017 (year precision) — Attention is drawn to a recurring shortfall in switching work. / Over the year Ossian has quietly become the station's go-to for isolations on the 11kV. (AP001159; `raw/appraisals/appraisals.jsonl#AP001159`; support: go_to_person; concern: recurring_shortfall). Manager testimony only, not competence or authorisation.
+- 2018 (year precision) — The standard achieved in the distribution side falls below that expected of the grade. (AP001160; `raw/appraisals/appraisals.jsonl#AP001160`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
+- 2020 (year precision) — An improvement objective relating to the high voltage side has been set for the coming year. / The standard achieved in the distribution side is considered acceptable for the grade. / Attended the district course in the distribution side, though I am told the paperwork never came back. (AP001161; `raw/appraisals/appraisals.jsonl#AP001161`; support: acceptable_for_grade; concern: technical_improvement_objective; decision-neutral context: technical_course_with_document_gap, technical_objective). Manager testimony only, not competence or authorisation.
+- 2021 (year precision) — The thing I would put on record about Ossian is the lantern glass. / the distribution side has to be checked behind him. (AP001162; `raw/appraisals/appraisals.jsonl#AP001162`; concern: work_checked_behind; decision-neutral context: recorded_technical_observation). Manager testimony only, not competence or authorisation.
+- 2024 (year precision) — Ó Raghnaill continues to apply themselves appropriately to fault work. / Some deficiency has been noted in respect of switchgear work, which the keeper has been advised to address. (AP001165; `raw/appraisals/appraisals.jsonl#AP001165`; support: positive_application; concern: specific_deficiency). Manager testimony only, not competence or authorisation.
+- 2025 (year precision) — Good humoured, hard working, and genuinely capable at the lantern glass. (AP001166; `raw/appraisals/appraisals.jsonl#AP001166`; support: explicit_capability). Manager testimony only, not competence or authorisation.
+- 2026 (year precision) — Good humoured, hard working, and genuinely capable at the boards. (AP001167; `raw/appraisals/appraisals.jsonl#AP001167`; support: explicit_capability). Manager testimony only, not competence or authorisation.
+
+- Same-year timing uncertainty: AP001167 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
+
+- Supplementary note: A 2017 Raheenvarra manager note says the manager watched Ossian perform 11 kV isolations and describes the work as textbook. Exact excerpt: “Watched Ossian do isolations on the 11kV today. Textbook, except there is no textbook for it here.” (`raw/appraisals/station_manager_notes/2017-raheenvarra-o-raghnaill.txt#L2`). The note body supplies the given name; the note's station/year context matches RAH:2016-2017 in the personnel row raw/personnel/cla_personnel_export.csv#L91, whose name is O RAGHNAILL O. The clean profile supplies the expanded name Ossian Ó Raghnaill. Attribution uses those combined facts and not the filename alone. Positive manager testimony only. It does not prove current or historical authorisation and does not establish that later switching or switchgear concerns were resolved.
+
+Limitations:
+
+- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
+- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
+
+Credential position:
+
+- No currently dated relevant LearnHub Pass was established at the cutoff.
+- HVAP-01: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500718`).
+- HVAP-02: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500719`).
+
+Initial selection action:
+
+- At technical interview, ask Ossian to walk through CL010541, CL010398: his personal responsibility, isolation and proving-dead steps, fault diagnosis, independent checks, and how he verified the outcome. Ask how the 2024 switchgear deficiency in AP001165 was addressed. Treat AP001167 as time-uncertain context and do not infer current HV authorisation.
+
+Later qualification and mobilisation actions (only after selection progression):
+
+- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
+- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
+- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
+- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
+- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
+- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
 - Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
 
 ## K0482 — Tadhgan Mac Deargain
@@ -613,6 +684,7 @@ Category support:
 Evidence:
 
 - 2024-12-16 — “Megger test on the NO.2 feeder, 11.2 V, condemned the cable and ran a temporary.” (CL010082; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38994`; clean/manual attribution corroborated by raw payroll value 0011979 normalized to 11979, matching clean payroll 0011979).
+  - Measurement warning `inconsistent_measurement_unit`: The quoted Megger result uses a electrical-potential unit rather than an insulation-resistance unit, so the activity is retained but the numerical measurement is unreliable. Observed: `11.2 V`.
 - 2023-02-15 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL009526; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#15028`; clean/manual attribution corroborated by raw payroll value 0011979 normalized to 11979, matching clean payroll 0011979).
 - 1994-04-11 — “Checked continuity on the run to the fog hut.” (CL000839; `raw/logbooks/era1-ocr/barravane-1994.txt#L152`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
 - 2024-07-22 — “AVR on NO.2 replaced and the volts set to 24.6 V, load-shared with No.2 properly after.” (CL009967; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#33917`; clean/manual attribution corroborated by raw payroll value 0011979 normalized to 11979, matching clean payroll 0011979).
@@ -636,7 +708,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL010082 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL010082: Megger test on the NO.2 feeder, 11.2 V, condemned the cable and ran a temporary.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -701,7 +773,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL010216, CL006644 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL010216: Checked continuity on the run to the fog hut. / CL006644: Bled the fuel system after the filter change.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -766,7 +838,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL008741, CL007052 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL008741: Mechanical seal gone on the fire pump, fitted new and re-aligned the coupling. / CL007052: Found the receiver desensitised by the charger, fitted suppression and the noise went.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -823,7 +895,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL010043, CL006319 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL010043: Isolated no 1 transformer, earths applied both ends, PTW 46 issued to the contractor. / CL006319: Filter changed on the power pack.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -878,7 +950,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL006901 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL006901: Lamp not lit, found the fuse gone. Renewed.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -952,7 +1024,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL008681, CL008008 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL008681: Changed oil and filters on no 2. / CL008008: Renewed fuse links, no 1 way. All made off.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -1019,7 +1091,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL008207, CL008184 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL008207: Traced and lifted an earth fault on the tower lighting ring, split the ring to find it. / CL008184: Drive motor brushes and commutator dressed, rotation back to time.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -1078,7 +1150,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL009753 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL009753: Renewed fuse links, no.1 way. All made off.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -1141,7 +1213,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL010452, CL009955 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL010452: Lamp not lit, found the fuse gone. Renewed. / CL009955: Rebuilt the clockwork drive, cleaned forty years of gum out of the train.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -1210,7 +1282,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL010471, CL010451 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL010471: Lamp changer stepping twice, dismantled the ratchet and dressed the pawl faces. / CL010451: Drive motor brushes and commutator dressed, rotation back to time.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -1273,7 +1345,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL009911, CL009694 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL009911: Checked continuity on the run to the fog hut. / CL009694: Ran no.3 set 2 hrs. Oil and water checked.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -1338,7 +1410,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL009476, CL008376 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL009476: Traced the nuisance low-volt alarm to a soft cell in the no.1 bank, replaced it. / CL008376: Compressor not making pressure, rings worn. Rebuilt the no 2 cylinder.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -1352,7 +1424,7 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K0847 — Aoife Ni Mhurchu
 
-- Interview: `supported_technical_interview` — CL008299 (2018-11-18) records "AVR on no.1 replaced and the volts set to 0.8 ohm, load-shared with No.1 properly after."; CL007737 (2017-03-19) records "Set the timing on No.1 after the pump was refitted, ran it up and checked exhaust temps.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Positive testimony in AP002307, AP002309 is an interview lead, not proof of competence. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
+- Interview: `supported_technical_interview` — CL008299 (2018-11-18) records "AVR on no.1 replaced and the volts set to 0.8 ohm, load-shared with No.1 properly after."; CL007737 (2017-03-19) records "Set the timing on No.1 after the pump was refitted, ran it up and checked exhaust temps.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. Positive testimony in AP002307, AP002309 is an interview lead, not proof of competence. Positive station-note testimony in raw/appraisals/station_manager_notes/2003-portnalee-ni-mhurchu.txt#L2 is retained as an interview lead, not proof of current or historical authorisation. A structured technical interview is supported; this is not a competence, eligibility, authorisation or mobilisation finding.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
 - Core work records used for interview policy: CL008299, CL007737
@@ -1375,7 +1447,7 @@ Category support:
 Evidence:
 
 - 2017-01-22 — “Megger test on the NO.2 feeder, 48 psi, condemned the cable and ran a temporary.” (CL007701; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#34379`; clean/manual attribution; raw name Aoife Ni Murchu conflicts with clean Aoife Ní Mhurchú and does not corroborate the person assignment).
-  - Measurement warning `inconsistent_measurement_unit`: The quoted Megger reading uses a pressure unit, so the activity is retained but the numerical measurement is unreliable. Observed: `48 psi`.
+  - Measurement warning `inconsistent_measurement_unit`: The quoted Megger result uses a pressure unit rather than an insulation-resistance unit, so the activity is retained but the numerical measurement is unreliable. Observed: `48 psi`.
 - 1999-01-22 — “Checked continuity on the run to the fog hut.” (CL001792; `raw/logbooks/era1-ocr/glasnavaig-1999.txt#L50`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
 - 1994-11-24 — “Traced the nuisance low-volt alarm to a soft cell in the No.2 bank, replaced it.” (CL000916; `raw/logbooks/era1-ocr/dunsaille-1994.txt#L620`; clean/manual attribution; the cited raw format has no person identifier, so identity is not independently corroborated).
 - 2018-11-18 — “AVR on no.1 replaced and the volts set to 0.8 ohm, load-shared with No.1 properly after.” (CL008299; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#11591`; clean/manual attribution corroborated by raw payroll value 0012263 normalized to 12263, matching clean payroll 0012263).
@@ -1405,7 +1477,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL008299, CL007737 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL008299: AVR on no.1 replaced and the volts set to 0.8 ohm, load-shared with No.1 properly after. / CL007737: Set the timing on No.1 after the pump was refitted, ran it up and checked exhaust temps.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -1468,7 +1540,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL009512, CL008539 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL009512: Megger test on the No.2 feeder, 2.4 ohm, condemned the cable and ran a temporary. / CL008539: Changed oil and filters on no 1.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -1522,7 +1594,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL003053, CL001961 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL003053: Compressor not making pressure, rings worn. Rebuilt the no.1 cylinder. / CL001961: Cleaned the contacts in the changeover relay.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -1563,6 +1635,7 @@ Evidence:
 - 2025-02-26 — “Checked continuity on the run to the fog hut.” (CL010135; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#41590`; clean/manual attribution corroborated by raw payroll value 0012406 normalized to 12406, matching clean payroll 0012406).
 - 2024-02-22 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL009834; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#28644`; clean/manual attribution corroborated by raw payroll value 12406 normalized to 12406, matching clean payroll 0012406).
 - 2016-11-03 — “Megger test on the No.2 feeder, 11.2 V, condemned the cable and ran a temporary.” (CL007632; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#31397`; clean/manual attribution corroborated by raw name Joachima Ulverstane).
+  - Measurement warning `inconsistent_measurement_unit`: The quoted Megger result uses a electrical-potential unit rather than an insulation-resistance unit, so the activity is retained but the numerical measurement is unreliable. Observed: `11.2 V`.
 - 2025-11-15 — “Rewired the changeover contactor arrangement, tested on both feeds and left in auto.” (CL010320; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#51050`; clean/manual attribution corroborated by raw payroll value 0012406 normalized to 12406, matching clean payroll 0012406).
 - 2019-09-21 — “Ran no.2 set 4 hrs. Oil and water checked.” (CL008529; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#22910`; clean/manual attribution corroborated by raw payroll value 0012406 normalized to 12406, matching clean payroll 0012406).
 
@@ -1590,7 +1663,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL010320, CL008529 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL010320: Rewired the changeover contactor arrangement, tested on both feeds and left in auto. / CL008529: Ran no.2 set 4 hrs. Oil and water checked.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -1645,7 +1718,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL008233 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL008233: Protection relay settings checked against the schedule and two were found wrong.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -1705,7 +1778,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL004774, CL002551 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL004774: AVR on no.2 replaced and the volts set to 0.8 ohm, load-shared with no.1 properly after. / CL002551: Changed oil and filters on No.1.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -1777,7 +1850,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL008356, CL007631 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL008356: Tightened glands in the cable trunk by the stair. / CL007631: Ran NO.2 set 6 hrs. Oil and water checked.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -1843,7 +1916,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL009245, CL008995 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL009245: Filter changed on the power pack. / CL008995: Renewed fuse links, no.3 way. All made off.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -1918,7 +1991,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL010559, CL009203 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL010559: Battery checked on the beacon. / CL009203: Changed oil and filters on no.2.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -1984,7 +2057,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL004517, CL003898 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL004517: Changed the battery in the portable set. / CL003898: Ran No.2 set 8 hrs. Oil and water checked.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -2058,7 +2131,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL010352, CL010071 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL010352: Traced the nuisance low-volt alarm to a soft cell in the NO.2 bank, replaced it. / CL010071: Bled the fuel system after the filter change.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -2119,7 +2192,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL010450, CL010252 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL010450: Set the timing on NO.2 after the pump was refitted, ran it up and checked exhaust temps. / CL010252: Lamp not lit, found the fuse gone. Renewed.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -2184,7 +2257,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL007218, CL005945 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL007218: Renewed fuse links, no 2 way. All made off. / CL005945: Filter changed on the power pack.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -2243,7 +2316,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL007775, CL000410 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL007775: Compressor not making pressure, rings worn. Rebuilt the No.1 cylinder. / CL000410: Changed the battery in the portable set.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -2281,6 +2354,7 @@ Category support:
 Evidence:
 
 - 2026-09-07 — “Megger test on the NO.2 feeder, 232 V, condemned the cable and ran a temporary.” (CL010534; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62098`; clean/manual attribution corroborated by raw payroll value 0012846 normalized to 12846, matching clean payroll 0012846).
+  - Measurement warning `inconsistent_measurement_unit`: The quoted Megger result uses a electrical-potential unit rather than an insulation-resistance unit, so the activity is retained but the numerical measurement is unreliable. Observed: `232 V`.
 - 2022-02-06 — “Checked continuity on the run to the fog hut.” (CL009253; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#1352`; clean/manual attribution; raw payroll_reference 948406 conflicts with clean 0012846 and does not corroborate the person assignment).
 - 2019-01-25 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL008338; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#14146`; clean/manual attribution corroborated by raw payroll value 0012846 normalized to 12846, matching clean payroll 0012846).
 - 2026-10-10 — “Rewired the changeover contactor arrangement, tested on both feeds and left in auto.” (CL010561; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#63354`; clean/manual attribution corroborated by raw payroll value 12846 normalized to 12846, matching clean payroll 0012846).
@@ -2312,7 +2386,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL010561 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
+- Invite to a structured technical interview using CL010561: Rewired the changeover contactor arrangement, tested on both feeds and left in auto.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -2350,7 +2424,7 @@ Category support:
 Evidence:
 
 - 2017-01-11 — “Megger test on the No.1 feeder, 3.6 bar, condemned the cable and ran a temporary.” (CL007686; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#33937`; clean/manual attribution corroborated by raw name Oileann Ni Gharbhail).
-  - Measurement warning `inconsistent_measurement_unit`: The quoted Megger reading uses a pressure unit, so the activity is retained but the numerical measurement is unreliable. Observed: `3.6 bar`.
+  - Measurement warning `inconsistent_measurement_unit`: The quoted Megger result uses a pressure unit rather than an insulation-resistance unit, so the activity is retained but the numerical measurement is unreliable. Observed: `3.6 bar`.
 - 2016-02-20 — “Isolated NO.2 transformer, earths applied both ends, permit 0412 issued to the contractor.” (CL007420; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#22259`; clean/manual attribution corroborated by raw name Oileann Ni Gharbhail).
 - 2014-04-10 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL006753; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#1921`; clean/manual attribution corroborated by raw name Oileann Ni Gharbhail).
 - 2006-02-21 — “Checked continuity on the run to the fog hut.” (CL003887; `raw/logbooks/era2-keeperlog/KLOG2006.DAT#001876`; clean/manual attribution corroborated by raw keeper_code K1538).
@@ -2383,80 +2457,7 @@ Credential position:
 
 Initial selection action:
 
-- Invite to a structured technical interview using CL007925, CL007686 and the listed appraisal questions; establish personal responsibility, safe method, diagnosis and verified outcome.
-
-Later qualification and mobilisation actions (only after selection progression):
-
-- Only if the initial selection outcome supports progression, begin qualification and mobilisation checks; this ordering is not a statement that the person is already eligible.
-- First, verify original certificates and resolve any listed source or prerequisite conflicts with the issuer.
-- Confirm directly that the person accepts repeated 80 m tower work, enclosed spaces, vessel transfer and the 14-on/14-off pattern before arranging courses.
-- Obtain a current offshore medical fitness declaration before OSSC training or mobilisation.
-- After medical clearance, use the following as a provisional record check for sea survival, fire and first aid; confirm the employer's accepted offshore-safety package. OSSC-SS: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FF: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised). OSSC-FA: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- After OSSC-SS is issuer-verified current, use WAHS-1 only as a provisional height-safety mapping. Confirm whether the employer requires WAHS-2 climbing, WAHS-4 rescue, or other coverage before mobilisation. WAHS-1: no matched dated Pass is established; first verify any existing certificate with the issuer. Only if current required coverage remains unestablished should training and assessment be arranged if progression is approved (first-time funding is not promised).
-- Finally, as a recommended employer verification rather than an express O&M-posting requirement, consider permit, isolation and practical checks proportionate to the duties. The separate HV Authorised Person appointment has its own mandatory interview, certificate, experience and familiarisation rules.
-
-## K0478 — Ossian O Raghnaill
-
-- Interview: `targeted_screening_first` — CL010541 (2026-09-20) records "Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.". This is specific, attributed evidence of hands-on electrical maintenance with transferable relevance to the O&M posting's plant-maintenance work. However, material contradiction in AP001159, AP001160, AP001162, AP001165: Attributed electrical and isolation logs sit alongside repeated, directly conflicting testimony about switching, distribution and switchgear work, including both 'go-to' and shortfall/checking claims. The records establish activity but leave its responsibility and quality materially unresolved. Positive station-note testimony in raw/appraisals/station_manager_notes/2017-raheenvarra-o-raghnaill.txt#L2 is also retained, but it does not prove authorisation or silently resolve later concerns. Clarification is needed before a technical interview; neither source is silently preferred.
-- Application eligibility: `plausible_but_essential_evidence_incomplete`
-- Mobilisation readiness: `not_established`
-- Core work records used for interview policy: CL010541
-- Selected positive testimony: AP001157, AP001159, AP001161, AP001165, AP001166, AP001167
-- Selected adverse testimony: AP001159, AP001160, AP001161, AP001162, AP001165
-- Relevant evidence categories: electrical, fault_finding, permit_or_isolation
-- Full clean log review: 192 rows; 6 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
-- Appraisal processing: 8 exact keeper-code-keyed rows mechanically processed; 0 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
-
-- Material unresolved core issue: Attributed electrical and isolation logs sit alongside repeated, directly conflicting testimony about switching, distribution and switchgear work, including both 'go-to' and shortfall/checking claims. The records establish activity but leave its responsibility and quality materially unresolved.
-
-Unresolved questions retained for selection:
-
-- Before a technical interview, clarify what switching and distribution work Ossian personally performed, what checking was required, and whether the 2024 switchgear deficiency was resolved. Preserve the 2026 praise as time-uncertain context rather than treating it as a resolution.
-- Appraisals AP001167 have year-only 2026 dates, so their position relative to 2026-10-11 is unknown and they remain context only.
-
-Category support:
-
-- `electrical` — 2026-09-20 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL010541; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62613`).
-- `fault_finding` — 2026-09-20 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL010541; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62613`).
-- `permit_or_isolation` — 2026-03-11 — “Isolated NO.2 transformer, earths applied both ends, permit 1102 issued to the contractor.” (CL010398; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#55458`).
-
-Evidence:
-
-- 2026-09-20 — “Traced and lifted an earth fault on the tower lighting ring, split the ring to find it.” (CL010541; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62613`; clean/manual attribution corroborated by raw payroll value 0011722 normalized to 11722, matching clean payroll 0011722).
-- 2026-03-11 — “Isolated NO.2 transformer, earths applied both ends, permit 1102 issued to the contractor.” (CL010398; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#55458`; clean/manual attribution corroborated by raw payroll value 0011722 normalized to 11722, matching clean payroll 0011722).
-- 2026-06-23 — “Rewired the changeover contactor arrangement, tested on both feeds and left in auto.” (CL010466; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#59328`; clean/manual attribution corroborated by raw payroll value 0011722 normalized to 11722, matching clean payroll 0011722).
-- 2022-12-08 — “Tightened glands in the cable trunk by the stair.” (CL009483; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#12500`; clean/manual attribution corroborated by raw payroll value 0011722 normalized to 11722, matching clean payroll 0011722).
-- 2022-01-13 — “Renewed fuse links, no.1 way. All made off.” (CL009227; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#483`; clean/manual attribution corroborated by raw payroll value 1.1722E+04 normalized to 11722, matching clean payroll 0011722).
-
-Manager testimony selected as screening context:
-
-- 2014 (year precision) — On Ossian this year: When switching work went wrong in the spring, Ossian was the one who sorted it out. (AP001157; `raw/appraisals/appraisals.jsonl#AP001157`; support: resolved_failure). Manager testimony only, not competence or authorisation.
-- 2017 (year precision) — Attention is drawn to a recurring shortfall in switching work. / Over the year Ossian has quietly become the station's go-to for isolations on the 11kV. (AP001159; `raw/appraisals/appraisals.jsonl#AP001159`; support: go_to_person; concern: recurring_shortfall). Manager testimony only, not competence or authorisation.
-- 2018 (year precision) — The standard achieved in the distribution side falls below that expected of the grade. (AP001160; `raw/appraisals/appraisals.jsonl#AP001160`; concern: below_expected_standard). Manager testimony only, not competence or authorisation.
-- 2020 (year precision) — An improvement objective relating to the high voltage side has been set for the coming year. / The standard achieved in the distribution side is considered acceptable for the grade. / Attended the district course in the distribution side, though I am told the paperwork never came back. (AP001161; `raw/appraisals/appraisals.jsonl#AP001161`; support: acceptable_for_grade; concern: technical_improvement_objective; decision-neutral context: technical_course_with_document_gap, technical_objective). Manager testimony only, not competence or authorisation.
-- 2021 (year precision) — The thing I would put on record about Ossian is the lantern glass. / the distribution side has to be checked behind him. (AP001162; `raw/appraisals/appraisals.jsonl#AP001162`; concern: work_checked_behind; decision-neutral context: recorded_technical_observation). Manager testimony only, not competence or authorisation.
-- 2024 (year precision) — Ó Raghnaill continues to apply themselves appropriately to fault work. / Some deficiency has been noted in respect of switchgear work, which the keeper has been advised to address. (AP001165; `raw/appraisals/appraisals.jsonl#AP001165`; support: positive_application; concern: specific_deficiency). Manager testimony only, not competence or authorisation.
-- 2025 (year precision) — Good humoured, hard working, and genuinely capable at the lantern glass. (AP001166; `raw/appraisals/appraisals.jsonl#AP001166`; support: explicit_capability). Manager testimony only, not competence or authorisation.
-- 2026 (year precision) — Good humoured, hard working, and genuinely capable at the boards. (AP001167; `raw/appraisals/appraisals.jsonl#AP001167`; support: explicit_capability). Manager testimony only, not competence or authorisation.
-
-- Same-year timing uncertainty: AP001167 are dated only to 2026, so they are context-only and do not establish a fact before 2026-10-11.
-
-- Supplementary note: A 2017 Raheenvarra manager note says the manager watched Ossian perform 11 kV isolations and describes the work as textbook. Exact excerpt: “Watched Ossian do isolations on the 11kV today. Textbook, except there is no textbook for it here.” (`raw/appraisals/station_manager_notes/2017-raheenvarra-o-raghnaill.txt#L2`). The note body supplies the given name; the note's station/year context matches RAH:2016-2017 in the personnel row raw/personnel/cla_personnel_export.csv#L91, whose name is O RAGHNAILL O. The clean profile supplies the expanded name Ossian Ó Raghnaill. Attribution uses those combined facts and not the filename alone. Positive manager testimony only. It does not prove current or historical authorisation and does not establish that later switching or switchgear concerns were resolved.
-
-Limitations:
-
-- `competence_not_inferred`: Examples support interview potential only; tags, grades, hours and occurrence counts were not treated as proof of competence.
-- `medical_not_supplied`: No current offshore medical evidence is present in the bounded sources.
-
-Credential position:
-
-- No currently dated relevant LearnHub Pass was established at the cutoff.
-- HVAP-01: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500718`).
-- HVAP-02: Pass; `pass_expired` (`raw/training/vendor-c-learnhub-2017-2026.json#LH500719`).
-
-Initial selection action:
-
-- Before a technical interview, clarify what switching and distribution work Ossian personally performed, what checking was required, and whether the 2024 switchgear deficiency was resolved. Preserve the 2026 praise as time-uncertain context rather than treating it as a resolution.
+- Invite to a structured technical interview using CL007925: Changed oil and filters on no 2. / CL007686: Megger test on the No.1 feeder, 3.6 bar, condemned the cable and ran a temporary.. Ask what the keeper personally did, the safe method used, how the fault or maintenance need was established, and how the outcome was verified.
 
 Later qualification and mobilisation actions (only after selection progression):
 
@@ -2470,17 +2471,17 @@ Later qualification and mobilisation actions (only after selection progression):
 
 ## K1200 — Tomaltach Yarrowfell
 
-- Interview: `targeted_screening_first` — CL009921 (2024-05-24) records "Stripped and cleaned the mercury bath, float centred and the rotation smoothed out."; CL005994 (2012-02-13) records "Drive motor brushes and commutator dressed, rotation back to time.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. However, material contradiction in AP003496: Four attributed hands-on records, including motor-brush and commutator maintenance, conflict with AP003496's direct statement that the manager had not observed the plant work suggested by the record and that two requests for assistance were avoided. Clarification is needed before a technical interview; neither source is silently preferred.
+- Interview: `targeted_screening_first` — CL009097 (2021-08-23) records "Rebuilt the clockwork drive, cleaned forty years of gum out of the train."; CL005994 (2012-02-13) records "Drive motor brushes and commutator dressed, rotation back to time.". This is specific, attributed evidence of hands-on electrical and mechanical maintenance with transferable relevance to the O&M posting's plant-maintenance work. However, material contradiction in AP003496: Attributed motor-brush, commutator and optic-mechanism records conflict with AP003496's direct statement that the manager had not observed the plant work suggested by the record and that two requests for assistance were avoided. Clarification is needed before a technical interview; neither source is silently preferred.
 - Application eligibility: `plausible_but_essential_evidence_incomplete`
 - Mobilisation readiness: `not_established`
-- Core work records used for interview policy: CL009921, CL005994
+- Core work records used for interview policy: CL009097, CL005994
 - Selected positive testimony: AP003484, AP003485, AP003489, AP003490, AP003493, AP003494, AP003495, AP003497
 - Selected adverse testimony: AP003496, AP003497
 - Relevant evidence categories: electrical, mechanical
 - Full clean log review: 332 rows; 3 distinct relevant patterns after template collapse (descriptive only; not an interview threshold).
 - Appraisal processing: 13 exact keeper-code-keyed rows mechanically processed; 4 rows not selected by the appraisal filter. Bounded manual review covered technical-topic candidates and named omissions, not every sentence semantically.
 
-- Material unresolved core issue: Four attributed hands-on records, including motor-brush and commutator maintenance, conflict with AP003496's direct statement that the manager had not observed the plant work suggested by the record and that two requests for assistance were avoided.
+- Material unresolved core issue: Attributed motor-brush, commutator and optic-mechanism records conflict with AP003496's direct statement that the manager had not observed the plant work suggested by the record and that two requests for assistance were avoided.
 
 Unresolved questions retained for selection:
 
@@ -2496,7 +2497,7 @@ Evidence:
 - 2012-02-13 — “Drive motor brushes and commutator dressed, rotation back to time.” (CL005994; `raw/logbooks/era2-keeperlog/KLOG2012.DAT#001585`; clean/manual attribution corroborated by raw keeper_code K1200).
 - 2016-05-27 — “Lamp changer stepping twice, dismantled the ratchet and dressed the pawl faces.” (CL007505; `raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#25724`; clean/manual attribution corroborated by raw name Tomaltach Yarrowfell).
 - 2021-08-23 — “Rebuilt the clockwork drive, cleaned forty years of gum out of the train.” (CL009097; `raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#48076`; clean/manual attribution corroborated by raw payroll value 0011721 normalized to 11721, matching clean payroll 0011721).
-- 2024-05-24 — “Stripped and cleaned the mercury bath, float centred and the rotation smoothed out.” (CL009921; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#31925`; clean/manual attribution corroborated by raw payroll value 0011721 normalized to 11721, matching clean payroll 0011721).
+- 2024-05-24 — “Stripped and cleaned the mercury bath, float centred and the rotation smoothed out.” (CL009921; `raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#31925`; clean/manual attribution corroborated by raw payroll value 0011721 normalized to 11721, matching clean payroll 0011721). Context only: retained for the named source contradiction; it is not assigned a mechanical/electrical category and does not independently support the disposition.
 
 Manager testimony selected as screening context:
 

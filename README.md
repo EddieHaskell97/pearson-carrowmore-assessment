@@ -4,31 +4,32 @@
 
 ## The answer
 
-**36 of the 38 current keepers in the permitted subset have specific, attributed maintenance evidence supporting a technical interview. Two need a targeted evidence screen first.** The two leavers are outside the current redeployment cohort. This answers the Array O&M question at the interview stage: who looks plausible, what supports that conclusion, and what must be checked before progressing.
+**37 of the 38 current keepers in the permitted subset have specific, attributed maintenance evidence supporting a technical interview. One needs targeted evidence clarification first.** The two leavers are outside the current redeployment cohort. The useful answer is not the high interview percentage by itself: it is the person-specific evidence, uncertainty, interview probe and next task in the generated [redeployment decision brief](output/decision_brief.md).
 
 | Result | Profiles | Immediate next step |
 |---|---:|---|
-| Supported technical interview | 36 | Test the cited hands-on experience in a structured technical interview |
-| Targeted screening first | 2 | Clarify a material contradiction about the core experience claim |
+| Supported technical interview | 37 | Test the cited hands-on experience with the person-specific probe |
+| Targeted screening first | 1 | Clarify a material contradiction about the core experience claim |
 | Insufficient evidence | 0 | No profile in this subset received this outcome |
 | Leaver outside the current cohort | 2 | No selection or mobilisation pathway proposed |
 
 The O&M posting accepts hands-on mechanical **or** electrical maintenance experience. It does not require both, a degree, or previous wind work. Accordingly, support means a reason to interview, not a ranking, proof of competence or permission to mobilise. No numerical quota, minimum pattern count or automatic adverse-appraisal veto determines the result.
 
-The two screens are substantive exceptions, not penalties for missing certificates:
+The two most important reviewed cases illustrate different actions rather than a quota:
 
-| Keeper | Why screening comes first |
+| Keeper | Evidence decision and immediate action |
 |---|---|
-| K0478 | Attributed electrical/isolation work conflicts with testimony about switching, distribution and switchgear work in AP001159, AP001160, AP001162 and AP001165. Positive testimony is retained too; neither account silently wins. |
-| K1200 | Four attributed hands-on records conflict with AP003496's account of plant work and avoided assistance requests. Clarify what the keeper personally did before relying on the experience claim. |
+| K0478 | Corroborated electrical maintenance supports interview. Retain the mixed work-quality/checking testimony in AP001159, AP001160, AP001161, AP001162, AP001165 and time-uncertain AP001167; use it for concrete isolation, proving-dead, checking and quality questions rather than denying an interview or inferring current HV authorisation. |
+| K1200 | CL005994, CL007505 and CL009097 are qualifying work examples. CL009921 is displayed context only and gains no silent mechanical category. AP003496 directly disputes the personal plant work suggested by the records, so clarify what K1200 performed before technical interview. |
 
 For everyone who progresses, **verify existing credentials and disputed records before prescribing courses**. Then confirm working conditions and willingness, medical fitness, required safety coverage and employer-specific assessment or authorisation. Missing evidence is a verification task, not proof that a qualification or experience does not exist. No profile is declared fully eligible or mobilisation-ready.
 
 ## Reading order
 
-1. Read [WRITTEN_EXPLANATION.md](WRITTEN_EXPLANATION.md) for the scope choices, AI corrections, production tradeoffs and effort statement.
-2. Use the [current-keeper comparison](output/recommendations.md#current-keeper-comparison) for a compact view of the 38 current profiles. Continue to the individual profiles only where you want to inspect a claim. The approximately 43,000-word report is the evidence appendix, with exact quotations, dates, source references, conflicts and ordered actions.
-3. Use [recommendations.json](output/recommendations.json) for the complete structured answer, or [qa_report.json](output/qa_report.json) to inspect the source/output checks. Run instructions follow below.
+1. Start with the generated [redeployment decision brief](output/decision_brief.md). It gives the boundary, cohort work queues, one stable row per current keeper, four contrasting cases and the issuer-verification opportunity.
+2. Read [WRITTEN_EXPLANATION.md](WRITTEN_EXPLANATION.md) for the scope choices, AI corrections, production tradeoffs and historical effort statement.
+3. Use the [detailed recommendations](output/recommendations.md#current-keeper-comparison) as the evidence appendix when inspecting a claim. It retains exact quotations, dates, source references, conflicts and ordered actions.
+4. Use [recommendations.json](output/recommendations.json) for the complete structured answer, or [qa_report.json](output/qa_report.json) for the independent source/output assertions. Run instructions follow below.
 
 I selected the expressly permitted 40-profile clean subset to spend the bounded effort on defensible answers rather than full-population identity repair. The clean layer is a starting point, not ground truth: material claims are checked against detailed training, appraisals, personnel dates and selected raw work evidence. This is not a ranking of all 340 current personnel.
 
@@ -79,7 +80,7 @@ $alternateCheck = Join-Path $env:TEMP 'carrowmore-assessment-alt-20230101'
 Remove-Item -LiteralPath $alternateCheck -Recurse -Force
 ```
 
-The verified package QA run passed **7,455/7,455 checks**, including the ten cases defined before implementation, the earlier correction areas, exact appraisal and station-note passages, cutoff-safe clean/detailed training reconciliation, all clean-summary/module disagreements, precise personnel chronology, the alternate-date regression, faithful UTF-8 Markdown, per-profile evidence rendering, workflow canonicalization and category-to-record citations. The QA program reads the ZIP and output directly and never imports the evaluator or recomputes its recommendation policy.
+The verified package QA run passed **8,724/8,724 source/output assertions**, including the ten cases defined before implementation, the earlier correction areas, exact appraisal and station-note passages, cutoff-safe clean/detailed training reconciliation, all 38 rendered navigation targets, source-specific operator questions, every displayed attribution/measurement warning, the source-derived issuer queue, precise personnel chronology, alternate-date regression, faithful UTF-8 Markdown, per-profile evidence rendering, workflow canonicalization and category-to-record citations. These assertions support source fidelity and reproducibility; they are not 8,724 validations of hiring judgments. The QA program reads the ZIP and output directly and never imports the evaluator or recomputes its recommendation policy.
 
 ## What the output means
 
@@ -99,13 +100,15 @@ Each profile keeps these concepts separate:
 - `initial_selection_actions`: the interview or screening step now;
 - `later_qualification_and_mobilisation_actions`: credential, medical and employer gates only if selection supports progression.
 
+The operator queue turns those fields into concise work assignments. Each candidate link is generated from the exact detailed-report heading using the rendered GitHub fragment, and independent QA proves that every one resolves to exactly one profile. Questions are selected from the cited activity: electrical isolation, fault diagnosis, testing, control systems, mechanical overhaul, routine service or other bounded maintenance. The adjacent evidence-quality column identifies every cited record as raw-identity corroborated, clean/manual attribution without a raw identifier, or a raw-identity conflict, and flags anomalous measurements verbatim for clarification. These warnings do not change the interview decision automatically.
+
 The evaluator reviews every clean log row for every profile. Its extractor looks for an explicit maintenance action plus an electrical or mechanical plant term. Superficial numeric, measurement-value/unit, and equivalent `permit` / `PTW` / `permit bk.` transformer-isolation variants are collapsed only for a descriptive workflow count; original events and citations remain unchanged. The strongest examples plus at least one exact record for every claimed category are displayed. All four named K1200 records remain visible, while their display exceptions do not create extra pattern identities. Counts, dates and canonical workflows describe the bounded evidence but do not decide interview support. Hours, grade and tags are never treated as competence. There is no minimum pattern count, recency cutoff, confidence score, keyword veto or automatic adverse-appraisal window.
 
 The previously omitted `raw/appraisals/appraisals.jsonl` is part of the verified input contract (SHA-256 `c19ba6216619c0c4d103b5dd7d99edb49f9722fba94a6eb9de824adfba1488d1`). It contains 4,422 rows: 2,694 have a keeper code, 1,728 do not, and 305 are exactly keyed to 37 current profiles. Only exact `keeper_code` joins are allowed; null-key/name-only records are not guessed. All 305 rows are mechanically processed; that is not presented as complete semantic human review. A bounded AI-assisted source review of previously unselected technical-topic candidates expanded the exact same-sentence selector. All 180 technical-topic candidate rows are now selected, while the remaining 125 are labelled **not selected by the appraisal filter**, not declared irrelevant. Named repairs include K0478/AP001161, K1231/AP003577, K0847/AP002307 and K0641/AP001695. Positive, adverse, improvement and authorisation context stays together, and year-only 2026 records remain timing-uncertain.
 
-K1200 illustrates the corrected decision contract. CL005994, CL007505, CL009097 and CL009921 record hands-on activity, but AP003496 directly disputes the plant work suggested by the records and records avoided assistance requests. K0478's attributed electrical/isolation logs likewise conflict materially with AP001159, AP001160, AP001162 and AP001165 about switching, distribution and switchgear work. The positive 2017 Raheenvarra note and AP001161 are now retained too; they do not prove authorisation or silently resolve later concerns. Neither source silently wins, so those two profiles receive `targeted_screening_first`. The other 36 current profiles have specific attributed mechanical or electrical maintenance evidence and receive supported interviews.
+K1200 illustrates the targeted-screen contract. CL005994, CL007505 and CL009097 are qualifying work examples; CL009921 remains visible as material context but gains no derived category and does not count as a qualifying pattern. AP003496 directly disputes whether the suggested plant work was performed personally and records avoided assistance requests, so the discrepancy must be clarified before interview. K0478 is different: CL010541, CL010398 and CL010466 corroborate relevant electrical activity, while the appraisals concern quality, checking and consistency rather than whether all of that activity occurred. The positive 2017 Raheenvarra note is retained but does not prove authorisation. K0478 therefore receives a supported technical interview with exact safety and work-quality questions; K1200 remains the sole targeted screen.
 
-Credential status preserves each supplied LearnHub outcome and expiry. Year-only clean training claims are reconciled against uniquely matching detailed dates before derived module sequences are stated. For K0592, the clean 2026 MECS-5 completion maps to LH500977 on 2026-11-21, so it remains future evidence at the cutoff and is not asserted as established. Independent comparison also found 12 clean complete/valid summaries whose latest supplied pre-cutoff Pass evidence includes 16 expired module records across seven current people. Both claims remain visible: renewal outside the supplied detailed records is possible, so the output requests issuer verification rather than declaring an award invalid. MECS wording describes the documented consecutive sequence and never invents “Stage 0” or claims the person's actual awarded stage.
+Credential status preserves each supplied LearnHub outcome and expiry. Year-only clean training claims are reconciled against uniquely matching detailed dates before derived module sequences are stated. For K0592, the clean 2026 MECS-5 completion maps to LH500977 on 2026-11-21, so it remains future evidence at the cutoff and is not asserted as established. Independent comparison found 12 clean complete/valid summaries whose latest supplied pre-cutoff Pass evidence includes 16 expired module records across seven current people: K0354, K0561, K1200, K1374, K1418, K1446 and K1483. K1200 accounts for five summary disagreements and nine expired detail records. This is a useful issuer-verification queue, not proof that the clean claim or detailed expiry is authoritative: renewal outside the supplied detail remains possible. MECS wording describes the documented consecutive sequence and never invents “Stage 0” or claims the person's actual awarded stage.
 
 The output separately calculates nominal dates implied by the fictional scheme's renewal years as consistency checks. `Pass`, `Attended`, `Not achieved`, missing evidence, clean-summary disagreement and nominal-date disagreement remain distinct. The OSSC-SS/FF/FA and WAHS-1 record mapping is provisional because employer acceptance and climbing/rescue coverage are not specified. No GWO duration or external policy is imported as a binding Carrowmore rule.
 
@@ -127,6 +130,7 @@ src/array_om_evaluator.py      deterministic file-based evaluator
 qa/independent_qa.py           independent source/output and ten-case checks
 output/recommendations.json    complete structured answer
 output/recommendations.md      readable candidate-by-candidate answer
+output/decision_brief.md       concise operator queue and reconciliation cases
 output/qa_report.json          detailed QA evidence
 output/run_metadata.json       interpreter, commands, repeatability and hashes
 WRITTEN_EXPLANATION.md         concise final design reflection and effort statement
